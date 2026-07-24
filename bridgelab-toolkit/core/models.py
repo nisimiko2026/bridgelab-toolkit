@@ -1,8 +1,6 @@
 """
 BridgeLab Toolkit
-Core data models
-
-Author: BridgeLab
+Core Data Models
 """
 
 from __future__ import annotations
@@ -11,13 +9,15 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 
-# ------------------------------------------------------------
-# YAML Metadata
-# ------------------------------------------------------------
+# ============================================================
+# Metadata
+# ============================================================
 
 @dataclass(slots=True)
 class Metadata:
-    """YAML metadata extracted from an article."""
+    """
+    Metadata extracted from YAML front matter.
+    """
 
     title: str = ""
 
@@ -35,84 +35,134 @@ class Metadata:
 
     last_updated: str = ""
 
+    status: str = ""
 
-# ------------------------------------------------------------
+    aliases: list[str] = field(default_factory=list)
+
+
+# ============================================================
 # Heading
-# ------------------------------------------------------------
+# ============================================================
 
 @dataclass(slots=True)
 class Heading:
-    """Single markdown heading."""
+    """
+    Markdown heading.
+    """
 
     level: int
 
     title: str
 
 
-# ------------------------------------------------------------
+# ============================================================
 # Article
-# ------------------------------------------------------------
+# ============================================================
 
 @dataclass(slots=True)
 class Article:
     """
-    Represents one markdown article.
+    BridgeLab article.
     """
 
-    # Stable internal identifier
-
     id: str
-
-    # File information
 
     filename: str
 
     path: Path
 
-    relative_path: Path
+    relative_path: str
 
     directory: str
 
-    # Metadata
-
     metadata: Metadata = field(default_factory=Metadata)
-
-    # Markdown structure
 
     headings: list[Heading] = field(default_factory=list)
 
-    # Statistics
+    links: list[str] = field(default_factory=list)
 
-    word_count: int = 0
+    words: int = 0
 
-    line_count: int = 0
+    lines: int = 0
 
-    size_bytes: int = 0
-
-    # Links
-
-    outgoing_links: list[str] = field(default_factory=list)
-
-    incoming_links: list[str] = field(default_factory=list)
-
-    # Validation
-
-    warnings: list[str] = field(default_factory=list)
-
-    errors: list[str] = field(default_factory=list)
-
-    @property
-    def title(self) -> str:
-        return self.metadata.title
-
-    @property
-    def category(self) -> str:
-        return self.metadata.category
-
-    @property
-    def subcategory(self) -> str:
-        return self.metadata.subcategory
+    characters: int = 0
 
     def __str__(self):
 
-        return f"{self.title} ({self.relative_path})"
+        return f"{self.metadata.title or self.filename} ({self.relative_path})"
+
+
+# ============================================================
+# Relationship
+# ============================================================
+
+@dataclass(slots=True)
+class Relationship:
+    """
+    Relationship between two articles.
+    """
+
+    source: str
+
+    target: str
+
+    relation: str
+
+    score: float = 1.0
+
+
+# ============================================================
+# Cross Reference Item
+# ============================================================
+
+@dataclass(slots=True)
+class CrossReferenceItem:
+    """
+    Single cross-reference entry.
+    """
+
+    article: str
+
+    relation: str
+
+    score: float
+
+
+# ============================================================
+# Cross Reference
+# ============================================================
+
+@dataclass(slots=True)
+class CrossReference:
+    """
+    Cross-reference information for one article.
+    """
+
+    article: str
+
+    prerequisites: list[CrossReferenceItem] = field(default_factory=list)
+
+    related_topics: list[CrossReferenceItem] = field(default_factory=list)
+
+    related_systems: list[CrossReferenceItem] = field(default_factory=list)
+
+    advanced_topics: list[CrossReferenceItem] = field(default_factory=list)
+
+
+# ============================================================
+# Issue
+# ============================================================
+
+@dataclass(slots=True)
+class Issue:
+    """
+    Generic validation/reporting issue.
+    """
+
+    severity: str
+
+    article: str
+
+    category: str
+
+    message: str

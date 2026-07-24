@@ -1,150 +1,129 @@
 """
 BridgeLab Toolkit
-Global Configuration
+
+Main entry point for the BridgeLab Editorial Toolkit.
 """
 
 from pathlib import Path
 
-# ============================================================
-# Toolkit Information
-# ============================================================
+import typer
 
-TOOLKIT_NAME = "BridgeLab Editorial Toolkit"
+from config import ROOT
 
-VERSION = "1.0.0"
+from commands.scan import run as scan_command
+from commands.metadata import run as metadata_command
+from commands.crossrefs import run as crossrefs_command
 
-# ============================================================
-# Repository
-# ============================================================
-
-# BridgeLab root directory.
-# Since the toolkit resides inside the BridgeLab project,
-# ROOT is the parent directory of the toolkit.
-
-TOOLKIT_ROOT = Path(__file__).resolve().parent
-
-ROOT = TOOLKIT_ROOT.parent
 
 # ============================================================
-# Output Directories
+# Application
 # ============================================================
 
-OUTPUT = TOOLKIT_ROOT / "output"
+app = typer.Typer(
+    help="BridgeLab Editorial Toolkit",
+    add_completion=False,
+    no_args_is_help=True,
+)
 
-REPORTS = TOOLKIT_ROOT / "reports"
-
-TESTS = TOOLKIT_ROOT / "tests"
-
-# ============================================================
-# Generated Files
-# ============================================================
-
-JSON_DATABASE = OUTPUT / "articles.json"
-
-STATISTICS_JSON = OUTPUT / "statistics.json"
-
-STATISTICS_TEXT = OUTPUT / "statistics.txt"
-
-VALIDATION_JSON = OUTPUT / "validation.json"
-
-VALIDATION_TEXT = OUTPUT / "validation.txt"
 
 # ============================================================
-# Repository Rules
+# Scan Repository
 # ============================================================
 
-MARKDOWN_EXTENSION = ".md"
+@app.command()
+def scan(
+    root: Path = typer.Option(
+        ROOT,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Scan the BridgeLab repository.
+    """
 
-IGNORE_DIRECTORIES = {
+    scan_command(root)
 
-    ".git",
-
-    ".github",
-
-    ".idea",
-
-    ".vscode",
-
-    "__pycache__",
-
-    ".pytest_cache",
-
-    ".mypy_cache",
-
-    ".venv",
-
-    "venv",
-
-    "node_modules",
-
-    "build",
-
-    "dist",
-
-    "output",
-
-    "reports",
-
-}
 
 # ============================================================
-# Metadata Rules
+# Metadata
 # ============================================================
 
-REQUIRED_METADATA = [
+@app.command()
+def metadata(
+    root: Path = typer.Option(
+        ROOT,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Validate metadata.
+    """
 
-    "title",
+    metadata_command(root)
 
-    "description",
-
-]
-
-DEFAULT_DIFFICULTY = "Intermediate"
-
-DEFAULT_STATUS = "draft"
-
-# ============================================================
-# Heading Rules
-# ============================================================
-
-REQUIRED_HEADINGS = [
-
-    "Overview",
-
-    "Summary",
-
-]
 
 # ============================================================
-# Supported Index Names
+# Cross References
 # ============================================================
 
-INDEX_FILES = {
+@app.command()
+def crossrefs(
+    root: Path = typer.Option(
+        ROOT,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate and validate cross references.
+    """
 
-    "index.md",
+    crossrefs_command(root)
 
-    "bidding-index.md",
-
-    "conventions-index.md",
-
-    "duplicate-bridge-index.md",
-
-    "opening-bids-index.md",
-
-    "responses-index.md",
-
-    "relay-index.md",
-
-    "slam-bidding-index.md",
-
-    "transfers-index.md",
-
-}
 
 # ============================================================
-# Report Formatting
+# Future Commands
 # ============================================================
 
-REPORT_WIDTH = 100
+# @app.command()
+# def glossary():
+#     pass
 
-INDENT = 4
+
+# @app.command()
+# def bibliography():
+#     pass
+
+
+# @app.command()
+# def audit():
+#     pass
+
+
+# @app.command()
+# def statistics():
+#     pass
+
+
+# @app.command()
+# def build():
+#     pass
+
+
+# ============================================================
+# Main
+# ============================================================
+
+def main():
+
+    app()
+
+
+if __name__ == "__main__":
+
+    main()

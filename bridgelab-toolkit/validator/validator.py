@@ -8,16 +8,6 @@ from __future__ import annotations
 from .duplicate_check import DuplicateCheck
 from .filename_check import FilenameCheck
 from .yaml_check import YAMLCheck
-"""
-BridgeLab Toolkit
-Repository Validator
-"""
-
-from __future__ import annotations
-
-from .duplicate_check import DuplicateCheck
-from .filename_check import FilenameCheck
-from .yaml_check import YAMLCheck
 from .heading_check import HeadingCheck
 from .directory_check import DirectoryCheck
 
