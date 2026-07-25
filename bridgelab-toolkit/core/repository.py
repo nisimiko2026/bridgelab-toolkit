@@ -1,63 +1,115 @@
 """
 BridgeLab Toolkit
-Repository Builder
+Repository
 """
 
 from __future__ import annotations
 
 import json
-from pathlib import Path
 from dataclasses import asdict
+from pathlib import Path
 
-from .scanner import RepositoryScanner
 from .parser import ArticleParser
+from .scanner import RepositoryScanner
 
 
 class Repository:
+    """
+    Builds and manages the BridgeLab repository.
+    """
 
-    def __init__(self, root: Path):
+    def __init__(
+        self,
+        root: Path,
+    ):
 
-        self.root = root
+        self.root = root.resolve()
 
-        self.scanner = RepositoryScanner(root)
+        self.scanner = RepositoryScanner(self.root)
 
         self.parser = ArticleParser()
 
         self.articles = []
 
-    # ------------------------------------------------------------
+    # =========================================================
+    # Build
+    # =========================================================
 
     def build(self):
 
         self.articles = self.scanner.scan()
 
-        self.parser.parse_all(self.articles)
+        self.parser.parse_all(
+            self.articles
+        )
 
         return self.articles
 
-    # ------------------------------------------------------------
+    # =========================================================
+    # Statistics
+    # =========================================================
 
     def statistics(self):
 
+        articles = len(self.articles)
+
+        words = sum(
+            article.words
+            for article in self.articles
+        )
+
+        lines = sum(
+            article.lines
+            for article in self.articles
+        )
+
+        characters = sum(
+            article.characters
+            for article in self.articles
+        )
+
         return {
 
-            "articles": len(self.articles),
+            "articles": articles,
 
-            "words": sum(a.word_count for a in self.articles),
+            "words": words,
 
-            "lines": sum(a.line_count for a in self.articles),
+            "lines": lines,
 
-            "bytes": sum(a.size_bytes for a in self.articles),
+            "characters": characters,
+
+            "average_words": (
+                words // articles
+                if articles
+                else 0
+            ),
+
+            "average_lines": (
+                lines // articles
+                if articles
+                else 0
+            ),
+
+            "average_characters": (
+                characters // articles
+                if articles
+                else 0
+            ),
 
         }
 
-    # ------------------------------------------------------------
+    # =========================================================
+    # Export Repository
+    # =========================================================
 
-    def export_json(self, output: Path):
+    def export_json(
+        self,
+        output: Path,
+    ):
 
         output.parent.mkdir(
             parents=True,
-            exist_ok=True
+            exist_ok=True,
         )
 
         data = []
@@ -77,9 +129,35 @@ class Repository:
             json.dumps(
                 data,
                 indent=4,
-                ensure_ascii=False
+                ensure_ascii=False,
             ),
 
-            encoding="utf-8"
+            encoding="utf-8",
+
+        )
+
+    # =========================================================
+    # Export Statistics
+    # =========================================================
+
+    def export_statistics(
+        self,
+        output: Path,
+    ):
+
+        output.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        output.write_text(
+
+            json.dumps(
+                self.statistics(),
+                indent=4,
+                ensure_ascii=False,
+            ),
+
+            encoding="utf-8",
 
         )

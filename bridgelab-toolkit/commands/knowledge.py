@@ -1,36 +1,26 @@
 """
 BridgeLab Toolkit
-Cross-Reference Command
+Knowledge Command
 """
 
 from pathlib import Path
 
-from rich.console import Console
-
-from config import CROSS_REFERENCE_JSON
+from config import (
+    OUTPUT,
+)
 
 from core.repository import Repository
 
-from relationships.analyzer import RelationshipAnalyzer
-from relationships.graph import RelationshipGraph
-from relationships.matcher import RelationshipMatcher
-from relationships.generator import CrossReferenceGenerator
-from relationships.validator import CrossReferenceValidator
+from knowledge.extractor import EntityExtractor
+from knowledge.validator import KnowledgeValidator
 
 from reporting.base_reporter import BaseReporter
 
 
-console = Console()
-
-
 def run(root: Path):
 
-    console.print()
-    console.print("[bold cyan]Cross-Reference Analysis[/bold cyan]")
-    console.print()
-
     # ---------------------------------------------------------
-    # Build Repository
+    # Repository
     # ---------------------------------------------------------
 
     repository = Repository(root)
@@ -38,50 +28,14 @@ def run(root: Path):
     repository.build()
 
     # ---------------------------------------------------------
-    # Analyze Relationships
+    # Extract
     # ---------------------------------------------------------
 
-    analyzer = RelationshipAnalyzer()
+    extractor = EntityExtractor()
 
-    relationships = analyzer.analyze(
+    entities = extractor.extract(
 
         repository.articles
-
-    )
-
-    # ---------------------------------------------------------
-    # Build Graph
-    # ---------------------------------------------------------
-
-    graph = RelationshipGraph()
-
-    graph.build(
-
-        relationships
-
-    )
-
-    # ---------------------------------------------------------
-    # Match Relationships
-    # ---------------------------------------------------------
-
-    matcher = RelationshipMatcher()
-
-    matcher.match(
-
-        relationships
-
-    )
-
-    # ---------------------------------------------------------
-    # Generate Cross References
-    # ---------------------------------------------------------
-
-    generator = CrossReferenceGenerator()
-
-    references = generator.generate(
-
-        relationships
 
     )
 
@@ -89,11 +43,11 @@ def run(root: Path):
     # Validate
     # ---------------------------------------------------------
 
-    validator = CrossReferenceValidator()
+    validator = KnowledgeValidator()
 
     issues = validator.validate(
 
-        references
+        entities
 
     )
 
@@ -103,7 +57,7 @@ def run(root: Path):
 
     reporter = BaseReporter(
 
-        "Cross-Reference Validation"
+        "Knowledge Validation"
 
     )
 
@@ -171,14 +125,6 @@ def run(root: Path):
 
         ],
 
-        CROSS_REFERENCE_JSON,
-
-    )
-
-    console.print()
-
-    console.print(
-
-        "[green]Cross-reference analysis complete.[/green]"
+        OUTPUT / "knowledge_validation.json",
 
     )

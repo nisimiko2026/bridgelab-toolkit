@@ -1,129 +1,86 @@
 """
 BridgeLab Toolkit
-
-Main entry point for the BridgeLab Editorial Toolkit.
+Configuration
 """
 
 from pathlib import Path
 
-import typer
 
-from config import ROOT
+# ============================================================
+# Project Paths
+# ============================================================
 
-from commands.scan import run as scan_command
-from commands.metadata import run as metadata_command
-from commands.crossrefs import run as crossrefs_command
+PROJECT = Path(__file__).resolve().parent
+
+ROOT = PROJECT
 
 
 # ============================================================
-# Application
+# Repository
 # ============================================================
 
-app = typer.Typer(
-    help="BridgeLab Editorial Toolkit",
-    add_completion=False,
-    no_args_is_help=True,
+# BridgeLab Markdown repository
+
+REPOSITORY = ROOT.parent / "knowladge"
+
+
+# ============================================================
+# Output
+# ============================================================
+
+OUTPUT = ROOT / "output"
+
+DOCS = OUTPUT / "docs"
+
+REPORTS = OUTPUT / "reports"
+
+
+# ============================================================
+# Repository Data
+# ============================================================
+
+JSON_DATABASE = OUTPUT / "repository.json"
+
+STATISTICS_JSON = OUTPUT / "statistics.json"
+
+
+# ============================================================
+# Validation Reports
+# ============================================================
+
+METADATA_JSON = REPORTS / "metadata_validation.json"
+
+CROSS_REFERENCE_JSON = REPORTS / "cross_references.json"
+
+KNOWLEDGE_JSON = REPORTS / "knowledge_validation.json"
+
+
+# ============================================================
+# Generated Documents
+# ============================================================
+
+GLOSSARY = DOCS / "glossary.md"
+
+ACRONYMS = DOCS / "acronyms.md"
+
+BIBLIOGRAPHY = DOCS / "bibliography.md"
+
+
+# ============================================================
+# Create Output Directories
+# ============================================================
+
+OUTPUT.mkdir(
+    parents=True,
+    exist_ok=True,
 )
 
+DOCS.mkdir(
+    parents=True,
+    exist_ok=True,
+)
 
-# ============================================================
-# Scan Repository
-# ============================================================
-
-@app.command()
-def scan(
-    root: Path = typer.Option(
-        ROOT,
-        "--root",
-        "-r",
-        help="BridgeLab repository root",
-    ),
-):
-    """
-    Scan the BridgeLab repository.
-    """
-
-    scan_command(root)
-
-
-# ============================================================
-# Metadata
-# ============================================================
-
-@app.command()
-def metadata(
-    root: Path = typer.Option(
-        ROOT,
-        "--root",
-        "-r",
-        help="BridgeLab repository root",
-    ),
-):
-    """
-    Validate metadata.
-    """
-
-    metadata_command(root)
-
-
-# ============================================================
-# Cross References
-# ============================================================
-
-@app.command()
-def crossrefs(
-    root: Path = typer.Option(
-        ROOT,
-        "--root",
-        "-r",
-        help="BridgeLab repository root",
-    ),
-):
-    """
-    Generate and validate cross references.
-    """
-
-    crossrefs_command(root)
-
-
-# ============================================================
-# Future Commands
-# ============================================================
-
-# @app.command()
-# def glossary():
-#     pass
-
-
-# @app.command()
-# def bibliography():
-#     pass
-
-
-# @app.command()
-# def audit():
-#     pass
-
-
-# @app.command()
-# def statistics():
-#     pass
-
-
-# @app.command()
-# def build():
-#     pass
-
-
-# ============================================================
-# Main
-# ============================================================
-
-def main():
-
-    app()
-
-
-if __name__ == "__main__":
-
-    main()
+REPORTS.mkdir(
+    parents=True,
+    exist_ok=True,
+)

@@ -1,3 +1,4 @@
+
 """
 BridgeLab Toolkit
 Metadata Command
@@ -7,12 +8,14 @@ from pathlib import Path
 
 from rich.console import Console
 
+from config import METADATA_JSON
+
 from core.repository import Repository
 
 from metadata.validator import MetadataValidator
-from metadata.reporter import MetadataReporter
 
-from config import OUTPUT
+from reporting.base_reporter import BaseReporter
+
 
 console = Console()
 
@@ -20,44 +23,104 @@ console = Console()
 def run(root: Path):
 
     console.print()
-
     console.print("[bold cyan]Metadata Validation[/bold cyan]")
-
     console.print()
 
-    # ---------------------------------------------
-    # Build repository
-    # ---------------------------------------------
+    # ---------------------------------------------------------
+    # Build Repository
+    # ---------------------------------------------------------
 
-    repo = Repository(root)
+    repository = Repository(root)
 
-    repo.build()
+    repository.build()
 
-    # ---------------------------------------------
-    # Validate metadata
-    # ---------------------------------------------
+    # ---------------------------------------------------------
+    # Validate Metadata
+    # ---------------------------------------------------------
 
     validator = MetadataValidator()
 
     issues = validator.validate(
-        repo.articles
+
+        repository.articles
+
     )
 
-    # ---------------------------------------------
+    # ---------------------------------------------------------
     # Report
-    # ---------------------------------------------
+    # ---------------------------------------------------------
 
-    reporter = MetadataReporter()
+    reporter = BaseReporter(
 
-    reporter.console_report(issues)
+        "Metadata Validation"
 
-    reporter.summary(issues)
+    )
 
-    reporter.json_report(
+    reporter.report(
 
-        issues,
+        columns=[
 
-        OUTPUT / "metadata_validation.json"
+            "Severity",
+
+            "Article",
+
+            "Category",
+
+            "Message",
+
+        ],
+
+        rows=reporter.issue_rows(
+
+            issues
+
+        ),
+
+    )
+
+    reporter.summary(
+
+        Errors=sum(
+
+            issue.severity == "Error"
+
+            for issue in issues
+
+        ),
+
+        Warnings=sum(
+
+            issue.severity == "Warning"
+
+            for issue in issues
+
+        ),
+
+        Total=len(issues),
+
+    )
+
+    reporter.export(
+
+        [
+
+            {
+
+                "severity": issue.severity,
+
+                "article": issue.article,
+
+                "category": issue.category,
+
+                "message": issue.message,
+
+            }
+
+            for issue in issues
+
+        ],
+
+        METADATA_JSON,
 
     )
 

@@ -16,28 +16,24 @@ from pathlib import Path
 @dataclass(slots=True)
 class Metadata:
     """
-    Metadata extracted from YAML front matter.
+    YAML metadata extracted from a BridgeLab article.
     """
 
     title: str = ""
-
     description: str = ""
 
     category: str = ""
-
     subcategory: str = ""
-
     difficulty: str = ""
 
     tags: list[str] = field(default_factory=list)
-
     systems: list[str] = field(default_factory=list)
+    aliases: list[str] = field(default_factory=list)
+    acronyms: list[str] = field(default_factory=list)
+    references: list[str] = field(default_factory=list)
 
     last_updated: str = ""
-
     status: str = ""
-
-    aliases: list[str] = field(default_factory=list)
 
 
 # ============================================================
@@ -51,7 +47,6 @@ class Heading:
     """
 
     level: int
-
     title: str
 
 
@@ -66,30 +61,26 @@ class Article:
     """
 
     id: str
-
     filename: str
-
     path: Path
-
     relative_path: str
-
     directory: str
 
     metadata: Metadata = field(default_factory=Metadata)
 
     headings: list[Heading] = field(default_factory=list)
-
     links: list[str] = field(default_factory=list)
 
     words: int = 0
-
     lines: int = 0
-
     characters: int = 0
 
-    def __str__(self):
+    def __str__(self) -> str:
 
-        return f"{self.metadata.title or self.filename} ({self.relative_path})"
+        return (
+            f"{self.metadata.title or self.filename} "
+            f"({self.relative_path})"
+        )
 
 
 # ============================================================
@@ -103,11 +94,8 @@ class Relationship:
     """
 
     source: str
-
     target: str
-
     relation: str
-
     score: float = 1.0
 
 
@@ -118,13 +106,11 @@ class Relationship:
 @dataclass(slots=True)
 class CrossReferenceItem:
     """
-    Single cross-reference entry.
+    One cross-reference entry.
     """
 
     article: str
-
     relation: str
-
     score: float
 
 
@@ -135,7 +121,7 @@ class CrossReferenceItem:
 @dataclass(slots=True)
 class CrossReference:
     """
-    Cross-reference information for one article.
+    Cross references for one article.
     """
 
     article: str
@@ -150,7 +136,26 @@ class CrossReference:
 
 
 # ============================================================
-# Issue
+# Knowledge Entity
+# ============================================================
+
+@dataclass(slots=True)
+class Entity:
+    """
+    Knowledge entity extracted from the encyclopedia.
+    """
+
+    name: str
+
+    category: str
+
+    article: str
+
+    frequency: int = 1
+
+
+# ============================================================
+# Validation Issue
 # ============================================================
 
 @dataclass(slots=True)

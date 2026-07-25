@@ -1,6 +1,6 @@
 """
 BridgeLab Toolkit
-Cross-Reference Generator
+RelationshipGenerator
 """
 
 from __future__ import annotations

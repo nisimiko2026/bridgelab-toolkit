@@ -243,3 +243,17 @@ The toolkit follows several core principles:
 # License
 
 This toolkit is developed exclusively for the maintenance of the BridgeLab encyclopedia.
+
+python main.py scan
+
+python main.py metadata
+
+python main.py crossrefs
+
+python main.py glossary
+
+python main.py acronyms
+
+python main.py bibliography
+
+python main.py build

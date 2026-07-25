@@ -1,19 +1,28 @@
 """
 BridgeLab Toolkit
 
-Main entry point for the BridgeLab Editorial Toolkit.
+Main entry point.
 """
 
 from pathlib import Path
 
 import typer
 
-from config import ROOT
-from commands.scan import run as scan_command
+from config import REPOSITORY
 
-# ---------------------------------------------------------------------
+from commands.scan import run as scan_command
+from commands.metadata import run as metadata_command
+from commands.crossrefs import run as crossrefs_command
+from commands.glossary import run as glossary_command
+from commands.acronyms import run as acronyms_command
+from commands.bibliography import run as bibliography_command
+from commands.knowledge import run as knowledge_command
+from commands.build import run as build_command
+
+
+# ============================================================
 # Application
-# ---------------------------------------------------------------------
+# ============================================================
 
 app = typer.Typer(
     help="BridgeLab Editorial Toolkit",
@@ -22,63 +31,169 @@ app = typer.Typer(
 )
 
 
-# ---------------------------------------------------------------------
-# Scan
-# ---------------------------------------------------------------------
+# ============================================================
+# Scan Repository
+# ============================================================
 
 @app.command()
 def scan(
     root: Path = typer.Option(
-        ROOT,
+        REPOSITORY,
         "--root",
         "-r",
         help="BridgeLab repository root",
     ),
 ):
     """
-    Scan the BridgeLab repository.
+    Scan the repository.
     """
 
     scan_command(root)
 
 
-# ---------------------------------------------------------------------
-# Future Commands
-# ---------------------------------------------------------------------
+# ============================================================
+# Metadata
+# ============================================================
 
-# @app.command()
-# def metadata():
-#     """Validate metadata."""
-#     pass
+@app.command()
+def metadata(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Validate article metadata.
+    """
 
-
-# @app.command()
-# def audit():
-#     """Audit repository."""
-#     pass
-
-
-# @app.command()
-# def glossary():
-#     """Generate glossary."""
-#     pass
+    metadata_command(root)
 
 
-# @app.command()
-# def crossrefs():
-#     """Generate cross references."""
-#     pass
+# ============================================================
+# Cross References
+# ============================================================
+
+@app.command()
+def crossrefs(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate and validate cross references.
+    """
+
+    crossrefs_command(root)
 
 
-# @app.command()
-# def build():
-#     """Run complete toolkit."""
-#     pass
+# ============================================================
+# Glossary
+# ============================================================
+
+@app.command()
+def glossary(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate glossary.
+    """
+
+    glossary_command(root)
 
 
-# ---------------------------------------------------------------------
+# ============================================================
+# Acronyms
+# ============================================================
+
+@app.command()
+def acronyms(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate acronym list.
+    """
+
+    acronyms_command(root)
+
+
+# ============================================================
+# Bibliography
+# ============================================================
+
+@app.command()
+def bibliography(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate bibliography.
+    """
+
+    bibliography_command(root)
+
+
+# ============================================================
+# Knowledge
+# ============================================================
+
+@app.command()
+def knowledge(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Analyze repository knowledge.
+    """
+
+    knowledge_command(root)
+
+
+# ============================================================
+# Build
+# ============================================================
+
+@app.command()
+def build(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Generate all BridgeLab documents.
+    """
+
+    build_command(root)
+
+
+# ============================================================
 # Main
-# ---------------------------------------------------------------------
+# ============================================================
 
 def main():
 

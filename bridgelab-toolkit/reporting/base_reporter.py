@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
 from rich.console import Console
 from rich.table import Table
@@ -16,7 +17,7 @@ from core.models import Issue
 
 class BaseReporter:
     """
-    Base class for all BridgeLab reporters.
+    Generic reporter for the BridgeLab Toolkit.
     """
 
     def __init__(self, title: str):
@@ -31,20 +32,18 @@ class BaseReporter:
 
     def report(
         self,
-        issues: list[Issue],
-    ):
-
-        rows = self.build_rows(issues)
+        columns: list[str],
+        rows: list[list[str]],
+    ) -> None:
+        """
+        Display a Rich table.
+        """
 
         table = Table(title=self.title)
 
-        table.add_column("Severity")
+        for column in columns:
 
-        table.add_column("Article")
-
-        table.add_column("Category")
-
-        table.add_column("Message")
+            table.add_column(column)
 
         for row in rows:
 
@@ -52,38 +51,35 @@ class BaseReporter:
 
         self.console.print(table)
 
-        self.summary(issues)
-
     # =========================================================
-    # Build Rows
+    # Issue Rows
     # =========================================================
 
-    def build_rows(
+    def issue_rows(
         self,
         issues: list[Issue],
     ) -> list[list[str]]:
+        """
+        Convert Issue objects into table rows.
+        """
 
-        rows = []
+        return [
 
-        for issue in issues:
+            [
 
-            rows.append(
+                issue.severity,
 
-                [
+                issue.article,
 
-                    issue.severity,
+                issue.category,
 
-                    issue.article,
+                issue.message,
 
-                    issue.category,
+            ]
 
-                    issue.message,
+            for issue in issues
 
-                ]
-
-            )
-
-        return rows
+        ]
 
     # =========================================================
     # Summary
@@ -91,48 +87,21 @@ class BaseReporter:
 
     def summary(
         self,
-        issues: list[Issue],
-    ):
-
-        errors = sum(
-
-            1
-
-            for issue in issues
-
-            if issue.severity == "Error"
-
-        )
-
-        warnings = sum(
-
-            1
-
-            for issue in issues
-
-            if issue.severity == "Warning"
-
-        )
-
-        information = sum(
-
-            1
-
-            for issue in issues
-
-            if issue.severity == "Info"
-
-        )
+        **values: int,
+    ) -> None:
+        """
+        Display summary values.
+        """
 
         self.console.print()
 
-        self.console.print(f"Errors      : {errors}")
+        for key, value in values.items():
 
-        self.console.print(f"Warnings    : {warnings}")
+            self.console.print(
 
-        self.console.print(f"Information : {information}")
+                f"{key:<12}: {value}"
 
-        self.console.print(f"Total       : {len(issues)}")
+            )
 
     # =========================================================
     # JSON Export
@@ -140,9 +109,12 @@ class BaseReporter:
 
     def export(
         self,
-        issues: list[Issue],
+        data: Any,
         output: Path,
-    ):
+    ) -> None:
+        """
+        Export data as JSON.
+        """
 
         output.parent.mkdir(
 
@@ -151,26 +123,6 @@ class BaseReporter:
             exist_ok=True,
 
         )
-
-        data = []
-
-        for issue in issues:
-
-            data.append(
-
-                {
-
-                    "severity": issue.severity,
-
-                    "article": issue.article,
-
-                    "category": issue.category,
-
-                    "message": issue.message,
-
-                }
-
-            )
 
         output.write_text(
 

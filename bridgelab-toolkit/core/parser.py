@@ -1,24 +1,15 @@
-
 """
 BridgeLab Toolkit
 Article Parser
-
-Parses Markdown articles, including:
-
-- YAML front matter
-- Markdown headings
-- Basic statistics
-- Internal Markdown links
 """
 
 from __future__ import annotations
 
 import re
-from pathlib import Path
 
 import yaml
 
-from .models import Article, Metadata, Heading
+from .models import Article, Heading, Metadata
 
 
 class ArticleParser:
@@ -26,9 +17,9 @@ class ArticleParser:
     Parses BridgeLab Markdown articles.
     """
 
-    # ----------------------------------------------------------
-    # Regular expressions
-    # ----------------------------------------------------------
+    # ==========================================================
+    # Regular Expressions
+    # ==========================================================
 
     YAML_RE = re.compile(
         r"^---\n(.*?)\n---",
@@ -36,35 +27,48 @@ class ArticleParser:
     )
 
     HEADING_RE = re.compile(
-        r"^(#{1,6})\s+(.*)$"
+        r"^(#{1,6})\s+(.*)$",
+        re.MULTILINE,
     )
 
     LINK_RE = re.compile(
         r"\[.*?\]\((.*?)\)"
     )
 
-    # ----------------------------------------------------------
+    # ==========================================================
+    # Public API
+    # ==========================================================
 
-    def parse(self, article: Article) -> Article:
-        """
-        Parse a single article.
-        """
+    def parse(
+        self,
+        article: Article,
+    ) -> Article:
 
         text = article.path.read_text(
             encoding="utf-8"
         )
 
-        self._parse_statistics(article, text)
+        self._parse_statistics(
+            article,
+            text,
+        )
 
-        self._parse_yaml(article, text)
+        self._parse_yaml(
+            article,
+            text,
+        )
 
-        self._parse_headings(article, text)
+        self._parse_headings(
+            article,
+            text,
+        )
 
-        self._parse_links(article, text)
+        self._parse_links(
+            article,
+            text,
+        )
 
         return article
-
-    # ----------------------------------------------------------
 
     def parse_all(
         self,
@@ -87,15 +91,11 @@ class ArticleParser:
         text: str,
     ):
 
-        article.word_count = len(
-            text.split()
-        )
+        article.words = len(text.split())
 
-        article.line_count = len(
-            text.splitlines()
-        )
+        article.lines = len(text.splitlines())
 
-        article.size_bytes = article.path.stat().st_size
+        article.characters = len(text)
 
     # ==========================================================
     # YAML
@@ -123,53 +123,57 @@ class ArticleParser:
 
             article.metadata = Metadata(
 
-                title=data.get(
-                    "title",
-                    ""
+                title=str(data.get("title", "")),
+
+                description=str(
+                    data.get("description", "")
                 ),
 
-                description=data.get(
-                    "description",
-                    ""
+                category=str(
+                    data.get("category", "")
                 ),
 
-                category=data.get(
-                    "category",
-                    ""
+                subcategory=str(
+                    data.get("subcategory", "")
                 ),
 
-                subcategory=data.get(
-                    "subcategory",
-                    ""
+                difficulty=str(
+                    data.get("difficulty", "")
                 ),
 
-                difficulty=data.get(
-                    "difficulty",
-                    ""
+                tags=list(
+                    data.get("tags", [])
                 ),
 
-                tags=data.get(
-                    "tags",
-                    []
+                systems=list(
+                    data.get("systems", [])
                 ),
 
-                systems=data.get(
-                    "systems",
-                    []
+                aliases=list(
+                    data.get("aliases", [])
                 ),
 
-                last_updated=data.get(
-                    "last_updated",
-                    ""
+                acronyms=list(
+                    data.get("acronyms", [])
+                ),
+
+                references=list(
+                    data.get("references", [])
+                ),
+
+                last_updated=str(
+                    data.get("last_updated", "")
+                ),
+
+                status=str(
+                    data.get("status", "")
                 ),
 
             )
 
-        except Exception as ex:
+        except Exception:
 
-            article.errors.append(
-                f"YAML error: {ex}"
-            )
+            pass
 
     # ==========================================================
     # Headings
@@ -183,20 +187,13 @@ class ArticleParser:
 
         article.headings.clear()
 
-        for line in text.splitlines():
-
-            match = self.HEADING_RE.match(line)
-
-            if not match:
-                continue
+        for match in self.HEADING_RE.finditer(text):
 
             article.headings.append(
 
                 Heading(
 
-                    level=len(
-                        match.group(1)
-                    ),
+                    level=len(match.group(1)),
 
                     title=match.group(2).strip(),
 
@@ -214,10 +211,12 @@ class ArticleParser:
         text: str,
     ):
 
-        article.outgoing_links.clear()
+        article.links.clear()
 
         for match in self.LINK_RE.finditer(text):
 
-            article.outgoing_links.append(
+            article.links.append(
+
                 match.group(1)
+
             )
