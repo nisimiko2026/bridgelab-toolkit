@@ -1,27 +1,12 @@
 """
 BridgeLab Toolkit
-Cross-Reference Validator
+Relationship Validator
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-
 from core.models import CrossReference
-
-
-# ============================================================
-# Validation Issue
-# ============================================================
-
-@dataclass(slots=True)
-class CrossReferenceIssue:
-
-    severity: str
-
-    article: str
-
-    message: str
+from core.models import Issue
 
 
 # ============================================================
@@ -38,18 +23,13 @@ class CrossReferenceValidator:
     def validate(
         self,
         references: list[CrossReference],
-    ) -> list[CrossReferenceIssue]:
+    ) -> list[Issue]:
 
-        issues = []
+        issues: list[Issue] = []
 
         for reference in references:
-
             issues.extend(
-
-                self._validate_reference(
-                    reference
-                )
-
+                self._validate_reference(reference)
             )
 
         return issues
@@ -59,24 +39,19 @@ class CrossReferenceValidator:
     def _validate_reference(
         self,
         reference: CrossReference,
-    ) -> list[CrossReferenceIssue]:
+    ) -> list[Issue]:
 
-        issues = []
+        issues: list[Issue] = []
 
-        # -----------------------------------------
-        # Self reference
-        # -----------------------------------------
+        # -----------------------------------------------------
+        # Self references
+        # -----------------------------------------------------
 
         for group in [
-
             reference.prerequisites,
-
             reference.related_topics,
-
             reference.related_systems,
-
             reference.advanced_topics,
-
         ]:
 
             for item in group:
@@ -84,35 +59,25 @@ class CrossReferenceValidator:
                 if item.article == reference.article:
 
                     issues.append(
-
-                        CrossReferenceIssue(
-
+                        Issue(
                             severity="Error",
-
                             article=reference.article,
-
+                            category="CrossReference",
                             message="Self reference",
-
                         )
-
                     )
 
-        # -----------------------------------------
+        # -----------------------------------------------------
         # Duplicate references
-        # -----------------------------------------
+        # -----------------------------------------------------
 
-        seen = set()
+        seen: set[str] = set()
 
         for group in [
-
             reference.prerequisites,
-
             reference.related_topics,
-
             reference.related_systems,
-
             reference.advanced_topics,
-
         ]:
 
             for item in group:
@@ -120,19 +85,15 @@ class CrossReferenceValidator:
                 if item.article in seen:
 
                     issues.append(
-
-                        CrossReferenceIssue(
-
+                        Issue(
                             severity="Warning",
-
                             article=reference.article,
-
+                            category="CrossReference",
                             message=f"Duplicate reference: {item.article}",
-
                         )
-
                     )
 
-                seen.add(item.article)
+                else:
+                    seen.add(item.article)
 
         return issues

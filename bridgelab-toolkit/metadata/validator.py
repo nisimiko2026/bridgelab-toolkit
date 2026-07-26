@@ -5,25 +5,7 @@ Metadata Validator
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-
-from core.models import Article
-
-
-# ============================================================
-# Validation Issue
-# ============================================================
-
-@dataclass(slots=True)
-class MetadataIssue:
-
-    severity: str
-
-    field: str
-
-    article: str
-
-    message: str
+from core.models import Article, Issue
 
 
 # ============================================================
@@ -33,29 +15,18 @@ class MetadataIssue:
 class MetadataValidator:
 
     REQUIRED_FIELDS = [
-
         "title",
-
         "description",
-
         "category",
-
         "difficulty",
-
         "last_updated",
-
     ]
 
     VALID_DIFFICULTY = {
-
         "Beginner",
-
         "Intermediate",
-
         "Advanced",
-
         "Expert",
-
     }
 
     # --------------------------------------------------------
@@ -63,16 +34,13 @@ class MetadataValidator:
     def validate(
         self,
         articles: list[Article],
-    ) -> list[MetadataIssue]:
+    ) -> list[Issue]:
 
-        issues = []
+        issues: list[Issue] = []
 
         for article in articles:
-
             issues.extend(
-
                 self._validate_article(article)
-
             )
 
         return issues
@@ -82,9 +50,9 @@ class MetadataValidator:
     def _validate_article(
         self,
         article: Article,
-    ) -> list[MetadataIssue]:
+    ) -> list[Issue]:
 
-        issues = []
+        issues: list[Issue] = []
 
         meta = article.metadata
 
@@ -97,23 +65,15 @@ class MetadataValidator:
             value = getattr(meta, field)
 
             if value:
-
                 continue
 
             issues.append(
-
-                MetadataIssue(
-
+                Issue(
                     severity="Error",
-
-                    field=field,
-
                     article=article.filename,
-
+                    category=field,
                     message=f"Missing {field}",
-
                 )
-
             )
 
         # ----------------------------------------------------
@@ -121,29 +81,16 @@ class MetadataValidator:
         # ----------------------------------------------------
 
         if (
-
             meta.difficulty
-
-            and meta.difficulty
-
-            not in self.VALID_DIFFICULTY
-
+            and meta.difficulty not in self.VALID_DIFFICULTY
         ):
-
             issues.append(
-
-                MetadataIssue(
-
+                Issue(
                     severity="Warning",
-
-                    field="difficulty",
-
                     article=article.filename,
-
+                    category="difficulty",
                     message="Invalid difficulty",
-
                 )
-
             )
 
         # ----------------------------------------------------
@@ -151,27 +98,16 @@ class MetadataValidator:
         # ----------------------------------------------------
 
         if (
-
             meta.description
-
             and len(meta.description) < 30
-
         ):
-
             issues.append(
-
-                MetadataIssue(
-
+                Issue(
                     severity="Warning",
-
-                    field="description",
-
                     article=article.filename,
-
+                    category="description",
                     message="Description too short",
-
                 )
-
             )
 
         # ----------------------------------------------------
@@ -179,21 +115,13 @@ class MetadataValidator:
         # ----------------------------------------------------
 
         if len(meta.tags) != len(set(meta.tags)):
-
             issues.append(
-
-                MetadataIssue(
-
+                Issue(
                     severity="Warning",
-
-                    field="tags",
-
                     article=article.filename,
-
+                    category="tags",
                     message="Duplicate tags",
-
                 )
-
             )
 
         return issues

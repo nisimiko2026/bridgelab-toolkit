@@ -79,8 +79,8 @@ class RelationshipAnalyzer:
                 continue
 
             if (
-                article.category
-                and article.category == other.category
+                article.metadata.category
+                and article.metadata.category == other.metadata.category
             ):
 
                 result.append(
@@ -109,9 +109,9 @@ class RelationshipAnalyzer:
                 continue
 
             if (
-                article.subcategory
-                and article.subcategory
-                == other.subcategory
+                article.metadata.subcategory
+                and article.metadata.subcategory
+                == other.metadata.subcategory
             ):
 
                 result.append(

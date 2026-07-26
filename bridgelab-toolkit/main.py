@@ -18,6 +18,9 @@ from commands.acronyms import run as acronyms_command
 from commands.bibliography import run as bibliography_command
 from commands.knowledge import run as knowledge_command
 from commands.build import run as build_command
+from commands.enrich import run as enrich_command
+
+
 
 
 # ============================================================
@@ -190,7 +193,24 @@ def build(
 
     build_command(root)
 
+# ============================================================
+# Enrich
+# ============================================================
 
+@app.command()
+def enrich(
+    root: Path = typer.Option(
+        REPOSITORY,
+        "--root",
+        "-r",
+        help="BridgeLab repository root",
+    ),
+):
+    """
+    Add missing YAML metadata to Markdown files.
+    """
+
+    enrich_command(root)
 # ============================================================
 # Main
 # ============================================================
@@ -203,3 +223,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
+
