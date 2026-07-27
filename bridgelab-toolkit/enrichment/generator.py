@@ -6,8 +6,9 @@ Metadata Generator
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import date
 
-from core.models import Article
+from core.models import Article, Metadata
 
 
 # ============================================================
@@ -17,59 +18,70 @@ from core.models import Article
 @dataclass(slots=True)
 class MetadataGenerator:
     """
-    Generates default YAML front matter.
+    Generate suggested metadata for an article.
     """
+
+    # ========================================================
+    # Generate
+    # ========================================================
 
     def generate(
         self,
         article: Article,
-    ) -> str:
+    ) -> Metadata:
         """
-        Generate a metadata block.
-        """
-
-        title = (
-            article.metadata.title
-            or article.filename.replace("-", " ").replace(".md", "").title()
-        )
-
-        return (
-            "---\n"
-            f"title: {title}\n"
-            "description:\n"
-            "category:\n"
-            "subcategory:\n"
-            "difficulty:\n"
-            "tags: []\n"
-            "systems: []\n"
-            "aliases: []\n"
-            "acronyms: []\n"
-            "references: []\n"
-            "last_updated:\n"
-            "status: Draft\n"
-            "---\n\n"
-        )
-
-    def has_metadata(
-        self,
-        text: str,
-    ) -> bool:
-        """
-        Return True if the document already contains YAML front matter.
+        Generate metadata inferred from the article.
         """
 
-        text = text.lstrip()
+        metadata = Metadata()
 
-        if not text.startswith("---"):
-            return False
+        # ----------------------------------------------------
+        # Title
+        # ----------------------------------------------------
 
-        lines = text.splitlines()
+        metadata.title = article.metadata.title
 
-        if len(lines) < 3:
-            return False
+        if not metadata.title:
 
-        for line in lines[1:]:
-            if line.strip() == "---":
-                return True
+            for heading in article.headings:
 
-        return False
+                if heading.level == 1:
+
+                    metadata.title = heading.title.strip()
+
+                    break
+
+        if not metadata.title:
+
+            metadata.title = (
+                article.filename
+                .replace("-", " ")
+                .replace(".md", "")
+                .title()
+            )
+
+        # ----------------------------------------------------
+        # Category / Subcategory
+        # ----------------------------------------------------
+
+        parts = str(article.relative_path).replace("\\", "/").split("/")
+
+        if len(parts) >= 2:
+            metadata.category = parts[0]
+
+        if len(parts) >= 3:
+            metadata.subcategory = parts[1]
+
+        # ----------------------------------------------------
+        # Status
+        # ----------------------------------------------------
+
+        metadata.status = "Draft"
+
+        # ----------------------------------------------------
+        # Last Updated
+        # ----------------------------------------------------
+
+        metadata.last_updated = date.today().isoformat()
+
+        return metadata
