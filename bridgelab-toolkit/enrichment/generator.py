@@ -18,7 +18,7 @@ from core.models import Article, Metadata
 @dataclass(slots=True)
 class MetadataGenerator:
     """
-    Generate suggested metadata for an article.
+    Generate metadata inferred from an article.
     """
 
     # ========================================================
@@ -30,7 +30,7 @@ class MetadataGenerator:
         article: Article,
     ) -> Metadata:
         """
-        Generate metadata inferred from the article.
+        Generate suggested metadata for an article.
         """
 
         metadata = Metadata()
@@ -39,49 +39,78 @@ class MetadataGenerator:
         # Title
         # ----------------------------------------------------
 
-        metadata.title = article.metadata.title
-
-        if not metadata.title:
-
-            for heading in article.headings:
-
-                if heading.level == 1:
-
-                    metadata.title = heading.title.strip()
-
-                    break
-
-        if not metadata.title:
-
-            metadata.title = (
-                article.filename
-                .replace("-", " ")
-                .replace(".md", "")
-                .title()
-            )
+        metadata.title = self._title(article)
 
         # ----------------------------------------------------
         # Category / Subcategory
         # ----------------------------------------------------
 
-        parts = str(article.relative_path).replace("\\", "/").split("/")
+        category, subcategory = self._categories(article)
 
-        if len(parts) >= 2:
-            metadata.category = parts[0]
-
-        if len(parts) >= 3:
-            metadata.subcategory = parts[1]
+        metadata.category = category
+        metadata.subcategory = subcategory
 
         # ----------------------------------------------------
-        # Status
+        # Defaults
         # ----------------------------------------------------
 
         metadata.status = "Draft"
-
-        # ----------------------------------------------------
-        # Last Updated
-        # ----------------------------------------------------
-
         metadata.last_updated = date.today().isoformat()
 
         return metadata
+
+    # ========================================================
+    # Helpers
+    # ========================================================
+
+    def _title(
+        self,
+        article: Article,
+    ) -> str:
+        """
+        Determine the article title.
+        """
+
+        if article.metadata.title:
+            return article.metadata.title
+
+        for heading in article.headings:
+
+            if heading.level == 1:
+                return heading.title.strip()
+
+        return (
+            article.filename
+            .replace("-", " ")
+            .replace(".md", "")
+            .title()
+        )
+
+    # --------------------------------------------------------
+
+    def _categories(
+        self,
+        article: Article,
+    ) -> tuple[str, str]:
+        """
+        Determine category and subcategory
+        from the article path.
+        """
+
+        parts = article.relative_path.parts
+
+        # Temporary debugging
+        print(article.relative_path)
+        print(parts)
+        print()
+
+        category = ""
+        subcategory = ""
+
+        if len(parts) >= 2:
+            category = parts[0].replace("-", " ").title()
+
+        if len(parts) >= 3:
+            subcategory = parts[1].replace("-", " ").title()
+
+        return category, subcategory
