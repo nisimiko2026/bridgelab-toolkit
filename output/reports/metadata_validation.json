@@ -1,0 +1,3164 @@
+[
+    {
+        "severity": "Warning",
+        "article": "acronyms.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bibliography.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "cc-nily-nisim.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "cc-nily-nisim.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "convention-cards-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bid-competitive-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "good–bad-2nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "good–bad-2nt.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "jordan-2nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "jordan-2nt.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leaping-michaels.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leaping-michaels.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "lionel.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "lionel.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "sandwich-nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "sandwich-nt.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "scrambling-2nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "scrambling-2nt.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "conventions-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bid-defence-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defense-against-precision.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defense-against-precision.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defense-against-strong-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defense-against-strong-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "doubles-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "lead-directing-double.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "lead-directing-double.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "lightner-double.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "lightner-double.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "optional-double.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "optional-double.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rosenkranz-double.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rosenkranz-double.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rosenkranz-redouble.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rosenkranz-redouble.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "snapdragon-double.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "snapdragon-double.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "sos-redouble.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "sos-redouble.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "support-redouble.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "support-redouble.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "common-mistakes.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "game-try-comparison.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-guides.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opener-evaluation.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responder-evaluation.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "simple-game-try-agreements.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "invitations-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "benjamin-two-bids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "benjamin-two-bids.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-opening-bids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "muiderberg-two.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "muiderberg-two.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-2-diamonds.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-2-diamonds.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "moscito-relay.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "moscito-relay.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "relay-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "symmetric-relay.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "symmetric-relay.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "2nt-inquiry-over-weak-2.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "crawling-stayman.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "crawling-stayman.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "five-card-stayman.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "five-card-stayman.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "garbage-stayman.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "garbage-stayman.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "inverted-minors.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "mixed-raise.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "preemptive.raise.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "preemptive.raise.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "responding-to-multi-2diamond.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responding-to-multi-2diamond.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-gambling-3nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responses-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "transfer-walsh.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "transfer-walsh.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "two-way-stayman.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "two-way-stayman.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "walsh.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "walsh.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "wolff-signoff.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "wolff-signoff.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "xyz.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "xyz.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "ace-asking-bid.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ace-asking-bid.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "asking-bid.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "asking-bid.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "control-asking-bid.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "control-asking-bid.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "control-bidding.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "control-bidding.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "exclusion-blackwood.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "exclusion-blackwood.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "grand-slam-force.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "grand-slam-force.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "josephine.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "josephine.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "kickback.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "kickback.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "last-train.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "last-train.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "minorwood.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "minorwood.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "redwood.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "redwood.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "serious-3nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "serious-3nt.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "slam-bid-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "specific-king-ask.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "specific-king-ask.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "spiral-scan.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "spiral-scan.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-asking-bid.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-asking-bid.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-transfers.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "minor-suit-transfers.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "minor-suit-transfers.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "south-african-texas.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "south-african-texas.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "transfer-lebensohl.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "transfer-lebensohl.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "transfers-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "1-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "1-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "1-diamond.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "1-heart.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "1-spade.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "1nt-opening.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "2-clubs.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "2nt-opening.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "four-level-preempts.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "natural-opening-bids-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-bids-overview.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-requirements.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "three-level-preempts.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "weak-two-bids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "jump-rebids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "natural-rebid-indexs.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opener-after-1nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opener-after-2nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opener-after-major.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opener-after-minor.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-rebids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rebids-after-preempts.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responder-rebids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "limit-raise.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "natural-responses-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "raising-partners-major.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "raising-partners-minor.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "respond-preemptive-opening-in-3-level.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responding-to-opening-bids.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responding-with-balanced-hands.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "responding-with-unbalanced-hands.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-1-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-1-diamond.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-1nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-2-clubs.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-2nt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-four-level-preempt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-major-opening.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-three-level-preempt.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "response-to-weak-two.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "competitive-bidding-philosophy.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "competitive-bidding-philosophy.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "hand-evaluation.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "hand-evaluation.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "kaplan-rubens-hand-hvaluation.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "kaplan-rubens-hand-hvaluation.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "losing-trick-count.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "losing-trick-count.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "offensive-vs-defensive-values.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "offensive-vs-defensive-values.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "playing-tricks.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "playing-tricks.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "quick-tricks.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "quick-tricks.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-15.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-15.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-20.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-20.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-22.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-22.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "seat-position.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "seat-position.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "vulnerability.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "vulnerability.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "alert-procedures.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "alert-procedures.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "convention-cards.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "convention-cards.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "disclosure.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "disclosure.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "ethics-and-unauthorized-information.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ethics-and-unauthorized-information.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-principal-partnership.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "partnership-agreements.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "partnership-agreements.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "principals-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "benjamin-acol.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "benjamin-acol.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "blue-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "blue-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "carrot-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "carrot-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "chinese-precision.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "chinese-precision.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "culbertson.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "culbertson.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "ehaa.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ehaa.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "kaplan-sheinwold.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "kaplan-sheinwold.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "magic-diamond.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "magic-diamond.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "moscito.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "moscito.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "neapolitan-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "neapolitan-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-precision.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "roman-precision.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "roth-stone.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "roth-stone.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "sef.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "sef.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "standard-american.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "super-precision.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "super-precision.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "systems-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ultimate-club.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ultimate-club.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "wspolny-jezyk.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "wspolny-jezyk.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-lab-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-lab-index.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "duplicate-scoring.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "duplicate-scoring.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "duplicates-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "matchpoints-vs-imps.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "matchpoints-vs-imps.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "glossary.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "glossary.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-declarer.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-declarer.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-defenders.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-defenders.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-distribution.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-distribution.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-losers.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-losers.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-points.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-points.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-shape.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-shape.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-the-hand.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-the-hand.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-winners.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-winners.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "inference.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "inference.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "placing-the-card.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "placing-the-card.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "bath-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bath-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "coup-en-passant.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "coup-en-passant.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "coups-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "crocodile-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "deschapelles-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "devils-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "devils-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "grand-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "merrimac-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "merrimac-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "mortons-fork.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "mortons-fork.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "scissors-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "scissors-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "vienna-coup.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "vienna-coup.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "concealment.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "deception.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "deceptive-signals.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "false-carding.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-deceptive-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "elemination-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "elimination.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "elimination.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "endplay.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "endplay.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "exit-card.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "strip-and-endplay.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "throw-in.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "throw-in.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "avoidance-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "avoidance-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "communication.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "ducking.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ducking.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "establishing-suits.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "backward-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "deep-finesse.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "deep-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "delayed-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "double-finesse.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "double-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "finesse.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "finesses-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "first-round-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "intra-finesse.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "intra-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "marked-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "repeat-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "ruffing-finesse.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ruffing-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "two-way-finesse.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "general-techniques-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "loser-on-loser.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "loser-on-loser.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "overtake.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "preserving-entries.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "preserving-entries.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "safety-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "safety-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "unblock.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-declearer-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "communication-in-notrump.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "dangerous-opponent.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "establishing-long-suits.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "hold-up-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-notrump-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "keeping-the-lead.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "notrump-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "timing-in-notrump.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "choosing-a-line.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "creating-extra-tricks.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "end-position-analysis.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "end-position-analysis.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "entry-management.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "gathering-information.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "gathering-information.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "planning-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "planning-the-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "planning-the-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "preserving-entries.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "tempo.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "tempo.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "timing.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "timing.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "visualization.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "Inference.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "Inference.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "a-priori-and-a-posteriori-probabilities.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "combination-counts.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "conditional-probability.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "missing-honor-probabilities.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "odds-and-probabilities.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "odds-and-probabilities.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "percentage-plays.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "percentage-plays.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "probability-in-bridge.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "probability-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "restricted-choice.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "restricted-choice.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "suit-distributions.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "vacant-places.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "vacant-places.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "automatic-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "criss-cross-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "double-progressive-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "double-squeeze.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "double-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "positional-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "progressive-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "pseudo-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rectifying-the-count.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rectifying-the-count.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "simple-squeeze.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "simple-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "squeeze-without-the-count.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "squeezes-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "strip-squeeze.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "strip-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "triple-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-squeeze.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "cross-ruff.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "drawing-trumps.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "dummy-reversal.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "dummy-reversal.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-trump-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "ruffing-losers.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-control.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-management.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defence-counting-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-11.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-11.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "camouflage.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "camouflage.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defence-deception-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "false-carding.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "false-carding.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "false-signals.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "false-signals.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "avoiding-throw-in.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "endgame-defence-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "preventing-endplay.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "safe-exit.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "safe-exit.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-defence.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "counting-from-the-opening-lead.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "fourth-best.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "index-honor-leads.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aj10.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aj10.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-ak.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-ak.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-ak10.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-ak10.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-akj.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-akj.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-akq.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-akq.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aq.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aq.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aq10.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-aq10.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kq.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kq.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kq10.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kq10.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kqj.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-kqj.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-qj10.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-qj10.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-qj9.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-qj9.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "journalist-leads.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "journalist-leads.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "lead-partners-suit.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leading-from-honor-holdings.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-against-notrump.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-against-slam.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "leads-against-suit.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-leads-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-11.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-11.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-12.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "rule-of-12.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "rusinow.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "standard-leads.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "standard-leads.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "top-of-nothing.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "tthird-fifth.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "active-vs-passive-defense.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "active-vs-passive-defense.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "count-declarers.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "count-declarers.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defence-planning-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defensive-communication.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defensive-communication.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defensive-plan.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "defensive-plan.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "entry-killing.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "entry-killing.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "forcing-the-declarer.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-lead-strategy.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "opening-lead-strategy.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "safe-switches.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "timing-the-defence.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "attitude.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "attitude.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "count.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "count.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "italian-discard.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "italian-discard.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "lavinthal.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "lavinthal.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "signaling-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "signaling-priorities.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "signaling-priorities.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "smith-echo.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "smith-echo.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "standard-signals.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "standard-signals.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "suit-preference.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "suit-preference.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "upside-down-count-and-attitude.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "upside-down-count-and-attitude.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "active-defence.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "defence-techniques-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "discard-strategy.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "forcing-defence.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "passive-defence.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "promotion.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "promotion.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "surrounding-play.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "surrounding-play.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "trump-promotion.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "uppercut.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "uppercut.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "play-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "cover-an-honor-with-an-honor.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "cover-an-honor-with-an-honor.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "eight-ever-nine-never.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "play-principals-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "preservation-of-entries.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "second-hand-low.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "second-hand-low.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "third-hand-high.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "third-hand-high.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-glossary.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-glossary.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-laws-quick-reference.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-laws-quick-reference.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-terminology.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "bridge-terminology.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "common-bridge-abbreviations.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    },
+    {
+        "severity": "Warning",
+        "article": "common-bridge-abbreviations.md",
+        "category": "description",
+        "message": "Description too short"
+    },
+    {
+        "severity": "Warning",
+        "article": "references-index.md",
+        "category": "difficulty",
+        "message": "Invalid difficulty"
+    }
+]

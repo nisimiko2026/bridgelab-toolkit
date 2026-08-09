@@ -1,0 +1,1982 @@
+[
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/aspro",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/brozel",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/cappaletti",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/dont",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/gesthem",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/michaels-cue-bid"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/gesthem",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/unusual-2nt"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/gesthem",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/weak-jump-overcall"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/hamilton",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/meckwell",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/multi-landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/michaels-cue-bid",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/gesthem"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/michaels-cue-bid",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/unusual-2nt"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/michaels-cue-bid",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/weak-jump-overcall"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/aspro"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/brozel"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/cappaletti"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/dont"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/hamilton"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/landy"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/multi-landy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/meckwell"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/unusual-2nt",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/gesthem"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/unusual-2nt",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/michaels-cue-bid"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/unusual-2nt",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/weak-jump-overcall"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/weak-jump-overcall",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/gesthem"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/weak-jump-overcall",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/michaels-cue-bid"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/competitive/weak-jump-overcall",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/competitive/unusual-2nt"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/crash",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/suction"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/crash",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/twerb"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/suction",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/crash"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/suction",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/twerb"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/twerb",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/crash"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/defensive-methods/twerb",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/defensive-methods/suction"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/maximal-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/negative-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/penalty-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/re-opening-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/responsive-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/support-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/doubles/take-out-double",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/ekren",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/flannery"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/ekren",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/namyats"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/ekren",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/two-diamond-multi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/flannery",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/ekren"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/flannery",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/namyats"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/flannery",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/two-diamond-multi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/namyats",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/ekren"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/namyats",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/flannery"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/namyats",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/two-diamond-multi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/two-diamond-multi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/ekren"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/two-diamond-multi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/flannery"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/opening-bids/two-diamond-multi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/opening-bids/namyats"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/kokish-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/relay-principle"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/kokish-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/spiral-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/kokish-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/step-responses"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/relay-principle",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/kokish-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/relay-principle",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/spiral-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/relay-principle",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/step-responses"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/spiral-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/kokish-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/spiral-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/relay-principle"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/spiral-relay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/step-responses"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/step-responses",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/kokish-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/step-responses",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/relay-principle"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/relay/step-responses",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/relay/spiral-relay"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/Jacoby-notrump",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/bergen-raises"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/Jacoby-notrump",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/drury"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/Jacoby-notrump",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/splinter"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/Jacoby-notrump",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/swiss-raise"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/bergen-raises",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/Jacoby-notrump"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/bergen-raises",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/drury"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/bergen-raises",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/splinter"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/bergen-raises",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/swiss-raise"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/drury",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/Jacoby-notrump"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/drury",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/bergen-raises"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/drury",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/splinter"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/drury",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/swiss-raise"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/feature-ask",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/ogust"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/fourth-suit-forcing",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/new-minor-forcing"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/rubensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl-after-1nt-doubled",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/minor-suit-stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/lebensohl-after-1nt-doubled",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/smolen"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/minor-suit-stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl-after-1nt-doubled"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/minor-suit-stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/smolen"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/new-minor-forcing",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/fourth-suit-forcing"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/ogust",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/feature-ask"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/puppet-stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/puppet-stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/jacoby-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/puppet-stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/texas-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/maximal-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/negative-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/penalty-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/re-opening-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/responsive-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/support-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/doubles/take-out-double"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/rubensohl",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/smolen",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/lebensohl-after-1nt-doubled"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/smolen",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/minor-suit-stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/splinter",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/Jacoby-notrump"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/splinter",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/bergen-raises"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/splinter",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/drury"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/splinter",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/swiss-raise"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/puppet-stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/jacoby-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/stayman",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/texas-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/swiss-raise",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/Jacoby-notrump"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/swiss-raise",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/bergen-raises"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/swiss-raise",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/drury"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/responses/swiss-raise",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/splinter"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/cue-bidding"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/dopi-ropi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/gerber"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/roman-key-card-blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/cue-bidding",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/cue-bidding",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/dopi-ropi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/cue-bidding",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/gerber"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/cue-bidding",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/roman-key-card-blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/dopi-ropi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/dopi-ropi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/cue-bidding"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/dopi-ropi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/gerber"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/dopi-ropi",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/roman-key-card-blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/gerber",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/gerber",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/cue-bidding"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/gerber",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/dopi-ropi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/gerber",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/roman-key-card-blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/roman-key-card-blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/blackwood"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/roman-key-card-blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/cue-bidding"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/roman-key-card-blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/dopi-ropi"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/slam-conventions/roman-key-card-blackwood",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/slam-conventions/gerber"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/jacoby-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/puppet-stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/jacoby-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/jacoby-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/texas-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/texas-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/puppet-stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/texas-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/responses/stayman"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/conventions/transfers/texas-transfers",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/conventions/transfers/jacoby-transfers"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/2-over-1",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/acol"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/2-over-1",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/sayc"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/acol",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/2-over-1"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/acol",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/sayc"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/sayc",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/2-over-1"
+    },
+    {
+        "severity": "Warning",
+        "article": "bidding/systems/sayc",
+        "category": "CrossReference",
+        "message": "Duplicate reference: bidding/systems/acol"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/declarer-play/planning/preserving-entries",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/declarer-play/planning/transportation"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/declarer-play/planning/transportation",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/declarer-play/planning/preserving-entries"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/avoiding-throw-in",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/endgame-defence/preventing-endplay",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/opening-leads/counting-from-the-opening-lead",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/forcing-the-declarer",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/safe-switches",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/planning/timing-the-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/active-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/discard-strategy",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/forcing-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/passive-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/avoiding-throw-in"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/endgame-defence/preventing-endplay"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/opening-leads/counting-from-the-opening-lead"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/forcing-the-declarer"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/safe-switches"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/planning/timing-the-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/active-defence"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/discard-strategy"
+    },
+    {
+        "severity": "Warning",
+        "article": "play/defence/techniques/passive-defence",
+        "category": "CrossReference",
+        "message": "Duplicate reference: play/defence/techniques/forcing-defence"
+    }
+]

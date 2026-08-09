@@ -1,0 +1,122 @@
+# ============================================================
+# BridgeLab Toolkit
+# Aliases
+# ============================================================
+
+# ------------------------------------------------------------
+# Bidding Systems
+# ------------------------------------------------------------
+
+precision:
+  - precision club
+  - precision system
+  - precision bidding
+
+two over one:
+  - 2/1
+  - 2 over 1
+  - 2/1 game force
+  - two-over-one
+  - two over one game force
+
+sayc:
+  - standard american yellow card
+
+strong club:
+  - strong club system
+  - artificial club
+
+acol:
+  - acol system
+
+roman club:
+  - roman
+
+blue club:
+  - blue club system
+
+mini roman:
+  - mini-roman
+
+# ------------------------------------------------------------
+# Conventions
+# ------------------------------------------------------------
+
+stayman:
+  - stayman convention
+
+jacoby transfer:
+  - transfer
+  - transfers
+  - jacoby transfers
+
+negative double:
+  - neg double
+  - negative dbl
+
+takeout double:
+  - take out double
+  - take-out double
+  - t/o double
+
+responsive double:
+  - responsive dbl
+
+support double:
+  - support dbl
+
+penalty double:
+  - penalty dbl
+
+michaels cue bid:
+  - michaels
+  - michaels cuebid
+  - michaels cuebid
+
+unusual 2nt:
+  - unusual two notrump
+  - unusual nt
+
+blackwood:
+  - blackwood convention
+
+roman keycard:
+  - rkcb
+  - roman key card
+  - keycard blackwood
+
+gerber:
+  - gerber convention
+
+lebensohl:
+  - lebenshol
+
+drury:
+  - reverse drury
+
+gazilli:
+  - gazilli convention
+
+# ------------------------------------------------------------
+# Competitive Methods
+# ------------------------------------------------------------
+
+crash:
+  - c.r.a.s.h.
+
+croc:
+  - croc defense
+
+dont:
+  - d.o.n.t.
+
+mathe:
+  - mathe defense
+
+multi:
+  - multi 2♦
+  - multi 2d
+  - multi two diamonds
+
+namyats:
+  - namyat
