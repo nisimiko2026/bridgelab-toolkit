@@ -63,7 +63,7 @@ class Article:
     id: str
     filename: str
     path: Path
-    relative_path: str
+    relative_path: Path
     directory: str
 
     metadata: Metadata = field(default_factory=Metadata)

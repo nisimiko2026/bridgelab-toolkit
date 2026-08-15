@@ -3,6 +3,7 @@ BridgeLab Toolkit
 Configuration
 """
 
+import os
 from pathlib import Path
 
 
@@ -21,7 +22,12 @@ ROOT = PROJECT
 
 # BridgeLab Markdown repository
 
-REPOSITORY = ROOT.parent / "knowladge"
+REPOSITORY = Path(
+    os.environ.get(
+        "BRIDGELAB_REPOSITORY",
+        ROOT.parent / "knowladge",
+    )
+).expanduser().resolve()
 
 
 # ============================================================
