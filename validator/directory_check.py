@@ -1,8 +1,11 @@
+from core.models import Article, Issue
+
+
 class DirectoryCheck:
 
-    def run(self, articles):
+    def run(self, articles: list[Article]) -> list[Issue]:
 
-        report = []
+        report: list[Issue] = []
 
         directories = {
 
@@ -12,7 +15,10 @@ class DirectoryCheck:
 
         }
 
-        for directory in directories:
+        for directory in sorted(
+            directories,
+            key=lambda path: path.as_posix(),
+        ):
 
             has_index = any(
 
@@ -27,9 +33,12 @@ class DirectoryCheck:
             if not has_index:
 
                 report.append(
-
-                    f"{directory}: no index file"
-
+                    Issue(
+                        severity="Warning",
+                        article=directory.as_posix(),
+                        category="Directory",
+                        message="No index file",
+                    )
                 )
 
         return report

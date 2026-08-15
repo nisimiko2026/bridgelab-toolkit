@@ -1,26 +1,38 @@
-from collections import Counter
+from collections import defaultdict
+
+from core.models import Article, Issue
 
 
 class DuplicateCheck:
 
-    def run(self, articles):
+    def run(self, articles: list[Article]) -> list[Issue]:
 
-        report = []
+        report: list[Issue] = []
 
-        names = Counter()
+        names: dict[str, list[Article]] = defaultdict(list)
 
         for article in articles:
 
-            names[article.filename] += 1
+            names[article.filename].append(article)
 
-        for name, count in names.items():
+        for name in sorted(names):
 
-            if count > 1:
+            duplicates = names[name]
+
+            if len(duplicates) > 1:
+
+                subject = min(
+                    article.relative_path.as_posix()
+                    for article in duplicates
+                )
 
                 report.append(
-
-                    f"Duplicate filename: {name}"
-
+                    Issue(
+                        severity="Error",
+                        article=subject,
+                        category="Filename",
+                        message=f"Duplicate filename: {name}",
+                    )
                 )
 
         return report

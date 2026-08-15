@@ -1,5 +1,7 @@
 import re
 
+from core.models import Article, Issue
+
 
 class FilenameCheck:
 
@@ -9,9 +11,9 @@ class FilenameCheck:
 
     )
 
-    def run(self, articles):
+    def run(self, articles: list[Article]) -> list[Issue]:
 
-        report = []
+        report: list[Issue] = []
 
         for article in articles:
 
@@ -22,9 +24,12 @@ class FilenameCheck:
             ):
 
                 report.append(
-
-                    f"Invalid filename: {article.filename}"
-
+                    Issue(
+                        severity="Error",
+                        article=article.relative_path.as_posix(),
+                        category="Filename",
+                        message=f"Invalid filename: {article.filename}",
+                    )
                 )
 
         return report
