@@ -22,8 +22,16 @@ class ArticleParser:
     # ==========================================================
 
     YAML_RE = re.compile(
-        r"^---\n(.*?)\n---",
+        r"^---\n(?:(.*?)\n)?---",
         re.DOTALL,
+    )
+
+    LIST_FIELDS = (
+        "tags",
+        "systems",
+        "aliases",
+        "acronyms",
+        "references",
     )
 
     HEADING_RE = re.compile(
@@ -122,9 +130,7 @@ class ArticleParser:
 
         try:
 
-            data = yaml.safe_load(
-                match.group(1)
-            )
+            data = yaml.safe_load(match.group(1) or "")
 
             if data is None:
                 return
@@ -133,6 +139,23 @@ class ArticleParser:
                 raise ValueError(
                     "YAML front matter must contain a mapping"
                 )
+
+            for field in self.LIST_FIELDS:
+
+                if field not in data:
+                    continue
+
+                value = data[field]
+
+                if not isinstance(value, list):
+                    raise ValueError(
+                        f"YAML field '{field}' must be a list"
+                    )
+
+                if not all(isinstance(item, str) for item in value):
+                    raise ValueError(
+                        f"YAML field '{field}' must contain strings"
+                    )
 
             article.metadata = Metadata(
 

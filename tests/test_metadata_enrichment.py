@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import tempfile
 import unittest
+from dataclasses import asdict
 from pathlib import Path
 from unittest.mock import patch
 
@@ -105,13 +106,22 @@ class MetadataEnrichmentTests(unittest.TestCase):
             self.root,
             "article.md",
             "---\n"
-            "title: 'Quoted: # title'\n"
+            "title: 'Café: # title'\n"
             "description: |\n"
-            "  First: # value\n"
+            "  First: # valeur — שלום\n"
             "  Second line\n"
+            "category: Conventions\n"
+            "subcategory: Café\n"
+            "difficulty: Advanced\n"
             "tags: []\n"
             "systems: []\n"
+            "aliases:\n"
+            "  - Precision Club\n"
+            "acronyms:\n"
+            "  - PC\n"
             "references: []\n"
+            "last_updated: '2026-08-15'\n"
+            "status: Draft\n"
             "unknown_field:\n"
             "  nested: true\n"
             "---\n"
@@ -120,8 +130,8 @@ class MetadataEnrichmentTests(unittest.TestCase):
         repository = Repository(self.root)
         articles = repository.build()
         article = articles[0]
-        article.metadata.title = "Quoted: # title"
-        article.metadata.description = "First: # value\nSecond line\n"
+        article.metadata.title = "Café: # title"
+        article.metadata.description = "First: # valeur — שלום\nSecond line\n"
         writer = MetadataWriter()
 
         self.assertTrue(writer.write(article))
@@ -129,11 +139,110 @@ class MetadataEnrichmentTests(unittest.TestCase):
         yaml_text, rewritten_body = rewritten.split("---\n", 2)[1:]
         parsed = yaml.safe_load(yaml_text)
 
-        self.assertEqual(parsed["title"], "Quoted: # title")
-        self.assertEqual(parsed["description"], "First: # value\nSecond line\n")
+        self.assertEqual(parsed["title"], "Café: # title")
+        self.assertEqual(
+            parsed["description"],
+            "First: # valeur — שלום\nSecond line\n",
+        )
         self.assertEqual(parsed["tags"], [])
+        self.assertEqual(parsed["aliases"], ["Precision Club"])
+        self.assertEqual(parsed["acronyms"], ["PC"])
         self.assertEqual(parsed["unknown_field"], {"nested": True})
         self.assertEqual(rewritten_body, body)
+
+    def test_crlf_and_empty_front_matter_are_valid(self) -> None:
+        crlf_source = write_article(
+            self.root,
+            "crlf.md",
+            "---\r\ntitle: CRLF\r\ntags: []\r\n---\r\n# CRLF\r\n",
+        )
+        empty_source = write_article(
+            self.root,
+            "empty.md",
+            "---\n---\n# Empty\n",
+        )
+        articles = Repository(self.root).build()
+        crlf_article = next(article for article in articles if article.id == "crlf")
+        empty_article = next(article for article in articles if article.id == "empty")
+        writer = MetadataWriter()
+
+        self.assertIsNone(crlf_article.metadata_error)
+        self.assertIsNone(empty_article.metadata_error)
+        self.assertEqual(crlf_article.metadata.title, "CRLF")
+        self.assertTrue(writer.write(crlf_article))
+        self.assertTrue(writer.write(empty_article))
+        self.assertIn("# CRLF\r\n", read_raw_text(crlf_source))
+        self.assertEqual(read_raw_text(empty_source).count("---\n"), 2)
+
+    def test_enrichment_round_trip_preserves_all_known_metadata_fields(self) -> None:
+        source = write_article(
+            self.root,
+            "precision.md",
+            "---\n"
+            "title: 'Précision: # système'\n"
+            "description: |\n"
+            "  Multiline description\n"
+            "  with Unicode: שלום\n"
+            "category: Conventions\n"
+            "subcategory: Systems\n"
+            "difficulty: Advanced\n"
+            "tags:\n  - manual-tag\n"
+            "systems:\n  - manual-system\n"
+            "aliases:\n  - Precision Club\n"
+            "acronyms:\n  - PC\n"
+            "references:\n  - manual/reference\n"
+            "last_updated: '2026-08-15'\n"
+            "status: Draft\n"
+            "---\n"
+            "# Precision\n\nPrecision is an opening system.\n",
+        )
+        articles = Repository(self.root).build()
+        article = articles[0]
+        original_id = article.id
+
+        build_generator(articles).enrich_all(articles)
+        expected = asdict(article.metadata)
+        self.assertTrue(MetadataWriter().write(article))
+
+        reparsed = Repository(self.root).build()[0]
+
+        self.assertEqual(reparsed.id, original_id)
+        self.assertEqual(asdict(reparsed.metadata), expected)
+
+    def test_scalar_list_fields_are_skipped_without_writing(self) -> None:
+        for field in ("tags", "systems", "aliases", "acronyms", "references"):
+            with self.subTest(field=field):
+                source = write_article(
+                    self.root,
+                    f"{field}.md",
+                    f"---\n{field}: scalar\n---\n# Article\n",
+                )
+                original = source.read_bytes()
+                article = next(
+                    article
+                    for article in Repository(self.root).build()
+                    if article.id == field
+                )
+                writer = MetadataWriter()
+
+                self.assertIn(field, article.metadata_error or "")
+                self.assertFalse(writer.write(article))
+                self.assertIn(field, writer.skipped[0][1])
+                self.assertEqual(source.read_bytes(), original)
+
+    def test_bom_prefixed_front_matter_is_skipped_without_writing(self) -> None:
+        source = write_article(
+            self.root,
+            "bom.md",
+            "\ufeff---\ntitle: Existing\n---\n# Article\n",
+        )
+        original = source.read_bytes()
+        article = Repository(self.root).build()[0]
+        writer = MetadataWriter()
+
+        self.assertFalse(writer.write(article))
+        self.assertIn("UTF-8 BOM", writer.skipped[0][1])
+        self.assertEqual(source.read_bytes(), original)
 
     def test_generated_values_merge_with_manual_values_deterministically(self) -> None:
         write_article(
@@ -197,8 +306,10 @@ class MetadataEnrichmentTests(unittest.TestCase):
         article = Repository(self.root).build()[0]
         article.metadata.title = "Article"
 
-        with patch("enrichment.writer.os.replace", side_effect=OSError("fail")):
+        with patch("enrichment.writer.os.replace", side_effect=OSError("fail")) as replace:
             with self.assertRaises(OSError):
                 MetadataWriter().write(article)
 
         self.assertEqual(source.read_text(encoding="utf-8"), original)
+        temporary_path = Path(replace.call_args.args[0])
+        self.assertFalse(temporary_path.exists())

@@ -32,7 +32,7 @@ class MetadataWriter:
     )
 
     FRONT_MATTER_RE = re.compile(
-        r"\A---[ \t]*(?:\r\n|\n)(.*?)(?:\r\n|\n)---[ \t]*(?:\r\n|\n)",
+        r"\A---[ \t]*(?:\r\n|\n)(?:(.*?)(?:\r\n|\n))?---[ \t]*(?:\r\n|\n)",
         re.DOTALL,
     )
 
@@ -166,6 +166,13 @@ class MetadataWriter:
         Parse existing front matter and retain the body byte-for-byte.
         """
 
+        if text.startswith("\ufeff---"):
+            self._skip(
+                article,
+                "UTF-8 BOM before YAML front matter; article was not modified",
+            )
+            return None, ""
+
         if not text.startswith("---"):
             return {}, text
 
@@ -179,7 +186,7 @@ class MetadataWriter:
             return None, ""
 
         try:
-            data = yaml.safe_load(match.group(1))
+            data = yaml.safe_load(match.group(1) or "")
         except yaml.YAMLError as error:
             self._skip(article, f"Malformed YAML front matter: {error}")
             return None, ""
