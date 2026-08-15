@@ -14,6 +14,7 @@ from config import REPOSITORY
 from commands.scan import run as scan_command
 from commands.debug import run as debug_command
 from commands.enrich import run as enrich_command
+from commands.validate import run as validate_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -86,6 +87,16 @@ def enrich(
     Enrich repository metadata.
     """
     enrich_command(root, apply=apply)
+
+
+@app.command()
+def validate(
+    root: Path = repository_option(),
+) -> None:
+    """
+    Validate repository health.
+    """
+    validate_command(root)
 
 
 # ============================================================
