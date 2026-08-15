@@ -24,6 +24,7 @@ from enrichment.writer import MetadataWriter
 
 def run(
     root: Path,
+    apply: bool = False,
 ) -> None:
     """
     Enrich repository metadata.
@@ -79,15 +80,41 @@ def run(
     # Write metadata
     #
 
-    typer.echo("Writing metadata...")
+    if apply:
 
-    updated = writer.write_all(articles)
+        typer.echo("Writing metadata...")
+
+        updated = writer.write_all(articles)
+
+        for article, message in writer.skipped:
+            typer.secho(
+                f"Skipped {article.relative_path.as_posix()}: {message}",
+                fg=typer.colors.YELLOW,
+            )
+
+        typer.echo()
+        typer.echo(f"Updated articles : {updated}")
+
+        typer.secho(
+            "Metadata enrichment completed.",
+            fg=typer.colors.GREEN,
+        )
+
+        return
+
+    proposed = writer.preview_all(articles)
+
+    for article, message in writer.skipped:
+        typer.secho(
+            f"Skipped {article.relative_path.as_posix()}: {message}",
+            fg=typer.colors.YELLOW,
+        )
 
     typer.echo()
 
-    typer.echo(f"Updated articles : {updated}")
+    typer.echo(f"Dry run: {proposed} articles would be updated.")
 
     typer.secho(
-        "Metadata enrichment completed.",
-        fg=typer.colors.GREEN,
+        "No source files were modified. Re-run with --apply to write changes.",
+        fg=typer.colors.YELLOW,
     )

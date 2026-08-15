@@ -75,6 +75,8 @@ class Article:
     lines: int = 0
     characters: int = 0
 
+    metadata_error: str | None = None
+
     def __str__(self) -> str:
 
         return (

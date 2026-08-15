@@ -105,11 +105,19 @@ class ArticleParser:
         self,
         article: Article,
         text: str,
-    ):
+    ) -> None:
+
+        article.metadata_error = None
 
         match = self.YAML_RE.search(text)
 
         if not match:
+
+            if text.startswith("---"):
+                article.metadata_error = (
+                    "Malformed YAML front matter: missing closing delimiter"
+                )
+
             return
 
         try:
@@ -118,8 +126,13 @@ class ArticleParser:
                 match.group(1)
             )
 
-            if not data:
+            if data is None:
                 return
+
+            if not isinstance(data, dict):
+                raise ValueError(
+                    "YAML front matter must contain a mapping"
+                )
 
             article.metadata = Metadata(
 
@@ -171,9 +184,11 @@ class ArticleParser:
 
             )
 
-        except Exception:
+        except Exception as error:
 
-            pass
+            article.metadata_error = (
+                f"Malformed YAML front matter: {error}"
+            )
 
     # ==========================================================
     # Headings

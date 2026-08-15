@@ -76,11 +76,16 @@ def debug(
 @app.command()
 def enrich(
     root: Path = repository_option(),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Write enriched metadata to source articles.",
+    ),
 ) -> None:
     """
     Enrich repository metadata.
     """
-    enrich_command(root)
+    enrich_command(root, apply=apply)
 
 
 # ============================================================
