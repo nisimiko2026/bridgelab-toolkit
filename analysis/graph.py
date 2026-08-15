@@ -50,7 +50,9 @@ class KnowledgeGraph:
 
             self.by_id[article.id] = article
 
-            self.by_path[article.relative_path] = article
+            self.by_path[
+                article.relative_path.as_posix().lower()
+            ] = article
 
             if article.metadata.category:
 
@@ -98,7 +100,7 @@ class KnowledgeGraph:
         Find an article by id, title, filename or path.
         """
 
-        query = query.lower().strip()
+        query = query.lower().strip().replace("\\", "/")
 
         #
         # ID
@@ -143,7 +145,7 @@ class KnowledgeGraph:
 
             if (
                 query in article.metadata.title.lower()
-                or query in article.relative_path.lower()
+                or query in article.relative_path.as_posix().lower()
             ):
                 return article
 

@@ -29,9 +29,9 @@ class RelatedAnalyzer:
         self,
         article: Article,
         limit: int = 10,
-    ) -> list[Article]:
+    ) -> list[tuple[Article, int]]:
         """
-        Return the most closely related articles.
+        Return the most closely related articles and their scores.
         """
 
         scores: list[tuple[int, Article]] = []
@@ -57,8 +57,8 @@ class RelatedAnalyzer:
         )
 
         return [
-            article
-            for _, article in scores[:limit]
+            (article, score)
+            for score, article in scores[:limit]
         ]
 
     # ========================================================

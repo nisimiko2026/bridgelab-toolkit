@@ -125,7 +125,7 @@ def run(
     assigned = sum(
         1
         for article in articles
-        if article.metadata.system
+        if article.metadata.systems
     )
 
     typer.echo(f"Articles with systems : {assigned}")

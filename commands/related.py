@@ -38,7 +38,7 @@ def run(
 
     analyzer = RelatedAnalyzer(graph)
 
-    article = graph.article(article_id)
+    article = graph.find_article(article_id)
 
     if article is None:
 
