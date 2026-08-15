@@ -46,7 +46,7 @@ class CrossReferenceReporter:
 
                 issue.severity,
 
-                issue.source,
+                issue.article,
 
                 issue.message,
 
@@ -108,7 +108,7 @@ class CrossReferenceReporter:
 
                 "severity": issue.severity,
 
-                "source": issue.source,
+                "source": issue.article,
 
                 "category": issue.category,
 

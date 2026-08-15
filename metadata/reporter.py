@@ -11,7 +11,7 @@ from pathlib import Path
 from rich.console import Console
 from rich.table import Table
 
-from .validator import MetadataIssue
+from core.models import Issue
 
 
 class MetadataReporter:
@@ -27,7 +27,7 @@ class MetadataReporter:
 
     def console_report(
         self,
-        issues: list[MetadataIssue],
+        issues: list[Issue],
     ):
 
         table = Table(
@@ -50,7 +50,7 @@ class MetadataReporter:
 
                 issue.article,
 
-                issue.field,
+                issue.category,
 
                 issue.message,
 
@@ -62,7 +62,7 @@ class MetadataReporter:
 
     def json_report(
         self,
-        issues: list[MetadataIssue],
+        issues: list[Issue],
         output: Path,
     ):
 
@@ -83,7 +83,7 @@ class MetadataReporter:
 
                     "article": issue.article,
 
-                    "field": issue.field,
+                    "field": issue.category,
 
                     "message": issue.message,
 
@@ -106,7 +106,7 @@ class MetadataReporter:
 
     def summary(
         self,
-        issues: list[MetadataIssue],
+        issues: list[Issue],
     ):
 
         errors = sum(

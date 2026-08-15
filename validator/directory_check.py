@@ -1,5 +1,3 @@
-from pathlib import Pat
-
 class DirectoryCheck:
 
     def run(self, articles):
