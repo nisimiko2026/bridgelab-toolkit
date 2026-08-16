@@ -131,9 +131,20 @@ def repair_apply(
         resolve_path=True,
     ),
     apply: bool = typer.Option(False, "--apply"),
+    include_low_confidence: bool = typer.Option(
+        False,
+        "--include-low-confidence",
+        help="Apply low-confidence proposals after explicit editorial review.",
+    ),
 ) -> None:
     """Apply medium/high-confidence repairs after backing up source files."""
-    repair_apply_command(root, plan, backup, apply)
+    repair_apply_command(
+        root,
+        plan,
+        backup,
+        apply,
+        include_low_confidence=include_low_confidence,
+    )
 
 
 # ============================================================
