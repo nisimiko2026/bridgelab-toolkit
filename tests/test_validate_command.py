@@ -81,13 +81,13 @@ class ValidateCommandTests(unittest.TestCase):
         self.assertEqual(source.read_bytes(), original)
 
     def test_warnings_only_exit_zero_and_display_warnings(self) -> None:
-        write_article(self.root, "topic.md", headings=("Overview",))
+        write_article(self.root, "topic.md", headings=())
 
         result = self.invoke()
 
         self.assertEqual(result.exit_code, 0, result.output)
         self.assertIn("Warnings", result.output)
-        self.assertIn("Missing heading 'Summary'", result.output)
+        self.assertIn("Missing introductory heading", result.output)
 
     def test_invalid_filename_exits_one_and_displays_errors(self) -> None:
         write_article(self.root, "Invalid_Name.md")
@@ -133,10 +133,10 @@ class ValidateCommandTests(unittest.TestCase):
         self.assertEqual(result.exit_code, 1, result.output)
         self.assertIn("Articles Checked: 1", result.output)
         self.assertIn("Errors      : 6", result.output)
-        self.assertIn("Warnings    : 4", result.output)
-        self.assertIn("Total Issues: 10", result.output)
+        self.assertIn("Warnings    : 3", result.output)
+        self.assertIn("Total Issues: 9", result.output)
         self.assertIn("Missing description", result.output)
-        self.assertIn("Missing heading 'Overview'", result.output)
+        self.assertIn("Missing introductory heading", result.output)
         self.assertIn("Duplicate tags", result.output)
 
     def test_explicit_root_works_from_another_current_directory(self) -> None:

@@ -82,28 +82,46 @@ class LegacyValidationContractTests(unittest.TestCase):
             "Duplicate filename: repeated.md",
         )
 
-    def test_heading_check_reports_missing_overview_and_summary(self) -> None:
+    def test_heading_check_reports_missing_introduction(self) -> None:
         issues = HeadingCheck().run([article("guide/article.md")])
 
         self.assert_issues(issues)
         self.assertEqual(
             [(issue.severity, issue.article, issue.category, issue.message)
              for issue in issues],
-            [
-                (
-                    "Warning",
-                    "guide/article.md",
-                    "Heading",
-                    "Missing heading 'Overview'",
-                ),
-                (
-                    "Warning",
-                    "guide/article.md",
-                    "Heading",
-                    "Missing heading 'Summary'",
-                ),
-            ],
+            [(
+                "Warning",
+                "guide/article.md",
+                "Heading",
+                "Missing introductory heading "
+                "(Overview, Introduction, Purpose, or Objectives)",
+            )],
         )
+
+    def test_heading_check_accepts_introduction_alternatives(self) -> None:
+        for heading in ("Overview", "Introduction", "Purpose", "Objectives"):
+            with self.subTest(heading=heading):
+                issues = HeadingCheck().run(
+                    [article("guide/article.md", headings=[heading])]
+                )
+                self.assertEqual(issues, [])
+
+    def test_heading_check_exempts_structural_documents(self) -> None:
+        articles = [
+            article("bridge-lab-index.md"),
+            article("glossary.md"),
+            article("references/books.md"),
+            article("bidding/convention-cards/system-card.md"),
+        ]
+
+        self.assertEqual(HeadingCheck().run(articles), [])
+
+    def test_heading_check_does_not_require_summary(self) -> None:
+        issues = HeadingCheck().run(
+            [article("play/technique.md", headings=["Overview"])]
+        )
+
+        self.assertEqual(issues, [])
 
     def test_directory_check_reports_missing_index_without_absolute_path(self) -> None:
         issues = DirectoryCheck().run([article("guide/article.md")])
