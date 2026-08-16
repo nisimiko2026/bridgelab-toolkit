@@ -18,7 +18,7 @@ The repair program is complete. The repository has no known structural, validati
 | Total validation issues | 0 |
 | Orphan articles | 0 |
 | Duplicate-title groups | 0 |
-| Toolkit tests passing | 68 |
+| Toolkit tests passing | 70 |
 | Toolkit scoped Git status | Clean |
 | Knowledge scoped Git status | Clean |
 
@@ -96,5 +96,5 @@ Required work: none.
 Optional housekeeping:
 
 - Mark historical plans as completed or superseded.
-- Archive old reports and backups according to the project's retention policy.
+- Retain dated repair backups for 30 days; use `cleanup-backups` in dry-run mode before applying deletion.
 - Continue running validation after future content changes.

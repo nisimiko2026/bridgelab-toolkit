@@ -40,6 +40,9 @@ DOCS = OUTPUT / "docs"
 
 REPORTS = OUTPUT / "reports"
 
+# Dated repair backups are retained for 30 full days.
+BACKUP_RETENTION_DAYS = 30
+
 
 # ============================================================
 # Repository Data

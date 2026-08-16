@@ -9,7 +9,7 @@ from pathlib import Path
 
 import typer
 
-from config import REPOSITORY, REPORTS
+from config import BACKUP_RETENTION_DAYS, REPOSITORY, REPORTS
 
 from commands.scan import run as scan_command
 from commands.debug import run as debug_command
@@ -22,6 +22,7 @@ from commands.resolve_duplicates import run as resolve_duplicates_command
 from commands.repair_spelling import run as repair_spelling_command
 from commands.repair_principles import run as repair_principles_command
 from commands.repair_systems import run as repair_systems_command
+from commands.backup_cleanup import run as backup_cleanup_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -270,6 +271,28 @@ def resolve_duplicates(
 ) -> None:
     """Apply the reviewed duplicate filename resolution."""
     resolve_duplicates_command(root, backup, apply)
+
+
+@app.command("cleanup-backups")
+def cleanup_backups(
+    backup_root: Path = typer.Option(
+        REPORTS.parent / "backups",
+        "--backup-root",
+        exists=True,
+        file_okay=False,
+        resolve_path=True,
+        help="Directory containing dated repair backup directories.",
+    ),
+    retention_days: int = typer.Option(
+        BACKUP_RETENTION_DAYS,
+        "--retention-days",
+        min=1,
+        help="Keep dated backups for this many full days.",
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+) -> None:
+    """List or remove dated backups older than the retention period."""
+    backup_cleanup_command(backup_root, retention_days, apply)
 
 
 # ============================================================

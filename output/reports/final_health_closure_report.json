@@ -10,7 +10,7 @@
     "validation_total_issues": 0,
     "orphan_articles": 0,
     "duplicate_title_groups": 0,
-    "tests_passed": 68,
+    "tests_passed": 70,
     "toolkit_scoped_status": "clean",
     "knowledge_scoped_status": "clean"
   },
@@ -64,7 +64,7 @@
   "outstanding_required_work": [],
   "optional_follow_up": [
     "Mark historical planning reports as completed or superseded.",
-    "Archive old reports and backups according to the project's retention policy.",
+    "Retain dated repair backups for 30 days and review cleanup-backups dry-run output before applying deletion.",
     "Run periodic validation after future content changes."
   ]
 }
