@@ -1,0 +1,2668 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "policy": "strict_applicability",
+  "summary": {
+    "articles_with_assignments": 147,
+    "assignments_reviewed": 510,
+    "high_confidence_articles": 31,
+    "high_confidence_removals": 111,
+    "medium_confidence_articles": 76,
+    "medium_confidence_removals": 314,
+    "manual_review_articles": 40,
+    "manual_review_assignments": 77
+  },
+  "classification_rules": {
+    "high": "Cross-labels on system profiles and labels on index pages.",
+    "medium": "Repeated bundles of four or more systems, characteristic of mention-based enrichment.",
+    "manual": "One to three assignments needing article-level semantic review."
+  },
+  "entries": [
+    {
+      "path": "bidding/bidding-index.md",
+      "title": "Bidding",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/balancing-double.md",
+      "title": "Balancing Double",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/balancing-notrump.md",
+      "title": "Balancing Notrump",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/cappelletti.md",
+      "title": "Cappelletti Convention",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/dont.md",
+      "title": "DONT Convention",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/equal-level-conversion-doubles.md",
+      "title": "Equal Level Conversion Doubles (ELCD)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/equal-level-conversion.md",
+      "title": "Equal Level Conversion (ELC)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/fit-jump-shift.md",
+      "title": "Fit Jump Shift",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/fit-jump.md",
+      "title": "Jump Shift",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/ghestem.md",
+      "title": "Ghestem Convention",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/meckwell.md",
+      "title": "Meckwell Convention",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/michaels-cue-bid.md",
+      "title": "Michaels Cue Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/negative-free-bid.md",
+      "title": "Negative Free Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/responsive-cue-bid.md",
+      "title": "Responsive Cue Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/top-and-bottom-cue-bid.md",
+      "title": "Top and Bottom Cue Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/unusual-2nt.md",
+      "title": "Unusual Notrump",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/unusual-vs-unusual.md",
+      "title": "Unusual vs. Unusual",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/weak-jump-overcall.md",
+      "title": "Weak Jump Overcalls",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/western-cue-bid.md",
+      "title": "Western Cue Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/conventions-index.md",
+      "title": "Conventions",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "precision"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/bid-defence-index.md",
+      "title": "Defensive Bidding",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/crash.md",
+      "title": "CRASH Convention",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-multi-2d.md",
+      "title": "Defense Against Multi 2♦",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-precision.md",
+      "title": "Defense Against Precision",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-strong-club.md",
+      "title": "Defense Against Strong Club",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/suction.md",
+      "title": "Suction Convention",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/twerb.md",
+      "title": "TWERB",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/doubles/lightner-double.md",
+      "title": "Lightner Double",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/2nt-game-try.md",
+      "title": "2NT Game Try",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/artificial-game-tries.md",
+      "title": "Artificial Game Tries",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/game-invitations.md",
+      "title": "Game Invitations",
+      "current_systems": [
+        "two over one"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/guides/common-mistakes.md",
+      "title": "Common Mistakes in Game Try Bidding",
+      "current_systems": [
+        "precision",
+        "sayc"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "sayc"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/guides/expert-game-try-agreements.md",
+      "title": "Expert Game Try Agreements",
+      "current_systems": [
+        "precision",
+        "sayc"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "sayc"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/guides/game-try-comparison.md",
+      "title": "Game Try Comparison",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/help-suit-game-try.md",
+      "title": "Help Suit Game Try (HSGT)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/long-suit-game-try.md",
+      "title": "Long Suit Game Try (LSGT)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/maximal-game-try.md",
+      "title": "Maximal Game Try",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/short-suit-game-try.md",
+      "title": "Short Suit Game Try (SSGT)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/two-way-game-try.md",
+      "title": "Two-Way Game Try",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/benjamin-two-bids.md",
+      "title": "Benjamin Two Bids",
+      "current_systems": [
+        "acol"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/gambling-3nt.md",
+      "title": "Gambling 3NT",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/index-opening-bids.md",
+      "title": "Opening Bids",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/roman-2-diamonds.md",
+      "title": "Roman 2 Diamonds",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "roman club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "roman club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/kokish-relay.md",
+      "title": "Kokish Relay",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/moscito-relay.md",
+      "title": "MOSCITO Relay",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/relay-bidding.md",
+      "title": "Relay Bidding",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/relay/relay-index.md",
+      "title": "Relay Bidding Index",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/relay/relay-principle.md",
+      "title": "Relay Principle",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/spiral-relay.md",
+      "title": "Spiral Relay",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/step-responses.md",
+      "title": "Step Responses",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/symmetric-relay.md",
+      "title": "Symmetric Relay",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/2nt-inquiry-after-multi-two-diamond.md",
+      "title": "2NT Inquiry after Multi 2♦",
+      "current_systems": [
+        "acol",
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "acol",
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/2nt-inquiry-over-weak-2.md",
+      "title": "2NT Inquiry over Weak Two",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/checkback-stayman.md",
+      "title": "Checkback Stayman",
+      "current_systems": [
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/inverted-minors.md",
+      "title": "Inverted Minors",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/jacoby-notrump.md",
+      "title": "Jacoby 2NT",
+      "current_systems": [
+        "precision",
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl-after-1nt-doubled.md",
+      "title": "Lebensohl after 1NT Doubled",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl-after-1nt-overcall.md",
+      "title": "Lebensohl after a 1NT Overcall",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl.md",
+      "title": "Lebensohl Convention",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/mixed-raise.md",
+      "title": "Mixed Raise",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-bergen.md",
+      "title": "Passed-Hand Bergen Raises",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-jacoby.md",
+      "title": "Passed-Hand Jacoby",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-splinter.md",
+      "title": "Passed Hand Splinter",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/preemptive-raise.md",
+      "title": "Preemptive.Raise",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/responding-to-multi-2diamond.md",
+      "title": "Responding To Multi 2Diamond",
+      "current_systems": [
+        "acol"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/response-to-gambling-3nt.md",
+      "title": "Response to Gambling 3NT",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/reverse-drury.md",
+      "title": "Reverse Drury",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/rubensohl.md",
+      "title": "Rubensohl Convention",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/smolen.md",
+      "title": "Smolen Convention",
+      "current_systems": [
+        "precision",
+        "standard american"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/soloway.md",
+      "title": "Soloway Jump Shifts",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/splinter.md",
+      "title": "Splinter Convention",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/two-way-checkback.md",
+      "title": "Two-Way Checkback",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/two-way-new-minor-forcing.md",
+      "title": "Two-Way New Minor Forcing",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/walsh.md",
+      "title": "Walsh",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "two over one"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/wolff-signoff.md",
+      "title": "Wolff Signoff",
+      "current_systems": [
+        "two over one"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/xyz.md",
+      "title": "XYZ",
+      "current_systems": [
+        "two over one"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/asking-bid.md",
+      "title": "Asking Bid",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/control-asking-bid.md",
+      "title": "Control-Asking Bid",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/cue-bidding.md",
+      "title": "Cue Bidding",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/kickback.md",
+      "title": "Kickback",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/roman-key-card-blackwood.md",
+      "title": "Roman Key Card Blackwood (RKCB)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/specific-king-ask.md",
+      "title": "Specific King Ask",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/trump-asking-bid.md",
+      "title": "Trump-Asking Bid",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/transfers/transfers-index.md",
+      "title": "Transfer Bids",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-club.md",
+      "title": "1 Club",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-diamond.md",
+      "title": "1♦ Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-heart.md",
+      "title": "1♥ Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-spade.md",
+      "title": "1♠ Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1nt-opening.md",
+      "title": "1NT Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/2-clubs.md",
+      "title": "2♣ Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/2nt-opening.md",
+      "title": "2NT Opening Bid",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/four-level-preempts.md",
+      "title": "Four-Level Preempts",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/opening-bids-overview.md",
+      "title": "Opening Bids Overview",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/opening-requirements.md",
+      "title": "Opening Requirements",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/three-level-preempts.md",
+      "title": "Three-Level Preempts",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/weak-two-bids.md",
+      "title": "Weak Two Bids",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/jump-rebids.md",
+      "title": "Jump Rebids",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-1nt.md",
+      "title": "Opener After a 1NT Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-2nt.md",
+      "title": "Opener After a 2NT Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-major.md",
+      "title": "Opener After a Major-Suit Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-minor.md",
+      "title": "Opener After a Minor-Suit Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opening-rebids.md",
+      "title": "Opening Rebids",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/rebids-after-preempts.md",
+      "title": "Rebids After Preempts",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/responder-rebids.md",
+      "title": "Responder Rebids",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/rebids/reverse-bid.md",
+      "title": "Reverse Bids",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/limit-raise.md",
+      "title": "Limit Raise",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/raising-partners-major.md",
+      "title": "Raising Partner's Major",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/raising-partners-minor.md",
+      "title": "Raising Partner's Minor",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/respond-preemptive-opening-in-3-level.md",
+      "title": "Responding to Preemptive Opening Bids at the Three Level",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/responding-with-balanced-hands.md",
+      "title": "Responding with Balanced Hands",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/responding-with-unbalanced-hands.md",
+      "title": "Responding with Unbalanced Hands",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-1-club.md",
+      "title": "Response to 1♣ Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-1-diamond.md",
+      "title": "Response to 1♦ Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-1nt.md",
+      "title": "Response to 1NT Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-2-clubs.md",
+      "title": "Response to 2♣ Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-2nt.md",
+      "title": "Response to 2NT Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-four-level-preempt.md",
+      "title": "Response to Four-Level Preempt",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-major-opening.md",
+      "title": "Response to a Major Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-three-level-preempt.md",
+      "title": "Response to Three-Level Preempt",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-weak-two.md",
+      "title": "Response to Weak Two Opening",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "medium",
+      "reason": "broad_repeated_system_bundle",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/alert-procedures.md",
+      "title": "Alert Procedures",
+      "current_systems": [
+        "precision"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/principles/partnership/partnership-agreements.md",
+      "title": "Partnership Agreements",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "manual",
+      "reason": "limited_assignment_set_requires_semantic_review",
+      "proposed_remove": [],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/principles/principles-index.md",
+      "title": "Bidding Principles",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/2-over-1.md",
+      "title": "2/1 Game Force (2/1 GF)",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/acol.md",
+      "title": "Acol System",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/systems/benjamin-acol.md",
+      "title": "Benjamin Acol",
+      "current_systems": [
+        "acol"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "acol"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/blue-club.md",
+      "title": "Blue Club",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "blue club"
+      ]
+    },
+    {
+      "path": "bidding/systems/carrot-club.md",
+      "title": "Carrot Club",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/chinese-precision.md",
+      "title": "Chinese Precision",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/culbertson.md",
+      "title": "Culbertson",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/ehaa.md",
+      "title": "Ehaa",
+      "current_systems": [
+        "acol",
+        "ehaa",
+        "precision",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "standard american"
+      ],
+      "proposed_systems": [
+        "ehaa"
+      ]
+    },
+    {
+      "path": "bidding/systems/kaplan-sheinwold.md",
+      "title": "Kaplan Sheinwold",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/magic-diamond.md",
+      "title": "Magic Diamond",
+      "current_systems": [
+        "precision",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "precision",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/moscito.md",
+      "title": "Moscito",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/neapolitan-club.md",
+      "title": "Neapolitan Club",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/polish-club.md",
+      "title": "Polish Club System",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/precision.md",
+      "title": "Precision Club System",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "blue club",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/roman-club.md",
+      "title": "Roman Club",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "roman club",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "roman club"
+      ]
+    },
+    {
+      "path": "bidding/systems/roman-precision.md",
+      "title": "Roman Precision",
+      "current_systems": [
+        "precision",
+        "roman club",
+        "strong club",
+        "super precision"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "precision",
+        "roman club",
+        "strong club",
+        "super precision"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/roth-stone.md",
+      "title": "Roth Stone",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/sayc.md",
+      "title": "Standard American Yellow Card (SAYC)",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "sayc"
+      ]
+    },
+    {
+      "path": "bidding/systems/sef.md",
+      "title": "Sef",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/standard-american.md",
+      "title": "Standard American",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "acol",
+        "precision",
+        "sayc",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/super-precision.md",
+      "title": "Super Precision",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_cross_labels",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": [
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/systems-index.md",
+      "title": "Bidding Systems",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "ehaa",
+        "precision",
+        "roman club",
+        "sayc",
+        "standard american",
+        "super precision"
+      ],
+      "confidence": "high",
+      "reason": "index_page_reference_labels",
+      "proposed_remove": [
+        "acol",
+        "blue club",
+        "ehaa",
+        "precision",
+        "roman club",
+        "sayc",
+        "standard american",
+        "super precision"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/ultimate-club.md",
+      "title": "Ultimate Club",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/wspolny-jezyk.md",
+      "title": "Wspolny Jezyk",
+      "current_systems": [
+        "sayc",
+        "standard american"
+      ],
+      "confidence": "high",
+      "reason": "system_profile_without_controlled_self_label",
+      "proposed_remove": [
+        "sayc",
+        "standard american"
+      ],
+      "proposed_systems": []
+    }
+  ]
+}
