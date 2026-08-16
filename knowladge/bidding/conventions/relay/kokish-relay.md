@@ -45,7 +45,7 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/transfers/jacoby-transfers
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/vulnerability
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/moscito

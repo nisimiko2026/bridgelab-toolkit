@@ -38,7 +38,7 @@ references:
 - bidding/conventions/responses/inverted-minors
 - bidding/conventions/responses/walsh
 - bidding/natural-bids/rebids/jump-rebids
-- bidding/natural-bids/rebids/natural-rebid-indexs
+- bidding/natural-bids/rebids/natural-rebids-index
 - bidding/natural-bids/rebids/reverse-bid
 - bidding/principals/bidding-fundamentals/hand-evaluation
 - bidding/principals/bidding-fundamentals/preemptive-openings

@@ -35,7 +35,7 @@ references:
 - bidding/natural-bids/opening-bids/natural-opening-bids-index
 - bidding/natural-bids/opening-bids/opening-requirements
 - bidding/natural-bids/rebids/jump-rebids
-- bidding/natural-bids/rebids/natural-rebid-indexs
+- bidding/natural-bids/rebids/natural-rebids-index
 - bidding/natural-bids/responses/natural-responses-index
 - bidding/principals/bidding-fundamentals/hand-evaluation
 - bidding/principals/bidding-fundamentals/sign-off

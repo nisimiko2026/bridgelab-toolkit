@@ -92,7 +92,7 @@ references:
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/conventions/transfers/transfer-lebensohl
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/reverse-bid
   - bidding/natural-bids/responses/limit-raise
   - bidding/principals/bidding-fundamentals/hand-evaluation

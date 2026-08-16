@@ -34,7 +34,7 @@ references:
   - bidding/conventions/slam-conventions/control-bidding
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/rebids/jump-rebids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/reverse-bid
   - bidding/principals/bidding-fundamentals/vulnerability
   - bidding/principals/partnership/partnership-agreements

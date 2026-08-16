@@ -39,7 +39,7 @@ references:
   - bidding/conventions/responses/mixed-raise
   - bidding/conventions/responses/passed-hand-jacoby
   - bidding/conventions/responses/responses-index
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/hand-evaluation
   - bidding/principals/bidding-fundamentals/losing-trick-count
   - bidding/principals/bidding-fundamentals/vulnerability

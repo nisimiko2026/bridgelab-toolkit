@@ -35,7 +35,7 @@ references:
   - bidding/conventions/responses/jacoby-notrump
   - bidding/conventions/responses/reverse-drury
   - bidding/conventions/slam-conventions/cue-bidding
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/hand-evaluation
   - bidding/principals/bidding-fundamentals/losing-trick-count
   - bidding/principals/bidding-fundamentals/vulnerability

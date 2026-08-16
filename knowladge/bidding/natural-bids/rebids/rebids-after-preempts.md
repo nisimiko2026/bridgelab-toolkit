@@ -38,7 +38,7 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/opening-bids/four-level-preempts
   - bidding/natural-bids/opening-bids/three-level-preempts
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/hand-evaluation
   - bidding/principals/bidding-fundamentals/playing-tricks
   - bidding/principals/bidding-fundamentals/preemptive-openings

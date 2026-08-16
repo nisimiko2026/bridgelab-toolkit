@@ -30,7 +30,7 @@ references:
   - bidding/conventions/responses/feature-ask
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/opening-bids/weak-two-bids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/hand-evaluation
   - bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
   - bidding/principals/bidding-fundamentals/playing-tricks

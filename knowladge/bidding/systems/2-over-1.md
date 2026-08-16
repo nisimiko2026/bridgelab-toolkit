@@ -68,7 +68,7 @@ references:
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/opening-bids/opening-requirements
   - bidding/natural-bids/rebids/jump-rebids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/responder-rebids
   - bidding/natural-bids/rebids/reverse-bid
   - bidding/natural-bids/responses/limit-raise

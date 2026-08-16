@@ -40,7 +40,7 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/slam-conventions/control-bidding
   - bidding/natural-bids/rebids/jump-rebids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/principals/bidding-fundamentals/losing-trick-count
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/standard-american

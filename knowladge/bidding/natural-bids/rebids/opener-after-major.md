@@ -33,7 +33,7 @@ references:
   - bidding/conventions/responses/jacoby-notrump
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/rebids/jump-rebids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
+  - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/responses/limit-raise
   - bidding/principals/bidding-fundamentals/losing-trick-count
   - bidding/principals/partnership/partnership-agreements
