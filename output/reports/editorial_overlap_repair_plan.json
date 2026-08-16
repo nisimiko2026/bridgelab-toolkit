@@ -1,0 +1,60 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "summary": {
+    "high_confidence_actions": 2,
+    "articles_removed": 1,
+    "metadata_only_repairs": 1
+  },
+  "actions": [
+    {
+      "type": "consolidation",
+      "confidence": "high",
+      "topic": "Inference",
+      "canonical": "play/declarer-play/probability/probability-inference.md",
+      "remove": "play/counting/inference.md",
+      "canonical_words": 964,
+      "outline_words": 167,
+      "canonical_inbound_files": 41,
+      "outline_inbound_files": 2,
+      "redundant_reference_files": [
+        "play/counting/counting-index.md",
+        "play/declarer-play/general-techniques/finesses/marked-finesse.md"
+      ],
+      "reason": "Both inbound files already reference the canonical article, so removing the outline loses no navigation.",
+      "actions": [
+        "Back up the outline and both referencing files",
+        "Remove the redundant play/counting/inference reference from both files",
+        "Delete play/counting/inference.md",
+        "Verify the removed identifier is absent",
+        "Validate the repository and confirm duplicate groups decrease by one"
+      ]
+    },
+    {
+      "type": "metadata_correction",
+      "confidence": "high",
+      "topic": "Entry Management Technique",
+      "path": "play/declarer-play/general-techniques/entry-management-technique.md",
+      "current_front_matter_title": "Preserving Entries",
+      "proposed_front_matter_title": "Entry Management Technique",
+      "existing_h1": "Entry Management Technique",
+      "reason": "The proposed title matches the filename, H1, scope, and navigation role; no path or reference changes are required.",
+      "actions": [
+        "Back up the article",
+        "Change only the front-matter title",
+        "Validate the repository and confirm duplicate groups decrease by one"
+      ]
+    }
+  ],
+  "expected_result": {
+    "articles": 446,
+    "duplicate_title_groups": 3,
+    "remaining_groups": [
+      "Convention Cards index/article pair",
+      "Notrump Play index/article pair",
+      "Relay Bidding index/article pair"
+    ]
+  },
+  "recommended_approval": "Approve both high-confidence actions, with backups and independent verification."
+}
