@@ -27,10 +27,7 @@ tags:
   - strong club
   - takeout
   - transfer
-systems:
-  - blue club
-  - precision
-  - strong club
+systems: []
 aliases: 
   - Transfer Overcalls
   - TWERB Convention

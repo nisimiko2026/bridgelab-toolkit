@@ -24,9 +24,7 @@ tags:
 - strong club
 - takeout
 - transfer
-systems:
-  - precision
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

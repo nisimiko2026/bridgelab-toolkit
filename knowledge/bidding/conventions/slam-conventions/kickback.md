@@ -16,8 +16,7 @@ tags:
 - precision
 - response
 - slam
-systems:
-- precision
+systems: []
 aliases: []
 acronyms: []
 references:

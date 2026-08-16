@@ -21,8 +21,7 @@ tags:
   - responses to 1nt
   - stayman
   - transfer
-systems:
-  - precision
+systems: []
 aliases: []
 acronyms: []
 references: 

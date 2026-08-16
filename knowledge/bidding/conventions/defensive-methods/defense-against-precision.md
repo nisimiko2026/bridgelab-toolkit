@@ -23,10 +23,7 @@ tags:
 - support
 - takeout
 - transfer
-systems:
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

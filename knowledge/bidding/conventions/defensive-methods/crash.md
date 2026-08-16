@@ -23,10 +23,7 @@ tags:
   - slam
   - strong club
   - transfer
-systems:
-  - blue club
-  - precision
-  - strong club
+systems: []
 aliases: 
   - Color Rank Shape
   - CRO

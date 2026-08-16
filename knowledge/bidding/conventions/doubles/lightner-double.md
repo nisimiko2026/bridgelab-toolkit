@@ -18,8 +18,7 @@ tags:
 - precision
 - ruff
 - slam
-systems:
-- precision
+systems: []
 aliases: []
 acronyms: []
 references:

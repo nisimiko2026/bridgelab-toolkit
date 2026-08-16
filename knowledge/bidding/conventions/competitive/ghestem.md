@@ -19,8 +19,7 @@ tags:
   - slam
   - takeout
   - transfer
-systems: 
-  - precision
+systems: []
 aliases: []
 acronyms: []
 references: 

@@ -23,10 +23,7 @@ tags:
   - strong club
   - support
   - transfer
-systems:
-  - blue club
-  - precision
-  - strong club
+systems: []
 aliases: 
   - Suction Defense
 acronyms: []

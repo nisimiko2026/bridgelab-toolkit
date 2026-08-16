@@ -17,7 +17,6 @@ tags:
   - strong club
 systems:
   - precision
-  - strong club
 aliases: 
   - Spiral Steps
 acronyms: []

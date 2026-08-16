@@ -32,10 +32,7 @@ tags:
 - strong club
 - support
 - takeout
-systems:
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:
