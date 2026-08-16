@@ -1,0 +1,56 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "migration": {
+    "old_root": "knowladge",
+    "new_root": "knowledge",
+    "old_root_exists": true,
+    "new_root_exists": false,
+    "collision": false,
+    "file_count": 448,
+    "markdown_file_count": 448,
+    "total_bytes": 3866967
+  },
+  "active_toolkit_dependencies": [
+    {
+      "path": "config.py",
+      "role": "default repository path",
+      "required_change": "ROOT.parent / \"knowladge\" -> ROOT.parent / \"knowledge\""
+    },
+    {
+      "path": "tests/test_cleanup_item_3.py",
+      "role": "default-path regression test",
+      "required_change": "expect the knowledge sibling directory"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "path": "output/repository.json",
+      "tracked": false,
+      "action": "regenerate after migration",
+      "reason": "contains stale absolute paths under knowladge"
+    },
+    {
+      "path": "../knowladge.zip",
+      "tracked": false,
+      "action": "leave unchanged unless separately approved",
+      "reason": "archive may be a recovery artifact or external handoff"
+    }
+  ],
+  "historical_reports": [
+    "output/reports/spelling_rename_audit.json",
+    "output/reports/spelling_rename_audit.md"
+  ],
+  "external_dependency_status": "not_verifiable_from_repository",
+  "recommended_sequence": [
+    "Confirm no external process requires the old absolute path",
+    "Create a recoverable backup or retain the existing archive",
+    "Rename the tracked root directory with Git",
+    "Update config.py and its regression test",
+    "Regenerate output/repository.json",
+    "Run all toolkit tests and validate all 448 articles using the new root",
+    "Verify the old root path is absent from active source and Git status shows a pure rename",
+    "Commit toolkit and repository changes in a coordinated migration commit"
+  ]
+}
