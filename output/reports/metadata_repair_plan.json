@@ -1,17 +1,8 @@
 {
   "summary": {
-    "total_proposals": 1,
-    "descriptions": 1,
+    "total_proposals": 0,
+    "descriptions": 0,
     "difficulties": 0
   },
-  "proposals": [
-    {
-      "article": "bidding/convention-cards/cc-nily-nisim.md",
-      "field": "description",
-      "current": "",
-      "proposed": "",
-      "confidence": "none",
-      "rationale": "No suitable prose paragraph was found."
-    }
-  ]
+  "proposals": []
 }
