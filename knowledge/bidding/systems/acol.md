@@ -38,10 +38,6 @@ tags:
   - transfer
 systems:
   - acol
-  - precision
-  - sayc
-  - standard american
-  - strong club
 aliases: []
 acronyms: []
 references: 

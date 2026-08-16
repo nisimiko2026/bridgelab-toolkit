@@ -31,11 +31,7 @@ tags:
   - support
   - systems
 systems:
-  - acol
-  - precision
-  - sayc
   - standard american
-  - strong club
 aliases: []
 acronyms: []
 references: 

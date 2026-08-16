@@ -29,9 +29,6 @@ tags:
 - support
 - systems
 systems:
-  - blue club
-  - precision
-  - strong club
   - super precision
 aliases: []
 acronyms: []

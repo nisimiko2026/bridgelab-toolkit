@@ -19,10 +19,7 @@ tags:
 - strong club
 - support
 - transfer
-systems:
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

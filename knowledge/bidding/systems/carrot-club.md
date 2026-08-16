@@ -29,11 +29,7 @@ tags:
 - systems
 - takeout
 - walsh
-systems:
-  - acol
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

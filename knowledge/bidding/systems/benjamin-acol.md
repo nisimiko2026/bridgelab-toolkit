@@ -20,8 +20,7 @@ tags:
 - slam
 - stayman
 - systems
-systems:
-- acol
+systems: []
 aliases: []
 acronyms: []
 references:

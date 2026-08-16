@@ -36,8 +36,7 @@ tags:
 - takeout
 - transfer
 - walsh
-systems:
-  - precision
+systems: []
 aliases: []
 acronyms: []
 references:

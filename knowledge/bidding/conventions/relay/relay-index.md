@@ -16,9 +16,7 @@ tags:
 - slam
 - strong club
 - support
-systems:
-  - precision
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

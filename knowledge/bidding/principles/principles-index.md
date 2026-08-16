@@ -15,11 +15,7 @@ tags:
 - sayc
 - slam
 - standard american
-systems:
-- acol
-- precision
-- sayc
-- standard american
+systems: []
 aliases: []
 acronyms: []
 references:

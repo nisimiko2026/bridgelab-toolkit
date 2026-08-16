@@ -29,12 +29,7 @@ tags:
 - systems
 - takeout
 - transfer
-systems:
-  - acol
-  - precision
-  - sayc
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

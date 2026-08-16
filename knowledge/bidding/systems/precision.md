@@ -40,13 +40,7 @@ tags:
   - systems
   - takeout
 systems:
-  - acol
-  - blue club
   - precision
-  - sayc
-  - standard american
-  - strong club
-  - super precision
 aliases: []
 acronyms: []
 references: 

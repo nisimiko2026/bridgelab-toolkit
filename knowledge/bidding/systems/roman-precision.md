@@ -28,11 +28,7 @@ tags:
 - super precision
 - support
 - systems
-systems:
-  - precision
-  - roman club
-  - strong club
-  - super precision
+systems: []
 aliases: []
 acronyms: []
 references:

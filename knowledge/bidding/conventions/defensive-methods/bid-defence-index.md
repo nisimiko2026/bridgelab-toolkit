@@ -27,11 +27,7 @@ tags:
 - strong club
 - support
 - takeout
-systems:
-  - precision
-  - sayc
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

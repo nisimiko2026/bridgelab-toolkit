@@ -25,10 +25,7 @@ tags:
 - strong club
 - systems
 - takeout
-systems:
-- blue club
-- precision
-- strong club
+systems: []
 aliases: []
 acronyms: []
 references:

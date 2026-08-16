@@ -24,11 +24,7 @@ tags:
 - strong club
 - systems
 systems:
-- acol
-- blue club
-- precision
-- standard american
-- strong club
+  - blue club
 aliases:
 - Italian Blue Club
 - Blue Team Club

@@ -26,9 +26,7 @@ tags:
 - stayman
 - support
 - systems
-systems:
-  - precision
-  - standard american
+systems: []
 aliases: []
 acronyms: []
 references:

@@ -25,10 +25,7 @@ tags:
 - systems
 - takeout
 systems:
-- blue club
-- precision
-- roman club
-- strong club
+  - roman club
 aliases: []
 acronyms: []
 references:

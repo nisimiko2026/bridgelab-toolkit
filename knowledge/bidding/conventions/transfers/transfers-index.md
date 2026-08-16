@@ -26,9 +26,7 @@ tags:
 - support
 - transfer
 - walsh
-systems:
-  - precision
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

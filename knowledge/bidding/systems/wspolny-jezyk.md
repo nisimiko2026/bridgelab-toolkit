@@ -27,9 +27,7 @@ tags:
 - support
 - systems
 - takeout
-systems:
-  - sayc
-  - standard american
+systems: []
 aliases: []
 acronyms: []
 references:

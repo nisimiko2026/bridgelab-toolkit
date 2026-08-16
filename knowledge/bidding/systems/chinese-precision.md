@@ -29,11 +29,7 @@ tags:
 - strong club
 - support
 - systems
-systems:
-  - blue club
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

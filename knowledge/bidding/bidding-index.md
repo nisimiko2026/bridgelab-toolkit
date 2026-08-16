@@ -29,12 +29,7 @@ tags:
 - standard american
 - strong club
 - takeout
-systems:
-  - acol
-  - precision
-  - sayc
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references:

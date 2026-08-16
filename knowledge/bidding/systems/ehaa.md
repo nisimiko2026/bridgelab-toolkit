@@ -28,10 +28,7 @@ tags:
 - systems
 - takeout
 systems:
-  - acol
   - ehaa
-  - precision
-  - standard american
 aliases: []
 acronyms: []
 references:

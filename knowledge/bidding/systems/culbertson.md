@@ -21,10 +21,7 @@ tags:
 - standard american
 - systems
 - takeout
-systems:
-- acol
-- precision
-- standard american
+systems: []
 aliases: []
 acronyms: []
 references:

@@ -20,15 +20,7 @@ tags:
 - standard american
 - super precision
 - systems
-systems:
-- acol
-- blue club
-- ehaa
-- precision
-- roman club
-- sayc
-- standard american
-- super precision
+systems: []
 aliases: []
 acronyms: []
 references:
