@@ -248,7 +248,7 @@ class LegacyValidationContractTests(unittest.TestCase):
             all(issue.article == "nested/topic.md" for issue in issues)
         )
 
-    def test_difficulty_policy_for_generated_reference_and_index_documents(self) -> None:
+    def test_difficulty_policy_for_generated_reference_and_ranged_documents(self) -> None:
         generated = article_with_complete_metadata("acronyms.md", "")
         reference = article_with_complete_metadata("references/terms.md", "")
         index = article_with_complete_metadata(
@@ -263,12 +263,17 @@ class LegacyValidationContractTests(unittest.TestCase):
             "guide/index.md",
             "",
         )
+        reversed_range = article_with_complete_metadata(
+            "guide/reversed.md",
+            "Expert to Beginner",
+        )
 
         generated_issues = MetadataValidator().validate([generated])
         reference_issues = MetadataValidator().validate([reference])
         index_issues = MetadataValidator().validate([index])
         substantive_issues = MetadataValidator().validate([substantive])
         missing_index_issues = MetadataValidator().validate([missing_index])
+        reversed_range_issues = MetadataValidator().validate([reversed_range])
 
         self.assertFalse(
             any(issue.category == "difficulty" for issue in generated_issues)
@@ -279,7 +284,7 @@ class LegacyValidationContractTests(unittest.TestCase):
         self.assertFalse(
             any(issue.message == "Invalid difficulty" for issue in index_issues)
         )
-        self.assertTrue(
+        self.assertFalse(
             any(
                 issue.message == "Invalid difficulty"
                 for issue in substantive_issues
@@ -289,5 +294,11 @@ class LegacyValidationContractTests(unittest.TestCase):
             any(
                 issue.message == "Missing difficulty"
                 for issue in missing_index_issues
+            )
+        )
+        self.assertTrue(
+            any(
+                issue.message == "Invalid difficulty"
+                for issue in reversed_range_issues
             )
         )

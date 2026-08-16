@@ -97,7 +97,7 @@ class MetadataValidator:
         if (
             self._requires_difficulty(article)
             and meta.difficulty
-            and not self._is_valid_difficulty(article, meta.difficulty)
+            and not self._is_valid_difficulty(meta.difficulty)
         ):
             issues.append(
                 Issue(
@@ -162,23 +162,12 @@ class MetadataValidator:
     @classmethod
     def _is_valid_difficulty(
         cls,
-        article: Article,
         value: str,
     ) -> bool:
-        """Indexes and references may span an ordered difficulty range."""
+        """Accept a single level, all levels, or an ordered level range."""
 
         if value in cls.VALID_DIFFICULTY:
             return True
-
-        path = article.relative_path
-
-        is_index_or_reference = (
-            "index" in path.name.lower()
-            or (path.parts and path.parts[0] == "references")
-        )
-
-        if not is_index_or_reference:
-            return False
 
         if value == "All Levels":
             return True
