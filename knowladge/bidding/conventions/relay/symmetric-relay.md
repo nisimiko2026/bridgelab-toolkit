@@ -28,7 +28,7 @@ references:
 - bidding/conventions/relay/step-responses
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/moscito
 - bidding/systems/systems-index
 - references/references-index

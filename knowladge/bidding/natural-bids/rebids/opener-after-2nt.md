@@ -52,8 +52,8 @@ references:
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/conventions/transfers/texas-transfers
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

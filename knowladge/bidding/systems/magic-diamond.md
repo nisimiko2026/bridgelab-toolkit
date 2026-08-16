@@ -48,7 +48,7 @@ references:
 - bidding/conventions/slam-conventions/last-train
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/transfers/jacoby-transfers
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - references/references-index
 last_updated: '2026-07-27'

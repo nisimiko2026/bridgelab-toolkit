@@ -29,7 +29,7 @@ references:
 - bidding/conventions/doubles/doubles-index
 - bidding/conventions/doubles/penalty-double
 - bidding/conventions/doubles/responsive-double
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/defence/opening-leads/opening-leads-index
 - play/defence/planning/defensive-plan
 - play/defence/signaling/lavinthal

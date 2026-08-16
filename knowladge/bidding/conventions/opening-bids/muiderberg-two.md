@@ -24,8 +24,8 @@ references:
 - bidding/bidding-index
 - bidding/conventions/conventions-index
 - bidding/conventions/responses/responses-index
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - play/defence/signaling/count
 - references/references-index
 last_updated: '2026-07-27'

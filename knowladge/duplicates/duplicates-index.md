@@ -14,10 +14,10 @@ acronyms: []
 references: 
   - acronyms
   - bidding/bidding-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/index-principal-partnership
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/index-principal-partnership
+  - bidding/principles/partnership/partnership-agreements
   - duplicates/duplicate-scoring
   - duplicates/matchpoints-vs-imps
   - play/declarer-play/elimination-and-endplays/elimination

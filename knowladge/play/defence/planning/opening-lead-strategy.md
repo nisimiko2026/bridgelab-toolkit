@@ -22,8 +22,8 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/finesses/finesse

@@ -40,7 +40,7 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/transfers/texas-transfers
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/planning/planning-index
   - references/references-index
 last_updated: 2026-07-21

@@ -33,9 +33,9 @@ references:
   - bidding/conventions/doubles/doubles-index
   - bidding/conventions/doubles/penalty-double
   - bidding/conventions/responses/responses-index
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/systems-index
   - references/references-index
 last_updated: 2026-07-22

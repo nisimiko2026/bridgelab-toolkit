@@ -40,8 +40,8 @@ references:
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/partnership/disclosure
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/partnership/disclosure
 - bidding/systems/blue-club
 - bidding/systems/chinese-precision
 - bidding/systems/moscito

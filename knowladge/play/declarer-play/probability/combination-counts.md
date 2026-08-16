@@ -24,7 +24,7 @@ references:
   - play/declarer-play/probability/probability-index
   - play/declarer-play/probability/restricted-choice
   - play/declarer-play/probability/suit-distributions
-  - play/principals/eight-ever-nine-never
+  - play/principles/eight-ever-nine-never
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

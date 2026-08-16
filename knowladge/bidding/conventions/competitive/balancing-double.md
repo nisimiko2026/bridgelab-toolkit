@@ -49,9 +49,9 @@ references:
   - bidding/conventions/doubles/support-double
   - bidding/conventions/doubles/take-out-double
   - bidding/conventions/responses/responses-index
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - duplicates/matchpoints-vs-imps

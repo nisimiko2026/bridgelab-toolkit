@@ -35,8 +35,8 @@ references:
   - bidding/natural-bids/rebids/jump-rebids
   - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/defence/signaling/count

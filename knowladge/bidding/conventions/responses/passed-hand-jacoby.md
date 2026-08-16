@@ -36,10 +36,10 @@ references:
   - bidding/conventions/responses/reverse-drury
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/rebids/natural-rebids-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/defence/signaling/count
   - references/references-index

@@ -52,7 +52,7 @@ references:
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/conventions/transfers/transfer-lebensohl
   - bidding/conventions/transfers/transfers-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/defence/opening-leads/opening-leads-index
   - references/references-index

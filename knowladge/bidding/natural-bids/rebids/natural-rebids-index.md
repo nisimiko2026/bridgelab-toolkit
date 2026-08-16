@@ -26,8 +26,8 @@ references:
 - bidding/natural-bids/opening-bids/natural-opening-bids-index
 - bidding/natural-bids/rebids/jump-rebids
 - bidding/natural-bids/rebids/reverse-bid
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/preemptive-openings
 - references/references-index
 - bidding/natural-bids/rebids/opener-after-1nt
 - bidding/natural-bids/rebids/opener-after-2nt

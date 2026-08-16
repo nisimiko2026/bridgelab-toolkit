@@ -20,9 +20,9 @@ references:
   - bidding/conventions/game-invitations/game-invitations
   - bidding/conventions/game-invitations/guides/responder-evaluation
   - bidding/conventions/game-invitations/maximal-game-try
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/vulnerability
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/vulnerability
   - play/counting/counting-index
   - play/defence/signaling/count
   - references/references-index

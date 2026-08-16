@@ -24,8 +24,8 @@ references:
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/kickback
 - bidding/conventions/slam-conventions/redwood
-- bidding/principals/bidding-fundamentals/sign-off
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/sign-off
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

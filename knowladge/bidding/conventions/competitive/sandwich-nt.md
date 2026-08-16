@@ -29,9 +29,9 @@ references:
 - bidding/conventions/conventions-index
 - bidding/conventions/doubles/doubles-index
 - bidding/conventions/responses/responses-index
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/disclosure
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/disclosure
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/planning/timing
 - references/references-index
 last_updated: '2026-07-27'

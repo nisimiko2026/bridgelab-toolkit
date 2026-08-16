@@ -55,7 +55,7 @@ references:
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/conventions/transfers/south-african-texas
 - bidding/conventions/transfers/transfer-lebensohl
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - play/declarer-play/general-techniques/communication
 - references/references-index

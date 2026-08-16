@@ -18,8 +18,8 @@ acronyms: []
 references: 
   - acronyms
   - bidding/bidding-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-declarer
   - play/counting/counting-index
   - play/declarer-play/general-techniques/communication

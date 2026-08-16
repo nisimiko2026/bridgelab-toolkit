@@ -18,7 +18,7 @@ aliases: []
 acronyms: []
 references:
 - acronyms
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/defence/index-defence
 - play/defence/signaling/attitude
 - play/defence/signaling/count

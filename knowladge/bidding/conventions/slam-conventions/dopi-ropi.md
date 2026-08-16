@@ -29,7 +29,7 @@ references:
   - bidding/conventions/slam-conventions/exclusion-blackwood
   - bidding/conventions/slam-conventions/grand-slam-force
   - bidding/conventions/slam-conventions/kickback
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-22

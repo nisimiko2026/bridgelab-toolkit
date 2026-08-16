@@ -17,9 +17,9 @@ references:
   - bidding/bidding-index
   - bidding/conventions/conventions-index
   - bidding/conventions/game-invitations/game-invitations
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-index
   - play/defence/signaling/count
   - references/references-index

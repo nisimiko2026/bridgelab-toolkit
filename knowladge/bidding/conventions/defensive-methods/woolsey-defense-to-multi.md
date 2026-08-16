@@ -35,8 +35,8 @@ references:
   - bidding/conventions/doubles/penalty-double
   - bidding/conventions/opening-bids/two-diamond-multi
   - bidding/conventions/responses/responses-index
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-23
 status: Draft

@@ -36,7 +36,7 @@ references:
   - play/declarer-play/probability/probability-in-bridge
   - play/declarer-play/probability/probability-index
   - play/play-index
-  - play/principals/preservation-of-entries
+  - play/principles/preservation-of-entries
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

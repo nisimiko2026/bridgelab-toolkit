@@ -27,9 +27,9 @@ references:
   - bidding/conventions/game-invitations/guides/responder-evaluation
   - bidding/conventions/game-invitations/maximal-game-try
   - bidding/conventions/game-invitations/two-way-game-try
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/planning/entry-management
   - play/defence/signaling/count
   - references/references-index

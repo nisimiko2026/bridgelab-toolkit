@@ -30,7 +30,7 @@ references:
   - play/declarer-play/probability/suit-distributions
   - play/defence/signaling/count
   - play/play-index
-  - play/principals/eight-ever-nine-never
+  - play/principles/eight-ever-nine-never
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

@@ -32,7 +32,7 @@ references:
 - bidding/conventions/relay/symmetric-relay
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/moscito
 - references/references-index
 last_updated: '2026-07-27'

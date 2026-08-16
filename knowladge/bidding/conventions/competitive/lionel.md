@@ -26,7 +26,7 @@ references:
 - bidding/conventions/conventions-index
 - bidding/conventions/doubles/penalty-double
 - bidding/conventions/responses/responses-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

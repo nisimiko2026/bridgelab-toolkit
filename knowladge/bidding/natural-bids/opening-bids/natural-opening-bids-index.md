@@ -21,8 +21,8 @@ references:
 - bidding/conventions/opening-bids/index-opening-bids
 - bidding/conventions/responses/responses-index
 - bidding/natural-bids/opening-bids/opening-requirements
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/preemptive-openings
 - bidding/systems/systems-index
 - references/references-index
 - bidding/natural-bids/opening-bids/1-diamond

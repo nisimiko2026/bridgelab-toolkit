@@ -34,8 +34,8 @@ references:
 - bidding/conventions/doubles/responsive-double
 - bidding/conventions/doubles/support-double
 - bidding/conventions/doubles/take-out-double
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

@@ -22,11 +22,11 @@ references:
 - bidding/conventions/conventions-index
 - bidding/conventions/opening-bids/index-opening-bids
 - bidding/conventions/responses/responses-index
-- bidding/principals/partnership/alert-procedures
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/disclosure
-- bidding/principals/partnership/index-principal-partnership
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/alert-procedures
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/disclosure
+- bidding/principles/partnership/index-principal-partnership
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - play/declarer-play/general-techniques/communication
 - references/references-index

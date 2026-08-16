@@ -43,8 +43,8 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/responses/limit-raise
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

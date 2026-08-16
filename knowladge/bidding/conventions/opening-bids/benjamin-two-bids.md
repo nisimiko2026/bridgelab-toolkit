@@ -28,9 +28,9 @@ references:
 - bidding/conventions/conventions-index
 - bidding/conventions/responses/feature-ask
 - bidding/conventions/responses/responses-index
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/bidding-fundamentals/preemptive-openings
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/bidding-fundamentals/preemptive-openings
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/benjamin-acol
 - references/references-index
 last_updated: '2026-07-27'

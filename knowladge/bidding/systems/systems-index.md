@@ -40,9 +40,9 @@ references:
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/slam-bid-index
 - bidding/natural-bids/opening-bids/natural-opening-bids-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/partnership/partnership-agreements
-- bidding/principals/principals-index
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/partnership/partnership-agreements
+- bidding/principles/principles-index
 - bidding/systems/benjamin-acol
 - bidding/systems/blue-club
 - bidding/systems/carrot-club

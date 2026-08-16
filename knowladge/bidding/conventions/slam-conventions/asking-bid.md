@@ -45,10 +45,10 @@ references:
 - bidding/conventions/slam-conventions/exclusion-blackwood
 - bidding/conventions/slam-conventions/slam-bid-index
 - bidding/conventions/transfers/transfer-lebensohl
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/bidding-fundamentals/preemptive-openings
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/bidding-fundamentals/preemptive-openings
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/moscito
 - bidding/systems/systems-index
 - references/references-index

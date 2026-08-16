@@ -50,8 +50,8 @@ references:
   - bidding/conventions/transfers/transfer-lebensohl
   - bidding/conventions/transfers/transfers-index
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

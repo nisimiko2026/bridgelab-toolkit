@@ -29,7 +29,7 @@ references:
 - bidding/conventions/slam-conventions/grand-slam-force
 - bidding/conventions/slam-conventions/kickback
 - bidding/conventions/slam-conventions/redwood
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

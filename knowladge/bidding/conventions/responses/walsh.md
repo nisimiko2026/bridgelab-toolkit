@@ -33,7 +33,7 @@ references:
 - bidding/conventions/responses/responses-index
 - bidding/conventions/responses/two-way-checkback
 - bidding/conventions/responses/xyz
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - play/declarer-play/planning/planning-index
 - references/references-index

@@ -30,8 +30,8 @@ references:
   - bidding/conventions/doubles/doubles-index
   - bidding/conventions/responses/feature-ask
   - bidding/conventions/responses/responses-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-23
 status: Draft

@@ -43,12 +43,12 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/responses/walsh
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/systems-index
   - play/defence/signaling/count
   - play/defence/signaling/suit-preference

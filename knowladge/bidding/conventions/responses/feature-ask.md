@@ -32,11 +32,11 @@ references:
   - bidding/conventions/slam-conventions/exclusion-blackwood
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/opening-bids/weak-two-bids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/offensive-vs-defensive-values
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-22

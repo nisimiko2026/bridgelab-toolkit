@@ -21,7 +21,7 @@ references:
 - bidding/bidding-index
 - bidding/conventions/competitive/bid-competitive-index
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principles/bidding-fundamentals/vulnerability
 - duplicates/duplicate-scoring
 - duplicates/duplicates-index
 - play/declarer-play/general-techniques/finesses/finesse

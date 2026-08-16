@@ -53,10 +53,10 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/natural-bids/opening-bids/natural-opening-bids-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/blue-club
   - references/references-index
 last_updated: 2026-07-23

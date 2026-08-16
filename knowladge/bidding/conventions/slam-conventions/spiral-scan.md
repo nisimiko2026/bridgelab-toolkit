@@ -26,7 +26,7 @@ references:
 - bidding/conventions/slam-conventions/kickback
 - bidding/conventions/slam-conventions/minorwood
 - bidding/conventions/slam-conventions/redwood
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/counting/counting-index
 - references/references-index
 last_updated: '2026-07-27'

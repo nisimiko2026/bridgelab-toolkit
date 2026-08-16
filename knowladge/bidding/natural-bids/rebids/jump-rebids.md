@@ -30,9 +30,9 @@ references:
   - bidding/bidding-index
   - bidding/conventions/competitive/fit-jump
   - bidding/conventions/conventions-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

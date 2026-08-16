@@ -30,11 +30,11 @@ references:
   - bidding/bidding-index
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/declarer-play/elimination-and-endplays/elimination-index

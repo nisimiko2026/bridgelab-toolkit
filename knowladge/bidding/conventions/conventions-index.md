@@ -94,8 +94,8 @@ references:
 - bidding/conventions/slam-conventions/exclusion-blackwood
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/conventions/transfers/transfer-lebensohl
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - duplicates/duplicates-index
 - play/declarer-play/general-techniques/communication

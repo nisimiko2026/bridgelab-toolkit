@@ -47,7 +47,7 @@ references:
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/natural-bids/opening-bids/opening-requirements
-- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/hand-evaluation
 - bidding/systems/culbertson
 - bidding/systems/standard-american
 - references/references-index

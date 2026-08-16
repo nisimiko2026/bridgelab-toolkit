@@ -42,8 +42,8 @@ references:
 - bidding/conventions/slam-conventions/last-train
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/moscito
 - bidding/systems/standard-american
 - bidding/systems/systems-index

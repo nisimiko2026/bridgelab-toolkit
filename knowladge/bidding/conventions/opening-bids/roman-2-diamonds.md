@@ -36,8 +36,8 @@ references:
 - bidding/conventions/opening-bids/benjamin-two-bids
 - bidding/conventions/responses/responses-index
 - bidding/conventions/responses/stayman
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/blue-club
 - bidding/systems/roman-club
 - bidding/systems/roman-precision

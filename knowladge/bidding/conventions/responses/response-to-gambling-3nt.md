@@ -39,9 +39,9 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/opening-bids/opening-requirements
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - references/references-index
 last_updated: 2026-07-23

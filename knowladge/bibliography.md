@@ -38,8 +38,8 @@ references:
   - bidding/conventions/relay/symmetric-relay
   - bidding/conventions/responses/inverted-minors
   - bidding/conventions/slam-conventions/slam-bid-index
-  - bidding/principals/partnership/alert-procedures
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/alert-procedures
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/culbertson
   - bidding/systems/moscito
   - bidding/systems/standard-american

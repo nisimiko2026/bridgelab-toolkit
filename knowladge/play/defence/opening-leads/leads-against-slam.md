@@ -20,7 +20,7 @@ acronyms: []
 references: 
   - acronyms
   - bidding/bidding-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/trump-play/cross-ruff
   - play/declarer-play/trump-play/ruffing-losers

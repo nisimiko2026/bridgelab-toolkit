@@ -31,7 +31,7 @@ references:
 - bidding/conventions/responses/stayman
 - bidding/conventions/responses/two-way-checkback
 - bidding/conventions/responses/walsh
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

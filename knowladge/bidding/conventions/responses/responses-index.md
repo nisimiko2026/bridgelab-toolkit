@@ -58,9 +58,9 @@ references:
 - bidding/conventions/transfers/transfer-lebensohl
 - bidding/natural-bids/responses/limit-raise
 - bidding/natural-bids/responses/natural-responses-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/general-techniques/communication
 - play/defence/signaling/count
 - play/defence/signaling/suit-preference

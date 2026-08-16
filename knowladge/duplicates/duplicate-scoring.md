@@ -18,7 +18,7 @@ references:
 - acronyms
 - bidding/bidding-index
 - bidding/conventions/competitive/bid-competitive-index
-- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principles/bidding-fundamentals/vulnerability
 - duplicates/duplicates-index
 - play/counting/counting-index
 - references/references-index

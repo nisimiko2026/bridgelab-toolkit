@@ -42,10 +42,10 @@ references:
   - bidding/conventions/responses/splinter
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/defence/signaling/count

@@ -19,7 +19,7 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-index
   - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication

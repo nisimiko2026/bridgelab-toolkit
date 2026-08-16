@@ -69,13 +69,13 @@ references:
   - bidding/natural-bids/opening-bids/natural-opening-bids-index
   - bidding/natural-bids/opening-bids/opening-requirements
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/rule-of-15
-  - bidding/principals/bidding-fundamentals/rule-of-20
-  - bidding/principals/bidding-fundamentals/rule-of-22
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/rule-of-15
+  - bidding/principles/bidding-fundamentals/rule-of-20
+  - bidding/principles/bidding-fundamentals/rule-of-22
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/culbertson
   - bidding/systems/systems-index
   - play/declarer-play/probability/probability-inference

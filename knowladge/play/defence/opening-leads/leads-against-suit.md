@@ -22,9 +22,9 @@ acronyms: []
 references: 
   - acronyms
   - bidding/bidding-index
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index

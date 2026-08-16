@@ -15,7 +15,7 @@ acronyms: []
 references: 
   - acronyms
   - bidding/bidding-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-declarer
   - play/counting/counting-index
   - play/counting/counting-the-hand

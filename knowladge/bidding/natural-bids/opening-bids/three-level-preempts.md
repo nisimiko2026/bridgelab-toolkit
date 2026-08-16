@@ -34,13 +34,13 @@ references:
   - bidding/conventions/opening-bids/index-opening-bids
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/opening-bids/opening-requirements
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/defence/opening-leads/opening-leads-index
   - play/defence/signaling/count

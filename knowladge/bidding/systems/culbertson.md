@@ -38,11 +38,11 @@ references:
 - bidding/conventions/opening-bids/index-opening-bids
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/bidding-fundamentals/quick-tricks
-- bidding/principals/partnership/partnership-agreements
-- bidding/principals/principals-index
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/bidding-fundamentals/quick-tricks
+- bidding/principles/partnership/partnership-agreements
+- bidding/principles/principles-index
 - bidding/systems/standard-american
 - play/counting/counting-index
 - play/defence/signaling/count

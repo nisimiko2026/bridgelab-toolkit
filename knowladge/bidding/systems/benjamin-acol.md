@@ -36,8 +36,8 @@ references:
 - bidding/conventions/responses/responses-index
 - bidding/conventions/responses/stayman
 - bidding/natural-bids/opening-bids/weak-two-bids
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

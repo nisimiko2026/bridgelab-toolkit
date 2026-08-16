@@ -18,8 +18,8 @@ aliases: []
 acronyms: []
 references:
 - acronyms
-- bidding/principals/partnership/ethics-and-unauthorized-information
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/ethics-and-unauthorized-information
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/deceptive-play/index-deceptive-play
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/planning-index

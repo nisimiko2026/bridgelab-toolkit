@@ -36,8 +36,8 @@ references:
   - bidding/conventions/doubles/take-out-double
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/rebids/jump-rebids
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

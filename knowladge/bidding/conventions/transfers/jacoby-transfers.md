@@ -43,7 +43,7 @@ references:
   - bidding/conventions/transfers/texas-transfers
   - bidding/conventions/transfers/transfer-lebensohl
   - bidding/conventions/transfers/transfers-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/planning/planning-index
   - references/references-index
 last_updated: 2026-07-21

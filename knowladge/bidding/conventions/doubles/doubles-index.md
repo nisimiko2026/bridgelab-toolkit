@@ -39,9 +39,9 @@ references:
 - bidding/conventions/doubles/support-double
 - bidding/conventions/doubles/support-redouble
 - bidding/conventions/doubles/take-out-double
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - duplicates/duplicates-index
 - references/references-index
 - bidding/conventions/doubles/dsi

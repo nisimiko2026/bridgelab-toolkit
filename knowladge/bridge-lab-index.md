@@ -33,8 +33,8 @@ references:
   - bidding/conventions/relay/relay-index
   - bidding/conventions/responses/responses-index
   - bidding/conventions/slam-conventions/slam-bid-index
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/convention-cards
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/moscito
   - bidding/systems/standard-american
   - bidding/systems/systems-index

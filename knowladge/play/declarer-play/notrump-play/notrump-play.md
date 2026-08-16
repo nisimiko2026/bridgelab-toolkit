@@ -31,7 +31,7 @@ references:
   - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/ruffing-losers
   - play/defence/signaling/count
-  - play/principals/preservation-of-entries
+  - play/principles/preservation-of-entries
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

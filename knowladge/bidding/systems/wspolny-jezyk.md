@@ -54,8 +54,8 @@ references:
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/natural-bids/responses/limit-raise
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/polish-club
 - bidding/systems/sef
 - bidding/systems/standard-american

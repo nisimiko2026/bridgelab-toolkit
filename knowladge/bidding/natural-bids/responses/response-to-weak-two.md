@@ -36,9 +36,9 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

@@ -39,11 +39,11 @@ references:
   - bidding/natural-bids/opening-bids/four-level-preempts
   - bidding/natural-bids/opening-bids/three-level-preempts
   - bidding/natural-bids/rebids/natural-rebids-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/declarer-play/general-techniques/communication
   - play/defence/signaling/count

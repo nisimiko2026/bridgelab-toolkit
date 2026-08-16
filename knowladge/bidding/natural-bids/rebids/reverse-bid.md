@@ -30,10 +30,10 @@ references:
   - bidding/conventions/responses/fourth-suit-forcing
   - bidding/natural-bids/rebids/jump-rebids
   - bidding/natural-bids/rebids/responder-rebids
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/defence/signaling/count

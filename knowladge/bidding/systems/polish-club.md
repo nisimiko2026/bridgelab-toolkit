@@ -89,11 +89,11 @@ references:
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/natural-bids/responses/limit-raise
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/blue-club
   - bidding/systems/magic-diamond
   - bidding/systems/standard-american

@@ -95,13 +95,13 @@ references:
   - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/reverse-bid
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/partnership-agreements
-  - bidding/principals/principals-index
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/convention-cards
+  - bidding/principles/partnership/partnership-agreements
+  - bidding/principles/principles-index
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - duplicates/duplicates-index

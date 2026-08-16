@@ -21,7 +21,7 @@ references:
   - acronyms
   - bidding/bidding-index
   - bidding/conventions/doubles/take-out-double
-  - bidding/principals/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/hand-evaluation
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/probability/probability-inference

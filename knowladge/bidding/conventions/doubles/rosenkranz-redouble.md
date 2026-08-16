@@ -30,7 +30,7 @@ references:
 - bidding/conventions/doubles/rosenkranz-double
 - bidding/conventions/doubles/support-double
 - bidding/conventions/doubles/support-redouble
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/planning/planning-index
 - play/defence/planning/defence-planning-index
 - references/references-index

@@ -27,9 +27,9 @@ references:
 - bidding/conventions/competitive/michaels-cue-bid
 - bidding/conventions/conventions-index
 - bidding/conventions/responses/responses-index
-- bidding/principals/bidding-fundamentals/preemptive-openings
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

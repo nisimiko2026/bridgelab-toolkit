@@ -33,8 +33,8 @@ references:
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/conventions/transfers/texas-transfers
 - bidding/conventions/transfers/transfers-index
-- bidding/principals/bidding-fundamentals/sign-off
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/sign-off
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

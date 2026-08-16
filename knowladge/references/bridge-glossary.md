@@ -62,11 +62,11 @@ references:
 - bidding/conventions/responses/bergen-raises
 - bidding/conventions/responses/stayman
 - bidding/conventions/transfers/texas-transfers
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/losing-trick-count
-- bidding/principals/bidding-fundamentals/sign-off
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/losing-trick-count
+- bidding/principles/bidding-fundamentals/sign-off
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - duplicates/duplicate-scoring
 - duplicates/duplicates-index
@@ -100,7 +100,7 @@ references:
 - play/defence/techniques/promotion
 - play/defence/techniques/uppercut
 - play/play-index
-- play/principals/third-hand-high
+- play/principles/third-hand-high
 - references/bridge-terminology
 - references/common-bridge-abbreviations
 - references/references-index

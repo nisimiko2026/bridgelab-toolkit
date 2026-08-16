@@ -38,7 +38,7 @@ references:
   - bidding/natural-bids/rebids/jump-rebids
   - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/reverse-bid
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

@@ -33,10 +33,10 @@ references:
 - bidding/conventions/slam-conventions/exclusion-blackwood
 - bidding/conventions/slam-conventions/kickback
 - bidding/conventions/slam-conventions/redwood
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/losing-trick-count
-- bidding/principals/bidding-fundamentals/playing-tricks
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/losing-trick-count
+- bidding/principles/bidding-fundamentals/playing-tricks
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/entry-management
 - play/defence/signaling/count

@@ -39,10 +39,10 @@ references:
   - bidding/conventions/responses/bergen-raises
   - bidding/conventions/responses/mixed-raise
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/counting/counting-index
   - play/declarer-play/general-techniques/communication

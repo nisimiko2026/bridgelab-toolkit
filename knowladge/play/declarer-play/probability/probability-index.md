@@ -18,8 +18,8 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/vulnerability
 - play/counting/counting-index
 - play/declarer-play/elimination-and-endplays/elimination
 - play/declarer-play/general-techniques/finesses/finesse

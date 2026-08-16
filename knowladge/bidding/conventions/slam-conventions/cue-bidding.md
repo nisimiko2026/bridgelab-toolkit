@@ -39,8 +39,8 @@ references:
   - bidding/conventions/slam-conventions/last-train
   - bidding/conventions/slam-conventions/serious-3nt
   - bidding/conventions/slam-conventions/slam-bid-index
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/counting/counting-index
   - play/declarer-play/general-techniques/communication

@@ -34,7 +34,7 @@ references:
   - play/declarer-play/squeezes/squeezes-index
   - play/declarer-play/squeezes/strip-squeeze
   - play/defence/signaling/count
-  - play/principals/preservation-of-entries
+  - play/principles/preservation-of-entries
   - references/references-index
 last_updated: 2026-07-27
 status: Draft

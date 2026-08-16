@@ -36,7 +36,7 @@ references:
 - bidding/conventions/responses/checkback-stayman
 - bidding/conventions/responses/stayman
 - bidding/conventions/transfers/transfers-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

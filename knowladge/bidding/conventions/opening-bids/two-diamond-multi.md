@@ -32,13 +32,13 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/opening-bids/weak-two-bids
   - bidding/natural-bids/rebids/responder-rebids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/offensive-vs-defensive-values
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

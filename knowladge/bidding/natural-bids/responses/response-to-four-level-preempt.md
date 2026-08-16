@@ -34,10 +34,10 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/natural-bids/opening-bids/four-level-preempts
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - references/references-index
 last_updated: 2026-07-23

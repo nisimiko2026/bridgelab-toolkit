@@ -25,7 +25,7 @@ references:
 - bidding/natural-bids/responses/responding-to-opening-bids
 - bidding/natural-bids/responses/responding-with-balanced-hands
 - bidding/natural-bids/responses/responding-with-unbalanced-hands
-- bidding/principals/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/preemptive-openings
 - bidding/systems/systems-index
 - references/references-index
 - bidding/natural-bids/responses/raising-partners-minor

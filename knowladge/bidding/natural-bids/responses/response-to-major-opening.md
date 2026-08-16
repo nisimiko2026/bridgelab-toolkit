@@ -54,9 +54,9 @@ references:
   - bidding/natural-bids/responses/limit-raise
   - bidding/natural-bids/responses/natural-responses-index
   - bidding/natural-bids/responses/raising-partners-major
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/defence/signaling/count

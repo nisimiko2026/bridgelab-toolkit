@@ -43,7 +43,7 @@ references:
   - bidding/conventions/slam-conventions/kickback
   - bidding/conventions/slam-conventions/redwood
   - bidding/natural-bids/rebids/responder-rebids
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/defence/signaling/suit-preference

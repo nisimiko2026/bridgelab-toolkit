@@ -45,8 +45,8 @@ references:
   - bidding/conventions/defensive-methods/twerb
   - bidding/conventions/doubles/doubles-index
   - bidding/conventions/responses/responses-index
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/blue-club
   - bidding/systems/moscito
   - references/references-index

@@ -17,8 +17,8 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-index
   - play/counting/counting-the-hand
   - play/declarer-play/deceptive-play/concealment

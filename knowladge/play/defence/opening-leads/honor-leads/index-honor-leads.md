@@ -16,7 +16,7 @@ acronyms: []
 references:
 - acronyms
 - bidding/conventions/responses/responses-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/general-techniques/communication
 - play/defence/index-defence
 - play/defence/opening-leads/journalist-leads

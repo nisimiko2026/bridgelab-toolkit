@@ -26,7 +26,7 @@ references:
 - bidding/conventions/responses/jacoby-notrump
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/last-train
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

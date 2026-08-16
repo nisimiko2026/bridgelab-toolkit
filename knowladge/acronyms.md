@@ -49,8 +49,8 @@ references:
   - bidding/conventions/responses/puppet-stayman
   - bidding/conventions/responses/stayman
   - bidding/conventions/responses/two-way-checkback
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/vulnerability
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/vulnerability
   - bidding/systems/moscito
   - bidding/systems/standard-american
   - bidding/systems/systems-index

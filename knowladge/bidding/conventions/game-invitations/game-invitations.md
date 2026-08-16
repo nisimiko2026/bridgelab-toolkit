@@ -28,10 +28,10 @@ references:
   - bidding/conventions/responses/bergen-raises
   - bidding/natural-bids/rebids/responder-rebids
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/principals-index
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/principles-index
   - bidding/systems/systems-index
   - play/defence/signaling/count
   - references/references-index

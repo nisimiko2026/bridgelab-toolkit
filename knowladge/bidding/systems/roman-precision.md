@@ -51,7 +51,7 @@ references:
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/slam-conventions/slam-bid-index
 - bidding/conventions/transfers/jacoby-transfers
-- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/hand-evaluation
 - bidding/systems/chinese-precision
 - bidding/systems/moscito
 - bidding/systems/roman-club

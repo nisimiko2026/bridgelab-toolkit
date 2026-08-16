@@ -45,8 +45,8 @@ references:
   - bidding/conventions/slam-conventions/serious-3nt
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

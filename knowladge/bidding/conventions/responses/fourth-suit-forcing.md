@@ -33,7 +33,7 @@ references:
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/rebids/responder-rebids
   - bidding/natural-bids/rebids/reverse-bid
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-22
 status: Draft

@@ -35,7 +35,7 @@ references:
   - bidding/conventions/slam-conventions/kickback
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/transfers/jacoby-transfers
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-22
 status: Draft

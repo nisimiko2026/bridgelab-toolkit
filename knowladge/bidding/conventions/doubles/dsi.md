@@ -29,12 +29,12 @@ references:
   - bidding/conventions/doubles/penalty-double
   - bidding/conventions/doubles/take-out-double
   - bidding/conventions/responses/stayman
-  - bidding/principals/bidding-fundamentals/competitive-bidding-philosophy
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/competitive-bidding-philosophy
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-23
 status: Draft

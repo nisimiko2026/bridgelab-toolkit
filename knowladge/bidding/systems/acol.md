@@ -90,10 +90,10 @@ references:
   - bidding/natural-bids/rebids/natural-rebids-index
   - bidding/natural-bids/rebids/reverse-bid
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/benjamin-acol
   - bidding/systems/culbertson
   - bidding/systems/standard-american

@@ -45,10 +45,10 @@ references:
   - bidding/conventions/slam-conventions/control-bidding
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/slam-conventions/grand-slam-force
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

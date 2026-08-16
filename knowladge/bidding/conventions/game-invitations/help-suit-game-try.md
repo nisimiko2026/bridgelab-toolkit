@@ -47,10 +47,10 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/slam-conventions/serious-3nt
   - bidding/conventions/slam-conventions/slam-trial-bids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/counting/counting-index

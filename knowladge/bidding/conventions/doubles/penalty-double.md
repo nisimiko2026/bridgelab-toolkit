@@ -32,9 +32,9 @@ references:
   - bidding/conventions/doubles/responsive-double
   - bidding/conventions/doubles/support-double
   - bidding/conventions/doubles/take-out-double
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index

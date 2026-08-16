@@ -32,10 +32,10 @@ references:
   - bidding/conventions/responses/inverted-minors
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/declarer-play/trump-play/index-trump-play

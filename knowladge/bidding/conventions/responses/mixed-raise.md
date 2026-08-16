@@ -35,8 +35,8 @@ references:
   - bidding/conventions/responses/bergen-raises
   - bidding/conventions/responses/swiss-raise
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - references/references-index
 last_updated: 2026-07-23

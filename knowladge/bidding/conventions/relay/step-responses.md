@@ -39,8 +39,8 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/moscito
   - bidding/systems/systems-index
   - bidding/systems/ultimate-club

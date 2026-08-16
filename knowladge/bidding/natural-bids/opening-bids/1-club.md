@@ -40,10 +40,10 @@ references:
 - bidding/natural-bids/rebids/jump-rebids
 - bidding/natural-bids/rebids/natural-rebids-index
 - bidding/natural-bids/rebids/reverse-bid
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/preemptive-openings
-- bidding/principals/bidding-fundamentals/quick-tricks
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/quick-tricks
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - play/declarer-play/general-techniques/communication
 - references/references-index

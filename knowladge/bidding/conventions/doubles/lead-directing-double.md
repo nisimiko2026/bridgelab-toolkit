@@ -35,7 +35,7 @@ references:
 - bidding/conventions/doubles/support-double
 - bidding/conventions/responses/stayman
 - bidding/conventions/transfers/transfers-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/declarer-play/general-techniques/communication
 - play/defence/opening-leads/opening-leads-index
 - play/defence/planning/defensive-communication

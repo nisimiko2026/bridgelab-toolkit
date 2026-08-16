@@ -20,7 +20,7 @@ references:
   - bidding/bidding-index
   - bidding/conventions/doubles/doubles-index
   - bidding/conventions/opening-bids/index-opening-bids
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/index-declarer-play

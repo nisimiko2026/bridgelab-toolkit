@@ -38,7 +38,7 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/conventions/transfers/transfers-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

@@ -55,7 +55,7 @@ references:
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/natural-bids/opening-bids/opening-requirements
-- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principles/bidding-fundamentals/vulnerability
 - bidding/systems/standard-american
 - play/defence/signaling/count
 - references/references-index

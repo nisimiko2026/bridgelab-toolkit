@@ -16,10 +16,10 @@ references:
 - acronyms
 - bidding/bidding-index
 - bidding/conventions/conventions-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/partnership/alert-procedures
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/partnership/alert-procedures
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/partnership-agreements
 - duplicates/duplicates-index
 - duplicates/matchpoints-vs-imps
 - play/declarer-play/index-declarer-play

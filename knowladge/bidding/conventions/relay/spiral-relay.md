@@ -34,7 +34,7 @@ references:
   - bidding/conventions/relay/symmetric-relay
   - bidding/conventions/responses/responses-index
   - bidding/conventions/responses/stayman
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/moscito
   - bidding/systems/systems-index
   - bidding/systems/ultimate-club

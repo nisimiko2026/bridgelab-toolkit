@@ -49,9 +49,9 @@ references:
   - bidding/conventions/slam-conventions/redwood
   - bidding/conventions/slam-conventions/slam-bid-index
   - bidding/conventions/slam-conventions/spiral-scan
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/blue-club
   - bidding/systems/moscito
   - bidding/systems/super-precision

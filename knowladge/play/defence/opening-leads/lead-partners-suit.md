@@ -24,7 +24,7 @@ references:
   - acronyms
   - bidding/bidding-index
   - bidding/conventions/doubles/doubles-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/planning/entry-management
   - play/defence/index-defence
   - play/defence/opening-leads/fourth-best

@@ -34,7 +34,7 @@ references:
 - bidding/conventions/doubles/support-redouble
 - bidding/conventions/doubles/take-out-double
 - bidding/conventions/responses/responses-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/defence/opening-leads/opening-leads-index
 - references/references-index
 last_updated: '2026-07-27'

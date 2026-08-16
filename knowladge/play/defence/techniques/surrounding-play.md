@@ -32,9 +32,9 @@ references:
 - play/defence/techniques/promotion
 - play/defence/techniques/trump-promotion
 - play/play-index
-- play/principals/cover-an-honor-with-an-honor
-- play/principals/second-hand-low
-- play/principals/third-hand-high
+- play/principles/cover-an-honor-with-an-honor
+- play/principles/second-hand-low
+- play/principles/third-hand-high
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

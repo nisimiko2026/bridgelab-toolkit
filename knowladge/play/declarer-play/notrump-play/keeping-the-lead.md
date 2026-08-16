@@ -29,7 +29,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/principals/preservation-of-entries
+  - play/principles/preservation-of-entries
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

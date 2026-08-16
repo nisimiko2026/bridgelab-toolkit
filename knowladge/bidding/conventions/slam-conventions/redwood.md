@@ -26,7 +26,7 @@ references:
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/kickback
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

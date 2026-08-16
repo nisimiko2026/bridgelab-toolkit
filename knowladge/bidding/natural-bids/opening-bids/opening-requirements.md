@@ -28,16 +28,16 @@ references:
   - acronyms
   - bidding/bidding-index
   - bidding/conventions/opening-bids/index-opening-bids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/rule-of-15
-  - bidding/principals/bidding-fundamentals/rule-of-20
-  - bidding/principals/bidding-fundamentals/rule-of-22
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/offensive-vs-defensive-values
+  - bidding/principles/bidding-fundamentals/playing-tricks
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/rule-of-15
+  - bidding/principles/bidding-fundamentals/rule-of-20
+  - bidding/principles/bidding-fundamentals/rule-of-22
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/defence/signaling/count
   - references/references-index

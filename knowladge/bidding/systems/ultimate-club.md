@@ -50,7 +50,7 @@ references:
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/slam-conventions/slam-bid-index
 - bidding/conventions/transfers/jacoby-transfers
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/blue-club
 - bidding/systems/chinese-precision
 - bidding/systems/moscito

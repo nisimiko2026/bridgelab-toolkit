@@ -61,7 +61,7 @@ references:
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/exclusion-blackwood
 - bidding/conventions/slam-conventions/slam-bid-index
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/moscito
 - bidding/systems/standard-american
 - bidding/systems/systems-index

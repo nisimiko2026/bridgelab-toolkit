@@ -28,11 +28,11 @@ references:
 - bidding/conventions/doubles/penalty-double
 - bidding/conventions/doubles/responsive-double
 - bidding/conventions/doubles/take-out-double
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/preemptive-openings
-- bidding/principals/bidding-fundamentals/quick-tricks
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/preemptive-openings
+- bidding/principles/bidding-fundamentals/quick-tricks
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

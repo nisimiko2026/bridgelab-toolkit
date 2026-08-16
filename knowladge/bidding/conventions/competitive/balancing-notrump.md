@@ -43,8 +43,8 @@ references:
   - bidding/conventions/responses/responses-index
   - bidding/conventions/responses/stayman
   - bidding/conventions/transfers/jacoby-transfers
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - references/references-index
 last_updated: 2026-07-22

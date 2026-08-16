@@ -32,7 +32,7 @@ references:
 - bidding/conventions/doubles/take-out-double
 - bidding/conventions/responses/responses-index
 - bidding/natural-bids/responses/limit-raise
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

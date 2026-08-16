@@ -19,9 +19,9 @@ references:
 - bibliography
 - bidding/bidding-index
 - bidding/conventions/conventions-index
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/disclosure
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/disclosure
 - bidding/systems/systems-index
 - duplicates/duplicate-scoring
 - duplicates/duplicates-index

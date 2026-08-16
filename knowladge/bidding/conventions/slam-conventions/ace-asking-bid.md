@@ -27,7 +27,7 @@ references:
 - bidding/conventions/slam-conventions/cue-bidding
 - bidding/conventions/slam-conventions/exclusion-blackwood
 - bidding/conventions/slam-conventions/grand-slam-force
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - references/references-index
 last_updated: '2026-07-27'

@@ -25,7 +25,7 @@ references:
 - bidding/conventions/responses/responses-index
 - bidding/conventions/slam-conventions/last-train
 - bidding/conventions/slam-conventions/serious-3nt
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/partnership-agreements
 - play/defence/signaling/count
 - references/references-index
 last_updated: '2026-07-27'

@@ -18,9 +18,9 @@ aliases: []
 acronyms: []
 references:
 - acronyms
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/disclosure
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/disclosure
+- bidding/principles/partnership/partnership-agreements
 - play/counting/counting-index
 - play/declarer-play/deceptive-play/deceptive-signals
 - play/declarer-play/general-techniques/communication

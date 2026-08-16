@@ -20,7 +20,7 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/unblock
   - play/declarer-play/probability/probability-inference

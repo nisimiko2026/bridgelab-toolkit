@@ -40,8 +40,8 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/declarer-play/general-techniques/communication

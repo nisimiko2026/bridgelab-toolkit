@@ -35,8 +35,8 @@ references:
   - bidding/conventions/responses/two-way-checkback
   - bidding/conventions/responses/xyz
   - bidding/natural-bids/rebids/responder-rebids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - references/references-index
 last_updated: 2026-07-21

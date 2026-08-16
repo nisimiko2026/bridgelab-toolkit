@@ -58,7 +58,7 @@ references:
 - bidding/conventions/slam-conventions/serious-3nt
 - bidding/conventions/slam-conventions/slam-bid-index
 - bidding/conventions/transfers/jacoby-transfers
-- bidding/principals/partnership/disclosure
+- bidding/principles/partnership/disclosure
 - bidding/systems/blue-club
 - bidding/systems/standard-american
 - references/references-index

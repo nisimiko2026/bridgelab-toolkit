@@ -21,12 +21,12 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/alert-procedures
-- bidding/principals/partnership/convention-cards
-- bidding/principals/partnership/disclosure
-- bidding/principals/partnership/ethics-and-unauthorized-information
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/alert-procedures
+- bidding/principles/partnership/convention-cards
+- bidding/principles/partnership/disclosure
+- bidding/principles/partnership/ethics-and-unauthorized-information
+- bidding/principles/partnership/partnership-agreements
 - duplicates/duplicate-scoring
 - duplicates/duplicates-index
 - glossary

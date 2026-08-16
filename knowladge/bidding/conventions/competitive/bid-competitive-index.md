@@ -59,9 +59,9 @@ references:
 - bidding/conventions/doubles/take-out-double
 - bidding/conventions/responses/bergen-raises
 - bidding/conventions/transfers/transfer-lebensohl
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/bidding-fundamentals/vulnerability
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - duplicates/duplicates-index
 - references/references-index

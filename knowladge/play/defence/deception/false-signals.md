@@ -14,7 +14,7 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - play/declarer-play/deceptive-play/deception
   - play/declarer-play/deceptive-play/deceptive-signals
   - play/declarer-play/general-techniques/communication

@@ -33,14 +33,14 @@ references:
   - bidding/natural-bids/opening-bids/opening-requirements
   - bidding/natural-bids/opening-bids/three-level-preempts
   - bidding/natural-bids/opening-bids/weak-two-bids
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/preemptive-openings
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/rule-of-15
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/preemptive-openings
+  - bidding/principles/bidding-fundamentals/quick-tricks
+  - bidding/principles/bidding-fundamentals/rule-of-15
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/declarer-play/general-techniques/communication

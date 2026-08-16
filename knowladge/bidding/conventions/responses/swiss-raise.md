@@ -36,8 +36,8 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/slam-conventions/grand-slam-force
   - bidding/natural-bids/responses/limit-raise
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-22
 status: Draft

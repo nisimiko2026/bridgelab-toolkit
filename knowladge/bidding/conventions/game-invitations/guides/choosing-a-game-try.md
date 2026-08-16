@@ -20,7 +20,7 @@ references:
   - bidding/conventions/game-invitations/game-invitations
   - bidding/conventions/game-invitations/maximal-game-try
   - bidding/conventions/game-invitations/two-way-game-try
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - references/references-index
 last_updated: 2026-07-22
 status: Draft

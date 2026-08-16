@@ -43,13 +43,13 @@ references:
   - bidding/conventions/slam-conventions/cue-bidding
   - bidding/conventions/slam-conventions/last-train
   - bidding/conventions/slam-conventions/serious-3nt
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/seat-position
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/bidding-fundamentals/losing-trick-count
+  - bidding/principles/bidding-fundamentals/seat-position
+  - bidding/principles/bidding-fundamentals/vulnerability
+  - bidding/principles/partnership/convention-cards
+  - bidding/principles/partnership/disclosure
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/declarer-play/planning/entry-management

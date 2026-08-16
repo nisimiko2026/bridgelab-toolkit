@@ -26,8 +26,8 @@ references:
   - bidding/conventions/game-invitations/game-invitations
   - bidding/conventions/game-invitations/maximal-game-try
   - bidding/conventions/game-invitations/two-way-game-try
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/hand-evaluation
+  - bidding/principles/partnership/partnership-agreements
   - play/counting/counting-index
   - play/declarer-play/planning/entry-management
   - play/defence/signaling/count

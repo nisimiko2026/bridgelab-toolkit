@@ -51,7 +51,7 @@ references:
   - bidding/conventions/transfers/texas-transfers
   - bidding/conventions/transfers/transfer-lebensohl
   - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - references/references-index

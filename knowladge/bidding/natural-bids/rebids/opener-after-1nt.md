@@ -47,8 +47,8 @@ references:
   - bidding/conventions/transfers/jacoby-transfers
   - bidding/conventions/transfers/texas-transfers
   - bidding/conventions/transfers/transfer-lebensohl
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/partnership/partnership-agreements
+  - bidding/principles/bidding-fundamentals/sign-off
+  - bidding/principles/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/counting/counting-index

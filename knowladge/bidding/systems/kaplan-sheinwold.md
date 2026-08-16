@@ -56,8 +56,8 @@ references:
 - bidding/conventions/transfers/jacoby-transfers
 - bidding/conventions/transfers/transfers-index
 - bidding/natural-bids/responses/natural-responses-index
-- bidding/principals/bidding-fundamentals/hand-evaluation
-- bidding/principals/partnership/partnership-agreements
+- bidding/principles/bidding-fundamentals/hand-evaluation
+- bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - references/references-index
 last_updated: '2026-07-27'

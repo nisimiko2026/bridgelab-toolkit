@@ -17,7 +17,7 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principals/partnership/index-principal-partnership
+- bidding/principles/partnership/index-principal-partnership
 - duplicates/duplicates-index
 - play/counting/counting-index
 - play/declarer-play/deceptive-play/index-deceptive-play
@@ -42,7 +42,7 @@ references:
 - play/defence/techniques/forcing-defence
 - play/defence/techniques/passive-defence
 - references/references-index
-- play/principals/play-principals-index
+- play/principles/play-principles-index
 last_updated: '2026-07-22'
 status: Draft
 ---
