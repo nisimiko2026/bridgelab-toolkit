@@ -34,15 +34,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "crash",
-                "dont",
-                "multi",
-                "puppet stayman",
-                "sayc",
-                "standard american",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -211,9 +203,9 @@
             }
         ],
         "links": [],
-        "words": 1147,
-        "lines": 391,
-        "characters": 7181,
+        "words": 1131,
+        "lines": 384,
+        "characters": 7088,
         "metadata_error": null
     },
     {
@@ -242,14 +234,7 @@
                 "slam",
                 "standard american"
             ],
-            "systems": [
-                "acol",
-                "crash",
-                "kokish",
-                "precision",
-                "sayc",
-                "standard american"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -463,9 +448,9 @@
             }
         ],
         "links": [],
-        "words": 1111,
-        "lines": 457,
-        "characters": 8342,
+        "words": 1099,
+        "lines": 451,
+        "characters": 8269,
         "metadata_error": null
     },
     {
@@ -506,11 +491,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "crash",
-                "dont",
-                "kokish",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american",
@@ -646,9 +626,9 @@
             }
         ],
         "links": [],
-        "words": 903,
-        "lines": 380,
-        "characters": 7002,
+        "words": 893,
+        "lines": 375,
+        "characters": 6966,
         "metadata_error": null
     },
     {
@@ -680,12 +660,7 @@
                 "support",
                 "transfer"
             ],
-            "systems": [
-                "drury",
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -873,9 +848,9 @@
             }
         ],
         "links": [],
-        "words": 539,
-        "lines": 174,
-        "characters": 3003,
+        "words": 531,
+        "lines": 170,
+        "characters": 2960,
         "metadata_error": null
     },
     {
@@ -1090,11 +1065,7 @@
                 "relay",
                 "slam"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -1289,9 +1260,9 @@
             }
         ],
         "links": [],
-        "words": 1297,
-        "lines": 622,
-        "characters": 8703,
+        "words": 1292,
+        "lines": 619,
+        "characters": 8670,
         "metadata_error": null
     },
     {
@@ -1330,9 +1301,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american"
@@ -1613,9 +1581,9 @@
             }
         ],
         "links": [],
-        "words": 1633,
-        "lines": 824,
-        "characters": 11617,
+        "words": 1627,
+        "lines": 821,
+        "characters": 11581,
         "metadata_error": null
     },
     {
@@ -1651,8 +1619,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american"
@@ -1842,9 +1808,9 @@
             }
         ],
         "links": [],
-        "words": 1311,
-        "lines": 556,
-        "characters": 8927,
+        "words": 1307,
+        "lines": 554,
+        "characters": 8901,
         "metadata_error": null
     },
     {
@@ -1878,13 +1844,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "crash",
-                "dont",
-                "lebensohl",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -2063,9 +2023,9 @@
             }
         ],
         "links": [],
-        "words": 1043,
-        "lines": 445,
-        "characters": 8832,
+        "words": 1034,
+        "lines": 440,
+        "characters": 8786,
         "metadata_error": null
     },
     {
@@ -2095,11 +2055,7 @@
                 "response",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -2280,9 +2236,9 @@
             }
         ],
         "links": [],
-        "words": 1097,
-        "lines": 548,
-        "characters": 7455,
+        "words": 1092,
+        "lines": 545,
+        "characters": 7422,
         "metadata_error": null
     },
     {
@@ -2320,9 +2276,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american",
@@ -2538,9 +2491,9 @@
             }
         ],
         "links": [],
-        "words": 1334,
-        "lines": 627,
-        "characters": 8703,
+        "words": 1328,
+        "lines": 624,
+        "characters": 8667,
         "metadata_error": null
     },
     {
@@ -2577,9 +2530,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american"
@@ -2794,9 +2744,9 @@
             }
         ],
         "links": [],
-        "words": 1359,
-        "lines": 661,
-        "characters": 8752,
+        "words": 1353,
+        "lines": 658,
+        "characters": 8716,
         "metadata_error": null
     },
     {
@@ -3388,7 +3338,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -3660,9 +3609,9 @@
             }
         ],
         "links": [],
-        "words": 1770,
-        "lines": 792,
-        "characters": 11969,
+        "words": 1768,
+        "lines": 791,
+        "characters": 11957,
         "metadata_error": null
     },
     {
@@ -3698,7 +3647,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -4005,9 +3953,9 @@
             }
         ],
         "links": [],
-        "words": 1626,
-        "lines": 781,
-        "characters": 11104,
+        "words": 1624,
+        "lines": 780,
+        "characters": 11092,
         "metadata_error": null
     },
     {
@@ -4266,10 +4214,7 @@
                 "takeout",
                 "wolff signoff"
             ],
-            "systems": [
-                "lebensohl",
-                "wolff signoff"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -4360,9 +4305,9 @@
             }
         ],
         "links": [],
-        "words": 637,
-        "lines": 291,
-        "characters": 4732,
+        "words": 633,
+        "lines": 289,
+        "characters": 4707,
         "metadata_error": null
     },
     {
@@ -4391,10 +4336,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -4596,9 +4538,9 @@
             }
         ],
         "links": [],
-        "words": 1332,
-        "lines": 599,
-        "characters": 9080,
+        "words": 1329,
+        "lines": 597,
+        "characters": 9057,
         "metadata_error": null
     },
     {
@@ -4628,9 +4570,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -4731,9 +4671,9 @@
             }
         ],
         "links": [],
-        "words": 672,
-        "lines": 260,
-        "characters": 4956,
+        "words": 671,
+        "lines": 259,
+        "characters": 4950,
         "metadata_error": null
     },
     {
@@ -4767,11 +4707,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -4973,9 +4909,9 @@
             }
         ],
         "links": [],
-        "words": 1267,
-        "lines": 586,
-        "characters": 8511,
+        "words": 1262,
+        "lines": 583,
+        "characters": 8478,
         "metadata_error": null
     },
     {
@@ -5190,10 +5126,7 @@
                 "opening",
                 "relay"
             ],
-            "systems": [
-                "cappelletti",
-                "dont"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -5303,9 +5236,9 @@
             }
         ],
         "links": [],
-        "words": 657,
-        "lines": 302,
-        "characters": 4638,
+        "words": 654,
+        "lines": 300,
+        "characters": 4620,
         "metadata_error": null
     },
     {
@@ -5340,9 +5273,6 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "dont",
-                "multi",
                 "precision"
             ],
             "aliases": [],
@@ -5534,9 +5464,9 @@
             }
         ],
         "links": [],
-        "words": 1193,
-        "lines": 553,
-        "characters": 8266,
+        "words": 1187,
+        "lines": 550,
+        "characters": 8230,
         "metadata_error": null
     },
     {
@@ -5807,11 +5737,7 @@
                 "response",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -5987,9 +5913,9 @@
             }
         ],
         "links": [],
-        "words": 1183,
-        "lines": 541,
-        "characters": 8080,
+        "words": 1178,
+        "lines": 538,
+        "characters": 8047,
         "metadata_error": null
     },
     {
@@ -6850,9 +6776,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "lebensohl"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -6948,9 +6872,9 @@
             }
         ],
         "links": [],
-        "words": 631,
-        "lines": 254,
-        "characters": 4589,
+        "words": 630,
+        "lines": 253,
+        "characters": 4580,
         "metadata_error": null
     },
     {
@@ -7527,8 +7451,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american"
@@ -7804,9 +7726,9 @@
             }
         ],
         "links": [],
-        "words": 1495,
-        "lines": 756,
-        "characters": 10715,
+        "words": 1491,
+        "lines": 754,
+        "characters": 10684,
         "metadata_error": null
     },
     {
@@ -8405,16 +8327,7 @@
                 "walsh"
             ],
             "systems": [
-                "cappelletti",
-                "crash",
-                "dont",
-                "jacoby",
-                "kokish",
-                "lebensohl",
-                "multi",
-                "precision",
-                "puppet stayman",
-                "walsh"
+                "precision"
             ],
             "aliases": [],
             "acronyms": [],
@@ -8577,9 +8490,9 @@
             }
         ],
         "links": [],
-        "words": 1194,
-        "lines": 486,
-        "characters": 9770,
+        "words": 1175,
+        "lines": 477,
+        "characters": 9680,
         "metadata_error": null
     },
     {
@@ -8617,10 +8530,6 @@
                 "takeout"
             ],
             "systems": [
-                "cappelletti",
-                "crash",
-                "dont",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american",
@@ -8798,9 +8707,9 @@
             }
         ],
         "links": [],
-        "words": 1092,
-        "lines": 466,
-        "characters": 8665,
+        "words": 1084,
+        "lines": 462,
+        "characters": 8636,
         "metadata_error": null
     },
     {
@@ -8837,10 +8746,6 @@
             ],
             "systems": [
                 "blue club",
-                "cappelletti",
-                "crash",
-                "dont",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -9119,9 +9024,9 @@
             }
         ],
         "links": [],
-        "words": 1506,
-        "lines": 754,
-        "characters": 10404,
+        "words": 1498,
+        "lines": 750,
+        "characters": 10358,
         "metadata_error": null
     },
     {
@@ -9153,10 +9058,6 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "flannery",
-                "lebensohl",
-                "multi",
                 "precision"
             ],
             "aliases": [],
@@ -9405,9 +9306,9 @@
             }
         ],
         "links": [],
-        "words": 1483,
-        "lines": 766,
-        "characters": 10161,
+        "words": 1475,
+        "lines": 762,
+        "characters": 10107,
         "metadata_error": null
     },
     {
@@ -9443,10 +9344,6 @@
                 "transfer"
             ],
             "systems": [
-                "crash",
-                "croc",
-                "mathe",
-                "multi",
                 "precision",
                 "standard american",
                 "strong club"
@@ -9547,9 +9444,9 @@
             }
         ],
         "links": [],
-        "words": 752,
-        "lines": 269,
-        "characters": 5816,
+        "words": 744,
+        "lines": 265,
+        "characters": 5791,
         "metadata_error": null
     },
     {
@@ -9585,12 +9482,6 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "crash",
-                "croc",
-                "dont",
-                "mathe",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -9691,9 +9582,9 @@
             }
         ],
         "links": [],
-        "words": 692,
-        "lines": 270,
-        "characters": 5103,
+        "words": 680,
+        "lines": 264,
+        "characters": 5055,
         "metadata_error": null
     },
     {
@@ -9730,10 +9621,6 @@
             ],
             "systems": [
                 "blue club",
-                "cappelletti",
-                "crash",
-                "dont",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -9969,9 +9856,9 @@
             }
         ],
         "links": [],
-        "words": 1470,
-        "lines": 717,
-        "characters": 10477,
+        "words": 1462,
+        "lines": 713,
+        "characters": 10431,
         "metadata_error": null
     },
     {
@@ -10012,11 +9899,6 @@
             ],
             "systems": [
                 "blue club",
-                "cappelletti",
-                "crash",
-                "dont",
-                "jacoby",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -10239,9 +10121,9 @@
             }
         ],
         "links": [],
-        "words": 1330,
-        "lines": 600,
-        "characters": 9731,
+        "words": 1320,
+        "lines": 595,
+        "characters": 9674,
         "metadata_error": null
     },
     {
@@ -10272,11 +10154,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "crash",
-                "lebensohl",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -10539,9 +10417,9 @@
             }
         ],
         "links": [],
-        "words": 1449,
-        "lines": 706,
-        "characters": 9737,
+        "words": 1444,
+        "lines": 703,
+        "characters": 9705,
         "metadata_error": null
     },
     {
@@ -11001,9 +10879,7 @@
                 "stayman",
                 "takeout"
             ],
-            "systems": [
-                "lebensohl"
-            ],
+            "systems": [],
             "aliases": [
                 "Do Something Intelligent"
             ],
@@ -11173,9 +11049,9 @@
             }
         ],
         "links": [],
-        "words": 1051,
-        "lines": 452,
-        "characters": 7890,
+        "words": 1050,
+        "lines": 451,
+        "characters": 7878,
         "metadata_error": null
     },
     {
@@ -13489,10 +13365,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "cappelletti",
-                "lebensohl"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -13646,9 +13519,9 @@
             }
         ],
         "links": [],
-        "words": 1061,
-        "lines": 394,
-        "characters": 7273,
+        "words": 1058,
+        "lines": 392,
+        "characters": 7250,
         "metadata_error": null
     },
     {
@@ -16102,8 +15975,6 @@
                 "two over one"
             ],
             "systems": [
-                "drury",
-                "jacoby",
                 "two over one"
             ],
             "aliases": [],
@@ -16199,9 +16070,9 @@
             }
         ],
         "links": [],
-        "words": 702,
-        "lines": 206,
-        "characters": 5137,
+        "words": 698,
+        "lines": 204,
+        "characters": 5115,
         "metadata_error": null
     },
     {
@@ -17672,7 +17543,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -18423,9 +18293,9 @@
             }
         ],
         "links": [],
-        "words": 5823,
-        "lines": 2971,
-        "characters": 36656,
+        "words": 5821,
+        "lines": 2970,
+        "characters": 36644,
         "metadata_error": null
     },
     {
@@ -18451,9 +18321,7 @@
                 "relay",
                 "slam"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -18592,9 +18460,9 @@
             }
         ],
         "links": [],
-        "words": 912,
-        "lines": 375,
-        "characters": 7119,
+        "words": 911,
+        "lines": 374,
+        "characters": 7113,
         "metadata_error": null
     },
     {
@@ -18630,7 +18498,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -19391,9 +19258,9 @@
             }
         ],
         "links": [],
-        "words": 5678,
-        "lines": 2925,
-        "characters": 35998,
+        "words": 5676,
+        "lines": 2924,
+        "characters": 35986,
         "metadata_error": null
     },
     {
@@ -19428,7 +19295,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -20231,9 +20097,9 @@
             }
         ],
         "links": [],
-        "words": 6090,
-        "lines": 3036,
-        "characters": 39505,
+        "words": 6088,
+        "lines": 3035,
+        "characters": 39493,
         "metadata_error": null
     },
     {
@@ -20271,7 +20137,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american",
@@ -21026,9 +20891,9 @@
             }
         ],
         "links": [],
-        "words": 5764,
-        "lines": 2969,
-        "characters": 37504,
+        "words": 5762,
+        "lines": 2968,
+        "characters": 37492,
         "metadata_error": null
     },
     {
@@ -21062,7 +20927,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -21803,9 +21667,9 @@
             }
         ],
         "links": [],
-        "words": 5529,
-        "lines": 2782,
-        "characters": 37144,
+        "words": 5527,
+        "lines": 2781,
+        "characters": 37132,
         "metadata_error": null
     },
     {
@@ -21832,8 +21696,7 @@
                 "slam"
             ],
             "systems": [
-                "acol",
-                "multi"
+                "acol"
             ],
             "aliases": [],
             "acronyms": [],
@@ -22003,9 +21866,9 @@
             }
         ],
         "links": [],
-        "words": 1128,
-        "lines": 433,
-        "characters": 7543,
+        "words": 1126,
+        "lines": 432,
+        "characters": 7537,
         "metadata_error": null
     },
     {
@@ -22036,10 +21899,7 @@
                 "slam",
                 "support"
             ],
-            "systems": [
-                "flannery",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -22255,9 +22115,9 @@
             }
         ],
         "links": [],
-        "words": 1300,
-        "lines": 600,
-        "characters": 9209,
+        "words": 1297,
+        "lines": 598,
+        "characters": 9188,
         "metadata_error": null
     },
     {
@@ -22290,9 +22150,7 @@
                 "slam",
                 "takeout"
             ],
-            "systems": [
-                "flannery"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -22499,9 +22357,9 @@
             }
         ],
         "links": [],
-        "words": 1264,
-        "lines": 559,
-        "characters": 8995,
+        "words": 1263,
+        "lines": 558,
+        "characters": 8984,
         "metadata_error": null
     },
     {
@@ -22540,9 +22398,6 @@
             ],
             "systems": [
                 "acol",
-                "dont",
-                "multi",
-                "namyats",
                 "precision",
                 "sayc",
                 "standard american"
@@ -22843,9 +22698,9 @@
             }
         ],
         "links": [],
-        "words": 1557,
-        "lines": 788,
-        "characters": 10822,
+        "words": 1551,
+        "lines": 785,
+        "characters": 10790,
         "metadata_error": null
     },
     {
@@ -22875,7 +22730,6 @@
                 "transfer"
             ],
             "systems": [
-                "multi",
                 "precision",
                 "standard american",
                 "strong club"
@@ -23035,9 +22889,9 @@
             }
         ],
         "links": [],
-        "words": 949,
-        "lines": 407,
-        "characters": 7318,
+        "words": 947,
+        "lines": 406,
+        "characters": 7316,
         "metadata_error": null
     },
     {
@@ -23061,9 +22915,7 @@
                 "response",
                 "support"
             ],
-            "systems": [
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -23246,9 +23098,9 @@
             }
         ],
         "links": [],
-        "words": 1059,
-        "lines": 445,
-        "characters": 7027,
+        "words": 1058,
+        "lines": 444,
+        "characters": 7022,
         "metadata_error": null
     },
     {
@@ -23282,9 +23134,7 @@
                 "support",
                 "transfer"
             ],
-            "systems": [
-                "namyats"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -23486,9 +23336,9 @@
             }
         ],
         "links": [],
-        "words": 1289,
-        "lines": 554,
-        "characters": 9372,
+        "words": 1288,
+        "lines": 553,
+        "characters": 9362,
         "metadata_error": null
     },
     {
@@ -23521,7 +23371,6 @@
             ],
             "systems": [
                 "blue club",
-                "multi",
                 "precision",
                 "roman club"
             ],
@@ -23684,9 +23533,9 @@
             }
         ],
         "links": [],
-        "words": 1013,
-        "lines": 401,
-        "characters": 7055,
+        "words": 1011,
+        "lines": 400,
+        "characters": 7053,
         "metadata_error": null
     },
     {
@@ -23715,10 +23564,7 @@
                 "response",
                 "slam"
             ],
-            "systems": [
-                "flannery",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -23930,9 +23776,9 @@
             }
         ],
         "links": [],
-        "words": 1443,
-        "lines": 594,
-        "characters": 10033,
+        "words": 1440,
+        "lines": 592,
+        "characters": 10012,
         "metadata_error": null
     },
     {
@@ -23968,10 +23814,7 @@
                 "strong club"
             ],
             "systems": [
-                "jacoby",
-                "kokish",
                 "precision",
-                "puppet stayman",
                 "standard american",
                 "strong club"
             ],
@@ -24185,9 +24028,9 @@
             }
         ],
         "links": [],
-        "words": 1327,
-        "lines": 711,
-        "characters": 9301,
+        "words": 1320,
+        "lines": 708,
+        "characters": 9259,
         "metadata_error": null
     },
     {
@@ -24215,7 +24058,6 @@
                 "transfer"
             ],
             "systems": [
-                "kokish",
                 "precision",
                 "strong club"
             ],
@@ -24309,9 +24151,9 @@
             }
         ],
         "links": [],
-        "words": 630,
-        "lines": 233,
-        "characters": 4549,
+        "words": 628,
+        "lines": 232,
+        "characters": 4544,
         "metadata_error": null
     },
     {
@@ -24347,7 +24189,6 @@
             ],
             "systems": [
                 "blue club",
-                "multi",
                 "precision",
                 "strong club",
                 "super precision"
@@ -24579,9 +24420,9 @@
             }
         ],
         "links": [],
-        "words": 1552,
-        "lines": 705,
-        "characters": 11437,
+        "words": 1550,
+        "lines": 704,
+        "characters": 11426,
         "metadata_error": null
     },
     {
@@ -24609,7 +24450,6 @@
                 "support"
             ],
             "systems": [
-                "kokish",
                 "precision",
                 "strong club"
             ],
@@ -24753,9 +24593,9 @@
             }
         ],
         "links": [],
-        "words": 1021,
-        "lines": 429,
-        "characters": 7589,
+        "words": 1019,
+        "lines": 428,
+        "characters": 7584,
         "metadata_error": null
     },
     {
@@ -24784,7 +24624,6 @@
                 "strong club"
             ],
             "systems": [
-                "kokish",
                 "precision",
                 "strong club"
             ],
@@ -25019,9 +24858,9 @@
             }
         ],
         "links": [],
-        "words": 1504,
-        "lines": 738,
-        "characters": 10542,
+        "words": 1502,
+        "lines": 737,
+        "characters": 10530,
         "metadata_error": null
     },
     {
@@ -25049,8 +24888,6 @@
                 "strong club"
             ],
             "systems": [
-                "kokish",
-                "lebensohl",
                 "precision",
                 "strong club"
             ],
@@ -25154,9 +24991,9 @@
             }
         ],
         "links": [],
-        "words": 917,
-        "lines": 275,
-        "characters": 6840,
+        "words": 913,
+        "lines": 273,
+        "characters": 6814,
         "metadata_error": null
     },
     {
@@ -25186,7 +25023,6 @@
                 "support"
             ],
             "systems": [
-                "kokish",
                 "precision",
                 "strong club"
             ],
@@ -25385,9 +25221,9 @@
             }
         ],
         "links": [],
-        "words": 1288,
-        "lines": 633,
-        "characters": 9038,
+        "words": 1286,
+        "lines": 632,
+        "characters": 9026,
         "metadata_error": null
     },
     {
@@ -25539,7 +25375,6 @@
             ],
             "systems": [
                 "acol",
-                "multi",
                 "precision"
             ],
             "aliases": [],
@@ -25709,9 +25544,9 @@
             }
         ],
         "links": [],
-        "words": 1116,
-        "lines": 473,
-        "characters": 7515,
+        "words": 1114,
+        "lines": 472,
+        "characters": 7504,
         "metadata_error": null
     },
     {
@@ -25956,10 +25791,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "drury",
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -26142,9 +25974,9 @@
             }
         ],
         "links": [],
-        "words": 1299,
-        "lines": 552,
-        "characters": 8939,
+        "words": 1296,
+        "lines": 550,
+        "characters": 8920,
         "metadata_error": null
     },
     {
@@ -26402,10 +26234,7 @@
                 "response",
                 "stayman"
             ],
-            "systems": [
-                "jacoby",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -26543,9 +26372,9 @@
             }
         ],
         "links": [],
-        "words": 1025,
-        "lines": 382,
-        "characters": 7168,
+        "words": 1021,
+        "lines": 380,
+        "characters": 7145,
         "metadata_error": null
     },
     {
@@ -26577,10 +26406,7 @@
                 "slam",
                 "support"
             ],
-            "systems": [
-                "drury",
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -26771,9 +26597,9 @@
             }
         ],
         "links": [],
-        "words": 1236,
-        "lines": 555,
-        "characters": 8557,
+        "words": 1233,
+        "lines": 553,
+        "characters": 8538,
         "metadata_error": null
     },
     {
@@ -26803,9 +26629,7 @@
                 "slam",
                 "support"
             ],
-            "systems": [
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -27008,9 +26832,9 @@
             }
         ],
         "links": [],
-        "words": 1347,
-        "lines": 597,
-        "characters": 9099,
+        "words": 1346,
+        "lines": 596,
+        "characters": 9091,
         "metadata_error": null
     },
     {
@@ -27038,11 +26862,7 @@
                 "transfer",
                 "walsh"
             ],
-            "systems": [
-                "jacoby",
-                "puppet stayman",
-                "walsh"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -27191,9 +27011,9 @@
             }
         ],
         "links": [],
-        "words": 1055,
-        "lines": 401,
-        "characters": 7448,
+        "words": 1049,
+        "lines": 398,
+        "characters": 7417,
         "metadata_error": null
     },
     {
@@ -27447,10 +27267,7 @@
                 "stayman",
                 "support"
             ],
-            "systems": [
-                "jacoby",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -27604,9 +27421,9 @@
             }
         ],
         "links": [],
-        "words": 1145,
-        "lines": 436,
-        "characters": 7535,
+        "words": 1141,
+        "lines": 434,
+        "characters": 7512,
         "metadata_error": null
     },
     {
@@ -27646,7 +27463,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american",
@@ -27971,9 +27787,9 @@
             }
         ],
         "links": [],
-        "words": 2147,
-        "lines": 1135,
-        "characters": 14873,
+        "words": 2145,
+        "lines": 1134,
+        "characters": 14861,
         "metadata_error": null
     },
     {
@@ -28009,8 +27825,6 @@
                 "support"
             ],
             "systems": [
-                "drury",
-                "jacoby",
                 "precision",
                 "standard american"
             ],
@@ -28223,9 +28037,9 @@
             }
         ],
         "links": [],
-        "words": 1492,
-        "lines": 623,
-        "characters": 10178,
+        "words": 1488,
+        "lines": 621,
+        "characters": 10156,
         "metadata_error": null
     },
     {
@@ -28259,9 +28073,6 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "jacoby",
-                "lebensohl",
                 "precision"
             ],
             "aliases": [],
@@ -28432,9 +28243,9 @@
             }
         ],
         "links": [],
-        "words": 1173,
-        "lines": 537,
-        "characters": 8317,
+        "words": 1167,
+        "lines": 534,
+        "characters": 8275,
         "metadata_error": null
     },
     {
@@ -28468,8 +28279,6 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american"
@@ -28664,9 +28473,9 @@
             }
         ],
         "links": [],
-        "words": 1099,
-        "lines": 520,
-        "characters": 7716,
+        "words": 1095,
+        "lines": 518,
+        "characters": 7685,
         "metadata_error": null
     },
     {
@@ -28705,9 +28514,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american"
@@ -28919,9 +28725,9 @@
             }
         ],
         "links": [],
-        "words": 1320,
-        "lines": 658,
-        "characters": 8863,
+        "words": 1314,
+        "lines": 655,
+        "characters": 8821,
         "metadata_error": null
     },
     {
@@ -28955,11 +28761,7 @@
                 "support",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -29177,9 +28979,9 @@
             }
         ],
         "links": [],
-        "words": 1368,
-        "lines": 562,
-        "characters": 9613,
+        "words": 1362,
+        "lines": 559,
+        "characters": 9571,
         "metadata_error": null
     },
     {
@@ -29211,7 +29013,6 @@
                 "support"
             ],
             "systems": [
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -29386,9 +29187,9 @@
             }
         ],
         "links": [],
-        "words": 1036,
-        "lines": 475,
-        "characters": 7289,
+        "words": 1034,
+        "lines": 474,
+        "characters": 7277,
         "metadata_error": null
     },
     {
@@ -29645,10 +29446,7 @@
                 "responses to weak two openings",
                 "slam"
             ],
-            "systems": [
-                "lebensohl",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -29839,9 +29637,9 @@
             }
         ],
         "links": [],
-        "words": 1285,
-        "lines": 542,
-        "characters": 8882,
+        "words": 1282,
+        "lines": 540,
+        "characters": 8860,
         "metadata_error": null
     },
     {
@@ -29874,8 +29672,6 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -30082,9 +29878,9 @@
             }
         ],
         "links": [],
-        "words": 1367,
-        "lines": 586,
-        "characters": 9835,
+        "words": 1363,
+        "lines": 584,
+        "characters": 9813,
         "metadata_error": null
     },
     {
@@ -30116,8 +29912,6 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -30327,9 +30121,9 @@
             }
         ],
         "links": [],
-        "words": 1311,
-        "lines": 617,
-        "characters": 9360,
+        "words": 1307,
+        "lines": 615,
+        "characters": 9338,
         "metadata_error": null
     },
     {
@@ -30364,8 +30158,6 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -30583,9 +30375,9 @@
             }
         ],
         "links": [],
-        "words": 1274,
-        "lines": 636,
-        "characters": 8913,
+        "words": 1270,
+        "lines": 634,
+        "characters": 8891,
         "metadata_error": null
     },
     {
@@ -30618,7 +30410,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -30857,9 +30648,9 @@
             }
         ],
         "links": [],
-        "words": 1220,
-        "lines": 611,
-        "characters": 8548,
+        "words": 1218,
+        "lines": 610,
+        "characters": 8547,
         "metadata_error": null
     },
     {
@@ -30892,11 +30683,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -31116,9 +30903,9 @@
             }
         ],
         "links": [],
-        "words": 1392,
-        "lines": 529,
-        "characters": 9762,
+        "words": 1386,
+        "lines": 526,
+        "characters": 9720,
         "metadata_error": null
     },
     {
@@ -31150,9 +30937,7 @@
                 "support"
             ],
             "systems": [
-                "acol",
-                "lebensohl",
-                "multi"
+                "acol"
             ],
             "aliases": [],
             "acronyms": [],
@@ -31304,9 +31089,9 @@
             }
         ],
         "links": [],
-        "words": 1051,
-        "lines": 504,
-        "characters": 6966,
+        "words": 1047,
+        "lines": 502,
+        "characters": 6948,
         "metadata_error": null
     },
     {
@@ -31567,13 +31352,7 @@
                 "transfer",
                 "walsh"
             ],
-            "systems": [
-                "jacoby",
-                "kokish",
-                "lebensohl",
-                "puppet stayman",
-                "walsh"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -31731,9 +31510,9 @@
             }
         ],
         "links": [],
-        "words": 1058,
-        "lines": 448,
-        "characters": 8847,
+        "words": 1048,
+        "lines": 443,
+        "characters": 8795,
         "metadata_error": null
     },
     {
@@ -31766,8 +31545,6 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -31996,9 +31773,9 @@
             }
         ],
         "links": [],
-        "words": 1271,
-        "lines": 632,
-        "characters": 9268,
+        "words": 1267,
+        "lines": 630,
+        "characters": 9246,
         "metadata_error": null
     },
     {
@@ -32040,11 +31817,6 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "standard american"
             ],
@@ -32234,9 +32006,9 @@
             }
         ],
         "links": [],
-        "words": 1260,
-        "lines": 604,
-        "characters": 8954,
+        "words": 1250,
+        "lines": 599,
+        "characters": 8893,
         "metadata_error": null
     },
     {
@@ -32274,9 +32046,7 @@
                 "transfer"
             ],
             "systems": [
-                "jacoby",
                 "precision",
-                "puppet stayman",
                 "standard american"
             ],
             "aliases": [],
@@ -32482,9 +32252,9 @@
             }
         ],
         "links": [],
-        "words": 1347,
-        "lines": 558,
-        "characters": 9027,
+        "words": 1342,
+        "lines": 556,
+        "characters": 8996,
         "metadata_error": null
     },
     {
@@ -32518,7 +32288,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -32741,9 +32510,9 @@
             }
         ],
         "links": [],
-        "words": 1409,
-        "lines": 651,
-        "characters": 10011,
+        "words": 1407,
+        "lines": 650,
+        "characters": 9999,
         "metadata_error": null
     },
     {
@@ -32779,7 +32548,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -32990,9 +32758,9 @@
             }
         ],
         "links": [],
-        "words": 1423,
-        "lines": 596,
-        "characters": 9796,
+        "words": 1421,
+        "lines": 595,
+        "characters": 9784,
         "metadata_error": null
     },
     {
@@ -33025,11 +32793,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -33243,9 +33007,9 @@
             }
         ],
         "links": [],
-        "words": 1403,
-        "lines": 582,
-        "characters": 9574,
+        "words": 1397,
+        "lines": 579,
+        "characters": 9532,
         "metadata_error": null
     },
     {
@@ -33275,9 +33039,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -33464,9 +33226,9 @@
             }
         ],
         "links": [],
-        "words": 1298,
-        "lines": 528,
-        "characters": 8899,
+        "words": 1297,
+        "lines": 527,
+        "characters": 8890,
         "metadata_error": null
     },
     {
@@ -33493,10 +33255,7 @@
                 "transfer",
                 "walsh"
             ],
-            "systems": [
-                "jacoby",
-                "walsh"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -33579,9 +33338,9 @@
             }
         ],
         "links": [],
-        "words": 626,
-        "lines": 246,
-        "characters": 4767,
+        "words": 623,
+        "lines": 244,
+        "characters": 4753,
         "metadata_error": null
     },
     {
@@ -34155,10 +33914,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -34293,9 +34049,9 @@
             }
         ],
         "links": [],
-        "words": 1012,
-        "lines": 362,
-        "characters": 7274,
+        "words": 1008,
+        "lines": 360,
+        "characters": 7251,
         "metadata_error": null
     },
     {
@@ -34326,8 +34082,7 @@
             "systems": [
                 "precision",
                 "standard american",
-                "two over one",
-                "walsh"
+                "two over one"
             ],
             "aliases": [],
             "acronyms": [],
@@ -34423,9 +34178,9 @@
             }
         ],
         "links": [],
-        "words": 650,
-        "lines": 277,
-        "characters": 4580,
+        "words": 648,
+        "lines": 276,
+        "characters": 4578,
         "metadata_error": null
     },
     {
@@ -34454,9 +34209,7 @@
                 "wolff signoff"
             ],
             "systems": [
-                "lebensohl",
-                "two over one",
-                "wolff signoff"
+                "two over one"
             ],
             "aliases": [],
             "acronyms": [],
@@ -34539,9 +34292,9 @@
             }
         ],
         "links": [],
-        "words": 608,
-        "lines": 256,
-        "characters": 4140,
+        "words": 603,
+        "lines": 254,
+        "characters": 4114,
         "metadata_error": null
     },
     {
@@ -34568,8 +34321,7 @@
                 "walsh"
             ],
             "systems": [
-                "two over one",
-                "walsh"
+                "two over one"
             ],
             "aliases": [],
             "acronyms": [],
@@ -34665,9 +34417,9 @@
             }
         ],
         "links": [],
-        "words": 695,
-        "lines": 273,
-        "characters": 4640,
+        "words": 693,
+        "lines": 272,
+        "characters": 4634,
         "metadata_error": null
     },
     {
@@ -34814,9 +34566,7 @@
                 "transfer"
             ],
             "systems": [
-                "lebensohl",
-                "precision",
-                "puppet stayman"
+                "precision"
             ],
             "aliases": [],
             "acronyms": [],
@@ -34931,9 +34681,9 @@
             }
         ],
         "links": [],
-        "words": 789,
-        "lines": 292,
-        "characters": 6046,
+        "words": 784,
+        "lines": 290,
+        "characters": 6019,
         "metadata_error": null
     },
     {
@@ -34962,9 +34712,7 @@
                 "slam",
                 "slam conventions"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -35143,9 +34891,9 @@
             }
         ],
         "links": [],
-        "words": 1388,
-        "lines": 485,
-        "characters": 9031,
+        "words": 1387,
+        "lines": 484,
+        "characters": 9022,
         "metadata_error": null
     },
     {
@@ -36128,9 +35876,7 @@
                 "slam conventions",
                 "stayman"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -36311,9 +36057,9 @@
             }
         ],
         "links": [],
-        "words": 1403,
-        "lines": 514,
-        "characters": 9100,
+        "words": 1402,
+        "lines": 513,
+        "characters": 9091,
         "metadata_error": null
     },
     {
@@ -37341,7 +37087,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -37548,9 +37293,9 @@
             }
         ],
         "links": [],
-        "words": 1529,
-        "lines": 580,
-        "characters": 9419,
+        "words": 1527,
+        "lines": 579,
+        "characters": 9407,
         "metadata_error": null
     },
     {
@@ -37575,9 +37320,7 @@
                 "notrump",
                 "slam"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -37712,9 +37455,9 @@
             }
         ],
         "links": [],
-        "words": 929,
-        "lines": 408,
-        "characters": 5897,
+        "words": 928,
+        "lines": 407,
+        "characters": 5891,
         "metadata_error": null
     },
     {
@@ -37918,10 +37661,7 @@
                 "slam bidding",
                 "support"
             ],
-            "systems": [
-                "jacoby",
-                "roman keycard"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -38092,9 +37832,9 @@
             }
         ],
         "links": [],
-        "words": 1145,
-        "lines": 499,
-        "characters": 7880,
+        "words": 1141,
+        "lines": 497,
+        "characters": 7853,
         "metadata_error": null
     },
     {
@@ -38481,11 +38221,7 @@
                 "support",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -38720,9 +38456,9 @@
             }
         ],
         "links": [],
-        "words": 1466,
-        "lines": 655,
-        "characters": 10133,
+        "words": 1460,
+        "lines": 652,
+        "characters": 10091,
         "metadata_error": null
     },
     {
@@ -38752,10 +38488,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -38908,9 +38641,9 @@
             }
         ],
         "links": [],
-        "words": 1136,
-        "lines": 428,
-        "characters": 8077,
+        "words": 1132,
+        "lines": 426,
+        "characters": 8054,
         "metadata_error": null
     },
     {
@@ -38937,9 +38670,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -39074,9 +38805,9 @@
             }
         ],
         "links": [],
-        "words": 1048,
-        "lines": 378,
-        "characters": 7339,
+        "words": 1047,
+        "lines": 377,
+        "characters": 7333,
         "metadata_error": null
     },
     {
@@ -39109,11 +38840,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -39300,9 +39027,9 @@
             }
         ],
         "links": [],
-        "words": 1356,
-        "lines": 531,
-        "characters": 9298,
+        "words": 1350,
+        "lines": 528,
+        "characters": 9256,
         "metadata_error": null
     },
     {
@@ -39332,12 +39059,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "lebensohl",
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -39435,9 +39157,9 @@
             }
         ],
         "links": [],
-        "words": 728,
-        "lines": 298,
-        "characters": 5303,
+        "words": 721,
+        "lines": 294,
+        "characters": 5265,
         "metadata_error": null
     },
     {
@@ -39474,13 +39196,8 @@
                 "walsh"
             ],
             "systems": [
-                "jacoby",
-                "kokish",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
-                "strong club",
-                "walsh"
+                "strong club"
             ],
             "aliases": [],
             "acronyms": [],
@@ -39626,9 +39343,9 @@
             }
         ],
         "links": [],
-        "words": 1039,
-        "lines": 416,
-        "characters": 7977,
+        "words": 1028,
+        "lines": 411,
+        "characters": 7926,
         "metadata_error": null
     },
     {
@@ -39668,8 +39385,7 @@
                 "precision",
                 "sayc",
                 "standard american",
-                "strong club",
-                "walsh"
+                "strong club"
             ],
             "aliases": [],
             "acronyms": [],
@@ -39895,9 +39611,9 @@
             }
         ],
         "links": [],
-        "words": 1214,
-        "lines": 681,
-        "characters": 8118,
+        "words": 1212,
+        "lines": 680,
+        "characters": 8120,
         "metadata_error": null
     },
     {
@@ -40215,7 +39931,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -40485,9 +40200,9 @@
             }
         ],
         "links": [],
-        "words": 1503,
-        "lines": 835,
-        "characters": 10140,
+        "words": 1501,
+        "lines": 834,
+        "characters": 10128,
         "metadata_error": null
     },
     {
@@ -40523,7 +40238,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -40789,9 +40503,9 @@
             }
         ],
         "links": [],
-        "words": 1492,
-        "lines": 807,
-        "characters": 10127,
+        "words": 1490,
+        "lines": 806,
+        "characters": 10115,
         "metadata_error": null
     },
     {
@@ -40830,10 +40544,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american",
                 "strong club"
@@ -41080,9 +40791,9 @@
             }
         ],
         "links": [],
-        "words": 1455,
-        "lines": 730,
-        "characters": 9988,
+        "words": 1448,
+        "lines": 727,
+        "characters": 9943,
         "metadata_error": null
     },
     {
@@ -41119,7 +40830,6 @@
             ],
             "systems": [
                 "acol",
-                "kokish",
                 "precision",
                 "sayc",
                 "standard american",
@@ -41371,9 +41081,9 @@
             }
         ],
         "links": [],
-        "words": 1414,
-        "lines": 734,
-        "characters": 9811,
+        "words": 1412,
+        "lines": 733,
+        "characters": 9799,
         "metadata_error": null
     },
     {
@@ -41412,10 +41122,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american",
                 "strong club"
@@ -41673,9 +41380,9 @@
             }
         ],
         "links": [],
-        "words": 1575,
-        "lines": 808,
-        "characters": 10944,
+        "words": 1568,
+        "lines": 805,
+        "characters": 10899,
         "metadata_error": null
     },
     {
@@ -42880,8 +42587,6 @@
             ],
             "systems": [
                 "acol",
-                "flannery",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american"
@@ -43133,9 +42838,9 @@
             }
         ],
         "links": [],
-        "words": 1306,
-        "lines": 661,
-        "characters": 9024,
+        "words": 1302,
+        "lines": 659,
+        "characters": 9000,
         "metadata_error": null
     },
     {
@@ -43477,10 +43182,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american"
             ],
@@ -43692,9 +43394,9 @@
             }
         ],
         "links": [],
-        "words": 1179,
-        "lines": 658,
-        "characters": 8613,
+        "words": 1172,
+        "lines": 655,
+        "characters": 8568,
         "metadata_error": null
     },
     {
@@ -43733,10 +43435,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american",
                 "strong club"
@@ -43951,9 +43650,9 @@
             }
         ],
         "links": [],
-        "words": 1306,
-        "lines": 714,
-        "characters": 9360,
+        "words": 1299,
+        "lines": 711,
+        "characters": 9315,
         "metadata_error": null
     },
     {
@@ -43986,7 +43685,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -44230,9 +43928,9 @@
             }
         ],
         "links": [],
-        "words": 1130,
-        "lines": 613,
-        "characters": 7417,
+        "words": 1128,
+        "lines": 612,
+        "characters": 7405,
         "metadata_error": null
     },
     {
@@ -44267,8 +43965,7 @@
                 "acol",
                 "precision",
                 "sayc",
-                "standard american",
-                "walsh"
+                "standard american"
             ],
             "aliases": [],
             "acronyms": [],
@@ -44522,9 +44219,9 @@
             }
         ],
         "links": [],
-        "words": 1294,
-        "lines": 660,
-        "characters": 8483,
+        "words": 1292,
+        "lines": 659,
+        "characters": 8472,
         "metadata_error": null
     },
     {
@@ -45602,7 +45299,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -45833,9 +45529,9 @@
             }
         ],
         "links": [],
-        "words": 1199,
-        "lines": 660,
-        "characters": 8227,
+        "words": 1197,
+        "lines": 659,
+        "characters": 8215,
         "metadata_error": null
     },
     {
@@ -45963,7 +45659,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -46195,9 +45890,9 @@
             }
         ],
         "links": [],
-        "words": 1281,
-        "lines": 693,
-        "characters": 9184,
+        "words": 1279,
+        "lines": 692,
+        "characters": 9172,
         "metadata_error": null
     },
     {
@@ -46738,11 +46433,7 @@
                 "support",
                 "walsh"
             ],
-            "systems": [
-                "drury",
-                "jacoby",
-                "walsh"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -46921,9 +46612,9 @@
             }
         ],
         "links": [],
-        "words": 1168,
-        "lines": 546,
-        "characters": 8592,
+        "words": 1163,
+        "lines": 543,
+        "characters": 8563,
         "metadata_error": null
     },
     {
@@ -46957,7 +46648,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -47174,9 +46864,9 @@
             }
         ],
         "links": [],
-        "words": 1227,
-        "lines": 622,
-        "characters": 8765,
+        "words": 1225,
+        "lines": 621,
+        "characters": 8753,
         "metadata_error": null
     },
     {
@@ -47455,8 +47145,7 @@
                 "acol",
                 "precision",
                 "sayc",
-                "standard american",
-                "walsh"
+                "standard american"
             ],
             "aliases": [],
             "acronyms": [],
@@ -47675,9 +47364,9 @@
             }
         ],
         "links": [],
-        "words": 1391,
-        "lines": 685,
-        "characters": 9402,
+        "words": 1389,
+        "lines": 684,
+        "characters": 9391,
         "metadata_error": null
     },
     {
@@ -47963,10 +47652,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american"
             ],
@@ -48182,9 +47868,9 @@
             }
         ],
         "links": [],
-        "words": 1419,
-        "lines": 691,
-        "characters": 9678,
+        "words": 1412,
+        "lines": 688,
+        "characters": 9633,
         "metadata_error": null
     },
     {
@@ -48223,7 +47909,6 @@
             ],
             "systems": [
                 "acol",
-                "kokish",
                 "precision",
                 "sayc",
                 "standard american",
@@ -48440,9 +48125,9 @@
             }
         ],
         "links": [],
-        "words": 1321,
-        "lines": 647,
-        "characters": 9262,
+        "words": 1319,
+        "lines": 646,
+        "characters": 9250,
         "metadata_error": null
     },
     {
@@ -48481,10 +48166,7 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american"
             ],
@@ -48709,9 +48391,9 @@
             }
         ],
         "links": [],
-        "words": 1373,
-        "lines": 689,
-        "characters": 9532,
+        "words": 1366,
+        "lines": 686,
+        "characters": 9487,
         "metadata_error": null
     },
     {
@@ -48976,8 +48658,6 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
                 "precision",
                 "sayc",
                 "standard american"
@@ -49210,9 +48890,9 @@
             }
         ],
         "links": [],
-        "words": 1460,
-        "lines": 708,
-        "characters": 10410,
+        "words": 1456,
+        "lines": 706,
+        "characters": 10388,
         "metadata_error": null
     },
     {
@@ -52020,11 +51700,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "jacoby",
-                "lebensohl",
-                "puppet stayman"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -52171,9 +51847,9 @@
             }
         ],
         "links": [],
-        "words": 901,
-        "lines": 433,
-        "characters": 5809,
+        "words": 895,
+        "lines": 430,
+        "characters": 5767,
         "metadata_error": null
     },
     {
@@ -52412,11 +52088,7 @@
                 "transfer"
             ],
             "systems": [
-                "cappelletti",
-                "dont",
-                "jacoby",
-                "precision",
-                "puppet stayman"
+                "precision"
             ],
             "aliases": [],
             "acronyms": [],
@@ -52565,9 +52237,9 @@
             }
         ],
         "links": [],
-        "words": 1213,
-        "lines": 477,
-        "characters": 8574,
+        "words": 1204,
+        "lines": 473,
+        "characters": 8529,
         "metadata_error": null
     },
     {
@@ -52607,16 +52279,7 @@
                 "takeout",
                 "walsh"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "drury",
-                "jacoby",
-                "lebensohl",
-                "multi",
-                "puppet stayman",
-                "walsh"
-            ],
+            "systems": [],
             "aliases": [
                 "Convention Card",
                 "Partnership Card",
@@ -52763,9 +52426,9 @@
             }
         ],
         "links": [],
-        "words": 981,
-        "lines": 411,
-        "characters": 7794,
+        "words": 965,
+        "lines": 403,
+        "characters": 7714,
         "metadata_error": null
     },
     {
@@ -52791,9 +52454,7 @@
                 "response",
                 "transfer"
             ],
-            "systems": [
-                "lebensohl"
-            ],
+            "systems": [],
             "aliases": [
                 "Full Disclosure",
                 "Disclosure of Agreements",
@@ -52890,9 +52551,9 @@
             }
         ],
         "links": [],
-        "words": 961,
-        "lines": 299,
-        "characters": 6935,
+        "words": 960,
+        "lines": 298,
+        "characters": 6926,
         "metadata_error": null
     },
     {
@@ -53089,12 +52750,6 @@
                 "takeout"
             ],
             "systems": [
-                "cappelletti",
-                "dont",
-                "drury",
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "standard american",
                 "strong club"
@@ -53292,9 +52947,9 @@
             }
         ],
         "links": [],
-        "words": 1222,
-        "lines": 531,
-        "characters": 9230,
+        "words": 1210,
+        "lines": 525,
+        "characters": 9178,
         "metadata_error": null
     },
     {
@@ -53711,9 +53366,6 @@
                 "takeout"
             ],
             "systems": [
-                "drury",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american",
@@ -54496,9 +54148,9 @@
             }
         ],
         "links": [],
-        "words": 4616,
-        "lines": 3166,
-        "characters": 30317,
+        "words": 4610,
+        "lines": 3163,
+        "characters": 30281,
         "metadata_error": null
     },
     {
@@ -54548,12 +54200,7 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "jacoby",
-                "multi",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american",
                 "strong club"
@@ -55627,9 +55274,9 @@
             }
         ],
         "links": [],
-        "words": 6779,
-        "lines": 3963,
-        "characters": 44899,
+        "words": 6768,
+        "lines": 3958,
+        "characters": 44833,
         "metadata_error": null
     },
     {
@@ -55952,13 +55599,9 @@
             ],
             "systems": [
                 "acol",
-                "drury",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "standard american",
-                "strong club",
-                "walsh"
+                "strong club"
             ],
             "aliases": [],
             "acronyms": [],
@@ -56104,9 +55747,9 @@
             }
         ],
         "links": [],
-        "words": 942,
-        "lines": 358,
-        "characters": 6280,
+        "words": 934,
+        "lines": 354,
+        "characters": 6251,
         "metadata_error": null
     },
     {
@@ -56146,9 +55789,6 @@
             ],
             "systems": [
                 "blue club",
-                "drury",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "standard american",
                 "strong club"
@@ -56297,9 +55937,9 @@
             }
         ],
         "links": [],
-        "words": 1024,
-        "lines": 372,
-        "characters": 6903,
+        "words": 1018,
+        "lines": 369,
+        "characters": 6882,
         "metadata_error": null
     },
     {
@@ -56516,8 +56156,6 @@
             "systems": [
                 "acol",
                 "ehaa",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "standard american"
             ],
@@ -56661,9 +56299,9 @@
             }
         ],
         "links": [],
-        "words": 1008,
-        "lines": 348,
-        "characters": 6959,
+        "words": 1004,
+        "lines": 346,
+        "characters": 6946,
         "metadata_error": null
     },
     {
@@ -56703,8 +56341,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american",
@@ -56844,9 +56480,9 @@
             }
         ],
         "links": [],
-        "words": 1077,
-        "lines": 349,
-        "characters": 7463,
+        "words": 1073,
+        "lines": 347,
+        "characters": 7452,
         "metadata_error": null
     },
     {
@@ -56882,8 +56518,6 @@
                 "systems"
             ],
             "systems": [
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "standard american"
             ],
@@ -57030,9 +56664,9 @@
             }
         ],
         "links": [],
-        "words": 1095,
-        "lines": 338,
-        "characters": 7374,
+        "words": 1091,
+        "lines": 336,
+        "characters": 7357,
         "metadata_error": null
     },
     {
@@ -57070,9 +56704,6 @@
             ],
             "systems": [
                 "blue club",
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -57218,9 +56849,9 @@
             }
         ],
         "links": [],
-        "words": 1198,
-        "lines": 398,
-        "characters": 8218,
+        "words": 1192,
+        "lines": 395,
+        "characters": 8195,
         "metadata_error": null
     },
     {
@@ -57450,12 +57081,6 @@
             "systems": [
                 "acol",
                 "blue club",
-                "cappelletti",
-                "crash",
-                "dont",
-                "jacoby",
-                "mathe",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american",
@@ -58618,9 +58243,9 @@
             }
         ],
         "links": [],
-        "words": 6998,
-        "lines": 4058,
-        "characters": 47616,
+        "words": 6986,
+        "lines": 4052,
+        "characters": 47549,
         "metadata_error": null
     },
     {
@@ -58674,13 +58299,6 @@
             "systems": [
                 "acol",
                 "blue club",
-                "cappelletti",
-                "crash",
-                "dont",
-                "jacoby",
-                "kokish",
-                "mathe",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american",
@@ -59725,9 +59343,9 @@
             }
         ],
         "links": [],
-        "words": 6705,
-        "lines": 3861,
-        "characters": 46055,
+        "words": 6691,
+        "lines": 3854,
+        "characters": 45977,
         "metadata_error": null
     },
     {
@@ -59938,8 +59556,6 @@
                 "systems"
             ],
             "systems": [
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "roman club",
                 "strong club",
@@ -60090,9 +59706,9 @@
             }
         ],
         "links": [],
-        "words": 1207,
-        "lines": 395,
-        "characters": 8257,
+        "words": 1203,
+        "lines": 393,
+        "characters": 8244,
         "metadata_error": null
     },
     {
@@ -60127,8 +59743,6 @@
                 "takeout"
             ],
             "systems": [
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american"
@@ -60276,9 +59890,9 @@
             }
         ],
         "links": [],
-        "words": 1113,
-        "lines": 360,
-        "characters": 7616,
+        "words": 1109,
+        "lines": 358,
+        "characters": 7601,
         "metadata_error": null
     },
     {
@@ -60330,13 +59944,7 @@
             ],
             "systems": [
                 "acol",
-                "cappelletti",
-                "dont",
-                "drury",
-                "jacoby",
-                "lebensohl",
                 "precision",
-                "puppet stayman",
                 "sayc",
                 "standard american",
                 "strong club"
@@ -61420,9 +61028,9 @@
             }
         ],
         "links": [],
-        "words": 6493,
-        "lines": 3748,
-        "characters": 43382,
+        "words": 6480,
+        "lines": 3742,
+        "characters": 43302,
         "metadata_error": null
     },
     {
@@ -61459,9 +61067,6 @@
                 "takeout"
             ],
             "systems": [
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "sayc",
                 "standard american"
@@ -61608,9 +61213,9 @@
             }
         ],
         "links": [],
-        "words": 1035,
-        "lines": 353,
-        "characters": 7148,
+        "words": 1029,
+        "lines": 350,
+        "characters": 7125,
         "metadata_error": null
     },
     {
@@ -61654,8 +61259,6 @@
             ],
             "systems": [
                 "acol",
-                "jacoby",
-                "lebensohl",
                 "precision",
                 "sayc",
                 "standard american",
@@ -61943,9 +61546,9 @@
             }
         ],
         "links": [],
-        "words": 1585,
-        "lines": 719,
-        "characters": 12045,
+        "words": 1581,
+        "lines": 717,
+        "characters": 12019,
         "metadata_error": null
     },
     {
@@ -61984,9 +61587,6 @@
             ],
             "systems": [
                 "blue club",
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "strong club",
                 "super precision"
@@ -62136,9 +61736,9 @@
             }
         ],
         "links": [],
-        "words": 1225,
-        "lines": 405,
-        "characters": 8524,
+        "words": 1219,
+        "lines": 402,
+        "characters": 8503,
         "metadata_error": null
     },
     {
@@ -62363,9 +61963,6 @@
             ],
             "systems": [
                 "blue club",
-                "jacoby",
-                "lebensohl",
-                "multi",
                 "precision",
                 "strong club"
             ],
@@ -62509,9 +62106,9 @@
             }
         ],
         "links": [],
-        "words": 1177,
-        "lines": 385,
-        "characters": 8056,
+        "words": 1171,
+        "lines": 382,
+        "characters": 8033,
         "metadata_error": null
     },
     {
@@ -62547,8 +62144,6 @@
                 "takeout"
             ],
             "systems": [
-                "jacoby",
-                "lebensohl",
                 "sayc",
                 "standard american"
             ],
@@ -62707,9 +62302,9 @@
             }
         ],
         "links": [],
-        "words": 1122,
-        "lines": 371,
-        "characters": 7787,
+        "words": 1118,
+        "lines": 369,
+        "characters": 7770,
         "metadata_error": null
     },
     {
@@ -62736,12 +62331,7 @@
                 "standard american",
                 "strong club"
             ],
-            "systems": [
-                "acol",
-                "precision",
-                "standard american",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -62887,9 +62477,9 @@
             }
         ],
         "links": [],
-        "words": 899,
-        "lines": 402,
-        "characters": 7368,
+        "words": 890,
+        "lines": 398,
+        "characters": 7309,
         "metadata_error": null
     },
     {
@@ -70971,9 +70561,7 @@
                 "squeeze",
                 "support"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -71083,9 +70671,9 @@
             }
         ],
         "links": [],
-        "words": 680,
-        "lines": 263,
-        "characters": 6370,
+        "words": 679,
+        "lines": 262,
+        "characters": 6361,
         "metadata_error": null
     },
     {
@@ -78150,9 +77738,7 @@
                 "multi",
                 "squeeze"
             ],
-            "systems": [
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -78357,9 +77943,9 @@
             }
         ],
         "links": [],
-        "words": 1063,
-        "lines": 542,
-        "characters": 8686,
+        "words": 1062,
+        "lines": 541,
+        "characters": 8681,
         "metadata_error": null
     },
     {
@@ -80070,9 +79656,7 @@
                 "play",
                 "signal"
             ],
-            "systems": [
-                "multi"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -80224,9 +79808,9 @@
             }
         ],
         "links": [],
-        "words": 952,
-        "lines": 389,
-        "characters": 7570,
+        "words": 951,
+        "lines": 388,
+        "characters": 7565,
         "metadata_error": null
     },
     {
@@ -85502,9 +85086,7 @@
                 "slam",
                 "support"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -85633,9 +85215,9 @@
             }
         ],
         "links": [],
-        "words": 1086,
-        "lines": 380,
-        "characters": 6942,
+        "words": 1085,
+        "lines": 379,
+        "characters": 6930,
         "metadata_error": null
     },
     {
@@ -85659,9 +85241,7 @@
                 "ruff",
                 "standard american"
             ],
-            "systems": [
-                "standard american"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -85874,9 +85454,9 @@
             }
         ],
         "links": [],
-        "words": 1193,
-        "lines": 614,
-        "characters": 7264,
+        "words": 1191,
+        "lines": 613,
+        "characters": 7247,
         "metadata_error": null
     },
     {
@@ -92367,14 +91947,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "jacoby",
-                "lebensohl",
-                "precision",
-                "sayc",
-                "standard american"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -92988,9 +92561,9 @@
             }
         ],
         "links": [],
-        "words": 1780,
-        "lines": 580,
-        "characters": 12283,
+        "words": 1768,
+        "lines": 574,
+        "characters": 12212,
         "metadata_error": null
     },
     {
@@ -93238,12 +92811,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "cappelletti",
-                "dont",
-                "jacoby",
-                "lebensohl"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -93373,9 +92941,9 @@
             }
         ],
         "links": [],
-        "words": 1824,
-        "lines": 388,
-        "characters": 11353,
+        "words": 1817,
+        "lines": 384,
+        "characters": 11314,
         "metadata_error": null
     },
     {
@@ -93422,18 +92990,7 @@
                 "transfer",
                 "two over one"
             ],
-            "systems": [
-                "acol",
-                "cappelletti",
-                "dont",
-                "jacoby",
-                "lebensohl",
-                "precision",
-                "puppet stayman",
-                "sayc",
-                "standard american",
-                "two over one"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -93591,9 +93148,9 @@
             }
         ],
         "links": [],
-        "words": 1495,
-        "lines": 529,
-        "characters": 9644,
+        "words": 1472,
+        "lines": 519,
+        "characters": 9527,
         "metadata_error": null
     },
     {
