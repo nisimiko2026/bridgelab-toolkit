@@ -67,3 +67,67 @@ class PrinciplesRepairTests(unittest.TestCase):
             self.assertIn("school principal", migrated)
             self.assertIn("topic/principles/principles-index", reference.read_text(encoding="utf-8"))
             self.assertEqual((backup / source.relative_to(root)).read_bytes(), original)
+
+    def test_medium_nested_rename_can_run_after_directory_migration(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            base = Path(temporary_directory)
+            root = base / "knowledge"
+            backup = base / "backup"
+            source = root / "topic/principles/index-principal-partnership.md"
+            source.parent.mkdir(parents=True)
+            source.write_text(
+                "id: topic/principles/index-principal-partnership\n",
+                encoding="utf-8",
+            )
+            reference = root / "reference.md"
+            reference.write_text(
+                "topic/principles/index-principal-partnership\n",
+                encoding="utf-8",
+            )
+            plan = base / "plan.json"
+            plan.write_text(
+                json.dumps(
+                    {
+                        "directory_moves": [
+                            {"old": "topic/principals", "new": "topic/principles"}
+                        ],
+                        "nested_file_moves": [
+                            {
+                                "old": "topic/principals/index-principal-partnership.md",
+                                "new": "topic/principles/partnership-principles-index.md",
+                                "confidence": "medium",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            arguments = [
+                "repair-principles",
+                "--root",
+                str(root),
+                "--plan",
+                str(plan),
+                "--backup",
+                str(backup),
+                "--include-medium-confidence",
+                "--apply",
+            ]
+
+            result = CliRunner().invoke(app, arguments)
+
+            self.assertEqual(result.exit_code, 0, result.output)
+            destination = root / "topic/principles/partnership-principles-index.md"
+            self.assertFalse(source.exists())
+            self.assertTrue(destination.exists())
+            self.assertIn(
+                "topic/principles/partnership-principles-index",
+                destination.read_text(encoding="utf-8"),
+            )
+            self.assertIn(
+                "topic/principles/partnership-principles-index",
+                reference.read_text(encoding="utf-8"),
+            )
+            self.assertTrue(
+                (backup / "topic/principles/index-principal-partnership.md").exists()
+            )

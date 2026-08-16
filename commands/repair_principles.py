@@ -58,6 +58,26 @@ def _moves(
             name = nested.get(source.name, source.name)
             moves[source] = new / source.relative_to(old).with_name(name)
 
+    # A nested rename may be approved after its surrounding directory move.
+    # Resolve the source through the completed move so the plan is resumable.
+    for item in data["nested_file_moves"]:
+        if item["confidence"] != "high" and not include_medium_confidence:
+            continue
+        source_identifier = item["old"]
+        source = root / Path(source_identifier)
+        if not source.exists():
+            for directory in data["directory_moves"]:
+                if source_identifier.startswith(directory["old"] + "/"):
+                    source_identifier = (
+                        directory["new"]
+                        + source_identifier[len(directory["old"]):]
+                    )
+                    source = root / Path(source_identifier)
+                    break
+        destination = root / Path(item["new"])
+        if source.is_file() and source != destination and source not in moves:
+            moves[source] = destination
+
     return moves
 
 
