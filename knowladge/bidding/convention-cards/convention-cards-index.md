@@ -25,7 +25,7 @@ references:
 - bidding/principles/partnership/alert-procedures
 - bidding/principles/partnership/convention-cards
 - bidding/principles/partnership/disclosure
-- bidding/principles/partnership/index-principal-partnership
+- bidding/principles/partnership/partnership-principles-index
 - bidding/principles/partnership/partnership-agreements
 - bidding/systems/systems-index
 - play/declarer-play/general-techniques/communication

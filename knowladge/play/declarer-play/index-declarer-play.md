@@ -19,7 +19,7 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principles/partnership/index-principal-partnership
+- bidding/principles/partnership/partnership-principles-index
 - play/counting/counting-index
 - play/counting/counting-losers
 - play/counting/counting-winners

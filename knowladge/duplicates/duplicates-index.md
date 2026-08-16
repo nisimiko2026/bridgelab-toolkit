@@ -16,7 +16,7 @@ references:
   - bidding/bidding-index
   - bidding/principles/bidding-fundamentals/hand-evaluation
   - bidding/principles/partnership/disclosure
-  - bidding/principles/partnership/index-principal-partnership
+  - bidding/principles/partnership/partnership-principles-index
   - bidding/principles/partnership/partnership-agreements
   - duplicates/duplicate-scoring
   - duplicates/matchpoints-vs-imps

@@ -38,7 +38,7 @@ references:
 - bidding/principles/bidding-fundamentals/vulnerability
 - bidding/principles/partnership/convention-cards
 - bidding/principles/partnership/disclosure
-- bidding/principles/partnership/index-principal-partnership
+- bidding/principles/partnership/partnership-principles-index
 - bidding/principles/partnership/partnership-agreements
 - bidding/systems/standard-american
 - bidding/systems/systems-index

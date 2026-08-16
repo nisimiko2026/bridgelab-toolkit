@@ -17,7 +17,7 @@ acronyms: []
 references:
 - acronyms
 - bidding/bidding-index
-- bidding/principles/partnership/index-principal-partnership
+- bidding/principles/partnership/partnership-principles-index
 - duplicates/duplicates-index
 - play/counting/counting-index
 - play/declarer-play/deceptive-play/index-deceptive-play
