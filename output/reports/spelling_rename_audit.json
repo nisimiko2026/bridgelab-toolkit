@@ -1,0 +1,123 @@
+{
+  "generated": "2026-08-16",
+  "repository_articles": 448,
+  "summary": {
+    "direct_repair_groups": 8,
+    "source_markdown_files_moved": 24,
+    "naming_policy_decisions": 3,
+    "destination_collisions": 0
+  },
+  "direct_repairs": [
+    {
+      "old": "play/declarer-play/probabilty",
+      "new": "play/declarer-play/probability",
+      "kind": "directory",
+      "source_files": 12,
+      "files_with_references": 78,
+      "confidence": "high",
+      "collision": false,
+      "reason": "probabilty is a spelling error"
+    },
+    {
+      "old": "play/declarer-play/elemination-and-endplays",
+      "new": "play/declarer-play/elimination-and-endplays",
+      "kind": "directory_and_nested_index",
+      "source_files": 6,
+      "files_with_references": 85,
+      "confidence": "high",
+      "collision": false,
+      "additional_rename": {
+        "old": "elemination-index.md",
+        "new": "elimination-index.md",
+        "files_with_references": 23
+      },
+      "reason": "elemination is a spelling error"
+    },
+    {
+      "old": "play/declarer-play/index-declearer-play.md",
+      "new": "play/declarer-play/index-declarer-play.md",
+      "kind": "file",
+      "source_files": 1,
+      "files_with_references": 68,
+      "confidence": "high",
+      "collision": false,
+      "reason": "declearer is a spelling error"
+    },
+    {
+      "old": "bidding/principals/bidding-fundamentals/kaplan-rubens-hand-hvaluation.md",
+      "new": "bidding/principals/bidding-fundamentals/kaplan-rubens-hand-evaluation.md",
+      "kind": "file_and_title",
+      "source_files": 1,
+      "files_with_references": 1,
+      "confidence": "high",
+      "collision": false,
+      "reason": "hvaluation is a spelling error in both filename and title"
+    },
+    {
+      "old": "play/defence/opening-leads/tthird-fifth.md",
+      "new": "play/defence/opening-leads/third-fifth.md",
+      "kind": "file",
+      "source_files": 1,
+      "files_with_references": 6,
+      "confidence": "high",
+      "collision": false,
+      "reason": "tthird is a duplicated leading letter"
+    },
+    {
+      "old": "bidding/natural-bids/rebids/natural-rebid-indexs.md",
+      "new": "bidding/natural-bids/rebids/natural-rebids-index.md",
+      "kind": "file",
+      "source_files": 1,
+      "files_with_references": 16,
+      "confidence": "medium",
+      "collision": false,
+      "reason": "indexs is invalid; proposed name matches sibling index naming"
+    },
+    {
+      "old": "bidding/conventions/competitive/cappaletti.md",
+      "new": "bidding/conventions/competitive/cappelletti.md",
+      "kind": "file",
+      "source_files": 1,
+      "files_with_references": 1,
+      "confidence": "high",
+      "collision": false,
+      "reason": "article title confirms the convention name Cappelletti"
+    },
+    {
+      "old": "bidding/conventions/competitive/gesthem.md",
+      "new": "bidding/conventions/competitive/ghestem.md",
+      "kind": "file",
+      "source_files": 1,
+      "files_with_references": 1,
+      "confidence": "high",
+      "collision": false,
+      "reason": "article title confirms the convention name Ghestem"
+    }
+  ],
+  "policy_decisions": [
+    {
+      "old": "bidding/principals",
+      "new": "bidding/principles",
+      "source_files": 23,
+      "files_with_references": 324,
+      "recommendation": "defer to a dedicated batch",
+      "reason": "principles is semantically correct, but nested index names and metadata vocabulary also require a coordinated policy"
+    },
+    {
+      "old": "play/principals",
+      "new": "play/principles",
+      "source_files": 6,
+      "files_with_references": 19,
+      "recommendation": "defer and combine with bidding/principals",
+      "reason": "same repository-wide terminology decision"
+    },
+    {
+      "old": "knowladge",
+      "new": "knowledge",
+      "source_files": 448,
+      "known_toolkit_files_to_update": 3,
+      "recommendation": "defer to a repository-root migration",
+      "reason": "correct spelling but changes the configured repository root and may affect external integrations"
+    }
+  ]
+}
