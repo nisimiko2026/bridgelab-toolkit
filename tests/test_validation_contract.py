@@ -11,6 +11,7 @@ from validator.directory_check import DirectoryCheck
 from validator.duplicate_check import DuplicateCheck
 from validator.filename_check import FilenameCheck
 from validator.heading_check import HeadingCheck
+from validator.reference_check import ReferenceCheck
 from validator.validator import RepositoryValidator
 
 
@@ -122,6 +123,36 @@ class LegacyValidationContractTests(unittest.TestCase):
         )
 
         self.assertEqual(issues, [])
+
+    def test_reference_check_reports_missing_self_and_duplicate_targets(self) -> None:
+        source = article("guide/source.md")
+        source.metadata.references = [
+            "guide/target",
+            "guide/missing",
+            "guide/source",
+            "guide/target",
+        ]
+        target = article("guide/target.md")
+
+        issues = ReferenceCheck().run([source, target])
+
+        self.assertEqual(
+            [(issue.severity, issue.category, issue.message) for issue in issues],
+            [
+                ("Error", "Reference", "Missing reference target: guide/missing"),
+                ("Error", "Reference", "Self reference"),
+                ("Warning", "Reference", "Duplicate reference: guide/target"),
+            ],
+        )
+
+    def test_reference_check_accepts_md_suffix_and_case(self) -> None:
+        source = article("guide/source.md")
+        source.metadata.references = ["GUIDE/TARGET.md"]
+
+        self.assertEqual(
+            ReferenceCheck().run([source, article("guide/target.md")]),
+            [],
+        )
 
     def test_directory_check_reports_missing_index_without_absolute_path(self) -> None:
         issues = DirectoryCheck().run([article("guide/article.md")])

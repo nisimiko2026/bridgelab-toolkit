@@ -11,6 +11,7 @@ from .duplicate_check import DuplicateCheck
 from .filename_check import FilenameCheck
 from .heading_check import HeadingCheck
 from .directory_check import DirectoryCheck
+from .reference_check import ReferenceCheck
 
 
 class RepositoryValidator:
@@ -28,6 +29,8 @@ class RepositoryValidator:
             HeadingCheck(),
 
             DirectoryCheck(),
+
+            ReferenceCheck(),
 
         ]
 
