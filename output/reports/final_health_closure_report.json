@@ -1,0 +1,70 @@
+{
+  "generated": "2026-08-16",
+  "status": "complete",
+  "repository": "BridgeLab knowledge repository",
+  "source_changes_performed": false,
+  "verification": {
+    "articles": 446,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "validation_total_issues": 0,
+    "orphan_articles": 0,
+    "duplicate_title_groups": 0,
+    "tests_passed": 68,
+    "toolkit_scoped_status": "clean",
+    "knowledge_scoped_status": "clean"
+  },
+  "metadata": {
+    "missing_title": 0,
+    "missing_description": 0,
+    "missing_category": 0,
+    "missing_tags": 0,
+    "missing_references": 0,
+    "difficulty_exempt_reference_articles": 7,
+    "systems_assignments": 375,
+    "articles_with_systems": 112,
+    "articles_without_systems": 334,
+    "systems_policy": "strict_applicability"
+  },
+  "systems_review": {
+    "initial_invalid_assignments_removed": 385,
+    "high_confidence_cross_labels_removed": 111,
+    "final_manual_false_positives_removed": 24,
+    "total_invalid_assignments_removed": 520,
+    "medium_confidence_assignments_reviewed_and_retained": 314,
+    "manual_assignments_reviewed_and_retained": 53,
+    "status": "complete"
+  },
+  "completed_workstreams": [
+    "knowledge root migration",
+    "metadata description and difficulty repair",
+    "spelling and filename normalization",
+    "principles terminology migration",
+    "orphan and reference repair",
+    "duplicate-content consolidation",
+    "editorial overlap repair",
+    "index title disambiguation",
+    "systems taxonomy and applicability cleanup"
+  ],
+  "major_content_commits": [
+    "f79578e Rename knowledge repository root",
+    "80fa9c0 Consolidate transfer bidding indexes",
+    "e0476d3 Restore marked finesse article",
+    "d62e294 Resolve inference and entry management overlaps",
+    "d5579a5 Disambiguate index article titles",
+    "059fade Remove invalid systems metadata",
+    "24dbcc8 Remove high-confidence systems cross-labels",
+    "1033a69 Remove final invalid systems assignments"
+  ],
+  "policy_exceptions": [
+    "Difficulty is intentionally empty on seven glossary, bibliography, acronym, terminology, and quick-reference articles.",
+    "Systems is intentionally empty when an article is not directly applicable to a controlled bidding system.",
+    "Historical review-required reports are retained as an audit trail and do not indicate current outstanding work."
+  ],
+  "outstanding_required_work": [],
+  "optional_follow_up": [
+    "Mark historical planning reports as completed or superseded.",
+    "Archive old reports and backups according to the project's retention policy.",
+    "Run periodic validation after future content changes."
+  ]
+}
