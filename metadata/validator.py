@@ -14,6 +14,8 @@ from core.models import Article, Issue
 
 class MetadataValidator:
 
+    MIN_DESCRIPTION_LENGTH = 30
+
     REQUIRED_FIELDS = [
         "title",
         "description",
@@ -114,7 +116,7 @@ class MetadataValidator:
 
         if (
             meta.description
-            and len(meta.description) < 30
+            and len(meta.description) < self.MIN_DESCRIPTION_LENGTH
         ):
             issues.append(
                 Issue(

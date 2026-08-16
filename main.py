@@ -9,12 +9,13 @@ from pathlib import Path
 
 import typer
 
-from config import REPOSITORY
+from config import REPOSITORY, REPORTS
 
 from commands.scan import run as scan_command
 from commands.debug import run as debug_command
 from commands.enrich import run as enrich_command
 from commands.validate import run as validate_command
+from commands.repair_plan import run as repair_plan_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -95,6 +96,21 @@ def validate(
 ) -> None:
     """Validate repository health."""
     validate_command(root)
+
+
+@app.command("repair-plan")
+def repair_plan(
+    root: Path = repository_option(),
+    output_directory: Path = typer.Option(
+        REPORTS,
+        "--output-directory",
+        file_okay=False,
+        resolve_path=True,
+        help="Directory for JSON and Markdown repair plans.",
+    ),
+) -> None:
+    """Generate read-only metadata repair proposals."""
+    repair_plan_command(root, output_directory)
 
 
 # ============================================================

@@ -90,6 +90,13 @@ Validate repository structure and article metadata without modifying source file
 python main.py validate
 ```
 
+Generate JSON and Markdown proposals for missing descriptions and difficulty
+values without modifying repository articles:
+
+```bash
+python main.py repair-plan
+```
+
 Both commands accept `--root PATH` to target a repository explicitly. The
 validation command exits with status `1` when errors are found and status `0`
 for a clean or warnings-only result, making it suitable for CI checks.
@@ -257,6 +264,8 @@ This toolkit is developed exclusively for the maintenance of the BridgeLab encyc
 python main.py scan
 
 python main.py validate
+
+python main.py repair-plan
 
 python main.py metadata
 
