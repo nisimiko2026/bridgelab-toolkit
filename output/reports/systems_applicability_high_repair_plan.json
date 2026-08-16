@@ -1,0 +1,847 @@
+{
+  "generated": "2026-08-16",
+  "status": "approval_required",
+  "source_changes_performed": false,
+  "scope": "high_confidence_systems_applicability_removals",
+  "source_audit": "C:\\Users\\nisim\\Documents\\BridgeLab\\bridgelab-toolkit\\output\\reports\\systems_applicability_audit.json",
+  "summary": {
+    "files_to_update": 31,
+    "assignments_to_remove": 111
+  },
+  "proposals": [
+    {
+      "path": "bidding/bidding-index.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/conventions-index.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/bid-defence-index.md",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/index-opening-bids.md",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/relay/relay-index.md",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/transfers-index.md",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/principles-index.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/2-over-1.md",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/acol.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/systems/benjamin-acol.md",
+      "current_systems": [
+        "acol"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/blue-club.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "blue club"
+      ]
+    },
+    {
+      "path": "bidding/systems/carrot-club.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/chinese-precision.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/culbertson.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/ehaa.md",
+      "current_systems": [
+        "acol",
+        "ehaa",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "ehaa"
+      ]
+    },
+    {
+      "path": "bidding/systems/kaplan-sheinwold.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/magic-diamond.md",
+      "current_systems": [
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/moscito.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/neapolitan-club.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/polish-club.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "blue club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "super precision",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/precision.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "blue club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "super precision",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/roman-club.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "roman club",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "roman club"
+      ]
+    },
+    {
+      "path": "bidding/systems/roman-precision.md",
+      "current_systems": [
+        "precision",
+        "roman club",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "roman club",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "super precision",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/roth-stone.md",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/sayc.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "sayc"
+      ]
+    },
+    {
+      "path": "bidding/systems/sef.md",
+      "current_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/standard-american.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/super-precision.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_cross_labels"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_cross_labels"
+        }
+      ],
+      "proposed_systems": [
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/systems-index.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "ehaa",
+        "precision",
+        "roman club",
+        "sayc",
+        "standard american",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "blue club",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "ehaa",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "precision",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "roman club",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "sayc",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "standard american",
+          "reason": "index_page_reference_labels"
+        },
+        {
+          "value": "super precision",
+          "reason": "index_page_reference_labels"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/ultimate-club.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "precision",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "strong club",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/systems/wspolny-jezyk.md",
+      "current_systems": [
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "sayc",
+          "reason": "system_profile_without_controlled_self_label"
+        },
+        {
+          "value": "standard american",
+          "reason": "system_profile_without_controlled_self_label"
+        }
+      ],
+      "proposed_systems": []
+    }
+  ],
+  "guardrails": [
+    "Verify every current systems list exactly before writing",
+    "Back up every changed article",
+    "Remove only the exact approved values",
+    "Do not add or infer systems values",
+    "Abort the full operation on metadata drift"
+  ]
+}
