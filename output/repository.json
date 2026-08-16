@@ -3980,9 +3980,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -4177,9 +4175,9 @@
             }
         ],
         "links": [],
-        "words": 1292,
-        "lines": 548,
-        "characters": 8590,
+        "words": 1291,
+        "lines": 547,
+        "characters": 8578,
         "metadata_error": null
     },
     {
@@ -8731,11 +8729,7 @@
                 "strong club",
                 "transfer"
             ],
-            "systems": [
-                "blue club",
-                "precision",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [
                 "Color Rank Shape",
                 "CRO"
@@ -9011,9 +9005,9 @@
             }
         ],
         "links": [],
-        "words": 1498,
-        "lines": 750,
-        "characters": 10358,
+        "words": 1491,
+        "lines": 747,
+        "characters": 10317,
         "metadata_error": null
     },
     {
@@ -9044,9 +9038,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -9293,9 +9285,9 @@
             }
         ],
         "links": [],
-        "words": 1475,
-        "lines": 762,
-        "characters": 10107,
+        "words": 1474,
+        "lines": 761,
+        "characters": 10096,
         "metadata_error": null
     },
     {
@@ -9330,11 +9322,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "precision",
-                "standard american",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -9431,9 +9419,9 @@
             }
         ],
         "links": [],
-        "words": 744,
-        "lines": 265,
-        "characters": 5791,
+        "words": 737,
+        "lines": 262,
+        "characters": 5742,
         "metadata_error": null
     },
     {
@@ -9468,10 +9456,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "precision",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -9569,9 +9554,9 @@
             }
         ],
         "links": [],
-        "words": 680,
-        "lines": 264,
-        "characters": 5055,
+        "words": 676,
+        "lines": 262,
+        "characters": 5028,
         "metadata_error": null
     },
     {
@@ -9606,11 +9591,7 @@
                 "support",
                 "transfer"
             ],
-            "systems": [
-                "blue club",
-                "precision",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [
                 "Suction Defense"
             ],
@@ -9843,9 +9824,9 @@
             }
         ],
         "links": [],
-        "words": 1462,
-        "lines": 713,
-        "characters": 10431,
+        "words": 1455,
+        "lines": 710,
+        "characters": 10390,
         "metadata_error": null
     },
     {
@@ -9884,11 +9865,7 @@
                 "takeout",
                 "transfer"
             ],
-            "systems": [
-                "blue club",
-                "precision",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [
                 "Transfer Overcalls",
                 "TWERB Convention"
@@ -10108,9 +10085,9 @@
             }
         ],
         "links": [],
-        "words": 1320,
-        "lines": 595,
-        "characters": 9674,
+        "words": 1313,
+        "lines": 592,
+        "characters": 9633,
         "metadata_error": null
     },
     {
@@ -11268,9 +11245,7 @@
                 "ruff",
                 "slam"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -11425,9 +11400,9 @@
             }
         ],
         "links": [],
-        "words": 1144,
-        "lines": 392,
-        "characters": 7878,
+        "words": 1143,
+        "lines": 391,
+        "characters": 7869,
         "metadata_error": null
     },
     {
@@ -24868,8 +24843,7 @@
                 "strong club"
             ],
             "systems": [
-                "precision",
-                "strong club"
+                "precision"
             ],
             "aliases": [
                 "Spiral Steps"
@@ -24971,9 +24945,9 @@
             }
         ],
         "links": [],
-        "words": 913,
-        "lines": 273,
-        "characters": 6814,
+        "words": 910,
+        "lines": 272,
+        "characters": 6798,
         "metadata_error": null
     },
     {
@@ -28052,9 +28026,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -28223,9 +28195,9 @@
             }
         ],
         "links": [],
-        "words": 1167,
-        "lines": 534,
-        "characters": 8275,
+        "words": 1166,
+        "lines": 533,
+        "characters": 8264,
         "metadata_error": null
     },
     {
@@ -36415,9 +36387,7 @@
                 "response",
                 "slam"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -36574,9 +36544,9 @@
             }
         ],
         "links": [],
-        "words": 1258,
-        "lines": 376,
-        "characters": 7994,
+        "words": 1257,
+        "lines": 375,
+        "characters": 7985,
         "metadata_error": null
     },
     {
@@ -52064,9 +52034,7 @@
                 "stayman",
                 "transfer"
             ],
-            "systems": [
-                "precision"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -52214,9 +52182,9 @@
             }
         ],
         "links": [],
-        "words": 1204,
-        "lines": 473,
-        "characters": 8529,
+        "words": 1203,
+        "lines": 472,
+        "characters": 8518,
         "metadata_error": null
     },
     {
@@ -52726,11 +52694,7 @@
                 "support",
                 "takeout"
             ],
-            "systems": [
-                "precision",
-                "standard american",
-                "strong club"
-            ],
+            "systems": [],
             "aliases": [],
             "acronyms": [],
             "references": [
@@ -52924,9 +52888,9 @@
             }
         ],
         "links": [],
-        "words": 1210,
-        "lines": 525,
-        "characters": 9178,
+        "words": 1203,
+        "lines": 522,
+        "characters": 9129,
         "metadata_error": null
     },
     {
