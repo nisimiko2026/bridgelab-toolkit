@@ -1,5 +1,5 @@
 ---
-title: Preserving Entries
+title: Entry Management Technique
 description: Explains how declarer preserves vital entries between hands while planning and executing the play.
 category: play
 subcategory: declarer-play

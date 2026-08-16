@@ -16,7 +16,6 @@ aliases:
 acronyms: []
 references:
   - play/counting/counting-index
-  - play/counting/inference
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/delayed-finesse
   - play/declarer-play/general-techniques/finesses/finesse

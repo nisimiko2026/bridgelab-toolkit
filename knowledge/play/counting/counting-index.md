@@ -43,7 +43,6 @@ references:
 - play/play-index
 - references/references-index
 - play/counting/counting-defenders
-- play/counting/inference
 - play/counting/placing-the-card
 last_updated: '2026-07-22'
 status: Draft
