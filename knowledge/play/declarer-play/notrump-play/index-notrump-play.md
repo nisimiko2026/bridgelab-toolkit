@@ -1,5 +1,5 @@
 ---
-title: Notrump Play
+title: Notrump Play Index
 description: Index and navigation guide for declarer play in notrump contracts within
   the BridgeLab Knowledge Base.
 category: Card Play – Declarer Play
@@ -48,7 +48,7 @@ status: Draft
 ---
 
 
-# Notrump Play
+# Notrump Play Index
 
 ## Overview
 

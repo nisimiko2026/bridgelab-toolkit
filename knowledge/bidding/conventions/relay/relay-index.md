@@ -1,5 +1,5 @@
 ---
-title: Relay Bidding
+title: Relay Bidding Index
 description: Comprehensive guide to relay bidding in Contract Bridge, covering relay
   principles, step responses, relay techniques, and advanced relay systems.
 category: bidding
@@ -46,7 +46,7 @@ status: Draft
 ---
 
 
-# Relay Bidding
+# Relay Bidding Index
 
 > *Structured communication through artificial inquiry and response.*
 

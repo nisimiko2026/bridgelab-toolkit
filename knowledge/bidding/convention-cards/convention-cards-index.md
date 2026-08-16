@@ -1,5 +1,5 @@
 ---
-title: Convention Cards
+title: Convention Cards Index
 description: Index and navigation guide for convention cards, disclosure requirements,
   and partnership documentation in the BridgeLab Knowledge Base.
 category: Bidding – Principles
@@ -36,7 +36,7 @@ status: Draft
 ---
 
 
-# Convention Cards
+# Convention Cards Index
 
 ## Overview
 
