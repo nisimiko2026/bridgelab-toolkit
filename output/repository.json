@@ -70565,32 +70565,33 @@
         "relative_path": "play/declarer-play/general-techniques/finesses/marked-finesse.md",
         "directory": "play/declarer-play/general-techniques/finesses",
         "metadata": {
-            "title": "First-Round Finesse",
-            "description": "Explains the first-round finesse, taken at the earliest opportunity to establish a suit or gain a trick.",
+            "title": "Marked Finesse",
+            "description": "Explains the marked finesse, whose success is assured because bidding, counting, or previous play has revealed the critical card's location.",
             "category": "techniques/finessing",
             "subcategory": "declarer-play",
             "difficulty": "Intermediate",
             "tags": [
+                "counting",
                 "declarer-play",
                 "finesse",
-                "lead",
+                "inference",
                 "techniques/finessing"
             ],
             "systems": [],
-            "aliases": [],
+            "aliases": [
+                "proven finesse"
+            ],
             "acronyms": [],
             "references": [
-                "acronyms",
                 "play/counting/counting-index",
+                "play/counting/inference",
                 "play/declarer-play/general-techniques/communication",
-                "play/declarer-play/general-techniques/finesses/backward-finesse",
-                "play/declarer-play/general-techniques/finesses/deep-finesse",
                 "play/declarer-play/general-techniques/finesses/delayed-finesse",
                 "play/declarer-play/general-techniques/finesses/finesse",
                 "play/declarer-play/general-techniques/finesses/finesses-index",
                 "play/declarer-play/general-techniques/finesses/repeat-finesse",
                 "play/declarer-play/general-techniques/finesses/two-way-finesse",
-                "play/declarer-play/notrump-play/dangerous-opponent",
+                "play/declarer-play/index-declarer-play",
                 "play/declarer-play/planning/entry-management",
                 "play/declarer-play/planning/gathering-information",
                 "play/declarer-play/planning/planning-index",
@@ -70598,18 +70599,16 @@
                 "play/declarer-play/planning/preserving-entries",
                 "play/declarer-play/planning/timing",
                 "play/declarer-play/probability/probability-inference",
-                "play/declarer-play/probability/conditional-probability",
-                "play/declarer-play/probability/probability-index",
-                "play/defence/signaling/count",
+                "play/declarer-play/probability/vacant-places",
                 "references/references-index"
             ],
-            "last_updated": "2026-07-21",
+            "last_updated": "2026-08-16",
             "status": "Draft"
         },
         "headings": [
             {
                 "level": 1,
-                "title": "First-Round Finesse"
+                "title": "Marked Finesse"
             },
             {
                 "level": 2,
@@ -70617,57 +70616,57 @@
             },
             {
                 "level": 1,
-                "title": "Objectives"
-            },
-            {
-                "level": 1,
                 "title": "Basic Principle"
             },
             {
                 "level": 1,
-                "title": "Why Take the Finesse Early?"
+                "title": "Example – A Show-Out Marks the Jack"
             },
             {
                 "level": 1,
-                "title": "When to Delay the Finesse"
+                "title": "How a Card Becomes Marked"
+            },
+            {
+                "level": 2,
+                "title": "Show-Out"
+            },
+            {
+                "level": 2,
+                "title": "The Auction"
+            },
+            {
+                "level": 2,
+                "title": "Previous Play"
+            },
+            {
+                "level": 2,
+                "title": "Elimination of Possibilities"
             },
             {
                 "level": 1,
-                "title": "Example 1 – Standard Finesse"
+                "title": "Entries and Timing"
             },
             {
                 "level": 1,
-                "title": "Example 2 – Delay for Information"
+                "title": "Marked vs. Ordinary Finesse"
             },
             {
                 "level": 1,
-                "title": "Example 3 – Dangerous Opponent"
+                "title": "Common Errors"
             },
             {
                 "level": 1,
-                "title": "First-Round vs. Delayed Finesse"
+                "title": "Practical Checklist"
             },
             {
                 "level": 1,
-                "title": "Planning the Play"
-            },
-            {
-                "level": 1,
-                "title": "Common Mistakes"
-            },
-            {
-                "level": 1,
-                "title": "Related Topics"
-            },
-            {
-                "level": 1,
-                "title": "Key Principles"
+                "title": "Summary"
             }
         ],
         "links": [],
-        "words": 748,
-        "lines": 224,
-        "characters": 5593,
+        "words": 882,
+        "lines": 174,
+        "characters": 6141,
         "metadata_error": null
     },
     {
