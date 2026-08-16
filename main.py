@@ -18,6 +18,7 @@ from commands.validate import run as validate_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
 from commands.repair_filenames import run as repair_filenames_command
+from commands.resolve_duplicates import run as resolve_duplicates_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -161,6 +162,21 @@ def repair_filenames(
 ) -> None:
     """Rename known invalid files and update exact inbound references."""
     repair_filenames_command(root, backup, apply)
+
+
+@app.command("resolve-duplicates")
+def resolve_duplicates(
+    root: Path = repository_option(),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "duplicate-resolution",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+) -> None:
+    """Apply the reviewed duplicate filename resolution."""
+    resolve_duplicates_command(root, backup, apply)
 
 
 # ============================================================
