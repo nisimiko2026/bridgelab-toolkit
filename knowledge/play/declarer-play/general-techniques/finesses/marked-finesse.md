@@ -1,29 +1,29 @@
 ---
-title: First-Round Finesse
-description: Explains the first-round finesse, taken at the earliest opportunity to establish a suit or gain a trick.
+title: Marked Finesse
+description: Explains the marked finesse, whose success is assured because bidding, counting, or previous play has revealed the critical card's location.
 category: techniques/finessing
 subcategory: declarer-play
 difficulty: Intermediate
-tags: 
+tags:
+  - counting
   - declarer-play
   - finesse
-  - lead
+  - inference
   - techniques/finessing
 systems: []
-aliases: []
+aliases:
+  - proven finesse
 acronyms: []
-references: 
-  - acronyms
+references:
   - play/counting/counting-index
+  - play/counting/inference
   - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/finesses/backward-finesse
-  - play/declarer-play/general-techniques/finesses/deep-finesse
   - play/declarer-play/general-techniques/finesses/delayed-finesse
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
   - play/declarer-play/general-techniques/finesses/repeat-finesse
   - play/declarer-play/general-techniques/finesses/two-way-finesse
-  - play/declarer-play/notrump-play/dangerous-opponent
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/gathering-information
   - play/declarer-play/planning/planning-index
@@ -31,194 +31,144 @@ references:
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
   - play/declarer-play/probability/probability-inference
-  - play/declarer-play/probability/conditional-probability
-  - play/declarer-play/probability/probability-index
-  - play/defence/signaling/count
+  - play/declarer-play/probability/vacant-places
   - references/references-index
-last_updated: 2026-07-21
+last_updated: '2026-08-16'
 status: Draft
 ---
 
-
-# First-Round Finesse
+# Marked Finesse
 
 ## Overview
 
-A **First-Round Finesse** is a finesse taken **immediately on the first round of a suit**, before any honors have been forced out or additional information has been gathered.
+A **marked finesse** is a finesse taken after declarer has established the location of the critical opposing card. Unlike an ordinary finesse, which normally depends on a guess or probability, a correctly diagnosed marked finesse is expected to succeed.
 
-It is the most common type of finesse and is often the standard percentage play when declarer needs to locate a missing honor. However, expert declarers do not automatically take a first-round finesse—they first consider whether additional information can be obtained from the auction or play that might improve the decision.
+The missing card may become marked by:
 
----
+- a defender showing out of the suit;
+- the auction revealing a defender's shape or high-card strength;
+- earlier tricks exposing the remaining distribution;
+- an opponent's forced play of equivalent cards; or
+- a complete count of the defenders' hands.
 
-# Objectives
-
-A first-round finesse aims to:
-
-- Win an extra trick immediately.
-- Locate a missing honor.
-- Establish additional winners.
-- Maximize the percentage chance of success.
-- Preserve communication while developing a suit.
+The technique still requires correct timing and entries. Knowing where the card lies does not help if declarer cannot lead through its holder toward the appropriate tenace.
 
 ---
 
 # Basic Principle
 
-Suppose declarer holds:
+The ordinary finesse asks:
+
+> Which defender holds the missing honor?
+
+The marked finesse begins after that question has been answered. Declarer then arranges the lead so that the known holder of the critical card must play before declarer's tenace.
+
+The practical sequence is:
+
+1. Count the suit and the defenders' known cards.
+2. Identify the defender who must hold the critical card.
+3. Preserve or reach the hand needed to lead through that defender.
+4. Lead toward the tenace and cover only as necessary.
+
+---
+
+# Example – A Show-Out Marks the Jack
+
+Declarer and dummy hold:
 
 ```
 Dummy
-♠ A Q 7
+♦ A Q 8 6
 
 Declarer
-♠ J 8 4
+♦ K 10 7 5
 ```
 
-Missing:
+After two rounds of diamonds, West shows out. From the cards already played, declarer can place the outstanding jack with East.
 
-```
-♠ K
-```
+Declarer reaches dummy and leads a low diamond through East toward the `K 10` holding:
 
-Declarer leads toward the queen.
+- If East plays the jack, declarer covers with the king.
+- If East plays low, declarer plays the ten.
 
-If East holds the king, the queen wins.
-
-The finesse is taken on the **first round** of the suit.
+The finesse is marked because East's possession of the jack is known rather than guessed.
 
 ---
 
-# Why Take the Finesse Early?
+# How a Card Becomes Marked
 
-A first-round finesse is appropriate when:
+## Show-Out
 
-- The finesse offers the highest percentage.
-- No additional information is likely to become available.
-- Declarer needs immediate tricks.
-- Losing the lead is acceptable.
-- Waiting offers no advantage.
+When one defender cannot follow suit, the remaining cards in that suit are placed with the other defender. This is the clearest form of a marked position.
 
----
+## The Auction
 
-# When to Delay the Finesse
+An opening bid, overcall, preempt, or failure to bid may account for enough shape or strength to locate a missing honor. Auction inferences must be consistent with the partnership methods and all revealed cards.
 
-Sometimes declarer should postpone the finesse.
+## Previous Play
 
-Reasons include:
+Honors, spot cards, discards, and the order in which defenders follow may complete the count. A finesse that was initially a guess can become marked after declarer gathers this information.
 
-- Gathering information from the defenders' carding.
-- Counting the defenders' distribution.
-- Using the auction to infer honor locations.
-- Identifying the dangerous opponent.
-- Preserving entries until the correct line becomes clear.
+## Elimination of Possibilities
 
-A delayed finesse may become a better percentage play.
+Even without a direct reveal, declarer may count one defender's known cards in the other suits. The vacant places then force the critical card into the remaining hand.
 
 ---
 
-# Example 1 – Standard Finesse
+# Entries and Timing
 
-Contract:
+A marked finesse can fail operationally even when the inference is correct. Declarer may discover the position too late, after losing the entry needed to lead through the known holder.
 
-```
-3NT
-```
+Before cashing winners or testing a side suit, declarer should ask:
 
-Dummy:
+- Which hand must lead the finesse card?
+- Which entries must be preserved?
+- Can the dangerous opponent gain the lead first?
+- Will testing another suit clarify the position without damaging communication?
 
-```
-♦ A Q 7
-```
-
-Declarer:
-
-```
-♦ J 8 5
-```
-
-Missing:
-
-```
-♦ K
-```
-
-Declarer immediately leads toward the queen.
-
-If the king is with East, the finesse succeeds.
+This is why marked finesses are closely connected to entry management, counting, and delayed play.
 
 ---
 
-# Example 2 – Delay for Information
+# Marked vs. Ordinary Finesse
 
-Declarer also needs to establish clubs.
-
-After the defenders reveal their distribution during the club play, declarer can better estimate where the missing diamond king lies.
-
-The finesse is postponed until additional information is available.
-
----
-
-# Example 3 – Dangerous Opponent
-
-West has led a long spade suit.
-
-If West gains the lead, the defenders can cash several spade winners.
-
-Declarer delays the finesse until other winners have been established or chooses a line that avoids giving West the lead.
+| Ordinary Finesse | Marked Finesse |
+|---|---|
+| Critical card's location is uncertain | Critical card's location is known or logically forced |
+| Usually evaluated by probability | Based on counting and inference |
+| May be taken early | Often becomes available after information is gathered |
+| Success depends on favorable placement | Success depends on executing the known position correctly |
 
 ---
 
-# First-Round vs. Delayed Finesse
+# Common Errors
 
-| First-Round Finesse | Delayed Finesse |
-|---------------------|-----------------|
-| Taken immediately | Postponed until later |
-| Uses initial information only | Uses additional information gathered during play |
-| Often the normal percentage play | Often improves the practical percentage |
-| Simpler planning | Requires counting and inference |
-
----
-
-# Planning the Play
-
-Before taking a first-round finesse, ask:
-
-- Is this the normal percentage play?
-- Can I learn more before taking the finesse?
-- Will delaying the finesse improve my chances?
-- Which opponent is dangerous?
-- Do I have the necessary entries if the finesse loses?
+- Taking an early guess before the position can become marked.
+- Failing to count the cards already played.
+- Treating a weak inference as certainty.
+- Using the entry needed to lead through the known holder.
+- Leading from the wrong hand after locating the honor.
+- Confusing a marked finesse with playing for an honor to drop.
 
 ---
 
-# Common Mistakes
+# Practical Checklist
 
-- Taking the finesse automatically without a complete plan.
-- Ignoring clues from the auction.
-- Failing to count the defenders' distribution.
-- Losing the lead too early.
-- Taking the finesse before establishing certain winners.
+Before taking the finesse, confirm:
 
----
-
-# Related Topics
-
-- Finessing
-- One-Way Finesse
-- Two-Way Finesse
-- Repeat Finesse
-- Deep Finesse
-- Backward Finesse
-- Dangerous Opponent
-- Conditional Probability
-- Planning the Play
+- The critical card's location follows from known evidence.
+- The complete suit count is consistent.
+- The lead will pass through the known holder.
+- The receiving hand contains the required tenace.
+- The necessary entry is available.
+- No safer cashing or endplay line is superior.
 
 ---
 
-# Key Principles
+# Summary
 
-- A first-round finesse is taken immediately on the first round of a suit.
-- It is usually the standard percentage play when no additional information is available.
-- Delay the finesse if later information is likely to improve the decision.
-- Consider entries, timing, and the dangerous opponent before committing to the finesse.
-- Expert declarers balance probability with inference rather than following automatic rules.
+A **marked finesse** replaces a guess with information. Bidding, counting, a show-out, or previous play identifies the critical card's location; declarer then preserves the correct entry and leads through that defender toward the tenace.
+
+The essential lesson is:
+
+> Gather the evidence, complete the count, and take the finesse only after the position is known.
