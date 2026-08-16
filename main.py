@@ -24,6 +24,7 @@ from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
 from commands.orphans import run as orphans_command
 from commands.orphan_plan import run as orphan_plan_command
+from commands.orphan_apply import run as orphan_apply_command
 from commands.duplicates import run as duplicates_command
 from commands.related import run as related_command
 from commands.learning_path import run as learning_path_command
@@ -227,6 +228,39 @@ def orphan_plan(
 ) -> None:
     """Generate read-only parent-index proposals for orphan articles."""
     orphan_plan_command(root, output_directory)
+
+
+@app.command("orphan-apply")
+def orphan_apply(
+    root: Path = repository_option(),
+    plan: Path = typer.Option(
+        REPORTS / "orphan_repair_plan.json",
+        "--plan",
+        exists=True,
+        dir_okay=False,
+        resolve_path=True,
+    ),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "orphan-repair",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+    include_medium_confidence: bool = typer.Option(
+        False,
+        "--include-medium-confidence",
+        help="Include reviewed nearest-ancestor index proposals.",
+    ),
+) -> None:
+    """Apply approved parent-index references with backups."""
+    orphan_apply_command(
+        root,
+        plan,
+        backup,
+        apply,
+        include_medium_confidence=include_medium_confidence,
+    )
 
 
 @app.command()

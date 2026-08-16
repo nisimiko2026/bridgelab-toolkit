@@ -69,3 +69,60 @@ class OrphanPlanCommandTests(unittest.TestCase):
                 {path: path.read_bytes() for path in (index, target)},
                 original,
             )
+
+    def test_guarded_apply_backs_up_parent_and_adds_high_confidence_target(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            base = Path(temporary_directory)
+            root = base / "knowledge"
+            output = base / "reports"
+            backup = base / "backup"
+            index = write_article(root, "guide/guide-index.md", [])
+            target = write_article(root, "guide/target.md", [])
+            original_index = index.read_bytes()
+
+            plan_result = CliRunner().invoke(
+                app,
+                [
+                    "orphan-plan",
+                    "--root",
+                    str(root),
+                    "--output-directory",
+                    str(output),
+                ],
+            )
+            self.assertEqual(plan_result.exit_code, 0, plan_result.output)
+
+            dry_run = CliRunner().invoke(
+                app,
+                [
+                    "orphan-apply",
+                    "--root",
+                    str(root),
+                    "--plan",
+                    str(output / "orphan_repair_plan.json"),
+                    "--backup",
+                    str(backup),
+                ],
+            )
+            self.assertEqual(dry_run.exit_code, 0, dry_run.output)
+            self.assertIn("Proposals selected: 1", dry_run.output)
+            self.assertEqual(index.read_bytes(), original_index)
+
+            apply_result = CliRunner().invoke(
+                app,
+                [
+                    "orphan-apply",
+                    "--root",
+                    str(root),
+                    "--plan",
+                    str(output / "orphan_repair_plan.json"),
+                    "--backup",
+                    str(backup),
+                    "--apply",
+                ],
+            )
+            self.assertEqual(apply_result.exit_code, 0, apply_result.output)
+            self.assertIn("Proposals applied: 1", apply_result.output)
+            self.assertEqual((backup / "guide/guide-index.md").read_bytes(), original_index)
+            self.assertIn("guide/target", index.read_text(encoding="utf-8"))
+            self.assertEqual(target.read_text(encoding="utf-8").count("guide/target"), 0)
