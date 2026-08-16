@@ -19,7 +19,7 @@ references:
 - acronyms
 - bidding/principals/partnership/partnership-agreements
 - play/declarer-play/deceptive-play/deception
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/entry-management
 - play/declarer-play/planning/planning-index

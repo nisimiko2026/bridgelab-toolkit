@@ -19,7 +19,7 @@ references:
   - play/declarer-play/coups/coup-en-passant
   - play/declarer-play/coups/coups-index
   - play/declarer-play/coups/trump-coup
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization

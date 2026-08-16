@@ -18,11 +18,11 @@ references:
   - acronyms
   - play/counting/counting-index
   - play/declarer-play/coups/coups-index
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/avoidance-play
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/notrump-play/hold-up-play
   - play/declarer-play/planning/entry-management

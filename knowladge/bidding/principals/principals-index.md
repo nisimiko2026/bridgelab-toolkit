@@ -44,10 +44,10 @@ references:
 - bidding/systems/systems-index
 - duplicates/duplicate-scoring
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/tempo
-- play/declarer-play/probabilty/probability-index
-- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/probability/probability-index
+- play/declarer-play/probability/restricted-choice
 - play/defence/index-defence
 - play/defence/signaling/count
 - references/references-index

@@ -20,7 +20,7 @@ references:
 - acronyms
 - bidding/bidding-index
 - play/counting/counting-index
-- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elimination-and-endplays/elimination
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/finesses/backward-finesse
 - play/declarer-play/general-techniques/finesses/deep-finesse
@@ -32,11 +32,11 @@ references:
 - play/declarer-play/general-techniques/finesses/ruffing-finesse
 - play/declarer-play/general-techniques/finesses/two-way-finesse
 - play/declarer-play/general-techniques/safety-play
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/entry-management
 - play/declarer-play/planning/preserving-entries
 - play/declarer-play/planning/timing
-- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probability/probability-inference
 - play/declarer-play/squeezes/squeezes-index
 - play/declarer-play/trump-play/dummy-reversal
 - play/declarer-play/trump-play/index-trump-play

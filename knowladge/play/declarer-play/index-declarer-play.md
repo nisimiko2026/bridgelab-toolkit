@@ -28,8 +28,8 @@ references:
 - play/declarer-play/coups/vienna-coup
 - play/declarer-play/deceptive-play/concealment
 - play/declarer-play/deceptive-play/deception
-- play/declarer-play/elemination-and-endplays/elimination
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/elimination
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/ducking
 - play/declarer-play/general-techniques/finesses/delayed-finesse
@@ -47,7 +47,7 @@ references:
 - play/declarer-play/planning/timing
 - play/declarer-play/planning/transportation
 - play/declarer-play/planning/visualization
-- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probability/probability-inference
 - play/declarer-play/squeezes/squeezes-index
 - play/declarer-play/trump-play/cross-ruff
 - play/declarer-play/trump-play/drawing-trumps

@@ -21,8 +21,8 @@ references:
   - play/declarer-play/coups/coups-index
   - play/declarer-play/coups/merrimac-coup
   - play/declarer-play/coups/vienna-coup
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/planning/end-position-analysis
   - play/declarer-play/planning/entry-management

@@ -78,7 +78,7 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/culbertson
   - bidding/systems/systems-index
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-23

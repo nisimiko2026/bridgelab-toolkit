@@ -99,7 +99,7 @@ references:
 - bidding/systems/systems-index
 - duplicates/duplicates-index
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - references/references-index
 last_updated: '2026-07-23'
 status: Draft

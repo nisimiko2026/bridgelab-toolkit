@@ -21,8 +21,8 @@ references:
   - acronyms
   - play/counting/counting-index
   - play/counting/counting-winners
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/general-techniques/establishing-suits
@@ -30,7 +30,7 @@ references:
   - play/declarer-play/general-techniques/finesses/finesses-index
   - play/declarer-play/general-techniques/overtake
   - play/declarer-play/general-techniques/unblock
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing

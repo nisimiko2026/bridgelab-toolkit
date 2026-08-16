@@ -26,7 +26,7 @@ references:
 - play/defence/opening-leads/opening-leads-index
 - play/defence/opening-leads/rusinow
 - play/defence/opening-leads/standard-leads
-- play/defence/opening-leads/tthird-fifth
+- play/defence/opening-leads/third-fifth
 - play/defence/planning/defence-planning-index
 - references/references-index
 last_updated: '2026-07-21'

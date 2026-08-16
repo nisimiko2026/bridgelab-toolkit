@@ -20,7 +20,7 @@ references:
 - bidding/principals/partnership/partnership-agreements
 - play/counting/counting-index
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probability/probability-inference
 - play/defence/counting/defence-counting-index
 - play/defence/index-defence
 - play/defence/opening-leads/fourth-best

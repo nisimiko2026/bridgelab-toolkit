@@ -24,7 +24,7 @@ references:
   - bidding/principals/principals-index
   - duplicates/duplicates-index
   - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/tempo
   - play/defence/index-defence
   - play/play-index

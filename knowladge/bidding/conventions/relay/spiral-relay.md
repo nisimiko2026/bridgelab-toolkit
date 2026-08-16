@@ -38,7 +38,7 @@ references:
   - bidding/systems/moscito
   - bidding/systems/systems-index
   - bidding/systems/ultimate-club
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - references/references-index
 last_updated: 2026-07-23
 status: Draft

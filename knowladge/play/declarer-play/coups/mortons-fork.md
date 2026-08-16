@@ -19,7 +19,7 @@ references:
   - play/counting/counting-index
   - play/declarer-play/coups/coups-index
   - play/declarer-play/deceptive-play/deception
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/avoidance-play
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
@@ -29,7 +29,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

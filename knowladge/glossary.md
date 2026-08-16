@@ -41,7 +41,7 @@ references:
   - bidding/conventions/responses/stayman
   - bidding/conventions/slam-conventions/asking-bid
   - bidding/natural-bids/responses/limit-raise
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/safety-play
   - play/declarer-play/planning/planning-index

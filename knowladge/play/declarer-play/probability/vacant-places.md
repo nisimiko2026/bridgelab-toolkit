@@ -21,14 +21,14 @@ references:
   - play/counting/counting-the-hand
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/end-position-analysis
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/percentage-plays
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/percentage-plays
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

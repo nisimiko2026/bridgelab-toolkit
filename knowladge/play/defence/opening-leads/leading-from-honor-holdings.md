@@ -31,7 +31,7 @@ references:
   - play/defence/opening-leads/opening-leads-index
   - play/defence/opening-leads/rusinow
   - play/defence/opening-leads/top-of-nothing
-  - play/defence/opening-leads/tthird-fifth
+  - play/defence/opening-leads/third-fifth
   - play/defence/planning/defensive-communication
   - play/defence/planning/opening-lead-strategy
   - play/defence/signaling/attitude

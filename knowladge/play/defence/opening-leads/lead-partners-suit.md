@@ -34,7 +34,7 @@ references:
   - play/defence/opening-leads/opening-leads-index
   - play/defence/opening-leads/rusinow
   - play/defence/opening-leads/top-of-nothing
-  - play/defence/opening-leads/tthird-fifth
+  - play/defence/opening-leads/third-fifth
   - references/references-index
 last_updated: 2026-07-21
 status: Draft

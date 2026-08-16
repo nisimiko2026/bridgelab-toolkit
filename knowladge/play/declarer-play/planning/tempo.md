@@ -23,13 +23,13 @@ references:
   - bidding/bidding-index
   - bidding/natural-bids/opening-bids/1-club
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/general-techniques/establishing-suits
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/hold-up-play
   - play/declarer-play/planning/end-position-analysis
   - play/declarer-play/planning/entry-management

@@ -22,7 +22,7 @@ references:
 - bidding/bidding-index
 - bidding/principals/bidding-fundamentals/vulnerability
 - bidding/principals/partnership/partnership-agreements
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/finesses/finesses-index
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo

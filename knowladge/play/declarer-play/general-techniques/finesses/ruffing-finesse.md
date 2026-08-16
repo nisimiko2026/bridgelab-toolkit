@@ -19,7 +19,7 @@ acronyms: []
 references: 
   - acronyms
   - play/declarer-play/coups/trump-coup
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
@@ -27,7 +27,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/dummy-reversal
   - play/declarer-play/trump-play/trump-control
   - play/defence/signaling/count

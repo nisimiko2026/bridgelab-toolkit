@@ -21,14 +21,14 @@ references:
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
   - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/percentage-plays
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
-  - play/declarer-play/probabilty/vacant-places
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/percentage-plays
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
+  - play/declarer-play/probability/vacant-places
   - play/defence/opening-leads/opening-leads-index
   - play/defence/signaling/count
   - references/references-index

@@ -37,8 +37,8 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/standard-american
   - bidding/systems/systems-index
-  - play/declarer-play/elemination-and-endplays/elemination-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination-index
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-22

@@ -33,8 +33,8 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-in-bridge
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-in-bridge
+  - play/declarer-play/probability/probability-index
   - play/play-index
   - play/principals/preservation-of-entries
   - references/references-index

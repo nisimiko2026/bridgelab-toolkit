@@ -29,7 +29,7 @@ references:
 - bidding/principals/partnership/partnership-agreements
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/planning-index
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/probability/probability-index
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

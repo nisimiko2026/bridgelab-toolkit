@@ -27,20 +27,20 @@ references:
   - play/counting/counting-losers
   - play/counting/counting-the-hand
   - play/counting/counting-winners
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
   - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/gathering-information
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/percentage-plays
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/percentage-plays
+  - play/declarer-play/probability/restricted-choice
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

@@ -19,7 +19,7 @@ references:
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/tempo
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/signaling/count
   - references/references-index

@@ -31,9 +31,9 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/percentage-plays
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/percentage-plays
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - references/references-index
 last_updated: 2026-07-27
 status: Draft

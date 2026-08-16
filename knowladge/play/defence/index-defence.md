@@ -28,14 +28,14 @@ references:
   - play/declarer-play/deceptive-play/index-deceptive-play
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/overtake
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/probability-index
   - play/defence/opening-leads/fourth-best
   - play/defence/opening-leads/honor-leads/index-honor-leads
   - play/defence/opening-leads/leads-against-suit

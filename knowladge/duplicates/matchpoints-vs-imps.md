@@ -26,9 +26,9 @@ references:
 - duplicates/duplicates-index
 - play/declarer-play/general-techniques/finesses/finesse
 - play/declarer-play/general-techniques/safety-play
-- play/declarer-play/index-declearer-play
-- play/declarer-play/probabilty/percentage-plays
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/index-declarer-play
+- play/declarer-play/probability/percentage-plays
+- play/declarer-play/probability/probability-index
 - references/references-index
 last_updated: '2026-07-27'
 status: Draft

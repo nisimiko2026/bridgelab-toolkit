@@ -67,7 +67,7 @@ references:
 - bidding/systems/systems-index
 - duplicates/duplicates-index
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/planning-index
 - references/references-index
 - bidding/convention-cards/convention-cards-index

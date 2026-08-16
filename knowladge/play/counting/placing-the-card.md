@@ -16,9 +16,9 @@ acronyms: []
 references: 
   - acronyms
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - references/references-index
 last_updated: 2026-07-27

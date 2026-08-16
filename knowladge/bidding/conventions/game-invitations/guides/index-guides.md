@@ -22,7 +22,7 @@ references:
 - bidding/principals/partnership/partnership-agreements
 - duplicates/duplicates-index
 - duplicates/matchpoints-vs-imps
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
 - references/references-index

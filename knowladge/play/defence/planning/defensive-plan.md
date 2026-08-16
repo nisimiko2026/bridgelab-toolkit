@@ -27,7 +27,7 @@ references:
 - bidding/bidding-index
 - bidding/conventions/doubles/doubles-index
 - play/counting/counting-index
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/finesses/finesse
 - play/declarer-play/planning/entry-management

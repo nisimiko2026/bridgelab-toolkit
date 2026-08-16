@@ -23,11 +23,11 @@ references:
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/probability-in-bridge
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/conditional-probability
+  - play/declarer-play/probability/probability-in-bridge
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/defence/signaling/count
   - play/play-index
   - references/references-index

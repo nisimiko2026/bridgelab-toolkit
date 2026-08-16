@@ -20,7 +20,7 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - duplicates/duplicate-scoring
   - duplicates/matchpoints-vs-imps
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - references/references-index
 last_updated: 2026-07-22
 status: Draft

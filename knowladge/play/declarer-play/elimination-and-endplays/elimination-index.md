@@ -19,14 +19,14 @@ acronyms: []
 references: 
   - acronyms
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/elemination-and-endplays/exit-card
-  - play/declarer-play/elemination-and-endplays/strip-and-endplay
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/exit-card
+  - play/declarer-play/elimination-and-endplays/strip-and-endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/choosing-a-line
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index

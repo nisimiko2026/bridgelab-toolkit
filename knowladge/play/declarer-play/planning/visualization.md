@@ -22,10 +22,10 @@ references:
   - play/counting/counting-losers
   - play/counting/counting-winners
   - play/declarer-play/coups/coups-index
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/unblock
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/planning/choosing-a-line
   - play/declarer-play/planning/creating-extra-tricks
@@ -35,7 +35,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/signaling/count
   - references/references-index

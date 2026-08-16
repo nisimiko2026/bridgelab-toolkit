@@ -18,7 +18,7 @@ references:
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/communication-in-notrump
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/notrump-play/establishing-long-suits

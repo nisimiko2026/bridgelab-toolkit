@@ -18,7 +18,7 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/notrump-play/dangerous-opponent

@@ -23,12 +23,12 @@ references:
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/probability-index
   - play/defence/deception/false-carding
   - play/defence/signaling/count
   - references/references-index

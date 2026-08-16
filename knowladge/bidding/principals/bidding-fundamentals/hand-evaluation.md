@@ -30,7 +30,7 @@ references:
 - bidding/principals/bidding-fundamentals/vulnerability
 - duplicates/duplicates-index
 - play/counting/counting-index
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/defence/signaling/count
 - references/references-index
 last_updated: '2026-07-27'

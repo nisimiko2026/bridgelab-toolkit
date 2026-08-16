@@ -17,8 +17,8 @@ references:
   - acronyms
   - bidding/bidding-index
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/elemination-and-endplays/strip-and-endplay
+  - play/declarer-play/elimination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/strip-and-endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/backward-finesse
   - play/declarer-play/general-techniques/finesses/finesse
@@ -26,15 +26,15 @@ references:
   - play/declarer-play/general-techniques/finesses/marked-finesse
   - play/declarer-play/general-techniques/finesses/repeat-finesse
   - play/declarer-play/general-techniques/finesses/two-way-finesse
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/gathering-information
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/conditional-probability
+  - play/declarer-play/probability/probability-index
   - play/defence/signaling/count
   - play/play-index
   - references/references-index

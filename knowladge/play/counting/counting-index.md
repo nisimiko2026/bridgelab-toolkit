@@ -19,9 +19,9 @@ references:
 - play/counting/counting-distribution
 - play/counting/counting-losers
 - play/counting/counting-winners
-- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elimination-and-endplays/elimination
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/entry-management
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/preserving-entries
@@ -29,8 +29,8 @@ references:
 - play/declarer-play/planning/timing
 - play/declarer-play/planning/transportation
 - play/declarer-play/planning/visualization
-- play/declarer-play/probabilty/probability-inference
-- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/probability/probability-inference
+- play/declarer-play/probability/restricted-choice
 - play/declarer-play/trump-play/drawing-trumps
 - play/declarer-play/trump-play/trump-control
 - play/defence/counting/defence-counting-index

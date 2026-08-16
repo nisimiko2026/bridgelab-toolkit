@@ -57,7 +57,7 @@ references:
   - bidding/systems/super-precision
   - bidding/systems/systems-index
   - bidding/systems/ultimate-club
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-23

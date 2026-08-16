@@ -16,7 +16,7 @@ acronyms: []
 references: 
   - acronyms
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index

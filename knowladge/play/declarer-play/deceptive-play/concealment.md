@@ -25,8 +25,8 @@ references:
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/restricted-choice
   - play/defence/deception/false-carding
   - play/defence/signaling/count
   - play/play-index

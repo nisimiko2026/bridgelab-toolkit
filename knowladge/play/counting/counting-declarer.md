@@ -20,8 +20,8 @@ references:
   - play/counting/counting-distribution
   - play/counting/counting-index
   - play/counting/counting-shape
-  - play/declarer-play/elemination-and-endplays/elemination-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination-index
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/planning/planning-index
   - play/declarer-play/squeezes/squeezes-index

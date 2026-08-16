@@ -31,7 +31,7 @@ references:
 - bidding/principals/partnership/partnership-agreements
 - duplicates/duplicates-index
 - play/declarer-play/planning/tempo
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/probability/probability-index
 - references/references-index
 last_updated: '2026-07-27'
 status: Standard

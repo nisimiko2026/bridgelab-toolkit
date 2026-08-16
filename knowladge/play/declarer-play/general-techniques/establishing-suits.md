@@ -21,17 +21,17 @@ references:
   - bidding/bidding-index
   - bidding/principals/partnership/partnership-agreements
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/notrump-play/hold-up-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/squeezes/squeezes-index
   - play/declarer-play/trump-play/drawing-trumps
   - play/declarer-play/trump-play/trump-control

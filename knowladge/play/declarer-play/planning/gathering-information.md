@@ -28,7 +28,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

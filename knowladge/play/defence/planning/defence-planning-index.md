@@ -24,7 +24,7 @@ references:
 - bidding/bidding-index
 - bidding/principals/partnership/partnership-agreements
 - play/counting/counting-index
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/establishing-suits
 - play/declarer-play/notrump-play/establishing-long-suits
@@ -32,8 +32,8 @@ references:
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/preserving-entries
 - play/declarer-play/planning/timing
-- play/declarer-play/probabilty/probability-inference
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/probability/probability-inference
+- play/declarer-play/probability/probability-index
 - play/declarer-play/squeezes/squeezes-index
 - play/declarer-play/trump-play/cross-ruff
 - play/declarer-play/trump-play/drawing-trumps

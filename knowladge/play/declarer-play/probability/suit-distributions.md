@@ -19,13 +19,13 @@ references:
   - play/declarer-play/general-techniques/safety-play
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/combination-counts
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/missing-honor-probabilities
-  - play/declarer-play/probabilty/percentage-plays
-  - play/declarer-play/probabilty/probability-in-bridge
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/combination-counts
+  - play/declarer-play/probability/conditional-probability
+  - play/declarer-play/probability/missing-honor-probabilities
+  - play/declarer-play/probability/percentage-plays
+  - play/declarer-play/probability/probability-in-bridge
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/defence/signaling/count
   - play/play-index
   - references/references-index

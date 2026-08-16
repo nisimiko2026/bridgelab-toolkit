@@ -67,7 +67,7 @@ references:
 - duplicates/duplicates-index
 - play/counting/counting-index
 - play/declarer-play/general-techniques/communication
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
 - play/defence/opening-leads/honor-leads/index-honor-leads

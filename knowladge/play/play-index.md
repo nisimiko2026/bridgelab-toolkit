@@ -23,12 +23,12 @@ references:
 - play/declarer-play/deceptive-play/index-deceptive-play
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/establishing-suits
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/planning/entry-management
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/planning-the-play
 - play/declarer-play/planning/visualization
-- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probability/probability-inference
 - play/declarer-play/squeezes/squeezes-index
 - play/declarer-play/trump-play/trump-management
 - play/defence/index-defence

@@ -42,7 +42,7 @@ references:
   - bidding/principals/bidding-fundamentals/vulnerability
   - bidding/principals/partnership/partnership-agreements
   - play/counting/counting-index
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-21

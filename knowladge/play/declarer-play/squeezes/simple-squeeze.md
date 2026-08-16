@@ -23,7 +23,7 @@ references:
   - play/counting/counting-index
   - play/declarer-play/coups/trump-coup
   - play/declarer-play/coups/vienna-coup
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/unblock
   - play/declarer-play/planning/entry-management

@@ -24,8 +24,8 @@ references:
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/defence/counting/defence-counting-index
   - play/defence/index-defence
   - play/defence/opening-leads/fourth-best

@@ -54,8 +54,8 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing

@@ -26,8 +26,8 @@ references:
 - duplicates/duplicate-scoring
 - duplicates/duplicates-index
 - glossary
-- play/declarer-play/index-declearer-play
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/index-declarer-play
+- play/declarer-play/probability/probability-index
 - play/defence/index-defence
 - play/play-index
 - references/bridge-terminology

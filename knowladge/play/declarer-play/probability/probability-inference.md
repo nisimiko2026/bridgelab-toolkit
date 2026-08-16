@@ -23,16 +23,16 @@ references:
   - play/counting/counting-distribution
   - play/counting/counting-index
   - play/declarer-play/deceptive-play/declarer-false-carding
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
-  - play/declarer-play/probabilty/vacant-places
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
+  - play/declarer-play/probability/vacant-places
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/deception/false-carding
   - play/defence/planning/defensive-communication

@@ -18,14 +18,14 @@ references:
   - play/counting/counting-declarer
   - play/counting/counting-distribution
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/index-defence
   - play/defence/opening-leads/counting-from-the-opening-lead

@@ -46,7 +46,7 @@ references:
 - play/defence/signaling/suit-preference
 - references/references-index
 - bidding/principals/bidding-fundamentals/game-tries
-- bidding/principals/bidding-fundamentals/kaplan-rubens-hand-hvaluation
+- bidding/principals/bidding-fundamentals/kaplan-rubens-hand-evaluation
 last_updated: '2026-07-22'
 status: Draft
 ---

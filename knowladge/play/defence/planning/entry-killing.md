@@ -25,7 +25,7 @@ references:
 - play/declarer-play/coups/vienna-coup
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/general-techniques/unblock
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/notrump-play/hold-up-play
 - play/declarer-play/planning/end-position-analysis
 - play/declarer-play/planning/entry-management

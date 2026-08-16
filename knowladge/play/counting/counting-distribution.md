@@ -22,7 +22,7 @@ references:
   - play/counting/counting-declarer
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/end-position-analysis
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index

@@ -20,12 +20,12 @@ references:
   - play/counting/counting-distribution
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
   - play/defence/index-defence
   - play/defence/opening-leads/opening-leads-index
   - play/defence/opening-leads/rule-of-11

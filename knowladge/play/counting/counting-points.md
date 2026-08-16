@@ -24,7 +24,7 @@ references:
   - bidding/principals/bidding-fundamentals/hand-evaluation
   - play/counting/counting-index
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

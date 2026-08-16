@@ -14,7 +14,7 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play

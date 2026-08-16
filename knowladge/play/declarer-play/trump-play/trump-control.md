@@ -18,7 +18,7 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - play/counting/counting-index
   - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing

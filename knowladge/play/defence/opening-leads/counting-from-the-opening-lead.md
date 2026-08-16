@@ -24,14 +24,14 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/tempo
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-inference
+  - play/declarer-play/probability/probability-inference
   - play/defence/index-defence
   - play/defence/opening-leads/fourth-best
   - play/defence/opening-leads/journalist-leads
   - play/defence/opening-leads/opening-leads-index
   - play/defence/opening-leads/rule-of-11
   - play/defence/opening-leads/rusinow
-  - play/defence/opening-leads/tthird-fifth
+  - play/defence/opening-leads/third-fifth
   - play/defence/planning/defence-planning-index
   - play/defence/planning/defensive-communication
   - play/defence/planning/defensive-plan

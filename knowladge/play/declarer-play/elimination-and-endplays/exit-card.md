@@ -17,10 +17,10 @@ aliases: []
 acronyms: []
 references: 
   - acronyms
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/elemination-and-endplays/strip-and-endplay
-  - play/declarer-play/elemination-and-endplays/throw-in
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/strip-and-endplay
+  - play/declarer-play/elimination-and-endplays/throw-in
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index

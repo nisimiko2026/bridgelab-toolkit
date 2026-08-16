@@ -19,7 +19,7 @@ references:
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/notrump-play/hold-up-play
   - play/declarer-play/planning/entry-management

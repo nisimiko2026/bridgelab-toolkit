@@ -21,20 +21,20 @@ references:
 - bidding/principals/bidding-fundamentals/hand-evaluation
 - bidding/principals/bidding-fundamentals/vulnerability
 - play/counting/counting-index
-- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elimination-and-endplays/elimination
 - play/declarer-play/general-techniques/finesses/finesse
 - play/declarer-play/general-techniques/finesses/finesses-index
 - play/declarer-play/general-techniques/safety-play
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
-- play/declarer-play/probabilty/probability-inference
-- play/declarer-play/probabilty/conditional-probability
-- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/probability/probability-inference
+- play/declarer-play/probability/conditional-probability
+- play/declarer-play/probability/restricted-choice
 - play/declarer-play/squeezes/squeezes-index
 - play/defence/opening-leads/opening-leads-index
 - play/play-index
 - references/references-index
-- play/declarer-play/probabilty/odds-and-probabilities
+- play/declarer-play/probability/odds-and-probabilities
 last_updated: '2026-07-22'
 status: Draft
 ---

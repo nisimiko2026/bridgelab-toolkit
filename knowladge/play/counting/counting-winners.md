@@ -23,12 +23,12 @@ references:
   - play/declarer-play/general-techniques/ducking
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/drawing-trumps
   - play/declarer-play/trump-play/ruffing-losers
   - play/defence/signaling/count

@@ -24,7 +24,7 @@ references:
 - play/declarer-play/general-techniques/ducking
 - play/declarer-play/general-techniques/establishing-suits
 - play/declarer-play/general-techniques/finesses/finesses-index
-- play/declarer-play/index-declearer-play
+- play/declarer-play/index-declarer-play
 - play/declarer-play/notrump-play/establishing-long-suits
 - play/declarer-play/notrump-play/hold-up-play
 - play/declarer-play/notrump-play/notrump-play

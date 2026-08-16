@@ -1,5 +1,5 @@
 ---
-title: Kaplan Rubens Hand Hvaluation
+title: Kaplan Rubens Hand Evaluation
 description: The Kaplan-Rubens Hand Evaluation (K&R) is an advanced method of evaluating
   bridge hands developed by Edgar Kaplan and Alfred Sheinwold, and later refined by
   Jeff Rubens. Unlike the traditional High Card Point (HCP) system, K&R attempts to

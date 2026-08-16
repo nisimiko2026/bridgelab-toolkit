@@ -51,8 +51,8 @@ references:
   - bidding/systems/standard-american
   - bidding/systems/systems-index
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index

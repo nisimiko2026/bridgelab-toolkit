@@ -26,7 +26,7 @@ references:
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index
-  - play/declarer-play/probabilty/restricted-choice
+  - play/declarer-play/probability/restricted-choice
   - play/defence/deception/false-carding
   - play/defence/opening-leads/opening-leads-index
   - play/defence/planning/defensive-communication

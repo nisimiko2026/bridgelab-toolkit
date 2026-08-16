@@ -32,7 +32,7 @@ references:
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
 - play/declarer-play/planning/timing
-- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/probability/restricted-choice
 - play/defence/deception/camouflage
 - play/defence/index-defence
 - play/defence/planning/defence-planning-index

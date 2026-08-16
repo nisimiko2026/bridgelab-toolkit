@@ -17,13 +17,13 @@ references:
   - play/counting/counting-index
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/transportation
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/index-defence
   - play/defence/signaling/count

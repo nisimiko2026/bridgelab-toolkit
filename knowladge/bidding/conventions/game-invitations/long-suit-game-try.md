@@ -50,15 +50,15 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - bidding/systems/standard-american
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/elimination
   - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/transportation
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/ruffing-losers
   - play/declarer-play/trump-play/trump-control
   - play/declarer-play/trump-play/trump-management

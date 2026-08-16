@@ -20,7 +20,7 @@ references:
   - play/declarer-play/general-techniques/finesses/finesses-index
   - play/declarer-play/general-techniques/overtake
   - play/declarer-play/general-techniques/unblock
-  - play/declarer-play/index-declearer-play
+  - play/declarer-play/index-declarer-play
   - play/declarer-play/notrump-play/communication-in-notrump
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/notrump-play/hold-up-play

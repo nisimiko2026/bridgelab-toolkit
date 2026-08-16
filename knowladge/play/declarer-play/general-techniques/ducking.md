@@ -17,9 +17,9 @@ acronyms: []
 references: 
   - acronyms
   - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elemination-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/elimination-index
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
   - play/declarer-play/general-techniques/avoidance-play
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/safety-play

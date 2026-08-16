@@ -30,9 +30,9 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/conditional-probability
+  - play/declarer-play/probability/probability-index
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-21

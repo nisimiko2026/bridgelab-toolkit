@@ -29,7 +29,7 @@ references:
 - play/counting/counting-losers
 - play/counting/counting-winners
 - play/declarer-play/coups/trump-coup
-- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/endplay
 - play/declarer-play/general-techniques/finesses/finesse
 - play/declarer-play/planning/end-position-analysis
 - play/declarer-play/planning/entry-management

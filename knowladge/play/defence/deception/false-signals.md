@@ -20,7 +20,7 @@ references:
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/planning/planning-index
-  - play/declarer-play/probabilty/percentage-plays
+  - play/declarer-play/probability/percentage-plays
   - play/defence/deception/false-carding
   - play/defence/index-defence
   - play/defence/planning/defence-planning-index

@@ -30,8 +30,8 @@ references:
   - play/counting/counting-index
   - play/counting/counting-losers
   - play/counting/counting-winners
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/elemination-and-endplays/strip-and-endplay
+  - play/declarer-play/elimination-and-endplays/endplay
+  - play/declarer-play/elimination-and-endplays/strip-and-endplay
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/finesses/finesse
   - play/declarer-play/general-techniques/finesses/finesses-index
@@ -43,10 +43,10 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/probability-in-bridge
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-inference
+  - play/declarer-play/probability/conditional-probability
+  - play/declarer-play/probability/probability-in-bridge
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/cross-ruff
   - play/declarer-play/trump-play/drawing-trumps
   - play/declarer-play/trump-play/ruffing-losers

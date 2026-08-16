@@ -28,7 +28,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-index
+  - play/declarer-play/probability/probability-index
   - play/declarer-play/trump-play/ruffing-losers
   - play/defence/signaling/count
   - play/principals/preservation-of-entries

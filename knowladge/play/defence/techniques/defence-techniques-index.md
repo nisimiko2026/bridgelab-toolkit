@@ -22,16 +22,16 @@ acronyms: []
 references:
 - acronyms
 - play/counting/counting-index
-- play/declarer-play/elemination-and-endplays/elimination
-- play/declarer-play/elemination-and-endplays/endplay
-- play/declarer-play/elemination-and-endplays/exit-card
+- play/declarer-play/elimination-and-endplays/elimination
+- play/declarer-play/elimination-and-endplays/endplay
+- play/declarer-play/elimination-and-endplays/exit-card
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/entry-management
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/preserving-entries
 - play/declarer-play/planning/timing
 - play/declarer-play/planning/transportation
-- play/declarer-play/probabilty/probability-index
+- play/declarer-play/probability/probability-index
 - play/declarer-play/trump-play/index-trump-play
 - play/declarer-play/trump-play/trump-control
 - play/defence/endgame-defence/safe-exit
