@@ -1,56 +1,58 @@
 ---
 title: Bidding Principles
-description: Index and navigation guide for the fundamental principles that govern successful bridge bidding.
+description: Index and navigation guide for the fundamental principles that govern
+  successful bridge bidding.
 category: Bidding – Principles
 subcategory: principals
 difficulty: Beginner to Expert
-tags: 
-  - acol
-  - bidding – principles
-  - forcing
-  - precision
-  - principals
-  - relay
-  - sayc
-  - slam
-  - standard american
-systems: 
-  - acol
-  - precision
-  - sayc
-  - standard american
+tags:
+- acol
+- bidding – principles
+- forcing
+- precision
+- principals
+- relay
+- sayc
+- slam
+- standard american
+systems:
+- acol
+- precision
+- sayc
+- standard american
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/conventions/conventions-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/losing-trick-count
-  - bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
-  - bidding/principals/bidding-fundamentals/playing-tricks
-  - bidding/principals/bidding-fundamentals/quick-tricks
-  - bidding/principals/bidding-fundamentals/rule-of-15
-  - bidding/principals/bidding-fundamentals/rule-of-20
-  - bidding/principals/bidding-fundamentals/rule-of-22
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/index-principal-partnership
-  - bidding/principals/partnership/partnership-agreements
-  - bidding/systems/standard-american
-  - bidding/systems/systems-index
-  - duplicates/duplicate-scoring
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/planning/tempo
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/probabilty/restricted-choice
-  - play/defence/index-defence
-  - play/defence/signaling/count
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/conventions/conventions-index
+- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principals/bidding-fundamentals/losing-trick-count
+- bidding/principals/bidding-fundamentals/offensive-vs-defensive-values
+- bidding/principals/bidding-fundamentals/playing-tricks
+- bidding/principals/bidding-fundamentals/quick-tricks
+- bidding/principals/bidding-fundamentals/rule-of-15
+- bidding/principals/bidding-fundamentals/rule-of-20
+- bidding/principals/bidding-fundamentals/rule-of-22
+- bidding/principals/bidding-fundamentals/sign-off
+- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principals/partnership/convention-cards
+- bidding/principals/partnership/disclosure
+- bidding/principals/partnership/index-principal-partnership
+- bidding/principals/partnership/partnership-agreements
+- bidding/systems/standard-american
+- bidding/systems/systems-index
+- duplicates/duplicate-scoring
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/index-declearer-play
+- play/declarer-play/planning/tempo
+- play/declarer-play/probabilty/probability-index
+- play/declarer-play/probabilty/restricted-choice
+- play/defence/index-defence
+- play/defence/signaling/count
+- references/references-index
+- bidding/principals/bidding-fundamentals/index-fundamental-bids
+last_updated: '2026-07-22'
 status: Draft
 ---
 

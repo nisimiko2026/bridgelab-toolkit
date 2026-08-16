@@ -1,66 +1,69 @@
 ---
 title: Declarer Play
-description: Index and navigation guide for declarer play techniques and strategy in the BridgeLab Knowledge Base.
+description: Index and navigation guide for declarer play techniques and strategy
+  in the BridgeLab Knowledge Base.
 category: Card Play
 subcategory: declarer-play
 difficulty: Beginner to Expert
-tags: 
-  - card play
-  - declarer-play
-  - double
-  - endplay
-  - finesse
-  - lead
-  - opening
+tags:
+- card play
+- declarer-play
+- double
+- endplay
+- finesse
+- lead
+- opening
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/principals/partnership/index-principal-partnership
-  - play/counting/counting-index
-  - play/counting/counting-losers
-  - play/counting/counting-winners
-  - play/declarer-play/coups/coup-en-passant
-  - play/declarer-play/coups/trump-coup
-  - play/declarer-play/coups/vienna-coup
-  - play/declarer-play/deceptive-play/concealment
-  - play/declarer-play/deceptive-play/deception
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/ducking
-  - play/declarer-play/general-techniques/finesses/delayed-finesse
-  - play/declarer-play/general-techniques/finesses/double-finesse
-  - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/general-techniques/finesses/repeat-finesse
-  - play/declarer-play/general-techniques/finesses/ruffing-finesse
-  - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/notrump-play/hold-up-play
-  - play/declarer-play/planning/choosing-a-line
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/tempo
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/transportation
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/cross-ruff
-  - play/declarer-play/trump-play/drawing-trumps
-  - play/declarer-play/trump-play/dummy-reversal
-  - play/declarer-play/trump-play/index-trump-play
-  - play/declarer-play/trump-play/trump-control
-  - play/defence/index-defence
-  - play/defence/planning/defensive-communication
-  - play/defence/signaling/count
-  - play/defence/techniques/promotion
-  - play/defence/techniques/uppercut
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/principals/partnership/index-principal-partnership
+- play/counting/counting-index
+- play/counting/counting-losers
+- play/counting/counting-winners
+- play/declarer-play/coups/coup-en-passant
+- play/declarer-play/coups/trump-coup
+- play/declarer-play/coups/vienna-coup
+- play/declarer-play/deceptive-play/concealment
+- play/declarer-play/deceptive-play/deception
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/general-techniques/ducking
+- play/declarer-play/general-techniques/finesses/delayed-finesse
+- play/declarer-play/general-techniques/finesses/double-finesse
+- play/declarer-play/general-techniques/finesses/finesse
+- play/declarer-play/general-techniques/finesses/repeat-finesse
+- play/declarer-play/general-techniques/finesses/ruffing-finesse
+- play/declarer-play/general-techniques/safety-play
+- play/declarer-play/notrump-play/hold-up-play
+- play/declarer-play/planning/choosing-a-line
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/tempo
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/transportation
+- play/declarer-play/planning/visualization
+- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/cross-ruff
+- play/declarer-play/trump-play/drawing-trumps
+- play/declarer-play/trump-play/dummy-reversal
+- play/declarer-play/trump-play/index-trump-play
+- play/declarer-play/trump-play/trump-control
+- play/defence/index-defence
+- play/defence/planning/defensive-communication
+- play/defence/signaling/count
+- play/defence/techniques/promotion
+- play/defence/techniques/uppercut
+- play/play-index
+- references/references-index
+- play/declarer-play/general-techniques/general-techniques-index
+- play/declarer-play/notrump-play/index-notrump-play
+last_updated: '2026-07-22'
 status: Draft
 ---
 

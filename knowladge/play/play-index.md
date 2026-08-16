@@ -1,47 +1,49 @@
 ---
 title: Card Play
-description: Index and navigation guide for declarer play and defensive play techniques in the BridgeLab Knowledge Base.
+description: Index and navigation guide for declarer play and defensive play techniques
+  in the BridgeLab Knowledge Base.
 category: Card Play
-subcategory: None
+subcategory: ''
 difficulty: Beginner to Expert
-tags: 
-  - card play
-  - forcing
-  - lead
-  - none
-  - opening
+tags:
+- card play
+- forcing
+- lead
+- none
+- opening
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/principals/partnership/index-principal-partnership
-  - duplicates/duplicates-index
-  - play/counting/counting-index
-  - play/declarer-play/deceptive-play/index-deceptive-play
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/establishing-suits
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/trump-management
-  - play/defence/index-defence
-  - play/defence/opening-leads/opening-leads-index
-  - play/defence/planning/defence-planning-index
-  - play/defence/planning/defensive-communication
-  - play/defence/signaling/count
-  - play/defence/signaling/signaling-index
-  - play/defence/techniques/active-defence
-  - play/defence/techniques/defence-techniques-index
-  - play/defence/techniques/forcing-defence
-  - play/defence/techniques/passive-defence
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/principals/partnership/index-principal-partnership
+- duplicates/duplicates-index
+- play/counting/counting-index
+- play/declarer-play/deceptive-play/index-deceptive-play
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/general-techniques/establishing-suits
+- play/declarer-play/index-declearer-play
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/planning-the-play
+- play/declarer-play/planning/visualization
+- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/trump-management
+- play/defence/index-defence
+- play/defence/opening-leads/opening-leads-index
+- play/defence/planning/defence-planning-index
+- play/defence/planning/defensive-communication
+- play/defence/signaling/count
+- play/defence/signaling/signaling-index
+- play/defence/techniques/active-defence
+- play/defence/techniques/defence-techniques-index
+- play/defence/techniques/forcing-defence
+- play/defence/techniques/passive-defence
+- references/references-index
+- play/principals/play-principals-index
+last_updated: '2026-07-22'
 status: Draft
 ---
 

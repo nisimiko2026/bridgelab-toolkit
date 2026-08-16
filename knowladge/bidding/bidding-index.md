@@ -70,6 +70,7 @@ references:
 - play/declarer-play/index-declearer-play
 - play/declarer-play/planning/planning-index
 - references/references-index
+- bidding/convention-cards/convention-cards-index
 last_updated: '2026-07-23'
 status: Draft
 ---

@@ -44,6 +44,7 @@ references:
 - bidding/conventions/game-invitations/help-suit-game-try
 - bidding/conventions/game-invitations/long-suit-game-try
 - bidding/conventions/game-invitations/short-suit-game-try
+- bidding/conventions/game-invitations/guides/index-guides
 last_updated: '2026-07-23'
 status: Draft
 ---
