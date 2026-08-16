@@ -38450,198 +38450,6 @@
         "metadata_error": null
     },
     {
-        "id": "bidding/conventions/transfers/index-transfers",
-        "filename": "index-transfers.md",
-        "path": "C:\\Users\\nisim\\Documents\\BridgeLab\\knowledge\\bidding\\conventions\\transfers\\index-transfers.md",
-        "relative_path": "bidding/conventions/transfers/index-transfers.md",
-        "directory": "bidding/conventions/transfers",
-        "metadata": {
-            "title": "Transfer Bids",
-            "description": "Comprehensive guide to transfer bidding in Contract Bridge, covering transfer responses, transfer advances, transfer overcalls, transfer preempts, relay transfers, and expert partnership methods.",
-            "category": "bidding",
-            "subcategory": "conventions",
-            "difficulty": "All Levels",
-            "tags": [
-                "bidding",
-                "competitive",
-                "conventions",
-                "forcing",
-                "jacoby",
-                "kokish",
-                "lead",
-                "lebensohl",
-                "notrump",
-                "precision",
-                "puppet stayman",
-                "relay",
-                "response",
-                "slam",
-                "stayman",
-                "strong club",
-                "support",
-                "transfer",
-                "walsh"
-            ],
-            "systems": [
-                "jacoby",
-                "kokish",
-                "lebensohl",
-                "precision",
-                "puppet stayman",
-                "strong club",
-                "walsh"
-            ],
-            "aliases": [],
-            "acronyms": [],
-            "references": [
-                "acronyms",
-                "bidding/bidding-index",
-                "bidding/conventions/competitive/bid-competitive-index",
-                "bidding/conventions/conventions-index",
-                "bidding/conventions/doubles/doubles-index",
-                "bidding/conventions/relay/kokish-relay",
-                "bidding/conventions/relay/relay-index",
-                "bidding/conventions/relay/relay-principle",
-                "bidding/conventions/relay/step-responses",
-                "bidding/conventions/responses/puppet-stayman",
-                "bidding/conventions/responses/responses-index",
-                "bidding/conventions/responses/stayman",
-                "bidding/conventions/responses/transfer-walsh",
-                "bidding/conventions/responses/walsh",
-                "bidding/conventions/slam-conventions/slam-bid-index",
-                "bidding/conventions/transfers/jacoby-transfers",
-                "bidding/conventions/transfers/south-african-texas",
-                "bidding/conventions/transfers/transfer-lebensohl",
-                "bidding/conventions/transfers/transfers-index",
-                "bidding/principles/partnership/partnership-agreements",
-                "bidding/systems/systems-index",
-                "play/declarer-play/general-techniques/communication",
-                "references/references-index"
-            ],
-            "last_updated": "2026-07-23",
-            "status": "Draft"
-        },
-        "headings": [
-            {
-                "level": 1,
-                "title": "Transfer Bids"
-            },
-            {
-                "level": 1,
-                "title": "Introduction"
-            },
-            {
-                "level": 1,
-                "title": "Objectives"
-            },
-            {
-                "level": 1,
-                "title": "Major Categories"
-            },
-            {
-                "level": 2,
-                "title": "Notrump Transfers"
-            },
-            {
-                "level": 2,
-                "title": "Transfer Responses"
-            },
-            {
-                "level": 2,
-                "title": "Competitive Transfers"
-            },
-            {
-                "level": 2,
-                "title": "Relay Transfers"
-            },
-            {
-                "level": 2,
-                "title": "Advanced Transfer Methods"
-            },
-            {
-                "level": 1,
-                "title": "Fundamental Principles"
-            },
-            {
-                "level": 1,
-                "title": "Why Use Transfers?"
-            },
-            {
-                "level": 1,
-                "title": "Super Accepts"
-            },
-            {
-                "level": 1,
-                "title": "Transfer Acceptance"
-            },
-            {
-                "level": 1,
-                "title": "Learning Paths"
-            },
-            {
-                "level": 2,
-                "title": "Beginner"
-            },
-            {
-                "level": 2,
-                "title": "Intermediate"
-            },
-            {
-                "level": 2,
-                "title": "Advanced"
-            },
-            {
-                "level": 2,
-                "title": "Expert"
-            },
-            {
-                "level": 1,
-                "title": "Partnership Agreements"
-            },
-            {
-                "level": 1,
-                "title": "Common Mistakes"
-            },
-            {
-                "level": 1,
-                "title": "Matchpoints versus IMPs"
-            },
-            {
-                "level": 2,
-                "title": "Matchpoints"
-            },
-            {
-                "level": 2,
-                "title": "IMPs"
-            },
-            {
-                "level": 1,
-                "title": "Related Sections"
-            },
-            {
-                "level": 1,
-                "title": "Expert Notes"
-            },
-            {
-                "level": 1,
-                "title": "Articles in This Section"
-            },
-            {
-                "level": 1,
-                "title": "Using This Section"
-            },
-            {
-                "level": 1,
-                "title": "Summary"
-            }
-        ],
-        "links": [],
-        "words": 1041,
-        "lines": 417,
-        "characters": 8024,
-        "metadata_error": null
-    },
-    {
         "id": "bidding/conventions/transfers/jacoby-transfers",
         "filename": "jacoby-transfers.md",
         "path": "C:\\Users\\nisim\\Documents\\BridgeLab\\knowledge\\bidding\\conventions\\transfers\\jacoby-transfers.md",
@@ -39698,8 +39506,7 @@
                 "bidding/principles/partnership/partnership-agreements",
                 "bidding/systems/systems-index",
                 "play/declarer-play/general-techniques/communication",
-                "references/references-index",
-                "bidding/conventions/transfers/index-transfers"
+                "references/references-index"
             ],
             "last_updated": "2026-07-23",
             "status": "Draft"
@@ -39819,9 +39626,9 @@
             }
         ],
         "links": [],
-        "words": 1041,
-        "lines": 417,
-        "characters": 8024,
+        "words": 1039,
+        "lines": 416,
+        "characters": 7977,
         "metadata_error": null
     },
     {
