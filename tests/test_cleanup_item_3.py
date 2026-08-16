@@ -107,7 +107,7 @@ class DefaultRepositoryConfigurationTests(unittest.TestCase):
 
         self.assertEqual(
             loaded_config.REPOSITORY,
-            (loaded_config.ROOT.parent / "knowladge").resolve(),
+            (loaded_config.ROOT.parent / "knowledge").resolve(),
         )
 
 

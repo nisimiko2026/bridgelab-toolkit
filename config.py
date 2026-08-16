@@ -25,7 +25,7 @@ ROOT = PROJECT
 REPOSITORY = Path(
     os.environ.get(
         "BRIDGELAB_REPOSITORY",
-        ROOT.parent / "knowladge",
+        ROOT.parent / "knowledge",
     )
 ).expanduser().resolve()
 
