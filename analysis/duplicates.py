@@ -116,6 +116,17 @@ class DuplicateAnalyzer:
 
         text = text.lower()
 
+        # Suit symbols carry semantic identity. Preserve them before stripping
+        # punctuation so titles such as "1♣ Opening" and "1♦ Opening" do not
+        # collapse into the same duplicate key.
+        for symbol, suit in {
+            "♣": " club ",
+            "♦": " diamond ",
+            "♥": " heart ",
+            "♠": " spade ",
+        }.items():
+            text = text.replace(symbol, suit)
+
         text = re.sub(
             r"[^a-z0-9]+",
             " ",
