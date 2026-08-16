@@ -23,7 +23,7 @@ references:
   - play/declarer-play/notrump-play/dangerous-opponent
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/conditional-probability
   - play/declarer-play/probabilty/percentage-plays
   - play/declarer-play/probabilty/probability-index

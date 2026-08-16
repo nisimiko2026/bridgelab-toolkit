@@ -24,7 +24,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/tempo
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/defence/index-defence
   - play/defence/opening-leads/fourth-best
   - play/defence/opening-leads/journalist-leads

@@ -35,7 +35,7 @@ references:
   - play/declarer-play/planning/entry-management
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - play/declarer-play/trump-play/dummy-reversal
   - play/declarer-play/trump-play/index-trump-play

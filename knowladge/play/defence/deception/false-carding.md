@@ -30,7 +30,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/defence/counting/defence-counting-index
   - play/defence/index-defence
   - play/defence/planning/defence-planning-index

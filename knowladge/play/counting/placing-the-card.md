@@ -18,7 +18,7 @@ references:
   - play/counting/counting-index
   - play/declarer-play/elemination-and-endplays/elimination
   - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - references/references-index
 last_updated: 2026-07-27

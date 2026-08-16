@@ -32,7 +32,7 @@ references:
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/transportation
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/index-defence
   - play/defence/opening-leads/opening-leads-index

@@ -24,7 +24,7 @@ references:
 - play/declarer-play/general-techniques/communication
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
-- play/declarer-play/probabilty/inference
+- play/declarer-play/probabilty/probability-inference
 - play/defence/deception/camouflage
 - play/defence/deception/false-carding
 - play/defence/deception/false-signals

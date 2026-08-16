@@ -26,7 +26,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/restricted-choice
   - play/declarer-play/squeezes/automatic-squeeze
   - play/declarer-play/squeezes/criss-cross-squeeze

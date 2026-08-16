@@ -84,7 +84,7 @@ references:
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
 - play/declarer-play/planning/timing
-- play/declarer-play/probabilty/inference
+- play/declarer-play/probabilty/probability-inference
 - play/declarer-play/probabilty/probability-index
 - play/declarer-play/probabilty/restricted-choice
 - play/declarer-play/probabilty/vacant-places

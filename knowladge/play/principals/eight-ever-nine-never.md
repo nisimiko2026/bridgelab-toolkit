@@ -18,7 +18,7 @@ references:
 - bidding/bidding-index
 - play/counting/counting-index
 - play/declarer-play/general-techniques/finesses/finesse
-- play/declarer-play/probabilty/inference
+- play/declarer-play/probabilty/probability-inference
 - play/declarer-play/probabilty/conditional-probability
 - play/declarer-play/probabilty/percentage-plays
 - play/declarer-play/probabilty/probability-in-bridge

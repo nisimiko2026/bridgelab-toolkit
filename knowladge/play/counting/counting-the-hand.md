@@ -18,7 +18,7 @@ references:
   - bidding/conventions/opening-bids/index-opening-bids
   - bidding/conventions/responses/responses-index
   - play/counting/counting-index
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/defence/signaling/count
   - references/references-index
 last_updated: 2026-07-27

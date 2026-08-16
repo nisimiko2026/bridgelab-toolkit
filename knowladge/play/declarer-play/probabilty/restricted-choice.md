@@ -27,7 +27,7 @@ references:
   - play/declarer-play/notrump-play/establishing-long-suits
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/probability-index
   - play/defence/deception/false-carding
   - play/defence/signaling/count

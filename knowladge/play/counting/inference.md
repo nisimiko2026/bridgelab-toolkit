@@ -18,7 +18,7 @@ references:
   - play/counting/counting-index
   - play/declarer-play/elemination-and-endplays/elimination
   - play/declarer-play/planning/tempo
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/restricted-choice
   - play/play-index
   - references/references-index

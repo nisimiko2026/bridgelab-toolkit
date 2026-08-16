@@ -46,7 +46,7 @@ references:
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/transportation
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - play/declarer-play/trump-play/cross-ruff
   - play/declarer-play/trump-play/drawing-trumps

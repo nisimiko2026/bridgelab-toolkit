@@ -23,7 +23,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/probability-index
   - play/declarer-play/probabilty/restricted-choice
   - play/declarer-play/squeezes/squeezes-index

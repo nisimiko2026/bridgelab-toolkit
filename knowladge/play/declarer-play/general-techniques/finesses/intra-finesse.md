@@ -38,7 +38,7 @@ references:
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/percentage-plays
   - play/declarer-play/probabilty/restricted-choice
   - play/defence/signaling/count

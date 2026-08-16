@@ -43,7 +43,7 @@ references:
   - play/declarer-play/planning/planning-the-play
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/conditional-probability
   - play/declarer-play/probabilty/probability-in-bridge
   - play/declarer-play/probabilty/probability-index

@@ -28,7 +28,7 @@ references:
   - play/declarer-play/index-declearer-play
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/squeezes/squeezes-index
   - play/defence/index-defence
   - play/defence/signaling/count

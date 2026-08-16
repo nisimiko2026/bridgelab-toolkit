@@ -26,7 +26,7 @@ references:
   - play/declarer-play/general-techniques/safety-play
   - play/declarer-play/planning/planning-index
   - play/declarer-play/planning/tempo
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/conditional-probability
   - play/declarer-play/probabilty/restricted-choice
   - play/declarer-play/squeezes/squeezes-index

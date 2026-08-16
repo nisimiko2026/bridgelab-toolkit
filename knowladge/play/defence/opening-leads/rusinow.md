@@ -23,7 +23,7 @@ references:
   - bidding/principals/partnership/partnership-agreements
   - play/declarer-play/general-techniques/communication
   - play/declarer-play/general-techniques/unblock
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/defence/index-defence
   - play/defence/opening-leads/fourth-best
   - play/defence/opening-leads/honor-leads/index-honor-leads

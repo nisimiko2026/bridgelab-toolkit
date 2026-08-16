@@ -34,7 +34,7 @@ references:
   - play/declarer-play/planning/preserving-entries
   - play/declarer-play/planning/timing
   - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/inference
+  - play/declarer-play/probabilty/probability-inference
   - play/declarer-play/probabilty/probability-index
   - play/defence/opening-leads/fourth-best
   - play/defence/opening-leads/honor-leads/index-honor-leads
