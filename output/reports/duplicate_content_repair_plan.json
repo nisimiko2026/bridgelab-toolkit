@@ -1,0 +1,50 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "summary": {
+    "high_confidence_consolidations": 1,
+    "editorial_restorations": 1,
+    "automatic_deletions_proposed": 1
+  },
+  "high_confidence": [
+    {
+      "topic": "Transfer Bids index",
+      "canonical": "bidding/conventions/transfers/transfers-index.md",
+      "duplicate": "bidding/conventions/transfers/index-transfers.md",
+      "comparison": "Files differ only in one reciprocal reference line.",
+      "canonical_reference_files": 12,
+      "duplicate_reference_files": 1,
+      "external_duplicate_reference_files": 0,
+      "actions": [
+        "Back up both files",
+        "Remove the canonical file's reference to index-transfers",
+        "Delete index-transfers.md",
+        "Verify no index-transfers identifier remains",
+        "Validate the complete repository"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "editorial_review": [
+    {
+      "topic": "Marked Finesse",
+      "path": "play/declarer-play/general-techniques/finesses/marked-finesse.md",
+      "cloned_from": "play/declarer-play/general-techniques/finesses/first-round-finesse.md",
+      "comparison": "The files differ only by the marked-finesse reference omitted from the cloned file.",
+      "inbound_reference_files": 4,
+      "recommendation": "Keep the path and restore a distinct Marked Finesse article; do not consolidate it into First-Round Finesse.",
+      "automatic_action": false,
+      "reason": "The repository navigation and neighboring finesse articles intentionally model Marked Finesse as a separate concept."
+    }
+  ],
+  "guardrails": [
+    "Abort if either transfer-index source is missing",
+    "Back up every changed or deleted file",
+    "Do not modify marked-finesse.md during automatic consolidation",
+    "Remove only the exact duplicate identifier from the canonical transfer index",
+    "Run all toolkit tests and validate all articles",
+    "Confirm duplicate-title groups decrease by exactly one"
+  ],
+  "recommended_next_step": "Approve the high-confidence transfer-index consolidation separately from the Marked Finesse editorial restoration."
+}
