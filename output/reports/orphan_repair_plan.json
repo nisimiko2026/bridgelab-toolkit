@@ -1,0 +1,837 @@
+{
+  "summary": {
+    "total_candidates": 118,
+    "actionable": 118,
+    "manual_review": 0,
+    "high_confidence": 112,
+    "medium_confidence": 6
+  },
+  "proposals": [
+    {
+      "target": "bidding/convention-cards/cc-nily-nisim",
+      "parent_index": "bidding/convention-cards/convention-cards-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/convention-cards/convention-cards-index",
+      "parent_index": "bidding/bidding-index",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/aspro",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/brozel",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/cappaletti",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/dont",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/equal-level-conversion",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/equal-level-conversion-doubles",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/gesthem",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/hamilton",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/meckwell",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/multi-landy",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/sandwich-nt",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/competitive/scrambling-2nt",
+      "parent_index": "bidding/conventions/competitive/bid-competitive-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/defensive-methods/defense-against-multi-2d",
+      "parent_index": "bidding/conventions/defensive-methods/bid-defence-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/defensive-methods/suction",
+      "parent_index": "bidding/conventions/defensive-methods/bid-defence-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/doubles/dsi",
+      "parent_index": "bidding/conventions/doubles/doubles-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/doubles/lead-directing-double",
+      "parent_index": "bidding/conventions/doubles/doubles-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/choosing-a-game-try",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/common-mistakes",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/expert-game-try-agreements",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/game-try-comparison",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/index-guides",
+      "parent_index": "bidding/conventions/game-invitations/invitations-index",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/opener-evaluation",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/guides/simple-game-try-agreements",
+      "parent_index": "bidding/conventions/game-invitations/guides/index-guides",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/help-suit-game-try",
+      "parent_index": "bidding/conventions/game-invitations/invitations-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/long-suit-game-try",
+      "parent_index": "bidding/conventions/game-invitations/invitations-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/game-invitations/short-suit-game-try",
+      "parent_index": "bidding/conventions/game-invitations/invitations-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/opening-bids/ekren",
+      "parent_index": "bidding/conventions/opening-bids/index-opening-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/opening-bids/flannery",
+      "parent_index": "bidding/conventions/opening-bids/index-opening-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/opening-bids/muiderberg-two",
+      "parent_index": "bidding/conventions/opening-bids/index-opening-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/opening-bids/namyats",
+      "parent_index": "bidding/conventions/opening-bids/index-opening-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/opening-bids/roman-2-diamonds",
+      "parent_index": "bidding/conventions/opening-bids/index-opening-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/relay/relay-bidding",
+      "parent_index": "bidding/conventions/relay/relay-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/2nt-inquiry-after-multi-two-diamond",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/2nt-inquiry-over-weak-2",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/five-card-stayman",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/lebensohl-after-1nt-doubled",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/lebensohl-after-1nt-overcall",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/passed-hand-bergen",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/passed-hand-splinter",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/preemptive-raise",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/responding-to-multi-2diamond",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/rubensohl",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/smolen",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/responses/two-way-stayman",
+      "parent_index": "bidding/conventions/responses/responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/slam-conventions/gerber",
+      "parent_index": "bidding/conventions/slam-conventions/slam-bid-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/slam-conventions/roman-key-card-blackwood",
+      "parent_index": "bidding/conventions/slam-conventions/slam-bid-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/slam-conventions/specific-king-ask",
+      "parent_index": "bidding/conventions/slam-conventions/slam-bid-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/slam-conventions/trump-asking-bid",
+      "parent_index": "bidding/conventions/slam-conventions/slam-bid-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/conventions/transfers/index-transfers",
+      "parent_index": "bidding/conventions/transfers/transfers-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/1-diamond",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/1-heart",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/1-spade",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/1nt-opening",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/2-clubs",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/2nt-opening",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/opening-bids/opening-bids-overview",
+      "parent_index": "bidding/natural-bids/opening-bids/natural-opening-bids-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/rebids/opener-after-1nt",
+      "parent_index": "bidding/natural-bids/rebids/natural-rebid-indexs",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/rebids/opener-after-2nt",
+      "parent_index": "bidding/natural-bids/rebids/natural-rebid-indexs",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/rebids/opener-after-major",
+      "parent_index": "bidding/natural-bids/rebids/natural-rebid-indexs",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/rebids/opener-after-minor",
+      "parent_index": "bidding/natural-bids/rebids/natural-rebid-indexs",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/rebids/rebids-after-preempts",
+      "parent_index": "bidding/natural-bids/rebids/natural-rebid-indexs",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/raising-partners-minor",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/respond-preemptive-opening-in-3-level",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-1-club",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-1-diamond",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-1nt",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-2-clubs",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-2nt",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-four-level-preempt",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-major-opening",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-three-level-preempt",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/natural-bids/responses/response-to-weak-two",
+      "parent_index": "bidding/natural-bids/responses/natural-responses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/principals/bidding-fundamentals/game-tries",
+      "parent_index": "bidding/principals/bidding-fundamentals/index-fundamental-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/principals/bidding-fundamentals/index-fundamental-bids",
+      "parent_index": "bidding/principals/principals-index",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/principals/bidding-fundamentals/kaplan-rubens-hand-hvaluation",
+      "parent_index": "bidding/principals/bidding-fundamentals/index-fundamental-bids",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/2-over-1",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/kaplan-sheinwold",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/precision",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/roth-stone",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/sayc",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "bidding/systems/wspolny-jezyk",
+      "parent_index": "bidding/systems/systems-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/counting/counting-defenders",
+      "parent_index": "play/counting/counting-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/counting/inference",
+      "parent_index": "play/counting/counting-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/counting/placing-the-card",
+      "parent_index": "play/counting/counting-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/coups/devils-coup",
+      "parent_index": "play/declarer-play/coups/coups-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/coups/mortons-fork",
+      "parent_index": "play/declarer-play/coups/coups-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/general-techniques/entry-management-technique",
+      "parent_index": "play/declarer-play/general-techniques/general-techniques-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/general-techniques/finesses/first-round-finesse",
+      "parent_index": "play/declarer-play/general-techniques/finesses/finesses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/general-techniques/finesses/intra-finesse",
+      "parent_index": "play/declarer-play/general-techniques/finesses/finesses-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/general-techniques/general-techniques-index",
+      "parent_index": "play/declarer-play/index-declearer-play",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/general-techniques/loser-on-loser",
+      "parent_index": "play/declarer-play/general-techniques/general-techniques-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/notrump-play/index-notrump-play",
+      "parent_index": "play/declarer-play/index-declearer-play",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/notrump-play/keeping-the-lead",
+      "parent_index": "play/declarer-play/notrump-play/index-notrump-play",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/notrump-play/timing-in-notrump",
+      "parent_index": "play/declarer-play/notrump-play/index-notrump-play",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/probabilty/odds-and-probabilities",
+      "parent_index": "play/declarer-play/probabilty/probability-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/declarer-play/squeezes/pseudo-squeeze",
+      "parent_index": "play/declarer-play/squeezes/squeezes-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-aj10",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-ak",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-ak10",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-akj",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-akq",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-aq",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-aq10",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-kq",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-kq10",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-kqj",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-qj10",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/honor-leads/leads-qj9",
+      "parent_index": "play/defence/opening-leads/honor-leads/index-honor-leads",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/leading-from-honor-holdings",
+      "parent_index": "play/defence/opening-leads/opening-leads-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/opening-leads/rule-of-12",
+      "parent_index": "play/defence/opening-leads/opening-leads-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/planning/active-vs-passive-defense",
+      "parent_index": "play/defence/planning/defence-planning-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/planning/count-declarers",
+      "parent_index": "play/defence/planning/defence-planning-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/signaling/italian-discard",
+      "parent_index": "play/defence/signaling/signaling-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/defence/techniques/surrounding-play",
+      "parent_index": "play/defence/techniques/defence-techniques-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    },
+    {
+      "target": "play/principals/play-principals-index",
+      "parent_index": "play/play-index",
+      "confidence": "medium",
+      "reason": "single index in nearest ancestor directory",
+      "candidates": []
+    },
+    {
+      "target": "references/bridge-laws-quick-reference",
+      "parent_index": "references/references-index",
+      "confidence": "high",
+      "reason": "single index in target directory",
+      "candidates": []
+    }
+  ]
+}
