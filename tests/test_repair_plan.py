@@ -116,3 +116,52 @@ class RepairPlanCommandTests(unittest.TestCase):
                 (output / "metadata_repair_plan.json").read_text(encoding="utf-8")
             )
             self.assertEqual(data["summary"]["total_proposals"], 0)
+
+    def test_apply_backs_up_and_only_fills_missing_approved_fields(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            base = Path(temporary_directory)
+            root = base / "knowledge"
+            output = base / "reports"
+            backup = base / "backup"
+            target = write_article(
+                root,
+                "guide/target.md",
+                description="",
+                difficulty="",
+                body="Target contains enough prose to become a proposed description.",
+            )
+            write_article(
+                root,
+                "guide/peer.md",
+                description="A sufficiently long peer description.",
+                difficulty="Intermediate",
+                body="Peer article.",
+            )
+            original = target.read_bytes()
+
+            plan_result = CliRunner().invoke(
+                app,
+                ["repair-plan", "--root", str(root), "--output-directory", str(output)],
+            )
+            self.assertEqual(plan_result.exit_code, 0, plan_result.output)
+
+            apply_result = CliRunner().invoke(
+                app,
+                [
+                    "repair-apply",
+                    "--root",
+                    str(root),
+                    "--plan",
+                    str(output / "metadata_repair_plan.json"),
+                    "--backup",
+                    str(backup),
+                    "--apply",
+                ],
+            )
+
+            self.assertEqual(apply_result.exit_code, 0, apply_result.output)
+            self.assertIn("Proposals applied : 2", apply_result.output)
+            self.assertEqual((backup / "guide/target.md").read_bytes(), original)
+            repaired = target.read_text(encoding="utf-8")
+            self.assertIn("difficulty: Intermediate", repaired)
+            self.assertIn("Target contains enough prose", repaired)

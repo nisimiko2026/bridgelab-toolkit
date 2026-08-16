@@ -16,6 +16,7 @@ from commands.debug import run as debug_command
 from commands.enrich import run as enrich_command
 from commands.validate import run as validate_command
 from commands.repair_plan import run as repair_plan_command
+from commands.repair_apply import run as repair_apply_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -111,6 +112,28 @@ def repair_plan(
 ) -> None:
     """Generate read-only metadata repair proposals."""
     repair_plan_command(root, output_directory)
+
+
+@app.command("repair-apply")
+def repair_apply(
+    root: Path = repository_option(),
+    plan: Path = typer.Option(
+        REPORTS / "metadata_repair_plan.json",
+        "--plan",
+        exists=True,
+        dir_okay=False,
+        resolve_path=True,
+    ),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "metadata-repair",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+) -> None:
+    """Apply medium/high-confidence repairs after backing up source files."""
+    repair_apply_command(root, plan, backup, apply)
 
 
 # ============================================================
