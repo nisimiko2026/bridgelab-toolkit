@@ -1,0 +1,246 @@
+{
+  "generated": "2026-08-16",
+  "status": "approved",
+  "source_changes_performed": false,
+  "scope": "24_exact_manual_review_removals",
+  "summary": {
+    "files_to_update": 13,
+    "assignments_to_remove": 24
+  },
+  "proposals": [
+    {
+      "path": "bidding/conventions/competitive/ghestem.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "ordinary_word_precision_not_precision_system"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/crash.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-multi-2d.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-precision.md",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "standard american",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-strong-club.md",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/suction.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/twerb.md",
+      "current_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "blue club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "precision",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "opponent_or_subject_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/doubles/lightner-double.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "ordinary_word_precision_not_precision_system"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/relay/spiral-relay.md",
+      "current_systems": [
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "strong club",
+          "reason": "strong_club_not_present_in_article_body"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl-after-1nt-doubled.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "ordinary_word_precision_not_precision_system"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/kickback.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "ordinary_word_precision_not_precision_system"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/alert-procedures.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "example_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/partnership-agreements.md",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "example_system_not_article_applicability"
+        },
+        {
+          "value": "standard american",
+          "reason": "example_system_not_article_applicability"
+        },
+        {
+          "value": "strong club",
+          "reason": "example_system_not_article_applicability"
+        }
+      ],
+      "proposed_systems": []
+    }
+  ],
+  "guardrails": [
+    "Verify every current systems list exactly before writing",
+    "Back up every changed article",
+    "Remove only the 24 approved values",
+    "Retain all 53 positively reviewed assignments",
+    "Abort the full operation on metadata drift"
+  ]
+}
