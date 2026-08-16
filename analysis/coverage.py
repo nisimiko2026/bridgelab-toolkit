@@ -95,3 +95,11 @@ class CoverageAnalyzer:
                 self.missing_description()
             ),
         }
+
+    def report(self) -> list[str]:
+        """Return a stable, human-readable coverage summary."""
+
+        return [
+            f"{label:25} {count}"
+            for label, count in self.summary().items()
+        ]

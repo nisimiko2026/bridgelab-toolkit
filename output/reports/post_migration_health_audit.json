@@ -1,0 +1,99 @@
+{
+  "generated": "2026-08-16",
+  "source_changes_performed": false,
+  "repository": {
+    "articles": 448,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "orphans": 0,
+    "duplicate_title_groups": 9
+  },
+  "coverage": {
+    "missing_categories": 0,
+    "missing_systems": 242,
+    "missing_tags": 0,
+    "missing_references": 0,
+    "missing_descriptions": 0
+  },
+  "duplicate_classification": {
+    "normalization_false_positives": [
+      {
+        "label": "One-level suit opening bids",
+        "paths": [
+          "bidding/natural-bids/opening-bids/1-diamond.md",
+          "bidding/natural-bids/opening-bids/1-heart.md",
+          "bidding/natural-bids/opening-bids/1-spade.md"
+        ],
+        "reason": "The analyzer strips suit symbols, collapsing distinct titles."
+      },
+      {
+        "label": "Responses to one-level minor openings",
+        "paths": [
+          "bidding/natural-bids/responses/response-to-1-club.md",
+          "bidding/natural-bids/responses/response-to-1-diamond.md"
+        ],
+        "reason": "The analyzer strips suit symbols, collapsing distinct titles."
+      }
+    ],
+    "intentional_index_article_pairs": [
+      {
+        "label": "Convention Cards",
+        "paths": [
+          "bidding/convention-cards/convention-cards-index.md",
+          "bidding/principles/partnership/convention-cards.md"
+        ]
+      },
+      {
+        "label": "Notrump Play",
+        "paths": [
+          "play/declarer-play/notrump-play/index-notrump-play.md",
+          "play/declarer-play/notrump-play/notrump-play.md"
+        ]
+      },
+      {
+        "label": "Relay Bidding",
+        "paths": [
+          "bidding/conventions/relay/relay-bidding.md",
+          "bidding/conventions/relay/relay-index.md"
+        ]
+      }
+    ],
+    "near_identical_duplicates": [
+      {
+        "label": "First-Round/Marked Finesse",
+        "paths": [
+          "play/declarer-play/general-techniques/finesses/first-round-finesse.md",
+          "play/declarer-play/general-techniques/finesses/marked-finesse.md"
+        ],
+        "difference": "one deleted line",
+        "recommendation": "audit inbound references, then remove or replace the mislabeled marked-finesse copy"
+      },
+      {
+        "label": "Transfer Bids indexes",
+        "paths": [
+          "bidding/conventions/transfers/index-transfers.md",
+          "bidding/conventions/transfers/transfers-index.md"
+        ],
+        "difference": "one changed line",
+        "recommendation": "choose the canonical index and redirect exact inbound references"
+      }
+    ],
+    "editorial_review": [
+      {
+        "label": "Inference",
+        "paths": [
+          "play/counting/inference.md",
+          "play/declarer-play/probability/probability-inference.md"
+        ]
+      },
+      {
+        "label": "Preserving Entries",
+        "paths": [
+          "play/declarer-play/general-techniques/entry-management-technique.md",
+          "play/declarer-play/planning/preserving-entries.md"
+        ]
+      }
+    ]
+  },
+  "recommended_next_step": "Generate a guarded consolidation plan for the two near-identical duplicate pairs."
+}
