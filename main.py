@@ -23,6 +23,7 @@ from commands.resolve_duplicates import run as resolve_duplicates_command
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
 from commands.orphans import run as orphans_command
+from commands.orphan_plan import run as orphan_plan_command
 from commands.duplicates import run as duplicates_command
 from commands.related import run as related_command
 from commands.learning_path import run as learning_path_command
@@ -211,6 +212,21 @@ def orphans(
     Display orphan articles.
     """
     orphans_command(root)
+
+
+@app.command("orphan-plan")
+def orphan_plan(
+    root: Path = repository_option(),
+    output_directory: Path = typer.Option(
+        REPORTS,
+        "--output-directory",
+        file_okay=False,
+        resolve_path=True,
+        help="Directory for JSON and Markdown orphan repair plans.",
+    ),
+) -> None:
+    """Generate read-only parent-index proposals for orphan articles."""
+    orphan_plan_command(root, output_directory)
 
 
 @app.command()
