@@ -22,8 +22,16 @@ class ArticleParser:
     # ==========================================================
 
     YAML_RE = re.compile(
-        r"^---\n(.*?)\n---",
+        r"^---\n(?:(.*?)\n)?---",
         re.DOTALL,
+    )
+
+    LIST_FIELDS = (
+        "tags",
+        "systems",
+        "aliases",
+        "acronyms",
+        "references",
     )
 
     HEADING_RE = re.compile(
@@ -105,41 +113,75 @@ class ArticleParser:
         self,
         article: Article,
         text: str,
-    ):
+    ) -> None:
+
+        article.metadata_error = None
 
         match = self.YAML_RE.search(text)
 
         if not match:
+
+            if text.startswith("---"):
+                article.metadata_error = (
+                    "Malformed YAML front matter: missing closing delimiter"
+                )
+
             return
 
         try:
 
-            data = yaml.safe_load(
-                match.group(1)
-            )
+            data = yaml.safe_load(match.group(1) or "")
 
-            if not data:
+            if data is None:
                 return
+
+            if not isinstance(data, dict):
+                raise ValueError(
+                    "YAML front matter must contain a mapping"
+                )
+
+            for field in self.LIST_FIELDS:
+
+                if field not in data:
+                    continue
+
+                value = data[field]
+
+                if not isinstance(value, list):
+                    raise ValueError(
+                        f"YAML field '{field}' must be a list"
+                    )
+
+                if not all(isinstance(item, str) for item in value):
+                    raise ValueError(
+                        f"YAML field '{field}' must contain strings"
+                    )
+
+            def text_value(field: str) -> str:
+                value = data.get(field, "")
+
+                if value is None:
+                    return ""
+
+                if (
+                    isinstance(value, str)
+                    and value.strip().casefold() == "none"
+                ):
+                    return ""
+
+                return str(value)
 
             article.metadata = Metadata(
 
-                title=str(data.get("title", "")),
+                title=text_value("title"),
 
-                description=str(
-                    data.get("description", "")
-                ),
+                description=text_value("description"),
 
-                category=str(
-                    data.get("category", "")
-                ),
+                category=text_value("category"),
 
-                subcategory=str(
-                    data.get("subcategory", "")
-                ),
+                subcategory=text_value("subcategory"),
 
-                difficulty=str(
-                    data.get("difficulty", "")
-                ),
+                difficulty=text_value("difficulty"),
 
                 tags=list(
                     data.get("tags", [])
@@ -161,19 +203,17 @@ class ArticleParser:
                     data.get("references", [])
                 ),
 
-                last_updated=str(
-                    data.get("last_updated", "")
-                ),
+                last_updated=text_value("last_updated"),
 
-                status=str(
-                    data.get("status", "")
-                ),
+                status=text_value("status"),
 
             )
 
-        except Exception:
+        except Exception as error:
 
-            pass
+            article.metadata_error = (
+                f"Malformed YAML front matter: {error}"
+            )
 
     # ==========================================================
     # Headings

@@ -3,6 +3,7 @@ BridgeLab Toolkit
 Configuration
 """
 
+import os
 from pathlib import Path
 
 
@@ -21,7 +22,12 @@ ROOT = PROJECT
 
 # BridgeLab Markdown repository
 
-REPOSITORY = ROOT.parent / "knowladge"
+REPOSITORY = Path(
+    os.environ.get(
+        "BRIDGELAB_REPOSITORY",
+        ROOT.parent / "knowledge",
+    )
+).expanduser().resolve()
 
 
 # ============================================================
@@ -33,6 +39,9 @@ OUTPUT = ROOT / "output"
 DOCS = OUTPUT / "docs"
 
 REPORTS = OUTPUT / "reports"
+
+# Dated repair backups are retained for 30 full days.
+BACKUP_RETENTION_DAYS = 30
 
 
 # ============================================================

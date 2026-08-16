@@ -14,6 +14,8 @@ from core.models import Article, Issue
 
 class MetadataValidator:
 
+    MIN_DESCRIPTION_LENGTH = 30
+
     REQUIRED_FIELDS = [
         "title",
         "description",
@@ -27,6 +29,12 @@ class MetadataValidator:
         "Intermediate",
         "Advanced",
         "Expert",
+    }
+
+    GENERATED_ROOT_DOCUMENTS = {
+        "acronyms.md",
+        "bibliography.md",
+        "glossary.md",
     }
 
     # --------------------------------------------------------
@@ -56,11 +64,19 @@ class MetadataValidator:
 
         meta = article.metadata
 
+        subject = article.relative_path.as_posix()
+
         # ----------------------------------------------------
         # Required fields
         # ----------------------------------------------------
 
         for field in self.REQUIRED_FIELDS:
+
+            if (
+                field == "difficulty"
+                and not self._requires_difficulty(article)
+            ):
+                continue
 
             value = getattr(meta, field)
 
@@ -70,7 +86,7 @@ class MetadataValidator:
             issues.append(
                 Issue(
                     severity="Error",
-                    article=article.filename,
+                    article=subject,
                     category=field,
                     message=f"Missing {field}",
                 )
@@ -81,13 +97,14 @@ class MetadataValidator:
         # ----------------------------------------------------
 
         if (
-            meta.difficulty
-            and meta.difficulty not in self.VALID_DIFFICULTY
+            self._requires_difficulty(article)
+            and meta.difficulty
+            and not self._is_valid_difficulty(meta.difficulty)
         ):
             issues.append(
                 Issue(
                     severity="Warning",
-                    article=article.filename,
+                    article=subject,
                     category="difficulty",
                     message="Invalid difficulty",
                 )
@@ -99,12 +116,12 @@ class MetadataValidator:
 
         if (
             meta.description
-            and len(meta.description) < 30
+            and len(meta.description) < self.MIN_DESCRIPTION_LENGTH
         ):
             issues.append(
                 Issue(
                     severity="Warning",
-                    article=article.filename,
+                    article=subject,
                     category="description",
                     message="Description too short",
                 )
@@ -118,10 +135,55 @@ class MetadataValidator:
             issues.append(
                 Issue(
                     severity="Warning",
-                    article=article.filename,
+                    article=subject,
                     category="tags",
                     message="Duplicate tags",
                 )
             )
 
         return issues
+
+    # --------------------------------------------------------
+
+    @classmethod
+    def _requires_difficulty(
+        cls,
+        article: Article,
+    ) -> bool:
+        """Generated root and reference documents have no instructional level."""
+
+        path = article.relative_path
+
+        return (
+            path.name not in cls.GENERATED_ROOT_DOCUMENTS
+            and (not path.parts or path.parts[0] != "references")
+        )
+
+    # --------------------------------------------------------
+
+    @classmethod
+    def _is_valid_difficulty(
+        cls,
+        value: str,
+    ) -> bool:
+        """Accept a single level, all levels, or an ordered level range."""
+
+        if value in cls.VALID_DIFFICULTY:
+            return True
+
+        if value == "All Levels":
+            return True
+
+        levels = value.split(" to ")
+
+        if len(levels) != 2:
+            return False
+
+        start, end = levels
+        order = ("Beginner", "Intermediate", "Advanced", "Expert")
+
+        return (
+            start in order
+            and end in order
+            and order.index(start) < order.index(end)
+        )

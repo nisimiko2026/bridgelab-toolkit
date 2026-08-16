@@ -6,9 +6,12 @@ Metadata Generator
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import date
 
-from core.models import Article, Metadata
+from core.models import Article
+
+from enrichment.reference_detector import ReferenceDetector
+from enrichment.system_detector import SystemDetector
+from enrichment.tagger import TagGenerator
 
 
 # ============================================================
@@ -18,99 +21,91 @@ from core.models import Article, Metadata
 @dataclass(slots=True)
 class MetadataGenerator:
     """
-    Generate metadata inferred from an article.
+    Generate metadata for repository articles.
     """
 
-    # ========================================================
-    # Generate
-    # ========================================================
-
-    def generate(
-        self,
-        article: Article,
-    ) -> Metadata:
-        """
-        Generate suggested metadata for an article.
-        """
-
-        metadata = Metadata()
-
-        # ----------------------------------------------------
-        # Title
-        # ----------------------------------------------------
-
-        metadata.title = self._title(article)
-
-        # ----------------------------------------------------
-        # Category / Subcategory
-        # ----------------------------------------------------
-
-        category, subcategory = self._categories(article)
-
-        metadata.category = category
-        metadata.subcategory = subcategory
-
-        # ----------------------------------------------------
-        # Defaults
-        # ----------------------------------------------------
-
-        metadata.status = "Draft"
-        metadata.last_updated = date.today().isoformat()
-
-        return metadata
+    tagger: TagGenerator
+    system_detector: SystemDetector
+    reference_detector: ReferenceDetector
 
     # ========================================================
-    # Helpers
-    # ========================================================
 
-    def _title(
-        self,
-        article: Article,
-    ) -> str:
+    @staticmethod
+    def _merge_values(
+        existing: list[str],
+        generated: list[str],
+    ) -> list[str]:
         """
-        Determine the article title.
+        Preserve curated values while adding generated values.
         """
 
-        if article.metadata.title:
-            return article.metadata.title
-
-        for heading in article.headings:
-
-            if heading.level == 1:
-                return heading.title.strip()
-
-        return (
-            article.filename
-            .replace("-", " ")
-            .replace(".md", "")
-            .title()
+        return sorted(
+            {
+                value.strip()
+                for value in [*existing, *generated]
+                if value.strip()
+            },
+            key=str.lower,
         )
 
-    # --------------------------------------------------------
+    # ========================================================
 
-    def _categories(
+    def enrich(
         self,
         article: Article,
-    ) -> tuple[str, str]:
+    ) -> None:
         """
-        Determine category and subcategory
-        from the article path.
+        Enrich one article.
         """
 
-        parts = article.relative_path.parts
+        #
+        # Read markdown once
+        #
 
-        # Temporary debugging
-        print(article.relative_path)
-        print(parts)
-        print()
+        try:
+            text = article.path.read_text(
+                encoding="utf-8",
+            )
 
-        category = ""
-        subcategory = ""
+        except OSError:
+            return
 
-        if len(parts) >= 2:
-            category = parts[0].replace("-", " ").title()
+        #
+        # Systems
+        #
 
-        if len(parts) >= 3:
-            subcategory = parts[1].replace("-", " ").title()
+        article.metadata.systems = self._merge_values(
+            article.metadata.systems,
+            self.system_detector.detect(text),
+        )
 
-        return category, subcategory
+        #
+        # Tags
+        #
+
+        article.metadata.tags = self._merge_values(
+            article.metadata.tags,
+            self.tagger.generate(article),
+        )
+
+        #
+        # References
+        #
+
+        article.metadata.references = self._merge_values(
+            article.metadata.references,
+            self.reference_detector.detect(article),
+        )
+
+    # ========================================================
+
+    def enrich_all(
+        self,
+        articles: list[Article],
+    ) -> None:
+        """
+        Enrich all articles.
+        """
+
+        for article in articles:
+            self.enrich(article)

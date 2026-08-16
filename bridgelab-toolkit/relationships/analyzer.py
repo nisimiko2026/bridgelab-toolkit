@@ -5,25 +5,7 @@ Relationship Analyzer
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-
-from core.models import Article
-
-
-# ============================================================
-# Relationship
-# ============================================================
-
-@dataclass(slots=True)
-class Relationship:
-
-    source: str
-
-    target: str
-
-    relation: str
-
-    score: float = 1.0
+from core.models import Article, Relationship
 
 
 # ============================================================

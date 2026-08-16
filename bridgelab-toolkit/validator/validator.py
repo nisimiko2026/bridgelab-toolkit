@@ -5,16 +5,18 @@ Repository Validator
 
 from __future__ import annotations
 
+from core.models import Article, Issue
+
 from .duplicate_check import DuplicateCheck
 from .filename_check import FilenameCheck
-from .yaml_check import YAMLCheck
 from .heading_check import HeadingCheck
 from .directory_check import DirectoryCheck
+from .reference_check import ReferenceCheck
 
 
 class RepositoryValidator:
 
-    def __init__(self, articles):
+    def __init__(self, articles: list[Article]):
 
         self.articles = articles
 
@@ -24,19 +26,19 @@ class RepositoryValidator:
 
             FilenameCheck(),
 
-            YAMLCheck(),
-
             HeadingCheck(),
 
             DirectoryCheck(),
+
+            ReferenceCheck(),
 
         ]
 
     # ----------------------------------------------------
 
-    def validate(self):
+    def validate(self) -> list[Issue]:
 
-        report = []
+        report: list[Issue] = []
 
         for check in self.checks:
 

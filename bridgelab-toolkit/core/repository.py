@@ -120,7 +120,7 @@ class Repository:
 
             item["path"] = str(article.path)
 
-            item["relative_path"] = str(article.relative_path)
+            item["relative_path"] = article.relative_path.as_posix()
 
             data.append(item)
 

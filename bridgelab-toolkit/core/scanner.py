@@ -13,9 +13,9 @@ from typing import Iterator
 from .models import Article
 
 
-# ---------------------------------------------------------------------
+# ============================================================
 # Directories to ignore
-# ---------------------------------------------------------------------
+# ============================================================
 
 IGNORE_DIRS = {
     ".git",
@@ -32,28 +32,30 @@ IGNORE_DIRS = {
 }
 
 
-# ---------------------------------------------------------------------
-# Scanner
-# ---------------------------------------------------------------------
+# ============================================================
+# Repository Scanner
+# ============================================================
 
 class RepositoryScanner:
     """
-    Recursively scans a BridgeLab repository.
-
-    Example
-
-        scanner = RepositoryScanner(root)
-
-        articles = scanner.scan()
+    Recursively scan a BridgeLab repository.
     """
 
-    def __init__(self, root: Path):
+    def __init__(
+        self,
+        root: Path,
+    ) -> None:
 
         self.root = root.resolve()
 
-    # ---------------------------------------------------------
+    # ========================================================
 
-    def scan(self) -> list[Article]:
+    def scan(
+        self,
+    ) -> list[Article]:
+
+        print(f"Repository root : {self.root}")
+        print(f"Exists          : {self.root.exists()}")
 
         articles: list[Article] = []
 
@@ -68,28 +70,34 @@ class RepositoryScanner:
             )
 
             article = Article(
-
                 id=self._make_id(relative),
-
                 filename=md_file.name,
-
                 path=md_file,
-
                 relative_path=relative,
-
                 directory=directory,
-
             )
 
             articles.append(article)
 
-        articles.sort(key=lambda a: a.relative_path.as_posix())
+        articles.sort(
+            key=lambda article: article.relative_path.as_posix()
+        )
 
         return articles
 
-    # ---------------------------------------------------------
+    # ========================================================
 
-    def _markdown_files(self, directory: Path) -> Iterator[Path]:
+    def _markdown_files(
+        self,
+        directory: Path,
+    ) -> Iterator[Path]:
+
+        print(f"Scanning directory: {directory}")
+
+        if not directory.exists():
+            raise FileNotFoundError(
+                f"Directory does not exist: {directory}"
+            )
 
         for entry in directory.iterdir():
 
@@ -99,7 +107,6 @@ class RepositoryScanner:
                     continue
 
                 yield from self._markdown_files(entry)
-
                 continue
 
             if entry.suffix.lower() != ".md":
@@ -107,16 +114,18 @@ class RepositoryScanner:
 
             yield entry
 
-    # ---------------------------------------------------------
+    # ========================================================
 
     @staticmethod
-    def _make_id(relative_path: Path) -> str:
+    def _make_id(
+        relative_path: Path,
+    ) -> str:
         """
-        Example
+        Convert
 
             conventions/doubles/negative-double.md
 
-        becomes
+        into
 
             conventions/doubles/negative-double
         """

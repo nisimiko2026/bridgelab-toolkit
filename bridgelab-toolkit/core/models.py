@@ -63,7 +63,7 @@ class Article:
     id: str
     filename: str
     path: Path
-    relative_path: str
+    relative_path: Path
     directory: str
 
     metadata: Metadata = field(default_factory=Metadata)
@@ -74,6 +74,8 @@ class Article:
     words: int = 0
     lines: int = 0
     characters: int = 0
+
+    metadata_error: str | None = None
 
     def __str__(self) -> str:
 
