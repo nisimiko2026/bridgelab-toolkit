@@ -1,57 +1,59 @@
 ---
 title: Defensive Techniques
-description: Index and navigation guide for core defensive techniques in the BridgeLab Knowledge Base.
+description: Index and navigation guide for core defensive techniques in the BridgeLab
+  Knowledge Base.
 category: Card Play – Defence
 subcategory: defence
 difficulty: Intermediate to Expert
-tags: 
-  - card play – defence
-  - defence
-  - discard
-  - endplay
-  - forcing
-  - lead
-  - opening
-  - ruff
-  - squeeze
-  - support
+tags:
+- card play – defence
+- defence
+- discard
+- endplay
+- forcing
+- lead
+- opening
+- ruff
+- squeeze
+- support
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/elemination-and-endplays/exit-card
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/transportation
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/trump-play/index-trump-play
-  - play/declarer-play/trump-play/trump-control
-  - play/defence/endgame-defence/safe-exit
-  - play/defence/index-defence
-  - play/defence/opening-leads/opening-leads-index
-  - play/defence/planning/defence-planning-index
-  - play/defence/planning/defensive-plan
-  - play/defence/planning/forcing-the-declarer
-  - play/defence/planning/safe-switches
-  - play/defence/planning/timing-the-defence
-  - play/defence/signaling/signaling-index
-  - play/defence/techniques/active-defence
-  - play/defence/techniques/discard-strategy
-  - play/defence/techniques/forcing-defence
-  - play/defence/techniques/passive-defence
-  - play/defence/techniques/promotion
-  - play/defence/techniques/trump-promotion
-  - play/defence/techniques/uppercut
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- play/counting/counting-index
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/elemination-and-endplays/exit-card
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/transportation
+- play/declarer-play/probabilty/probability-index
+- play/declarer-play/trump-play/index-trump-play
+- play/declarer-play/trump-play/trump-control
+- play/defence/endgame-defence/safe-exit
+- play/defence/index-defence
+- play/defence/opening-leads/opening-leads-index
+- play/defence/planning/defence-planning-index
+- play/defence/planning/defensive-plan
+- play/defence/planning/forcing-the-declarer
+- play/defence/planning/safe-switches
+- play/defence/planning/timing-the-defence
+- play/defence/signaling/signaling-index
+- play/defence/techniques/active-defence
+- play/defence/techniques/discard-strategy
+- play/defence/techniques/forcing-defence
+- play/defence/techniques/passive-defence
+- play/defence/techniques/promotion
+- play/defence/techniques/trump-promotion
+- play/defence/techniques/uppercut
+- play/play-index
+- references/references-index
+- play/defence/techniques/surrounding-play
+last_updated: '2026-07-22'
 status: Draft
 ---
 

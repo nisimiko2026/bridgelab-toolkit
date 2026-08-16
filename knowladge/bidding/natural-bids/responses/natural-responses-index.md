@@ -28,6 +28,17 @@ references:
 - bidding/principals/bidding-fundamentals/preemptive-openings
 - bidding/systems/systems-index
 - references/references-index
+- bidding/natural-bids/responses/raising-partners-minor
+- bidding/natural-bids/responses/respond-preemptive-opening-in-3-level
+- bidding/natural-bids/responses/response-to-1-club
+- bidding/natural-bids/responses/response-to-1-diamond
+- bidding/natural-bids/responses/response-to-1nt
+- bidding/natural-bids/responses/response-to-2-clubs
+- bidding/natural-bids/responses/response-to-2nt
+- bidding/natural-bids/responses/response-to-four-level-preempt
+- bidding/natural-bids/responses/response-to-major-opening
+- bidding/natural-bids/responses/response-to-three-level-preempt
+- bidding/natural-bids/responses/response-to-weak-two
 last_updated: '2026-07-23'
 status: Draft
 ---

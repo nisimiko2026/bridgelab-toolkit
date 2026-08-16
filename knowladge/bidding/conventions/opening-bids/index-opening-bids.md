@@ -47,6 +47,11 @@ references:
 - play/defence/signaling/count
 - play/defence/signaling/suit-preference
 - references/references-index
+- bidding/conventions/opening-bids/ekren
+- bidding/conventions/opening-bids/flannery
+- bidding/conventions/opening-bids/muiderberg-two
+- bidding/conventions/opening-bids/namyats
+- bidding/conventions/opening-bids/roman-2-diamonds
 last_updated: '2026-07-23'
 status: Draft
 ---

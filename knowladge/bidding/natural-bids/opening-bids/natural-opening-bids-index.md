@@ -25,6 +25,13 @@ references:
 - bidding/principals/bidding-fundamentals/preemptive-openings
 - bidding/systems/systems-index
 - references/references-index
+- bidding/natural-bids/opening-bids/1-diamond
+- bidding/natural-bids/opening-bids/1-heart
+- bidding/natural-bids/opening-bids/1-spade
+- bidding/natural-bids/opening-bids/1nt-opening
+- bidding/natural-bids/opening-bids/2-clubs
+- bidding/natural-bids/opening-bids/2nt-opening
+- bidding/natural-bids/opening-bids/opening-bids-overview
 last_updated: '2026-07-23'
 status: Draft
 ---

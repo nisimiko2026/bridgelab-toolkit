@@ -29,6 +29,11 @@ references:
 - bidding/principals/bidding-fundamentals/hand-evaluation
 - bidding/principals/bidding-fundamentals/preemptive-openings
 - references/references-index
+- bidding/natural-bids/rebids/opener-after-1nt
+- bidding/natural-bids/rebids/opener-after-2nt
+- bidding/natural-bids/rebids/opener-after-major
+- bidding/natural-bids/rebids/opener-after-minor
+- bidding/natural-bids/rebids/rebids-after-preempts
 last_updated: '2026-07-23'
 status: Draft
 ---

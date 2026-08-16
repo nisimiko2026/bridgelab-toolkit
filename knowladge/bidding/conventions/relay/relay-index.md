@@ -40,6 +40,7 @@ references:
 - bidding/systems/systems-index
 - play/declarer-play/general-techniques/communication
 - references/references-index
+- bidding/conventions/relay/relay-bidding
 last_updated: '2026-07-23'
 status: Draft
 ---

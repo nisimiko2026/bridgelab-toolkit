@@ -44,6 +44,8 @@ references:
 - bidding/principals/partnership/partnership-agreements
 - duplicates/duplicates-index
 - references/references-index
+- bidding/conventions/doubles/dsi
+- bidding/conventions/doubles/lead-directing-double
 last_updated: '2026-07-23'
 status: Draft
 ---

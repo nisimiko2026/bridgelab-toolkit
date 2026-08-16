@@ -1,49 +1,52 @@
 ---
 title: Coups
-description: Index and navigation guide for advanced bridge coups and classic technical maneuvers in the BridgeLab Knowledge Base.
+description: Index and navigation guide for advanced bridge coups and classic technical
+  maneuvers in the BridgeLab Knowledge Base.
 category: Card Play – Advanced Techniques
 subcategory: declarer-play
 difficulty: Advanced to Expert
-tags: 
-  - card play – advanced techniques
-  - declarer-play
-  - endplay
-  - forcing
-  - squeeze
+tags:
+- card play – advanced techniques
+- declarer-play
+- endplay
+- forcing
+- squeeze
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - play/counting/counting-index
-  - play/declarer-play/coups/bath-coup
-  - play/declarer-play/coups/coup-en-passant
-  - play/declarer-play/coups/crocodile-coup
-  - play/declarer-play/coups/deschapelles-coup
-  - play/declarer-play/coups/grand-coup
-  - play/declarer-play/coups/merrimac-coup
-  - play/declarer-play/coups/scissors-coup
-  - play/declarer-play/coups/trump-coup
-  - play/declarer-play/coups/vienna-coup
-  - play/declarer-play/deceptive-play/deception
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/index-trump-play
-  - play/declarer-play/trump-play/trump-control
-  - play/declarer-play/trump-play/trump-management
-  - play/defence/deception/defence-deception-index
-  - play/defence/planning/defensive-communication
-  - play/defence/techniques/promotion
-  - play/defence/techniques/trump-promotion
-  - play/defence/techniques/uppercut
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- play/counting/counting-index
+- play/declarer-play/coups/bath-coup
+- play/declarer-play/coups/coup-en-passant
+- play/declarer-play/coups/crocodile-coup
+- play/declarer-play/coups/deschapelles-coup
+- play/declarer-play/coups/grand-coup
+- play/declarer-play/coups/merrimac-coup
+- play/declarer-play/coups/scissors-coup
+- play/declarer-play/coups/trump-coup
+- play/declarer-play/coups/vienna-coup
+- play/declarer-play/deceptive-play/deception
+- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/index-declearer-play
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/visualization
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/index-trump-play
+- play/declarer-play/trump-play/trump-control
+- play/declarer-play/trump-play/trump-management
+- play/defence/deception/defence-deception-index
+- play/defence/planning/defensive-communication
+- play/defence/techniques/promotion
+- play/defence/techniques/trump-promotion
+- play/defence/techniques/uppercut
+- play/play-index
+- references/references-index
+- play/declarer-play/coups/devils-coup
+- play/declarer-play/coups/mortons-fork
+last_updated: '2026-07-22'
 status: Draft
 ---
 

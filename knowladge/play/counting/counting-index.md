@@ -1,47 +1,51 @@
 ---
 title: Counting
-description: Index and navigation guide for counting techniques used by declarer and defenders in the BridgeLab Knowledge Base.
+description: Index and navigation guide for counting techniques used by declarer and
+  defenders in the BridgeLab Knowledge Base.
 category: Card Play
 subcategory: counting
 difficulty: Beginner to Expert
-tags: 
-  - card play
-  - counting
-  - lead
-  - opening
+tags:
+- card play
+- counting
+- lead
+- opening
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - play/counting/counting-distribution
-  - play/counting/counting-losers
-  - play/counting/counting-winners
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/tempo
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/transportation
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/restricted-choice
-  - play/declarer-play/trump-play/drawing-trumps
-  - play/declarer-play/trump-play/trump-control
-  - play/defence/counting/defence-counting-index
-  - play/defence/index-defence
-  - play/defence/opening-leads/counting-from-the-opening-lead
-  - play/defence/opening-leads/opening-leads-index
-  - play/defence/signaling/attitude
-  - play/defence/signaling/count
-  - play/defence/signaling/suit-preference
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- play/counting/counting-distribution
+- play/counting/counting-losers
+- play/counting/counting-winners
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/index-declearer-play
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/tempo
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/transportation
+- play/declarer-play/planning/visualization
+- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/trump-play/drawing-trumps
+- play/declarer-play/trump-play/trump-control
+- play/defence/counting/defence-counting-index
+- play/defence/index-defence
+- play/defence/opening-leads/counting-from-the-opening-lead
+- play/defence/opening-leads/opening-leads-index
+- play/defence/signaling/attitude
+- play/defence/signaling/count
+- play/defence/signaling/suit-preference
+- play/play-index
+- references/references-index
+- play/counting/counting-defenders
+- play/counting/inference
+- play/counting/placing-the-card
+last_updated: '2026-07-22'
 status: Draft
 ---
 

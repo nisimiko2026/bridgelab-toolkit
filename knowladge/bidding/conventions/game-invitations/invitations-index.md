@@ -41,6 +41,9 @@ references:
 - play/counting/counting-index
 - play/defence/signaling/count
 - references/references-index
+- bidding/conventions/game-invitations/help-suit-game-try
+- bidding/conventions/game-invitations/long-suit-game-try
+- bidding/conventions/game-invitations/short-suit-game-try
 last_updated: '2026-07-23'
 status: Draft
 ---

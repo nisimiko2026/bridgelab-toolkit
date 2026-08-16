@@ -65,6 +65,18 @@ references:
 - bidding/systems/systems-index
 - duplicates/duplicates-index
 - references/references-index
+- bidding/conventions/competitive/aspro
+- bidding/conventions/competitive/brozel
+- bidding/conventions/competitive/cappaletti
+- bidding/conventions/competitive/dont
+- bidding/conventions/competitive/equal-level-conversion
+- bidding/conventions/competitive/equal-level-conversion-doubles
+- bidding/conventions/competitive/gesthem
+- bidding/conventions/competitive/hamilton
+- bidding/conventions/competitive/meckwell
+- bidding/conventions/competitive/multi-landy
+- bidding/conventions/competitive/sandwich-nt
+- bidding/conventions/competitive/scrambling-2nt
 last_updated: '2026-07-23'
 status: Draft
 ---

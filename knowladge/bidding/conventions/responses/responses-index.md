@@ -65,6 +65,18 @@ references:
 - play/defence/signaling/count
 - play/defence/signaling/suit-preference
 - references/references-index
+- bidding/conventions/responses/2nt-inquiry-after-multi-two-diamond
+- bidding/conventions/responses/2nt-inquiry-over-weak-2
+- bidding/conventions/responses/five-card-stayman
+- bidding/conventions/responses/lebensohl-after-1nt-doubled
+- bidding/conventions/responses/lebensohl-after-1nt-overcall
+- bidding/conventions/responses/passed-hand-bergen
+- bidding/conventions/responses/passed-hand-splinter
+- bidding/conventions/responses/preemptive-raise
+- bidding/conventions/responses/responding-to-multi-2diamond
+- bidding/conventions/responses/rubensohl
+- bidding/conventions/responses/smolen
+- bidding/conventions/responses/two-way-stayman
 last_updated: '2026-07-23'
 status: Draft
 ---

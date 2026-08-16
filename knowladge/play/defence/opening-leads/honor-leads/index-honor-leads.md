@@ -4,31 +4,43 @@ description: Index and navigation guide for leading honor cards in defensive pla
 category: Card Play – Defence – Opening Leads
 subcategory: defence
 difficulty: Intermediate to Expert
-tags: 
-  - card play – defence – opening leads
-  - defence
-  - lead
-  - notrump
-  - opening
+tags:
+- card play – defence – opening leads
+- defence
+- lead
+- notrump
+- opening
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/conventions/responses/responses-index
-  - bidding/principals/partnership/partnership-agreements
-  - play/declarer-play/general-techniques/communication
-  - play/defence/index-defence
-  - play/defence/opening-leads/journalist-leads
-  - play/defence/opening-leads/leads-against-suit
-  - play/defence/opening-leads/opening-leads-index
-  - play/defence/opening-leads/rusinow
-  - play/defence/planning/defensive-communication
-  - play/defence/signaling/attitude
-  - play/defence/signaling/count
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/conventions/responses/responses-index
+- bidding/principals/partnership/partnership-agreements
+- play/declarer-play/general-techniques/communication
+- play/defence/index-defence
+- play/defence/opening-leads/journalist-leads
+- play/defence/opening-leads/leads-against-suit
+- play/defence/opening-leads/opening-leads-index
+- play/defence/opening-leads/rusinow
+- play/defence/planning/defensive-communication
+- play/defence/signaling/attitude
+- play/defence/signaling/count
+- play/play-index
+- references/references-index
+- play/defence/opening-leads/honor-leads/leads-aj10
+- play/defence/opening-leads/honor-leads/leads-ak
+- play/defence/opening-leads/honor-leads/leads-ak10
+- play/defence/opening-leads/honor-leads/leads-akj
+- play/defence/opening-leads/honor-leads/leads-akq
+- play/defence/opening-leads/honor-leads/leads-aq
+- play/defence/opening-leads/honor-leads/leads-aq10
+- play/defence/opening-leads/honor-leads/leads-kq
+- play/defence/opening-leads/honor-leads/leads-kq10
+- play/defence/opening-leads/honor-leads/leads-kqj
+- play/defence/opening-leads/honor-leads/leads-qj10
+- play/defence/opening-leads/honor-leads/leads-qj9
+last_updated: '2026-07-22'
 status: Draft
 ---
 

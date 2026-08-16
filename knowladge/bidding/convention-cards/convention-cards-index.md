@@ -1,35 +1,37 @@
 ---
 title: Convention Cards
-description: Index and navigation guide for convention cards, disclosure requirements, and partnership documentation in the BridgeLab Knowledge Base.
+description: Index and navigation guide for convention cards, disclosure requirements,
+  and partnership documentation in the BridgeLab Knowledge Base.
 category: Bidding – Principles
 subcategory: convention-cards
 difficulty: Beginner to Expert
-tags: 
-  - bidding – principles
-  - competitive
-  - convention-cards
-  - notrump
-  - opening
-  - support
-  - transfer
+tags:
+- bidding – principles
+- competitive
+- convention-cards
+- notrump
+- opening
+- support
+- transfer
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/conventions/conventions-index
-  - bidding/conventions/opening-bids/index-opening-bids
-  - bidding/conventions/responses/responses-index
-  - bidding/principals/partnership/alert-procedures
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/index-principal-partnership
-  - bidding/principals/partnership/partnership-agreements
-  - bidding/systems/systems-index
-  - play/declarer-play/general-techniques/communication
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/conventions/conventions-index
+- bidding/conventions/opening-bids/index-opening-bids
+- bidding/conventions/responses/responses-index
+- bidding/principals/partnership/alert-procedures
+- bidding/principals/partnership/convention-cards
+- bidding/principals/partnership/disclosure
+- bidding/principals/partnership/index-principal-partnership
+- bidding/principals/partnership/partnership-agreements
+- bidding/systems/systems-index
+- play/declarer-play/general-techniques/communication
+- references/references-index
+- bidding/convention-cards/cc-nily-nisim
+last_updated: '2026-07-22'
 status: Draft
 ---
 

@@ -1,50 +1,53 @@
 ---
 title: Opening Leads
-description: Index and navigation guide for opening lead strategy and techniques in the BridgeLab Knowledge Base.
+description: Index and navigation guide for opening lead strategy and techniques in
+  the BridgeLab Knowledge Base.
 category: Card Play – Defence
 subcategory: defence
 difficulty: Beginner to Expert
-tags: 
-  - card play – defence
-  - defence
-  - forcing
-  - lead
-  - notrump
-  - opening
-  - ruff
+tags:
+- card play – defence
+- defence
+- forcing
+- lead
+- notrump
+- opening
+- ruff
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/principals/partnership/partnership-agreements
-  - play/counting/counting-index
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/notrump-play/establishing-long-suits
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/timing
-  - play/defence/index-defence
-  - play/defence/opening-leads/fourth-best
-  - play/defence/opening-leads/honor-leads/index-honor-leads
-  - play/defence/opening-leads/journalist-leads
-  - play/defence/opening-leads/leads-against-notrump
-  - play/defence/opening-leads/leads-against-suit
-  - play/defence/opening-leads/rusinow
-  - play/defence/planning/defensive-plan
-  - play/defence/planning/opening-lead-strategy
-  - play/defence/planning/safe-switches
-  - play/defence/signaling/attitude
-  - play/defence/signaling/count
-  - play/defence/techniques/active-defence
-  - play/defence/techniques/forcing-defence
-  - play/defence/techniques/passive-defence
-  - play/defence/techniques/promotion
-  - play/defence/techniques/trump-promotion
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/principals/partnership/partnership-agreements
+- play/counting/counting-index
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/notrump-play/establishing-long-suits
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/timing
+- play/defence/index-defence
+- play/defence/opening-leads/fourth-best
+- play/defence/opening-leads/honor-leads/index-honor-leads
+- play/defence/opening-leads/journalist-leads
+- play/defence/opening-leads/leads-against-notrump
+- play/defence/opening-leads/leads-against-suit
+- play/defence/opening-leads/rusinow
+- play/defence/planning/defensive-plan
+- play/defence/planning/opening-lead-strategy
+- play/defence/planning/safe-switches
+- play/defence/signaling/attitude
+- play/defence/signaling/count
+- play/defence/techniques/active-defence
+- play/defence/techniques/forcing-defence
+- play/defence/techniques/passive-defence
+- play/defence/techniques/promotion
+- play/defence/techniques/trump-promotion
+- play/play-index
+- references/references-index
+- play/defence/opening-leads/leading-from-honor-holdings
+- play/defence/opening-leads/rule-of-12
+last_updated: '2026-07-22'
 status: Draft
 ---
 

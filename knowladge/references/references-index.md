@@ -1,36 +1,38 @@
 ---
 title: References
-description: Index and navigation guide for reference material supporting the BridgeLab Knowledge Base.
+description: Index and navigation guide for reference material supporting the BridgeLab
+  Knowledge Base.
 category: References
-subcategory: None
+subcategory: ''
 difficulty: All Levels
-tags: 
-  - lead
-  - none
-  - opening
-  - references
-  - slam
+tags:
+- lead
+- none
+- opening
+- references
+- slam
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bibliography
-  - bidding/bidding-index
-  - bidding/conventions/conventions-index
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/disclosure
-  - bidding/systems/systems-index
-  - duplicates/duplicate-scoring
-  - duplicates/duplicates-index
-  - glossary
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/probabilty/probability-index
-  - play/defence/index-defence
-  - play/play-index
-  - references/bridge-terminology
-last_updated: 2026-07-22
+references:
+- acronyms
+- bibliography
+- bidding/bidding-index
+- bidding/conventions/conventions-index
+- bidding/principals/bidding-fundamentals/vulnerability
+- bidding/principals/partnership/convention-cards
+- bidding/principals/partnership/disclosure
+- bidding/systems/systems-index
+- duplicates/duplicate-scoring
+- duplicates/duplicates-index
+- glossary
+- play/declarer-play/index-declearer-play
+- play/declarer-play/probabilty/probability-index
+- play/defence/index-defence
+- play/play-index
+- references/bridge-terminology
+- references/bridge-laws-quick-reference
+last_updated: '2026-07-22'
 status: Draft
 ---
 

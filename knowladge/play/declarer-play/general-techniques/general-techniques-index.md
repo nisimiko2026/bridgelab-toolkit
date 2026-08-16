@@ -1,51 +1,54 @@
 ---
 title: General Techniques
-description: Index of general declarer play techniques applicable to both suit and notrump contracts.
+description: Index of general declarer play techniques applicable to both suit and
+  notrump contracts.
 category: Play
 subcategory: General Techniques
 difficulty: Beginner to Expert
-tags: 
-  - endplay
-  - finesse
-  - general techniques
-  - lead
-  - notrump
-  - opening
-  - play
-  - precision
-  - squeeze
-  - support
-systems: 
-  - precision
+tags:
+- endplay
+- finesse
+- general techniques
+- lead
+- notrump
+- opening
+- play
+- precision
+- squeeze
+- support
+systems:
+- precision
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - play/counting/counting-index
-  - play/counting/counting-winners
-  - play/declarer-play/coups/coups-index
-  - play/declarer-play/deceptive-play/deception
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/elemination-and-endplays/endplay
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/ducking
-  - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/general-techniques/unblock
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/notrump-play/notrump-play
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/index-trump-play
-  - play/defence/planning/defensive-communication
-  - play/defence/signaling/count
-  - references/references-index
-last_updated: 2026-07-23
+references:
+- acronyms
+- play/counting/counting-index
+- play/counting/counting-winners
+- play/declarer-play/coups/coups-index
+- play/declarer-play/deceptive-play/deception
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/elemination-and-endplays/endplay
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/general-techniques/ducking
+- play/declarer-play/general-techniques/finesses/finesse
+- play/declarer-play/general-techniques/finesses/finesses-index
+- play/declarer-play/general-techniques/unblock
+- play/declarer-play/index-declearer-play
+- play/declarer-play/notrump-play/notrump-play
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/visualization
+- play/declarer-play/probabilty/probability-index
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/index-trump-play
+- play/defence/planning/defensive-communication
+- play/defence/signaling/count
+- references/references-index
+- play/declarer-play/general-techniques/entry-management-technique
+- play/declarer-play/general-techniques/loser-on-loser
+last_updated: '2026-07-23'
 status: Draft
 ---
 

@@ -1,47 +1,50 @@
 ---
 title: Finesses
-description: Index and navigation guide for finesse techniques in the BridgeLab Knowledge Base.
+description: Index and navigation guide for finesse techniques in the BridgeLab Knowledge
+  Base.
 category: Card Play – Techniques
 subcategory: declarer-play
 difficulty: Beginner to Expert
-tags: 
-  - card play – techniques
-  - declarer-play
-  - double
-  - finesse
-  - lead
-  - ruff
-  - squeeze
+tags:
+- card play – techniques
+- declarer-play
+- double
+- finesse
+- lead
+- ruff
+- squeeze
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/finesses/backward-finesse
-  - play/declarer-play/general-techniques/finesses/deep-finesse
-  - play/declarer-play/general-techniques/finesses/delayed-finesse
-  - play/declarer-play/general-techniques/finesses/double-finesse
-  - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/general-techniques/finesses/marked-finesse
-  - play/declarer-play/general-techniques/finesses/repeat-finesse
-  - play/declarer-play/general-techniques/finesses/ruffing-finesse
-  - play/declarer-play/general-techniques/finesses/two-way-finesse
-  - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/timing
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/dummy-reversal
-  - play/declarer-play/trump-play/index-trump-play
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- play/counting/counting-index
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/general-techniques/finesses/backward-finesse
+- play/declarer-play/general-techniques/finesses/deep-finesse
+- play/declarer-play/general-techniques/finesses/delayed-finesse
+- play/declarer-play/general-techniques/finesses/double-finesse
+- play/declarer-play/general-techniques/finesses/finesse
+- play/declarer-play/general-techniques/finesses/marked-finesse
+- play/declarer-play/general-techniques/finesses/repeat-finesse
+- play/declarer-play/general-techniques/finesses/ruffing-finesse
+- play/declarer-play/general-techniques/finesses/two-way-finesse
+- play/declarer-play/general-techniques/safety-play
+- play/declarer-play/index-declearer-play
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/timing
+- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/dummy-reversal
+- play/declarer-play/trump-play/index-trump-play
+- play/play-index
+- references/references-index
+- play/declarer-play/general-techniques/finesses/first-round-finesse
+- play/declarer-play/general-techniques/finesses/intra-finesse
+last_updated: '2026-07-22'
 status: Draft
 ---
 

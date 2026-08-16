@@ -1,51 +1,53 @@
 ---
 title: Squeezes
-description: Index and navigation guide for squeeze play techniques in the BridgeLab Knowledge Base.
+description: Index and navigation guide for squeeze play techniques in the BridgeLab
+  Knowledge Base.
 category: Card Play – Advanced Techniques
 subcategory: declarer-play
 difficulty: Advanced to Expert
-tags: 
-  - card play – advanced techniques
-  - declarer-play
-  - discard
-  - double
-  - multi
-  - squeeze
-systems: 
-  - multi
+tags:
+- card play – advanced techniques
+- declarer-play
+- discard
+- double
+- multi
+- squeeze
+systems:
+- multi
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - play/counting/counting-index
-  - play/declarer-play/coups/coups-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/probabilty/probability-index
-  - play/declarer-play/squeezes/automatic-squeeze
-  - play/declarer-play/squeezes/criss-cross-squeeze
-  - play/declarer-play/squeezes/double-progressive-squeeze
-  - play/declarer-play/squeezes/double-squeeze
-  - play/declarer-play/squeezes/positional-squeeze
-  - play/declarer-play/squeezes/progressive-squeeze
-  - play/declarer-play/squeezes/rectifying-the-count
-  - play/declarer-play/squeezes/simple-squeeze
-  - play/declarer-play/squeezes/squeeze-without-the-count
-  - play/declarer-play/squeezes/strip-squeeze
-  - play/declarer-play/squeezes/triple-squeeze
-  - play/declarer-play/squeezes/trump-squeeze
-  - play/declarer-play/trump-play/trump-control
-  - play/defence/signaling/count
-  - play/defence/techniques/promotion
-  - play/defence/techniques/trump-promotion
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- play/counting/counting-index
+- play/declarer-play/coups/coups-index
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/visualization
+- play/declarer-play/probabilty/probability-index
+- play/declarer-play/squeezes/automatic-squeeze
+- play/declarer-play/squeezes/criss-cross-squeeze
+- play/declarer-play/squeezes/double-progressive-squeeze
+- play/declarer-play/squeezes/double-squeeze
+- play/declarer-play/squeezes/positional-squeeze
+- play/declarer-play/squeezes/progressive-squeeze
+- play/declarer-play/squeezes/rectifying-the-count
+- play/declarer-play/squeezes/simple-squeeze
+- play/declarer-play/squeezes/squeeze-without-the-count
+- play/declarer-play/squeezes/strip-squeeze
+- play/declarer-play/squeezes/triple-squeeze
+- play/declarer-play/squeezes/trump-squeeze
+- play/declarer-play/trump-play/trump-control
+- play/defence/signaling/count
+- play/defence/techniques/promotion
+- play/defence/techniques/trump-promotion
+- play/play-index
+- references/references-index
+- play/declarer-play/squeezes/pseudo-squeeze
+last_updated: '2026-07-22'
 status: Draft
 ---
 

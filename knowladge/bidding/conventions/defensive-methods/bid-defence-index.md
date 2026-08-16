@@ -71,6 +71,8 @@ references:
 - play/declarer-play/general-techniques/communication
 - play/defence/index-defence
 - references/references-index
+- bidding/conventions/defensive-methods/defense-against-multi-2d
+- bidding/conventions/defensive-methods/suction
 last_updated: '2026-07-23'
 status: Draft
 ---

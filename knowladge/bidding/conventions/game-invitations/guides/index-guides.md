@@ -26,6 +26,12 @@ references:
 - play/declarer-play/planning/planning-index
 - play/declarer-play/planning/tempo
 - references/references-index
+- bidding/conventions/game-invitations/guides/choosing-a-game-try
+- bidding/conventions/game-invitations/guides/common-mistakes
+- bidding/conventions/game-invitations/guides/expert-game-try-agreements
+- bidding/conventions/game-invitations/guides/game-try-comparison
+- bidding/conventions/game-invitations/guides/opener-evaluation
+- bidding/conventions/game-invitations/guides/simple-game-try-agreements
 last_updated: '2026-07-23'
 status: Draft
 ---

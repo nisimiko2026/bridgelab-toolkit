@@ -1,39 +1,41 @@
 ---
 title: Probability
-description: Index and navigation guide for probability theory and percentage play in the BridgeLab Knowledge Base.
+description: Index and navigation guide for probability theory and percentage play
+  in the BridgeLab Knowledge Base.
 category: Card Play – Principles
 subcategory: declarer-play
 difficulty: Intermediate to Expert
-tags: 
-  - card play – principles
-  - declarer-play
-  - finesse
-  - lead
-  - opening
-  - squeeze
+tags:
+- card play – principles
+- declarer-play
+- finesse
+- lead
+- opening
+- squeeze
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/vulnerability
-  - play/counting/counting-index
-  - play/declarer-play/elemination-and-endplays/elimination
-  - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/general-techniques/safety-play
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/tempo
-  - play/declarer-play/probabilty/probability-inference
-  - play/declarer-play/probabilty/conditional-probability
-  - play/declarer-play/probabilty/restricted-choice
-  - play/declarer-play/squeezes/squeezes-index
-  - play/defence/opening-leads/opening-leads-index
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principals/bidding-fundamentals/vulnerability
+- play/counting/counting-index
+- play/declarer-play/elemination-and-endplays/elimination
+- play/declarer-play/general-techniques/finesses/finesse
+- play/declarer-play/general-techniques/finesses/finesses-index
+- play/declarer-play/general-techniques/safety-play
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/tempo
+- play/declarer-play/probabilty/probability-inference
+- play/declarer-play/probabilty/conditional-probability
+- play/declarer-play/probabilty/restricted-choice
+- play/declarer-play/squeezes/squeezes-index
+- play/defence/opening-leads/opening-leads-index
+- play/play-index
+- references/references-index
+- play/declarer-play/probabilty/odds-and-probabilities
+last_updated: '2026-07-22'
 status: Draft
 ---
 

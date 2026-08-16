@@ -1,65 +1,72 @@
 ---
 title: Bidding Systems
-description: Index and navigation guide for complete bridge bidding systems in the BridgeLab Knowledge Base.
+description: Index and navigation guide for complete bridge bidding systems in the
+  BridgeLab Knowledge Base.
 category: Bidding – Systems
 subcategory: systems
 difficulty: Beginner to Expert
-tags: 
-  - acol
-  - bidding – systems
-  - blue club
-  - competitive
-  - ehaa
-  - opening
-  - precision
-  - relay
-  - roman club
-  - sayc
-  - slam
-  - standard american
-  - super precision
-  - systems
-systems: 
-  - acol
-  - blue club
-  - ehaa
-  - precision
-  - roman club
-  - sayc
-  - standard american
-  - super precision
+tags:
+- acol
+- bidding – systems
+- blue club
+- competitive
+- ehaa
+- opening
+- precision
+- relay
+- roman club
+- sayc
+- slam
+- standard american
+- super precision
+- systems
+systems:
+- acol
+- blue club
+- ehaa
+- precision
+- roman club
+- sayc
+- standard american
+- super precision
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/conventions/competitive/bid-competitive-index
-  - bidding/conventions/conventions-index
-  - bidding/conventions/opening-bids/index-opening-bids
-  - bidding/conventions/responses/responses-index
-  - bidding/conventions/slam-conventions/slam-bid-index
-  - bidding/natural-bids/opening-bids/natural-opening-bids-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/partnership/partnership-agreements
-  - bidding/principals/principals-index
-  - bidding/systems/benjamin-acol
-  - bidding/systems/blue-club
-  - bidding/systems/carrot-club
-  - bidding/systems/chinese-precision
-  - bidding/systems/culbertson
-  - bidding/systems/ehaa
-  - bidding/systems/magic-diamond
-  - bidding/systems/moscito
-  - bidding/systems/neapolitan-club
-  - bidding/systems/roman-club
-  - bidding/systems/roman-precision
-  - bidding/systems/sef
-  - bidding/systems/standard-american
-  - bidding/systems/super-precision
-  - bidding/systems/ultimate-club
-  - play/declarer-play/general-techniques/communication
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/conventions/competitive/bid-competitive-index
+- bidding/conventions/conventions-index
+- bidding/conventions/opening-bids/index-opening-bids
+- bidding/conventions/responses/responses-index
+- bidding/conventions/slam-conventions/slam-bid-index
+- bidding/natural-bids/opening-bids/natural-opening-bids-index
+- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principals/partnership/partnership-agreements
+- bidding/principals/principals-index
+- bidding/systems/benjamin-acol
+- bidding/systems/blue-club
+- bidding/systems/carrot-club
+- bidding/systems/chinese-precision
+- bidding/systems/culbertson
+- bidding/systems/ehaa
+- bidding/systems/magic-diamond
+- bidding/systems/moscito
+- bidding/systems/neapolitan-club
+- bidding/systems/roman-club
+- bidding/systems/roman-precision
+- bidding/systems/sef
+- bidding/systems/standard-american
+- bidding/systems/super-precision
+- bidding/systems/ultimate-club
+- play/declarer-play/general-techniques/communication
+- references/references-index
+- bidding/systems/2-over-1
+- bidding/systems/kaplan-sheinwold
+- bidding/systems/precision
+- bidding/systems/roth-stone
+- bidding/systems/sayc
+- bidding/systems/wspolny-jezyk
+last_updated: '2026-07-22'
 status: Draft
 ---
 

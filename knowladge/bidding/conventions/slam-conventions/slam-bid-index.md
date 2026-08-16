@@ -41,6 +41,10 @@ references:
 - play/declarer-play/planning/entry-management
 - play/defence/signaling/count
 - references/references-index
+- bidding/conventions/slam-conventions/gerber
+- bidding/conventions/slam-conventions/roman-key-card-blackwood
+- bidding/conventions/slam-conventions/specific-king-ask
+- bidding/conventions/slam-conventions/trump-asking-bid
 last_updated: '2026-07-23'
 status: Draft
 ---

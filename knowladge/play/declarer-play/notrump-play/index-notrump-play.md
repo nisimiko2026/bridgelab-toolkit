@@ -1,46 +1,49 @@
 ---
 title: Notrump Play
-description: Index and navigation guide for declarer play in notrump contracts within the BridgeLab Knowledge Base.
+description: Index and navigation guide for declarer play in notrump contracts within
+  the BridgeLab Knowledge Base.
 category: Card Play – Declarer Play
 subcategory: declarer-play
 difficulty: Beginner to Expert
-tags: 
-  - card play – declarer play
-  - declarer-play
-  - lead
-  - notrump
-  - opening
-  - ruff
-  - squeeze
+tags:
+- card play – declarer play
+- declarer-play
+- lead
+- notrump
+- opening
+- ruff
+- squeeze
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - play/counting/counting-index
-  - play/counting/counting-winners
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/ducking
-  - play/declarer-play/general-techniques/establishing-suits
-  - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declearer-play
-  - play/declarer-play/notrump-play/establishing-long-suits
-  - play/declarer-play/notrump-play/hold-up-play
-  - play/declarer-play/notrump-play/notrump-play
-  - play/declarer-play/planning/creating-extra-tricks
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/preserving-entries
-  - play/declarer-play/planning/timing
-  - play/declarer-play/planning/transportation
-  - play/declarer-play/planning/visualization
-  - play/declarer-play/squeezes/squeezes-index
-  - play/declarer-play/trump-play/index-trump-play
-  - play/defence/signaling/count
-  - play/defence/techniques/promotion
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- play/counting/counting-index
+- play/counting/counting-winners
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/general-techniques/ducking
+- play/declarer-play/general-techniques/establishing-suits
+- play/declarer-play/general-techniques/finesses/finesses-index
+- play/declarer-play/index-declearer-play
+- play/declarer-play/notrump-play/establishing-long-suits
+- play/declarer-play/notrump-play/hold-up-play
+- play/declarer-play/notrump-play/notrump-play
+- play/declarer-play/planning/creating-extra-tricks
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/preserving-entries
+- play/declarer-play/planning/timing
+- play/declarer-play/planning/transportation
+- play/declarer-play/planning/visualization
+- play/declarer-play/squeezes/squeezes-index
+- play/declarer-play/trump-play/index-trump-play
+- play/defence/signaling/count
+- play/defence/techniques/promotion
+- play/play-index
+- references/references-index
+- play/declarer-play/notrump-play/keeping-the-lead
+- play/declarer-play/notrump-play/timing-in-notrump
+last_updated: '2026-07-22'
 status: Draft
 ---
 

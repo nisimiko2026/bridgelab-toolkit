@@ -1,50 +1,53 @@
 ---
 title: Fundamental Bids
-description: Index and navigation guide for the fundamental natural bids that form the foundation of constructive bridge bidding.
+description: Index and navigation guide for the fundamental natural bids that form
+  the foundation of constructive bridge bidding.
 category: Bidding – Natural Bidding
 subcategory: principals
 difficulty: Beginner
-tags: 
-  - bidding – natural bidding
-  - competitive
-  - double
-  - forcing
-  - notrump
-  - opening
-  - principals
-  - rebid
-  - redouble
-  - relay
-  - response
-  - slam
-  - support
-  - takeout
+tags:
+- bidding – natural bidding
+- competitive
+- double
+- forcing
+- notrump
+- opening
+- principals
+- rebid
+- redouble
+- relay
+- response
+- slam
+- support
+- takeout
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/conventions/competitive/bid-competitive-index
-  - bidding/conventions/conventions-index
-  - bidding/conventions/doubles/doubles-index
-  - bidding/conventions/game-invitations/game-invitations
-  - bidding/conventions/opening-bids/index-opening-bids
-  - bidding/conventions/responses/responses-index
-  - bidding/natural-bids/opening-bids/natural-opening-bids-index
-  - bidding/natural-bids/opening-bids/opening-requirements
-  - bidding/natural-bids/rebids/jump-rebids
-  - bidding/natural-bids/rebids/natural-rebid-indexs
-  - bidding/natural-bids/responses/natural-responses-index
-  - bidding/principals/bidding-fundamentals/hand-evaluation
-  - bidding/principals/bidding-fundamentals/sign-off
-  - bidding/principals/partnership/partnership-agreements
-  - bidding/principals/principals-index
-  - bidding/systems/systems-index
-  - play/declarer-play/general-techniques/communication
-  - play/defence/signaling/suit-preference
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/conventions/competitive/bid-competitive-index
+- bidding/conventions/conventions-index
+- bidding/conventions/doubles/doubles-index
+- bidding/conventions/game-invitations/game-invitations
+- bidding/conventions/opening-bids/index-opening-bids
+- bidding/conventions/responses/responses-index
+- bidding/natural-bids/opening-bids/natural-opening-bids-index
+- bidding/natural-bids/opening-bids/opening-requirements
+- bidding/natural-bids/rebids/jump-rebids
+- bidding/natural-bids/rebids/natural-rebid-indexs
+- bidding/natural-bids/responses/natural-responses-index
+- bidding/principals/bidding-fundamentals/hand-evaluation
+- bidding/principals/bidding-fundamentals/sign-off
+- bidding/principals/partnership/partnership-agreements
+- bidding/principals/principals-index
+- bidding/systems/systems-index
+- play/declarer-play/general-techniques/communication
+- play/defence/signaling/suit-preference
+- references/references-index
+- bidding/principals/bidding-fundamentals/game-tries
+- bidding/principals/bidding-fundamentals/kaplan-rubens-hand-hvaluation
+last_updated: '2026-07-22'
 status: Draft
 ---
 

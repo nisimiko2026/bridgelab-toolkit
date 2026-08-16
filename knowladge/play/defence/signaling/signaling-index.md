@@ -1,47 +1,49 @@
 ---
 title: Defensive Signalling
-description: Index and navigation guide for defensive signalling systems and partnership communication in the BridgeLab Knowledge Base.
+description: Index and navigation guide for defensive signalling systems and partnership
+  communication in the BridgeLab Knowledge Base.
 category: Card Play – Defence
 subcategory: defence
 difficulty: Beginner to Expert
-tags: 
-  - card play – defence
-  - defence
-  - discard
-  - lead
-  - notrump
-  - opening
-  - signal
+tags:
+- card play – defence
+- defence
+- discard
+- lead
+- notrump
+- opening
+- signal
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/principals/partnership/convention-cards
-  - bidding/principals/partnership/disclosure
-  - bidding/principals/partnership/partnership-agreements
-  - play/counting/counting-index
-  - play/declarer-play/deceptive-play/deceptive-signals
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/planning/entry-management
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/timing
-  - play/defence/index-defence
-  - play/defence/opening-leads/opening-leads-index
-  - play/defence/planning/defence-planning-index
-  - play/defence/planning/defensive-communication
-  - play/defence/signaling/attitude
-  - play/defence/signaling/count
-  - play/defence/signaling/lavinthal
-  - play/defence/signaling/revolving-discards
-  - play/defence/signaling/smith-echo
-  - play/defence/signaling/standard-signals
-  - play/defence/signaling/suit-preference
-  - play/defence/signaling/upside-down-count-and-attitude
-  - play/defence/techniques/discard-strategy
-  - play/play-index
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/principals/partnership/convention-cards
+- bidding/principals/partnership/disclosure
+- bidding/principals/partnership/partnership-agreements
+- play/counting/counting-index
+- play/declarer-play/deceptive-play/deceptive-signals
+- play/declarer-play/general-techniques/communication
+- play/declarer-play/planning/entry-management
+- play/declarer-play/planning/planning-index
+- play/declarer-play/planning/timing
+- play/defence/index-defence
+- play/defence/opening-leads/opening-leads-index
+- play/defence/planning/defence-planning-index
+- play/defence/planning/defensive-communication
+- play/defence/signaling/attitude
+- play/defence/signaling/count
+- play/defence/signaling/lavinthal
+- play/defence/signaling/revolving-discards
+- play/defence/signaling/smith-echo
+- play/defence/signaling/standard-signals
+- play/defence/signaling/suit-preference
+- play/defence/signaling/upside-down-count-and-attitude
+- play/defence/techniques/discard-strategy
+- play/play-index
+- references/references-index
+- play/defence/signaling/italian-discard
+last_updated: '2026-07-22'
 status: Draft
 ---
 
