@@ -1,0 +1,45 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "confidence": "high",
+  "actions": [
+    {
+      "path": "bidding/convention-cards/convention-cards-index.md",
+      "current_title": "Convention Cards",
+      "proposed_title": "Convention Cards Index",
+      "change_h1": true
+    },
+    {
+      "path": "play/declarer-play/notrump-play/index-notrump-play.md",
+      "current_title": "Notrump Play",
+      "proposed_title": "Notrump Play Index",
+      "change_h1": true
+    },
+    {
+      "path": "bidding/conventions/relay/relay-index.md",
+      "current_title": "Relay Bidding",
+      "proposed_title": "Relay Bidding Index",
+      "change_h1": true
+    }
+  ],
+  "evidence": [
+    "Each filename identifies the article as an index",
+    "Each article provides directory navigation, topic catalogs, or learning paths",
+    "Each paired non-index article provides the substantive concept treatment",
+    "Paths and repository identifiers remain unchanged"
+  ],
+  "expected_result": {
+    "articles": 446,
+    "duplicate_title_groups": 0,
+    "path_changes": 0,
+    "reference_changes": 0
+  },
+  "guardrails": [
+    "Back up all three index files",
+    "Change only each front-matter title and first H1",
+    "Abort if the expected title or H1 is absent",
+    "Run all toolkit tests and validate all articles",
+    "Confirm duplicate-title groups decrease from 3 to 0"
+  ]
+}
