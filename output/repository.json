@@ -64130,7 +64130,6 @@
                 "play/play-index",
                 "references/references-index",
                 "play/counting/counting-defenders",
-                "play/counting/inference",
                 "play/counting/placing-the-card"
             ],
             "last_updated": "2026-07-22",
@@ -64275,9 +64274,9 @@
             }
         ],
         "links": [],
-        "words": 960,
-        "lines": 503,
-        "characters": 7706,
+        "words": 958,
+        "lines": 502,
+        "characters": 7680,
         "metadata_error": null
     },
     {
@@ -64895,113 +64894,6 @@
         "words": 1082,
         "lines": 395,
         "characters": 7260,
-        "metadata_error": null
-    },
-    {
-        "id": "play/counting/inference",
-        "filename": "inference.md",
-        "path": "C:\\Users\\nisim\\Documents\\BridgeLab\\knowledge\\play\\counting\\inference.md",
-        "relative_path": "play/counting/inference.md",
-        "directory": "play/counting",
-        "metadata": {
-            "title": "Inference",
-            "description": "Explains how players draw logical conclusions from the auction, lead, signals, and card play.",
-            "category": "play",
-            "subcategory": "counting",
-            "difficulty": "Intermediate",
-            "tags": [
-                "counting",
-                "lead",
-                "negative",
-                "opening",
-                "play"
-            ],
-            "systems": [],
-            "aliases": [],
-            "acronyms": [],
-            "references": [
-                "acronyms",
-                "play/counting/counting-index",
-                "play/declarer-play/elimination-and-endplays/elimination",
-                "play/declarer-play/planning/tempo",
-                "play/declarer-play/probability/probability-inference",
-                "play/declarer-play/probability/restricted-choice",
-                "play/play-index",
-                "references/references-index"
-            ],
-            "last_updated": "2026-07-27",
-            "status": "Draft"
-        },
-        "headings": [
-            {
-                "level": 1,
-                "title": "Inference"
-            },
-            {
-                "level": 2,
-                "title": "Overview"
-            },
-            {
-                "level": 2,
-                "title": "Sources of Inference"
-            },
-            {
-                "level": 3,
-                "title": "The Auction"
-            },
-            {
-                "level": 3,
-                "title": "Opening Lead"
-            },
-            {
-                "level": 3,
-                "title": "Card Play"
-            },
-            {
-                "level": 3,
-                "title": "Signals"
-            },
-            {
-                "level": 3,
-                "title": "Tempo"
-            },
-            {
-                "level": 3,
-                "title": "Bridge Agreements"
-            },
-            {
-                "level": 2,
-                "title": "Positive Inferences"
-            },
-            {
-                "level": 2,
-                "title": "Negative Inferences"
-            },
-            {
-                "level": 2,
-                "title": "Logical Elimination"
-            },
-            {
-                "level": 2,
-                "title": "Restricted Choice"
-            },
-            {
-                "level": 2,
-                "title": "Combining Information"
-            },
-            {
-                "level": 2,
-                "title": "Common Mistakes"
-            },
-            {
-                "level": 2,
-                "title": "Related Topics"
-            }
-        ],
-        "links": [],
-        "words": 190,
-        "lines": 87,
-        "characters": 1531,
         "metadata_error": null
     },
     {
@@ -68973,7 +68865,7 @@
         "relative_path": "play/declarer-play/general-techniques/entry-management-technique.md",
         "directory": "play/declarer-play/general-techniques",
         "metadata": {
-            "title": "Preserving Entries",
+            "title": "Entry Management Technique",
             "description": "Explains how declarer preserves vital entries between hands while planning and executing the play.",
             "category": "play",
             "subcategory": "declarer-play",
@@ -69146,9 +69038,9 @@
             }
         ],
         "links": [],
-        "words": 1171,
+        "words": 1172,
         "lines": 448,
-        "characters": 8219,
+        "characters": 8227,
         "metadata_error": null
     },
     {
@@ -70584,7 +70476,6 @@
             "acronyms": [],
             "references": [
                 "play/counting/counting-index",
-                "play/counting/inference",
                 "play/declarer-play/general-techniques/communication",
                 "play/declarer-play/general-techniques/finesses/delayed-finesse",
                 "play/declarer-play/general-techniques/finesses/finesse",
@@ -70664,9 +70555,9 @@
             }
         ],
         "links": [],
-        "words": 882,
-        "lines": 174,
-        "characters": 6141,
+        "words": 880,
+        "lines": 173,
+        "characters": 6113,
         "metadata_error": null
     },
     {
