@@ -1,0 +1,23 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_complete",
+  "source_changes_performed": false,
+  "scope": "314 medium-confidence candidates from systems_applicability_audit.json",
+  "decision": "retain_all",
+  "summary": {
+    "articles_reviewed": 76,
+    "assignments_reviewed": 314,
+    "assignments_approved_for_removal": 0,
+    "assignments_recommended_for_retention": 314,
+    "articles_with_system_sections_or_tables": 64,
+    "articles_with_explicit_usage_statements": 10,
+    "articles_with_system_specific_sections": 2
+  },
+  "rationale": [
+    "The repeated bundles initially looked characteristic of mention-based enrichment.",
+    "Article-body review found direct applicability evidence for every article in the batch.",
+    "Evidence includes System Differences or System Variations sections, system comparison tables, system-specific sections, and explicit Modern Usage lists.",
+    "Bundle repetition alone is therefore not sufficient grounds for removal."
+  ],
+  "supersedes_recommendation": "Do not apply the medium-confidence proposed removals in systems_applicability_audit.json."
+}
