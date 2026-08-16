@@ -1,0 +1,3977 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_changes_performed": false,
+  "policy": "strict_applicability",
+  "taxonomy": [
+    "acol",
+    "blue club",
+    "carrot club",
+    "ehaa",
+    "moscito",
+    "polish club",
+    "precision",
+    "roman club",
+    "sayc",
+    "standard american",
+    "strong club",
+    "super precision",
+    "two over one"
+  ],
+  "summary": {
+    "files_with_removals": 154,
+    "assignments_to_remove": 385,
+    "non_bidding_assignments": 42,
+    "outside_taxonomy_assignments": 343,
+    "taxonomy_valid_assignments_retained_for_review": 510
+  },
+  "removals_by_value": {
+    "jacoby": 90,
+    "lebensohl": 56,
+    "multi": 46,
+    "cappelletti": 36,
+    "dont": 31,
+    "puppet stayman": 30,
+    "drury": 17,
+    "crash": 14,
+    "kokish": 14,
+    "walsh": 13,
+    "standard american": 6,
+    "precision": 6,
+    "flannery": 5,
+    "sayc": 4,
+    "mathe": 4,
+    "acol": 3,
+    "strong club": 2,
+    "wolff signoff": 2,
+    "croc": 2,
+    "namyats": 2,
+    "roman keycard": 1,
+    "two over one": 1
+  },
+  "proposals": [
+    {
+      "path": "acronyms.md",
+      "current_systems": [
+        "crash",
+        "dont",
+        "multi",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "crash",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "dont",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "multi",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "sayc",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "strong club",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bibliography.md",
+      "current_systems": [
+        "acol",
+        "crash",
+        "kokish",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "crash",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "kokish",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "sayc",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/bidding-index.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "crash",
+        "dont",
+        "kokish",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/convention-cards/cc-nily-nisim.md",
+      "current_systems": [
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/aspro.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/balancing-double.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/balancing-notrump.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/bid-competitive-index.md",
+      "current_systems": [
+        "cappelletti",
+        "crash",
+        "dont",
+        "lebensohl",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/brozel.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/cappelletti.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/dont.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/fit-jump-shift.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/fit-jump.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/good-bad-2nt.md",
+      "current_systems": [
+        "lebensohl",
+        "wolff signoff"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "wolff signoff",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/hamilton.md",
+      "current_systems": [
+        "cappelletti",
+        "dont"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/jordan-2nt.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/landy.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/lionel.md",
+      "current_systems": [
+        "cappelletti",
+        "dont"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/meckwell.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "multi",
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/competitive/multi-landy.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/scrambling-2nt.md",
+      "current_systems": [
+        "lebensohl"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/competitive/unusual-vs-unusual.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/conventions-index.md",
+      "current_systems": [
+        "cappelletti",
+        "crash",
+        "dont",
+        "jacoby",
+        "kokish",
+        "lebensohl",
+        "multi",
+        "precision",
+        "puppet stayman",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/bid-defence-index.md",
+      "current_systems": [
+        "cappelletti",
+        "crash",
+        "dont",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/crash.md",
+      "current_systems": [
+        "blue club",
+        "cappelletti",
+        "crash",
+        "dont",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-multi-2d.md",
+      "current_systems": [
+        "cappelletti",
+        "flannery",
+        "lebensohl",
+        "multi",
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "flannery",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-precision.md",
+      "current_systems": [
+        "crash",
+        "croc",
+        "mathe",
+        "multi",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "croc",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "mathe",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/defense-against-strong-club.md",
+      "current_systems": [
+        "cappelletti",
+        "crash",
+        "croc",
+        "dont",
+        "mathe",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "croc",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "mathe",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/suction.md",
+      "current_systems": [
+        "blue club",
+        "cappelletti",
+        "crash",
+        "dont",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/twerb.md",
+      "current_systems": [
+        "blue club",
+        "cappelletti",
+        "crash",
+        "dont",
+        "jacoby",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/defensive-methods/woolsey-defense-to-multi.md",
+      "current_systems": [
+        "crash",
+        "lebensohl",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/doubles/dsi.md",
+      "current_systems": [
+        "lebensohl"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/doubles/sos-redouble.md",
+      "current_systems": [
+        "cappelletti",
+        "lebensohl"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/game-invitations.md",
+      "current_systems": [
+        "drury",
+        "jacoby",
+        "two over one"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/help-suit-game-try.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/invitations-index.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/game-invitations/long-suit-game-try.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/maximal-game-try.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/short-suit-game-try.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/game-invitations/two-way-game-try.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/benjamin-two-bids.md",
+      "current_systems": [
+        "acol",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/ekren.md",
+      "current_systems": [
+        "flannery",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "flannery",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/flannery.md",
+      "current_systems": [
+        "flannery"
+      ],
+      "remove": [
+        {
+          "value": "flannery",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/gambling-3nt.md",
+      "current_systems": [
+        "acol",
+        "dont",
+        "multi",
+        "namyats",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "namyats",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/index-opening-bids.md",
+      "current_systems": [
+        "multi",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/muiderberg-two.md",
+      "current_systems": [
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/namyats.md",
+      "current_systems": [
+        "namyats"
+      ],
+      "remove": [
+        {
+          "value": "namyats",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/opening-bids/roman-2-diamonds.md",
+      "current_systems": [
+        "blue club",
+        "multi",
+        "precision",
+        "roman club"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "roman club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/opening-bids/two-diamond-multi.md",
+      "current_systems": [
+        "flannery",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "flannery",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/relay/kokish-relay.md",
+      "current_systems": [
+        "jacoby",
+        "kokish",
+        "precision",
+        "puppet stayman",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/moscito-relay.md",
+      "current_systems": [
+        "kokish",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/relay-bidding.md",
+      "current_systems": [
+        "blue club",
+        "multi",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/relay-index.md",
+      "current_systems": [
+        "kokish",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/relay-principle.md",
+      "current_systems": [
+        "kokish",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/spiral-relay.md",
+      "current_systems": [
+        "kokish",
+        "lebensohl",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/relay/step-responses.md",
+      "current_systems": [
+        "kokish",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/2nt-inquiry-after-multi-two-diamond.md",
+      "current_systems": [
+        "acol",
+        "multi",
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/bergen-raises.md",
+      "current_systems": [
+        "drury",
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/crawling-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/drury.md",
+      "current_systems": [
+        "drury",
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/feature-ask.md",
+      "current_systems": [
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/five-card-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "puppet stayman",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/garbage-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/inverted-minors.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/jacoby-notrump.md",
+      "current_systems": [
+        "drury",
+        "jacoby",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl-after-1nt-doubled.md",
+      "current_systems": [
+        "cappelletti",
+        "jacoby",
+        "lebensohl",
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl-after-1nt-overcall.md",
+      "current_systems": [
+        "cappelletti",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/lebensohl.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/minor-suit-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/mixed-raise.md",
+      "current_systems": [
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/ogust.md",
+      "current_systems": [
+        "lebensohl",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-bergen.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-jacoby.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/passed-hand-splinter.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/preemptive-raise.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/puppet-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/responding-to-multi-2diamond.md",
+      "current_systems": [
+        "acol",
+        "lebensohl",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/responses-index.md",
+      "current_systems": [
+        "jacoby",
+        "kokish",
+        "lebensohl",
+        "puppet stayman",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/reverse-drury.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/rubensohl.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/smolen.md",
+      "current_systems": [
+        "jacoby",
+        "precision",
+        "puppet stayman",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/soloway.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/splinter.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/stayman.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/swiss-raise.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/transfer-walsh.md",
+      "current_systems": [
+        "jacoby",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/two-way-stayman.md",
+      "current_systems": [
+        "jacoby",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/responses/walsh.md",
+      "current_systems": [
+        "precision",
+        "standard american",
+        "two over one",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/wolff-signoff.md",
+      "current_systems": [
+        "lebensohl",
+        "two over one",
+        "wolff signoff"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "wolff signoff",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/responses/xyz.md",
+      "current_systems": [
+        "two over one",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "two over one"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/asking-bid.md",
+      "current_systems": [
+        "lebensohl",
+        "precision",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/blackwood.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/gerber.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/roman-key-card-blackwood.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/serious-3nt.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/slam-conventions/slam-trial-bids.md",
+      "current_systems": [
+        "jacoby",
+        "roman keycard"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "roman keycard",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/jacoby-transfers.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/minor-suit-transfers.md",
+      "current_systems": [
+        "jacoby",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/south-african-texas.md",
+      "current_systems": [
+        "jacoby"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/texas-transfers.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/transfer-lebensohl.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "lebensohl",
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/conventions/transfers/transfers-index.md",
+      "current_systems": [
+        "jacoby",
+        "kokish",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "strong club",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-club.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-heart.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1-spade.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/1nt-opening.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/2-clubs.md",
+      "current_systems": [
+        "acol",
+        "kokish",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/2nt-opening.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/opening-bids/weak-two-bids.md",
+      "current_systems": [
+        "acol",
+        "flannery",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "flannery",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-1nt.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-2nt.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-major.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/rebids/opener-after-minor.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/limit-raise.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/raising-partners-major.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/responding-to-opening-bids.md",
+      "current_systems": [
+        "drury",
+        "jacoby",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/natural-bids/responses/responding-with-balanced-hands.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-1-club.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-1nt.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-2-clubs.md",
+      "current_systems": [
+        "acol",
+        "kokish",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-2nt.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/natural-bids/responses/response-to-major-opening.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/principles/bidding-fundamentals/sign-off.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/alert-procedures.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "jacoby",
+        "precision",
+        "puppet stayman"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision"
+      ]
+    },
+    {
+      "path": "bidding/principles/partnership/convention-cards.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "puppet stayman",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/disclosure.md",
+      "current_systems": [
+        "lebensohl"
+      ],
+      "remove": [
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "bidding/principles/partnership/partnership-agreements.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/2-over-1.md",
+      "current_systems": [
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/acol.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "jacoby",
+        "multi",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/carrot-club.md",
+      "current_systems": [
+        "acol",
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "standard american",
+        "strong club",
+        "walsh"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "walsh",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/chinese-precision.md",
+      "current_systems": [
+        "blue club",
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/ehaa.md",
+      "current_systems": [
+        "acol",
+        "ehaa",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "ehaa",
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/kaplan-sheinwold.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/magic-diamond.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/moscito.md",
+      "current_systems": [
+        "blue club",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/polish-club.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "cappelletti",
+        "crash",
+        "dont",
+        "jacoby",
+        "mathe",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "mathe",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/precision.md",
+      "current_systems": [
+        "acol",
+        "blue club",
+        "cappelletti",
+        "crash",
+        "dont",
+        "jacoby",
+        "kokish",
+        "mathe",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "crash",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "kokish",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "mathe",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "blue club",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club",
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/roman-precision.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "roman club",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "roman club",
+        "strong club",
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/roth-stone.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/sayc.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "drury",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "dont",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "drury",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/sef.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "precision",
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bidding/systems/standard-american.md",
+      "current_systems": [
+        "acol",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "acol",
+        "precision",
+        "sayc",
+        "standard american",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/super-precision.md",
+      "current_systems": [
+        "blue club",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "strong club",
+        "super precision"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club",
+        "super precision"
+      ]
+    },
+    {
+      "path": "bidding/systems/ultimate-club.md",
+      "current_systems": [
+        "blue club",
+        "jacoby",
+        "lebensohl",
+        "multi",
+        "precision",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "multi",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "blue club",
+        "precision",
+        "strong club"
+      ]
+    },
+    {
+      "path": "bidding/systems/wspolny-jezyk.md",
+      "current_systems": [
+        "jacoby",
+        "lebensohl",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "jacoby",
+          "reason": "outside_system_taxonomy"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "outside_system_taxonomy"
+        }
+      ],
+      "proposed_systems": [
+        "sayc",
+        "standard american"
+      ]
+    },
+    {
+      "path": "bridge-lab-index.md",
+      "current_systems": [
+        "acol",
+        "precision",
+        "standard american",
+        "strong club"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "strong club",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "play/declarer-play/general-techniques/general-techniques-index.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "play/declarer-play/squeezes/squeezes-index.md",
+      "current_systems": [
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "play/defence/deception/defence-deception-index.md",
+      "current_systems": [
+        "multi"
+      ],
+      "remove": [
+        {
+          "value": "multi",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "play/defence/opening-leads/rusinow.md",
+      "current_systems": [
+        "precision"
+      ],
+      "remove": [
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "play/defence/opening-leads/standard-leads.md",
+      "current_systems": [
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "references/bridge-glossary.md",
+      "current_systems": [
+        "cappelletti",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "sayc",
+        "standard american"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "jacoby",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "sayc",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "references/bridge-terminology.md",
+      "current_systems": [
+        "cappelletti",
+        "dont",
+        "jacoby",
+        "lebensohl"
+      ],
+      "remove": [
+        {
+          "value": "cappelletti",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "dont",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "jacoby",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    },
+    {
+      "path": "references/common-bridge-abbreviations.md",
+      "current_systems": [
+        "acol",
+        "cappelletti",
+        "dont",
+        "jacoby",
+        "lebensohl",
+        "precision",
+        "puppet stayman",
+        "sayc",
+        "standard american",
+        "two over one"
+      ],
+      "remove": [
+        {
+          "value": "acol",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "cappelletti",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "dont",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "jacoby",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "lebensohl",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "precision",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "puppet stayman",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "sayc",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "standard american",
+          "reason": "non_bidding_article"
+        },
+        {
+          "value": "two over one",
+          "reason": "non_bidding_article"
+        }
+      ],
+      "proposed_systems": []
+    }
+  ],
+  "guardrails": [
+    "Back up every changed article",
+    "Remove only exact reviewed list items",
+    "Do not fill any empty systems list",
+    "Do not remove taxonomy-valid bidding assignments in this phase",
+    "Run all tests and validate the repository",
+    "Regenerate the cache and rerun the systems audit"
+  ]
+}
