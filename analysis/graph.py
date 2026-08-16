@@ -6,6 +6,7 @@ Knowledge Graph
 from __future__ import annotations
 
 from collections import defaultdict
+from pathlib import Path
 
 from core.models import Article
 
@@ -74,9 +75,11 @@ class KnowledgeGraph:
 
         for article in self.articles:
 
-            source = article.id
+            source = article.id.casefold()
 
             for target in article.metadata.references:
+
+                target = target.strip().removesuffix(".md").casefold()
 
                 self._outgoing[source].add(target)
                 self._incoming[target].add(source)
@@ -159,7 +162,7 @@ class KnowledgeGraph:
     ) -> set[str]:
 
         return self._outgoing.get(
-            article.id,
+            article.id.casefold(),
             set(),
         )
 
@@ -171,7 +174,7 @@ class KnowledgeGraph:
     ) -> set[str]:
 
         return self._incoming.get(
-            article.id,
+            article.id.casefold(),
             set(),
         )
 
@@ -196,6 +199,6 @@ class KnowledgeGraph:
         return [
             article
             for article in self.articles
-            if not self.incoming(article)
-            and not self.outgoing(article)
+            if article.relative_path.parent != Path(".")
+            and not self.incoming(article)
         ]

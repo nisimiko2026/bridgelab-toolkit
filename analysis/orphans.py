@@ -28,7 +28,7 @@ class OrphanAnalyzer:
 
     def articles(self) -> list[Article]:
         """
-        Return all orphan articles.
+        Return non-entry articles with no inbound references.
         """
 
         return self.graph.orphan_articles()

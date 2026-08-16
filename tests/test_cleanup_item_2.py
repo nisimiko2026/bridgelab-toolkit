@@ -94,6 +94,24 @@ class KnowledgeGraphFindArticleTests(unittest.TestCase):
         self.assertIsNone(self.graph.find_article("unknown article"))
 
 
+class KnowledgeGraphOrphanTests(unittest.TestCase):
+    def test_outgoing_references_do_not_hide_unreferenced_article(self) -> None:
+        source = article(
+            "guide/source",
+            "Source",
+            "guide/source.md",
+            references=["GUIDE/TARGET.md"],
+        )
+        target = article("guide/target", "Target", "guide/target.md")
+
+        self.assertEqual(KnowledgeGraph([source, target]).orphan_articles(), [source])
+
+    def test_top_level_entry_documents_are_not_orphans(self) -> None:
+        entry = article("index", "Index", "index.md")
+
+        self.assertEqual(KnowledgeGraph([entry]).orphan_articles(), [])
+
+
 class RelatedAnalyzerTests(unittest.TestCase):
     def test_returns_article_score_pairs_in_descending_score_order(self) -> None:
         source = article(
