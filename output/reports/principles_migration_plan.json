@@ -1,0 +1,71 @@
+{
+  "generated": "2026-08-16",
+  "status": "review_required",
+  "source_modified": false,
+  "summary": {
+    "directories_moved": 2,
+    "source_articles_moved": 29,
+    "unique_files_with_path_references": 338,
+    "subcategory_values_normalized": 28,
+    "tag_values_normalized": 28,
+    "nested_index_files_renamed": 3,
+    "destination_collisions": 0
+  },
+  "directory_moves": [
+    {
+      "old": "bidding/principals",
+      "new": "bidding/principles",
+      "source_articles": 23,
+      "files_with_path_references": 324,
+      "collision": false
+    },
+    {
+      "old": "play/principals",
+      "new": "play/principles",
+      "source_articles": 6,
+      "files_with_path_references": 19,
+      "collision": false
+    }
+  ],
+  "nested_file_moves": [
+    {
+      "old": "bidding/principals/principals-index.md",
+      "new": "bidding/principles/principles-index.md",
+      "confidence": "high"
+    },
+    {
+      "old": "play/principals/play-principals-index.md",
+      "new": "play/principles/play-principles-index.md",
+      "confidence": "high"
+    },
+    {
+      "old": "bidding/principals/partnership/index-principal-partnership.md",
+      "new": "bidding/principles/partnership/partnership-principles-index.md",
+      "confidence": "medium",
+      "reason": "proposed name matches the existing title 'Partnership Principles' and index suffix convention"
+    }
+  ],
+  "metadata_normalization": [
+    {
+      "field": "subcategory",
+      "old": "principals",
+      "new": "principles",
+      "articles": 28,
+      "match": "exact_case_insensitive"
+    },
+    {
+      "field": "tags",
+      "old": "principals",
+      "new": "principles",
+      "articles": 28,
+      "match": "exact_list_item_case_insensitive"
+    }
+  ],
+  "safety_rules": [
+    "Back up every moved or rewritten file before mutation.",
+    "Replace only exact repository identifiers and exact metadata values.",
+    "Do not globally replace prose uses of principal or principals.",
+    "Abort on missing sources or destination collisions.",
+    "Validate all 448 articles, references, duplicates, directory indexes, and orphan coverage after application."
+  ]
+}
