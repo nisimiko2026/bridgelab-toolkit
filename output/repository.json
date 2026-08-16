@@ -885,7 +885,7 @@
         "relative_path": "bidding/convention-cards/convention-cards-index.md",
         "directory": "bidding/convention-cards",
         "metadata": {
-            "title": "Convention Cards",
+            "title": "Convention Cards Index",
             "description": "Index and navigation guide for convention cards, disclosure requirements, and partnership documentation in the BridgeLab Knowledge Base.",
             "category": "Bidding – Principles",
             "subcategory": "convention-cards",
@@ -924,7 +924,7 @@
         "headings": [
             {
                 "level": 1,
-                "title": "Convention Cards"
+                "title": "Convention Cards Index"
             },
             {
                 "level": 2,
@@ -1056,9 +1056,9 @@
             }
         ],
         "links": [],
-        "words": 913,
+        "words": 915,
         "lines": 449,
-        "characters": 7504,
+        "characters": 7517,
         "metadata_error": null
     },
     {
@@ -24591,7 +24591,7 @@
         "relative_path": "bidding/conventions/relay/relay-index.md",
         "directory": "bidding/conventions/relay",
         "metadata": {
-            "title": "Relay Bidding",
+            "title": "Relay Bidding Index",
             "description": "Comprehensive guide to relay bidding in Contract Bridge, covering relay principles, step responses, relay techniques, and advanced relay systems.",
             "category": "bidding",
             "subcategory": "conventions",
@@ -24641,7 +24641,7 @@
         "headings": [
             {
                 "level": 1,
-                "title": "Relay Bidding"
+                "title": "Relay Bidding Index"
             },
             {
                 "level": 1,
@@ -24753,9 +24753,9 @@
             }
         ],
         "links": [],
-        "words": 1019,
+        "words": 1021,
         "lines": 429,
-        "characters": 7576,
+        "characters": 7589,
         "metadata_error": null
     },
     {
@@ -72355,7 +72355,7 @@
         "relative_path": "play/declarer-play/notrump-play/index-notrump-play.md",
         "directory": "play/declarer-play/notrump-play",
         "metadata": {
-            "title": "Notrump Play",
+            "title": "Notrump Play Index",
             "description": "Index and navigation guide for declarer play in notrump contracts within the BridgeLab Knowledge Base.",
             "category": "Card Play – Declarer Play",
             "subcategory": "declarer-play",
@@ -72406,7 +72406,7 @@
         "headings": [
             {
                 "level": 1,
-                "title": "Notrump Play"
+                "title": "Notrump Play Index"
             },
             {
                 "level": 2,
@@ -72546,9 +72546,9 @@
             }
         ],
         "links": [],
-        "words": 945,
+        "words": 947,
         "lines": 500,
-        "characters": 7607,
+        "characters": 7620,
         "metadata_error": null
     },
     {
