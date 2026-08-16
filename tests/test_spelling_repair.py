@@ -63,3 +63,11 @@ class SpellingRepairTests(unittest.TestCase):
             self.assertIn("topic/probability/article", reference.read_text(encoding="utf-8"))
             self.assertEqual((backup / source.relative_to(root)).read_bytes(), original[source])
             self.assertEqual((backup / "index.md").read_bytes(), original[reference])
+
+            repeated = CliRunner().invoke(app, arguments)
+            self.assertEqual(repeated.exit_code, 0, repeated.output)
+            self.assertIn("Source files to move : 0", repeated.output)
+
+            repeated_apply = CliRunner().invoke(app, [*arguments, "--apply"])
+            self.assertEqual(repeated_apply.exit_code, 0, repeated_apply.output)
+            self.assertIn("Files moved          : 0", repeated_apply.output)

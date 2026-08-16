@@ -44,6 +44,13 @@ def _file_moves(root: Path, proposals: list[dict]) -> dict[Path, Path]:
     for proposal in proposals:
         old = root / Path(proposal["old"])
         new = root / Path(proposal["new"])
+        if not old.exists():
+            if new.exists():
+                continue
+            raise RuntimeError(
+                f"Unsafe spelling repair state; both paths are missing: "
+                f"{proposal['old']} and {proposal['new']}"
+            )
         if proposal["kind"] == "directory_and_nested_index":
             nested = proposal["additional_rename"]
             for source in old.rglob("*.md"):
@@ -134,7 +141,8 @@ def run(
         reverse=True,
     )
     for directory in old_directories:
-        directory.rmdir()
+        if directory.exists():
+            directory.rmdir()
 
     typer.echo(f"Files moved          : {len(moves)}")
     typer.echo(f"Files rewritten      : {len(changed)}")
