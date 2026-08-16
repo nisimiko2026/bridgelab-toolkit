@@ -21,6 +21,7 @@ from commands.repair_filenames import run as repair_filenames_command
 from commands.resolve_duplicates import run as resolve_duplicates_command
 from commands.repair_spelling import run as repair_spelling_command
 from commands.repair_principles import run as repair_principles_command
+from commands.repair_systems import run as repair_systems_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -232,6 +233,28 @@ def repair_principles(
         apply,
         include_medium_confidence=include_medium_confidence,
     )
+
+
+@app.command("repair-systems")
+def repair_systems(
+    root: Path = repository_option(),
+    plan: Path = typer.Option(
+        REPORTS / "systems_removal_plan.json",
+        "--plan",
+        exists=True,
+        dir_okay=False,
+        resolve_path=True,
+    ),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "systems-removal",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+) -> None:
+    """Apply the reviewed removal-first systems metadata plan."""
+    repair_systems_command(root, plan, backup, apply)
 
 
 @app.command("resolve-duplicates")
