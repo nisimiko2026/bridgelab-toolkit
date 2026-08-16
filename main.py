@@ -19,6 +19,7 @@ from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
 from commands.repair_filenames import run as repair_filenames_command
 from commands.resolve_duplicates import run as resolve_duplicates_command
+from commands.repair_spelling import run as repair_spelling_command
 
 from commands.statistics import run as statistics_command
 from commands.coverage import run as coverage_command
@@ -164,6 +165,39 @@ def repair_filenames(
 ) -> None:
     """Rename known invalid files and update exact inbound references."""
     repair_filenames_command(root, backup, apply)
+
+
+@app.command("repair-spelling")
+def repair_spelling(
+    root: Path = repository_option(),
+    plan: Path = typer.Option(
+        REPORTS / "spelling_rename_audit.json",
+        "--plan",
+        exists=True,
+        dir_okay=False,
+        resolve_path=True,
+    ),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "spelling-repair",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+    ),
+    apply: bool = typer.Option(False, "--apply"),
+    include_medium_confidence: bool = typer.Option(
+        False,
+        "--include-medium-confidence",
+        help="Include the reviewed natural-rebids index rename.",
+    ),
+) -> None:
+    """Apply audited spelling corrections with backups."""
+    repair_spelling_command(
+        root,
+        plan,
+        backup,
+        apply,
+        include_medium_confidence=include_medium_confidence,
+    )
 
 
 @app.command("resolve-duplicates")
