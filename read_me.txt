@@ -84,6 +84,16 @@ Scan the BridgeLab repository:
 python main.py scan
 ```
 
+Validate repository structure and article metadata without modifying source files:
+
+```bash
+python main.py validate
+```
+
+Both commands accept `--root PATH` to target a repository explicitly. The
+validation command exits with status `1` when errors are found and status `0`
+for a clean or warnings-only result, making it suitable for CI checks.
+
 The toolkit automatically locates the BridgeLab root directory using the configuration in `config.py`.
 
 ---
@@ -245,6 +255,8 @@ The toolkit follows several core principles:
 This toolkit is developed exclusively for the maintenance of the BridgeLab encyclopedia.
 
 python main.py scan
+
+python main.py validate
 
 python main.py metadata
 

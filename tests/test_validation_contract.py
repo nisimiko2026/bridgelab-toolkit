@@ -6,6 +6,7 @@ from pathlib import Path
 
 from core.models import Article, Heading, Issue
 from core.repository import Repository
+from metadata.validator import MetadataValidator
 from validator.directory_check import DirectoryCheck
 from validator.duplicate_check import DuplicateCheck
 from validator.filename_check import FilenameCheck
@@ -28,6 +29,19 @@ def article(
         directory=path.parent.as_posix(),
     )
     item.headings = [Heading(level=1, title=title) for title in headings or []]
+    return item
+
+
+def article_with_complete_metadata(
+    relative_path: str,
+    difficulty: str,
+) -> Article:
+    item = article(relative_path)
+    item.metadata.title = "Article"
+    item.metadata.description = "A sufficiently long description for validation."
+    item.metadata.category = "Conventions"
+    item.metadata.difficulty = difficulty
+    item.metadata.last_updated = "2026-08-15"
     return item
 
 
@@ -131,3 +145,149 @@ class LegacyValidationContractTests(unittest.TestCase):
             RepositoryValidator(articles).validate()
 
             self.assertEqual(markdown.read_text(encoding="utf-8"), original)
+
+    def test_yaml_null_metadata_values_are_missing_not_literal_none(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            markdown = root / "index.md"
+            original = (
+                "---\n"
+                "title: null\n"
+                "description: null\n"
+                "category: null\n"
+                "subcategory: null\n"
+                "difficulty: null\n"
+                "last_updated: null\n"
+                "status: null\n"
+                "tags: []\n"
+                "systems: []\n"
+                "aliases: []\n"
+                "acronyms: []\n"
+                "references: []\n"
+                "---\n"
+                "# Overview\n\n# Summary\n"
+            )
+            markdown.write_text(original, encoding="utf-8")
+
+            article = Repository(root).build()[0]
+            issues = MetadataValidator().validate([article])
+
+            self.assertEqual(article.metadata.title, "")
+            self.assertEqual(article.metadata.description, "")
+            self.assertEqual(article.metadata.difficulty, "")
+            self.assertFalse(
+                any(issue.message == "Invalid difficulty" for issue in issues)
+            )
+            self.assertFalse(
+                any(issue.message == "Description too short" for issue in issues)
+            )
+            self.assertEqual(
+                {
+                    issue.message
+                    for issue in issues
+                    if issue.severity == "Error"
+                },
+                {
+                    "Missing title",
+                    "Missing description",
+                    "Missing category",
+                    "Missing difficulty",
+                    "Missing last_updated",
+                },
+            )
+            self.assertEqual(markdown.read_text(encoding="utf-8"), original)
+
+    def test_literal_none_metadata_values_are_treated_as_missing(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            markdown = root / "index.md"
+            markdown.write_text(
+                "---\n"
+                "title: Article\n"
+                "description: None\n"
+                "category: Conventions\n"
+                "difficulty: None\n"
+                "last_updated: '2026-08-15'\n"
+                "tags: []\n"
+                "systems: []\n"
+                "aliases: []\n"
+                "acronyms: []\n"
+                "references: []\n"
+                "---\n"
+                "# Overview\n\n# Summary\n",
+                encoding="utf-8",
+            )
+
+            article = Repository(root).build()[0]
+            issues = MetadataValidator().validate([article])
+
+            self.assertEqual(article.metadata.description, "")
+            self.assertEqual(article.metadata.difficulty, "")
+            self.assertEqual(
+                {
+                    issue.message
+                    for issue in issues
+                    if issue.severity == "Error"
+                },
+                {"Missing description", "Missing difficulty"},
+            )
+            self.assertFalse(
+                any(issue.message == "Invalid difficulty" for issue in issues)
+            )
+            self.assertFalse(
+                any(issue.message == "Description too short" for issue in issues)
+            )
+
+    def test_metadata_validator_uses_repository_relative_issue_subjects(self) -> None:
+        issues = MetadataValidator().validate(
+            [article("nested/topic.md")]
+        )
+
+        self.assert_issues(issues)
+        self.assertTrue(
+            all(issue.article == "nested/topic.md" for issue in issues)
+        )
+
+    def test_difficulty_policy_for_generated_reference_and_index_documents(self) -> None:
+        generated = article_with_complete_metadata("acronyms.md", "")
+        reference = article_with_complete_metadata("references/terms.md", "")
+        index = article_with_complete_metadata(
+            "guide/topic-index.md",
+            "Beginner to Expert",
+        )
+        substantive = article_with_complete_metadata(
+            "guide/topic.md",
+            "Beginner to Expert",
+        )
+        missing_index = article_with_complete_metadata(
+            "guide/index.md",
+            "",
+        )
+
+        generated_issues = MetadataValidator().validate([generated])
+        reference_issues = MetadataValidator().validate([reference])
+        index_issues = MetadataValidator().validate([index])
+        substantive_issues = MetadataValidator().validate([substantive])
+        missing_index_issues = MetadataValidator().validate([missing_index])
+
+        self.assertFalse(
+            any(issue.category == "difficulty" for issue in generated_issues)
+        )
+        self.assertFalse(
+            any(issue.category == "difficulty" for issue in reference_issues)
+        )
+        self.assertFalse(
+            any(issue.message == "Invalid difficulty" for issue in index_issues)
+        )
+        self.assertTrue(
+            any(
+                issue.message == "Invalid difficulty"
+                for issue in substantive_issues
+            )
+        )
+        self.assertTrue(
+            any(
+                issue.message == "Missing difficulty"
+                for issue in missing_index_issues
+            )
+        )
