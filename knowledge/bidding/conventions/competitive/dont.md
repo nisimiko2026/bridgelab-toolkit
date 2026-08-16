@@ -23,11 +23,8 @@ tags:
   - standard american
   - stayman
   - transfer
-systems: 
+systems:
   - acol
-  - cappelletti
-  - dont
-  - multi
   - precision
   - sayc
   - standard american

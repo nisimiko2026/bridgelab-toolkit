@@ -30,13 +30,10 @@ tags:
 - support
 - systems
 systems:
-- blue club
-- drury
-- jacoby
-- lebensohl
-- precision
-- standard american
-- strong club
+  - blue club
+  - precision
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

@@ -17,8 +17,7 @@ tags:
   - stayman
   - strong club
   - support
-systems: 
-  - kokish
+systems:
   - precision
   - strong club
 aliases: 

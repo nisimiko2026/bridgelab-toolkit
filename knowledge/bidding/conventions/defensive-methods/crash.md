@@ -23,12 +23,8 @@ tags:
   - slam
   - strong club
   - transfer
-systems: 
+systems:
   - blue club
-  - cappelletti
-  - crash
-  - dont
-  - multi
   - precision
   - strong club
 aliases: 

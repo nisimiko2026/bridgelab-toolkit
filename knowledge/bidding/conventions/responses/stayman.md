@@ -21,10 +21,7 @@ tags:
   - slam
   - stayman
   - transfer
-systems: 
-  - jacoby
-  - lebensohl
-  - puppet stayman
+systems: []
 aliases: []
 acronyms: []
 references: 

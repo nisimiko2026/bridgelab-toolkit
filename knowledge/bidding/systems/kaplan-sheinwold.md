@@ -30,13 +30,11 @@ tags:
 - takeout
 - transfer
 systems:
-- acol
-- jacoby
-- lebensohl
-- precision
-- sayc
-- standard american
-- strong club
+  - acol
+  - precision
+  - sayc
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

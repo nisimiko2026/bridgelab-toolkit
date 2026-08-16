@@ -26,12 +26,9 @@ tags:
   - standard american
   - stayman
   - transfer
-systems: 
+systems:
   - acol
-  - jacoby
-  - lebensohl
   - precision
-  - puppet stayman
   - sayc
   - standard american
 aliases: []

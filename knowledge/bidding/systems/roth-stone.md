@@ -26,11 +26,9 @@ tags:
 - systems
 - takeout
 systems:
-- jacoby
-- lebensohl
-- precision
-- sayc
-- standard american
+  - precision
+  - sayc
+  - standard american
 aliases: []
 acronyms: []
 references:

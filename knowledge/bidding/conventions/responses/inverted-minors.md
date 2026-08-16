@@ -26,9 +26,8 @@ tags:
   - stayman
   - strong club
   - support
-systems: 
+systems:
   - acol
-  - jacoby
   - precision
   - sayc
   - standard american

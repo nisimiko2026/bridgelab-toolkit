@@ -19,9 +19,7 @@ tags:
   - response
   - slam
   - support
-systems: 
-  - flannery
-  - multi
+systems: []
 aliases: []
 acronyms: []
 references: 

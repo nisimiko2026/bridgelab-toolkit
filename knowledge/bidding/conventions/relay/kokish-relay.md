@@ -23,11 +23,8 @@ tags:
   - standard american
   - stayman
   - strong club
-systems: 
-  - jacoby
-  - kokish
+systems:
   - precision
-  - puppet stayman
   - standard american
   - strong club
 aliases: 

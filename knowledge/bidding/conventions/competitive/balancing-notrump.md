@@ -22,10 +22,8 @@ tags:
   - standard american
   - stayman
   - takeout
-systems: 
+systems:
   - acol
-  - jacoby
-  - lebensohl
   - precision
   - sayc
   - standard american

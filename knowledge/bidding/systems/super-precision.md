@@ -29,13 +29,10 @@ tags:
 - support
 - systems
 systems:
-- blue club
-- jacoby
-- lebensohl
-- multi
-- precision
-- strong club
-- super precision
+  - blue club
+  - precision
+  - strong club
+  - super precision
 aliases: []
 acronyms: []
 references:

@@ -27,13 +27,8 @@ tags:
 - transfer
 - walsh
 systems:
-- jacoby
-- kokish
-- lebensohl
-- precision
-- puppet stayman
-- strong club
-- walsh
+  - precision
+  - strong club
 aliases: []
 acronyms: []
 references:

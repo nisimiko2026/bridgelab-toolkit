@@ -20,10 +20,7 @@ tags:
   - redouble
   - relay
   - slam
-systems: 
-  - cappelletti
-  - dont
-  - multi
+systems: []
 aliases: []
 acronyms: []
 references: 

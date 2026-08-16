@@ -20,9 +20,8 @@ tags:
   - slam
   - slam conventions
   - standard american
-systems: 
+systems:
   - acol
-  - jacoby
   - precision
   - sayc
   - standard american

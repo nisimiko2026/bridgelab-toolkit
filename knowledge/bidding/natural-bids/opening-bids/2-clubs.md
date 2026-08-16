@@ -23,9 +23,8 @@ tags:
   - slam
   - standard american
   - strong club
-systems: 
+systems:
   - acol
-  - kokish
   - precision
   - sayc
   - standard american

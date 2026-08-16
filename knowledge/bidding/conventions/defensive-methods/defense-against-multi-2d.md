@@ -19,11 +19,7 @@ tags:
   - response
   - takeout
   - transfer
-systems: 
-  - cappelletti
-  - flannery
-  - lebensohl
-  - multi
+systems:
   - precision
 aliases: []
 acronyms: []

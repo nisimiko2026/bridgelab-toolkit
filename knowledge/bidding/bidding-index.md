@@ -30,16 +30,11 @@ tags:
 - strong club
 - takeout
 systems:
-- acol
-- cappelletti
-- crash
-- dont
-- kokish
-- multi
-- precision
-- sayc
-- standard american
-- strong club
+  - acol
+  - precision
+  - sayc
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

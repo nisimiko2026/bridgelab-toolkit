@@ -25,11 +25,7 @@ tags:
 - stayman
 - transfer
 systems:
-- cappelletti
-- dont
-- jacoby
-- precision
-- puppet stayman
+  - precision
 aliases: []
 acronyms: []
 references:

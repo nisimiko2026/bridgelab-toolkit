@@ -23,9 +23,7 @@ tags:
 - support
 - transfer
 systems:
-- lebensohl
-- precision
-- puppet stayman
+  - precision
 aliases: []
 acronyms: []
 references:

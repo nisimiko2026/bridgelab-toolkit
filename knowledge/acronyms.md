@@ -26,14 +26,7 @@ tags:
   - strong club
   - takeout
   - transfer
-systems: 
-  - crash
-  - dont
-  - multi
-  - puppet stayman
-  - sayc
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references: 

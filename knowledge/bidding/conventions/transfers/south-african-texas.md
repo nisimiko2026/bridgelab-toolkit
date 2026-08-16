@@ -19,8 +19,7 @@ tags:
 - slam
 - stayman
 - transfer
-systems:
-- jacoby
+systems: []
 aliases: []
 acronyms: []
 references:

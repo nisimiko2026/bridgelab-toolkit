@@ -25,11 +25,8 @@ tags:
   - stayman
   - takeout
   - transfer
-systems: 
+systems:
   - acol
-  - cappelletti
-  - jacoby
-  - lebensohl
   - precision
   - sayc
   - standard american

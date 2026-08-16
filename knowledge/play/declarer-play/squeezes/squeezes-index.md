@@ -12,8 +12,7 @@ tags:
 - double
 - multi
 - squeeze
-systems:
-- multi
+systems: []
 aliases: []
 acronyms: []
 references:

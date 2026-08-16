@@ -22,10 +22,7 @@ tags:
   - stayman
   - support
   - walsh
-systems: 
-  - drury
-  - jacoby
-  - walsh
+systems: []
 aliases: []
 acronyms: []
 references: 

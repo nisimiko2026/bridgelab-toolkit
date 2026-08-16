@@ -16,8 +16,7 @@ tags:
   - response
   - slam
   - strong club
-systems: 
-  - kokish
+systems:
   - precision
   - strong club
 aliases: []

@@ -25,12 +25,9 @@ tags:
   - strong club
   - support
   - transfer
-systems: 
+systems:
   - acol
-  - jacoby
-  - lebensohl
   - precision
-  - puppet stayman
   - sayc
   - standard american
   - strong club

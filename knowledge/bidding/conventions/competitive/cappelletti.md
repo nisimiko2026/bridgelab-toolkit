@@ -24,11 +24,8 @@ tags:
   - standard american
   - strong club
   - transfer
-systems: 
+systems:
   - acol
-  - cappelletti
-  - dont
-  - multi
   - precision
   - sayc
   - standard american

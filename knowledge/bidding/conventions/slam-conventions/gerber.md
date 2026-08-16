@@ -18,8 +18,7 @@ tags:
   - slam
   - slam conventions
   - stayman
-systems: 
-  - jacoby
+systems: []
 aliases: []
 acronyms: []
 references: 

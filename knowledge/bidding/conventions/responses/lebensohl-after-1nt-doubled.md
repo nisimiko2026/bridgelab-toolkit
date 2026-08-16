@@ -21,10 +21,7 @@ tags:
   - responses to 1nt
   - stayman
   - transfer
-systems: 
-  - cappelletti
-  - jacoby
-  - lebensohl
+systems:
   - precision
 aliases: []
 acronyms: []

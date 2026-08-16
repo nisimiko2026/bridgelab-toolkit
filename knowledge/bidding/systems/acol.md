@@ -36,14 +36,9 @@ tags:
   - systems
   - takeout
   - transfer
-systems: 
+systems:
   - acol
-  - cappelletti
-  - dont
-  - jacoby
-  - multi
   - precision
-  - puppet stayman
   - sayc
   - standard american
   - strong club

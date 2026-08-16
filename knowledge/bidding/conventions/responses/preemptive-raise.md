@@ -20,11 +20,10 @@ tags:
 - standard american
 - support
 systems:
-- acol
-- jacoby
-- precision
-- sayc
-- standard american
+  - acol
+  - precision
+  - sayc
+  - standard american
 aliases: []
 acronyms: []
 references:

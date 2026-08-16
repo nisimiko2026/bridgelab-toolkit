@@ -22,10 +22,8 @@ tags:
   - slam
   - standard american
   - support
-systems: 
+systems:
   - acol
-  - cappelletti
-  - lebensohl
   - precision
   - sayc
   - standard american

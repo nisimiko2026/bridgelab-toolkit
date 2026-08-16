@@ -25,9 +25,8 @@ tags:
   - standard american
   - strong club
   - support
-systems: 
+systems:
   - acol
-  - kokish
   - precision
   - sayc
   - standard american

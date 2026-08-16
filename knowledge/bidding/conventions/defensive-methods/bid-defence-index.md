@@ -28,14 +28,10 @@ tags:
 - support
 - takeout
 systems:
-- cappelletti
-- crash
-- dont
-- multi
-- precision
-- sayc
-- standard american
-- strong club
+  - precision
+  - sayc
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

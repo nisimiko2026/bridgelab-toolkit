@@ -15,8 +15,7 @@ tags:
 - jacoby
 - notrump
 - slam
-systems:
-- jacoby
+systems: []
 aliases: []
 acronyms: []
 references:

@@ -30,10 +30,8 @@ tags:
   - strong club
   - support
   - systems
-systems: 
+systems:
   - acol
-  - jacoby
-  - lebensohl
   - precision
   - sayc
   - standard american

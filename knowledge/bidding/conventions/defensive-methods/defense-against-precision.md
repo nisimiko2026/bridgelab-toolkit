@@ -24,13 +24,9 @@ tags:
 - takeout
 - transfer
 systems:
-- crash
-- croc
-- mathe
-- multi
-- precision
-- standard american
-- strong club
+  - precision
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

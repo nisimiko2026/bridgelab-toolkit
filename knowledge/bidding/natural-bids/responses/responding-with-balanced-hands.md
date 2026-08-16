@@ -20,9 +20,8 @@ tags:
   - standard american
   - stayman
   - support
-systems: 
+systems:
   - acol
-  - jacoby
   - precision
   - sayc
   - standard american

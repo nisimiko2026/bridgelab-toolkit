@@ -18,8 +18,7 @@ tags:
   - responses to weak two openings
   - slam
   - support
-systems: 
-  - multi
+systems: []
 aliases: []
 acronyms: []
 references: 

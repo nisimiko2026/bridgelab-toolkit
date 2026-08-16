@@ -27,10 +27,8 @@ tags:
 - support
 - systems
 systems:
-- jacoby
-- lebensohl
-- precision
-- standard american
+  - precision
+  - standard american
 aliases: []
 acronyms: []
 references:

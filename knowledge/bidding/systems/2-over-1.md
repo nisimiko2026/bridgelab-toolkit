@@ -29,10 +29,7 @@ tags:
   - support
   - systems
   - takeout
-systems: 
-  - drury
-  - jacoby
-  - lebensohl
+systems:
   - precision
   - sayc
   - standard american

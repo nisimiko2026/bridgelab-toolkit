@@ -17,8 +17,7 @@ tags:
   - response
   - slam
   - slam conventions
-systems: 
-  - jacoby
+systems: []
 aliases: []
 acronyms: []
 references: 

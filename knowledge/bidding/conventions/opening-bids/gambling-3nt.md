@@ -25,11 +25,8 @@ tags:
   - slam
   - standard american
   - transfer
-systems: 
+systems:
   - acol
-  - dont
-  - multi
-  - namyats
   - precision
   - sayc
   - standard american

@@ -28,12 +28,9 @@ tags:
 - support
 - systems
 systems:
-- blue club
-- jacoby
-- lebensohl
-- multi
-- precision
-- strong club
+  - blue club
+  - precision
+  - strong club
 aliases: []
 acronyms: []
 references:

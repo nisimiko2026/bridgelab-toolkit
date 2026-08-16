@@ -25,11 +25,8 @@ tags:
   - standard american
   - support
   - takeout
-systems: 
+systems:
   - acol
-  - cappelletti
-  - dont
-  - multi
   - precision
   - sayc
   - standard american

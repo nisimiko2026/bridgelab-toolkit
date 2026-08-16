@@ -21,9 +21,7 @@ tags:
   - slam
   - standard american
   - transfer
-systems: 
-  - cappelletti
-  - lebensohl
+systems:
   - precision
   - sayc
   - standard american

@@ -27,13 +27,8 @@ tags:
   - strong club
   - takeout
   - transfer
-systems: 
+systems:
   - blue club
-  - cappelletti
-  - crash
-  - dont
-  - jacoby
-  - multi
   - precision
   - strong club
 aliases: 

@@ -25,12 +25,7 @@ tags:
 - support
 - transfer
 - walsh
-systems:
-- jacoby
-- kokish
-- lebensohl
-- puppet stayman
-- walsh
+systems: []
 aliases: []
 acronyms: []
 references:

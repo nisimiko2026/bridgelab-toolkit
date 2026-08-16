@@ -22,8 +22,7 @@ tags:
   - stayman
   - support
   - transfer
-systems: 
-  - namyats
+systems: []
 aliases: []
 acronyms: []
 references: 

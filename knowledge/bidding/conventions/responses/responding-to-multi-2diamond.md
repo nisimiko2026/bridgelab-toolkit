@@ -24,9 +24,7 @@ tags:
 - slam
 - support
 systems:
-- acol
-- lebensohl
-- multi
+  - acol
 aliases: []
 acronyms: []
 references:

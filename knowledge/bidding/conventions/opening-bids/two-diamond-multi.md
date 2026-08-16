@@ -17,9 +17,7 @@ tags:
   - relay
   - response
   - slam
-systems: 
-  - flannery
-  - multi
+systems: []
 aliases: []
 acronyms: []
 references: 

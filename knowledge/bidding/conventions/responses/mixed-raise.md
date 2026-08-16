@@ -19,8 +19,7 @@ tags:
   - sayc
   - standard american
   - support
-systems: 
-  - jacoby
+systems:
   - precision
   - sayc
   - standard american

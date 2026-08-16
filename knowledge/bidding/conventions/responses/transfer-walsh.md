@@ -15,9 +15,7 @@ tags:
 - stayman
 - transfer
 - walsh
-systems:
-- jacoby
-- walsh
+systems: []
 aliases: []
 acronyms: []
 references:

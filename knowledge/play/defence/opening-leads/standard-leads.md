@@ -13,8 +13,7 @@ tags:
 - play
 - ruff
 - standard american
-systems:
-- standard american
+systems: []
 aliases: []
 acronyms: []
 references:

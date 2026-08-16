@@ -20,9 +20,8 @@ tags:
   - squeeze
   - standard american
   - support
-systems: 
+systems:
   - acol
-  - jacoby
   - precision
   - sayc
   - standard american

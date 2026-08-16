@@ -15,9 +15,7 @@ tags:
   - slam
   - stayman
   - strong club
-systems: 
-  - kokish
-  - lebensohl
+systems:
   - precision
   - strong club
 aliases: 

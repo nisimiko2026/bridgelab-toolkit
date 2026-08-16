@@ -16,8 +16,7 @@ tags:
 - notrump
 - relay
 - slam
-systems:
-- jacoby
+systems: []
 aliases: []
 acronyms: []
 references:

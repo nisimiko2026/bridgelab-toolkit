@@ -23,9 +23,7 @@ tags:
   - slam
   - support
   - takeout
-systems: 
-  - drury
-  - jacoby
+systems: []
 aliases: []
 acronyms: []
 references: 

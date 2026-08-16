@@ -18,9 +18,7 @@ tags:
 - two over one
 - wolff signoff
 systems:
-- lebensohl
-- two over one
-- wolff signoff
+  - two over one
 aliases: []
 acronyms: []
 references:

@@ -22,9 +22,8 @@ tags:
   - standard american
   - support
   - takeout
-systems: 
+systems:
   - acol
-  - jacoby
   - precision
   - sayc
   - standard american

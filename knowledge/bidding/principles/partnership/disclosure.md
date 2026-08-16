@@ -15,8 +15,7 @@ tags:
 - principles
 - response
 - transfer
-systems:
-- lebensohl
+systems: []
 aliases:
 - Full Disclosure
 - Disclosure of Agreements

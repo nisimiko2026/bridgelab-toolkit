@@ -25,10 +25,8 @@ tags:
   - stayman
   - support
   - transfer
-systems: 
-  - jacoby
+systems:
   - precision
-  - puppet stayman
   - standard american
 aliases: []
 acronyms: []

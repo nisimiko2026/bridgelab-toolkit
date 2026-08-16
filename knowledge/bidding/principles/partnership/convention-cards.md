@@ -29,15 +29,7 @@ tags:
 - support
 - takeout
 - walsh
-systems:
-- cappelletti
-- dont
-- drury
-- jacoby
-- lebensohl
-- multi
-- puppet stayman
-- walsh
+systems: []
 aliases:
 - Convention Card
 - Partnership Card

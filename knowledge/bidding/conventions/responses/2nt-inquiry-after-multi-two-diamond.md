@@ -17,9 +17,8 @@ tags:
   - relay
   - response
   - slam
-systems: 
+systems:
   - acol
-  - multi
   - precision
 aliases: []
 acronyms: []

@@ -16,9 +16,7 @@ tags:
 - response
 - stayman
 - support
-systems:
-- jacoby
-- puppet stayman
+systems: []
 aliases: []
 acronyms: []
 references:

@@ -23,10 +23,9 @@ tags:
 - slam
 - stayman
 systems:
-- blue club
-- multi
-- precision
-- roman club
+  - blue club
+  - precision
+  - roman club
 aliases: []
 acronyms: []
 references:

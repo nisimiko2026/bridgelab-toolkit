@@ -23,9 +23,7 @@ tags:
   - slam
   - standard american
   - support
-systems: 
-  - drury
-  - jacoby
+systems:
   - precision
   - standard american
 aliases: []

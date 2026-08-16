@@ -18,8 +18,7 @@ tags:
 - response
 - slam
 systems:
-- acol
-- multi
+  - acol
 aliases: []
 acronyms: []
 references:

@@ -37,16 +37,7 @@ tags:
 - transfer
 - walsh
 systems:
-- cappelletti
-- crash
-- dont
-- jacoby
-- kokish
-- lebensohl
-- multi
-- precision
-- puppet stayman
-- walsh
+  - precision
 aliases: []
 acronyms: []
 references:

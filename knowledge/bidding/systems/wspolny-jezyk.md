@@ -28,10 +28,8 @@ tags:
 - systems
 - takeout
 systems:
-- jacoby
-- lebensohl
-- sayc
-- standard american
+  - sayc
+  - standard american
 aliases: []
 acronyms: []
 references:

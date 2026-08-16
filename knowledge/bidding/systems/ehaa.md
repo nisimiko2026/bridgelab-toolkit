@@ -28,12 +28,10 @@ tags:
 - systems
 - takeout
 systems:
-- acol
-- ehaa
-- jacoby
-- lebensohl
-- precision
-- standard american
+  - acol
+  - ehaa
+  - precision
+  - standard american
 aliases: []
 acronyms: []
 references:

@@ -28,13 +28,8 @@ tags:
   - stayman
   - takeout
   - transfer
-systems: 
+systems:
   - acol
-  - cappelletti
-  - dont
-  - jacoby
-  - lebensohl
-  - multi
   - precision
   - standard american
 aliases: []

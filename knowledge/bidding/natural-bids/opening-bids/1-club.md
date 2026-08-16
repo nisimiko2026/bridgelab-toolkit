@@ -24,12 +24,11 @@ tags:
 - support
 - walsh
 systems:
-- acol
-- precision
-- sayc
-- standard american
-- strong club
-- walsh
+  - acol
+  - precision
+  - sayc
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

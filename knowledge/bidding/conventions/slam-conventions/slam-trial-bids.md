@@ -12,9 +12,7 @@ tags:
   - slam
   - slam bidding
   - support
-systems: 
-  - jacoby
-  - roman keycard
+systems: []
 aliases: []
 acronyms: []
 references: 

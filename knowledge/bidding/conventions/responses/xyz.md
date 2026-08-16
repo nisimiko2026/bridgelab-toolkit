@@ -16,8 +16,7 @@ tags:
 - two over one
 - walsh
 systems:
-- two over one
-- walsh
+  - two over one
 aliases: []
 acronyms: []
 references:

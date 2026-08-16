@@ -20,9 +20,7 @@ tags:
   - responses to major openings
   - slam
   - support
-systems: 
-  - drury
-  - jacoby
+systems: []
 aliases: []
 acronyms: []
 references: 

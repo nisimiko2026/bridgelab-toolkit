@@ -13,8 +13,7 @@ tags:
   - negative
   - stayman
   - takeout
-systems: 
-  - lebensohl
+systems: []
 aliases: 
   - Do Something Intelligent
 acronyms: []

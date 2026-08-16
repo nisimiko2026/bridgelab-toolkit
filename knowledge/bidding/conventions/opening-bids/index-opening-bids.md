@@ -20,10 +20,9 @@ tags:
 - support
 - transfer
 systems:
-- multi
-- precision
-- standard american
-- strong club
+  - precision
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

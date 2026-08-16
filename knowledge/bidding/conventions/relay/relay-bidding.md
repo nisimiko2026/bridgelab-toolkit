@@ -22,9 +22,8 @@ tags:
   - stayman
   - strong club
   - super precision
-systems: 
+systems:
   - blue club
-  - multi
   - precision
   - strong club
   - super precision

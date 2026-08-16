@@ -17,9 +17,8 @@ tags:
 - strong club
 - transfer
 systems:
-- kokish
-- precision
-- strong club
+  - precision
+  - strong club
 aliases: []
 acronyms: []
 references:

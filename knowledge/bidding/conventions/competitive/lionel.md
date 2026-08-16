@@ -15,9 +15,7 @@ tags:
 - notrump
 - opening
 - relay
-systems:
-- cappelletti
-- dont
+systems: []
 aliases: []
 acronyms: []
 references:

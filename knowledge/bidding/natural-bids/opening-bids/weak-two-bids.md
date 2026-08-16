@@ -21,10 +21,8 @@ tags:
   - slam
   - standard american
   - support
-systems: 
+systems:
   - acol
-  - flannery
-  - multi
   - precision
   - sayc
   - standard american

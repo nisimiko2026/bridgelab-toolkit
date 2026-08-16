@@ -13,8 +13,7 @@ tags:
 - opening
 - play
 - signal
-systems:
-- multi
+systems: []
 aliases: []
 acronyms: []
 references:

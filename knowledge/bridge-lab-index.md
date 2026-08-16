@@ -15,11 +15,7 @@ tags:
   - slam
   - standard american
   - strong club
-systems: 
-  - acol
-  - precision
-  - standard american
-  - strong club
+systems: []
 aliases: []
 acronyms: []
 references: 

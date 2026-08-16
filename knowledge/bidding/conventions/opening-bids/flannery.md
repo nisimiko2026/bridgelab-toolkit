@@ -21,8 +21,7 @@ tags:
   - response
   - slam
   - takeout
-systems: 
-  - flannery
+systems: []
 aliases: []
 acronyms: []
 references: 

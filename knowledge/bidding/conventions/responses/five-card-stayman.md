@@ -19,10 +19,7 @@ tags:
 - stayman
 - transfer
 - walsh
-systems:
-- jacoby
-- puppet stayman
-- walsh
+systems: []
 aliases: []
 acronyms: []
 references:

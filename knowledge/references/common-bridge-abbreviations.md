@@ -37,17 +37,7 @@ tags:
 - takeout
 - transfer
 - two over one
-systems:
-- acol
-- cappelletti
-- dont
-- jacoby
-- lebensohl
-- precision
-- puppet stayman
-- sayc
-- standard american
-- two over one
+systems: []
 aliases: []
 acronyms: []
 references:

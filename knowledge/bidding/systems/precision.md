@@ -39,16 +39,9 @@ tags:
   - support
   - systems
   - takeout
-systems: 
+systems:
   - acol
   - blue club
-  - cappelletti
-  - crash
-  - dont
-  - jacoby
-  - kokish
-  - mathe
-  - multi
   - precision
   - sayc
   - standard american

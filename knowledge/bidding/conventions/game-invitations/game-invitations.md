@@ -13,9 +13,7 @@ tags:
   - slam
   - support
   - two over one
-systems: 
-  - drury
-  - jacoby
+systems:
   - two over one
 aliases: []
 acronyms: []

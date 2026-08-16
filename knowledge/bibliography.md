@@ -17,13 +17,7 @@ tags:
   - sayc
   - slam
   - standard american
-systems: 
-  - acol
-  - crash
-  - kokish
-  - precision
-  - sayc
-  - standard american
+systems: []
 aliases: []
 acronyms: []
 references: 

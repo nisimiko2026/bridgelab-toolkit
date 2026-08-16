@@ -39,15 +39,9 @@ tags:
   - systems
   - takeout
   - transfer
-systems: 
+systems:
   - acol
   - blue club
-  - cappelletti
-  - crash
-  - dont
-  - jacoby
-  - mathe
-  - multi
   - precision
   - sayc
   - standard american

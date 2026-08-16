@@ -16,9 +16,7 @@ tags:
   - response
   - responses to weak two openings
   - slam
-systems: 
-  - lebensohl
-  - multi
+systems: []
 aliases: []
 acronyms: []
 references: 

@@ -18,10 +18,9 @@ tags:
 - two over one
 - walsh
 systems:
-- precision
-- standard american
-- two over one
-- walsh
+  - precision
+  - standard american
+  - two over one
 aliases: []
 acronyms: []
 references:

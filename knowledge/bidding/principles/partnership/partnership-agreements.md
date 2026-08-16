@@ -33,15 +33,9 @@ tags:
 - support
 - takeout
 systems:
-- cappelletti
-- dont
-- drury
-- jacoby
-- lebensohl
-- multi
-- precision
-- standard american
-- strong club
+  - precision
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

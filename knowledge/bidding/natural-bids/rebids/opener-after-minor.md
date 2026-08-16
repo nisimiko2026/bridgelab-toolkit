@@ -19,12 +19,11 @@ tags:
   - standard american
   - support
   - walsh
-systems: 
+systems:
   - acol
   - precision
   - sayc
   - standard american
-  - walsh
 aliases: []
 acronyms: []
 references: 

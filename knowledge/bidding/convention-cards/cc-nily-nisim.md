@@ -21,11 +21,7 @@ tags:
 - stayman
 - support
 - transfer
-systems:
-- drury
-- jacoby
-- lebensohl
-- puppet stayman
+systems: []
 aliases: []
 acronyms: []
 references:

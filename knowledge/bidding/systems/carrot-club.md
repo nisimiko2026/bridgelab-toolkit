@@ -30,14 +30,10 @@ tags:
 - takeout
 - walsh
 systems:
-- acol
-- drury
-- jacoby
-- lebensohl
-- precision
-- standard american
-- strong club
-- walsh
+  - acol
+  - precision
+  - standard american
+  - strong club
 aliases: []
 acronyms: []
 references:

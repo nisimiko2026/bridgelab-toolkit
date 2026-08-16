@@ -22,10 +22,7 @@ tags:
   - relay
   - slam
   - transfer
-systems: 
-  - cappelletti
-  - dont
-  - multi
+systems:
   - precision
 aliases: []
 acronyms: []
