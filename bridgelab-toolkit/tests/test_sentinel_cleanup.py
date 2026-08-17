@@ -195,6 +195,7 @@ class SentinelCleanupTests(unittest.TestCase):
 
         self.assertEqual(help_result.exit_code, 0, help_result.output)
         self.assertIn("--apply", help_result.output)
+        self.assertIn("generated-reference", help_result.output)
         self.assertEqual(dry_run.exit_code, 0, dry_run.output)
         self.assertIn("bidding/topic.md", dry_run.output)
         self.assertTrue(source.exists())
@@ -275,6 +276,123 @@ class SentinelCleanupTests(unittest.TestCase):
         report = build_cleanup_report(
             self.root,
             only_reviewed_empty_subcategories=True,
+        )
+        stale = source.read_bytes() + b"external change\n"
+        source.write_bytes(stale)
+
+        with self.assertRaisesRegex(RuntimeError, "precondition mismatch"):
+            apply_cleanup(report, self.root, self.backup)
+
+        self.assertEqual(source.read_bytes(), stale)
+        self.assertFalse(self.backup.exists())
+
+    def test_generated_reference_mode_selects_exact_three_values_only(self) -> None:
+        approved = {
+            "acronyms.md": "acronyms",
+            "bibliography.md": "bibliography",
+            "glossary.md": "glossary",
+        }
+        sources = {
+            relative: self.write(
+                relative,
+                article_text(
+                    subcategory="None",
+                    difficulty="None",
+                    tags=("none", "reference"),
+                ),
+            )
+            for relative in approved
+        }
+        root_index = self.write(
+            "bridge-lab-index.md",
+            article_text(subcategory="None", tags=("reference",)),
+        )
+        domain_index = self.write(
+            "duplicates/duplicates-index.md",
+            article_text(subcategory="None", tags=("duplicate",)),
+        )
+        originals = {
+            path: path.read_bytes()
+            for path in (*sources.values(), root_index, domain_index)
+        }
+
+        dry_run = self.invoke("--only-reviewed-generated-reference-subcategories")
+
+        self.assertEqual(dry_run.exit_code, 0, dry_run.output)
+        self.assertIn("Files to update              : 3", dry_run.output)
+        self.assertIn("Reviewed subcategories assign: 3", dry_run.output)
+        self.assertIn("Exact 'none' tags to remove  : 0", dry_run.output)
+        self.assertIn("Exempt difficulties to clear : 0", dry_run.output)
+        self.assertNotIn("CLEAR SUBCATEGORY", dry_run.output)
+        for relative, value in approved.items():
+            self.assertIn(
+                f"SET SUBCATEGORY | {relative} | literal 'None' -> '{value}'",
+                dry_run.output,
+            )
+        for path, original in originals.items():
+            self.assertEqual(path.read_bytes(), original)
+
+        applied = self.invoke(
+            "--only-reviewed-generated-reference-subcategories",
+            "--apply",
+        )
+
+        self.assertEqual(applied.exit_code, 0, applied.output)
+        for relative, value in approved.items():
+            source = sources[relative]
+            self.assertIn(
+                f"subcategory: {value}\n",
+                source.read_text(encoding="utf-8"),
+            )
+            self.assertIn("  - none\n", source.read_text(encoding="utf-8"))
+            self.assertIn("difficulty: None\n", source.read_text(encoding="utf-8"))
+            self.assertEqual(
+                (self.backup / relative).read_bytes(),
+                originals[source],
+            )
+        self.assertEqual(root_index.read_bytes(), originals[root_index])
+        self.assertEqual(domain_index.read_bytes(), originals[domain_index])
+
+    def test_generated_reference_mode_preserves_crlf_date_body_and_is_idempotent(
+        self,
+    ) -> None:
+        original = article_text(
+            subcategory="None",
+            difficulty="None",
+            tags=("none", "reference"),
+            newline="\r\n",
+        )
+        source = self.write("glossary.md", original)
+
+        first = self.invoke(
+            "--only-reviewed-generated-reference-subcategories",
+            "--apply",
+        )
+        expected = original.replace(
+            "subcategory: None\r\n",
+            "subcategory: glossary\r\n",
+        )
+        second = build_cleanup_report(
+            self.root,
+            only_reviewed_generated_reference_subcategories=True,
+        )
+
+        self.assertEqual(first.exit_code, 0, first.output)
+        self.assertEqual(source.read_bytes(), expected.encode("utf-8"))
+        self.assertIn(b"last_updated: 2026-07-23\r\n", source.read_bytes())
+        self.assertIn(b"Body  with  spacing.\r\n", source.read_bytes())
+        self.assertIn(b"  - none\r\n", source.read_bytes())
+        self.assertIn(b"difficulty: None\r\n", source.read_bytes())
+        self.assertEqual(second.actions, ())
+
+    def test_generated_reference_stale_precondition_aborts_safely(self) -> None:
+        source = self.write(
+            "bibliography.md",
+            article_text(subcategory="None", tags=("reference",)),
+        )
+        report = build_cleanup_report(
+            self.root,
+            only_reviewed_generated_reference_subcategories=True,
         )
         stale = source.read_bytes() + b"external change\n"
         source.write_bytes(stale)

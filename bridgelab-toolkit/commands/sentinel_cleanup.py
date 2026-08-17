@@ -14,10 +14,14 @@ def run(
     backup: Path,
     apply: bool,
     only_reviewed_empty_subcategories: bool = False,
+    only_reviewed_generated_reference_subcategories: bool = False,
 ) -> None:
     report = build_cleanup_report(
         root,
         only_reviewed_empty_subcategories=only_reviewed_empty_subcategories,
+        only_reviewed_generated_reference_subcategories=(
+            only_reviewed_generated_reference_subcategories
+        ),
     )
 
     for action in report.actions:
@@ -36,6 +40,11 @@ def run(
                 f"CLEAR SUBCATEGORY | {action.article} | literal 'None' | "
                 "reviewed intentional empty"
             )
+        elif action.subcategory_replacement is not None:
+            typer.echo(
+                f"SET SUBCATEGORY | {action.article} | literal 'None' -> "
+                f"{action.subcategory_replacement!r} | reviewed generated reference"
+            )
     for article in report.literal_none_subcategories:
         typer.echo(f"REPORT ONLY | {article} | subcategory | literal 'None'")
     for article in report.non_exempt_literal_none_difficulties:
@@ -48,6 +57,7 @@ def run(
     typer.echo(f"Exact 'none' tags to remove  : {report.tag_removals}")
     typer.echo(f"Exempt difficulties to clear : {report.difficulties_cleared}")
     typer.echo(f"Reviewed subcategories clear : {report.subcategories_cleared}")
+    typer.echo(f"Reviewed subcategories assign: {report.subcategories_assigned}")
     typer.echo(
         "Literal subcategories reported: " f"{len(report.literal_none_subcategories)}"
     )

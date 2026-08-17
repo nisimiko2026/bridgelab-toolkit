@@ -137,6 +137,11 @@ def sentinel_cleanup(
         "--only-reviewed-empty-subcategories",
         help="Limit the operation to approved intentional-empty subcategories.",
     ),
+    only_reviewed_generated_reference_subcategories: bool = typer.Option(
+        False,
+        "--only-reviewed-generated-reference-subcategories",
+        help="Limit the operation to approved generated-reference subcategories.",
+    ),
 ) -> None:
     """Remove safe metadata sentinels without reserializing YAML."""
     sentinel_cleanup_command(
@@ -144,6 +149,9 @@ def sentinel_cleanup(
         backup,
         apply,
         only_reviewed_empty_subcategories=only_reviewed_empty_subcategories,
+        only_reviewed_generated_reference_subcategories=(
+            only_reviewed_generated_reference_subcategories
+        ),
     )
 
 
