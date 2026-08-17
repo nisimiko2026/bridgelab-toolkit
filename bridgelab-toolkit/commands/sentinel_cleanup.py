@@ -9,8 +9,16 @@ import typer
 from metadata.sentinel_cleanup import apply_cleanup, build_cleanup_report
 
 
-def run(root: Path, backup: Path, apply: bool) -> None:
-    report = build_cleanup_report(root)
+def run(
+    root: Path,
+    backup: Path,
+    apply: bool,
+    only_reviewed_empty_subcategories: bool = False,
+) -> None:
+    report = build_cleanup_report(
+        root,
+        only_reviewed_empty_subcategories=only_reviewed_empty_subcategories,
+    )
 
     for action in report.actions:
         if action.tag_removals:
@@ -23,6 +31,11 @@ def run(root: Path, backup: Path, apply: bool) -> None:
                 f"CLEAR DIFFICULTY | {action.article} | literal 'None' | "
                 "difficulty-exempt"
             )
+        if action.subcategory_cleared:
+            typer.echo(
+                f"CLEAR SUBCATEGORY | {action.article} | literal 'None' | "
+                "reviewed intentional empty"
+            )
     for article in report.literal_none_subcategories:
         typer.echo(f"REPORT ONLY | {article} | subcategory | literal 'None'")
     for article in report.non_exempt_literal_none_difficulties:
@@ -34,6 +47,7 @@ def run(root: Path, backup: Path, apply: bool) -> None:
     typer.echo(f"Files to update              : {len(report.actions)}")
     typer.echo(f"Exact 'none' tags to remove  : {report.tag_removals}")
     typer.echo(f"Exempt difficulties to clear : {report.difficulties_cleared}")
+    typer.echo(f"Reviewed subcategories clear : {report.subcategories_cleared}")
     typer.echo(
         "Literal subcategories reported: " f"{len(report.literal_none_subcategories)}"
     )

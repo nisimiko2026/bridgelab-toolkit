@@ -199,6 +199,92 @@ class SentinelCleanupTests(unittest.TestCase):
         self.assertIn("bidding/topic.md", dry_run.output)
         self.assertTrue(source.exists())
 
+    def test_reviewed_subcategory_mode_changes_only_two_approved_files(self) -> None:
+        approved_root = self.write(
+            "bridge-lab-index.md",
+            article_text(subcategory="None", tags=("reference",)),
+        )
+        approved_index = self.write(
+            "duplicates/duplicates-index.md",
+            article_text(subcategory="None", tags=("duplicate",)),
+        )
+        unresolved = self.write(
+            "acronyms.md",
+            article_text(subcategory="None", tags=("reference",)),
+        )
+        unrelated = self.write(
+            "bidding/topic.md",
+            article_text(tags=("none",), difficulty="None"),
+        )
+        originals = {
+            path: path.read_bytes()
+            for path in (approved_root, approved_index, unresolved, unrelated)
+        }
+
+        dry_run = self.invoke("--only-reviewed-empty-subcategories")
+
+        self.assertEqual(dry_run.exit_code, 0, dry_run.output)
+        self.assertIn("Files to update              : 2", dry_run.output)
+        self.assertIn("Reviewed subcategories clear : 2", dry_run.output)
+        self.assertIn("REPORT ONLY | acronyms.md", dry_run.output)
+        self.assertNotIn("REMOVE TAG", dry_run.output)
+        for path, original in originals.items():
+            self.assertEqual(path.read_bytes(), original)
+
+        applied = self.invoke("--only-reviewed-empty-subcategories", "--apply")
+
+        self.assertEqual(applied.exit_code, 0, applied.output)
+        for path in (approved_root, approved_index):
+            self.assertIn("subcategory: ''\n", path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                (self.backup / path.relative_to(self.root)).read_bytes(),
+                originals[path],
+            )
+        self.assertEqual(unresolved.read_bytes(), originals[unresolved])
+        self.assertEqual(unrelated.read_bytes(), originals[unrelated])
+
+    def test_reviewed_subcategory_preserves_bytes_and_is_idempotent(self) -> None:
+        original = article_text(
+            subcategory="None",
+            tags=("reference",),
+            newline="\r\n",
+        )
+        source = self.write("bridge-lab-index.md", original)
+
+        first = self.invoke("--only-reviewed-empty-subcategories", "--apply")
+        expected = original.replace(
+            "subcategory: None\r\n",
+            "subcategory: ''\r\n",
+        )
+        second_report = build_cleanup_report(
+            self.root,
+            only_reviewed_empty_subcategories=True,
+        )
+
+        self.assertEqual(first.exit_code, 0, first.output)
+        self.assertEqual(source.read_bytes(), expected.encode("utf-8"))
+        self.assertIn(b"last_updated: 2026-07-23\r\n", source.read_bytes())
+        self.assertIn(b"Body  with  spacing.\r\n", source.read_bytes())
+        self.assertEqual(second_report.actions, ())
+
+    def test_reviewed_subcategory_stale_precondition_aborts_before_backup(self) -> None:
+        source = self.write(
+            "bridge-lab-index.md",
+            article_text(subcategory="None", tags=("reference",)),
+        )
+        report = build_cleanup_report(
+            self.root,
+            only_reviewed_empty_subcategories=True,
+        )
+        stale = source.read_bytes() + b"external change\n"
+        source.write_bytes(stale)
+
+        with self.assertRaisesRegex(RuntimeError, "precondition mismatch"):
+            apply_cleanup(report, self.root, self.backup)
+
+        self.assertEqual(source.read_bytes(), stale)
+        self.assertFalse(self.backup.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

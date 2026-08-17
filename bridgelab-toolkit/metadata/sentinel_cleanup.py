@@ -25,6 +25,14 @@ DIFFICULTY_NONE_RE = re.compile(
     r"^(?P<prefix>difficulty:[ \t]*)(?:None|'None'|\"None\")"
     r"(?P<suffix>[ \t]*(?:#[^\r\n]*)?(?:\r?\n|\Z))"
 )
+SUBCATEGORY_NONE_RE = re.compile(
+    r"^(?P<prefix>subcategory:[ \t]*)None"
+    r"(?P<suffix>[ \t]*(?:#[^\r\n]*)?(?:\r?\n|\Z))"
+)
+REVIEWED_EMPTY_SUBCATEGORIES = {
+    "bridge-lab-index.md",
+    "duplicates/duplicates-index.md",
+}
 
 
 @dataclass(frozen=True, slots=True)
@@ -35,6 +43,7 @@ class CleanupAction:
     updated: bytes
     tag_removals: int
     difficulty_cleared: bool
+    subcategory_cleared: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -51,8 +60,16 @@ class CleanupReport:
     def difficulties_cleared(self) -> int:
         return sum(action.difficulty_cleared for action in self.actions)
 
+    @property
+    def subcategories_cleared(self) -> int:
+        return sum(action.subcategory_cleared for action in self.actions)
 
-def build_cleanup_report(root: Path) -> CleanupReport:
+
+def build_cleanup_report(
+    root: Path,
+    *,
+    only_reviewed_empty_subcategories: bool = False,
+) -> CleanupReport:
     """Build deterministic changes entirely in memory."""
 
     root = root.resolve()
@@ -75,26 +92,41 @@ def build_cleanup_report(root: Path) -> CleanupReport:
 
         tags = data.get("tags")
         expected_tag_removals = (
-            sum(item == "none" for item in tags) if isinstance(tags, list) else 0
+            0
+            if only_reviewed_empty_subcategories
+            else sum(item == "none" for item in tags) if isinstance(tags, list) else 0
         )
-        literal_none_difficulty = data.get("difficulty") == "None"
+        literal_none_difficulty = (
+            not only_reviewed_empty_subcategories and data.get("difficulty") == "None"
+        )
         difficulty_exempt = literal_none_difficulty and _difficulty_is_exempt(
             path,
             root,
         )
+        subcategory_approved = (
+            only_reviewed_empty_subcategories
+            and article in REVIEWED_EMPTY_SUBCATEGORIES
+            and data.get("subcategory") == "None"
+        )
 
         if data.get("subcategory") == "None":
-            subcategories.append(article)
+            if not subcategory_approved:
+                subcategories.append(article)
         if literal_none_difficulty and not difficulty_exempt:
             non_exempt_difficulties.append(article)
 
-        if not expected_tag_removals and not difficulty_exempt:
+        if (
+            not expected_tag_removals
+            and not difficulty_exempt
+            and not subcategory_approved
+        ):
             continue
 
         updated_front_matter = _patch_front_matter(
             front_matter,
             expected_tag_removals=expected_tag_removals,
             clear_difficulty=difficulty_exempt,
+            clear_subcategory=subcategory_approved,
             article=article,
         )
         updated_text = updated_front_matter + text[match.end() :]
@@ -109,6 +141,7 @@ def build_cleanup_report(root: Path) -> CleanupReport:
                 updated=updated,
                 tag_removals=expected_tag_removals,
                 difficulty_cleared=difficulty_exempt,
+                subcategory_cleared=subcategory_approved,
             )
         )
 
@@ -180,11 +213,13 @@ def _patch_front_matter(
     *,
     expected_tag_removals: int,
     clear_difficulty: bool,
+    clear_subcategory: bool,
     article: str,
 ) -> str:
     lines = front_matter.splitlines(keepends=True)
     tag_removals = 0
     difficulty_clears = 0
+    subcategory_clears = 0
     updated: list[str] = []
     in_tags = False
 
@@ -204,6 +239,12 @@ def _patch_front_matter(
                 difficulty_clears += 1
                 updated.append(f"{match.group('prefix')}''{match.group('suffix')}")
                 continue
+        if clear_subcategory:
+            match = SUBCATEGORY_NONE_RE.fullmatch(line)
+            if match:
+                subcategory_clears += 1
+                updated.append(f"{match.group('prefix')}''{match.group('suffix')}")
+                continue
         updated.append(line)
 
     if tag_removals != expected_tag_removals:
@@ -217,6 +258,13 @@ def _patch_front_matter(
             f"Unsafe difficulty precondition in {article}: expected "
             f"{expected_difficulty_clears} literal 'None' line(s), found "
             f"{difficulty_clears}"
+        )
+    expected_subcategory_clears = int(clear_subcategory)
+    if subcategory_clears != expected_subcategory_clears:
+        raise RuntimeError(
+            f"Unsafe subcategory precondition in {article}: expected "
+            f"{expected_subcategory_clears} literal 'None' line(s), found "
+            f"{subcategory_clears}"
         )
     return "".join(updated)
 

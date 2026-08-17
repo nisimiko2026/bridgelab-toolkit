@@ -132,9 +132,19 @@ def sentinel_cleanup(
         "--apply",
         help="Apply the exact proposed changes after creating backups.",
     ),
+    only_reviewed_empty_subcategories: bool = typer.Option(
+        False,
+        "--only-reviewed-empty-subcategories",
+        help="Limit the operation to approved intentional-empty subcategories.",
+    ),
 ) -> None:
     """Remove safe metadata sentinels without reserializing YAML."""
-    sentinel_cleanup_command(root, backup, apply)
+    sentinel_cleanup_command(
+        root,
+        backup,
+        apply,
+        only_reviewed_empty_subcategories=only_reviewed_empty_subcategories,
+    )
 
 
 @app.command("repair-plan")
