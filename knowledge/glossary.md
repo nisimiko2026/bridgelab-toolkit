@@ -2,7 +2,7 @@
 title: Glossary
 description: Alphabetical definitions of bridge terms, bids, conventions, card-play techniques, and duplicate-bridge terminology.
 category: Reference
-subcategory: None
+subcategory: glossary
 difficulty: ''
 tags: 
   - blackwood

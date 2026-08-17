@@ -2,7 +2,7 @@
 title: Bibliography
 description: Primary references, classic texts, modern publications, and official sources consulted in the development of BridgeLab.
 category: Reference
-subcategory: None
+subcategory: bibliography
 difficulty: ''
 tags: 
   - acol

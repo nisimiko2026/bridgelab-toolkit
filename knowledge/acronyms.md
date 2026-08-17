@@ -2,7 +2,7 @@
 title: Acronyms
 description: Alphabetical reference of bridge abbreviations and acronyms used throughout BridgeLab.
 category: Reference
-subcategory: None
+subcategory: acronyms
 difficulty: ''
 tags: 
   - blackwood
