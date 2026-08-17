@@ -1,7 +1,7 @@
 ---
 title: Endgame Defence
 description: Index and navigation guide for defensive play in endgame positions in the BridgeLab Knowledge Base.
-category: Card Play – Defence
+category: play
 subcategory: defence
 difficulty: Advanced to Expert
 tags: 
