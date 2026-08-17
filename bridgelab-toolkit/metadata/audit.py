@@ -332,17 +332,6 @@ class MetadataAuditor:
                         "Status contains a difficulty value; status semantics remain provisional.",
                     )
                 )
-            elif value != "Draft":
-                findings.append(
-                    self._finding(
-                        record,
-                        field,
-                        value,
-                        "status.provisional",
-                        "Info",
-                        "Non-Draft status observed; the controlled status vocabulary is unresolved.",
-                    )
-                )
         return findings
 
     def _audit_list(

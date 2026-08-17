@@ -125,6 +125,66 @@ class MetadataAuditTests(unittest.TestCase):
             }.issubset(rules)
         )
 
+    def test_status_has_no_provisional_vocabulary_rule(self) -> None:
+        paths = []
+        for filename, status in (
+            ("draft.md", "Draft"),
+            ("standard.md", "Standard"),
+            ("reviewed-locally.md", "Reviewed Locally"),
+        ):
+            data = dict(FIELDS)
+            data["status"] = status
+            paths.append(self.write(f"bidding/{filename}", data))
+        before = {path: path.read_bytes() for path in paths}
+
+        _, findings = self.audit()
+
+        self.assertFalse(any(item.rule == "status.provisional" for item in findings))
+        self.assertFalse(any(item.field == "status" for item in findings))
+        self.assertEqual({path: path.read_bytes() for path in paths}, before)
+
+    def test_status_difficulty_value_remains_a_warning(self) -> None:
+        data = dict(FIELDS)
+        data["status"] = "Advanced"
+        source = self.write("bidding/advanced.md", data)
+        before = source.read_bytes()
+
+        _, findings = self.audit()
+        status_findings = [item for item in findings if item.field == "status"]
+
+        self.assertEqual(len(status_findings), 1)
+        self.assertEqual(status_findings[0].rule, "status.difficulty-value")
+        self.assertEqual(status_findings[0].severity, "Warning")
+        self.assertEqual(source.read_bytes(), before)
+
+    def test_status_structural_findings_are_unchanged(self) -> None:
+        cases = {
+            "missing.md": (None, "field.missing", "Error"),
+            "null.md": (None, "value.yaml-null", "Warning"),
+            "empty.md": ("", "value.empty", "Error"),
+            "type.md": (["Draft"], "type.scalar", "Error"),
+        }
+        paths = []
+        for filename, (value, _, _) in cases.items():
+            data = dict(FIELDS)
+            if filename == "missing.md":
+                del data["status"]
+            else:
+                data["status"] = value
+            paths.append(self.write(f"bidding/{filename}", data))
+        before = {path: path.read_bytes() for path in paths}
+
+        _, findings = self.audit()
+        observed = {
+            (Path(item.article).name, item.rule, item.severity)
+            for item in findings
+            if item.field == "status"
+        }
+
+        for filename, (_, rule, severity) in cases.items():
+            self.assertIn((filename, rule, severity), observed)
+        self.assertEqual({path: path.read_bytes() for path in paths}, before)
+
     def test_findings_are_deterministic_and_provisional_taxonomy_is_not_error(
         self,
     ) -> None:

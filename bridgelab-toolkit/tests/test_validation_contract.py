@@ -272,6 +272,24 @@ class LegacyValidationContractTests(unittest.TestCase):
             ("impossible.md", "Invalid last_updated calendar date"), date_issues
         )
 
+    def test_metadata_validator_does_not_enforce_status_vocabulary(self) -> None:
+        articles = [
+            article_with_complete_metadata("draft.md", "Beginner"),
+            article_with_complete_metadata("standard.md", "Beginner"),
+            article_with_complete_metadata("arbitrary.md", "Beginner"),
+            article_with_complete_metadata("advanced.md", "Beginner"),
+        ]
+        for item, status in zip(
+            articles,
+            ("Draft", "Standard", "Reviewed Locally", "Advanced"),
+            strict=True,
+        ):
+            item.metadata.status = status
+
+        issues = MetadataValidator().validate(articles)
+
+        self.assertFalse(any(issue.category == "status" for issue in issues))
+
     def test_literal_none_metadata_values_are_treated_as_missing(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)
