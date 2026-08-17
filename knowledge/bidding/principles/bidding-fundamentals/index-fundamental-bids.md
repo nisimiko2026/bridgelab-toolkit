@@ -2,7 +2,7 @@
 title: Fundamental Bids
 description: Index and navigation guide for the fundamental natural bids that form
   the foundation of constructive bridge bidding.
-category: Bidding – Natural Bidding
+category: bidding
 subcategory: principles
 difficulty: Beginner
 tags:

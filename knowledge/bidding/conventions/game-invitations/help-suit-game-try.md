@@ -1,7 +1,7 @@
 ---
 title: Help Suit Game Try (HSGT)
 description: A comprehensive guide to the Help Suit Game Try convention, including theory, hand evaluation, partnership agreements, examples, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 

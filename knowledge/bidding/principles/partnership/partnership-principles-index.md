@@ -1,7 +1,7 @@
 ---
 title: Partnership Principles
 description: Index and navigation guide for the fundamental principles that enable successful bridge partnerships.
-category: Bidding – Principles
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Long Suit Game Try (LSGT)
 description: A comprehensive guide to the Long Suit Game Try convention, including theory, mechanics, hand evaluation, partnership agreements, examples, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 

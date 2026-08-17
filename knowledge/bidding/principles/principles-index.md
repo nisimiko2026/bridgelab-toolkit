@@ -2,7 +2,7 @@
 title: Bidding Principles
 description: Index and navigation guide for the fundamental principles that govern
   successful bridge bidding.
-category: Bidding – Principles
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:

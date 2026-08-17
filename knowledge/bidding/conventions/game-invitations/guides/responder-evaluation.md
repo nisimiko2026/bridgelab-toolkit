@@ -1,7 +1,7 @@
 ---
 title: Responder Evaluation
 description: Comprehensive guide to evaluating a partner's Game Try, including hand reassessment, trump quality, controls, distribution, working values, and decision-making principles.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Choosing a Game Try
 description: Decision guide for selecting the most appropriate Game Try method based on the auction, partnership style, and hand characteristics.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 

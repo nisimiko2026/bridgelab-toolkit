@@ -1,7 +1,7 @@
 ---
 title: Two-Way Game Try
 description: A comprehensive guide to the Two-Way Game Try convention, including theory, mechanics, partnership agreements, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

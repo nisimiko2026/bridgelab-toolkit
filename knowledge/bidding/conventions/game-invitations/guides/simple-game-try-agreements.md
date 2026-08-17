@@ -1,7 +1,7 @@
 ---
 title: Simple Game Try Agreements
 description: Recommended Game Try agreements for beginner, casual, and club partnerships using straightforward, easy-to-remember methods.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Beginner to Intermediate
 tags: 

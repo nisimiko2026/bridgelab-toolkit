@@ -1,7 +1,7 @@
 ---
 title: Game Try Comparison
 description: Comprehensive comparison of all major Game Try methods, including advantages, disadvantages, system compatibility, complexity, and recommended usage.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

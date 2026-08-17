@@ -1,7 +1,7 @@
 ---
 title: 2NT Game Try
 description: Comprehensive guide to the Artificial 2NT Game Try, including philosophy, structure, partnership agreements, continuations, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

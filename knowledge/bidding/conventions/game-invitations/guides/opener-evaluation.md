@@ -1,7 +1,7 @@
 ---
 title: Opener Evaluation
 description: Comprehensive guide to deciding whether opener should make a Game Try after a major-suit raise, including hand reassessment, offensive potential, distribution, controls, and partnership considerations.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

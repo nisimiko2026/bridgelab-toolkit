@@ -1,7 +1,7 @@
 ---
 title: Short Suit Game Try (SSGT)
 description: A comprehensive guide to the Short Suit Game Try convention, including theory, objectives, hand evaluation, partnership agreements, examples, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 

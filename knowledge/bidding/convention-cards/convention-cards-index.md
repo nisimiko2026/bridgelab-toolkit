@@ -2,7 +2,7 @@
 title: Convention Cards Index
 description: Index and navigation guide for convention cards, disclosure requirements,
   and partnership documentation in the BridgeLab Knowledge Base.
-category: Bidding – Principles
+category: bidding
 subcategory: convention-cards
 difficulty: Beginner to Expert
 tags:

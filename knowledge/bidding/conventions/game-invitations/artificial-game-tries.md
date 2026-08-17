@@ -1,7 +1,7 @@
 ---
 title: Artificial Game Tries
 description: A comprehensive guide to Artificial Game Try methods, including philosophy, common treatments, relay structures, partnership agreements, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

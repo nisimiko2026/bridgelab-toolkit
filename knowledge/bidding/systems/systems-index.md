@@ -2,7 +2,7 @@
 title: Bidding Systems
 description: Index and navigation guide for complete bridge bidding systems in the
   BridgeLab Knowledge Base.
-category: Bidding – Systems
+category: bidding
 subcategory: systems
 difficulty: Beginner to Expert
 tags:

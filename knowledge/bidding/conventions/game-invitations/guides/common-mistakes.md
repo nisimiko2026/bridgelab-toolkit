@@ -1,7 +1,7 @@
 ---
 title: Common Mistakes in Game Try Bidding
 description: Comprehensive guide to the most common mistakes made when using Game Try conventions, including bidding errors, hand evaluation mistakes, partnership misunderstandings, and expert recommendations.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Beginner to Expert
 tags: 

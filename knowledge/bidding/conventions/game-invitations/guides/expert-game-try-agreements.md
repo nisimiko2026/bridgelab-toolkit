@@ -1,7 +1,7 @@
 ---
 title: Expert Game Try Agreements
 description: Recommended partnership agreements for advanced and expert players using modern Game Try methods.
-category: Conventions – Game Invitations – Guides
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Maximal Game Try
 description: A comprehensive guide to the Maximal Game Try convention, including theory, objectives, competitive auctions, partnership agreements, and expert practice.
-category: Conventions – Game Invitations
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 
