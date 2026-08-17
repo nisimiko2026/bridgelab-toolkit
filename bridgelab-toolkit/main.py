@@ -19,6 +19,7 @@ from commands.metadata_audit import run as metadata_audit_command
 from commands.category_impact import run as category_impact_command
 from commands.repair_bidding_categories import run as repair_bidding_categories_command
 from commands.repair_play_endgame_category import run as repair_play_endgame_command
+from commands.repair_play_counting_category import run as repair_play_counting_command
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -171,6 +172,26 @@ def repair_play_endgame_category(
 ) -> None:
     """Repair the reviewed defence-endgame category; dry-run by default."""
     repair_play_endgame_command(root, backup, apply)
+
+
+@app.command("repair-play-counting-category")
+def repair_play_counting_category(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed single category-line change.",
+    ),
+) -> None:
+    """Repair the reviewed defence-counting category; dry-run by default."""
+    repair_play_counting_command(root, backup, apply)
 
 
 @app.command("sentinel-cleanup")

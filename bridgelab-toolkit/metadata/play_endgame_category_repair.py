@@ -11,6 +11,7 @@ from metadata.sentinel_cleanup import FRONT_MATTER_RE, _atomic_write, _load_fron
 
 
 REVIEWED_ARTICLE = "play/defence/endgame-defence/endgame-defence-index.md"
+REVIEWED_COUNTING_ARTICLE = "play/defence/counting/defence-counting-index.md"
 EXPECTED_CATEGORY = "Card Play – Defence"
 PROPOSED_CATEGORY = "play"
 
@@ -37,33 +38,47 @@ class PlayEndgameCategoryReport:
 def build_play_endgame_category_report(root: Path) -> PlayEndgameCategoryReport:
     """Build the one reviewed category-line change entirely in memory."""
 
+    return _build_play_category_report(root, REVIEWED_ARTICLE)
+
+
+def build_play_counting_category_report(root: Path) -> PlayEndgameCategoryReport:
+    """Build the reviewed defence-counting category change in memory."""
+
+    return _build_play_category_report(root, REVIEWED_COUNTING_ARTICLE)
+
+
+def _build_play_category_report(
+    root: Path, reviewed_article: str
+) -> PlayEndgameCategoryReport:
+    """Build one explicitly allowlisted play category-line action."""
+
     root = root.resolve()
-    path = root / Path(REVIEWED_ARTICLE)
+    path = root / Path(reviewed_article)
     if not path.is_file():
-        raise RuntimeError(f"Reviewed play category file is missing: {REVIEWED_ARTICLE}")
+        raise RuntimeError(f"Reviewed play category file is missing: {reviewed_article}")
     original = path.read_bytes()
     try:
         text = original.decode("utf-8")
     except UnicodeDecodeError as error:
-        raise RuntimeError(f"Article is not valid UTF-8: {REVIEWED_ARTICLE}") from error
+        raise RuntimeError(f"Article is not valid UTF-8: {reviewed_article}") from error
     front_match = FRONT_MATTER_RE.match(text)
     if not front_match:
-        raise RuntimeError(f"Missing or malformed front matter: {REVIEWED_ARTICLE}")
+        raise RuntimeError(f"Missing or malformed front matter: {reviewed_article}")
     front_matter = front_match.group(0)
-    data = _load_front_matter(front_matter, REVIEWED_ARTICLE)
+    data = _load_front_matter(front_matter, reviewed_article)
     if data is None:
-        raise RuntimeError(f"Empty front matter: {REVIEWED_ARTICLE}")
+        raise RuntimeError(f"Empty front matter: {reviewed_article}")
     current = data.get("category")
     if current == PROPOSED_CATEGORY:
-        _require_exact_category_line(front_matter, PROPOSED_CATEGORY, REVIEWED_ARTICLE)
+        _require_exact_category_line(front_matter, PROPOSED_CATEGORY, reviewed_article)
         return PlayEndgameCategoryReport(selected_files=1, actions=())
     if current != EXPECTED_CATEGORY:
         raise RuntimeError(
-            f"Reviewed category precondition mismatch: {REVIEWED_ARTICLE}: "
+            f"Reviewed category precondition mismatch: {reviewed_article}: "
             f"expected {EXPECTED_CATEGORY!r}, observed {current!r}"
         )
     match = _require_exact_category_line(
-        front_matter, EXPECTED_CATEGORY, REVIEWED_ARTICLE
+        front_matter, EXPECTED_CATEGORY, reviewed_article
     )
     updated_front = (
         front_matter[: match.start()]
@@ -74,7 +89,7 @@ def build_play_endgame_category_report(root: Path) -> PlayEndgameCategoryReport:
     tags = data.get("tags")
     retained_tag = EXPECTED_CATEGORY.casefold()
     action = PlayEndgameCategoryAction(
-        article=REVIEWED_ARTICLE,
+        article=reviewed_article,
         path=path,
         original=original,
         updated=updated,
@@ -91,6 +106,22 @@ def apply_play_endgame_category_report(
     report: PlayEndgameCategoryReport, root: Path, backup: Path
 ) -> None:
     """Apply the reviewed action after all source preconditions pass."""
+
+    _apply_play_category_report(report, root, backup)
+
+
+def apply_play_counting_category_report(
+    report: PlayEndgameCategoryReport, root: Path, backup: Path
+) -> None:
+    """Apply the reviewed counting action using the same safety contract."""
+
+    _apply_play_category_report(report, root, backup)
+
+
+def _apply_play_category_report(
+    report: PlayEndgameCategoryReport, root: Path, backup: Path
+) -> None:
+    """Apply one reviewed action after every precondition passes."""
 
     if not report.actions:
         return
