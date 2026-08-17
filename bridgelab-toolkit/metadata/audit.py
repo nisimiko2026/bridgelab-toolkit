@@ -246,16 +246,7 @@ class MetadataAuditor:
             and isinstance(value, dt.date)
             and not isinstance(value, dt.datetime)
         ):
-            return [
-                self._finding(
-                    record,
-                    field,
-                    value.isoformat(),
-                    "date.yaml-type",
-                    "Warning",
-                    "Date is an unquoted YAML date; canonical serialization is an ISO date string.",
-                )
-            ]
+            return self._audit_date(record, value.isoformat())
         if not isinstance(value, str):
             return [
                 self._finding(

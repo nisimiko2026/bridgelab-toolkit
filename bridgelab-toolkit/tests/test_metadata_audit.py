@@ -1,14 +1,18 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
+from dataclasses import asdict
 from pathlib import Path
 
 import yaml
 from typer.testing import CliRunner
 
 from main import app
+from core.repository import Repository
 from metadata.audit import MetadataAuditor
+from metadata.validator import MetadataValidator
 
 FIELDS = {
     "title": "Article",
@@ -166,6 +170,61 @@ class MetadataAuditTests(unittest.TestCase):
         self.assertEqual(len(acronym_findings), 1)
         self.assertEqual(acronym_findings[0].severity, "Info")
         self.assertEqual(acronym_findings[0].article, "[repository]")
+
+    def test_quoted_and_unquoted_dates_have_identical_semantics(self) -> None:
+        quoted = self.write(
+            "bidding/quoted.md",
+            raw=(
+                "---\n"
+                + yaml.safe_dump(FIELDS, sort_keys=False)
+                + "---\n# Article\n"
+            ),
+        )
+        unquoted_text = quoted.read_text(encoding="utf-8").replace(
+            "last_updated: '2026-08-17'", "last_updated: 2026-08-17"
+        )
+        unquoted = self.write("bidding/unquoted.md", raw=unquoted_text)
+        before = {path: path.read_bytes() for path in (quoted, unquoted)}
+
+        articles = Repository(self.root).build()
+        dates = {article.filename: article.metadata.last_updated for article in articles}
+        validation = MetadataValidator().validate(articles)
+        _, findings = self.audit()
+
+        self.assertEqual(
+            dates,
+            {"quoted.md": "2026-08-17", "unquoted.md": "2026-08-17"},
+        )
+        self.assertFalse(any(issue.category == "last_updated" for issue in validation))
+        self.assertFalse(any(item.field == "last_updated" for item in findings))
+        self.assertTrue(all(json.dumps(asdict(article.metadata)) for article in articles))
+        self.assertEqual({path: path.read_bytes() for path in before}, before)
+
+    def test_date_audit_rejects_format_datetime_and_unrelated_scalar_types(self) -> None:
+        cases = {
+            "malformed.md": ("'2026-8-17'", "date.format"),
+            "impossible.md": ("'2026-02-30'", "date.invalid"),
+            "datetime.md": ("2026-08-17T12:34:56", "type.scalar"),
+            "integer.md": ("20260817", "type.scalar"),
+        }
+        template = "---\n" + yaml.safe_dump(FIELDS, sort_keys=False) + "---\n# Article\n"
+        for filename, (raw_date, _) in cases.items():
+            self.write(
+                f"bidding/{filename}",
+                raw=template.replace(
+                    "last_updated: '2026-08-17'", f"last_updated: {raw_date}"
+                ),
+            )
+
+        _, findings = self.audit()
+        rules = {
+            (Path(item.article).name, item.rule)
+            for item in findings
+            if item.field == "last_updated"
+        }
+
+        for filename, (_, rule) in cases.items():
+            self.assertIn((filename, rule), rules)
 
 
 if __name__ == "__main__":

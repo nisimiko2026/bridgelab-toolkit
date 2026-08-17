@@ -246,6 +246,32 @@ class LegacyValidationContractTests(unittest.TestCase):
             )
             self.assertEqual(markdown.read_text(encoding="utf-8"), original)
 
+    def test_last_updated_requires_valid_iso_calendar_date(self) -> None:
+        valid = article_with_complete_metadata("valid.md", "Beginner")
+        malformed = article_with_complete_metadata("malformed.md", "Beginner")
+        impossible = article_with_complete_metadata("impossible.md", "Beginner")
+        malformed.metadata.last_updated = "2026-8-17"
+        impossible.metadata.last_updated = "2026-02-30"
+
+        issues = MetadataValidator().validate([valid, malformed, impossible])
+        date_issues = {
+            (issue.article, issue.message)
+            for issue in issues
+            if issue.category == "last_updated"
+        }
+
+        self.assertNotIn(
+            ("valid.md", "Invalid last_updated format; expected YYYY-MM-DD"),
+            date_issues,
+        )
+        self.assertIn(
+            ("malformed.md", "Invalid last_updated format; expected YYYY-MM-DD"),
+            date_issues,
+        )
+        self.assertIn(
+            ("impossible.md", "Invalid last_updated calendar date"), date_issues
+        )
+
     def test_literal_none_metadata_values_are_treated_as_missing(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory)

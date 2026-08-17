@@ -5,6 +5,9 @@ Metadata Validator
 
 from __future__ import annotations
 
+import datetime as dt
+import re
+
 from core.models import Article, Issue
 
 
@@ -15,6 +18,7 @@ from core.models import Article, Issue
 class MetadataValidator:
 
     MIN_DESCRIPTION_LENGTH = 30
+    DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
     REQUIRED_FIELDS = [
         "title",
@@ -109,6 +113,33 @@ class MetadataValidator:
                     message="Invalid difficulty",
                 )
             )
+
+        # ----------------------------------------------------
+        # Last-updated date
+        # ----------------------------------------------------
+
+        if meta.last_updated:
+            if not self.DATE_RE.fullmatch(meta.last_updated):
+                issues.append(
+                    Issue(
+                        severity="Error",
+                        article=subject,
+                        category="last_updated",
+                        message="Invalid last_updated format; expected YYYY-MM-DD",
+                    )
+                )
+            else:
+                try:
+                    dt.date.fromisoformat(meta.last_updated)
+                except ValueError:
+                    issues.append(
+                        Issue(
+                            severity="Error",
+                            article=subject,
+                            category="last_updated",
+                            message="Invalid last_updated calendar date",
+                        )
+                    )
 
         # ----------------------------------------------------
         # Description length
