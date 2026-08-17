@@ -2,7 +2,7 @@
 title: Duplicate Bridge
 description: Index and navigation guide for duplicate bridge formats, scoring, tournament procedures, and strategy in the BridgeLab Knowledge Base.
 category: Bridge Formats
-subcategory: None
+subcategory: ''
 difficulty: Beginner to Expert
 tags: 
   - bridge formats

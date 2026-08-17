@@ -2,7 +2,7 @@
 title: Bridge Lab Index
 description: Central index and guided overview of BridgeLab's bidding, play, duplicate, partnership, and reference material.
 category: Reference
-subcategory: None
+subcategory: ''
 difficulty: All Levels
 tags: 
   - acol
