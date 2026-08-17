@@ -15,6 +15,7 @@ from commands.scan import run as scan_command
 from commands.debug import run as debug_command
 from commands.enrich import run as enrich_command
 from commands.validate import run as validate_command
+from commands.metadata_audit import run as metadata_audit_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
 from commands.repair_filenames import run as repair_filenames_command
@@ -105,6 +106,14 @@ def validate(
 ) -> None:
     """Validate repository health."""
     validate_command(root)
+
+
+@app.command("metadata-audit")
+def metadata_audit(
+    root: Path = repository_option(),
+) -> None:
+    """Audit raw metadata without modifying repository files."""
+    metadata_audit_command(root)
 
 
 @app.command("repair-plan")
