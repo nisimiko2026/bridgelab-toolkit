@@ -16,6 +16,7 @@ from commands.debug import run as debug_command
 from commands.enrich import run as enrich_command
 from commands.validate import run as validate_command
 from commands.metadata_audit import run as metadata_audit_command
+from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
 from commands.repair_filenames import run as repair_filenames_command
@@ -114,6 +115,26 @@ def metadata_audit(
 ) -> None:
     """Audit raw metadata without modifying repository files."""
     metadata_audit_command(root)
+
+
+@app.command("sentinel-cleanup")
+def sentinel_cleanup(
+    root: Path = repository_option(),
+    backup: Path = typer.Option(
+        REPORTS.parent / "backups" / "sentinel-cleanup",
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Backup destination for applied sentinel cleanup.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the exact proposed changes after creating backups.",
+    ),
+) -> None:
+    """Remove safe metadata sentinels without reserializing YAML."""
+    sentinel_cleanup_command(root, backup, apply)
 
 
 @app.command("repair-plan")
