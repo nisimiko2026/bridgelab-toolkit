@@ -7,7 +7,11 @@ from pathlib import Path
 
 import typer
 
-from analysis.category_impact import analyze_category_impact
+from analysis.category_impact import (
+    PLAY_SUBGROUP_SCOPES,
+    analyze_category_impact,
+    analyze_cumulative_play_impact,
+)
 from core.repository import Repository
 
 
@@ -15,7 +19,8 @@ def run(root: Path, scope: str = "all") -> None:
     """Analyze reviewed structural category changes without writing files."""
 
     try:
-        report = analyze_category_impact(Repository(root).build(), scope=scope)
+        articles = Repository(root).build()
+        report = analyze_category_impact(articles, scope=scope)
     except ValueError as error:
         raise typer.BadParameter(str(error), param_hint="--scope") from error
     typer.echo(f"BridgeLab Category Impact (read-only, scope={scope})")
@@ -173,5 +178,24 @@ def run(root: Path, scope: str = "all") -> None:
     typer.echo(f"Category provisional removed    : {report.provisional_findings_affected}")
     typer.echo(f"Structural tag findings remain  : {report.old_tags_present}")
     typer.echo("New findings                    : 0")
+    if scope == "play":
+        typer.echo()
+        typer.echo("Deterministic play subgroups")
+        for subgroup in PLAY_SUBGROUP_SCOPES:
+            subgroup_report = analyze_category_impact(articles, scope=subgroup)
+            typer.echo(
+                f"  {subgroup}: files={len(subgroup_report.items)}, "
+                f"H1-order/set={subgroup_report.category_only_ranking.ordering_changed}/"
+                f"{subgroup_report.category_only_ranking.top_set_changed}, "
+                f"edges+={subgroup_report.category_edges_added}"
+            )
+        typer.echo("Cumulative H1 play projection")
+        for step in analyze_cumulative_play_impact(articles):
+            typer.echo(
+                f"  {step.scope}: cumulative-files={step.cumulative_files}, "
+                f"pairs+={step.category_pairs_added}, "
+                f"order/set={step.ranking_ordering_changed}/"
+                f"{step.ranking_top_set_changed}, edges+={step.category_edges_added}"
+            )
     typer.echo()
     typer.secho("No source files were modified.", fg=typer.colors.YELLOW)

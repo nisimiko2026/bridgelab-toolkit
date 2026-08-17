@@ -8,7 +8,12 @@ from pathlib import Path
 import yaml
 from typer.testing import CliRunner
 
-from analysis.category_impact import analyze_category_impact, project_category_impact
+from analysis.category_impact import (
+    PLAY_SUBGROUP_SCOPES,
+    analyze_category_impact,
+    analyze_cumulative_play_impact,
+    project_category_impact,
+)
 from core.repository import Repository
 from main import app
 
@@ -209,6 +214,122 @@ class CategoryImpactTests(unittest.TestCase):
         self.assertIn("bidding/conventions/breadcrumb.md", first.output)
         self.assertNotIn("play/defence/play-breadcrumb.md", first.output)
         self.assertEqual({path: path.read_bytes() for path in paths}, before)
+
+    def test_play_scope_and_subgroups_are_exact_and_keep_h1_metadata(self) -> None:
+        paths = self.fixtures()
+        nonstructural = self.write(
+            "play/defence/already-canonical.md",
+            category="play",
+            subcategory="defence",
+            tags=["play"],
+        )
+        articles = Repository(self.root).build()
+        before_models = [asdict(article.metadata) for article in articles]
+        before_bytes = {path: path.read_bytes() for path in [*paths, nonstructural]}
+
+        play = analyze_category_impact(articles, scope="play")
+        defence = analyze_category_impact(articles, scope="play:defence-counting")
+        declarer = analyze_category_impact(articles, scope="play:declarer-squeezes")
+        h1 = project_category_impact(articles, "play:defence-counting", "keep")
+        h2 = project_category_impact(articles, "play:defence-counting", "remove")
+        h3 = project_category_impact(articles, "play:defence-counting", "replace")
+        by_projection = [
+            {item.relative_path.as_posix(): item for item in projection}
+            for projection in (h1, h2, h3)
+        ]
+        target = "play/defence/play-breadcrumb.md"
+
+        self.assertEqual(len(PLAY_SUBGROUP_SCOPES), 15)
+        self.assertEqual([item.path for item in play.items], [
+            "play/declarer-play/slash.md",
+            target,
+        ])
+        self.assertEqual(defence.items, ())
+        self.assertEqual(declarer.items, ())
+        self.assertEqual(
+            [projection[target].metadata.category for projection in by_projection],
+            ["Card Play – Defence"] * 3,
+        )
+        self.assertEqual([asdict(article.metadata) for article in articles], before_models)
+        self.assertEqual(
+            {path: path.read_bytes() for path in [*paths, nonstructural]}, before_bytes
+        )
+
+    def test_subgroup_hypotheses_spillover_and_cumulative_are_deterministic(self) -> None:
+        paths = self.fixtures()
+        self.write(
+            "play/defence/counting/reviewed.md",
+            category="Card Play – Defence",
+            subcategory="defence",
+            tags=["card play – defence"],
+        )
+        self.write(
+            "play/existing.md",
+            category="play",
+            subcategory="defence",
+            tags=[],
+        )
+        articles = Repository(self.root).build()
+        before = [asdict(article.metadata) for article in articles]
+
+        report = analyze_category_impact(articles, "play:defence-counting")
+        h1 = project_category_impact(articles, "play:defence-counting", "keep")
+        h2 = project_category_impact(articles, "play:defence-counting", "remove")
+        h3 = project_category_impact(articles, "play:defence-counting", "replace")
+        first = analyze_cumulative_play_impact(articles)
+        second = analyze_cumulative_play_impact(articles)
+        target = "play/defence/counting/reviewed.md"
+        projections = [
+            {item.relative_path.as_posix(): item for item in value}
+            for value in (h1, h2, h3)
+        ]
+
+        self.assertEqual([item.path for item in report.items], [target])
+        self.assertGreater(report.category_edges_added, 0)
+        self.assertGreater(report.nonselected_relationship_articles_affected, 0)
+        self.assertIn("card play – defence", projections[0][target].metadata.tags)
+        self.assertNotIn("card play – defence", projections[1][target].metadata.tags)
+        self.assertNotIn("play", projections[1][target].metadata.tags)
+        self.assertIn("play", projections[2][target].metadata.tags)
+        self.assertEqual(
+            [projection[target].metadata.subcategory for projection in projections],
+            ["defence"] * 3,
+        )
+        self.assertEqual(first, second)
+        self.assertEqual(first[-1].cumulative_files, 1)
+        self.assertEqual([asdict(article.metadata) for article in articles], before)
+        self.assertTrue(all(path.exists() for path in paths))
+
+    def test_cli_play_subgroup_scope_is_read_only_and_repeatable(self) -> None:
+        paths = self.fixtures()
+        target = self.write(
+            "play/defence/counting/reviewed.md",
+            category="Card Play – Defence",
+            subcategory="defence",
+            tags=["card play – defence"],
+        )
+        before = {path: path.read_bytes() for path in [*paths, target]}
+        runner = CliRunner()
+        arguments = [
+            "category-impact",
+            "--scope",
+            "play:defence-counting",
+            "--root",
+            str(self.root),
+        ]
+
+        first = runner.invoke(app, arguments)
+        second = runner.invoke(app, arguments)
+
+        self.assertEqual(first.exit_code, 0, first.output)
+        self.assertEqual(first.output, second.output)
+        self.assertIn("Selected structural files       : 1", first.output)
+        self.assertIn("play/defence/counting/reviewed.md", first.output)
+        self.assertNotIn("bidding/conventions/breadcrumb.md", first.output)
+        self.assertNotIn("--apply", first.output)
+        self.assertEqual({path: path.read_bytes() for path in [*paths, target]}, before)
+        self.assertFalse(any("backup" in path.name for path in self.base.rglob("*")))
+        self.assertFalse(any(path.suffix == ".json" for path in self.base.rglob("*")))
 
 
 if __name__ == "__main__":

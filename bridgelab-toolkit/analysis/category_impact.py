@@ -15,6 +15,27 @@ from metadata.validator import MetadataValidator
 from relationships.analyzer import RelationshipAnalyzer
 
 
+PLAY_SUBGROUP_PREFIXES: dict[str, tuple[str, ...]] = {
+    "declarer-coups": ("play/declarer-play/coups/",),
+    "declarer-deception": ("play/declarer-play/deceptive-play/",),
+    "declarer-endplays": ("play/declarer-play/elimination-and-endplays/",),
+    "declarer-general-techniques": ("play/declarer-play/general-techniques/",),
+    "declarer-notrump": ("play/declarer-play/notrump-play/",),
+    "declarer-probability": ("play/declarer-play/probability/",),
+    "declarer-squeezes": ("play/declarer-play/squeezes/",),
+    "declarer-trump-play": ("play/declarer-play/trump-play/",),
+    "defence-counting": ("play/defence/counting/",),
+    "defence-endgame": ("play/defence/endgame-defence/",),
+    "defence-opening-leads": ("play/defence/opening-leads/",),
+    "defence-planning": ("play/defence/planning/",),
+    "defence-signaling": ("play/defence/signaling/",),
+    "defence-techniques": ("play/defence/techniques/",),
+    "principles": ("play/principles/",),
+}
+
+PLAY_SUBGROUP_SCOPES = tuple(f"play:{name}" for name in PLAY_SUBGROUP_PREFIXES)
+
+
 @dataclass(frozen=True, slots=True)
 class CategoryImpactItem:
     path: str
@@ -114,6 +135,17 @@ class CategoryImpactReport:
     orphan_bidding_after: int
     orphan_play_before: int
     orphan_play_after: int
+
+
+@dataclass(frozen=True, slots=True)
+class CumulativeImpactStep:
+    scope: str
+    selected_files: int
+    cumulative_files: int
+    category_pairs_added: int
+    ranking_ordering_changed: int
+    ranking_top_set_changed: int
+    category_edges_added: int
 
 
 def analyze_category_impact(
@@ -315,15 +347,56 @@ def project_category_impact(
     return projected
 
 
+def analyze_cumulative_play_impact(
+    articles: list[Article],
+) -> tuple[CumulativeImpactStep, ...]:
+    """Measure deterministic cumulative H1 impact in directory/topic order."""
+
+    baseline_rankings = _rankings(articles)
+    baseline_edges = _category_edges(articles)
+    projected = copy.deepcopy(articles)
+    cumulative_ids: set[str] = set()
+    rows = []
+    for scope in PLAY_SUBGROUP_SCOPES:
+        selected = _select(projected, scope)
+        cumulative_ids.update(article.id for article, _ in selected)
+        projected = project_category_impact(projected, scope, "keep")
+        _, added, _ = _category_pair_impact(articles, projected)
+        ranking = _ranking_impact(
+            baseline_rankings,
+            _rankings(projected),
+            cumulative_ids,
+        )
+        rows.append(
+            CumulativeImpactStep(
+                scope=scope,
+                selected_files=len(selected),
+                cumulative_files=len(cumulative_ids),
+                category_pairs_added=added,
+                ranking_ordering_changed=ranking.ordering_changed,
+                ranking_top_set_changed=ranking.top_set_changed,
+                category_edges_added=len(_category_edges(projected) - baseline_edges),
+            )
+        )
+    return tuple(rows)
+
+
 def _select(articles: list[Article], scope: str) -> list[tuple[Article, str]]:
-    if scope not in {"all", "bidding", "play"}:
+    supported = {"all", "bidding", "play", *PLAY_SUBGROUP_SCOPES}
+    if scope not in supported:
         raise ValueError(f"Unsupported category impact scope: {scope}")
     selected = []
     for article in articles:
         parts = article.relative_path.parts
         proposed = parts[0] if parts and parts[0] in {"bidding", "play"} else ""
         category = article.metadata.category
-        if proposed and (scope == "all" or proposed == scope) and _is_structural(category):
+        path = article.relative_path.as_posix()
+        subgroup_match = False
+        if scope.startswith("play:"):
+            prefixes = PLAY_SUBGROUP_PREFIXES[scope.removeprefix("play:")]
+            subgroup_match = any(path.startswith(prefix) for prefix in prefixes)
+        scope_match = scope == "all" or proposed == scope or subgroup_match
+        if proposed and scope_match and _is_structural(category):
             selected.append((article, proposed))
     return sorted(selected, key=lambda item: item[0].relative_path.as_posix().casefold())
 

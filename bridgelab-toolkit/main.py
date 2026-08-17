@@ -125,7 +125,7 @@ def category_impact(
     scope: str = typer.Option(
         "all",
         "--scope",
-        help="Reviewed scope: all, bidding, or play.",
+        help="Reviewed scope: all, bidding, play, or play:<topic>.",
     ),
 ) -> None:
     """Analyze reviewed structural category changes without writing files."""
