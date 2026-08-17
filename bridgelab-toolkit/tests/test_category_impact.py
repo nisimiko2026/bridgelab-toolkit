@@ -8,7 +8,7 @@ from pathlib import Path
 import yaml
 from typer.testing import CliRunner
 
-from analysis.category_impact import analyze_category_impact
+from analysis.category_impact import analyze_category_impact, project_category_impact
 from core.repository import Repository
 from main import app
 
@@ -87,6 +87,12 @@ class CategoryImpactTests(unittest.TestCase):
                 subcategory="reference",
                 tags=["techniques/squeezes"],
             ),
+            self.write(
+                "bidding/existing.md",
+                category="bidding",
+                subcategory="conventions",
+                tags=[],
+            ),
         ]
 
     def test_selection_tags_rankings_and_input_objects_are_read_only(self) -> None:
@@ -116,6 +122,42 @@ class CategoryImpactTests(unittest.TestCase):
             {item.path for item in report.items},
         )
 
+    def test_bidding_scope_and_hypotheses_do_not_mutate_tags_or_subcategory(self) -> None:
+        self.fixtures()
+        articles = Repository(self.root).build()
+        original = {article.id: asdict(article.metadata) for article in articles}
+
+        report = analyze_category_impact(articles, scope="bidding")
+        h1 = project_category_impact(articles, "bidding", "keep")
+        h2 = project_category_impact(articles, "bidding", "remove")
+        h3 = project_category_impact(articles, "bidding", "replace")
+        projections = [
+            {article.relative_path.as_posix(): article for article in projected}
+            for projected in (h1, h2, h3)
+        ]
+        path = "bidding/conventions/breadcrumb.md"
+        play_path = "play/defence/play-breadcrumb.md"
+
+        self.assertEqual([item.path for item in report.items], [path])
+        self.assertEqual(report.selected_relationship_articles_affected, 1)
+        self.assertGreater(report.nonselected_relationship_articles_affected, 0)
+        self.assertEqual(projections[0][path].metadata.category, "bidding")
+        self.assertIn("bidding – principles", projections[0][path].metadata.tags)
+        self.assertNotIn("bidding", projections[0][path].metadata.tags)
+        self.assertNotIn("bidding – principles", projections[1][path].metadata.tags)
+        self.assertNotIn("bidding", projections[1][path].metadata.tags)
+        self.assertNotIn("bidding – principles", projections[2][path].metadata.tags)
+        self.assertIn("bidding", projections[2][path].metadata.tags)
+        self.assertEqual(
+            [projected[path].metadata.subcategory for projected in projections],
+            ["conventions", "conventions", "conventions"],
+        )
+        self.assertEqual(
+            [projected[play_path].metadata.category for projected in projections],
+            ["Card Play – Defence", "Card Play – Defence", "Card Play – Defence"],
+        )
+        self.assertEqual({article.id: asdict(article.metadata) for article in articles}, original)
+
     def test_execution_is_deterministic_and_preserves_all_files(self) -> None:
         paths = self.fixtures()
         before = {path: path.read_bytes() for path in paths}
@@ -143,7 +185,30 @@ class CategoryImpactTests(unittest.TestCase):
 
         self.assertEqual(result.exit_code, 0, result.output)
         self.assertIn("--root", result.output)
+        self.assertIn("--scope", result.output)
         self.assertNotIn("--apply", result.output)
+
+    def test_cli_bidding_scope_excludes_play_and_is_deterministic(self) -> None:
+        paths = self.fixtures()
+        before = {path: path.read_bytes() for path in paths}
+        runner = CliRunner()
+
+        first = runner.invoke(
+            app,
+            ["category-impact", "--scope", "bidding", "--root", str(self.root)],
+        )
+        second = runner.invoke(
+            app,
+            ["category-impact", "--scope", "bidding", "--root", str(self.root)],
+        )
+
+        self.assertEqual(first.exit_code, 0, first.output)
+        self.assertEqual(first.output, second.output)
+        self.assertIn("scope=bidding", first.output)
+        self.assertIn("Selected structural files       : 1", first.output)
+        self.assertIn("bidding/conventions/breadcrumb.md", first.output)
+        self.assertNotIn("play/defence/play-breadcrumb.md", first.output)
+        self.assertEqual({path: path.read_bytes() for path in paths}, before)
 
 
 if __name__ == "__main__":

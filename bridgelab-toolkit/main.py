@@ -121,9 +121,14 @@ def metadata_audit(
 @app.command("category-impact")
 def category_impact(
     root: Path = repository_option(),
+    scope: str = typer.Option(
+        "all",
+        "--scope",
+        help="Reviewed scope: all, bidding, or play.",
+    ),
 ) -> None:
     """Analyze reviewed structural category changes without writing files."""
-    category_impact_command(root)
+    category_impact_command(root, scope=scope)
 
 
 @app.command("sentinel-cleanup")
