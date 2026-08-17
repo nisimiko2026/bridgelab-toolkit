@@ -3,14 +3,13 @@ title: Bibliography
 description: Primary references, classic texts, modern publications, and official sources consulted in the development of BridgeLab.
 category: Reference
 subcategory: None
-difficulty: None
+difficulty: ''
 tags: 
   - acol
   - blackwood
   - competitive
   - crash
   - kokish
-  - none
   - opening
   - precision
   - relay

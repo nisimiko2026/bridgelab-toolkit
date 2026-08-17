@@ -11,7 +11,6 @@ tags:
 - double
 - duplicates
 - finesse
-- none
 - slam
 systems: []
 aliases: []

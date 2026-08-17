@@ -7,7 +7,6 @@ difficulty: All Levels
 tags: 
   - acol
   - competitive
-  - none
   - opening
   - precision
   - relay

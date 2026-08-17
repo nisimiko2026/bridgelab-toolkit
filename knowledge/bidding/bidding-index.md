@@ -18,7 +18,6 @@ tags:
 - gerber
 - kokish
 - multi
-- none
 - opening
 - precision
 - rebid

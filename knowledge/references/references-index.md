@@ -7,7 +7,6 @@ subcategory: ''
 difficulty: All Levels
 tags:
 - lead
-- none
 - opening
 - references
 - slam

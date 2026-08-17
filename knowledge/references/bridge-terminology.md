@@ -20,7 +20,6 @@ tags:
 - jacoby
 - lead
 - lebensohl
-- none
 - notrump
 - opening
 - overcall

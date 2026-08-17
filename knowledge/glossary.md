@@ -3,7 +3,7 @@ title: Glossary
 description: Alphabetical definitions of bridge terms, bids, conventions, card-play techniques, and duplicate-bridge terminology.
 category: Reference
 subcategory: None
-difficulty: None
+difficulty: ''
 tags: 
   - blackwood
   - cue bid
@@ -15,7 +15,6 @@ tags:
   - gerber
   - lead
   - negative
-  - none
   - notrump
   - opening
   - overcall

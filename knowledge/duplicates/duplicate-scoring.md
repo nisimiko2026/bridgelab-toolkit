@@ -9,7 +9,6 @@ difficulty: Beginner to Expert
 tags:
 - competitive
 - duplicates
-- none
 - slam
 systems: []
 aliases: []

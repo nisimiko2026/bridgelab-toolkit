@@ -20,7 +20,6 @@ tags:
 - lead
 - lebensohl
 - negative
-- none
 - notrump
 - opening
 - precision

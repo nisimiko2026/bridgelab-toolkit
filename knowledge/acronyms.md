@@ -3,7 +3,7 @@ title: Acronyms
 description: Alphabetical reference of bridge abbreviations and acronyms used throughout BridgeLab.
 category: Reference
 subcategory: None
-difficulty: None
+difficulty: ''
 tags: 
   - blackwood
   - crash
@@ -14,7 +14,6 @@ tags:
   - lead
   - multi
   - negative
-  - none
   - notrump
   - overcall
   - puppet stayman

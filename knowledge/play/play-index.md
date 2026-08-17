@@ -9,7 +9,6 @@ tags:
 - card play
 - forcing
 - lead
-- none
 - opening
 systems: []
 aliases: []

@@ -10,7 +10,6 @@ difficulty: ''
 tags:
 - double
 - lead
-- none
 - opening
 - redouble
 - references

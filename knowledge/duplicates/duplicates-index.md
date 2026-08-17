@@ -7,7 +7,6 @@ difficulty: Beginner to Expert
 tags: 
   - bridge formats
   - competitive
-  - none
 systems: []
 aliases: []
 acronyms: []
