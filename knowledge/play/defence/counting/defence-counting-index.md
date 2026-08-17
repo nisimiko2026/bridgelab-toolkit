@@ -1,7 +1,7 @@
 ---
 title: Defensive Counting
 description: Index and navigation guide for counting techniques used in defensive card play in the BridgeLab Knowledge Base.
-category: Card Play – Defence
+category: play
 subcategory: defence
 difficulty: Intermediate to Expert
 tags: 
