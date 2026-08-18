@@ -16,6 +16,12 @@ REVIEWED_PRINCIPLES_CATEGORIES = {
     "play/principles/play-principles-index.md": "Card Play – Fundamentals",
     "play/principles/preservation-of-entries.md": "techniques/card-play",
 }
+REVIEWED_TRUMP_PLAY_CATEGORIES = {
+    "play/declarer-play/trump-play/cross-ruff.md": "techniques/declarer-techniques",
+    "play/declarer-play/trump-play/drawing-trumps.md": "techniques/declarer-techniques",
+    "play/declarer-play/trump-play/ruffing-losers.md": "techniques/declarer-techniques",
+    "play/declarer-play/trump-play/trump-management.md": "techniques/declarer-techniques",
+}
 EXPECTED_CATEGORY = "Card Play – Defence"
 PROPOSED_CATEGORY = "play"
 
@@ -31,6 +37,7 @@ class PlayEndgameCategoryAction:
     subcategory: str
     retained_tag: str
     retained_tag_present: bool
+    canonical_tag_present: bool
 
 
 @dataclass(frozen=True, slots=True)
@@ -66,6 +73,21 @@ def build_play_principles_category_report(root: Path) -> PlayEndgameCategoryRepo
         actions.extend(report.actions)
     return PlayEndgameCategoryReport(
         selected_files=len(REVIEWED_PRINCIPLES_CATEGORIES),
+        actions=tuple(actions),
+    )
+
+
+def build_play_trump_play_category_report(root: Path) -> PlayEndgameCategoryReport:
+    """Build the exact reviewed four-file trump-play batch in memory."""
+
+    actions = []
+    for article, expected_category in REVIEWED_TRUMP_PLAY_CATEGORIES.items():
+        report = _build_play_category_report(
+            root, article, expected_category, "declarer-play"
+        )
+        actions.extend(report.actions)
+    return PlayEndgameCategoryReport(
+        selected_files=len(REVIEWED_TRUMP_PLAY_CATEGORIES),
         actions=tuple(actions),
     )
 
@@ -135,6 +157,7 @@ def _build_play_category_report(
         subcategory=expected_subcategory,
         retained_tag=retained_tag,
         retained_tag_present=isinstance(tags, list) and retained_tag in tags,
+        canonical_tag_present=isinstance(tags, list) and PROPOSED_CATEGORY in tags,
     )
     return PlayEndgameCategoryReport(selected_files=1, actions=(action,))
 
@@ -159,6 +182,14 @@ def apply_play_principles_category_report(
     report: PlayEndgameCategoryReport, root: Path, backup: Path
 ) -> None:
     """Apply the reviewed principles batch using the shared safety contract."""
+
+    _apply_play_category_report(report, root, backup)
+
+
+def apply_play_trump_play_category_report(
+    report: PlayEndgameCategoryReport, root: Path, backup: Path
+) -> None:
+    """Apply the reviewed trump-play batch using the shared safety contract."""
 
     _apply_play_category_report(report, root, backup)
 
