@@ -1,7 +1,7 @@
 ---
 title: Revolving Discards
 description: A discard signaling method in which the rank of the discard indicates the suit preferred, using a rotating suit assignment.
-category: Play
+category: play
 subcategory: Defence
 difficulty: Advanced
 tags: 

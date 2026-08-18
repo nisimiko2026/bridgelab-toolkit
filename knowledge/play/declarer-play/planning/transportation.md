@@ -1,7 +1,7 @@
 ---
 title: Transportation
 description: Comprehensive guide to transportation in declarer play, covering communication between the hands, entry creation, preservation, timing, and expert techniques in both trump and notrump contracts.
-category: Play
+category: play
 subcategory: Planning
 difficulty: Expert
 tags: 

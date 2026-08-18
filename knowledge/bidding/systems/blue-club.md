@@ -3,7 +3,7 @@ title: Blue Club
 description: Blue Club is a strong club bidding system developed and popularized by
   the legendary Italian Blue Team, which dominated world bridge from the late 1950s
   through the 1970s.
-category: Bidding Systems
+category: bidding
 subcategory: systems
 difficulty: Advanced
 tags:

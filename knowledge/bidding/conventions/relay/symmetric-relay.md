@@ -2,7 +2,7 @@
 title: Symmetric Relay
 description: Symmetric Relay is one of the most sophisticated relay bidding methods
   in bridge.
-category: Bidding Method
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags:

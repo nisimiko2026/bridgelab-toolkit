@@ -1,7 +1,7 @@
 ---
 title: Standard American
 description: Comprehensive guide to the Standard American bidding system, including opening bids, responses, rebids, conventions, evaluation, competitive methods, and modern expert treatments.
-category: Bidding System
+category: bidding
 subcategory: systems
 difficulty: Intermediate to Expert
 tags: 

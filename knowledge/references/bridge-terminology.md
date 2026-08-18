@@ -4,7 +4,7 @@ description: Bridge Terminology is a reference guide to the language used by bri
   players, teachers, authors, commentators, and tournament directors. While the Bridge
   Glossary defines individual terms alphabetically, this document groups terminology
   by topic, making it easier to understand concepts within their proper context.
-category: references
+category: reference
 subcategory: ''
 difficulty: ''
 tags:

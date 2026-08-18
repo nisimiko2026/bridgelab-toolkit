@@ -1,7 +1,7 @@
 ---
 title: Game Trial Bids
 description: A comprehensive guide to game trial bids in contract bridge, covering objectives, types, methods, evaluation, examples, partnership agreements, and common mistakes.
-category: Bidding Principles
+category: bidding
 subcategory: principles
 difficulty: Intermediate
 tags: 

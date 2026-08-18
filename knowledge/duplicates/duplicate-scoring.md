@@ -3,7 +3,7 @@ title: Duplicate Scoring
 description: Duplicate Bridge is designed so that the outcome depends on skill rather
   than the luck of the cards. Every table plays the same deals, allowing each partnership's
   result to be compared directly with others who held the identical cards.
-category: duplicates
+category: duplicate
 subcategory: ''
 difficulty: Beginner to Expert
 tags:

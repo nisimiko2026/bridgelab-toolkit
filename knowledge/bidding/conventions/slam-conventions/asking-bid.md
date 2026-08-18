@@ -2,7 +2,7 @@
 title: Asking Bid
 description: An Asking Bid is an artificial bid whose primary purpose is to obtain
   specific information from partner rather than to describe the bidder's own hand.
-category: Bidding Method
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

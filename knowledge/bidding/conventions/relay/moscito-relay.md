@@ -2,7 +2,7 @@
 title: MOSCITO Relay
 description: MOSCITO Relay is the relay bidding method used in the MOSCITO bidding
   system.
-category: Bidding Method
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags:

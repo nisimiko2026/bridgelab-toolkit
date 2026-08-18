@@ -1,7 +1,7 @@
 ---
 title: Sign-Off
 description: A comprehensive guide to sign-off bids in contract bridge, including their purpose, characteristics, applications, examples, and common misunderstandings.
-category: Bidding Principles
+category: bidding
 subcategory: principles
 difficulty: Beginner
 tags: 

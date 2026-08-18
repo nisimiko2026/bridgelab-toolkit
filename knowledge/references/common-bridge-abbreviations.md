@@ -3,7 +3,7 @@ title: Common Bridge Abbreviations
 description: Bridge literature, tournament bulletins, online discussions, convention
   cards, and bridge software frequently use abbreviations to simplify notation and
   communication. This guide lists the most common abbreviations used in modern bridge.
-category: references
+category: reference
 subcategory: ''
 difficulty: ''
 tags:

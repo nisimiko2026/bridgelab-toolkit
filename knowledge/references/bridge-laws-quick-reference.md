@@ -4,7 +4,7 @@ description: This guide provides a concise reference to the most important Laws 
   Duplicate Bridge that players encounter during normal tournament play. It is not
   a substitute for the official Laws published by the World Bridge Federation (WBF),
   but rather a practical summary of the situations most commonly faced at the table.
-category: references
+category: reference
 subcategory: ''
 difficulty: ''
 tags:

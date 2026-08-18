@@ -1,7 +1,7 @@
 ---
 title: Preserving Entries
 description: Comprehensive guide to preserving entries in declarer play, including techniques for trump and notrump contracts, planning, communication, timing, and expert strategy.
-category: Play
+category: play
 subcategory: Planning
 difficulty: Intermediate to Expert
 tags: 

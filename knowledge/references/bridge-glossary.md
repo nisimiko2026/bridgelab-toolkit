@@ -4,7 +4,7 @@ description: This glossary contains commonly used terms in Contract Bridge and D
   Bridge. Terms are listed alphabetically with concise definitions. Where appropriate,
   the glossary refers to concepts that are explained in greater detail elsewhere in
   the Bridge Knowledge Library.
-category: references
+category: reference
 subcategory: ''
 difficulty: ''
 tags:

@@ -2,7 +2,7 @@
 title: General Techniques
 description: Index of general declarer play techniques applicable to both suit and
   notrump contracts.
-category: Play
+category: play
 subcategory: General Techniques
 difficulty: Beginner to Expert
 tags:

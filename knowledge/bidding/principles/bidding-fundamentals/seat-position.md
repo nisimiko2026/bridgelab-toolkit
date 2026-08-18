@@ -3,7 +3,7 @@ title: Seat Position
 description: Seat position refers to your position in the bidding sequence before
   anyone has opened the auction. It significantly influences opening bid requirements,
   risk tolerance, and overall bidding strategy.
-category: Bidding Principles
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:

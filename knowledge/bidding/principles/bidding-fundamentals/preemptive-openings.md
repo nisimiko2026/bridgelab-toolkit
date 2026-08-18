@@ -1,7 +1,7 @@
 ---
 title: Preemptive Openings
 description: Natural preemptive opening bids at the three level and higher, including objectives, requirements, responses, rebids, competitive auctions, and partnership agreements.
-category: Natural Bids
+category: bidding
 subcategory: Opening Bids
 difficulty: Intermediate
 tags: 
