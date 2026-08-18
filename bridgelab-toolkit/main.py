@@ -48,6 +48,21 @@ from commands.repair_play_defence_planning_category import (
 from commands.repair_play_defence_opening_leads_categories import (
     run as repair_play_defence_opening_leads_command,
 )
+from commands.repair_category_normalization_batch1 import (
+    run as repair_category_normalization_batch1_command,
+)
+from commands.repair_category_normalization_batch2 import (
+    run as repair_category_normalization_batch2_command,
+)
+from commands.repair_category_normalization_batch3_1 import (
+    run as repair_category_normalization_batch3_1_command,
+)
+from commands.repair_category_normalization_batch3_2 import (
+    run as repair_category_normalization_batch3_2_command,
+)
+from commands.repair_category_normalization_batch3_3a import (
+    run as repair_category_normalization_batch3_3a_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -160,6 +175,96 @@ def category_impact(
 ) -> None:
     """Analyze reviewed structural category changes without writing files."""
     category_impact_command(root, scope=scope)
+
+
+@app.command("repair-category-normalization-batch1")
+def repair_category_normalization_batch1(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed six-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 1; dry-run by default."""
+    repair_category_normalization_batch1_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch2")
+def repair_category_normalization_batch2(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed four-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 2; dry-run by default."""
+    repair_category_normalization_batch2_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch3-1")
+def repair_category_normalization_batch3_1(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed two-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 3.1; dry-run by default."""
+    repair_category_normalization_batch3_1_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch3-2")
+def repair_category_normalization_batch3_2(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed eight-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 3.2; dry-run by default."""
+    repair_category_normalization_batch3_2_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch3-3a")
+def repair_category_normalization_batch3_3a(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed single-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 3.3a; dry-run by default."""
+    repair_category_normalization_batch3_3a_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
