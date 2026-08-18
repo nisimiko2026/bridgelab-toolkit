@@ -1,7 +1,7 @@
 ---
 title: Dangerous Opponent
 description: Explains how to identify and keep the dangerous opponent off lead in a notrump contract.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

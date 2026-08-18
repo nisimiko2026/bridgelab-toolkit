@@ -1,7 +1,7 @@
 ---
 title: Deschapelles Coup
 description: Explains the Deschapelles Coup, a defensive sacrifice of a high honor to create an entry for partner.
-category: techniques/coups
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

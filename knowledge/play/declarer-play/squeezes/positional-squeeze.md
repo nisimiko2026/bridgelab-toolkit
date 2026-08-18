@@ -1,7 +1,7 @@
 ---
 title: Positional Squeeze
 description: Explains the positional squeeze, which succeeds only when specific threats and defenders are favorably placed.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

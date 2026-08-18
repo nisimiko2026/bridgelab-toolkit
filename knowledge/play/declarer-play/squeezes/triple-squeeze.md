@@ -1,7 +1,7 @@
 ---
 title: Triple Squeeze
 description: Explains the triple squeeze, an expert squeeze that applies simultaneous pressure across three suits.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

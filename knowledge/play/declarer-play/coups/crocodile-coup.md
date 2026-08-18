@@ -1,7 +1,7 @@
 ---
 title: Crocodile Coup
 description: Explains the Crocodile Coup, a defensive play in which one defender overtakes partner's winner to preserve communication.
-category: techniques/coups
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

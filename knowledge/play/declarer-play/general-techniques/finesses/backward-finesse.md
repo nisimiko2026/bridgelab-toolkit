@@ -1,7 +1,7 @@
 ---
 title: Backward Finesse
 description: Explains the backward finesse, an unusual finesse taken against the normal direction when the layout favors it.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

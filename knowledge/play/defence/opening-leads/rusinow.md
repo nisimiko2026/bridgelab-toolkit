@@ -1,7 +1,7 @@
 ---
 title: Rusinow Leads
 description: Explains Rusinow leads, in which the second-highest honor is led from touching honors.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Advanced
 tags: 

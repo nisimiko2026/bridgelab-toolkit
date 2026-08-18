@@ -1,7 +1,7 @@
 ---
 title: Delayed Finesse
 description: Explains the delayed finesse, in which declarer postpones a finesse until additional information is available.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Establishing Long Suits
 description: Explains how declarer establishes long suits as a source of extra winners in notrump contracts.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

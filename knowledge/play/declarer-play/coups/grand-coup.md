@@ -1,7 +1,7 @@
 ---
 title: Grand Coup
 description: Explains the Grand Coup, an expert trump play in which declarer shortens a trump holding to prevent promotion.
-category: techniques/coups
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

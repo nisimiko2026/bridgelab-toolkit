@@ -1,7 +1,7 @@
 ---
 title: Repeat Finesse
 description: Explains the repeat finesse, in which declarer takes more than one finesse in the same suit.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

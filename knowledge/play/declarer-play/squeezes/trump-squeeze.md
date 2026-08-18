@@ -1,7 +1,7 @@
 ---
 title: Trump Squeeze
 description: Explains the trump squeeze, an expert technique that uses trump and suit threats to pressure a defender.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

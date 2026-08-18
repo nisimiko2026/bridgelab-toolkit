@@ -1,7 +1,7 @@
 ---
 title: Exit Card
 description: Explains exit cards and their role in avoiding or creating endplay positions.
-category: techniques/endplays
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

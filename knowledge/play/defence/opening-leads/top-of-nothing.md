@@ -3,7 +3,7 @@ title: Top of Nothing
 description: Top of Nothing is an opening lead agreement used by some partnerships
   against suit contracts. When leading from a suit that contains no honor cards, the
   defender leads the highest card rather than the lowest.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Intermediate
 tags:

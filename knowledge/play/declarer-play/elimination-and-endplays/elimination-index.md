@@ -1,7 +1,7 @@
 ---
 title: Elimination Play
 description: Index and navigation guide for elimination techniques and throw-in play in the BridgeLab Knowledge Base.
-category: Card Play – Declarer Play – Techniques
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags: 

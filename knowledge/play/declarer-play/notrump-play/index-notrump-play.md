@@ -2,7 +2,7 @@
 title: Notrump Play Index
 description: Index and navigation guide for declarer play in notrump contracts within
   the BridgeLab Knowledge Base.
-category: Card Play – Declarer Play
+category: play
 subcategory: declarer-play
 difficulty: Beginner to Expert
 tags:

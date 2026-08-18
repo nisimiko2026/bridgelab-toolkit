@@ -2,7 +2,7 @@
 title: Third-and-Fifth Leads
 description: 'Third-and-Fifth Leads are an opening lead agreement in which the leader
   uses:'
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Intermediate
 tags:

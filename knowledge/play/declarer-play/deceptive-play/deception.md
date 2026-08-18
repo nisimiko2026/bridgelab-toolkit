@@ -1,7 +1,7 @@
 ---
 title: Deception
 description: Introduces deceptive play, in which players use lawful tactics to influence opponents' inferences and decisions.
-category: techniques/deception
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

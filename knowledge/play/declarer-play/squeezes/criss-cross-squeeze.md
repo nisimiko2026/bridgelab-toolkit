@@ -1,7 +1,7 @@
 ---
 title: Criss-Cross Squeeze
 description: Explains the criss-cross squeeze, an expert squeeze requiring entries that alternate between declarer and dummy.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

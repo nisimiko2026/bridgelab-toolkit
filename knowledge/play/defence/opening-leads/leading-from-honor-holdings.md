@@ -1,7 +1,7 @@
 ---
 title: Leading from Honor Holdings
 description: Explains the principles for choosing an opening lead from common honor holdings.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Intermediate
 tags: 

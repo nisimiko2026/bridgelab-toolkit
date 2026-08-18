@@ -1,7 +1,7 @@
 ---
 title: Deceptive Signals
 description: Explains deceptive signals, defensive plays that mislead declarer while preserving partnership understanding.
-category: techniques/deception
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

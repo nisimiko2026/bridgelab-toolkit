@@ -1,7 +1,7 @@
 ---
 title: Concealment
 description: Explains concealment, the practice of revealing as little information as possible to opponents during play.
-category: techniques/deception
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

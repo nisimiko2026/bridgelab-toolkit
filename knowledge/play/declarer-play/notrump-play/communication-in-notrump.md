@@ -1,7 +1,7 @@
 ---
 title: Communication in Notrump
 description: Explains how declarer preserves communication between hands to develop and cash winners in notrump contracts.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

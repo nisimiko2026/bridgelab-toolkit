@@ -1,7 +1,7 @@
 ---
 title: Two-Way Finesse
 description: Explains the two-way finesse, where declarer chooses which defender to play for a missing honor.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Strip and Endplay
 description: Explains strip and endplay, in which declarer removes safe exits before forcing a defender to concede a favorable return.
-category: techniques/endplays
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

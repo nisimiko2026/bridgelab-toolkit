@@ -1,7 +1,7 @@
 ---
 title: Squeeze Without the Count
 description: Explains a squeeze without the count, an expert squeeze that succeeds without first rectifying the count.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

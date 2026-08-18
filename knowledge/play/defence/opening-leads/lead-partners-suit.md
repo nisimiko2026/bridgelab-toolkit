@@ -1,7 +1,7 @@
 ---
 title: Lead Partner's Suit
 description: Explains when and how to lead partner's suit in defense.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Beginner
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Unblocking
 description: Explains unblocking, the early play of a high card to keep a suit and communications from becoming blocked.
-category: techniques/card-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

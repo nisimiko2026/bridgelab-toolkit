@@ -1,7 +1,7 @@
 ---
 title: Deceptive Play
 description: Index and navigation guide for deceptive card play techniques in the BridgeLab Knowledge Base.
-category: Card Play – Declarer Play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags: 

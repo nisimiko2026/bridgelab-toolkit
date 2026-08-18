@@ -1,7 +1,7 @@
 ---
 title: Hold-Up Play
 description: Explains hold-up play, in which declarer ducks a suit to disrupt defensive communication and timing.
-category: techniques/declarer-techniques
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Notrump Play
 description: Introduces planning and card-play techniques for declarer in notrump contracts.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

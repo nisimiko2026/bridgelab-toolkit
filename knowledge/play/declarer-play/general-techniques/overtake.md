@@ -1,7 +1,7 @@
 ---
 title: Overtaking
 description: Explains overtaking, the deliberate use of a higher card to take a partner's or declarer's winning trick for strategic purposes.
-category: techniques/card-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

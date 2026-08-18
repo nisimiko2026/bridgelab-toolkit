@@ -4,7 +4,7 @@ description: Trump promotion is a defensive technique in which the defenders cre
   a trump trick that would not otherwise exist. By forcing declarer to use high trumps,
   arranging an overruff, or manipulating the timing of the play, the defenders promote
   a lower trump into a winning trick.
-category: techniques/defensive-techniques
+category: play
 subcategory: defence
 difficulty: Advanced
 tags:

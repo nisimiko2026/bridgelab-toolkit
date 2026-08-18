@@ -2,7 +2,7 @@
 title: Finesses
 description: Index and navigation guide for finesse techniques in the BridgeLab Knowledge
   Base.
-category: Card Play – Techniques
+category: play
 subcategory: declarer-play
 difficulty: Beginner to Expert
 tags:

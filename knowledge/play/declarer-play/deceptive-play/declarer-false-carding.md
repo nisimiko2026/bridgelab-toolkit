@@ -1,7 +1,7 @@
 ---
 title: False Cards
 description: Explains false carding, the deliberate play of a misleading card to create an incorrect inference.
-category: techniques/deception
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

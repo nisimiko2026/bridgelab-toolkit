@@ -1,7 +1,7 @@
 ---
 title: Automatic Squeeze
 description: Explains the automatic squeeze, a position in which a defender is forced to release a needed guard without a choice.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

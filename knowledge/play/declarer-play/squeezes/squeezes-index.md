@@ -2,7 +2,7 @@
 title: Squeezes
 description: Index and navigation guide for squeeze play techniques in the BridgeLab
   Knowledge Base.
-category: Card Play – Advanced Techniques
+category: play
 subcategory: declarer-play
 difficulty: Advanced to Expert
 tags:

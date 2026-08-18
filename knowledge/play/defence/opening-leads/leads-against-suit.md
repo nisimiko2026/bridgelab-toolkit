@@ -1,7 +1,7 @@
 ---
 title: Leads Against Suit Contracts
 description: Explains opening-lead objectives and choices against suit contracts.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Leads Against Slam Contracts
 description: Explains opening-lead strategy against slam contracts, where timing and passive defense are especially important.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Advanced
 tags: 

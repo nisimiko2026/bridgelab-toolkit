@@ -2,7 +2,7 @@
 title: Defensive Techniques
 description: Index and navigation guide for core defensive techniques in the BridgeLab
   Knowledge Base.
-category: Card Play – Defence
+category: play
 subcategory: defence
 difficulty: Intermediate to Expert
 tags:

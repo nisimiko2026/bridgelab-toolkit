@@ -1,7 +1,7 @@
 ---
 title: Pseudo Squeeze
 description: Explains the pseudo squeeze, a play that resembles a squeeze but gains through a separate threat or timing effect.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

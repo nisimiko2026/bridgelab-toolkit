@@ -1,7 +1,7 @@
 ---
 title: Progressive Squeeze
 description: Explains the progressive squeeze, in which one squeeze creates the conditions for a later squeeze.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

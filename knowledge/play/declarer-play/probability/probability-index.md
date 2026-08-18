@@ -2,7 +2,7 @@
 title: Probability
 description: Index and navigation guide for probability theory and percentage play
   in the BridgeLab Knowledge Base.
-category: Card Play – Principles
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags:

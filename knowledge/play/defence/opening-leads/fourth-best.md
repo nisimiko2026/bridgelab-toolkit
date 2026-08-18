@@ -1,7 +1,7 @@
 ---
 title: Fourth-Best Leads
 description: Explains fourth-best opening leads and the information they provide about a defender's suit length.
-category: defence/opening-leads
+category: play
 subcategory: defence
 difficulty: Beginner
 tags: 

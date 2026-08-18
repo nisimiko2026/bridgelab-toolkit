@@ -1,7 +1,7 @@
 ---
 title: Timing in Notrump
 description: Explains how declarer times development, losses, and cashing winners in notrump contracts.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

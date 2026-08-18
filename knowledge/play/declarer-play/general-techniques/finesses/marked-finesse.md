@@ -1,7 +1,7 @@
 ---
 title: Marked Finesse
 description: Explains the marked finesse, whose success is assured because bidding, counting, or previous play has revealed the critical card's location.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Communication
 description: Explains communication between declarer and dummy, or between defenders, to reach winners and execute a plan.
-category: techniques/card-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Double Progressive Squeeze
 description: Explains the double progressive squeeze, an expert sequence of squeezes that creates later threats and winners.
-category: techniques/squeezes
+category: play
 subcategory: declarer-play
 difficulty: Expert
 tags: 

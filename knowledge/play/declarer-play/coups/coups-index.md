@@ -2,7 +2,7 @@
 title: Coups
 description: Index and navigation guide for advanced bridge coups and classic technical
   maneuvers in the BridgeLab Knowledge Base.
-category: Card Play – Advanced Techniques
+category: play
 subcategory: declarer-play
 difficulty: Advanced to Expert
 tags:

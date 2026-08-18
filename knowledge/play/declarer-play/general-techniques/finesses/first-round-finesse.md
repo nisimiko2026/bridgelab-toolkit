@@ -1,7 +1,7 @@
 ---
 title: First-Round Finesse
 description: Explains the first-round finesse, taken at the earliest opportunity to establish a suit or gain a trick.
-category: techniques/finessing
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

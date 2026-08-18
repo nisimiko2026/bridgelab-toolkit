@@ -1,7 +1,7 @@
 ---
 title: Honor Leads
 description: Index and navigation guide for leading honor cards in defensive play.
-category: Card Play – Defence – Opening Leads
+category: play
 subcategory: defence
 difficulty: Intermediate to Expert
 tags:

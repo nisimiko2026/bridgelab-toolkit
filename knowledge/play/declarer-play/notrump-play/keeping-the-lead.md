@@ -1,7 +1,7 @@
 ---
 title: Keeping the Lead
 description: Explains how declarer keeps the lead in the correct hand while developing winners in notrump.
-category: card-play/notrump-play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 
