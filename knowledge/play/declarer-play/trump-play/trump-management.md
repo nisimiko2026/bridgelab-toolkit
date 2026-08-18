@@ -1,7 +1,7 @@
 ---
 title: Trump Management
 description: Explains how declarer manages trump resources, timing, and control throughout a suit contract.
-category: techniques/declarer-techniques
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

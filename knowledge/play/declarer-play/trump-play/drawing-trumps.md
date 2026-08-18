@@ -1,7 +1,7 @@
 ---
 title: Drawing Trumps
 description: Explains how and when declarer draws the defenders' trumps in a suit contract.
-category: techniques/declarer-techniques
+category: play
 subcategory: declarer-play
 difficulty: Beginner
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Crossruff
 description: Explains the crossruff, in which declarer ruffs alternating suits in both hands instead of drawing trumps.
-category: techniques/declarer-techniques
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

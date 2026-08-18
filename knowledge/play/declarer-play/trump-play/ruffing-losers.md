@@ -1,7 +1,7 @@
 ---
 title: Ruffing Losers
 description: Explains how declarer ruffs losing cards in one hand with trumps held in the other hand.
-category: techniques/declarer-techniques
+category: play
 subcategory: declarer-play
 difficulty: Beginner
 tags: 
