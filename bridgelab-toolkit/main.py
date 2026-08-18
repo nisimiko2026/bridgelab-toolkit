@@ -23,6 +23,31 @@ from commands.repair_play_counting_category import run as repair_play_counting_c
 from commands.repair_play_principles_categories import run as repair_play_principles_command
 from commands.repair_play_trump_play_categories import run as repair_play_trump_command
 from commands.repair_play_signaling_category import run as repair_play_signaling_command
+from commands.repair_play_probability_category import run as repair_play_probability_command
+from commands.repair_play_defence_techniques_categories import (
+    run as repair_play_defence_techniques_command,
+)
+from commands.repair_play_endplays_categories import run as repair_play_endplays_command
+from commands.repair_play_coups_categories import run as repair_play_coups_command
+from commands.repair_play_finesses_categories import run as repair_play_finesses_command
+from commands.repair_play_general_techniques_categories import (
+    run as repair_play_general_techniques_command,
+)
+from commands.repair_play_declarer_deception_categories import (
+    run as repair_play_declarer_deception_command,
+)
+from commands.repair_play_declarer_notrump_categories import (
+    run as repair_play_declarer_notrump_command,
+)
+from commands.repair_play_declarer_squeezes_categories import (
+    run as repair_play_declarer_squeezes_command,
+)
+from commands.repair_play_defence_planning_category import (
+    run as repair_play_defence_planning_command,
+)
+from commands.repair_play_defence_opening_leads_categories import (
+    run as repair_play_defence_opening_leads_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -255,6 +280,207 @@ def repair_play_signaling_category(
 ) -> None:
     """Repair the reviewed defence-signaling category; dry-run by default."""
     repair_play_signaling_command(root, backup, apply)
+
+
+@app.command("repair-play-probability-category")
+def repair_play_probability_category(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed single category-line change.",
+    ),
+) -> None:
+    """Repair the reviewed declarer-probability category; dry-run by default."""
+    repair_play_probability_command(root, backup, apply)
+
+
+@app.command("repair-play-defence-techniques-categories")
+def repair_play_defence_techniques_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed two-file category-line batch.",
+    ),
+) -> None:
+    """Repair reviewed defence-techniques categories; dry-run by default."""
+    repair_play_defence_techniques_command(root, backup, apply)
+
+
+@app.command("repair-play-endplays-categories")
+def repair_play_endplays_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed three-file category-line batch.",
+    ),
+) -> None:
+    """Repair reviewed declarer-endplays categories; dry-run by default."""
+    repair_play_endplays_command(root, backup, apply)
+
+
+@app.command("repair-play-coups-categories")
+def repair_play_coups_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed four-file category-line batch.",
+    ),
+) -> None:
+    """Repair reviewed declarer-coups categories; dry-run by default."""
+    repair_play_coups_command(root, backup, apply)
+
+
+@app.command("repair-play-finesses-categories")
+def repair_play_finesses_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None, "--backup", file_okay=False, resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed seven-file batch."),
+) -> None:
+    """Repair reviewed declarer-finesses categories; dry-run by default."""
+    repair_play_finesses_command(root, backup, apply)
+
+
+@app.command("repair-play-general-techniques-categories")
+def repair_play_general_techniques_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed three-file category-line batch."
+    ),
+) -> None:
+    """Repair reviewed declarer general-techniques categories; dry-run by default."""
+    repair_play_general_techniques_command(root, backup, apply)
+
+
+@app.command("repair-play-declarer-deception-categories")
+def repair_play_declarer_deception_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed five-file category-line batch."
+    ),
+) -> None:
+    """Repair reviewed declarer-deception categories; dry-run by default."""
+    repair_play_declarer_deception_command(root, backup, apply)
+
+
+@app.command("repair-play-declarer-notrump-categories")
+def repair_play_declarer_notrump_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed eight-file category-line batch."
+    ),
+) -> None:
+    """Repair reviewed declarer-notrump categories; dry-run by default."""
+    repair_play_declarer_notrump_command(root, backup, apply)
+
+
+@app.command("repair-play-declarer-squeezes-categories")
+def repair_play_declarer_squeezes_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed ten-file category-line batch."
+    ),
+) -> None:
+    """Repair reviewed declarer-squeezes categories; dry-run by default."""
+    repair_play_declarer_squeezes_command(root, backup, apply)
+
+
+@app.command("repair-play-defence-planning-category")
+def repair_play_defence_planning_category(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed single category-line change."
+    ),
+) -> None:
+    """Repair the reviewed defence-planning category; dry-run by default."""
+    repair_play_defence_planning_command(root, backup, apply)
+
+
+@app.command("repair-play-defence-opening-leads-categories")
+def repair_play_defence_opening_leads_categories(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed ten-file category-line batch."
+    ),
+) -> None:
+    """Repair reviewed defence opening-leads categories; dry-run by default."""
+    repair_play_defence_opening_leads_command(root, backup, apply)
 
 
 @app.command("sentinel-cleanup")
