@@ -1,7 +1,7 @@
 ---
 title: Card Play Principles
 description: Index and navigation guide for the fundamental principles that govern effective declarer play and defensive play in the BridgeLab Knowledge Base.
-category: Card Play – Fundamentals
+category: play
 subcategory: principles
 difficulty: Beginner to Expert
 tags: 

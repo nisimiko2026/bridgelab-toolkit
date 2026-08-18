@@ -4,7 +4,7 @@ description: Preservation of entries is a fundamental card-play technique in whi
   declarer or a defender carefully manages access between hands. The objective is
   to ensure that high cards, established winners, or long suits can be reached when
   needed.
-category: techniques/card-play
+category: play
 subcategory: principles
 difficulty: Intermediate
 tags:
