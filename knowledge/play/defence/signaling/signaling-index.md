@@ -2,7 +2,7 @@
 title: Defensive Signalling
 description: Index and navigation guide for defensive signalling systems and partnership
   communication in the BridgeLab Knowledge Base.
-category: Card Play – Defence
+category: play
 subcategory: defence
 difficulty: Beginner to Expert
 tags:
