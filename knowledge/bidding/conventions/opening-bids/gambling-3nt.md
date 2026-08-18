@@ -1,7 +1,7 @@
 ---
 title: Gambling 3NT
 description: Comprehensive guide to the Gambling 3NT convention, including requirements, responses, variations, defenses, expert treatments, and partnership agreements.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 
