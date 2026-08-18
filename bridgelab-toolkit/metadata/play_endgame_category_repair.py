@@ -12,6 +12,7 @@ from metadata.sentinel_cleanup import FRONT_MATTER_RE, _atomic_write, _load_fron
 
 REVIEWED_ARTICLE = "play/defence/endgame-defence/endgame-defence-index.md"
 REVIEWED_COUNTING_ARTICLE = "play/defence/counting/defence-counting-index.md"
+REVIEWED_SIGNALING_ARTICLE = "play/defence/signaling/signaling-index.md"
 REVIEWED_PRINCIPLES_CATEGORIES = {
     "play/principles/play-principles-index.md": "Card Play – Fundamentals",
     "play/principles/preservation-of-entries.md": "techniques/card-play",
@@ -59,6 +60,14 @@ def build_play_counting_category_report(root: Path) -> PlayEndgameCategoryReport
 
     return _build_play_category_report(
         root, REVIEWED_COUNTING_ARTICLE, EXPECTED_CATEGORY, "defence"
+    )
+
+
+def build_play_signaling_category_report(root: Path) -> PlayEndgameCategoryReport:
+    """Build the reviewed defence-signaling category change in memory."""
+
+    return _build_play_category_report(
+        root, REVIEWED_SIGNALING_ARTICLE, EXPECTED_CATEGORY, "defence"
     )
 
 
@@ -174,6 +183,14 @@ def apply_play_counting_category_report(
     report: PlayEndgameCategoryReport, root: Path, backup: Path
 ) -> None:
     """Apply the reviewed counting action using the same safety contract."""
+
+    _apply_play_category_report(report, root, backup)
+
+
+def apply_play_signaling_category_report(
+    report: PlayEndgameCategoryReport, root: Path, backup: Path
+) -> None:
+    """Apply the reviewed signaling action using the shared safety contract."""
 
     _apply_play_category_report(report, root, backup)
 

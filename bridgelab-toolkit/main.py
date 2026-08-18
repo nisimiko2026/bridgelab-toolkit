@@ -22,6 +22,7 @@ from commands.repair_play_endgame_category import run as repair_play_endgame_com
 from commands.repair_play_counting_category import run as repair_play_counting_command
 from commands.repair_play_principles_categories import run as repair_play_principles_command
 from commands.repair_play_trump_play_categories import run as repair_play_trump_command
+from commands.repair_play_signaling_category import run as repair_play_signaling_command
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -234,6 +235,26 @@ def repair_play_trump_play_categories(
 ) -> None:
     """Repair reviewed declarer trump-play categories; dry-run by default."""
     repair_play_trump_command(root, backup, apply)
+
+
+@app.command("repair-play-signaling-category")
+def repair_play_signaling_category(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False,
+        "--apply",
+        help="Apply the reviewed single category-line change.",
+    ),
+) -> None:
+    """Repair the reviewed defence-signaling category; dry-run by default."""
+    repair_play_signaling_command(root, backup, apply)
 
 
 @app.command("sentinel-cleanup")
