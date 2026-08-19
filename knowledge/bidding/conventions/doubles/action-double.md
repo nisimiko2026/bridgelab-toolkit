@@ -1,7 +1,7 @@
 ---
 title: Action Double
 description: Comprehensive guide to the modern expert Action Double, a competitive double requesting partner to take intelligent action when neither passing nor bidding is attractive.
-category: Convention
+category: bidding
 subcategory: Doubles
 difficulty: Expert
 tags: 

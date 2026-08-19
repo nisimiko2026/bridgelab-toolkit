@@ -1,7 +1,7 @@
 ---
 title: Do Something Intelligent (DSI)
 description: Comprehensive guide to the DSI (Do Something Intelligent) principle, an expert competitive bidding philosophy emphasizing partnership judgment over rigid bidding rules.
-category: Convention
+category: bidding
 subcategory: Competitive
 difficulty: Expert
 tags: 
