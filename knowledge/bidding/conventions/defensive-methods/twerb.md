@@ -1,7 +1,7 @@
 ---
 title: TWERB
 description: Comprehensive guide to the TWERB convention, an expert defense against artificial and natural opening bids using transfer overcalls.
-category: Convention
+category: bidding
 subcategory: Defenses
 difficulty: Expert
 tags: 

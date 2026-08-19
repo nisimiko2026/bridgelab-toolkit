@@ -1,7 +1,7 @@
 ---
 title: Suction Convention
 description: Comprehensive guide to the Suction Convention, an advanced expert defense against Strong 1NT and Strong Club openings using artificial overcalls.
-category: Convention
+category: bidding
 subcategory: Defenses
 difficulty: Expert
 tags: 

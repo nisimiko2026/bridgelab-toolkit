@@ -1,7 +1,7 @@
 ---
 title: CRASH Convention
 description: Comprehensive guide to the CRASH (Color-RAnk-SHape) convention, an expert defense against Strong Club and Strong Notrump systems using two-suited overcalls.
-category: Convention
+category: bidding
 subcategory: Defenses
 difficulty: Expert
 tags: 
