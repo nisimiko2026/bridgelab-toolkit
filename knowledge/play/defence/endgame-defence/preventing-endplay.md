@@ -1,7 +1,7 @@
 ---
 title: Preventing Endplays
 description: Explains how defenders recognize and prevent declarer's endplay and throw-in plans.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Advanced
 tags: 

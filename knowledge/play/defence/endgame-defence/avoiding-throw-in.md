@@ -1,7 +1,7 @@
 ---
 title: Avoiding the Throw-In
 description: Explains how defenders avoid being thrown in and forced to give declarer a favorable return.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Advanced
 tags: 
