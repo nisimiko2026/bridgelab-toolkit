@@ -3,7 +3,7 @@ title: Eight Ever, Nine Never
 description: '"Eight Ever, Nine Never" is one of the best-known bridge maxims. It
   provides a guideline for deciding whether to finesse or play for the drop when missing
   the queen in a suit.'
-category: probability
+category: play
 subcategory: principles
 difficulty: Intermediate
 tags:
