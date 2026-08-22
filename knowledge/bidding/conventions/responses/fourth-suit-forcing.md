@@ -1,7 +1,7 @@
 ---
 title: Fourth Suit Forcing
 description: An artificial bid of the only unbid suit after three suits have been bid naturally, forcing partner to bid again and requesting additional information about strength, shape, and stoppers.
-category: Conventions
+category: bidding
 subcategory: Responses to Openings
 difficulty: Intermediate
 tags: 

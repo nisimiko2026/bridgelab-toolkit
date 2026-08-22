@@ -1,7 +1,7 @@
 ---
 title: New Minor Forcing
 description: An artificial convention in which responder bids the unbid minor after opener rebids 1NT, forcing opener to further describe the hand and helping the partnership locate major-suit fits or the best notrump contract.
-category: Conventions
+category: bidding
 subcategory: Responses to Openings
 difficulty: Intermediate
 tags: 
