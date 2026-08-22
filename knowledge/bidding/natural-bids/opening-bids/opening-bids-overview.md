@@ -1,7 +1,7 @@
 ---
 title: Opening Bids Overview
 description: Comprehensive overview of opening bids in natural bridge bidding systems, including philosophy, hand evaluation, opening requirements, and system differences.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

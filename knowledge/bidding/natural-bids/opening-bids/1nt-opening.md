@@ -1,7 +1,7 @@
 ---
 title: 1NT Opening Bid
 description: Comprehensive guide to the natural 1NT opening bid, including requirements, hand evaluation, continuations, and system variations.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

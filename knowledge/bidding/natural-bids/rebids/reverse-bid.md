@@ -1,7 +1,7 @@
 ---
 title: Reverse Bids
 description: Comprehensive guide to reverse bids in natural bidding systems, including requirements, meanings, continuations, and partnership agreements.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Advanced
 tags: 

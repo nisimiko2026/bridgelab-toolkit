@@ -1,7 +1,7 @@
 ---
 title: Jump Rebids
 description: Comprehensive guide to jump rebids in natural bidding systems, including strength requirements, hand types, forcing sequences, and partnership agreements.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

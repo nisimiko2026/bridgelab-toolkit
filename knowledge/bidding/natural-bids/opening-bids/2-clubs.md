@@ -1,7 +1,7 @@
 ---
 title: 2♣ Opening Bid
 description: Comprehensive guide to the artificial 2♣ opening bid, including requirements, hand evaluation, continuations, and system variations.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

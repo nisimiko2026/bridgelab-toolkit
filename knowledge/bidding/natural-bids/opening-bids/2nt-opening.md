@@ -1,7 +1,7 @@
 ---
 title: 2NT Opening Bid
 description: Comprehensive guide to the natural 2NT opening bid, including requirements, hand evaluation, continuations, and system variations.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Opener After a 2NT Opening
 description: Comprehensive guide to opener's responsibilities, continuations, and decision-making after opening 2NT in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

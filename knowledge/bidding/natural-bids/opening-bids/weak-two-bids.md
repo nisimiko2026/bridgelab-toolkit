@@ -1,7 +1,7 @@
 ---
 title: Weak Two Bids
 description: Comprehensive guide to Weak Two opening bids, including requirements, hand evaluation, responses, defensive methods, and system variations.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

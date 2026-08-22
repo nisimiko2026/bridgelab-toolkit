@@ -1,7 +1,7 @@
 ---
 title: Responder Rebids
 description: Comprehensive guide to responder's rebids after opener's second bid in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

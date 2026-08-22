@@ -1,7 +1,7 @@
 ---
 title: Opening Requirements
 description: Comprehensive guide to evaluating whether to open the bidding in natural bridge systems, including point count, distribution, seat position, vulnerability, and modern evaluation methods.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

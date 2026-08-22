@@ -1,7 +1,7 @@
 ---
 title: Three-Level Preempts
 description: Comprehensive guide to three-level preemptive opening bids, including requirements, evaluation, responses, competitive strategy, and partnership agreements.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

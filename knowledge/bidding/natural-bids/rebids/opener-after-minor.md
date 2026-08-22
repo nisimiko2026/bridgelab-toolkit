@@ -1,7 +1,7 @@
 ---
 title: Opener After a Minor-Suit Opening
 description: Comprehensive guide to opener's rebids and decisions after opening 1♣ or 1♦.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

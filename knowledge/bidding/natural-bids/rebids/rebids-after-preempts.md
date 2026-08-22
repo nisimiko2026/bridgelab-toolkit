@@ -1,7 +1,7 @@
 ---
 title: Rebids After Preempts
 description: Comprehensive guide to opener's rebids after preemptive opening bids, including Weak Two, Three-Level, and Four-Level preempts.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

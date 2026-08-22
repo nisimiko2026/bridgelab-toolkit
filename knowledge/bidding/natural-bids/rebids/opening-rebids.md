@@ -1,7 +1,7 @@
 ---
 title: Opening Rebids
 description: Comprehensive guide to opener's rebids in natural bidding systems after partner's first response.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 
