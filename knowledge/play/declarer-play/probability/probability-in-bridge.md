@@ -1,7 +1,7 @@
 ---
 title: Probability in Bridge
 description: Introduces probability concepts used to evaluate bridge decisions, suit breaks, and card locations.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

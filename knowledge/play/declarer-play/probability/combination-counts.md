@@ -1,7 +1,7 @@
 ---
 title: Combination Counts
 description: Explains how combinatorial analysis supports familiar bridge probabilities for suit breaks and honor locations.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

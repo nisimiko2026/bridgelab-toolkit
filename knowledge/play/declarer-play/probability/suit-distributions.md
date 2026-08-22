@@ -1,7 +1,7 @@
 ---
 title: Suit Distribution Probabilities
 description: Explains the probabilities of missing-card distributions and how they guide declarer and defensive play.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

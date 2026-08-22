@@ -1,7 +1,7 @@
 ---
 title: Conditional Probability
 description: Explains how new information from bidding and play changes the probability of card locations and layouts.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

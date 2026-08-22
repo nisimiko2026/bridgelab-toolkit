@@ -1,7 +1,7 @@
 ---
 title: A Priori and A Posteriori Probabilities
 description: Explains how probability estimates are refined as auction and play information becomes available.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Missing Honor Probabilities
 description: Explains probability-based decisions for locating missing honors and choosing between finesses, drops, and other lines.
-category: probability
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 
