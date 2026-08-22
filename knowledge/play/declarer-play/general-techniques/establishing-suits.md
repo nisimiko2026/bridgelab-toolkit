@@ -1,7 +1,7 @@
 ---
 title: Establishing Suits
 description: Comprehensive guide to establishing long suits as a source of additional tricks in declarer play.
-category: Declarer Play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags: 
