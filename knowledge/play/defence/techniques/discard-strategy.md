@@ -2,7 +2,7 @@
 title: Discard Strategy
 description: 'A discard strategy is the defensive plan for choosing which cards to
   throw away when unable to follow suit. Every discard provides an opportunity to:'
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:

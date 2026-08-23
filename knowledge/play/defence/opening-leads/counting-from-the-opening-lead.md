@@ -1,7 +1,7 @@
 ---
 title: Counting from the Opening Lead
 description: Explains how defenders infer distribution and honor location from the opening lead and subsequent play.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Advanced
 tags: 

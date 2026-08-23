@@ -1,7 +1,7 @@
 ---
 title: Leads Against Notrump Contracts
 description: Explains opening-lead objectives and choices against notrump contracts.
-category: Defensive Play
+category: play
 subcategory: Opening Leads
 difficulty: Intermediate
 tags: 

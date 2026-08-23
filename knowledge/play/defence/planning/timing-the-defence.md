@@ -3,7 +3,7 @@ title: Timing the Defence
 description: Timing the defence is the art of choosing when to attack, cash winners,
   switch suits, force declarer, or hold up. In many contracts, the success of the
   defense depends less on what is played than on when it is played.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Advanced
 tags:

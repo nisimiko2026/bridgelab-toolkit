@@ -4,7 +4,7 @@ description: A safe switch is a change of suit by the defense that minimizes the
   of giving declarer an extra trick. Instead of making an aggressive attacking lead
   that may establish declarer's winners, a defender chooses a passive, low-risk suit
   that leaves declarer to solve the remaining problems.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:

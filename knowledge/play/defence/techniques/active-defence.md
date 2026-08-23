@@ -4,7 +4,7 @@ description: Active defence is a defensive strategy that seeks to create defensi
   tricks before declarer can establish additional winners. Rather than waiting for
   declarer to make mistakes, the defenders take the initiative by attacking vulnerable
   suits, forcing declarer, promoting trump tricks, or disrupting declarer's timing.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:

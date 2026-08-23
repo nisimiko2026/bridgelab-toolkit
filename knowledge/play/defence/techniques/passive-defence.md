@@ -3,7 +3,7 @@ title: Passive Defence
 description: Passive defence is a defensive strategy that focuses on avoiding mistakes
   rather than creating tricks. Instead of attacking aggressively, defenders make safe,
   low-risk plays that force declarer to solve the remaining problems without assistance.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:

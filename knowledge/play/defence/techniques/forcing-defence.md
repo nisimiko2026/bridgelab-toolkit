@@ -4,7 +4,7 @@ description: Forcing defence is an active defensive strategy in trump contracts 
   seeks to shorten declarer's trump holding by repeatedly leading a suit that declarer
   must ruff. Each forced ruff reduces declarer's trump resources, making it harder
   to draw trumps, control the hand, or ruff losers.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:

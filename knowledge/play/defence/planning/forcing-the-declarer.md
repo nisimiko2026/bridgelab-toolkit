@@ -5,7 +5,7 @@ description: Forcing the declarer is a defensive technique in trump contracts in
   consumes one of declarer's trump cards, reducing declarer's trump length and often
   preventing the declarer from using trumps for drawing opponents' trumps, ruffing
   losers, or establishing long suits.
-category: Defensive Play
+category: play
 subcategory: Defensive Techniques
 difficulty: Intermediate
 tags:
