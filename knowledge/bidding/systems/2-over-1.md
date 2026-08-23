@@ -1,7 +1,7 @@
 ---
 title: 2/1 Game Force (2/1 GF)
 description: A comprehensive natural bidding system in which a two-level response in a new suit after a major opening creates a game-forcing auction, allowing precise hand description and efficient slam investigation.
-category: Systems
+category: bidding
 subcategory: Natural Systems
 difficulty: Advanced
 tags: 

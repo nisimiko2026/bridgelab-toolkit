@@ -1,7 +1,7 @@
 ---
 title: Standard American Yellow Card (SAYC)
 description: The official natural bidding system developed by the American Contract Bridge League (ACBL), using five-card majors, a strong notrump, and a standardized set of conventions suitable for partnerships of all levels.
-category: Systems
+category: bidding
 subcategory: Natural Systems
 difficulty: Intermediate
 tags: 

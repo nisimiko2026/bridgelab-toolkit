@@ -1,7 +1,7 @@
 ---
 title: Acol System
 description: A comprehensive natural bidding system based on four-card majors, a strong or weak notrump, natural suit bidding, and flexible hand evaluation. Acol has been the dominant bidding system in the United Kingdom and many Commonwealth countries for decades.
-category: Systems
+category: bidding
 subcategory: Natural Systems
 difficulty: Intermediate
 tags: 

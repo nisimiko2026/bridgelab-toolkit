@@ -1,7 +1,7 @@
 ---
 title: Precision Club System
 description: A comprehensive artificial bidding system built around a strong 1♣ opening, emphasizing precise hand description, efficient relay bidding, and highly accurate game and slam exploration.
-category: Systems
+category: bidding
 subcategory: Strong Club Systems
 difficulty: Advanced
 tags: 
