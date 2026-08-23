@@ -1,7 +1,7 @@
 ---
 title: 2NT Inquiry over Weak Two
 description: Comprehensive guide to the 2NT Inquiry convention used after partner's Weak Two opening to evaluate game and slam potential.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

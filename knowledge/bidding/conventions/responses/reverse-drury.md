@@ -1,7 +1,7 @@
 ---
 title: Reverse Drury
 description: Comprehensive guide to the Reverse Drury convention, an advanced variation of Drury used by a passed hand to distinguish stronger constructive raises after a third- or fourth-seat major opening.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

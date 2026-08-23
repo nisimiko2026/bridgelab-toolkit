@@ -1,7 +1,7 @@
 ---
 title: Passed Hand Splinter
 description: Comprehensive guide to the Passed Hand Splinter convention, showing a fit, shortness, and constructive values after responder has previously passed.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

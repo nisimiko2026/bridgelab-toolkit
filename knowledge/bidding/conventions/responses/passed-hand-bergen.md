@@ -1,7 +1,7 @@
 ---
 title: Passed-Hand Bergen Raises
 description: Comprehensive guide to Passed-Hand Bergen Raises, an advanced extension of Bergen Raises used by a passed hand after partner opens a major in third or fourth seat.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

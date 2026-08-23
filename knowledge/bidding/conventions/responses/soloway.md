@@ -1,7 +1,7 @@
 ---
 title: Soloway Jump Shifts
 description: Comprehensive guide to the Soloway Jump Shifts convention, a modern expert treatment using strong jump shifts to establish a game force while preserving bidding space for constructive exploration.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

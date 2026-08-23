@@ -1,7 +1,7 @@
 ---
 title: Two-Way New Minor Forcing
 description: Comprehensive guide to the Two-Way New Minor Forcing convention, an advanced continuation used after opener rebids 1NT to distinguish invitational and game-forcing hands.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

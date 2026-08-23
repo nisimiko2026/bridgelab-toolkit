@@ -1,7 +1,7 @@
 ---
 title: Two-Way Checkback
 description: Comprehensive guide to the Two-Way Checkback convention, an advanced artificial checkback system used after opener rebids 1NT to distinguish invitational and game-forcing hands while investigating major-suit fits and notrump contracts.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

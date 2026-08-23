@@ -1,7 +1,7 @@
 ---
 title: Passed-Hand Jacoby
 description: Comprehensive guide to the Passed-Hand Jacoby convention, a constructive raise used by a passed hand to show strong trump support and game interest without shortness.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

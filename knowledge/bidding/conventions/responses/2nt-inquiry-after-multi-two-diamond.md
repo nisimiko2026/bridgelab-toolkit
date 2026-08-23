@@ -1,7 +1,7 @@
 ---
 title: 2NT Inquiry after Multi 2♦
 description: Comprehensive guide to the artificial 2NT inquiry used after a Multi 2♦ opening to identify opener's hand type, strength, and suit.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

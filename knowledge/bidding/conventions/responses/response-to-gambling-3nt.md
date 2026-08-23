@@ -1,7 +1,7 @@
 ---
 title: Response to Gambling 3NT
 description: Comprehensive guide to responding after partner opens a Gambling 3NT, including sign-off methods, slam investigation, and partnership agreements.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

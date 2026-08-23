@@ -1,7 +1,7 @@
 ---
 title: Mixed Raise
 description: Comprehensive guide to the Mixed Raise convention, an expert treatment showing constructive values with trump support in competitive auctions.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

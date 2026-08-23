@@ -1,7 +1,7 @@
 ---
 title: Inverted Minors
 description: Comprehensive guide to the Inverted Minors convention, an artificial response structure that exchanges the meanings of the single and double raise after a minor-suit opening.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Intermediate to Expert
 tags: 

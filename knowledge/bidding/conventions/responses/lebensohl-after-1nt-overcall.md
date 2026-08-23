@@ -1,7 +1,7 @@
 ---
 title: Lebensohl after a 1NT Overcall
 description: Comprehensive guide to the Lebensohl convention used after partner's 1NT overcall of the opponents' opening bid.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 
