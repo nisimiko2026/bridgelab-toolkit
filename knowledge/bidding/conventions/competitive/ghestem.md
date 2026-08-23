@@ -1,7 +1,7 @@
 ---
 title: Ghestem Convention
 description: An advanced three-suited conventional defense that uses three different artificial overcalls to show every possible two-suited hand after an opponent's opening bid.
-category: Conventions
+category: bidding
 subcategory: Overcalls
 difficulty: Expert
 tags: 

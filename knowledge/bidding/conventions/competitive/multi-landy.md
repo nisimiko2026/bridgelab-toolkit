@@ -1,7 +1,7 @@
 ---
 title: Multi-Landy Convention
 description: An advanced defense against a 1NT opening that combines the simplicity of Landy with the flexibility of Cappelletti/Hamilton to show both one-suited and two-suited hands.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Advanced
 tags: 

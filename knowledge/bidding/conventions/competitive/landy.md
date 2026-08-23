@@ -1,7 +1,7 @@
 ---
 title: Landy Convention
 description: A conventional defense against a 1NT opening in which a 2♣ overcall shows both major suits, allowing the partnership to compete effectively and locate major-suit fits.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Beginner
 tags: 

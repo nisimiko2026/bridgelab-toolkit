@@ -1,7 +1,7 @@
 ---
 title: DONT Convention
 description: A conventional defense against an opponent's 1NT opening using Double and artificial overcalls to describe one-suited and two-suited hands while competing efficiently.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Intermediate
 tags: 

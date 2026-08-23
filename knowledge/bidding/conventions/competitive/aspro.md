@@ -1,7 +1,7 @@
 ---
 title: Aspro Convention
 description: An aggressive conventional defense to an opponent's 1NT opening that emphasizes showing the major suits first while allowing efficient description of one- and two-suited hands.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Advanced
 tags: 

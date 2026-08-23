@@ -1,7 +1,7 @@
 ---
 title: Meckwell Convention
 description: An aggressive conventional defense against an opponent's 1NT opening developed by Jeff Meckstroth and Eric Rodwell, using highly descriptive artificial bids to show one- and two-suited hands.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Brozel Convention
 description: An advanced conventional defense against a 1NT opening that uses artificial overcalls to show one-suited and two-suited hands, allowing the partnership to compete aggressively and accurately.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Advanced
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Balancing Notrump
 description: A natural notrump overcall in the balancing seat that shows a balanced hand with values insufficient for a direct notrump overcall, allowing the partnership to compete accurately after the opponents stop bidding.
-category: Conventions
+category: bidding
 subcategory: Balancing
 difficulty: Intermediate
 tags: 

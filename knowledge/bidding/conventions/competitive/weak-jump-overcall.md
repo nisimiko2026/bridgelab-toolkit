@@ -1,7 +1,7 @@
 ---
 title: Weak Jump Overcalls
 description: A preemptive overcall made by jumping in a suit over an opponent's opening bid, showing a long suit with limited high-card strength and designed to disrupt the opponents' auction.
-category: Conventions
+category: bidding
 subcategory: Overcalls
 difficulty: Intermediate
 tags: 

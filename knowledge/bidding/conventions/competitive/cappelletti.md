@@ -1,7 +1,7 @@
 ---
 title: Cappelletti Convention
 description: A conventional defense against an opponent's 1NT opening that uses artificial overcalls to describe one-suited and two-suited hands while competing aggressively for the partscore or game.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Intermediate
 tags: 

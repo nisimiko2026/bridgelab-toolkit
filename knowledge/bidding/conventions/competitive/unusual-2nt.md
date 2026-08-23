@@ -1,7 +1,7 @@
 ---
 title: Unusual Notrump
 description: An artificial 2NT overcall showing the two lowest unbid suits, allowing the partnership to compete aggressively with distributional hands after an opponent's opening bid.
-category: Conventions
+category: bidding
 subcategory: Overcalls
 difficulty: Intermediate
 tags: 

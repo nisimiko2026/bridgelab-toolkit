@@ -1,7 +1,7 @@
 ---
 title: Michaels Cue Bid
 description: An artificial cue bid over an opponent's opening that shows a two-suited hand, allowing the partnership to compete aggressively while efficiently describing distribution.
-category: Conventions
+category: bidding
 subcategory: Overcalls
 difficulty: Intermediate
 tags: 

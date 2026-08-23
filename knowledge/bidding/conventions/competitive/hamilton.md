@@ -1,7 +1,7 @@
 ---
 title: Hamilton Convention
 description: A conventional defense against a 1NT opening that uses two-level bids to show one-suited and two-suited hands, allowing the partnership to compete effectively against notrump.
-category: Conventions
+category: bidding
 subcategory: Defenses to Notrump
 difficulty: Intermediate
 tags: 
