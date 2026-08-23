@@ -1,7 +1,7 @@
 ---
 title: Trump Control
 description: Comprehensive guide to trump control in declarer play, including drawing trumps, preserving trump control, shortening, and advanced trump management.
-category: Declarer Play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags: 
