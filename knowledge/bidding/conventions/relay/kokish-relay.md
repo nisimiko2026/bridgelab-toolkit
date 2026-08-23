@@ -1,7 +1,7 @@
 ---
 title: Kokish Relay
 description: Comprehensive guide to the Kokish Relay, an expert relay treatment after a strong 2♣ opening that distinguishes balanced hands from strong one-suited and two-suited hands while conserving bidding space.
-category: Convention
+category: bidding
 subcategory: Relay Bidding
 difficulty: Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Spiral Relay
 description: Comprehensive guide to the Spiral Relay principle, an advanced relay-bidding technique used to identify suit length, honor location, and hand pattern through cyclic step responses.
-category: Convention
+category: bidding
 subcategory: Relay Bidding
 difficulty: Expert
 tags: 

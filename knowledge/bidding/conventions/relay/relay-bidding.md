@@ -1,7 +1,7 @@
 ---
 title: Relay Bidding
 description: Comprehensive guide to Relay Bidding, one of the most sophisticated bidding methods in bridge, using artificial relay bids to exchange highly accurate information about shape, strength, controls, and distribution.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Relay Principle
 description: Comprehensive guide to the Relay Principle, the foundation of modern relay bidding systems, including philosophy, structure, relay auctions, responses, advantages, disadvantages, and expert applications.
-category: Convention
+category: bidding
 subcategory: Relay Bidding
 difficulty: Expert
 tags: 

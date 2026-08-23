@@ -1,7 +1,7 @@
 ---
 title: Step Responses
 description: Comprehensive guide to Step Responses, the foundation of relay bidding systems, explaining step structures, response scales, applications, and expert partnership agreements.
-category: Convention
+category: bidding
 subcategory: Relay Bidding
 difficulty: Expert
 tags: 
