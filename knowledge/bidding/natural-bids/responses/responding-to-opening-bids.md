@@ -1,7 +1,7 @@
 ---
 title: Responding to Opening Bids
 description: Comprehensive guide to responder's first bid after partner opens the bidding in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Responding with Balanced Hands
 description: Comprehensive guide to responding to partner's opening bid with balanced hands in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

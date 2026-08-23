@@ -1,7 +1,7 @@
 ---
 title: Response to 2♣ Opening
 description: Comprehensive guide to responder's actions after partner opens the artificial 2♣ bid in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Response to Three-Level Preempt
 description: Comprehensive guide to responding after partner opens with a natural three-level preempt (3♣, 3♦, 3♥, or 3♠).
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

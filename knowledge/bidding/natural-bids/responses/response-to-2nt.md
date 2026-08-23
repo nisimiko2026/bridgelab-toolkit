@@ -1,7 +1,7 @@
 ---
 title: Response to 2NT Opening
 description: Comprehensive guide to responder's actions after partner opens 2NT in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

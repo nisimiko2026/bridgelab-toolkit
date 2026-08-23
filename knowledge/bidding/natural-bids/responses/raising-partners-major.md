@@ -1,7 +1,7 @@
 ---
 title: Raising Partner's Major
 description: Comprehensive guide to raising partner's major suit, including evaluation, support requirements, invitational and game-forcing raises, competitive auctions, and modern treatments.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

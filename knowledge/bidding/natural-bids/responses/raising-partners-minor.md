@@ -1,7 +1,7 @@
 ---
 title: Raising Partner's Minor
 description: Comprehensive guide to raising partner's minor suit, including support requirements, constructive raises, invitational sequences, game decisions, and modern treatments.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Response to Weak Two Opening
 description: Comprehensive guide to responding after partner opens a Weak Two (2♦, 2♥, or 2♠) in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

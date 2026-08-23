@@ -1,7 +1,7 @@
 ---
 title: Response to a Major Opening
 description: Comprehensive guide to responding after partner opens 1♥ or 1♠ in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

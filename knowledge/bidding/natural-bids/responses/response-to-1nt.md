@@ -1,7 +1,7 @@
 ---
 title: Response to 1NT Opening
 description: Comprehensive guide to responder's actions after partner opens 1NT in natural bidding systems.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags: 

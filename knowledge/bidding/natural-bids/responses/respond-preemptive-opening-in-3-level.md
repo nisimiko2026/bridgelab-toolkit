@@ -1,7 +1,7 @@
 ---
 title: Responding to Preemptive Opening Bids at the Three Level
 description: Comprehensive guide to responding after partner opens with a natural weak three-level preempt.
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 

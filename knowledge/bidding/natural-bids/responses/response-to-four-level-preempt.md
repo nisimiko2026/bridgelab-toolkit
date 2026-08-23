@@ -1,7 +1,7 @@
 ---
 title: Response to Four-Level Preempt
 description: Comprehensive guide to responding after partner opens with a natural four-level preempt (4♣, 4♦, 4♥, or 4♠).
-category: Natural Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 
