@@ -1,7 +1,7 @@
 ---
 title: Polish Club System
 description: A comprehensive natural–artificial bidding system based on an ambiguous 1♣ opening, combining natural bidding, limited openings, and strong hand descriptions. The Polish Club system is the dominant bidding system in Poland and one of the world's most successful modern bidding systems.
-category: Systems
+category: bidding
 subcategory: Ambiguous Club Systems
 difficulty: Advanced
 tags: 
