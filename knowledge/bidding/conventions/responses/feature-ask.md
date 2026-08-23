@@ -1,7 +1,7 @@
 ---
 title: Feature Ask
 description: An artificial 2NT inquiry after a Weak Two opening that asks opener to show an outside feature rather than describe hand strength or suit quality.
-category: Conventions
+category: bidding
 subcategory: Responses to Weak Two Openings
 difficulty: Intermediate
 tags: 

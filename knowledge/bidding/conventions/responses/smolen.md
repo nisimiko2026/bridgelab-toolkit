@@ -1,7 +1,7 @@
 ---
 title: Smolen Convention
 description: An extension of Stayman used after a 1NT opening that allows responder with game-forcing values and a 5-4 major-suit distribution to reveal the five-card major while preserving the strong hand as declarer.
-category: Conventions
+category: bidding
 subcategory: Responses to 1NT
 difficulty: Advanced
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Minor Suit Stayman
 description: A convention used after a 1NT opening to investigate minor-suit fits, distinguish between notrump and minor-suit games, and explore slam when no major-suit fit exists.
-category: Conventions
+category: bidding
 subcategory: Responses to 1NT
 difficulty: Intermediate
 tags: 

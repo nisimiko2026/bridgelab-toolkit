@@ -1,7 +1,7 @@
 ---
 title: Swiss Raise
 description: A jump response to a major-suit opening that shows a game-forcing raise with four-card support and slam interest, using one level less than a direct jump to game.
-category: Conventions
+category: bidding
 subcategory: Responses to Major Openings
 difficulty: Advanced
 tags: 

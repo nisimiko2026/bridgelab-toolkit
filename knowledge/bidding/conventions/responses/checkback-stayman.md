@@ -1,7 +1,7 @@
 ---
 title: Checkback Stayman
 description: A conventional rebid used after a 1NT rebid by opener to determine whether opener holds three-card support for responder's major or an unshown four-card major.
-category: Conventions
+category: bidding
 subcategory: Rebids
 difficulty: Intermediate
 tags: 

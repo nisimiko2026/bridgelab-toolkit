@@ -1,7 +1,7 @@
 ---
 title: Ogust Convention
 description: An artificial response convention used after a Weak Two opening to distinguish minimum and maximum hands as well as suit quality, helping responder judge game prospects.
-category: Conventions
+category: bidding
 subcategory: Responses to Weak Two Openings
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Bergen Raises
 description: A convention that uses jump responses after a major-suit opening to distinguish constructive, invitational, and preemptive raises while conserving bidding space.
-category: Conventions
+category: bidding
 subcategory: Responses to Major Openings
 difficulty: Intermediate
 tags: 

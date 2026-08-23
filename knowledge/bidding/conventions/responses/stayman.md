@@ -1,7 +1,7 @@
 ---
 title: Stayman
 description: A conventional response to a 1NT or 2NT opening used to locate a four-card major-suit fit and improve game and slam bidding.
-category: Conventions
+category: bidding
 subcategory: Responses to Notrump
 difficulty: Beginner
 tags: 

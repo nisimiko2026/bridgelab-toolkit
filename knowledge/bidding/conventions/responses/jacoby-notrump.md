@@ -1,7 +1,7 @@
 ---
 title: Jacoby 2NT
 description: A game-forcing response to a major-suit opening that shows four-card trump support and opening values, allowing the partnership to investigate slam while keeping the auction low.
-category: Conventions
+category: bidding
 subcategory: Responses to Major Openings
 difficulty: Intermediate
 tags: 

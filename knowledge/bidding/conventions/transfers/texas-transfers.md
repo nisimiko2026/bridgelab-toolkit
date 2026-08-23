@@ -1,7 +1,7 @@
 ---
 title: Texas Transfer
 description: An artificial response to a 1NT or 2NT opening that transfers opener to a major suit at the game level, allowing responder to conceal the stronger hand and simplify game and slam auctions.
-category: Conventions
+category: bidding
 subcategory: Responses to Notrump
 difficulty: Intermediate
 tags: 

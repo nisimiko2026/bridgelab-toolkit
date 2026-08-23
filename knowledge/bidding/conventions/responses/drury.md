@@ -1,7 +1,7 @@
 ---
 title: Drury Convention
 description: A conventional response by a passed hand to a third- or fourth-seat major-suit opening, showing a limit raise with three or more-card support while allowing opener to distinguish between a light and full opening.
-category: Conventions
+category: bidding
 subcategory: Responses to Major Openings
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Puppet Stayman
 description: An advanced Stayman variation used after a 2NT opening or a strong notrump sequence to locate 5-3 and 4-4 major-suit fits while preserving bidding space for game and slam exploration.
-category: Conventions
+category: bidding
 subcategory: Responses to Notrump
 difficulty: Advanced
 tags: 

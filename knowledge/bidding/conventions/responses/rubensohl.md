@@ -1,7 +1,7 @@
 ---
 title: Rubensohl Convention
 description: An advanced transfer-based extension of Lebensohl used after interference over partner's 1NT opening, allowing responder to distinguish weak, invitational, and game-forcing hands while efficiently showing suit length and stopper status.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Advanced
 tags: 

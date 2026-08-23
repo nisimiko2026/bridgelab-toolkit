@@ -1,7 +1,7 @@
 ---
 title: Jacoby Transfers
 description: An artificial response to a 1NT or 2NT opening that transfers opener into responder's five-card or longer major suit while keeping the strong notrump hand as declarer.
-category: Conventions
+category: bidding
 subcategory: Responses to Notrump
 difficulty: Beginner
 tags: 

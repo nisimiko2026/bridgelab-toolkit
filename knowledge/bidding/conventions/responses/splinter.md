@@ -1,7 +1,7 @@
 ---
 title: Splinter Convention
 description: A double jump response that shows four-card or longer trump support, game-forcing values, and a singleton or void in the bid suit.
-category: Conventions
+category: bidding
 subcategory: Responses to Major Openings
 difficulty: Advanced
 tags: 

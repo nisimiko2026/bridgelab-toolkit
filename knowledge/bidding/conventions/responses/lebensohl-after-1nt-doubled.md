@@ -1,7 +1,7 @@
 ---
 title: Lebensohl after 1NT Doubled
 description: Conventional agreements used when an opponent doubles partner's 1NT opening, allowing responder to distinguish weak escape hands, invitational values, and penalty-oriented hands.
-category: Conventions
+category: bidding
 subcategory: Responses to 1NT
 difficulty: Advanced
 tags: 

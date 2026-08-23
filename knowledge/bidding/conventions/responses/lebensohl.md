@@ -1,7 +1,7 @@
 ---
 title: Lebensohl Convention
 description: An artificial convention used after interference over a 1NT opening or after partner's takeout double, allowing responder to distinguish weak, invitational, and game-forcing hands while showing or denying a stopper in the opponent's suit.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Advanced
 tags: 
