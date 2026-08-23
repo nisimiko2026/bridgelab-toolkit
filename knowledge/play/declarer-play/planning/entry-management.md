@@ -1,7 +1,7 @@
 ---
 title: Entries
 description: Comprehensive guide to entry management in declarer play, including preserving, creating, and using entries effectively.
-category: Declarer Play
+category: play
 subcategory: declarer-play
 difficulty: Intermediate to Expert
 tags: 
