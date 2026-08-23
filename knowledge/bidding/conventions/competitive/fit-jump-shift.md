@@ -1,7 +1,7 @@
 ---
 title: Fit Jump Shift
 description: Comprehensive guide to the Fit Jump Shift convention, a competitive bidding treatment showing support for partner's suit together with a long side suit and offensive values.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

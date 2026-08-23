@@ -1,7 +1,7 @@
 ---
 title: Unusual vs. Unusual
 description: Comprehensive guide to the Unusual vs. Unusual (UvU) convention, an advanced defensive method used after opponents employ the Unusual Notrump convention to distinguish raises, cue bids, and suit bids.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Equal Level Conversion Doubles (ELCD)
 description: Comprehensive guide to Equal Level Conversion Doubles (ELCD), an expert extension of takeout doubles that permits equal-level suit corrections without implying extra strength.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

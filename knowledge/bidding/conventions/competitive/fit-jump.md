@@ -1,7 +1,7 @@
 ---
 title: Jump Shift
 description: Comprehensive guide to Jump Shift bidding, covering natural, strong, weak, and artificial jump shifts, expert treatments, partnership agreements, and modern applications.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

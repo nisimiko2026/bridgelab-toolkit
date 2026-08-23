@@ -1,7 +1,7 @@
 ---
 title: Equal Level Conversion (ELC)
 description: Comprehensive guide to the Equal Level Conversion convention, an advanced extension of takeout doubles that allows the doubler to convert partner's forced minor-suit response into another suit without showing extra strength.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

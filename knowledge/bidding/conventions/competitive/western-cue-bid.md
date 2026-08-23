@@ -1,7 +1,7 @@
 ---
 title: Western Cue Bid
 description: Comprehensive guide to the Western Cue Bid convention, an expert treatment used to investigate the possibility of playing 3NT by asking partner for a stopper in the opponents' suit.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

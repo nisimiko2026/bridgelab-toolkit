@@ -1,7 +1,7 @@
 ---
 title: Negative Free Bid
 description: Comprehensive guide to the Negative Free Bid (NFB) convention, an advanced competitive treatment that distinguishes constructive hands from forcing hands after opponent interference.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

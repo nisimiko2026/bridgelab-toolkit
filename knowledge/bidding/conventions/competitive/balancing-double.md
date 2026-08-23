@@ -1,7 +1,7 @@
 ---
 title: Balancing Double
 description: Comprehensive guide to the Balancing Double (Protective Double), including theory, hand requirements, responses, competitive strategy, expert agreements, and modern treatments.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 

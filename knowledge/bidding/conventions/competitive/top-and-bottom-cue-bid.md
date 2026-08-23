@@ -1,7 +1,7 @@
 ---
 title: Top and Bottom Cue Bid
 description: Comprehensive guide to the Top and Bottom Cue Bid convention, an advanced competitive bidding method used to distinguish one-suited and two-suited hands over an opponent's opening.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

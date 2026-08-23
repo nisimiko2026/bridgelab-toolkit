@@ -1,7 +1,7 @@
 ---
 title: Responsive Cue Bid
 description: Comprehensive guide to the Responsive Cue Bid convention, an expert competitive bidding treatment used after partner's takeout double and the opponents raise their suit.
-category: Convention
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags: 
