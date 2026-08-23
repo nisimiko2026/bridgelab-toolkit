@@ -1,7 +1,7 @@
 ---
 title: Responsive Double
 description: A conventional double made after partner has made a takeout double and the opponents have raised their suit, showing values and interest in the unbid suits.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

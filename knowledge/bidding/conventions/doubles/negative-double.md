@@ -1,7 +1,7 @@
 ---
 title: Negative Double
 description: A conventional double made by responder after an opponent's overcall, typically showing unbid suits rather than penalty interest.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

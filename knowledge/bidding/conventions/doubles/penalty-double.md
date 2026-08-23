@@ -1,7 +1,7 @@
 ---
 title: Penalty Double
 description: A double that expresses the intention to defend the doubled contract, expecting the opponents to fail and produce a profitable penalty.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

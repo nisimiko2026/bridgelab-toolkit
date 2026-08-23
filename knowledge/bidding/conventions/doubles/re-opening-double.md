@@ -1,7 +1,7 @@
 ---
 title: Reopening Double
 description: A conventional double made after the opponents' auction appears ready to end, showing values and a desire to keep the auction alive rather than defend.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

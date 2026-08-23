@@ -1,7 +1,7 @@
 ---
 title: Flannery Convention
 description: An artificial 2♦ opening showing exactly five hearts and four spades with opening values, designed to solve rebid problems after opening one heart.
-category: Conventions
+category: bidding
 subcategory: Opening Conventions
 difficulty: Intermediate
 tags: 

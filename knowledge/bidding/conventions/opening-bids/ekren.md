@@ -1,7 +1,7 @@
 ---
 title: Ekren Convention
 description: An artificial weak 2♦ opening showing both major suits, typically 4-4, 4-5, or 5-4 distribution with preemptive values.
-category: Conventions
+category: bidding
 subcategory: Opening Conventions
 difficulty: Intermediate
 tags: 

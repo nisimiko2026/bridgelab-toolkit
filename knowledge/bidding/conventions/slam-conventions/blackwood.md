@@ -1,7 +1,7 @@
 ---
 title: Blackwood Convention
 description: A slam-investigation convention using 4NT to ask for Aces (or Key Cards in modern variants), helping partnerships determine whether a slam contract is safe.
-category: Conventions
+category: bidding
 subcategory: Slam Conventions
 difficulty: Intermediate
 tags: 

@@ -1,7 +1,7 @@
 ---
 title: Maximal Double
 description: A conventional double used in competitive auctions after the opponents have competed below game, showing a game invitation with trump support when no room remains for a natural game try.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

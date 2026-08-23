@@ -1,7 +1,7 @@
 ---
 title: Support Double
 description: A conventional double by opener after responder bids a new suit and the opponents interfere, showing exactly three-card support for responder's suit.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Intermediate
 tags: 

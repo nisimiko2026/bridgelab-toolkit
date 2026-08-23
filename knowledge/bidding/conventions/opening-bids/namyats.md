@@ -1,7 +1,7 @@
 ---
 title: Namyats Convention
 description: An artificial preemptive convention in which a 4♣ opening shows a strong four-heart hand and a 4♦ opening shows a strong four-spade hand.
-category: Conventions
+category: bidding
 subcategory: Opening Conventions
 difficulty: Advanced
 tags: 

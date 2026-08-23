@@ -1,7 +1,7 @@
 ---
 title: Cue Bidding
 description: A family of conventional bids in which a player bids the opponents' suit or a previously bid suit to convey artificial information, most commonly to show controls during slam investigation or to indicate a strong hand in competitive auctions.
-category: Conventions
+category: bidding
 subcategory: Slam Conventions
 difficulty: Advanced
 tags: 

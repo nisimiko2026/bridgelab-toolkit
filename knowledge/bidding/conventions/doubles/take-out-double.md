@@ -1,7 +1,7 @@
 ---
 title: Takeout Double
 description: A conventional double of an opponent's opening bid that asks partner to bid an unbid suit rather than defend the doubled contract.
-category: Conventions
+category: bidding
 subcategory: Competitive Bidding
 difficulty: Beginner
 tags: 

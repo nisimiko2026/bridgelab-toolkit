@@ -1,7 +1,7 @@
 ---
 title: DOPI and ROPI
 description: Conventional methods for responding to interference over Blackwood or Roman Key Card Blackwood, allowing the partnership to continue ace-asking despite opponent interference.
-category: Conventions
+category: bidding
 subcategory: Slam Conventions
 difficulty: Advanced
 tags: 

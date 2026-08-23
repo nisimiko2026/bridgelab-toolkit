@@ -1,7 +1,7 @@
 ---
 title: Roman Key Card Blackwood (RKCB)
 description: A modern slam-investigation convention that uses 4NT to ask for the five key cards—the four Aces and the King of the agreed trump suit—and optionally the trump Queen.
-category: Conventions
+category: bidding
 subcategory: Slam Conventions
 difficulty: Advanced
 tags: 

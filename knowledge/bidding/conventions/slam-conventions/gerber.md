@@ -1,7 +1,7 @@
 ---
 title: Gerber Convention
 description: An artificial 4♣ bid used primarily after notrump auctions to ask partner for the number of Aces, allowing the partnership to investigate slam while preserving bidding space.
-category: Conventions
+category: bidding
 subcategory: Slam Conventions
 difficulty: Intermediate
 tags: 

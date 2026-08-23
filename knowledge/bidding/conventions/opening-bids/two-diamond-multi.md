@@ -1,7 +1,7 @@
 ---
 title: Multi 2♦ Convention
 description: An artificial 2♦ opening showing one of several possible hand types, most commonly a weak two in either major, while preserving bidding space and increasing preemptive pressure.
-category: Conventions
+category: bidding
 subcategory: Opening Conventions
 difficulty: Advanced
 tags: 
