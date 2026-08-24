@@ -4,7 +4,7 @@ description: The Rule of 22 is an opening-hand evaluation guideline used to dete
   whether a borderline hand should be opened in first or second seat. It improves
   upon the Rule of 20 by considering not only high-card strength and distribution
   but also quick tricks, giving greater weight to controls.
-category: Opening Principles
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:
