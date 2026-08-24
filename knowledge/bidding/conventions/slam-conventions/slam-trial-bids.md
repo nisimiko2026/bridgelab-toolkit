@@ -1,7 +1,7 @@
 ---
 title: Slam Trial Bids
 description: A comprehensive guide to slam trial bids in contract bridge, including objectives, principles, methods, examples, partnership agreements, and common mistakes.
-category: Slam Bidding
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags: 
