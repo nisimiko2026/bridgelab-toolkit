@@ -3,7 +3,7 @@ title: Quick Tricks
 description: Quick Tricks (QT) measure a hand's immediate trick-taking potential from
   high honors. Unlike High Card Points (HCP), Quick Tricks emphasize controls (Aces
   and protected Kings) rather than overall honor strength.
-category: Hand Evaluation
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:

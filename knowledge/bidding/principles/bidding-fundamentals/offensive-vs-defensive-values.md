@@ -1,7 +1,7 @@
 ---
 title: Offensive vs Defensive Values
 description: Every bridge hand contains a combination of offensive and defensive values.
-category: Hand Evaluation
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:

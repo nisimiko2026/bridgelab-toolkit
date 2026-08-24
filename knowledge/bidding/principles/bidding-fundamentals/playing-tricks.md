@@ -3,7 +3,7 @@ title: Playing Tricks
 description: Playing Tricks (PT) estimate the number of tricks a hand is expected
   to take as declarer with little or no help from partner, assuming a suitable trump
   fit or an appropriate contract.
-category: Hand Evaluation
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:
