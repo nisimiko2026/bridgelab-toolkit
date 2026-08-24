@@ -1,7 +1,7 @@
 ---
 title: Defense Against Multi 2♦
 description: Comprehensive guide to defending against the Multi 2♦ convention, including standard and expert methods, balancing, doubles, overcalls, responses, and partnership agreements.
-category: Convention Defense
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

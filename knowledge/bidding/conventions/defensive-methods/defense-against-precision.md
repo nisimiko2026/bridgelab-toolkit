@@ -1,7 +1,7 @@
 ---
 title: Defense Against Precision
 description: 'Precision is a strong club bidding system in which:'
-category: Defensive Methods
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Woolsey Defense to Multi
 description: Comprehensive guide to the Woolsey Defense to the Multi 2♦ opening, one of the most widely played expert defenses against the Multi convention.
-category: Convention Defense
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags: 

@@ -2,7 +2,7 @@
 title: Defense Against Strong Club
 description: A Strong Club opening is an artificial 1♣ bid showing a strong hand,
   typically 16+ HCP or 17+ HCP, depending on the system.
-category: Defensive Methods
+category: bidding
 subcategory: conventions
 difficulty: Expert
 tags:
