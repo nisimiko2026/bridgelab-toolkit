@@ -139,6 +139,9 @@ from commands.repair_category_normalization_batch3_3w import (
 from commands.repair_category_normalization_batch3_3x import (
     run as repair_category_normalization_batch3_3x_command,
 )
+from commands.repair_category_normalization_batch3_3y import (
+    run as repair_category_normalization_batch3_3y_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -775,6 +778,20 @@ def repair_category_normalization_batch3_3x(
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3x; dry-run by default."""
     repair_category_normalization_batch3_3x_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch3-3y")
+def repair_category_normalization_batch3_3y(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None, "--backup", help="Fresh path-preserving backup directory (required with --apply)."
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed one-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 3.3y; dry-run by default."""
+    repair_category_normalization_batch3_3y_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
