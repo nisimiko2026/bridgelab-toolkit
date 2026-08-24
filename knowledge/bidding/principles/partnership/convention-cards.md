@@ -2,7 +2,7 @@
 title: Convention Cards
 description: A Convention Card is a structured summary of a partnership's bidding,
   defensive, and carding agreements.
-category: Partnership Agreements
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:

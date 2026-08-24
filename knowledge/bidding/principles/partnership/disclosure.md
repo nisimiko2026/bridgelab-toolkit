@@ -2,7 +2,7 @@
 title: Disclosure
 description: Disclosure is the principle that opponents are entitled to know your
   partnership agreements, but not your private thoughts, judgments, or intentions.
-category: Partnership Agreements
+category: bidding
 subcategory: principles
 difficulty: Beginner to Expert
 tags:
