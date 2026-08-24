@@ -2,7 +2,7 @@
 title: Control-Asking Bid
 description: A Control-Asking Bid (CAB) is an artificial bid used during slam investigation
   to determine partner's control holdings.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

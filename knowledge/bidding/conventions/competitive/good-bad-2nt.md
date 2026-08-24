@@ -2,7 +2,7 @@
 title: Good-Bad 2NT
 description: 'Good-Bad 2NT is an artificial competitive bidding convention that allows
   a partnership to distinguish between:'
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

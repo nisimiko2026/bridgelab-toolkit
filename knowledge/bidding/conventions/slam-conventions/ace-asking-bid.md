@@ -3,7 +3,7 @@ title: Ace-Asking Bid
 description: An Ace-Asking Bid (AAB) is an artificial bid used during slam investigation
   to determine whether the partnership holds enough aces (or key cards) to bid a slam
   safely.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

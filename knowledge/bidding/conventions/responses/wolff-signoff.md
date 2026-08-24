@@ -2,7 +2,7 @@
 title: Wolff Signoff
 description: Wolff Signoff is a convention used after opener rebids 2NT in a game-forcing
   auction.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

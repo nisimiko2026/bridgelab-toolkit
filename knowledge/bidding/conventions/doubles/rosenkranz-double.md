@@ -2,7 +2,7 @@
 title: Rosenkranz Double
 description: The Rosenkranz Double is a conventional treatment used after partner
   has made a suit overcall and the opponents continue bidding.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags:

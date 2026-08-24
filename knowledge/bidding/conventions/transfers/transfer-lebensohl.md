@@ -2,7 +2,7 @@
 title: Transfer Lebensohl
 description: Transfer Lebensohl is an advanced competitive bidding convention used
   after partner opens 1NT and the next opponent overcalls.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: All Levels
 tags:

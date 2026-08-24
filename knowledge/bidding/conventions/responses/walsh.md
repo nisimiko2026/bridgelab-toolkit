@@ -2,7 +2,7 @@
 title: Walsh
 description: 'Walsh is a response style used after partner opens 1♣. Its primary principle
   is:'
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

@@ -2,7 +2,7 @@
 title: Rosenkranz Redouble
 description: The Rosenkranz Redouble is the companion convention to the Rosenkranz
   Double.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Intermediate
 tags:

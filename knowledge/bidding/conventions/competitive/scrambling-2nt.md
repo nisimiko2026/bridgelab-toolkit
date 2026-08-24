@@ -3,7 +3,7 @@ title: Scrambling 2NT
 description: Scrambling 2NT is an artificial competitive convention used when the
   partnership believes that defending is undesirable, but neither partner knows the
   best trump suit.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

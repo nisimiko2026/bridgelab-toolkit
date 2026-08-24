@@ -2,7 +2,7 @@
 title: Jordan 2NT
 description: Jordan 2NT (also known as Truscott 2NT) is an artificial response used
   after partner makes a Takeout Double and right-hand opponent raises.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

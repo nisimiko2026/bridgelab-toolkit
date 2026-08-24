@@ -2,7 +2,7 @@
 title: Minorwood
 description: Minorwood is a Roman Key Card Blackwood (RKCB) variation used when the
   agreed trump suit is a minor.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

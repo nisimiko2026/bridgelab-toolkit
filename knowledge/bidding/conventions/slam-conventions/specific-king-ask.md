@@ -2,7 +2,7 @@
 title: Specific King Ask
 description: A Specific King Ask (SKA) is an advanced slam-investigation method used
   after all key cards have been accounted for.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

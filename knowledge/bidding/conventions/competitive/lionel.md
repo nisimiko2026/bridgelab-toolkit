@@ -2,7 +2,7 @@
 title: Lionel
 description: Lionel is a conventional defense against an opponent's 1NT opening, developed
   by Lionel Wright of New Zealand.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

@@ -2,7 +2,7 @@
 title: Trump-Asking Bid
 description: A Trump-Asking Bid (TAB) is an artificial bid used during slam investigation
   to obtain information about the agreed trump suit.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

@@ -2,7 +2,7 @@
 title: XYZ
 description: XYZ is an artificial relay convention used after three one-level bids
   by the partnership.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

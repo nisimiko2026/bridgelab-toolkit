@@ -1,7 +1,7 @@
 ---
 title: Transfer Walsh
 description: Transfer Walsh is an advanced development of the Walsh bidding style.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:

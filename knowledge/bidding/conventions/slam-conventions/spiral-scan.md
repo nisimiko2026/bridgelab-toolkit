@@ -2,7 +2,7 @@
 title: Spiral Scan
 description: Spiral Scan is an advanced grand slam investigation method used after
   a successful Key Card Ask.
-category: Convention Card
+category: bidding
 subcategory: conventions
 difficulty: Advanced
 tags:
