@@ -1,7 +1,7 @@
 ---
 title: Limit Raise
 description: Comprehensive guide to the Limit Raise in natural bidding systems, including requirements, continuations, game decisions, and system variations.
-category: Invitational Bidding
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags: 
