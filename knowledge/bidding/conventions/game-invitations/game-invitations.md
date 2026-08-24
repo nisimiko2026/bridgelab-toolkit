@@ -1,7 +1,7 @@
 ---
 title: Game Invitations
 description: Principles of inviting game, including hand evaluation, invitational strength, accepted and declined invitations, and common invitational auctions.
-category: Principles
+category: bidding
 subcategory: Bidding Principles
 difficulty: Intermediate
 tags: 
