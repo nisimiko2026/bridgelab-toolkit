@@ -20,10 +20,14 @@ from commands.category_impact import run as category_impact_command
 from commands.repair_bidding_categories import run as repair_bidding_categories_command
 from commands.repair_play_endgame_category import run as repair_play_endgame_command
 from commands.repair_play_counting_category import run as repair_play_counting_command
-from commands.repair_play_principles_categories import run as repair_play_principles_command
+from commands.repair_play_principles_categories import (
+    run as repair_play_principles_command,
+)
 from commands.repair_play_trump_play_categories import run as repair_play_trump_command
 from commands.repair_play_signaling_category import run as repair_play_signaling_command
-from commands.repair_play_probability_category import run as repair_play_probability_command
+from commands.repair_play_probability_category import (
+    run as repair_play_probability_command,
+)
 from commands.repair_play_defence_techniques_categories import (
     run as repair_play_defence_techniques_command,
 )
@@ -126,6 +130,9 @@ from commands.repair_category_normalization_batch3_3t import (
 from commands.repair_category_normalization_batch3_3u import (
     run as repair_category_normalization_batch3_3u_command,
 )
+from commands.repair_category_normalization_batch3_3v import (
+    run as repair_category_normalization_batch3_3v_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -160,6 +167,7 @@ app = typer.Typer(
 # Common Root Option
 # ============================================================
 
+
 def repository_option() -> Path:
     return typer.Option(
         REPOSITORY,
@@ -175,6 +183,7 @@ def repository_option() -> Path:
 # ============================================================
 # Repository Commands
 # ============================================================
+
 
 @app.command()
 def scan(
@@ -549,8 +558,16 @@ def repair_category_normalization_batch3_3m(
 @app.command("repair-category-normalization-batch3-3n")
 def repair_category_normalization_batch3_3n(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed 13-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed 13-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3n; dry-run by default."""
     repair_category_normalization_batch3_3n_command(root, backup, apply)
@@ -559,8 +576,16 @@ def repair_category_normalization_batch3_3n(
 @app.command("repair-category-normalization-batch3-3o")
 def repair_category_normalization_batch3_3o(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed 17-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed 17-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3o; dry-run by default."""
     repair_category_normalization_batch3_3o_command(root, backup, apply)
@@ -569,8 +594,16 @@ def repair_category_normalization_batch3_3o(
 @app.command("repair-category-normalization-batch3-3p")
 def repair_category_normalization_batch3_3p(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed 16-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed 16-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3p; dry-run by default."""
     repair_category_normalization_batch3_3p_command(root, backup, apply)
@@ -579,8 +612,16 @@ def repair_category_normalization_batch3_3p(
 @app.command("repair-category-normalization-batch3-3q")
 def repair_category_normalization_batch3_3q(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed four-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed four-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3q; dry-run by default."""
     repair_category_normalization_batch3_3q_command(root, backup, apply)
@@ -589,8 +630,16 @@ def repair_category_normalization_batch3_3q(
 @app.command("repair-category-normalization-batch3-3r")
 def repair_category_normalization_batch3_3r(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed nine-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed nine-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3r; dry-run by default."""
     repair_category_normalization_batch3_3r_command(root, backup, apply)
@@ -599,8 +648,16 @@ def repair_category_normalization_batch3_3r(
 @app.command("repair-category-normalization-batch3-3s1")
 def repair_category_normalization_batch3_3s1(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed one-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed one-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3s1; dry-run by default."""
     repair_category_normalization_batch3_3s1_command(root, backup, apply)
@@ -609,8 +666,16 @@ def repair_category_normalization_batch3_3s1(
 @app.command("repair-category-normalization-batch3-3s2")
 def repair_category_normalization_batch3_3s2(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed one-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed one-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3s2; dry-run by default."""
     repair_category_normalization_batch3_3s2_command(root, backup, apply)
@@ -619,8 +684,16 @@ def repair_category_normalization_batch3_3s2(
 @app.command("repair-category-normalization-batch3-3t")
 def repair_category_normalization_batch3_3t(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed one-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed one-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3t; dry-run by default."""
     repair_category_normalization_batch3_3t_command(root, backup, apply)
@@ -629,11 +702,37 @@ def repair_category_normalization_batch3_3t(
 @app.command("repair-category-normalization-batch3-3u")
 def repair_category_normalization_batch3_3u(
     root: Path = repository_option(),
-    backup: Path | None = typer.Option(None, "--backup", file_okay=False, resolve_path=True, help="Required explicit fresh path-preserving backup destination with --apply."),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed 17-file category-line batch."),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed 17-file category-line batch."
+    ),
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3u; dry-run by default."""
     repair_category_normalization_batch3_3u_command(root, backup, apply)
+
+
+@app.command("repair-category-normalization-batch3-3v")
+def repair_category_normalization_batch3_3v(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
+        help="Required explicit fresh path-preserving backup destination with --apply.",
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed four-file category-line batch."
+    ),
+) -> None:
+    """Repair Phase 3A category normalization Batch 3.3v; dry-run by default."""
+    repair_category_normalization_batch3_3v_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
@@ -840,10 +939,15 @@ def repair_play_coups_categories(
 def repair_play_finesses_categories(
     root: Path = repository_option(),
     backup: Path | None = typer.Option(
-        None, "--backup", file_okay=False, resolve_path=True,
+        None,
+        "--backup",
+        file_okay=False,
+        resolve_path=True,
         help="Required explicit path-preserving backup destination with --apply.",
     ),
-    apply: bool = typer.Option(False, "--apply", help="Apply the reviewed seven-file batch."),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed seven-file batch."
+    ),
 ) -> None:
     """Repair reviewed declarer-finesses categories; dry-run by default."""
     repair_play_finesses_command(root, backup, apply)
@@ -1186,6 +1290,7 @@ def cleanup_backups(
 # ============================================================
 # Analysis Commands
 # ============================================================
+
 
 @app.command()
 def statistics(
