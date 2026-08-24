@@ -1,7 +1,7 @@
 ---
 title: Choosing a Line of Play
 description: Explains how declarer compares available lines of play and selects the best chance to make the contract.
-category: planning
+category: play
 subcategory: declarer-play
 difficulty: Intermediate
 tags: 

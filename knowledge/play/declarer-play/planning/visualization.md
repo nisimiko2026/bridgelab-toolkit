@@ -1,7 +1,7 @@
 ---
 title: Visualization
 description: Explains visualization of likely card positions and future trick sequences before and during declarer play.
-category: planning
+category: play
 subcategory: declarer-play
 difficulty: Advanced
 tags: 

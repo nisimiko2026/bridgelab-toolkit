@@ -1,7 +1,7 @@
 ---
 title: Creating Extra Tricks
 description: Introduces ways declarer creates additional tricks through development, finesses, ruffs, and endplay techniques.
-category: planning
+category: play
 subcategory: declarer-play
 difficulty: Beginner
 tags: 
