@@ -2,7 +2,7 @@
 title: References
 description: Index and navigation guide for reference material supporting the BridgeLab
   Knowledge Base.
-category: References
+category: reference
 subcategory: ''
 difficulty: All Levels
 tags:
