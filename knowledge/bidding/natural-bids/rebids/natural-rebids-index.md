@@ -2,7 +2,7 @@
 title: Natural Rebids
 description: Index of natural rebids by opener and responder following natural opening
   bids.
-category: Index
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags:

@@ -2,7 +2,7 @@
 title: Natural Opening Bids
 description: Index of natural opening bid concepts and standard opening bids used
   in natural bidding systems.
-category: Index
+category: bidding
 subcategory: natural-bids
 difficulty: Beginner to Expert
 tags:

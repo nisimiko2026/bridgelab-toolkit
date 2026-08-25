@@ -1,7 +1,7 @@
 ---
 title: Natural Responses
 description: Index of natural responses to opening bids in natural bidding systems.
-category: Index
+category: bidding
 subcategory: natural-bids
 difficulty: Intermediate to Expert
 tags:
