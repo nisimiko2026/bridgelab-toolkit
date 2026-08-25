@@ -40,6 +40,14 @@ DIFFICULTIES = {
     "Advanced to Expert",
 }
 PROVISIONAL_CATEGORIES = {"bidding", "play", "duplicate", "reference"}
+APPROVED_CATEGORY_EXCEPTIONS = frozenset(
+    {
+        ("acronyms.md", "Reference"),
+        ("bibliography.md", "Reference"),
+        ("bridge-lab-index.md", "Reference"),
+        ("glossary.md", "Reference"),
+    }
+)
 PROVISIONAL_SUBCATEGORIES = {
     "bidding": {
         "convention-cards",
@@ -518,7 +526,9 @@ class MetadataAuditor:
         findings: list[AuditFinding] = []
         folded = value.casefold()
         group = self._category_group(value)
-        if value not in PROVISIONAL_CATEGORIES:
+        if value not in PROVISIONAL_CATEGORIES and not self._is_approved_category_exception(
+            record.article, value
+        ):
             message = (
                 "Category differs from the provisional top-level audit vocabulary."
             )
@@ -673,6 +683,11 @@ class MetadataAuditor:
     def _path_subcategory(article: str) -> str:
         parts = Path(article).parts
         return parts[1] if len(parts) > 2 else ""
+
+    @staticmethod
+    def _is_approved_category_exception(article: str, value: str) -> bool:
+        """Match only an exact reviewed canonical POSIX path/category pair."""
+        return (article, value) in APPROVED_CATEGORY_EXCEPTIONS
 
     @staticmethod
     def _is_path_or_breadcrumb(value: str) -> bool:

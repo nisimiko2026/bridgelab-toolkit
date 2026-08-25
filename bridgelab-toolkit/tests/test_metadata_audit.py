@@ -5,13 +5,14 @@ import tempfile
 import unittest
 from dataclasses import asdict
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 from typer.testing import CliRunner
 
 from main import app
 from core.repository import Repository
-from metadata.audit import MetadataAuditor
+from metadata.audit import APPROVED_CATEGORY_EXCEPTIONS, MetadataAuditor
 from metadata.validator import MetadataValidator
 
 FIELDS = {
@@ -204,6 +205,118 @@ class MetadataAuditTests(unittest.TestCase):
         ]
         self.assertTrue(taxonomy)
         self.assertTrue(all(item.severity == "Info" for item in taxonomy))
+
+    def test_exact_root_reference_exceptions_are_narrow_and_reduce_only_four_info(
+        self,
+    ) -> None:
+        approved = {
+            "acronyms.md",
+            "bibliography.md",
+            "bridge-lab-index.md",
+            "glossary.md",
+        }
+        self.assertEqual(
+            APPROVED_CATEGORY_EXCEPTIONS,
+            frozenset((article, "Reference") for article in approved),
+        )
+        for article in sorted(approved):
+            data = dict(FIELDS)
+            data["category"] = "Reference"
+            self.write(article, data)
+
+        nonapproved = {
+            "fifth.md",
+            "nested/acronyms.md",
+            "nested/glossary-copy.md",
+            "bidding/acronyms.md",
+            "play/bibliography.md",
+            "duplicates/bridge-lab-index.md",
+            "references/glossary.md",
+        }
+        for article in sorted(nonapproved):
+            data = dict(FIELDS)
+            data["category"] = "Reference"
+            self.write(article, data)
+        _, enabled = self.audit()
+        with patch("metadata.audit.APPROVED_CATEGORY_EXCEPTIONS", frozenset()):
+            _, disabled = self.audit()
+
+        enabled_drift = {
+            item.article
+            for item in enabled
+            if item.rule == "category.provisional-drift"
+        }
+        self.assertTrue(nonapproved <= enabled_drift)
+        self.assertFalse(approved & enabled_drift)
+
+        suppressed = [item for item in disabled if item not in enabled]
+        self.assertEqual(
+            {(item.article, item.rule, item.severity) for item in suppressed},
+            {
+                (article, "category.provisional-drift", "Info")
+                for article in approved
+            },
+        )
+        self.assertEqual(enabled, sorted(enabled, key=type(enabled[0]).sort_key))
+        self.assertEqual(enabled, self.audit()[1])
+
+    def test_exception_matching_is_exact_and_separator_safe(self) -> None:
+        match = MetadataAuditor._is_approved_category_exception
+        self.assertTrue(match("acronyms.md", "Reference"))
+        self.assertFalse(match("acronyms.md", "reference"))
+        self.assertFalse(match("./acronyms.md", "Reference"))
+        self.assertFalse(match("nested/acronyms.md", "Reference"))
+        self.assertFalse(match("nested\\acronyms.md", "Reference"))
+
+    def test_approved_path_with_changed_category_uses_ordinary_audit(self) -> None:
+        data = dict(FIELDS)
+        data["category"] = "Unexpected"
+        self.write("acronyms.md", data)
+        _, findings = self.audit()
+        drift = [
+            item
+            for item in findings
+            if item.article == "acronyms.md"
+            and item.rule == "category.provisional-drift"
+        ]
+        self.assertEqual(len(drift), 1)
+
+    def test_all_six_deferred_play_category_findings_remain_visible(self) -> None:
+        deferred = {
+            "play/counting/counting-index.md": "Card Play",
+            "play/declarer-play/index-declarer-play.md": "Card Play",
+            "play/declarer-play/planning/planning-index.md": "Index",
+            "play/declarer-play/trump-play/index-trump-play.md": "Index",
+            "play/defence/index-defence.md": "Card Play",
+            "play/play-index.md": "Card Play",
+        }
+        for article, category in deferred.items():
+            data = dict(FIELDS)
+            data["category"] = category
+            self.write(article, data)
+        unrelated = dict(FIELDS)
+        unrelated["category"] = "Unexpected"
+        self.write("bidding/unrelated.md", unrelated)
+
+        _, findings = self.audit()
+        drift = {
+            item.article
+            for item in findings
+            if item.rule == "category.provisional-drift"
+        }
+        self.assertEqual(drift, {*deferred, "bidding/unrelated.md"})
+
+    def test_live_exception_table_matches_the_reviewed_corpus(self) -> None:
+        knowledge = Path(__file__).resolve().parents[2] / "knowledge"
+        observed = set()
+        for article, category in APPROVED_CATEGORY_EXCEPTIONS:
+            path = knowledge / article
+            self.assertTrue(path.is_file(), f"Orphaned category exception: {article}")
+            data = yaml.safe_load(path.read_text(encoding="utf-8").split("---", 2)[1])
+            self.assertEqual(data.get("category"), category, article)
+            self.assertEqual(path.relative_to(knowledge).as_posix(), article)
+            observed.add((article, data.get("category")))
+        self.assertEqual(observed, set(APPROVED_CATEGORY_EXCEPTIONS))
 
     def test_cli_is_registered_console_only_and_preserves_markdown_bytes(self) -> None:
         source = self.write("bidding/topic.md")
