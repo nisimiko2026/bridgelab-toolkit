@@ -3,10 +3,44 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from generators.systems_applicability_audit import generate
+from generators.systems_applicability_audit import classify, generate
 
 
 class SystemsApplicabilityAuditTests(unittest.TestCase):
+    def test_uses_canonical_document_roles(self):
+        structural = (
+            "foo-index.md",
+            "index-foo.md",
+            "index.md",
+            "domain/domain-index.md",
+            "domain/topic/topic-index.md",
+            "DOMAIN/INDEX-FOO.MD",
+            "bidding/systems/future-index.md",
+            "bidding/systems/index-future.md",
+        )
+        for relative in structural:
+            with self.subTest(relative=relative):
+                self.assertEqual(
+                    classify(relative, ["acol"]),
+                    ("high", "index_page_reference_labels", ["acol"]),
+                )
+
+        for relative in ("fooindex.md", "indexing.md", "foo-indexing.md"):
+            with self.subTest(relative=relative):
+                self.assertEqual(
+                    classify(relative, ["acol"]),
+                    (
+                        "manual",
+                        "limited_assignment_set_requires_semantic_review",
+                        [],
+                    ),
+                )
+
+    def test_systems_index_behavior_is_not_filename_specific(self):
+        expected = ("high", "index_page_reference_labels", ["acol"])
+        self.assertEqual(classify("bidding/systems/systems-index.md", ["acol"]), expected)
+        self.assertEqual(classify("bidding/systems/other-index.md", ["acol"]), expected)
+
     def test_classifies_profiles_bundles_and_small_sets(self):
         articles = [
             {"relative_path": "bidding/systems/acol.md", "metadata": {"title": "Acol", "systems": ["acol", "precision"]}},

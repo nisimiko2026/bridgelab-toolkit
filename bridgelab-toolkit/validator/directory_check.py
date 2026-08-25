@@ -1,3 +1,4 @@
+from core.document_roles import DocumentRole, classify_document_role
 from core.models import Article, Issue
 
 
@@ -23,8 +24,8 @@ class DirectoryCheck:
             has_index = any(
 
                 a.relative_path.parent == directory
-
-                and "index" in a.filename
+                and classify_document_role(a.relative_path)
+                is not DocumentRole.ARTICLE
 
                 for a in articles
 

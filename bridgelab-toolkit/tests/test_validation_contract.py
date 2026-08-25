@@ -117,6 +117,26 @@ class LegacyValidationContractTests(unittest.TestCase):
 
         self.assertEqual(HeadingCheck().run(articles), [])
 
+    def test_heading_check_uses_canonical_document_roles(self) -> None:
+        structural = (
+            "foo-index.md",
+            "index-foo.md",
+            "index.md",
+            "domain/domain-index.md",
+            "domain/topic/topic-index.md",
+            "DOMAIN/INDEX-FOO.MD",
+        )
+        for relative in structural:
+            with self.subTest(relative=relative):
+                self.assertEqual(HeadingCheck().run([article(relative)]), [])
+
+        ordinary = ("fooindex.md", "indexing.md", "indexical.md", "foo-indexing.md")
+        for relative in ordinary:
+            with self.subTest(relative=relative):
+                issues = HeadingCheck().run([article(relative)])
+                self.assertEqual(len(issues), 1)
+                self.assertEqual(issues[0].category, "Heading")
+
     def test_heading_check_does_not_require_summary(self) -> None:
         issues = HeadingCheck().run(
             [article("play/technique.md", headings=["Overview"])]
@@ -163,6 +183,26 @@ class LegacyValidationContractTests(unittest.TestCase):
         self.assertEqual(issues[0].category, "Directory")
         self.assertEqual(issues[0].message, "No index file")
         self.assertFalse(Path(issues[0].article).is_absolute())
+
+    def test_directory_check_uses_canonical_document_roles(self) -> None:
+        structural = (
+            "foo-index.md",
+            "index-foo.md",
+            "index.md",
+            "domain/domain-index.md",
+            "domain/topic/topic-index.md",
+            "DOMAIN/INDEX-FOO.MD",
+        )
+        for relative in structural:
+            with self.subTest(relative=relative):
+                self.assertEqual(DirectoryCheck().run([article(relative)]), [])
+
+        ordinary = ("fooindex.md", "indexing.md", "indexical.md", "foo-indexing.md")
+        for relative in ordinary:
+            with self.subTest(relative=relative):
+                issues = DirectoryCheck().run([article(relative)])
+                self.assertEqual(len(issues), 1)
+                self.assertEqual(issues[0].category, "Directory")
 
     def test_repository_validator_aggregates_issues_without_yaml_checks(self) -> None:
         first = article("alpha/Invalid_Name.md")

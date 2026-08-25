@@ -6,6 +6,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from core.document_roles import DocumentRole, classify_document_role
+
 
 SYSTEM_PROFILE_NAMES = {
     "2-over-1": "two over one",
@@ -26,7 +28,11 @@ SYSTEM_PROFILE_NAMES = {
 def classify(path: str, systems: list[str]) -> tuple[str, str, list[str]]:
     """Return confidence, reason, and conservatively proposed removals."""
     stem = Path(path).stem
-    if path.startswith("bidding/systems/") and stem != "systems-index":
+    role = classify_document_role(path)
+    if (
+        path.startswith("bidding/systems/")
+        and role is DocumentRole.ARTICLE
+    ):
         own_system = SYSTEM_PROFILE_NAMES.get(stem)
         removals = [value for value in systems if value != own_system]
         reason = (
@@ -35,7 +41,7 @@ def classify(path: str, systems: list[str]) -> tuple[str, str, list[str]]:
             else "system_profile_without_controlled_self_label"
         )
         return "high", reason, removals
-    if stem.endswith("index") or stem.startswith("index-"):
+    if role is not DocumentRole.ARTICLE:
         return "high", "index_page_reference_labels", list(systems)
     if len(systems) >= 4:
         return "medium", "broad_repeated_system_bundle", list(systems)

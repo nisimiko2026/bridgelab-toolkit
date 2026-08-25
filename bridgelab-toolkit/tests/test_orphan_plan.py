@@ -7,6 +7,8 @@ from pathlib import Path
 
 from typer.testing import CliRunner
 
+from analysis.orphan_plan import OrphanRepairPlanner
+from core.repository import Repository
 from main import app
 
 
@@ -34,6 +36,62 @@ def write_article(root: Path, relative_path: str, references: list[str]) -> Path
 
 
 class OrphanPlanCommandTests(unittest.TestCase):
+    def proposals(self, root: Path):
+        return OrphanRepairPlanner().build(Repository(root).build())
+
+    def test_canonical_roles_control_parent_index_candidates(self) -> None:
+        cases = (
+            ("guide/guide-index.md", "guide/target.md", "high"),
+            ("guide/index-guide.md", "guide/target.md", "high"),
+            ("guide/index.md", "guide/target.md", "high"),
+            ("DOMAIN/INDEX-GUIDE.MD", "DOMAIN/target.md", "high"),
+            ("domain/domain-index.md", "domain/topic/target.md", "medium"),
+        )
+        for index_path, target_path, confidence in cases:
+            with self.subTest(index_path=index_path), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp) / "knowledge"
+                write_article(root, index_path, [])
+                write_article(root, target_path, [])
+                target = target_path.removesuffix(".md")
+                proposal = next(
+                    item for item in self.proposals(root) if item.target == target
+                )
+                self.assertEqual(
+                    proposal.parent_index,
+                    Path(index_path).with_suffix("").as_posix(),
+                )
+                self.assertEqual(proposal.confidence, confidence)
+
+    def test_index_substrings_are_not_parent_index_candidates(self) -> None:
+        for filename in ("fooindex.md", "indexing.md", "indexical.md", "foo-indexing.md"):
+            with self.subTest(filename=filename), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp) / "knowledge"
+                write_article(root, f"guide/{filename}", [])
+                write_article(root, "guide/target.md", [])
+                proposal = next(
+                    item for item in self.proposals(root)
+                    if item.target == "guide/target"
+                )
+                self.assertIsNone(proposal.parent_index)
+                self.assertEqual(proposal.reason, "no parent index found")
+
+    def test_multiple_parent_indexes_remain_sorted_and_manual(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "knowledge"
+            write_article(root, "guide/z-index.md", [])
+            write_article(root, "guide/a-index.md", [])
+            write_article(root, "guide/target.md", [])
+            proposal = next(
+                item for item in self.proposals(root)
+                if item.target == "guide/target"
+            )
+            self.assertIsNone(proposal.parent_index)
+            self.assertEqual(proposal.confidence, "manual")
+            self.assertEqual(
+                proposal.candidates,
+                ("guide/a-index", "guide/z-index"),
+            )
+
     def test_exports_parent_index_proposals_without_source_changes(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory) / "knowledge"

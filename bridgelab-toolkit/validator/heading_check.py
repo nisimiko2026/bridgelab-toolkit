@@ -1,3 +1,4 @@
+from core.document_roles import DocumentRole, classify_document_role
 from core.models import Article, Issue
 
 
@@ -45,7 +46,7 @@ class HeadingCheck:
         parts = tuple(part.casefold() for part in path.parts)
         filename = path.name.casefold()
 
-        if "index" in path.stem.casefold():
+        if classify_document_role(path) is not DocumentRole.ARTICLE:
             return False
         if filename in cls.GENERATED_ROOT_DOCUMENTS and len(parts) == 1:
             return False

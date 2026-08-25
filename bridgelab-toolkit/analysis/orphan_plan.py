@@ -4,6 +4,7 @@ import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from core.document_roles import DocumentRole, classify_document_role
 from core.models import Article
 
 from .graph import KnowledgeGraph
@@ -23,7 +24,12 @@ class OrphanRepairPlanner:
 
     def build(self, articles: list[Article]) -> list[OrphanProposal]:
         graph = KnowledgeGraph(articles)
-        indexes = [article for article in articles if "index" in article.filename]
+        indexes = [
+            article
+            for article in articles
+            if classify_document_role(article.relative_path)
+            is not DocumentRole.ARTICLE
+        ]
 
         proposals = [
             self._proposal(article, indexes)

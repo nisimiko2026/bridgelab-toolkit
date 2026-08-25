@@ -7,7 +7,9 @@ from pathlib import Path
 
 from typer.testing import CliRunner
 
+from core.repository import Repository
 from main import app
+from metadata.repair_plan import MetadataRepairPlanner
 
 
 def write_article(
@@ -40,6 +42,51 @@ def write_article(
 
 
 class RepairPlanCommandTests(unittest.TestCase):
+    def difficulty_proposal(self, root: Path, target: str):
+        proposals = MetadataRepairPlanner().build(Repository(root).build())
+        return next(
+            item for item in proposals
+            if item.article == target and item.field == "difficulty"
+        )
+
+    def test_structural_roles_receive_all_levels_fallback(self) -> None:
+        structural = (
+            "foo-index.md",
+            "index-foo.md",
+            "index.md",
+            "domain/domain-index.md",
+            "domain/topic/topic-index.md",
+            "DOMAIN/INDEX-FOO.MD",
+        )
+        for relative in structural:
+            with self.subTest(relative=relative), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp) / "knowledge"
+                write_article(
+                    root,
+                    relative,
+                    description="A sufficiently long structural description.",
+                    difficulty="",
+                    body="Structural article.",
+                )
+                proposal = self.difficulty_proposal(root, relative)
+                self.assertEqual(proposal.proposed, "All Levels")
+                self.assertEqual(proposal.confidence, "medium")
+
+    def test_index_substrings_do_not_receive_structural_fallback(self) -> None:
+        for relative in ("fooindex.md", "indexing.md", "foo-indexing.md"):
+            with self.subTest(relative=relative), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp) / "knowledge"
+                write_article(
+                    root,
+                    relative,
+                    description="A sufficiently long ordinary description.",
+                    difficulty="",
+                    body="Ordinary article.",
+                )
+                proposal = self.difficulty_proposal(root, relative)
+                self.assertEqual(proposal.proposed, "")
+                self.assertEqual(proposal.confidence, "none")
+
     def test_plan_exports_proposals_without_modifying_sources(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             root = Path(temporary_directory) / "knowledge"

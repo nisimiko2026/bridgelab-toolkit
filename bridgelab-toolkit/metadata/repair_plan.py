@@ -8,6 +8,7 @@ from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from core.document_roles import DocumentRole, classify_document_role
 from core.models import Article
 from metadata.validator import MetadataValidator
 
@@ -199,7 +200,10 @@ class MetadataRepairPlanner:
                 f"Most common difficulty among {len(peers)} article(s) in the same directory.",
             )
 
-        if "index" in article.relative_path.name.casefold():
+        if (
+            classify_document_role(article.relative_path)
+            is not DocumentRole.ARTICLE
+        ):
             return (
                 "All Levels",
                 "medium",
