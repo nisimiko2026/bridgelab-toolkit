@@ -12,7 +12,11 @@ from typer.testing import CliRunner
 
 from main import app
 from core.repository import Repository
-from metadata.audit import APPROVED_CATEGORY_EXCEPTIONS, MetadataAuditor
+from metadata.audit import (
+    APPROVED_CATEGORY_EXCEPTIONS,
+    TITLE_H1_PRESENTATIONAL_SUFFIXES,
+    MetadataAuditor,
+)
 from metadata.validator import MetadataValidator
 
 FIELDS = {
@@ -29,6 +33,39 @@ FIELDS = {
     "last_updated": "2026-08-17",
     "status": "Draft",
 }
+
+REVIEWED_PRESENTATIONAL_SUFFIX_PATHS = frozenset(
+    {
+        "bidding/conventions/slam-conventions/last-train.md",
+        "bidding/conventions/slam-conventions/serious-3nt.md",
+        "bidding/systems/carrot-club.md",
+        "bidding/systems/culbertson.md",
+        "play/counting/counting-losers.md",
+        "play/counting/counting-winners.md",
+        "play/declarer-play/coups/bath-coup.md",
+        "play/declarer-play/coups/coup-en-passant.md",
+        "play/declarer-play/coups/merrimac-coup.md",
+        "play/declarer-play/coups/scissors-coup.md",
+        "play/declarer-play/coups/trump-coup.md",
+        "play/declarer-play/coups/vienna-coup.md",
+        "play/declarer-play/general-techniques/avoidance-play.md",
+        "play/declarer-play/general-techniques/ducking.md",
+        "play/declarer-play/general-techniques/finesses/deep-finesse.md",
+        "play/declarer-play/general-techniques/finesses/double-finesse.md",
+        "play/declarer-play/general-techniques/finesses/finesse.md",
+        "play/declarer-play/general-techniques/finesses/ruffing-finesse.md",
+        "play/declarer-play/general-techniques/safety-play.md",
+        "play/declarer-play/probability/percentage-plays.md",
+        "play/declarer-play/squeezes/double-squeeze.md",
+        "play/declarer-play/squeezes/strip-squeeze.md",
+        "play/declarer-play/trump-play/dummy-reversal.md",
+        "play/defence/deception/false-carding.md",
+        "play/defence/planning/entry-killing.md",
+        "play/defence/signaling/italian-discard.md",
+        "play/defence/techniques/surrounding-play.md",
+        "play/defence/techniques/uppercut.md",
+    }
+)
 
 
 class MetadataAuditTests(unittest.TestCase):
@@ -125,6 +162,155 @@ class MetadataAuditTests(unittest.TestCase):
                 "title.h1-mismatch",
             }.issubset(rules)
         )
+
+    def test_exact_presentational_suffixes_emit_one_dedicated_info_finding(self) -> None:
+        self.assertEqual(
+            TITLE_H1_PRESENTATIONAL_SUFFIXES,
+            (" Technique", " System", " Convention"),
+        )
+        cases = {
+            "bidding/technique.md": ("Finesse", "Finesse Technique"),
+            "bidding/system.md": ("Culbertson", "Culbertson System"),
+            "bidding/convention.md": ("Serious 3NT", "Serious 3NT Convention"),
+            "bidding/unicode.md": (
+                "Système Français",
+                "Système Français System",
+            ),
+            "play/coup.md": ("Coup en Passant", "Coup en Passant Technique"),
+        }
+        for article, (title, heading) in cases.items():
+            data = dict(FIELDS)
+            data["title"] = title
+            self.write(article, data, heading=heading)
+
+        _, findings = self.audit()
+        title_findings = [item for item in findings if item.field == "title"]
+
+        self.assertEqual(len(title_findings), len(cases))
+        self.assertEqual(
+            {item.article for item in title_findings},
+            set(cases),
+        )
+        self.assertTrue(
+            all(
+                item.rule == "title.h1-presentational-suffix"
+                and item.severity == "Info"
+                and "approved presentation suffix" in item.message
+                for item in title_findings
+            )
+        )
+
+    def test_presentational_suffix_near_misses_remain_generic(self) -> None:
+        cases = {
+            "bidding/case-prefix.md": ("Serious 3Nt", "Serious 3NT Convention"),
+            "bidding/punctuation-prefix.md": (
+                "Coup En Passant",
+                "Coup en Passant Technique",
+            ),
+            "bidding/extra-space.md": ("Finesse", "Finesse  Technique"),
+            "bidding/lower-suffix.md": ("Finesse", "Finesse technique"),
+            "bidding/unapproved.md": ("Finesse", "Finesse Method"),
+            "bidding/parenthetical.md": ("EHAA", "EHAA (Every Hand An Adventure)"),
+            "bidding/trailing.md": (
+                "Finesse",
+                "Finesse Technique for Declarer",
+            ),
+            "bidding/changed-prefix.md": ("Simple Squeeze", "Squeeze Technique"),
+        }
+        for article, (title, heading) in cases.items():
+            data = dict(FIELDS)
+            data["title"] = title
+            self.write(article, data, heading=heading)
+
+        _, findings = self.audit()
+        title_findings = [item for item in findings if item.field == "title"]
+
+        self.assertEqual(len(title_findings), len(cases))
+        self.assertEqual({item.article for item in title_findings}, set(cases))
+        self.assertTrue(all(item.rule == "title.h1-mismatch" for item in title_findings))
+
+    def test_presentational_suffix_role_boundaries_and_missing_h1_behavior(self) -> None:
+        data = dict(FIELDS)
+        data["title"] = "Example"
+        self.write("bidding/topic.md", data, heading="Example Technique")
+        self.write("bidding/topic-index.md", data, heading="Example Technique")
+        self.write("bidding/bidding-index.md", data, heading="Example Technique")
+        self.write(
+            "bidding/missing.md",
+            raw="---\n" + yaml.safe_dump(data, sort_keys=False) + "---\nBody only.\n",
+        )
+
+        _, findings = self.audit()
+        title_findings = {
+            item.article: item.rule for item in findings if item.field == "title"
+        }
+
+        self.assertEqual(
+            title_findings,
+            {
+                "bidding/topic.md": "title.h1-presentational-suffix",
+                "bidding/topic-index.md": "title.h1-mismatch",
+                "bidding/bidding-index.md": "title.h1-mismatch",
+            },
+        )
+        self.assertNotIn("bidding/missing.md", title_findings)
+
+    def test_historical_title_defects_remain_generic_mismatches(self) -> None:
+        cases = {
+            "bidding/batch1.md": ("Sos Redouble", "SOS Redouble"),
+            "bidding/batch2.md": (
+                "Lead Directing Double",
+                "Lead-Directing Double",
+            ),
+            "bidding/batch3.md": ("Preemptive.Raise", "Objectives"),
+            "bidding/pre-batch7-nt.md": (
+                "Serious 3Nt",
+                "Serious 3NT Convention",
+            ),
+            "play/pre-batch7-coup.md": (
+                "Coup En Passant",
+                "Coup en Passant Technique",
+            ),
+        }
+        for article, (title, heading) in cases.items():
+            data = dict(FIELDS)
+            data["title"] = title
+            self.write(article, data, heading=heading)
+
+        _, findings = self.audit()
+        title_findings = [item for item in findings if item.field == "title"]
+
+        self.assertEqual({item.article for item in title_findings}, set(cases))
+        self.assertTrue(all(item.rule == "title.h1-mismatch" for item in title_findings))
+
+    def test_live_presentational_suffix_census_and_audit_accounting(self) -> None:
+        project = Path(__file__).resolve().parents[1]
+        knowledge = project.parent / "knowledge"
+        auditor = MetadataAuditor(
+            knowledge,
+            systems_file=project / "data/systems.yaml",
+            taxonomy_file=project / "data/taxonomy.yaml",
+        )
+
+        records, first = auditor.audit()
+        _, second = auditor.audit()
+        presentation = {
+            item.article
+            for item in first
+            if item.rule == "title.h1-presentational-suffix"
+        }
+        rules = [item.rule for item in first]
+
+        self.assertEqual(len(records), 446)
+        self.assertEqual(presentation, set(REVIEWED_PRESENTATIONAL_SUFFIX_PATHS))
+        self.assertEqual(len(presentation), 28)
+        self.assertEqual(rules.count("title.h1-mismatch"), 60)
+        self.assertEqual(rules.count("title.h1-presentational-suffix"), 28)
+        self.assertEqual(len(first), 274)
+        self.assertEqual(sum(item.severity == "Info" for item in first), 274)
+        self.assertFalse(any(item.severity in {"Error", "Warning"} for item in first))
+        self.assertEqual(first, second)
+        self.assertEqual(first, sorted(first, key=type(first[0]).sort_key))
 
     def test_status_has_no_provisional_vocabulary_rule(self) -> None:
         paths = []

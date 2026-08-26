@@ -11,6 +11,8 @@ from typing import Any
 
 import yaml
 
+from core.document_roles import DocumentRole, classify_document_role
+
 FIELDS = (
     "title",
     "description",
@@ -88,6 +90,11 @@ FRONT_MATTER_RE = re.compile(
 REFERENCE_RE = re.compile(r"^[a-z0-9][a-z0-9-]*(?:/[a-z0-9][a-z0-9-]*)*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SEVERITY_ORDER = {"Error": 0, "Warning": 1, "Info": 2}
+TITLE_H1_PRESENTATIONAL_SUFFIXES = (
+    " Technique",
+    " System",
+    " Convention",
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -622,18 +629,36 @@ class MetadataAuditor:
         if record.data is None or not isinstance(record.data.get("title"), str):
             return []
         match = re.search(r"^#\s+(.+?)\s*$", record.text, re.MULTILINE)
-        if match and match.group(1) != record.data["title"]:
-            return [
-                self._finding(
-                    record,
-                    "title",
-                    record.data["title"],
-                    "title.h1-mismatch",
-                    "Info",
-                    f"Title differs from first H1: {match.group(1)!r}.",
-                )
-            ]
-        return []
+        if not match or match.group(1) == record.data["title"]:
+            return []
+
+        title = record.data["title"]
+        first_h1 = match.group(1)
+        if classify_document_role(record.article) is DocumentRole.ARTICLE:
+            for suffix in TITLE_H1_PRESENTATIONAL_SUFFIXES:
+                if first_h1 == title + suffix:
+                    return [
+                        self._finding(
+                            record,
+                            "title",
+                            title,
+                            "title.h1-presentational-suffix",
+                            "Info",
+                            "First H1 differs from metadata title only by approved "
+                            f"presentation suffix {suffix.strip()!r}: {first_h1!r}.",
+                        )
+                    ]
+
+        return [
+            self._finding(
+                record,
+                "title",
+                title,
+                "title.h1-mismatch",
+                "Info",
+                f"Title differs from first H1: {first_h1!r}.",
+            )
+        ]
 
     @staticmethod
     def _load_systems(path: Path) -> dict[str, str]:
