@@ -1,5 +1,5 @@
 ---
-title: Sef
+title: SEF
 description: SEF (Système d'Enseignement Français) is the official standard bidding
   system taught and promoted by the French Bridge Federation (Fédération Française
   de Bridge – FFB). It is by far the most widely played system in France and serves

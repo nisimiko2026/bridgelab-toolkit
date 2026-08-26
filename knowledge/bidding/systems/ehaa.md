@@ -1,5 +1,5 @@
 ---
-title: Ehaa
+title: EHAA
 description: EHAA (Every Hand An Adventure) is a highly aggressive natural bidding
   system developed in Australia by Eric Landau and Ron Klinger during the 1970s. The
   system is designed to maximize constructive and competitive bidding by using very

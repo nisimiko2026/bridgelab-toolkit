@@ -1,5 +1,5 @@
 ---
-title: Serious 3Nt
+title: Serious 3NT
 description: The Serious 3NT convention is a slam-investigation method used after
   a major suit has been agreed at the game-forcing level. It distinguishes between
   hands with serious slam interest and those that are merely cooperating.

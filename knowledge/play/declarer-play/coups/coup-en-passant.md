@@ -1,5 +1,5 @@
 ---
-title: Coup En Passant
+title: Coup en Passant
 description: Explains Coup en Passant, an advanced trump-promotion play in which declarer benefits from a defender's ruff.
 category: play
 subcategory: declarer-play
