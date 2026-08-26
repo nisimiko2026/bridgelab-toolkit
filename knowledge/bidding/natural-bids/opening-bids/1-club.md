@@ -1,5 +1,5 @@
 ---
-title: 1 Club
+title: 1♣ Opening Bid
 description: Unlike preemptive openings, its purpose is description rather than obstruction.
 category: bidding
 subcategory: natural-bids
@@ -50,6 +50,8 @@ last_updated: '2026-07-27'
 status: Draft
 ---
 
+
+# 1♣ Opening Bid
 
 # Objectives
 

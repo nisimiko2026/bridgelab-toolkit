@@ -1,5 +1,5 @@
 ---
-title: Preemptive.Raise
+title: Preemptive Raise
 description: The exact meaning depends upon partnership agreements.
 category: bidding
 subcategory: conventions
@@ -47,6 +47,8 @@ last_updated: '2026-07-27'
 status: Draft
 ---
 
+
+# Preemptive Raise
 
 # Objectives
 
