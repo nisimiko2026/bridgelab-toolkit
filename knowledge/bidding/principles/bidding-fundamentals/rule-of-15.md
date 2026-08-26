@@ -1,5 +1,5 @@
 ---
-title: Rule Of 15
+title: Rule of 15
 description: The Rule of 15 is a widely used bidding guideline for deciding whether
   to open the bidding in fourth seat (also called the pass-out seat). It helps determine
   whether your hand is strong enough to open when the first three players have passed.

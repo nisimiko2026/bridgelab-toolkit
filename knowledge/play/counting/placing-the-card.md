@@ -1,5 +1,5 @@
 ---
-title: Placing The Card
+title: Placing the Card
 description: Explains how to identify the likely location of a specific unseen card through counting and inference.
 category: play
 subcategory: counting

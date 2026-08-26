@@ -1,5 +1,5 @@
 ---
-title: Cover An Honor With An Honor
+title: Cover an Honor with an Honor
 description: Cover an Honor with an Honor is one of the classic principles of defensive
   play in bridge. When declarer or dummy leads an honor card, the defender should
   often cover it with the next higher honor, provided doing so promotes partner's

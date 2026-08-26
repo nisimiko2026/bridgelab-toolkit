@@ -1,5 +1,5 @@
 ---
-title: Rule Of 11
+title: Rule of 11
 description: Explains the Rule of 11 for interpreting a fourth-best lead and locating higher cards.
 category: play
 subcategory: defence

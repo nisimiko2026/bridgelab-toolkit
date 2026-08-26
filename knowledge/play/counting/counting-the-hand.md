@@ -1,5 +1,5 @@
 ---
-title: Counting The Hand
+title: Counting the Hand
 description: Shows how to combine point count, distribution, signals, and inferences to reconstruct an unseen hand.
 category: play
 subcategory: counting

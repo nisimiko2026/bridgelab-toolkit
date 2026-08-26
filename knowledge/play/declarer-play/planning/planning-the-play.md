@@ -1,5 +1,5 @@
 ---
-title: Planning The Play
+title: Planning the Play
 description: Explains how declarer plans the play by counting winners or losers, identifying risks, and choosing a line.
 category: play
 subcategory: declarer-play

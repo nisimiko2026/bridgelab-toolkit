@@ -1,5 +1,5 @@
 ---
-title: Sos Redouble
+title: SOS Redouble
 description: The SOS Redouble transforms a dangerous doubled contract into a search
   for safety. Instead of accepting a likely penalty, responder asks partner to escape
   to the best available suit, prioritizing survival over scoring.

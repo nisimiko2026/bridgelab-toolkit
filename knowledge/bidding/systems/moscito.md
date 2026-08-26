@@ -1,5 +1,5 @@
 ---
-title: Moscito
+title: MOSCITO
 description: MOSCITO (Major-Oriented Strong Club International Tournament Organization)
   is one of the world's best-known strong club relay systems. Developed by Paul Marston
   and Stephen Burgess in Australia during the 1980s, it combines a strong artificial

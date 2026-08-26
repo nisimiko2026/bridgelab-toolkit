@@ -1,5 +1,5 @@
 ---
-title: Rule Of 12
+title: Rule of 12
 description: Explains the Rule of 12 as a guide for evaluating opening-lead and defensive situations.
 category: play
 subcategory: defence

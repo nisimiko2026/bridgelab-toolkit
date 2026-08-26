@@ -1,5 +1,5 @@
 ---
-title: Rectifying The Count
+title: Rectifying the Count
 description: Explains rectifying the count, the preparation of losing the right number of tricks before executing a squeeze.
 category: play
 subcategory: declarer-play

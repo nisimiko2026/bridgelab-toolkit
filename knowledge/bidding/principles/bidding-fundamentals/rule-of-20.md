@@ -1,5 +1,5 @@
 ---
-title: Rule Of 20
+title: Rule of 20
 description: The Rule of 20 is a widely used hand evaluation guideline that helps
   determine whether to open the bidding in first or second seat. It combines High
   Card Points (HCP) with the lengths of the hand's two longest suits to measure both

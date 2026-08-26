@@ -1,5 +1,5 @@
 ---
-title: Ethics And Unauthorized Information
+title: Ethics and Unauthorized Information
 description: Bridge is a game of logic, skill, and partnership trust. The Laws of
   Duplicate Bridge require that all players compete fairly by making decisions only
   from authorized information. Any information obtained through partner's mannerisms,
