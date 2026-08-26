@@ -163,6 +163,7 @@ from commands.repair_category_normalization_batch3_3ae import (
 from commands.repair_category_normalization_batch3_3af import (
     run as repair_category_normalization_batch3_3af_command,
 )
+from commands.repair_blue_club_status import run as repair_blue_club_status_command
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -915,6 +916,20 @@ def repair_category_normalization_batch3_3af(
 ) -> None:
     """Repair Phase 3A category normalization Batch 3.3af; dry-run by default."""
     repair_category_normalization_batch3_3af_command(root, backup, apply)
+
+
+@app.command("repair-blue-club-status")
+def repair_blue_club_status(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None, "--backup", help="Fresh path-preserving backup directory (required with --apply)."
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed one-file status-line repair."
+    ),
+) -> None:
+    """Repair Blue Club's reviewed difficulty-valued status; dry-run by default."""
+    repair_blue_club_status_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
