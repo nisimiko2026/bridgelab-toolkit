@@ -170,6 +170,9 @@ from commands.repair_title_h1_case_normalization_batch1 import (
 from commands.repair_title_h1_punctuation_normalization_batch2 import (
     run as repair_title_h1_punctuation_normalization_batch2_command,
 )
+from commands.repair_title_h1_content_repair_batch3 import (
+    run as repair_title_h1_content_repair_batch3_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -964,6 +967,20 @@ def repair_title_h1_punctuation_normalization_batch2(
 ) -> None:
     """Repair Phase 4B Batch 2 punctuation-only titles; dry-run by default."""
     repair_title_h1_punctuation_normalization_batch2_command(root, backup, apply)
+
+
+@app.command("repair-title-h1-content-repair-batch3")
+def repair_title_h1_content_repair_batch3(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None, "--backup", help="Fresh path-preserving backup directory (required with --apply)."
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed two-file title/H1 content repair."
+    ),
+) -> None:
+    """Repair Phase 4B Batch 3 titles and missing document H1s; dry-run by default."""
+    repair_title_h1_content_repair_batch3_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
