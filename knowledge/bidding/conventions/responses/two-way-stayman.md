@@ -1,5 +1,5 @@
 ---
-title: Two Way Stayman
+title: Two-Way Stayman
 description: Two-Way Stayman expands the traditional Stayman convention by allowing
   responder to distinguish between weak and strong hands at the very beginning of
   the auction. This enables the partnership to investigate major-suit fits more accurately

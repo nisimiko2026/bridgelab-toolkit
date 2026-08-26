@@ -1,5 +1,5 @@
 ---
-title: Five Card Stayman
+title: Five-Card Stayman
 description: Five-Card Stayman extends the traditional Stayman convention to modern
   notrump systems in which opener may hold a five-card major. It enables the partnership
   to locate both 4-4 and 5-3 major-suit fits while preserving the advantages of a

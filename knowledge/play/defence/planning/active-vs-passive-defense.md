@@ -1,5 +1,5 @@
 ---
-title: Active Vs Passive Defense
+title: Active vs. Passive Defense
 description: One of the most important decisions defenders make is whether to adopt
   an Active Defense or a Passive Defense. This choice often determines whether the
   defense defeats the contract or gives declarer the tempo needed to succeed.

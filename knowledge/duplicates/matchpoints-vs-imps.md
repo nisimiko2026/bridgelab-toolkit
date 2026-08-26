@@ -1,5 +1,5 @@
 ---
-title: Matchpoints Vs Imps
+title: Matchpoints vs. IMPs
 description: The two primary scoring methods in duplicate bridge are Matchpoints (Pairs)
   and International Match Points (IMPs) (Teams). Although the laws of bridge are identical,
   the best strategy can be very different depending on the scoring method.

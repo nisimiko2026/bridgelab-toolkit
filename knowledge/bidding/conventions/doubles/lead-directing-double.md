@@ -1,5 +1,5 @@
 ---
-title: Lead Directing Double
+title: Lead-Directing Double
 description: A Lead-Directing Double is a conventional double that communicates information
   about the opening lead rather than expressing a desire to defeat the contract for
   an increased score. By guiding partner toward a specific lead, the convention improves
