@@ -25,7 +25,8 @@ systems:
   - precision
   - sayc
   - standard american
-aliases: []
+aliases:
+  - TWGT
 acronyms: []
 references: 
   - acronyms

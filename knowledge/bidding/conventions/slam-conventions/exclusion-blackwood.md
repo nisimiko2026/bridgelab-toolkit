@@ -16,7 +16,8 @@ tags:
 - response
 - slam
 systems: []
-aliases: []
+aliases:
+  - Voidwood
 acronyms: []
 references:
 - acronyms

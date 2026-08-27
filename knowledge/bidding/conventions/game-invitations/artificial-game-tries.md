@@ -26,7 +26,8 @@ systems:
   - precision
   - sayc
   - standard american
-aliases: []
+aliases:
+  - AGT
 acronyms: []
 references: 
   - acronyms

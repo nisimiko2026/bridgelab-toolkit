@@ -18,7 +18,8 @@ tags:
 systems:
 - precision
 - strong club
-aliases: []
+aliases:
+  - TAB
 acronyms: []
 references:
 - acronyms

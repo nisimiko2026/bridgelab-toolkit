@@ -14,7 +14,8 @@ tags:
 - ruff
 - signal
 systems: []
-aliases: []
+aliases:
+  - Standard Carding
 acronyms: []
 references:
 - acronyms

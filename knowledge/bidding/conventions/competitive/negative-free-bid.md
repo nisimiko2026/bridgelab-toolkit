@@ -27,7 +27,8 @@ systems:
   - precision
   - sayc
   - standard american
-aliases: []
+aliases:
+  - NFB
 acronyms: []
 references: 
   - acronyms

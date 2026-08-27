@@ -15,7 +15,8 @@ tags:
 - principles
 - slam
 systems: []
-aliases: []
+aliases:
+  - LTC
 acronyms: []
 references:
 - acronyms

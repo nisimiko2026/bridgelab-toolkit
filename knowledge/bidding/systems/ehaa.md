@@ -29,7 +29,8 @@ tags:
 - takeout
 systems:
   - ehaa
-aliases: []
+aliases:
+  - Every Hand An Adventure
 acronyms: []
 references:
 - acronyms

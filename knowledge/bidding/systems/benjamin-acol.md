@@ -21,7 +21,9 @@ tags:
 - stayman
 - systems
 systems: []
-aliases: []
+aliases:
+  - Benjaminised Acol
+  - Benji Acol
 acronyms: []
 references:
 - acronyms

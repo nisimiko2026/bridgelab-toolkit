@@ -17,7 +17,8 @@ tags:
 systems:
 - precision
 - strong club
-aliases: []
+aliases:
+  - CAB
 acronyms: []
 references:
 - acronyms

@@ -15,7 +15,8 @@ tags:
 - response
 - slam
 systems: []
-aliases: []
+aliases:
+  - AAB
 acronyms: []
 references:
 - acronyms

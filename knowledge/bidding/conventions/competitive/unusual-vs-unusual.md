@@ -27,7 +27,8 @@ systems:
   - precision
   - sayc
   - standard american
-aliases: []
+aliases:
+  - UvU
 acronyms: []
 references: 
   - acronyms

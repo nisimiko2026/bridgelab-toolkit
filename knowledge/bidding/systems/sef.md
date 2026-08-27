@@ -28,7 +28,8 @@ tags:
 - systems
 - takeout
 systems: []
-aliases: []
+aliases:
+  - Système d'Enseignement Français
 acronyms: []
 references:
 - acronyms
