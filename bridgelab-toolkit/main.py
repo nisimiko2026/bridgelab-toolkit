@@ -176,6 +176,9 @@ from commands.repair_title_h1_content_repair_batch3 import (
 from commands.repair_title_h1_metadata_case_repair_batch7 import (
     run as repair_title_h1_metadata_case_repair_batch7_command,
 )
+from commands.repair_title_h1_parenthetical_aliases_batch9 import (
+    run as repair_title_h1_parenthetical_aliases_batch9_command,
+)
 from commands.sentinel_cleanup import run as sentinel_cleanup_command
 from commands.repair_plan import run as repair_plan_command
 from commands.repair_apply import run as repair_apply_command
@@ -998,6 +1001,20 @@ def repair_title_h1_metadata_case_repair_batch7(
 ) -> None:
     """Repair Phase 4B Batch 7 metadata-title capitalization; dry-run by default."""
     repair_title_h1_metadata_case_repair_batch7_command(root, backup, apply)
+
+
+@app.command("repair-title-h1-parenthetical-aliases-batch9")
+def repair_title_h1_parenthetical_aliases_batch9(
+    root: Path = repository_option(),
+    backup: Path | None = typer.Option(
+        None, "--backup", help="Fresh path-preserving backup directory (required with --apply)."
+    ),
+    apply: bool = typer.Option(
+        False, "--apply", help="Apply the reviewed 15-file parenthetical-alias repair."
+    ),
+) -> None:
+    """Populate Phase 4B Batch 9A reviewed aliases; dry-run by default."""
+    repair_title_h1_parenthetical_aliases_batch9_command(root, backup, apply)
 
 
 @app.command("repair-bidding-categories")
