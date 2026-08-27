@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+import re
 import tempfile
 import unittest
+from collections import Counter
 from dataclasses import asdict
 from pathlib import Path
 from unittest.mock import patch
@@ -66,6 +68,93 @@ REVIEWED_PRESENTATIONAL_SUFFIX_PATHS = frozenset(
         "play/defence/techniques/uppercut.md",
     }
 )
+
+REVIEWED_EXPLICIT_ALTERNATE_TRIPLES = {
+    "bidding/conventions/competitive/negative-free-bid.md": (
+        "Negative Free Bid",
+        "Negative Free Bid (NFB)",
+        ["NFB"],
+    ),
+    "bidding/conventions/competitive/unusual-vs-unusual.md": (
+        "Unusual vs. Unusual",
+        "Unusual vs. Unusual (UvU)",
+        ["UvU"],
+    ),
+    "bidding/conventions/game-invitations/artificial-game-tries.md": (
+        "Artificial Game Tries",
+        "Artificial Game Tries (AGT)",
+        ["AGT"],
+    ),
+    "bidding/conventions/game-invitations/two-way-game-try.md": (
+        "Two-Way Game Try",
+        "Two-Way Game Try (TWGT)",
+        ["TWGT"],
+    ),
+    "bidding/conventions/responses/fourth-suit-forcing.md": (
+        "Fourth Suit Forcing",
+        "Fourth Suit Forcing (4SF)",
+        ["4SF"],
+    ),
+    "bidding/conventions/responses/new-minor-forcing.md": (
+        "New Minor Forcing",
+        "New Minor Forcing (NMF)",
+        ["NMF"],
+    ),
+    "bidding/conventions/slam-conventions/ace-asking-bid.md": (
+        "Ace-Asking Bid",
+        "Ace-Asking Bid (AAB)",
+        ["AAB"],
+    ),
+    "bidding/conventions/slam-conventions/control-asking-bid.md": (
+        "Control-Asking Bid",
+        "Control-Asking Bid (CAB)",
+        ["CAB"],
+    ),
+    "bidding/conventions/slam-conventions/exclusion-blackwood.md": (
+        "Exclusion Blackwood",
+        "Exclusion Blackwood (Voidwood)",
+        ["Voidwood"],
+    ),
+    "bidding/conventions/slam-conventions/trump-asking-bid.md": (
+        "Trump-Asking Bid",
+        "Trump-Asking Bid (TAB)",
+        ["TAB"],
+    ),
+    "bidding/principles/bidding-fundamentals/losing-trick-count.md": (
+        "Losing Trick Count",
+        "Losing Trick Count (LTC)",
+        ["LTC"],
+    ),
+    "bidding/systems/benjamin-acol.md": (
+        "Benjamin Acol",
+        "Benjamin Acol (Benjaminised Acol / Benji Acol)",
+        ["Benjaminised Acol", "Benji Acol"],
+    ),
+    "bidding/systems/ehaa.md": (
+        "EHAA",
+        "EHAA (Every Hand An Adventure)",
+        ["Every Hand An Adventure"],
+    ),
+    "bidding/systems/sef.md": (
+        "SEF",
+        "SEF (Système d'Enseignement Français)",
+        ["Système d'Enseignement Français"],
+    ),
+    "play/defence/signaling/standard-signals.md": (
+        "Standard Signals",
+        "Standard Signals (Standard Carding)",
+        ["Standard Carding"],
+    ),
+}
+
+DEFERRED_CATEGORY_DRIFT_PATHS = {
+    "play/counting/counting-index.md",
+    "play/declarer-play/index-declarer-play.md",
+    "play/declarer-play/planning/planning-index.md",
+    "play/declarer-play/trump-play/index-trump-play.md",
+    "play/defence/index-defence.md",
+    "play/play-index.md",
+}
 
 
 class MetadataAuditTests(unittest.TestCase):
@@ -255,6 +344,134 @@ class MetadataAuditTests(unittest.TestCase):
         )
         self.assertNotIn("bidding/missing.md", title_findings)
 
+    def test_explicit_parenthetical_alternates_are_alias_backed(self) -> None:
+        cases = {
+            "bidding/acronym.md": ("Example", "Example (ABC)", ["ABC"]),
+            "bidding/mixed-case.md": ("Example", "Example (UvU)", ["UvU"]),
+            "bidding/non-acronym.md": (
+                "Exclusion Blackwood",
+                "Exclusion Blackwood (Voidwood)",
+                ["Voidwood"],
+            ),
+            "bidding/multiword.md": (
+                "EHAA",
+                "EHAA (Every Hand An Adventure)",
+                ["Every Hand An Adventure"],
+            ),
+            "bidding/unicode.md": (
+                "SEF",
+                "SEF (Système d'Enseignement Français)",
+                ["Système d'Enseignement Français"],
+            ),
+            "bidding/one-of-many.md": (
+                "Example",
+                "Example (ABC)",
+                ["Unrelated", "ABC"],
+            ),
+            "bidding/ordered-pair.md": (
+                "Benjamin Acol",
+                "Benjamin Acol (Benjaminised Acol / Benji Acol)",
+                ["Benjaminised Acol", "Benji Acol"],
+            ),
+        }
+        for article, (title, heading, aliases) in cases.items():
+            data = dict(FIELDS)
+            data.update(title=title, aliases=aliases)
+            self.write(article, data, heading=heading)
+
+        _, findings = self.audit()
+        title_findings = [item for item in findings if item.field == "title"]
+
+        self.assertEqual({item.article for item in title_findings}, set(cases))
+        self.assertTrue(
+            all(
+                item.rule == "title.h1-explicit-alternate"
+                and item.severity == "Info"
+                for item in title_findings
+            )
+        )
+
+    def test_explicit_parenthetical_alternate_boundaries_and_precedence(self) -> None:
+        cases = {
+            "bidding/equal.md": ("Example", "Example", ["ABC"], None),
+            "bidding/suffix.md": (
+                "Example",
+                "Example Technique",
+                ["Technique"],
+                "title.h1-presentational-suffix",
+            ),
+            "bidding/no-alias.md": (
+                "Example",
+                "Example (ABC)",
+                [],
+                "title.h1-mismatch",
+            ),
+            "bidding/wrong-alias.md": (
+                "Example",
+                "Example (ABC)",
+                ["XYZ"],
+                "title.h1-mismatch",
+            ),
+            "bidding/extra-text.md": (
+                "Example",
+                "Example (ABC) Guide",
+                ["ABC"],
+                "title.h1-mismatch",
+            ),
+            "bidding/case-only.md": (
+                "Example",
+                "EXAMPLE",
+                ["EXAMPLE"],
+                "title.h1-mismatch",
+            ),
+            "bidding/punctuation-only.md": (
+                "Example Bid",
+                "Example-Bid",
+                ["Example-Bid"],
+                "title.h1-mismatch",
+            ),
+            "bidding/nested.md": (
+                "Example",
+                "Example (ABC (XYZ))",
+                ["ABC (XYZ)"],
+                "title.h1-mismatch",
+            ),
+            "bidding/reversed-pair.md": (
+                "Example",
+                "Example (Second / First)",
+                ["First", "Second"],
+                "title.h1-mismatch",
+            ),
+            "bidding/topic-index.md": (
+                "Example",
+                "Example (ABC)",
+                ["ABC"],
+                "title.h1-mismatch",
+            ),
+            "bidding/bidding-index.md": (
+                "Example",
+                "Example (ABC)",
+                ["ABC"],
+                "title.h1-mismatch",
+            ),
+        }
+        for article, (title, heading, aliases, _) in cases.items():
+            data = dict(FIELDS)
+            data.update(title=title, aliases=aliases)
+            self.write(article, data, heading=heading)
+
+        _, findings = self.audit()
+        title_findings = [item for item in findings if item.field == "title"]
+        observed = {item.article: item.rule for item in title_findings}
+        expected = {
+            article: values[3]
+            for article, values in cases.items()
+            if values[3] is not None
+        }
+
+        self.assertEqual(observed, expected)
+        self.assertEqual(len(title_findings), len(observed))
+
     def test_historical_title_defects_remain_generic_mismatches(self) -> None:
         cases = {
             "bidding/batch1.md": ("Sos Redouble", "SOS Redouble"),
@@ -283,7 +500,7 @@ class MetadataAuditTests(unittest.TestCase):
         self.assertEqual({item.article for item in title_findings}, set(cases))
         self.assertTrue(all(item.rule == "title.h1-mismatch" for item in title_findings))
 
-    def test_live_presentational_suffix_census_and_audit_accounting(self) -> None:
+    def test_live_title_classification_censuses_and_audit_accounting(self) -> None:
         project = Path(__file__).resolve().parents[1]
         knowledge = project.parent / "knowledge"
         auditor = MetadataAuditor(
@@ -299,18 +516,61 @@ class MetadataAuditTests(unittest.TestCase):
             for item in first
             if item.rule == "title.h1-presentational-suffix"
         }
+        explicit = {
+            item.article
+            for item in first
+            if item.rule == "title.h1-explicit-alternate"
+        }
+        drift = {
+            item.article
+            for item in first
+            if item.rule == "category.provisional-drift"
+        }
         rules = [item.rule for item in first]
+        rule_counts = Counter(rules)
 
         self.assertEqual(len(records), 446)
         self.assertEqual(presentation, set(REVIEWED_PRESENTATIONAL_SUFFIX_PATHS))
         self.assertEqual(len(presentation), 28)
-        self.assertEqual(rules.count("title.h1-mismatch"), 60)
-        self.assertEqual(rules.count("title.h1-presentational-suffix"), 28)
+        self.assertEqual(explicit, set(REVIEWED_EXPLICIT_ALTERNATE_TRIPLES))
+        self.assertEqual(len(explicit), 15)
+        self.assertEqual(drift, DEFERRED_CATEGORY_DRIFT_PATHS)
+        self.assertEqual(rule_counts["title.h1-mismatch"], 45)
+        self.assertEqual(rule_counts["title.h1-presentational-suffix"], 28)
+        self.assertEqual(rule_counts["title.h1-explicit-alternate"], 15)
+        self.assertEqual(
+            sum(rule_counts[rule] for rule in rule_counts if rule.startswith("title.")),
+            88,
+        )
         self.assertEqual(len(first), 274)
         self.assertEqual(sum(item.severity == "Info" for item in first), 274)
         self.assertFalse(any(item.severity in {"Error", "Warning"} for item in first))
         self.assertEqual(first, second)
         self.assertEqual(first, sorted(first, key=type(first[0]).sort_key))
+
+    def test_live_explicit_alternate_triples_match_reviewed_oracle(self) -> None:
+        project = Path(__file__).resolve().parents[1]
+        knowledge = project.parent / "knowledge"
+        auditor = MetadataAuditor(
+            knowledge,
+            systems_file=project / "data/systems.yaml",
+            taxonomy_file=project / "data/taxonomy.yaml",
+        )
+
+        records, _ = auditor.audit()
+        record_by_article = {record.article: record for record in records}
+        observed = {}
+        for article in REVIEWED_EXPLICIT_ALTERNATE_TRIPLES:
+            record = record_by_article[article]
+            match = re.search(r"^#\s+(.+?)\s*$", record.text, re.MULTILINE)
+            self.assertIsNotNone(match)
+            observed[article] = (
+                record.data["title"],
+                match.group(1),
+                record.data["aliases"],
+            )
+
+        self.assertEqual(observed, REVIEWED_EXPLICIT_ALTERNATE_TRIPLES)
 
     def test_status_has_no_provisional_vocabulary_rule(self) -> None:
         paths = []

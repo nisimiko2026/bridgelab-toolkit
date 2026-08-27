@@ -127,6 +127,29 @@ class RawArticleMetadata:
     error: str = ""
 
 
+def _is_explicit_parenthetical_alternate(
+    title: str,
+    first_h1: str,
+    aliases: Any,
+) -> bool:
+    """Recognize exact alias-backed parenthetical title presentations."""
+    if not isinstance(aliases, list) or not aliases or not all(
+        isinstance(alias, str) and alias for alias in aliases
+    ):
+        return False
+
+    prefix = f"{title} ("
+    if not first_h1.startswith(prefix) or not first_h1.endswith(")"):
+        return False
+    alternate = first_h1[len(prefix) : -1]
+    if not alternate or "(" in alternate or ")" in alternate:
+        return False
+
+    if alternate in aliases:
+        return True
+    return len(aliases) > 1 and alternate == " / ".join(aliases)
+
+
 class MetadataAuditor:
     """Inspect raw front matter without constructing or writing Articles."""
 
@@ -648,6 +671,20 @@ class MetadataAuditor:
                             f"presentation suffix {suffix.strip()!r}: {first_h1!r}.",
                         )
                     ]
+
+            aliases = record.data.get("aliases")
+            if _is_explicit_parenthetical_alternate(title, first_h1, aliases):
+                return [
+                    self._finding(
+                        record,
+                        "title",
+                        title,
+                        "title.h1-explicit-alternate",
+                        "Info",
+                        "First H1 presents an explicit metadata alias in "
+                        f"parentheses: {first_h1!r}.",
+                    )
+                ]
 
         return [
             self._finding(
