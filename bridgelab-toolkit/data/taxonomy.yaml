@@ -1,0 +1,135 @@
+# ============================================================
+# BridgeLab Toolkit
+# Knowledge Taxonomy
+# ============================================================
+
+bidding:
+
+  opening:
+    - opening bids
+    - opening principles
+    - preempts
+    - strong openings
+    - weak openings
+
+  responses:
+    - major suit responses
+    - minor suit responses
+    - notrump responses
+    - relay responses
+
+  conventions:
+    - stayman
+    - transfers
+    - slam conventions
+    - game tries
+    - competitive conventions
+
+  competitive:
+    - overcalls
+    - takeout doubles
+    - penalty doubles
+    - balancing
+    - cue bids
+    - preemptive competition
+
+play:
+
+  declarer:
+    - planning
+    - entries
+    - timing
+    - communication
+    - endplay
+    - squeeze
+    - elimination
+    - safety play
+    - trump management
+
+  defense:
+    - opening leads
+    - signaling
+    - counting
+    - discarding
+    - suit preference
+
+  card combinations:
+    - finesses
+    - promotion
+    - coups
+    - end positions
+
+systems:
+
+  natural:
+    - standard american
+    - sayc
+    - acol
+
+  strong club:
+    - precision
+    - blue club
+    - roman club
+
+  artificial:
+    - relay systems
+    - forcing club
+
+partnership:
+
+  agreements:
+    - style
+    - carding
+    - conventions
+    - competitive agreements
+
+  ethics:
+    - alerts
+    - announcements
+    - disclosure
+
+duplicate:
+
+  laws:
+    - laws of bridge
+    - director rulings
+
+  scoring:
+    - matchpoints
+    - imps
+    - victory points
+
+  movements:
+    - mitchell
+    - howell
+    - teams
+
+learning:
+
+  beginner:
+    - fundamentals
+    - basic bidding
+    - card play
+
+  intermediate:
+    - conventions
+    - competitive bidding
+    - declarer play
+
+  advanced:
+    - expert methods
+    - advanced systems
+    - squeezes
+    - partnership style
+
+reference:
+
+  glossary:
+    - terminology
+
+  bibliography:
+    - books
+    - articles
+
+  acronyms:
+    - abbreviations

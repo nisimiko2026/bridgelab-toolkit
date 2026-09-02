@@ -1,0 +1,105 @@
+# ============================================================
+# BridgeLab Toolkit
+# Bridge Conventions
+# ============================================================
+
+opening:
+  - drury
+  - flannery
+  - gazilli
+  - namyats
+  - walsh
+
+responses:
+  - stayman
+  - puppet stayman
+  - jacoby transfer
+  - texas transfer
+  - smolen
+  - lebensohl
+  - jacoby 2nt
+  - fourth suit forcing
+  - new minor forcing
+  - inverted minors
+  - bergen raises
+  - splinter
+
+slam:
+  - blackwood
+  - roman keycard
+  - gerber
+  - exclusion blackwood
+  - kickback
+  - serious 3nt
+  - last train
+
+competitive:
+  - takeout double
+  - negative double
+  - responsive double
+  - support double
+  - penalty double
+  - maximal double
+  - reopening double
+  - michaels cue bid
+  - unusual 2nt
+  - unusual vs unusual
+  - lebensohl
+  - rubensohl
+
+preempts:
+  - multi
+  - muiderberg
+  - weak two
+  - gambling 3nt
+  - namyats
+
+defense:
+  - crash
+  - croc
+  - dont
+  - cappelletti
+  - suction
+  - mathe
+  - brozel
+  - hamilton
+
+card_play:
+  - finesse
+  - endplay
+  - squeeze
+  - strip squeeze
+  - trump coup
+  - elimination
+  - throw in
+  - duck
+  - safety play
+  - hold up
+  - ruffing finesse
+
+signals:
+  - attitude signal
+  - count signal
+  - suit preference
+  - lavinthal
+  - upside down count
+  - upside down attitude
+  - smith echo
+
+leads:
+  - fourth best
+  - third and fifth
+  - rusinow
+  - journalist
+  - top of nothing
+  - ace from ace king
+  - king from ace king
+
+agreements:
+  - forcing pass
+  - support redouble
+  - good bad 2nt
+  - help suit game try
+  - short suit game try
+  - wolff signoff
+  - two way checkback
