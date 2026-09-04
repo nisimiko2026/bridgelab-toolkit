@@ -1,0 +1,1241 @@
+{
+  "deal_count": 10000,
+  "decision": "E. DEFER 2NT RESPONSES",
+  "expected_population": 33,
+  "knowledge_markdown_changed": 0,
+  "method_findings": {
+    "natural": {
+      "3NT_complete": false,
+      "direct_games_complete": false,
+      "minor_actions_partnership_dependent": true,
+      "pass_complete": false
+    },
+    "stayman": {
+      "call": "3C",
+      "complete_responder_trigger": false,
+      "dual_major_complete": false,
+      "source_defined": true
+    },
+    "transfers": {
+      "3D": "hearts",
+      "3H": "spades",
+      "acceptance_defined": true,
+      "any_strength": true,
+      "continuations_complete": false,
+      "five_plus_required": true
+    }
+  },
+  "opening_semantics": {
+    "balanced_required": true,
+    "hcp_range": "20-21",
+    "natural": true
+  },
+  "phase12u_recommendation": {
+    "audit_only": true,
+    "family_id": "response.one-level-existing-rule",
+    "phase": "Phase 12U \u2014 One-Level Response Residual Source-Readiness Audit",
+    "phase12m_population": 693,
+    "prefixes": [
+      "1C P",
+      "1D P",
+      "1H P",
+      "1S P"
+    ]
+  },
+  "policies_added": 0,
+  "population": 33,
+  "positions": [
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "2-5-3-3",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": false,
+      "responder_hcp": 10,
+      "responder_shape": "2-4-5-2",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 323,
+      "stable_id": "seed-323:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 4,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [
+        "DIAMONDS"
+      ],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "5-3-3-2",
+      "primary_family": "long-minor",
+      "responder_balanced": false,
+      "responder_hcp": 4,
+      "responder_shape": "1-3-6-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 1350,
+      "stable_id": "seed-1350:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "5-3-2-3",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 4,
+      "responder_shape": "3-3-4-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 1803,
+      "stable_id": "seed-1803:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-4-2-4",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 7,
+      "responder_shape": "3-2-5-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 1844,
+      "stable_id": "seed-1844:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-4-3-3",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "3-3-3-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 2022,
+      "stable_id": "seed-2022:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "2-3-3-5",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 3,
+      "responder_shape": "3-4-3-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 2312,
+      "stable_id": "seed-2312:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 3,
+        "H": 4,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "4-3-3-3",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 4,
+      "responder_shape": "4-3-3-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 2860,
+      "stable_id": "seed-2860:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 3,
+        "H": 3,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-5-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 6,
+      "responder_shape": "4-3-3-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 3197,
+      "stable_id": "seed-3197:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 3,
+        "H": 3,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-5-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "4-2-3-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 3437,
+      "stable_id": "seed-3437:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 2,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS",
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "4-3-2-4",
+      "primary_family": "both-majors-four-plus",
+      "responder_balanced": true,
+      "responder_hcp": 6,
+      "responder_shape": "4-4-2-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 3637,
+      "stable_id": "seed-3637:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 2,
+        "H": 4,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-3-5-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": false,
+      "responder_hcp": 4,
+      "responder_shape": "4-2-5-2",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 3819,
+      "stable_id": "seed-3819:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 2,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [
+        "DIAMONDS"
+      ],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-5-3-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": false,
+      "responder_hcp": 9,
+      "responder_shape": "2-4-6-1",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 4107,
+      "stable_id": "seed-4107:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 1,
+        "D": 6,
+        "H": 4,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-4-3",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 7,
+      "responder_shape": "3-4-3-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 4243,
+      "stable_id": "seed-4243:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 3,
+        "H": 4,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-2-3-5",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 6,
+      "responder_shape": "3-4-3-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 4564,
+      "stable_id": "seed-4564:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 3,
+        "H": 4,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-3-4",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 3,
+      "responder_shape": "4-2-4-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 4667,
+      "stable_id": "seed-4667:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 2,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS",
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-4-4-2",
+      "primary_family": "both-majors-four-plus",
+      "responder_balanced": true,
+      "responder_hcp": 12,
+      "responder_shape": "4-4-3-2",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 5246,
+      "stable_id": "seed-5246:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 3,
+        "H": 4,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-5-3-2",
+      "primary_family": "game-looking",
+      "responder_balanced": false,
+      "responder_hcp": 9,
+      "responder_shape": "1-3-4-5",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 5292,
+      "stable_id": "seed-5292:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "2-4-4-3",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 0,
+      "responder_shape": "2-3-4-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 5341,
+      "stable_id": "seed-5341:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-3-3-4",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "3-3-3-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 5803,
+      "stable_id": "seed-5803:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-4-2-4",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 5,
+      "responder_shape": "3-4-2-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 6458,
+      "stable_id": "seed-6458:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 2,
+        "H": 4,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-3-5-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 3,
+      "responder_shape": "4-3-2-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 6560,
+      "stable_id": "seed-6560:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 2,
+        "H": 3,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "2-3-5-3",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 5,
+      "responder_shape": "3-2-3-5",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 6660,
+      "stable_id": "seed-6660:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS",
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "2-5-3-3",
+      "primary_family": "both-majors-four-plus",
+      "responder_balanced": false,
+      "responder_hcp": 1,
+      "responder_shape": "4-4-1-4",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 7204,
+      "stable_id": "seed-7204:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 1,
+        "H": 4,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [
+        "DIAMONDS"
+      ],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-4-2-4",
+      "primary_family": "long-minor",
+      "responder_balanced": false,
+      "responder_hcp": 8,
+      "responder_shape": "2-2-6-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 7710,
+      "stable_id": "seed-7710:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "4-3-2-4",
+      "primary_family": "slam-interest-looking",
+      "responder_balanced": false,
+      "responder_hcp": 11,
+      "responder_shape": "3-1-4-5",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 7748,
+      "stable_id": "seed-7748:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "2-4-3-4",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 10,
+      "responder_shape": "3-3-5-2",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 7846,
+      "stable_id": "seed-7846:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "SPADES"
+      ],
+      "long_minors": [
+        "CLUBS"
+      ],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-4-3",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": false,
+      "responder_hcp": 5,
+      "responder_shape": "4-2-1-6",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 8145,
+      "stable_id": "seed-8145:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 1,
+        "H": 2,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS",
+        "SPADES"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "2-3-5-3",
+      "primary_family": "both-majors-four-plus",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "4-4-2-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 8167,
+      "stable_id": "seed-8167:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 2,
+        "H": 4,
+        "S": 4
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "5-3-2-3",
+      "primary_family": "balanced-no-four-major",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "2-3-5-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 8413,
+      "stable_id": "seed-8413:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "3-3-2-5",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": false,
+      "responder_hcp": 5,
+      "responder_shape": "2-4-5-2",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 8645,
+      "stable_id": "seed-8645:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 4,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [
+        "HEARTS",
+        "SPADES"
+      ],
+      "four_card_majors": [],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 21,
+      "opener_shape": "3-2-5-3",
+      "primary_family": "five-plus-hearts",
+      "responder_balanced": false,
+      "responder_hcp": 8,
+      "responder_shape": "5-6-1-1",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 8919,
+      "stable_id": "seed-8919:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 1,
+        "D": 1,
+        "H": 6,
+        "S": 5
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [
+        "HEARTS"
+      ],
+      "long_minors": [],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "4-4-3-2",
+      "primary_family": "exactly-one-four-card-major",
+      "responder_balanced": true,
+      "responder_hcp": 9,
+      "responder_shape": "2-4-4-3",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 9115,
+      "stable_id": "seed-9115:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 4,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "2NT P",
+      "current_action": "ABSTAIN",
+      "five_plus_majors": [],
+      "four_card_majors": [],
+      "long_minors": [
+        "CLUBS"
+      ],
+      "opener_balanced": true,
+      "opener_hcp": 20,
+      "opener_shape": "5-2-3-3",
+      "primary_family": "long-minor",
+      "responder_balanced": false,
+      "responder_hcp": 8,
+      "responder_shape": "3-3-1-6",
+      "route_exists": true,
+      "route_name": "sayc.response.2nt.jacoby",
+      "rule_abstains": true,
+      "rule_attempted": "sayc.response.2nt.jacoby",
+      "seed": 9255,
+      "stable_id": "seed-9255:S:2NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 1,
+        "H": 3,
+        "S": 3
+      }
+    }
+  ],
+  "primary_partitions": {
+    "balanced-no-four-major": 8,
+    "both-majors-four-plus": 4,
+    "exactly-one-four-card-major": 15,
+    "five-plus-hearts": 1,
+    "game-looking": 1,
+    "long-minor": 3,
+    "slam-interest-looking": 1
+  },
+  "production_defaults_changed": false,
+  "production_rules_added": 0,
+  "route_count": 45,
+  "routes_added": 0,
+  "source_matrix": [
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3D"
+      ],
+      "classification": "LOW_SAMPLE",
+      "executable_subset": false,
+      "family_id": "five-plus-hearts",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "8-8",
+      "observed_count": 1,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "5-6-1-1": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3C"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "both-majors-four-plus",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "1-12",
+      "observed_count": 4,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "4-4-1-4": 1,
+        "4-4-2-3": 2,
+        "4-4-3-2": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3C"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "exactly-one-four-card-major",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "3-10",
+      "observed_count": 15,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "2-4-4-3": 1,
+        "2-4-5-2": 2,
+        "2-4-6-1": 1,
+        "3-4-2-4": 1,
+        "3-4-3-3": 3,
+        "4-2-1-6": 1,
+        "4-2-3-4": 1,
+        "4-2-4-3": 1,
+        "4-2-5-2": 1,
+        "4-3-2-4": 1,
+        "4-3-3-3": 2
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "Pass",
+        "3NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "balanced-no-four-major",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "0-10",
+      "observed_count": 8,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "2-3-4-4": 1,
+        "2-3-5-3": 1,
+        "3-2-3-5": 1,
+        "3-2-5-3": 1,
+        "3-3-3-4": 2,
+        "3-3-4-3": 1,
+        "3-3-5-2": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "minor methods",
+        "3NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "long-minor",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "4-8",
+      "observed_count": 3,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "1-3-6-3": 1,
+        "2-2-6-3": 1,
+        "3-3-1-6": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "slam actions"
+      ],
+      "classification": "LOW_SAMPLE",
+      "executable_subset": false,
+      "family_id": "slam-interest-looking",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "11-11",
+      "observed_count": 1,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "3-1-4-5": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3NT"
+      ],
+      "classification": "LOW_SAMPLE",
+      "executable_subset": false,
+      "family_id": "game-looking",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "9-9",
+      "observed_count": 1,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "1-3-4-5": 1
+      }
+    }
+  ],
+  "source_safe_candidates": [],
+  "start_seed": 1,
+  "top_candidates": [
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3C"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "exactly-one-four-card-major",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "3-10",
+      "observed_count": 15,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "2-4-4-3": 1,
+        "2-4-5-2": 2,
+        "2-4-6-1": 1,
+        "3-4-2-4": 1,
+        "3-4-3-3": 3,
+        "4-2-1-6": 1,
+        "4-2-3-4": 1,
+        "4-2-4-3": 1,
+        "4-2-5-2": 1,
+        "4-3-2-4": 1,
+        "4-3-3-3": 2
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3C"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "both-majors-four-plus",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "1-12",
+      "observed_count": 4,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "4-4-1-4": 1,
+        "4-4-2-3": 2,
+        "4-4-3-2": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "3D"
+      ],
+      "classification": "LOW_SAMPLE",
+      "executable_subset": false,
+      "family_id": "five-plus-hearts",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "8-8",
+      "observed_count": 1,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "5-6-1-1": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "Pass",
+        "3NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "balanced-no-four-major",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "0-10",
+      "observed_count": 8,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "2-3-4-4": 1,
+        "2-3-5-3": 1,
+        "3-2-3-5": 1,
+        "3-2-5-3": 1,
+        "3-3-3-4": 2,
+        "3-3-4-3": 1,
+        "3-3-5-2": 1
+      }
+    },
+    {
+      "architecture_required": false,
+      "candidate_calls": [
+        "minor methods",
+        "3NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "long-minor",
+      "frozen_source_finding": "The source names this action/method, but does not provide a complete residual trigger, precedence, and exception contract.",
+      "hcp_range": "4-8",
+      "observed_count": 3,
+      "policy_required": false,
+      "primary_blocker": "Incomplete exact strength/shape precedence and exceptions.",
+      "recommended_action": "defer",
+      "shape_characteristics": {
+        "1-3-6-3": 1,
+        "2-2-6-3": 1,
+        "3-3-1-6": 1
+      }
+    }
+  ]
+}
