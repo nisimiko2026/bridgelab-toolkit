@@ -1,0 +1,119 @@
+{
+  "branch_classification_counts": {
+    "ALREADY_ROUTED": 0,
+    "ARCHITECTURE_REQUIRED": 2,
+    "POLICY_REQUIRED": 0,
+    "SOURCE_EXECUTABLE": 0,
+    "SOURCE_INSUFFICIENT": 3,
+    "TERMINAL": 0
+  },
+  "candidate_calls_found": [
+    "3NT",
+    "4H",
+    "4S",
+    "minor-suit game",
+    "slam exploration"
+  ],
+  "current_production_endpoint_counts": {
+    "2D": 0,
+    "2H": 0,
+    "2S": 0
+  },
+  "deal_count": 10000,
+  "default_registry_has_stayman_continuation_policy": false,
+  "fixture_supported_endpoint_counts": {
+    "2D": 104,
+    "2H": 70,
+    "2S": 61
+  },
+  "game_going_fixture_count_audited": 235,
+  "knowledge_markdown_changed": 0,
+  "opener_both_major_abstentions": 36,
+  "production_defaults_changed": false,
+  "production_route_count": 42,
+  "recommendation": "D. DEFER THIS FAMILY",
+  "recommended_phase12f_direction": "Design and audit a non-default Stayman continuation strength/state policy boundary, scoped first to the source-complete major-fit GAME_GOING branches (4H and 4S); keep all no-fit branches deferred.",
+  "responder_holding_counts": {
+    "2D": {
+      "no_fit:other_major_<4": 41,
+      "no_fit:other_major_>=4": 63
+    },
+    "2H": {
+      "fit:other_major_<4": 12,
+      "fit:other_major_>=4": 5,
+      "no_fit:other_major_<4": 38,
+      "no_fit:other_major_>=4": 15
+    },
+    "2S": {
+      "fit:other_major_<4": 13,
+      "fit:other_major_>=4": 8,
+      "no_fit:other_major_<4": 21,
+      "no_fit:other_major_>=4": 19
+    }
+  },
+  "source_certainty_matrix": [
+    {
+      "auction_endpoint": "1NT-P-2C-P-2D-P",
+      "benchmark_count": 104,
+      "blocker": "The source also permits minor game or slam according to distribution and gives no complete precedence.",
+      "candidate_call": "3NT",
+      "executable": false,
+      "recommended_action": "defer",
+      "responder_holding_condition": "any audited holding",
+      "source_status": "SOURCE_INSUFFICIENT"
+    },
+    {
+      "auction_endpoint": "1NT-P-2C-P-2H-P",
+      "benchmark_count": 17,
+      "blocker": "The call is source-explicit, but BridgeLab has no Stayman continuation strength-policy abstraction.",
+      "candidate_call": "4H",
+      "executable": false,
+      "recommended_action": "add architecture only in a later phase",
+      "responder_holding_condition": "responder has 4+ hearts",
+      "source_status": "ARCHITECTURE_REQUIRED"
+    },
+    {
+      "auction_endpoint": "1NT-P-2C-P-2H-P",
+      "benchmark_count": 53,
+      "blocker": "No exact no-fit GAME_GOING call or shape precedence is defined.",
+      "candidate_call": "3NT / other",
+      "executable": false,
+      "recommended_action": "defer",
+      "responder_holding_condition": "responder has fewer than 4 hearts",
+      "source_status": "SOURCE_INSUFFICIENT"
+    },
+    {
+      "auction_endpoint": "1NT-P-2C-P-2S-P",
+      "benchmark_count": 21,
+      "blocker": "The call is source-explicit, but BridgeLab has no Stayman continuation strength-policy abstraction.",
+      "candidate_call": "4S",
+      "executable": false,
+      "recommended_action": "add architecture only in a later phase",
+      "responder_holding_condition": "responder has 4+ spades",
+      "source_status": "ARCHITECTURE_REQUIRED"
+    },
+    {
+      "auction_endpoint": "1NT-P-2C-P-2S-P",
+      "benchmark_count": 40,
+      "blocker": "No exact no-fit GAME_GOING call or shape precedence is defined.",
+      "candidate_call": "3NT / other",
+      "executable": false,
+      "recommended_action": "defer",
+      "responder_holding_condition": "responder has fewer than 4 spades",
+      "source_status": "SOURCE_INSUFFICIENT"
+    }
+  ],
+  "source_safe_calls": {
+    "3NT_after_2D": false,
+    "4H_after_heart_fit": true,
+    "4S_after_spade_fit": true
+  },
+  "start_seed": 1,
+  "unresolved_blockers": [
+    "No complete GAME_GOING precedence after a 2D denial.",
+    "No exact continuation when opener's shown major does not fit responder.",
+    "Five-card/other-major and unusual-shape exceptions are not resolved.",
+    "The production architecture has no explicit Stayman continuation strength policy.",
+    "The existing opener response abstains with both four-card majors (36 fixture positions)."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "current_abstentions": 36,
+  "current_production_actions": {
+    "ABSTAIN": 36
+  },
+  "deal_count": 10000,
+  "decision": "B. ADD NON-DEFAULT DUAL-MAJOR POLICY ARCHITECTURE",
+  "default_behavior": "no policy -> abstain",
+  "default_dual_major_policy": null,
+  "dual_major_total": 36,
+  "exact_shapes": {
+    "2-3-4-4": 19,
+    "3-2-4-4": 17
+  },
+  "existing_route_attempts": {
+    "sayc.opener.1nt.stayman": 36
+  },
+  "knowledge_markdown_changed": 0,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual_by_family": {
+    "after_2D": 104,
+    "after_2H_no_fit": 53,
+    "after_2S_no_fit": 40
+  },
+  "policy_boundary_possible": true,
+  "production_defaults_changed": false,
+  "proposed_inputs": [
+    "opener hand",
+    "known dual-major Stayman state"
+  ],
+  "proposed_output_domain": [
+    "HEARTS",
+    "SPADES",
+    "UNKNOWN"
+  ],
+  "proposed_policy_responsibility": "Given an opener hand already known to have both qualifying majors, select the partnership-agreed Stayman response branch.",
+  "proposed_source_requirements": [
+    "Known HEARTS or SPADES choices must include an explanation.",
+    "Known choices must cite the frozen Stayman Opener's Responses source."
+  ],
+  "recommended_phase12j_direction": "Add a non-default Stayman dual-major response policy abstraction with HEARTS, SPADES, and UNKNOWN outputs; require explanation and frozen-source attribution for known choices; preserve no-policy and UNKNOWN abstention; do not add responder continuations.",
+  "responder_continuation_policy_changed": false,
+  "route_count": 44,
+  "shape_buckets": {
+    "4H_4S": 36,
+    "4H_5plusS": 0,
+    "5plusH_4S": 0,
+    "5plusH_5plusS": 0
+  },
+  "source_certainty_matrix": [
+    {
+      "blocker": "No partnership choice is configured by default.",
+      "candidate_source_permitted_responses": [
+        "2H",
+        "2S"
+      ],
+      "classification": "POLICY_REQUIRED",
+      "dual_major_shape": "4H_4S",
+      "exact_count": 36,
+      "policy_boundary_possible": true,
+      "recommended_action": "add non-default policy architecture in Phase 12J",
+      "source_statement": "2H may also contain four spades depending on partnership agreement; 2S normally denies four hearts."
+    },
+    {
+      "blocker": "No partnership choice is configured by default.",
+      "candidate_source_permitted_responses": [
+        "2H",
+        "2S"
+      ],
+      "classification": "POLICY_REQUIRED",
+      "dual_major_shape": "4H_5plusS",
+      "exact_count": 0,
+      "policy_boundary_possible": true,
+      "recommended_action": "add non-default policy architecture in Phase 12J",
+      "source_statement": "2H may also contain four spades depending on partnership agreement; 2S normally denies four hearts."
+    },
+    {
+      "blocker": "No partnership choice is configured by default.",
+      "candidate_source_permitted_responses": [
+        "2H",
+        "2S"
+      ],
+      "classification": "POLICY_REQUIRED",
+      "dual_major_shape": "5plusH_4S",
+      "exact_count": 0,
+      "policy_boundary_possible": true,
+      "recommended_action": "add non-default policy architecture in Phase 12J",
+      "source_statement": "2H may also contain four spades depending on partnership agreement; 2S normally denies four hearts."
+    },
+    {
+      "blocker": "No partnership choice is configured by default.",
+      "candidate_source_permitted_responses": [
+        "2H",
+        "2S"
+      ],
+      "classification": "POLICY_REQUIRED",
+      "dual_major_shape": "5plusH_5plusS",
+      "exact_count": 0,
+      "policy_boundary_possible": true,
+      "recommended_action": "add non-default policy architecture in Phase 12J",
+      "source_statement": "2H may also contain four spades depending on partnership agreement; 2S normally denies four hearts."
+    }
+  ],
+  "source_findings": [
+    {
+      "action_explicit": true,
+      "ambiguity_acknowledged": true,
+      "dependencies": [
+        "partnership agreement"
+      ],
+      "exceptions_defined": false,
+      "precedence_complete": false,
+      "source": "bidding/conventions/responses/stayman#Opener's Responses",
+      "statement": "2H shows four hearts and may also contain four spades depending on partnership agreement.",
+      "trigger_computable": true,
+      "universal": false
+    },
+    {
+      "action_explicit": true,
+      "ambiguity_acknowledged": true,
+      "dependencies": [
+        "partnership agreement"
+      ],
+      "exceptions_defined": false,
+      "precedence_complete": false,
+      "source": "bidding/conventions/responses/stayman#Opener's Responses",
+      "statement": "2S shows four spades and normally denies four hearts.",
+      "trigger_computable": true,
+      "universal": false
+    }
+  ],
+  "start_seed": 1
+}

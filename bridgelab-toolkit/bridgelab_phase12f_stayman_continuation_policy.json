@@ -1,0 +1,26 @@
+{
+  "classifications": [
+    "GAME_GOING",
+    "OTHER",
+    "UNKNOWN"
+  ],
+  "default_policy": null,
+  "dual_major_abstentions": 36,
+  "endpoint_counts": {
+    "2D": 104,
+    "2H": 70,
+    "2S": 61
+  },
+  "heart_fit_target": 17,
+  "knowledge_markdown_changed": 0,
+  "no_fit_branches_deferred": true,
+  "policy_interface": "StaymanContinuationStrengthPolicy",
+  "production_bidding_calls_added": 0,
+  "production_defaults_changed": false,
+  "production_routes_after": 42,
+  "production_routes_before": 42,
+  "recommended_next_phase": "Phase 12G \u2014 Policy-Gated Stayman Major-Fit Game Continuations",
+  "registry_option": "stayman_continuation_strength_policy",
+  "spade_fit_target": 21,
+  "total_future_fit_target": 38
+}

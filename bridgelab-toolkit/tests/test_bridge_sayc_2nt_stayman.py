@@ -1,0 +1,35 @@
+from bridge import Auction, BiddingContext, Hand, Seat, SystemContext, Vulnerability
+from bridge.sayc_2nt_stayman import create_sayc_two_notrump_stayman_opener_response_engine
+from bridge.sayc_route_configuration import create_standard_sayc_router
+
+def ctx(calls, hand, system="SAYC"):
+    return BiddingContext.create(
+        hand=Hand.parse(hand), auction=Auction(Seat.NORTH,calls),
+        vulnerability=Vulnerability.NONE, system=SystemContext(system))
+
+def bid(calls, hand):
+    d=create_sayc_two_notrump_stayman_opener_response_engine().evaluate(ctx(calls,hand))
+    return None if d.recommended_call is None else d.recommended_call.serialize()
+
+def test_no_four_card_major_returns_3d():
+    assert bid(("2NT","P","3C","P"), "AQ3.KJ4.AQ76.KJ3") == "3D"
+
+def test_four_hearts_only_returns_3h():
+    assert bid(("2NT","P","3C","P"), "AQ3.KJ74.AQ7.KJ3") == "3H"
+
+def test_four_spades_only_returns_3s():
+    assert bid(("2NT","P","3C","P"), "AQ74.KJ3.AQ7.KJ3") == "3S"
+
+def test_both_four_card_majors_abstain():
+    assert bid(("2NT","P","3C","P"), "AQ74.KJ74.AQ7.KJ") is None
+
+def test_wrong_auction_abstains():
+    assert bid(("2NT","P"), "AQ3.KJ4.AQ76.KJ3") is None
+
+def test_non_sayc_abstains():
+    e=create_sayc_two_notrump_stayman_opener_response_engine()
+    assert e.evaluate(ctx(("2NT","P","3C","P"), "AQ3.KJ4.AQ76.KJ3", "Other")).recommended_call is None
+
+def test_router_has_stayman_opener_route():
+    m=create_standard_sayc_router().match(ctx(("2NT","P","3C","P"), "AQ3.KJ4.AQ76.KJ3"))
+    assert m is not None and m.route_id == "sayc.opener.2nt.stayman"

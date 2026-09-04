@@ -1,0 +1,128 @@
+{
+  "accepted_heart_transfer_positions": 62,
+  "accepted_spade_transfer_positions": 61,
+  "deal_count": 10000,
+  "default_behavior_unchanged": true,
+  "game_going": {
+    "4H": 12,
+    "4S": 13,
+    "current_production_route_attempts": 0,
+    "endpoint_classification": "TERMINAL",
+    "terminal_count": 25,
+    "total": 25
+  },
+  "invitational": {
+    "current_production_route_attempts": 0,
+    "endpoint_classification": "SOURCE_INSUFFICIENT",
+    "heart_2NT": 11,
+    "next_actor": "opener (after the benchmark opponent passes)",
+    "spade_2NT": 14,
+    "total": 25
+  },
+  "invitational_2nt_source_findings": [
+    {
+      "candidate_call": "Pass",
+      "condition_directly_computable": false,
+      "explicitly_stated_after_invitational_2NT": false,
+      "finding": "The canonical Jacoby article specifies responder's 2NT as an invitation but supplies no opener continuation mapping after that auction.",
+      "partnership_agreement_required": "undetermined because the call is not specified",
+      "precedence_complete": false,
+      "trigger_condition": null,
+      "unsupported_numeric_strength_required": false
+    },
+    {
+      "candidate_call": "3H / 3S",
+      "condition_directly_computable": false,
+      "explicitly_stated_after_invitational_2NT": false,
+      "finding": "The canonical Jacoby article specifies responder's 2NT as an invitation but supplies no opener continuation mapping after that auction.",
+      "partnership_agreement_required": "undetermined because the call is not specified",
+      "precedence_complete": false,
+      "trigger_condition": null,
+      "unsupported_numeric_strength_required": false
+    },
+    {
+      "candidate_call": "3NT",
+      "condition_directly_computable": false,
+      "explicitly_stated_after_invitational_2NT": false,
+      "finding": "The canonical Jacoby article specifies responder's 2NT as an invitation but supplies no opener continuation mapping after that auction.",
+      "partnership_agreement_required": "undetermined because the call is not specified",
+      "precedence_complete": false,
+      "trigger_condition": null,
+      "unsupported_numeric_strength_required": false
+    },
+    {
+      "candidate_call": "4H / 4S",
+      "condition_directly_computable": false,
+      "explicitly_stated_after_invitational_2NT": false,
+      "finding": "The canonical Jacoby article specifies responder's 2NT as an invitation but supplies no opener continuation mapping after that auction.",
+      "partnership_agreement_required": "undetermined because the call is not specified",
+      "precedence_complete": false,
+      "trigger_condition": null,
+      "unsupported_numeric_strength_required": false
+    }
+  ],
+  "knowledge_markdown_changed": 0,
+  "production_defaults_changed": false,
+  "recommendation": "C. DEFER THIS FAMILY",
+  "recommended_next_family": "Audit game-going responder continuations after deterministic 1NT Stayman responses; the frozen Stayman source explicitly names 4H/4S when a major fit is found and 3NT in its no-major-fit game example, subject to an explicit responder-strength policy boundary.",
+  "source_certainty_matrix": [
+    {
+      "blocker": "none",
+      "count": 17,
+      "endpoint": "WEAK heart Pass",
+      "executable": true,
+      "next_actor": "none",
+      "source_status": "TERMINAL"
+    },
+    {
+      "blocker": "none",
+      "count": 8,
+      "endpoint": "WEAK spade Pass",
+      "executable": true,
+      "next_actor": "none",
+      "source_status": "TERMINAL"
+    },
+    {
+      "blocker": "No exact opener call, trigger conditions, or precedence in the frozen corpus.",
+      "count": 11,
+      "endpoint": "INVITATIONAL heart 2NT",
+      "executable": false,
+      "next_actor": "opener",
+      "source_status": "SOURCE_INSUFFICIENT"
+    },
+    {
+      "blocker": "No exact opener call, trigger conditions, or precedence in the frozen corpus.",
+      "count": 14,
+      "endpoint": "INVITATIONAL spade 2NT",
+      "executable": false,
+      "next_actor": "opener",
+      "source_status": "SOURCE_INSUFFICIENT"
+    },
+    {
+      "blocker": "none",
+      "count": 12,
+      "endpoint": "GAME_GOING 4H",
+      "executable": true,
+      "next_actor": "none",
+      "source_status": "TERMINAL"
+    },
+    {
+      "blocker": "none",
+      "count": 13,
+      "endpoint": "GAME_GOING 4S",
+      "executable": true,
+      "next_actor": "none",
+      "source_status": "TERMINAL"
+    }
+  ],
+  "start_seed": 1,
+  "successful_phase12c_continuations": 75,
+  "weak": {
+    "current_production_route_attempts": 0,
+    "endpoint_classification": "TERMINAL",
+    "heart_pass": 17,
+    "spade_pass": 8,
+    "terminal_count": 25,
+    "total": 25
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "candidates": [
+    {
+      "auction_prefixes": [
+        "1C P 1D P",
+        "1C P 1H P",
+        "1C P 1NT P",
+        "1C P 1S P",
+        "1D P 1S P",
+        "1D P 2NT P",
+        "1D P 3NT P",
+        "1H P 1S P",
+        "1H P 2H P",
+        "1H P 3H P",
+        "1S P 2S P",
+        "1S P 3S P"
+      ],
+      "blocker": "Existing routed rebid rules abstain where source precedence is incomplete.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.opener.1c.1d",
+        "sayc.opener.1c.1h",
+        "sayc.opener.1c.1s",
+        "sayc.opener.1d.1s",
+        "sayc.opener.1h.1s",
+        "sayc.opener.1h.2h",
+        "sayc.opener.1s.2s"
+      ],
+      "decision_seat": "N",
+      "existing_rule_abstains": true,
+      "family_id": "opener.one-level-rebid-existing-rule",
+      "observed_count": 406,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/rebids/opening-rebids.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "2C P 2D P"
+      ],
+      "blocker": "The 2NT subset is exact; suit rebids use qualitative strength and suit language.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [],
+      "decision_seat": "N",
+      "existing_rule_abstains": false,
+      "family_id": "opener.strong-two-club-after-waiting",
+      "observed_count": 47,
+      "routing_stops_before_rule": true,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/response-to-2-clubs.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "<opening>"
+      ],
+      "blocker": "Multiple opening choices and judgment boundaries remain.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.opening"
+      ],
+      "decision_seat": "N",
+      "existing_rule_abstains": true,
+      "family_id": "opening.unresolved",
+      "observed_count": 5889,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/opening-bids/opening-requirements.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "1C P 1D P 1H P",
+        "1C P 1D P 1NT P",
+        "1C P 1D P 1S P",
+        "1C P 1D P 2C P",
+        "1C P 1H P 1NT P",
+        "1C P 1H P 1S P",
+        "1C P 1H P 2C P",
+        "1C P 1H P 2H P",
+        "1C P 1S P 1NT P",
+        "1C P 1S P 2C P",
+        "1C P 1S P 2D P",
+        "1C P 1S P 2H P",
+        "1C P 1S P 2NT P",
+        "1C P 1S P 2S P",
+        "1D P 1H P 1NT P",
+        "1D P 1H P 1S P",
+        "1D P 1H P 2C P",
+        "1D P 1H P 2D P",
+        "1D P 1H P 2H P",
+        "1D P 1H P 2NT P",
+        "1D P 1S P 1NT P",
+        "1D P 1S P 2C P",
+        "1D P 1S P 2D P",
+        "1D P 1S P 2H P",
+        "1D P 1S P 2NT P",
+        "1D P 1S P 2S P",
+        "1H P 1S P 1NT P",
+        "1H P 1S P 2D P",
+        "1H P 1S P 2H P",
+        "1H P 1S P 2NT P",
+        "1NT P 2D P 2H P",
+        "1NT P 2H P 2S P",
+        "2NT P 3D P 3H P",
+        "2NT P 3H P 3S P"
+      ],
+      "blocker": "Broad family has strength ranges but incomplete mutually exclusive call precedence.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.responder.1nt.jacoby.hearts.continuation",
+        "sayc.responder.1nt.jacoby.spades.continuation"
+      ],
+      "decision_seat": "S",
+      "existing_rule_abstains": true,
+      "family_id": "responder.rebid-after-opener-rebid",
+      "observed_count": 1194,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/rebids/responder-rebids.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "1C P",
+        "1D P",
+        "1H P",
+        "1S P"
+      ],
+      "blocker": "Existing routed rules deliberately abstain outside their complete sourced subsets.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.response.1c",
+        "sayc.response.1d",
+        "sayc.response.1h",
+        "sayc.response.1s"
+      ],
+      "decision_seat": "S",
+      "existing_rule_abstains": true,
+      "family_id": "response.one-level-existing-rule",
+      "observed_count": 693,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/responding-to-opening-bids.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "1NT P"
+      ],
+      "blocker": "Natural calls are explicit, but convention precedence prevents a complete family contract.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.response.1nt.jacoby"
+      ],
+      "decision_seat": "S",
+      "existing_rule_abstains": true,
+      "family_id": "response.one-notrump",
+      "observed_count": 271,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/response-to-1nt.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "3C P",
+        "3D P",
+        "3H P",
+        "3S P"
+      ],
+      "blocker": "Pass/game/sacrifice choices depend on fit, shape, vulnerability, and judgment.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [],
+      "decision_seat": "S",
+      "existing_rule_abstains": false,
+      "family_id": "response.three-level-preempt",
+      "observed_count": 166,
+      "routing_stops_before_rule": true,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/response-to-three-level-preempt.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "2NT P"
+      ],
+      "blocker": "Uncovered natural and conventional choices lack complete precedence.",
+      "classification": "SOURCE_PARTIAL",
+      "current_action": "ABSTAIN",
+      "current_routes": [
+        "sayc.response.2nt.jacoby"
+      ],
+      "decision_seat": "S",
+      "existing_rule_abstains": true,
+      "family_id": "response.two-notrump",
+      "observed_count": 33,
+      "routing_stops_before_rule": false,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/response-to-2nt.md"
+      ]
+    },
+    {
+      "auction_prefixes": [
+        "2D P",
+        "2H P",
+        "2S P"
+      ],
+      "blocker": "Actions use usually/constructive language, suit quality, vulnerability, and agreements.",
+      "classification": "PARTNERSHIP_DEPENDENT",
+      "current_action": "ABSTAIN",
+      "current_routes": [],
+      "decision_seat": "S",
+      "existing_rule_abstains": false,
+      "family_id": "response.weak-two",
+      "observed_count": 540,
+      "routing_stops_before_rule": true,
+      "source_files": [
+        "../knowledge/bidding/natural-bids/responses/response-to-weak-two.md"
+      ]
+    }
+  ],
+  "deal_count": 10000,
+  "decision": "D. ONLY A NARROW SUBSET IS IMPLEMENTABLE",
+  "default_policies": {
+    "jacoby_continuation": null,
+    "stayman_continuation": null,
+    "stayman_dual_major": null
+  },
+  "deferred_families": [
+    {
+      "classification": "DEFERRED_EXISTING",
+      "family_id": "phase12h.stayman-residual",
+      "observed_count": 197
+    },
+    {
+      "classification": "DEFERRED_EXISTING",
+      "family_id": "phase12l.dual-major-hearts-residual",
+      "observed_count": 31
+    },
+    {
+      "classification": "DEFERRED_EXISTING",
+      "family_id": "phase12l.dual-major-spades-residual",
+      "observed_count": 29
+    }
+  ],
+  "jacoby_no_policy": {
+    "heart_transfer": 62,
+    "spade_transfer": 61,
+    "total": 123
+  },
+  "knowledge_markdown_changed": 0,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual": 197,
+  "phase12l_terminal": {
+    "HEARTS": 5,
+    "SPADES": 7
+  },
+  "phase12n_specification": {
+    "auction_prefix": "2C P 2D P",
+    "decision_seat": "N",
+    "expected_calls": [
+      "2NT"
+    ],
+    "key_guards": [
+      "exact uncontested prefix only",
+      "balanced only",
+      "22\u201324 HCP inclusive",
+      "all other hands abstain",
+      "no default or policy changes"
+    ],
+    "observed_family_population": 47,
+    "observed_subset_population": 24,
+    "policy_architecture_needed": false,
+    "production_implementation_appropriate": true,
+    "route_change_needed": true,
+    "source_backed_condition": "Opener is balanced with 22\u201324 HCP.",
+    "target_family": "Strong 2C opener rebid after 2D waiting \u2014 balanced subset"
+  },
+  "policies_added": 0,
+  "production_defaults_changed": false,
+  "production_rules_added": 0,
+  "route_count": 44,
+  "selected_family_id": "opener.strong-two-club-after-waiting.balanced-22-24",
+  "selected_subset_count": 24,
+  "start_seed": 1,
+  "stop_reason_counts": {
+    "auction-complete": 761,
+    "no-recommendation": 9239
+  },
+  "top_five": [
+    {
+      "architecture_needed": false,
+      "auction_prefix": "2C P 2D P",
+      "current_behavior": "ABSTAIN",
+      "decision_seat": "N",
+      "deep_source_audit": {
+        "10_exceptions_explicit": false,
+        "11_partnership_agreement_required": false,
+        "12_entire_family_safe": false,
+        "13_smaller_executable_subset": "balanced 22\u201324 HCP -> 2NT",
+        "14_policy_boundary_solves": false,
+        "15_architecture_alone_solves": false,
+        "1_auction_prefix": "2C P 2D P",
+        "2_required_conditions": "balanced and 22\u201324 HCP",
+        "3_runtime_state_available": true,
+        "4_source_calls": [
+          "2NT"
+        ],
+        "5_mutually_exclusive": true,
+        "6_precedence_present": true,
+        "7_numeric_boundaries": true,
+        "8_boundaries_frozen": true,
+        "9_distribution_explicit": true
+      },
+      "family_id": "opener.strong-two-club-after-waiting",
+      "observed_count": 47,
+      "policy_needed": false,
+      "primary_blocker": "The 2NT subset is exact; suit rebids use qualitative strength and suit language.",
+      "rank": 1,
+      "recommended_action": "Phase 12N narrow subset",
+      "router_audit": {
+        "new_route_required": true,
+        "route_exists": false,
+        "route_reaches_rule": false,
+        "routes": [],
+        "rule_abstains": false
+      },
+      "small_source_safe_subset": "24 balanced 22\u201324 HCP positions -> 2NT",
+      "source_classification": "SOURCE_PARTIAL"
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "current_behavior": "ABSTAIN",
+      "decision_seat": "S",
+      "deep_source_audit": {
+        "10_exceptions_explicit": false,
+        "11_partnership_agreement_required": false,
+        "12_entire_family_safe": false,
+        "13_smaller_executable_subset": null,
+        "14_policy_boundary_solves": false,
+        "15_architecture_alone_solves": false,
+        "1_auction_prefix": "1NT P",
+        "2_required_conditions": "Family-specific strength, shape, fit, and prior-call state.",
+        "3_runtime_state_available": false,
+        "4_source_calls": [],
+        "5_mutually_exclusive": false,
+        "6_precedence_present": false,
+        "7_numeric_boundaries": false,
+        "8_boundaries_frozen": false,
+        "9_distribution_explicit": false
+      },
+      "family_id": "response.one-notrump",
+      "observed_count": 271,
+      "policy_needed": false,
+      "primary_blocker": "Natural calls are explicit, but convention precedence prevents a complete family contract.",
+      "rank": 2,
+      "recommended_action": "defer",
+      "router_audit": {
+        "new_route_required": false,
+        "route_exists": true,
+        "route_reaches_rule": true,
+        "routes": [
+          "sayc.response.1nt.jacoby"
+        ],
+        "rule_abstains": true
+      },
+      "small_source_safe_subset": null,
+      "source_classification": "SOURCE_PARTIAL"
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1C P 1D P 1H P / 1C P 1D P 1NT P / 1C P 1D P 1S P / 1C P 1D P 2C P / 1C P 1H P 1NT P / 1C P 1H P 1S P / 1C P 1H P 2C P / 1C P 1H P 2H P / 1C P 1S P 1NT P / 1C P 1S P 2C P / 1C P 1S P 2D P / 1C P 1S P 2H P / 1C P 1S P 2NT P / 1C P 1S P 2S P / 1D P 1H P 1NT P / 1D P 1H P 1S P / 1D P 1H P 2C P / 1D P 1H P 2D P / 1D P 1H P 2H P / 1D P 1H P 2NT P / 1D P 1S P 1NT P / 1D P 1S P 2C P / 1D P 1S P 2D P / 1D P 1S P 2H P / 1D P 1S P 2NT P / 1D P 1S P 2S P / 1H P 1S P 1NT P / 1H P 1S P 2D P / 1H P 1S P 2H P / 1H P 1S P 2NT P / 1NT P 2D P 2H P / 1NT P 2H P 2S P / 2NT P 3D P 3H P / 2NT P 3H P 3S P",
+      "current_behavior": "ABSTAIN",
+      "decision_seat": "S",
+      "deep_source_audit": {
+        "10_exceptions_explicit": false,
+        "11_partnership_agreement_required": false,
+        "12_entire_family_safe": false,
+        "13_smaller_executable_subset": null,
+        "14_policy_boundary_solves": false,
+        "15_architecture_alone_solves": false,
+        "1_auction_prefix": "1C P 1D P 1H P / 1C P 1D P 1NT P / 1C P 1D P 1S P / 1C P 1D P 2C P / 1C P 1H P 1NT P / 1C P 1H P 1S P / 1C P 1H P 2C P / 1C P 1H P 2H P / 1C P 1S P 1NT P / 1C P 1S P 2C P / 1C P 1S P 2D P / 1C P 1S P 2H P / 1C P 1S P 2NT P / 1C P 1S P 2S P / 1D P 1H P 1NT P / 1D P 1H P 1S P / 1D P 1H P 2C P / 1D P 1H P 2D P / 1D P 1H P 2H P / 1D P 1H P 2NT P / 1D P 1S P 1NT P / 1D P 1S P 2C P / 1D P 1S P 2D P / 1D P 1S P 2H P / 1D P 1S P 2NT P / 1D P 1S P 2S P / 1H P 1S P 1NT P / 1H P 1S P 2D P / 1H P 1S P 2H P / 1H P 1S P 2NT P / 1NT P 2D P 2H P / 1NT P 2H P 2S P / 2NT P 3D P 3H P / 2NT P 3H P 3S P",
+        "2_required_conditions": "Family-specific strength, shape, fit, and prior-call state.",
+        "3_runtime_state_available": false,
+        "4_source_calls": [],
+        "5_mutually_exclusive": false,
+        "6_precedence_present": false,
+        "7_numeric_boundaries": false,
+        "8_boundaries_frozen": false,
+        "9_distribution_explicit": false
+      },
+      "family_id": "responder.rebid-after-opener-rebid",
+      "observed_count": 1194,
+      "policy_needed": false,
+      "primary_blocker": "Broad family has strength ranges but incomplete mutually exclusive call precedence.",
+      "rank": 3,
+      "recommended_action": "defer",
+      "router_audit": {
+        "new_route_required": false,
+        "route_exists": true,
+        "route_reaches_rule": true,
+        "routes": [
+          "sayc.responder.1nt.jacoby.hearts.continuation",
+          "sayc.responder.1nt.jacoby.spades.continuation"
+        ],
+        "rule_abstains": true
+      },
+      "small_source_safe_subset": null,
+      "source_classification": "SOURCE_PARTIAL"
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "3C P / 3D P / 3H P / 3S P",
+      "current_behavior": "ABSTAIN",
+      "decision_seat": "S",
+      "deep_source_audit": {
+        "10_exceptions_explicit": false,
+        "11_partnership_agreement_required": false,
+        "12_entire_family_safe": false,
+        "13_smaller_executable_subset": null,
+        "14_policy_boundary_solves": false,
+        "15_architecture_alone_solves": false,
+        "1_auction_prefix": "3C P / 3D P / 3H P / 3S P",
+        "2_required_conditions": "Family-specific strength, shape, fit, and prior-call state.",
+        "3_runtime_state_available": false,
+        "4_source_calls": [],
+        "5_mutually_exclusive": false,
+        "6_precedence_present": false,
+        "7_numeric_boundaries": false,
+        "8_boundaries_frozen": false,
+        "9_distribution_explicit": false
+      },
+      "family_id": "response.three-level-preempt",
+      "observed_count": 166,
+      "policy_needed": false,
+      "primary_blocker": "Pass/game/sacrifice choices depend on fit, shape, vulnerability, and judgment.",
+      "rank": 4,
+      "recommended_action": "defer",
+      "router_audit": {
+        "new_route_required": true,
+        "route_exists": false,
+        "route_reaches_rule": false,
+        "routes": [],
+        "rule_abstains": false
+      },
+      "small_source_safe_subset": null,
+      "source_classification": "SOURCE_PARTIAL"
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "2D P / 2H P / 2S P",
+      "current_behavior": "ABSTAIN",
+      "decision_seat": "S",
+      "deep_source_audit": {
+        "10_exceptions_explicit": false,
+        "11_partnership_agreement_required": true,
+        "12_entire_family_safe": false,
+        "13_smaller_executable_subset": null,
+        "14_policy_boundary_solves": true,
+        "15_architecture_alone_solves": false,
+        "1_auction_prefix": "2D P / 2H P / 2S P",
+        "2_required_conditions": "Family-specific strength, shape, fit, and prior-call state.",
+        "3_runtime_state_available": false,
+        "4_source_calls": [],
+        "5_mutually_exclusive": false,
+        "6_precedence_present": false,
+        "7_numeric_boundaries": false,
+        "8_boundaries_frozen": false,
+        "9_distribution_explicit": false
+      },
+      "family_id": "response.weak-two",
+      "observed_count": 540,
+      "policy_needed": true,
+      "primary_blocker": "Actions use usually/constructive language, suit quality, vulnerability, and agreements.",
+      "rank": 5,
+      "recommended_action": "defer",
+      "router_audit": {
+        "new_route_required": true,
+        "route_exists": false,
+        "route_reaches_rule": false,
+        "routes": [],
+        "rule_abstains": false
+      },
+      "small_source_safe_subset": null,
+      "source_classification": "PARTNERSHIP_DEPENDENT"
+    }
+  ]
+}

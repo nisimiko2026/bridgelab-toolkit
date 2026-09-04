@@ -1,0 +1,1078 @@
+{
+  "cross_policy_counts": {
+    "BOTH_TERMINAL": 0,
+    "HEARTS_ONLY_TERMINAL": 5,
+    "NEITHER_TERMINAL": 24,
+    "SPADES_ONLY_TERMINAL": 7
+  },
+  "deal_count": 10000,
+  "decision": "D. DEFER DUAL-MAJOR DOWNSTREAM RESIDUALS",
+  "default_continuation_policy": null,
+  "default_dual_major_policy": null,
+  "hearts_path": {
+    "opener_calls": 36,
+    "residual_abstentions": 31,
+    "responder_fits": 5,
+    "responder_no_fits": 31,
+    "route_attempts": {
+      "opener:sayc.opener.1nt.stayman": 36,
+      "responder:sayc.responder.1nt.stayman.after.2h": 36
+    },
+    "terminal_calls": 5,
+    "terminal_coverage_pct": 13.89
+  },
+  "hearts_residual_primary_buckets": {
+    "no_four_card_major_balanced_looking": 12,
+    "no_four_card_major_long_minor": 8,
+    "no_four_card_major_other_shape": 4,
+    "other_major_exactly_four": 7,
+    "other_major_five_plus": 0
+  },
+  "jacoby_no_policy": {
+    "heart_transfer": 62,
+    "spade_transfer": 61,
+    "total": 123
+  },
+  "knowledge_markdown_changed": 0,
+  "opener_exact_shapes": {
+    "2-3-4-4": 19,
+    "3-2-4-4": 17
+  },
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual_total": 197,
+  "positions": [
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "4-3-3-3",
+      "responder_spades": 3,
+      "seed": 865,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "HEARTS_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "4H",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": true
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 4,
+      "responder_shape": "3-4-4-2",
+      "responder_spades": 2,
+      "seed": 1023,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "6-1-2-4",
+      "responder_spades": 4,
+      "seed": 1972,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "HEARTS_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "4H",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": true
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 4,
+      "responder_shape": "2-5-4-2",
+      "responder_spades": 2,
+      "seed": 2261,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "2-7-2-2",
+      "responder_spades": 2,
+      "seed": 2267,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "HEARTS_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "4H",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": true
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 4,
+      "responder_shape": "3-5-4-1",
+      "responder_spades": 1,
+      "seed": 2596,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "4-5-2-2",
+      "responder_spades": 2,
+      "seed": 2620,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 1,
+      "responder_shape": "4-6-1-2",
+      "responder_spades": 2,
+      "seed": 2977,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "5-2-2-4",
+      "responder_spades": 4,
+      "seed": 3007,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "5-3-2-3",
+      "responder_spades": 3,
+      "seed": 3395,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "5-3-3-2",
+      "responder_spades": 2,
+      "seed": 3818,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "3-3-3-4",
+      "responder_spades": 4,
+      "seed": 3862,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 1,
+      "responder_shape": "3-6-1-3",
+      "responder_spades": 3,
+      "seed": 3914,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "4-4-2-3",
+      "responder_spades": 3,
+      "seed": 4021,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "4-4-3-2",
+      "responder_spades": 2,
+      "seed": 4093,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 1,
+      "responder_shape": "5-3-1-4",
+      "responder_spades": 4,
+      "seed": 4257,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "HEARTS_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "4H",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": true
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 4,
+      "responder_shape": "5-2-4-2",
+      "responder_spades": 2,
+      "seed": 4854,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "5-3-3-2",
+      "responder_spades": 2,
+      "seed": 4995,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 1,
+      "responder_shape": "6-5-1-1",
+      "responder_spades": 1,
+      "seed": 5071,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "5-5-2-1",
+      "responder_spades": 1,
+      "seed": 5435,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "3-5-3-2",
+      "responder_spades": 2,
+      "seed": 5754,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "4-5-3-1",
+      "responder_spades": 1,
+      "seed": 5772,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "2-6-3-2",
+      "responder_spades": 2,
+      "seed": 5879,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "5-1-3-4",
+      "responder_spades": 4,
+      "seed": 6017,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "2-4-3-4",
+      "responder_spades": 4,
+      "seed": 7303,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "3-4-3-3",
+      "responder_spades": 3,
+      "seed": 7356,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "2-6-2-3",
+      "responder_spades": 3,
+      "seed": 7469,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "5-2-3-3",
+      "responder_spades": 3,
+      "seed": 7610,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "6-1-3-3",
+      "responder_spades": 3,
+      "seed": 7686,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "HEARTS_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "4H",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": true
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 4,
+      "responder_shape": "4-2-4-3",
+      "responder_spades": 3,
+      "seed": 8030,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "5-5-2-1",
+      "responder_spades": 1,
+      "seed": 8085,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "2-5-3-3",
+      "responder_spades": 3,
+      "seed": 8740,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "3-2-4-4",
+      "responder_hearts": 3,
+      "responder_shape": "5-3-3-2",
+      "responder_spades": 2,
+      "seed": 8947,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "1-7-2-3",
+      "responder_spades": 3,
+      "seed": 9171,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    },
+    {
+      "cross_policy_outcome": "SPADES_ONLY_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "3-4-2-4",
+      "responder_spades": 4,
+      "seed": 9915,
+      "spades_policy": {
+        "final_action": "4S",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": true
+      }
+    },
+    {
+      "cross_policy_outcome": "NEITHER_TERMINAL",
+      "hearts_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2H",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2h",
+        "terminal": false
+      },
+      "opener_shape": "2-3-4-4",
+      "responder_hearts": 2,
+      "responder_shape": "3-5-2-3",
+      "responder_spades": 3,
+      "seed": 9984,
+      "spades_policy": {
+        "final_action": "ABSTAIN",
+        "opener_action": "2S",
+        "opener_route": "sayc.opener.1nt.stayman",
+        "responder_route": "sayc.responder.1nt.stayman.after.2s",
+        "terminal": false
+      }
+    }
+  ],
+  "production_defaults_changed": false,
+  "recommended_phase12m_direction": "Phase 12M \u2014 Next Deterministic Family Source-Readiness Audit: audit unimplemented non-Stayman benchmark families and select a target only where the frozen source supplies a complete call contract.",
+  "responder_exact_shapes": {
+    "1-7-2-3": 1,
+    "2-4-3-4": 1,
+    "2-5-3-3": 1,
+    "2-5-4-2": 1,
+    "2-6-2-3": 1,
+    "2-6-3-2": 1,
+    "2-7-2-2": 1,
+    "3-3-3-4": 1,
+    "3-4-2-4": 1,
+    "3-4-3-3": 1,
+    "3-4-4-2": 1,
+    "3-5-2-3": 1,
+    "3-5-3-2": 1,
+    "3-5-4-1": 1,
+    "3-6-1-3": 1,
+    "4-2-4-3": 1,
+    "4-3-3-3": 1,
+    "4-4-2-3": 1,
+    "4-4-3-2": 1,
+    "4-5-2-2": 1,
+    "4-5-3-1": 1,
+    "4-6-1-2": 1,
+    "5-1-3-4": 1,
+    "5-2-2-4": 1,
+    "5-2-3-3": 1,
+    "5-2-4-2": 1,
+    "5-3-1-4": 1,
+    "5-3-2-3": 1,
+    "5-3-3-2": 3,
+    "5-5-2-1": 2,
+    "6-1-2-4": 1,
+    "6-1-3-3": 1,
+    "6-5-1-1": 1
+  },
+  "responder_primary_buckets": {
+    "both_majors_four_plus": 0,
+    "hearts_only_four_plus": 5,
+    "neither_major_balanced_looking": 12,
+    "neither_major_long_minor": 8,
+    "neither_major_other_shape": 4,
+    "spades_only_four_plus": 7
+  },
+  "responder_secondary_flags": {
+    "balanced_looking": 17,
+    "extreme_seven_plus_suit": 2,
+    "has_four_plus_hearts": 5,
+    "has_four_plus_spades": 7,
+    "has_long_minor": 9
+  },
+  "route_count": 44,
+  "source_certainty_matrix": [
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 7,
+      "executable": false,
+      "policy_path": "HEARTS",
+      "primary_responder_shape_bucket": "other_major_exactly_four",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 0,
+      "executable": false,
+      "policy_path": "HEARTS",
+      "primary_responder_shape_bucket": "other_major_five_plus",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 8,
+      "executable": false,
+      "policy_path": "HEARTS",
+      "primary_responder_shape_bucket": "no_four_card_major_long_minor",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 12,
+      "executable": false,
+      "policy_path": "HEARTS",
+      "primary_responder_shape_bucket": "no_four_card_major_balanced_looking",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 4,
+      "executable": false,
+      "policy_path": "HEARTS",
+      "primary_responder_shape_bucket": "no_four_card_major_other_shape",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 5,
+      "executable": false,
+      "policy_path": "SPADES",
+      "primary_responder_shape_bucket": "other_major_exactly_four",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 0,
+      "executable": false,
+      "policy_path": "SPADES",
+      "primary_responder_shape_bucket": "other_major_five_plus",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 8,
+      "executable": false,
+      "policy_path": "SPADES",
+      "primary_responder_shape_bucket": "no_four_card_major_long_minor",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 12,
+      "executable": false,
+      "policy_path": "SPADES",
+      "primary_responder_shape_bucket": "no_four_card_major_balanced_looking",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    },
+    {
+      "blocker": "Competing calls, strength boundaries, exceptions, and precedence are unresolved.",
+      "candidate_calls": [
+        "3NT",
+        "other major",
+        "minor game",
+        "slam"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 4,
+      "executable": false,
+      "policy_path": "SPADES",
+      "primary_responder_shape_bucket": "no_four_card_major_other_shape",
+      "recommended_action": "defer",
+      "source_finding": "Frozen Stayman sources do not define an exact no-fit GAME_GOING condition-to-call mapping or complete precedence for this shape."
+    }
+  ],
+  "source_interpretation": "NO SOURCE-BACKED POLICY PREFERENCE. The 5-versus-7 difference is a sample-specific consequence of responder distribution; the frozen source defines no strategic preference from benchmark coverage.",
+  "source_safe_candidates": [],
+  "spades_path": {
+    "opener_calls": 36,
+    "residual_abstentions": 29,
+    "responder_fits": 7,
+    "responder_no_fits": 29,
+    "route_attempts": {
+      "opener:sayc.opener.1nt.stayman": 36,
+      "responder:sayc.responder.1nt.stayman.after.2s": 36
+    },
+    "terminal_calls": 7,
+    "terminal_coverage_pct": 19.44
+  },
+  "spades_residual_primary_buckets": {
+    "no_four_card_major_balanced_looking": 12,
+    "no_four_card_major_long_minor": 8,
+    "no_four_card_major_other_shape": 4,
+    "other_major_exactly_four": 5,
+    "other_major_five_plus": 0
+  },
+  "start_seed": 1,
+  "target_total": 36
+}

@@ -1,0 +1,315 @@
+{
+  "classification_counts": {
+    "SOURCE_INSUFFICIENT": 14
+  },
+  "deal_count": 10000,
+  "default_policy": null,
+  "dual_major_abstentions": 36,
+  "existing_production_actions": {
+    "after_2D": 0,
+    "after_2H_no_fit": 0,
+    "after_2S_no_fit": 0
+  },
+  "existing_route_matches": {
+    "after_2D": 0,
+    "after_2H_no_fit": 53,
+    "after_2S_no_fit": 40
+  },
+  "knowledge_markdown_changed": 0,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "primary_shape_buckets": {
+    "after_2D": {
+      "both_majors_four_plus": 9,
+      "exactly_one_four_card_major": 52,
+      "five_four_major_pattern": 2,
+      "no_four_card_major_balanced_looking": 30,
+      "no_four_card_major_long_minor": 9,
+      "no_four_card_major_other_shape": 2
+    },
+    "after_2H_no_fit": {
+      "no_four_card_major_balanced_looking": 23,
+      "no_four_card_major_long_minor": 7,
+      "no_four_card_major_other_shape": 8,
+      "other_major_exactly_four": 15
+    },
+    "after_2S_no_fit": {
+      "no_four_card_major_balanced_looking": 14,
+      "no_four_card_major_long_minor": 6,
+      "no_four_card_major_other_shape": 1,
+      "other_major_exactly_four": 19
+    }
+  },
+  "production_defaults_changed": false,
+  "recommendation": "D. DEFER STAYMAN RESIDUALS",
+  "recommended_phase12i_direction": "Audit a policy boundary for the 36 Stayman opener hands with both four-card majors; the frozen source explicitly marks whether 2H may also contain four spades as partnership-agreement dependent.",
+  "residual_by_family": {
+    "after_2D": 104,
+    "after_2H_no_fit": 53,
+    "after_2S_no_fit": 40
+  },
+  "residual_total": 197,
+  "route_count": 44,
+  "secondary_shape_flags": {
+    "after_2D": {
+      "balanced_looking": 77,
+      "both_majors_four_plus": 11,
+      "extreme_seven_plus_suit": 3,
+      "has_five_plus_major": 2,
+      "has_long_minor": 11
+    },
+    "after_2H_no_fit": {
+      "balanced_looking": 33,
+      "extreme_seven_plus_suit": 1,
+      "has_long_minor": 8
+    },
+    "after_2S_no_fit": {
+      "balanced_looking": 23,
+      "has_long_minor": 6
+    }
+  },
+  "source_certainty_matrix": [
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 9,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "both_majors_four_plus",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 52,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "exactly_one_four_card_major",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 2,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "five_four_major_pattern",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 30,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "no_four_card_major_balanced_looking",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 9,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "no_four_card_major_long_minor",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2D",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 2,
+      "executable": false,
+      "existing_route_matches_family": false,
+      "primary_responder_shape_bucket": "no_four_card_major_other_shape",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2H_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 23,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_balanced_looking",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2H_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 7,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_long_minor",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2H_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 8,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_other_shape",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2H_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 15,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "other_major_exactly_four",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2S_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 14,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_balanced_looking",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2S_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 6,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_long_minor",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2S_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 1,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "no_four_card_major_other_shape",
+      "recommended_action": "defer"
+    },
+    {
+      "auction_endpoint": "after_2S_no_fit",
+      "blocker": "Competing calls, shape exceptions, and precedence are unresolved.",
+      "candidate_next_calls": [
+        "3NT",
+        "major",
+        "minor game",
+        "slam"
+      ],
+      "canonical_source_finding": "The frozen Stayman source names choices by strength and distribution but supplies no exact condition-to-call mapping or complete precedence.",
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 19,
+      "executable": false,
+      "existing_route_matches_family": true,
+      "primary_responder_shape_bucket": "other_major_exactly_four",
+      "recommended_action": "defer"
+    }
+  ],
+  "source_safe_subset_candidates": [],
+  "start_seed": 1
+}

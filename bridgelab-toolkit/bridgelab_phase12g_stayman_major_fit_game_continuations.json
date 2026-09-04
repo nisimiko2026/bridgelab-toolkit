@@ -1,0 +1,30 @@
+{
+  "abstention_count": 197,
+  "abstentions": {
+    "2D": 104,
+    "2H": 53,
+    "2S": 40
+  },
+  "audited_positions": 235,
+  "continuation_call_count": 38,
+  "coverage_denominator": 235,
+  "coverage_fraction": "38/235",
+  "coverage_numerator": 38,
+  "coverage_pct": 16.17,
+  "deal_count": 10000,
+  "default_policy": null,
+  "dual_major_abstentions": 36,
+  "knowledge_markdown_changed": 0,
+  "opener_response_positions": {
+    "2D": 104,
+    "2H": 70,
+    "2S": 61
+  },
+  "production_defaults_changed": false,
+  "production_route_count": 44,
+  "resulting_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "start_seed": 1
+}

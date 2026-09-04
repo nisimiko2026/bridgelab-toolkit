@@ -1,0 +1,56 @@
+{
+  "combined_policy_downstream": {
+    "HEARTS": {
+      "4H": 5,
+      "ABSTAIN": 31,
+      "responder_fit": 5,
+      "responder_no_fit": 31
+    },
+    "SPADES": {
+      "4S": 7,
+      "ABSTAIN": 29,
+      "responder_fit": 7,
+      "responder_no_fit": 29
+    }
+  },
+  "deal_count": 10000,
+  "default_continuation_policy": null,
+  "default_dual_major_policy": null,
+  "dual_major_total": 36,
+  "dual_policy_only_responder_actions": {
+    "HEARTS": {
+      "ABSTAIN": 36
+    },
+    "SPADES": {
+      "ABSTAIN": 36
+    }
+  },
+  "exact_shapes": {
+    "2-3-4-4": 19,
+    "3-2-4-4": 17
+  },
+  "knowledge_markdown_changed": 0,
+  "no_policy_production_actions": {
+    "ABSTAIN": 36
+  },
+  "opener_policy_scenarios": {
+    "HEARTS": {
+      "2H": 36
+    },
+    "SPADES": {
+      "2S": 36
+    },
+    "UNKNOWN": {
+      "ABSTAIN": 36
+    }
+  },
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual_total": 197,
+  "production_defaults_changed": false,
+  "recommended_next_phase": "Phase 12L \u2014 Dual-Major Policy Downstream Coverage Audit",
+  "route_count": 44,
+  "start_seed": 1
+}

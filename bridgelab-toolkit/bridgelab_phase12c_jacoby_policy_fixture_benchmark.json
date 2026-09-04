@@ -1,0 +1,33 @@
+{
+  "abstention_count": 48,
+  "abstentions": {
+    "SLAM_INTEREST": 24,
+    "UNKNOWN": 24
+  },
+  "accepted_heart_transfer_positions": 62,
+  "accepted_spade_transfer_positions": 61,
+  "by_strength_class": {
+    "GAME_GOING": 25,
+    "INVITATIONAL": 25,
+    "SLAM_INTEREST": 24,
+    "UNKNOWN": 24,
+    "WEAK": 25
+  },
+  "coverage_denominator": 123,
+  "coverage_fraction": "75/123",
+  "coverage_numerator": 75,
+  "coverage_pct": 60.98,
+  "deal_count": 10000,
+  "default_behavior_unchanged": true,
+  "game_heart_4H": 12,
+  "game_spade_4S": 13,
+  "produced_call_count": 75,
+  "resulting_calls": {
+    "2NT": 25,
+    "4H": 12,
+    "4S": 13,
+    "Pass": 25
+  },
+  "start_seed": 1,
+  "total_jacoby_continuations": 123
+}
