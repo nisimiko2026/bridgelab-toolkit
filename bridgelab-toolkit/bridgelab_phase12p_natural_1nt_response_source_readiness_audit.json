@@ -1,0 +1,2569 @@
+{
+  "candidate_total": 124,
+  "candidates": [
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "candidate_calls": [
+        "P"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp_distribution": {
+        "0": 2,
+        "1": 3,
+        "2": 2,
+        "3": 5,
+        "4": 1,
+        "5": 9,
+        "6": 10,
+        "7": 9
+      },
+      "observed_count": 41,
+      "observed_hcp_range": "0-7",
+      "policy_needed": false,
+      "primary_blocker": "No exact HCP-to-Pass contract or complete convention/minor exception boundary.",
+      "recommended_action": "defer",
+      "route_exists": true,
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_missing": false,
+      "route_reaches_rule": true,
+      "rule_abstains": true,
+      "shape_characteristics": {
+        "2-3-3-5": 4,
+        "2-3-4-4": 4,
+        "2-3-5-3": 3,
+        "3-2-3-5": 2,
+        "3-2-4-4": 3,
+        "3-2-5-3": 2,
+        "3-3-2-5": 7,
+        "3-3-3-4": 8,
+        "3-3-4-3": 5,
+        "3-3-5-2": 3
+      },
+      "source_audit": {
+        "10_precedence_complete": false,
+        "11_partnership_agreement_required": false,
+        "12_implementable_without_imported_theory": false,
+        "1_call_explicit": true,
+        "2_exact_hcp_range": false,
+        "3_distribution_explicit": true,
+        "4_suit_length_thresholds": false,
+        "5_transfer_stayman_exclusions": false,
+        "6_invitation_boundary_exact": false,
+        "7_game_boundary_exact": false,
+        "8_slam_exceptions_explicit": false,
+        "9_minor_exceptions_explicit": false
+      },
+      "source_finding": "Pass is stated for a weak hand with no useful convention, but 0\u20137 is only a typical partscore category and distribution may alter ranges."
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "candidate_calls": [
+        "2NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp_distribution": {
+        "8": 3,
+        "9": 6
+      },
+      "observed_count": 9,
+      "observed_hcp_range": "8-9",
+      "policy_needed": false,
+      "primary_blocker": "Approximate range and unresolved long-minor/partnership alternatives.",
+      "recommended_action": "defer",
+      "route_exists": true,
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_missing": false,
+      "route_reaches_rule": true,
+      "rule_abstains": true,
+      "shape_characteristics": {
+        "2-3-4-4": 1,
+        "2-3-5-3": 3,
+        "3-3-3-4": 2,
+        "3-3-5-2": 3
+      },
+      "source_audit": {
+        "10_precedence_complete": false,
+        "11_partnership_agreement_required": false,
+        "12_implementable_without_imported_theory": false,
+        "1_call_explicit": true,
+        "2_exact_hcp_range": false,
+        "3_distribution_explicit": true,
+        "4_suit_length_thresholds": false,
+        "5_transfer_stayman_exclusions": false,
+        "6_invitation_boundary_exact": false,
+        "7_game_boundary_exact": false,
+        "8_slam_exceptions_explicit": false,
+        "9_minor_exceptions_explicit": false
+      },
+      "source_finding": "2NT is a balanced invitation with approximately 8\u20139 HCP and no major interest; long-minor alternatives and approximate wording prevent an exact contract."
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "candidate_calls": [
+        "3NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp_distribution": {
+        "10": 5,
+        "11": 3,
+        "12": 7,
+        "13": 5,
+        "14": 5,
+        "15": 2
+      },
+      "observed_count": 27,
+      "observed_hcp_range": "10-15",
+      "policy_needed": false,
+      "primary_blocker": "Typical range rather than exact mapping; minor and slam precedence unresolved.",
+      "recommended_action": "defer",
+      "route_exists": true,
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_missing": false,
+      "route_reaches_rule": true,
+      "rule_abstains": true,
+      "shape_characteristics": {
+        "2-3-3-5": 4,
+        "2-3-5-3": 2,
+        "3-2-3-5": 3,
+        "3-2-4-4": 5,
+        "3-2-5-3": 2,
+        "3-3-2-5": 1,
+        "3-3-3-4": 3,
+        "3-3-4-3": 5,
+        "3-3-5-2": 2
+      },
+      "source_audit": {
+        "10_precedence_complete": false,
+        "11_partnership_agreement_required": false,
+        "12_implementable_without_imported_theory": false,
+        "1_call_explicit": true,
+        "2_exact_hcp_range": false,
+        "3_distribution_explicit": true,
+        "4_suit_length_thresholds": false,
+        "5_transfer_stayman_exclusions": false,
+        "6_invitation_boundary_exact": false,
+        "7_game_boundary_exact": false,
+        "8_slam_exceptions_explicit": false,
+        "9_minor_exceptions_explicit": false
+      },
+      "source_finding": "3NT is balanced with game-going values and no major-fit search, but the 10\u201315 table is typical and slam/minor exceptions and precedence are incomplete."
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "candidate_calls": [
+        "2S",
+        "2NT",
+        "3C",
+        "3D"
+      ],
+      "classification": "PARTNERSHIP_DEPENDENT",
+      "executable_subset": false,
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp_distribution": {
+        "0": 1,
+        "2": 1,
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 5,
+        "8": 5,
+        "9": 2,
+        "10": 3,
+        "11": 3,
+        "12": 1,
+        "13": 3,
+        "14": 1,
+        "15": 1,
+        "16": 1
+      },
+      "observed_count": 45,
+      "observed_hcp_range": "0-16",
+      "policy_needed": true,
+      "primary_blocker": "Call selection is explicitly method/partnership dependent.",
+      "recommended_action": "defer",
+      "route_exists": true,
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_missing": false,
+      "route_reaches_rule": true,
+      "rule_abstains": true,
+      "shape_characteristics": {
+        "1-1-5-6": 1,
+        "1-2-5-5": 2,
+        "1-2-6-4": 2,
+        "1-3-2-7": 1,
+        "1-3-3-6": 1,
+        "1-3-4-5": 1,
+        "1-3-5-4": 1,
+        "1-3-6-3": 1,
+        "1-3-7-2": 1,
+        "2-1-4-6": 2,
+        "2-1-6-4": 1,
+        "2-2-3-6": 1,
+        "2-2-4-5": 4,
+        "2-2-5-4": 1,
+        "2-2-6-3": 2,
+        "2-2-7-2": 1,
+        "2-3-2-6": 1,
+        "2-3-6-2": 3,
+        "3-1-3-6": 1,
+        "3-1-4-5": 3,
+        "3-1-5-4": 3,
+        "3-1-6-3": 2,
+        "3-2-2-6": 1,
+        "3-2-6-2": 1,
+        "3-2-7-1": 1,
+        "3-3-1-6": 3,
+        "3-3-6-1": 2,
+        "3-3-7-0": 1
+      },
+      "source_audit": {
+        "10_precedence_complete": false,
+        "11_partnership_agreement_required": true,
+        "12_implementable_without_imported_theory": false,
+        "1_call_explicit": false,
+        "2_exact_hcp_range": false,
+        "3_distribution_explicit": true,
+        "4_suit_length_thresholds": false,
+        "5_transfer_stayman_exclusions": false,
+        "6_invitation_boundary_exact": false,
+        "7_game_boundary_exact": false,
+        "8_slam_exceptions_explicit": false,
+        "9_minor_exceptions_explicit": false
+      },
+      "source_finding": "Long-minor hands may use transfers, natural bids, minor Stayman, or partnership agreements; no deterministic call is selected."
+    },
+    {
+      "architecture_needed": false,
+      "auction_prefix": "1NT P",
+      "candidate_calls": [
+        "4NT",
+        "4C",
+        "6NT"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "executable_subset": false,
+      "family_id": "natural.balanced-slam-interest-16-plus",
+      "hcp_distribution": {
+        "17": 2
+      },
+      "observed_count": 2,
+      "observed_hcp_range": "17-17",
+      "policy_needed": false,
+      "primary_blocker": "No exact call mapping among quantitative, Gerber, and direct slam actions.",
+      "recommended_action": "defer",
+      "route_exists": true,
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_missing": false,
+      "route_reaches_rule": true,
+      "rule_abstains": true,
+      "shape_characteristics": {
+        "2-3-4-4": 1,
+        "3-2-4-4": 1
+      },
+      "source_audit": {
+        "10_precedence_complete": false,
+        "11_partnership_agreement_required": false,
+        "12_implementable_without_imported_theory": false,
+        "1_call_explicit": false,
+        "2_exact_hcp_range": false,
+        "3_distribution_explicit": true,
+        "4_suit_length_thresholds": false,
+        "5_transfer_stayman_exclusions": false,
+        "6_invitation_boundary_exact": false,
+        "7_game_boundary_exact": false,
+        "8_slam_exceptions_explicit": false,
+        "9_minor_exceptions_explicit": false
+      },
+      "source_finding": "The source lists several slam methods but supplies no direct call, precedence, or exception contract for these hands."
+    }
+  ],
+  "deal_count": 10000,
+  "decision": "E. DEFER NATURAL 1NT RESPONSE FAMILY",
+  "default_policies": {
+    "jacoby_continuation": null,
+    "stayman_continuation": null,
+    "stayman_dual_major": null
+  },
+  "exclusions": {
+    "jacoby_five_plus_major": 5,
+    "stayman_exactly_four_major": 142
+  },
+  "jacoby_no_policy": {
+    "heart_transfer": 62,
+    "spade_transfer": 61,
+    "total": 123
+  },
+  "knowledge_markdown_changed": 0,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual": 197,
+  "phase12l_terminal": {
+    "HEARTS": 5,
+    "SPADES": 7
+  },
+  "phase12m_one_notrump_abstentions": 271,
+  "phase12n_calls": 24,
+  "phase12o_residual": 23,
+  "phase12q_recommendation": "Phase 12Q \u2014 Responder Rebid Source-Readiness Audit: return to the next Phase 12M ranked family, responder.rebid-after-opener-rebid, and inventory narrow exact-auction decision points before selecting any implementation.",
+  "policies_added": 0,
+  "positions": [
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 3,
+      "responder_hand": "96.42.Q98754.J63",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 33,
+      "shape": "2-2-6-3",
+      "stable_id": "seed-33:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 4,
+      "responder_hand": "J32.Q92.86432.J8",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 197,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-197:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "753.J93.K96.J632",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 234,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-234:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "Q54.K72.8432.J72",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 296,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-296:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "Q72.T43.KJ864.85",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 413,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-413:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 0,
+      "responder_hand": "T94.94.9654.7543",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 581,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-581:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 10,
+      "responder_hand": "T4.9.QJ96.AQJ975",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 687,
+      "shape": "2-1-4-6",
+      "stable_id": "seed-687:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 4,
+        "H": 1,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "972.K62.T43.A976",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 865,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-865:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 3,
+      "responder_hand": "932.32.QT32.JT42",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 947,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-947:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 5,
+      "responder_hand": "J7.T2.K32.JT9732",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 949,
+      "shape": "2-2-3-6",
+      "stable_id": "seed-949:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 3,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 13,
+      "responder_hand": "A32.K72.AQT43.42",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1239,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-1239:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 4,
+      "responder_hand": "2.972.A952.T7653",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1312,
+      "shape": "1-3-4-5",
+      "stable_id": "seed-1312:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "T32.AQ4.KT985.83",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1314,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-1314:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 11,
+      "responder_hand": "QJ4.AT8.94.KJ642",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1375,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-1375:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "JT6.T95.854.AT64",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1381,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-1381:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 3,
+      "responder_hand": "J94.Q82.32.86532",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1400,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-1400:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 14,
+      "responder_hand": "843.K98.AK64.A86",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1434,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-1434:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 11,
+      "responder_hand": "AK8.5.QT8742.Q43",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1485,
+      "shape": "3-1-6-3",
+      "stable_id": "seed-1485:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 8,
+      "responder_hand": "7.Q54.J65.AJT985",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1563,
+      "shape": "1-3-3-6",
+      "stable_id": "seed-1563:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 3,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 0,
+      "responder_hand": "T53.976.9876542.-",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1600,
+      "shape": "3-3-7-0",
+      "stable_id": "seed-1600:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 0,
+        "D": 7,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 15,
+      "responder_hand": "KQ5.AT9.Q87.AT74",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1856,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-1856:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 7,
+      "responder_hand": "Q53.J42.7.KJT943",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 1881,
+      "shape": "3-3-1-6",
+      "stable_id": "seed-1881:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 1,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "AQ6.A7.QT942.T65",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2096,
+      "shape": "3-2-5-3",
+      "stable_id": "seed-2096:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "A83.J96.A75.9643",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2124,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-2124:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 7,
+      "responder_hand": "4.AT6.K976543.87",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2127,
+      "shape": "1-3-7-2",
+      "stable_id": "seed-2127:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 7,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 9,
+      "responder_hand": "K8.Q5.Q742.QT764",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2150,
+      "shape": "2-2-4-5",
+      "stable_id": "seed-2150:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 11,
+      "responder_hand": "K6.A4.8642.KJT52",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2176,
+      "shape": "2-2-4-5",
+      "stable_id": "seed-2176:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 15,
+      "responder_hand": "6.A5.KQJ874.KQ84",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2202,
+      "shape": "1-2-6-4",
+      "stable_id": "seed-2202:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 6,
+        "H": 2,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 8,
+      "responder_hand": "98.AQJ.JT982.742",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2214,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-2214:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "95.873.Q83.A8765",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2232,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-2232:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "QT7.T96.875.A842",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2258,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-2258:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 8,
+      "responder_hand": "87.K2.AJT9752.54",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2267,
+      "shape": "2-2-7-2",
+      "stable_id": "seed-2267:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 7,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "754.654.Q53.AK32",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2401,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-2401:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "Q75.JT9.T932.A97",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2441,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-2441:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 7,
+      "responder_hand": "T65.J.AQT83.8762",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2462,
+      "shape": "3-1-5-4",
+      "stable_id": "seed-2462:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 5,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 13,
+      "responder_hand": "A6.T3.QJ952.AQ53",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2620,
+      "shape": "2-2-5-4",
+      "stable_id": "seed-2620:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 5,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "T42.A43.KQT.K975",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2660,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-2660:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "Q7.J.QJT952.8752",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 2977,
+      "shape": "2-1-6-4",
+      "stable_id": "seed-2977:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 6,
+        "H": 1,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "QT2.QJ9.AT752.86",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3015,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-3015:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 13,
+      "responder_hand": "J9.J98.A76432.AK",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3070,
+      "shape": "2-3-6-2",
+      "stable_id": "seed-3070:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 6,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "K96.Q3.987.T8742",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3150,
+      "shape": "3-2-3-5",
+      "stable_id": "seed-3150:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 10,
+      "responder_hand": "K7.874.A63.KT982",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3170,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-3170:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "J5.983.K965.QT92",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3323,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-3323:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 13,
+      "responder_hand": "T73.KJ.K83.KQJ54",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3395,
+      "shape": "3-2-3-5",
+      "stable_id": "seed-3395:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "Q74.J95.Q3.98754",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3436,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-3436:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 3,
+      "responder_hand": "98.762.863.KT963",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3818,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-3818:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "KQ3.J64.9872.763",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3853,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-3853:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 5,
+      "responder_hand": "K.T72.97.QT87532",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3857,
+      "shape": "1-3-2-7",
+      "stable_id": "seed-3857:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 7,
+        "D": 2,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "T83.7.AQ9854.864",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3914,
+      "shape": "3-1-6-3",
+      "stable_id": "seed-3914:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 10,
+      "responder_hand": "A5.Q96.A7432.652",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 3942,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-3942:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 10,
+      "responder_hand": "Q82.A3.K972.JT87",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4021,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-4021:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "73.T32.T942.AQ32",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4093,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-4093:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "87.A53.KQ65.T642",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4478,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-4478:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "987.KT8.K9843.65",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4481,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-4481:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 14,
+      "responder_hand": "AT6.65.KQ32.KQ82",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4592,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-4592:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 10,
+      "responder_hand": "Q52.983.KJ86.AT4",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4746,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-4746:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "J76.Q.8654.KT854",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4863,
+      "shape": "3-1-4-5",
+      "stable_id": "seed-4863:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 9,
+      "responder_hand": "T94.Q43.AKT76.75",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4929,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-4929:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 11,
+      "responder_hand": "K84.KT.Q63.QJ985",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4974,
+      "shape": "3-2-3-5",
+      "stable_id": "seed-4974:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 4,
+      "responder_hand": "96.65.T943.AT985",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4982,
+      "shape": "2-2-4-5",
+      "stable_id": "seed-4982:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 2,
+      "responder_hand": "85.J42.842.JT865",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 4995,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-4995:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 5,
+      "responder_hand": "9.T.AT543.JT9732",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5071,
+      "shape": "1-1-5-6",
+      "stable_id": "seed-5071:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 5,
+        "H": 1,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 14,
+      "responder_hand": "AQ4.K.K9854.QT95",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5347,
+      "shape": "3-1-5-4",
+      "stable_id": "seed-5347:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 5,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 1,
+      "responder_hand": "J92.854.654.T942",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5392,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-5392:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 4,
+      "responder_hand": "52.8.Q765.QT7432",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5393,
+      "shape": "2-1-4-6",
+      "stable_id": "seed-5393:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 4,
+        "H": 1,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 16,
+      "responder_hand": "K.63.AK854.AQT63",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5435,
+      "shape": "1-2-5-5",
+      "stable_id": "seed-5435:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 5,
+        "H": 2,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "764.A95.J5.T8742",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5442,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-5442:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 10,
+      "responder_hand": "J82.A7.Q53.KT985",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5582,
+      "shape": "3-2-3-5",
+      "stable_id": "seed-5582:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 1,
+      "responder_hand": "T94.862.T975.J82",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5613,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-5613:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "JT.QT9.K9532.JT9",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5754,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-5754:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 10,
+      "responder_hand": "4.T74.AQ975.A542",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5772,
+      "shape": "1-3-5-4",
+      "stable_id": "seed-5772:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 5,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 8,
+      "responder_hand": "Q74.J98.2.AJ9652",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5837,
+      "shape": "3-3-1-6",
+      "stable_id": "seed-5837:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 1,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 14,
+      "responder_hand": "982.K7.AJ94.KQJ3",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5863,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-5863:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 8,
+      "responder_hand": "T5.K32.KJ8653.J8",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 5879,
+      "shape": "2-3-6-2",
+      "stable_id": "seed-5879:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 6,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 14,
+      "responder_hand": "A74.Q98.KJ52.A75",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6108,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-6108:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 11,
+      "responder_hand": "Q62.Q42.QJ5.AT64",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6292,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-6292:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "T94.KJ6.K75.T743",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6307,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-6307:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 10,
+      "responder_hand": "A8.Q2.QT9654.Q63",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6517,
+      "shape": "2-2-6-3",
+      "stable_id": "seed-6517:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 3,
+      "responder_hand": "862.643.T92.K532",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6555,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-6555:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 8,
+      "responder_hand": "63.T87.KJ543.AT8",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6680,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-6680:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 11,
+      "responder_hand": "J3.K3.AKT7.85432",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6840,
+      "shape": "2-2-4-5",
+      "stable_id": "seed-6840:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 2,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 15,
+      "responder_hand": "A6.J94.AK2.KT763",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 6921,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-6921:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 3,
+      "responder_hand": "T8.T98.K8754.874",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7017,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-7017:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 3,
+      "responder_hand": "72.K84.986543.83",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7093,
+      "shape": "2-3-6-2",
+      "stable_id": "seed-7093:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 6,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 1,
+      "responder_hand": "JT6.T63.T4.T9876",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7116,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-7116:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "Q54.754.72.AJT86",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7241,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-7241:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "AT9.42.KJ86.A642",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7259,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-7259:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "AT8.2.T982.QT973",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7338,
+      "shape": "3-1-4-5",
+      "stable_id": "seed-7338:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "A86.KT5.T975.854",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7356,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-7356:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "J62.Q4.T7.QJ8642",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7427,
+      "shape": "3-2-2-6",
+      "stable_id": "seed-7427:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 2,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 6,
+      "responder_hand": "Q93.96.A85432.93",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7469,
+      "shape": "3-2-6-2",
+      "stable_id": "seed-7469:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 6,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "AT.JT6.QT94.T763",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7486,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-7486:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 13,
+      "responder_hand": "A73.J83.AK98.JT6",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7558,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-7558:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 12,
+      "responder_hand": "Q5.AK5.62.KT9653",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7561,
+      "shape": "2-3-2-6",
+      "stable_id": "seed-7561:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 2,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "J8.J52.K52.J9764",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7582,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-7582:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "T75.432.Q2.QJ763",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7610,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-7610:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "T4.J82.AQT94.752",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7660,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-7660:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 9,
+      "responder_hand": "KJ6.JT6.A.T98752",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7686,
+      "shape": "3-3-1-6",
+      "stable_id": "seed-7686:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 1,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 2,
+      "responder_hand": "974.Q85.T97643.3",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7707,
+      "shape": "3-3-6-1",
+      "stable_id": "seed-7707:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 1,
+        "D": 6,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 7,
+      "responder_hand": "983.K.KJ763.T752",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7714,
+      "shape": "3-1-5-4",
+      "stable_id": "seed-7714:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 5,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 13,
+      "responder_hand": "A9.AT8.T52.KQT72",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7717,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-7717:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "A82.Q9.K9543.QJ8",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7787,
+      "shape": "3-2-5-3",
+      "stable_id": "seed-7787:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 13,
+      "responder_hand": "Q86.AT4.K752.AT2",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7792,
+      "shape": "3-3-4-3",
+      "stable_id": "seed-7792:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 4,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 6,
+      "responder_hand": "AT4.83.9763.QT75",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 7963,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-7963:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 3,
+      "responder_hand": "T.T4.K5432.87654",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8085,
+      "shape": "1-2-5-5",
+      "stable_id": "seed-8085:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 5,
+        "H": 2,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.balanced-slam-interest-16-plus",
+      "hcp": 17,
+      "responder_hand": "KQ6.A3.KT74.AJT9",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8108,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-8108:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 4,
+      "responder_hand": "6.T6.AT9632.T953",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8335,
+      "shape": "1-2-6-4",
+      "stable_id": "seed-8335:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 6,
+        "H": 2,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 5,
+      "responder_hand": "JT9.A62.T97653.2",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8483,
+      "shape": "3-3-6-1",
+      "stable_id": "seed-8483:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 1,
+        "D": 6,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "T97.KT.AQ73.K876",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8585,
+      "shape": "3-2-4-4",
+      "stable_id": "seed-8585:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 0,
+      "responder_hand": "984.62.T42.97432",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8628,
+      "shape": "3-2-3-5",
+      "stable_id": "seed-8628:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "JT5.Q32.AKJ86.J4",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8740,
+      "shape": "3-3-5-2",
+      "stable_id": "seed-8740:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 2,
+        "D": 5,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 12,
+      "responder_hand": "A8.A64.JT2.QJT87",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 8947,
+      "shape": "2-3-3-5",
+      "stable_id": "seed-8947:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 3,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.3nt.balanced-10-15",
+      "hcp": 14,
+      "responder_hand": "64.A53.AJT85.KQ7",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9003,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-9003:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 8,
+      "responder_hand": "Q75.64.KQJ9632.4",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9171,
+      "shape": "3-2-7-1",
+      "stable_id": "seed-9171:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 1,
+        "D": 7,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 7,
+      "responder_hand": "J9.875.Q954.AT75",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9195,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-9195:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 7,
+      "responder_hand": "K86.5.753.AT7632",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9272,
+      "shape": "3-1-3-6",
+      "stable_id": "seed-9272:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 6,
+        "D": 3,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 2,
+      "responder_hand": "Q95.T42.T6.98654",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9533,
+      "shape": "3-3-2-5",
+      "stable_id": "seed-9533:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 2,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "J52.J63.QT3.JT84",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9606,
+      "shape": "3-3-3-4",
+      "stable_id": "seed-9606:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 3,
+        "H": 3,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 5,
+      "responder_hand": "Q83.4.K954.T9765",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9662,
+      "shape": "3-1-4-5",
+      "stable_id": "seed-9662:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 5,
+        "D": 4,
+        "H": 1,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "972.J5.Q9654.Q54",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9694,
+      "shape": "3-2-5-3",
+      "stable_id": "seed-9694:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 2,
+        "S": 3
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.balanced-slam-interest-16-plus",
+      "hcp": 17,
+      "responder_hand": "K8.Q75.AQJ3.AJ87",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9758,
+      "shape": "2-3-4-4",
+      "stable_id": "seed-9758:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 4,
+        "D": 4,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.minor-oriented.unbalanced",
+      "hcp": 13,
+      "responder_hand": "3.732.AKJT63.AJ3",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9762,
+      "shape": "1-3-6-3",
+      "stable_id": "seed-9762:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 6,
+        "H": 3,
+        "S": 1
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.2nt.balanced-8-9",
+      "hcp": 8,
+      "responder_hand": "J8.JT4.Q9863.AT7",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9914,
+      "shape": "2-3-5-3",
+      "stable_id": "seed-9914:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 3,
+        "S": 2
+      }
+    },
+    {
+      "auction_prefix": "1NT P",
+      "current_action": "ABSTAIN",
+      "family_id": "natural.pass.balanced-0-7",
+      "hcp": 5,
+      "responder_hand": "JT6.73.KT752.J86",
+      "route_id": "sayc.response.1nt.jacoby",
+      "route_reaches_rule": true,
+      "seed": 9984,
+      "shape": "3-2-5-3",
+      "stable_id": "seed-9984:S:1NT-P",
+      "suit_lengths_shdc": {
+        "C": 3,
+        "D": 5,
+        "H": 2,
+        "S": 3
+      }
+    }
+  ],
+  "production_defaults_changed": false,
+  "production_rules_added": 0,
+  "ranked_family_ids": [
+    "natural.2nt.balanced-8-9",
+    "natural.3nt.balanced-10-15",
+    "natural.pass.balanced-0-7",
+    "natural.minor-oriented.unbalanced",
+    "natural.balanced-slam-interest-16-plus"
+  ],
+  "route_count": 45,
+  "routes_added": 0,
+  "source_safe_candidates": [],
+  "start_seed": 1
+}
