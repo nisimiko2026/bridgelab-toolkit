@@ -1,0 +1,70 @@
+{
+  "action_counts": {
+    "2NT": 24,
+    "ABSTAIN": 23
+  },
+  "balanced_definition": [
+    "4-3-3-3",
+    "4-4-3-2",
+    "5-3-3-2"
+  ],
+  "deal_count": 10000,
+  "default_policies": {
+    "jacoby_continuation": null,
+    "stayman_continuation": null,
+    "stayman_dual_major": null
+  },
+  "family_population": 47,
+  "hcp_helper": "BiddingContext.evaluation.hcp (evaluate_hand/high_card_points)",
+  "jacoby_no_policy": {
+    "heart_transfer": 62,
+    "spade_transfer": 61,
+    "total": 123
+  },
+  "knowledge_markdown_changed": 0,
+  "newly_handled_2nt": 24,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual": 197,
+  "phase12k_no_policy_abstentions": 36,
+  "phase12l_terminal": {
+    "HEARTS": 5,
+    "SPADES": 7
+  },
+  "pre_existing_calls": 0,
+  "production_defaults_changed": false,
+  "remaining_abstentions": 23,
+  "route_id": "sayc.opener.2c.2d.balanced",
+  "routes_after": 45,
+  "routes_before": 44,
+  "start_seed": 1,
+  "target_seeds": [
+    437,
+    703,
+    851,
+    2270,
+    3087,
+    3737,
+    3759,
+    3809,
+    4357,
+    4520,
+    4762,
+    4866,
+    5206,
+    5876,
+    7061,
+    7140,
+    7292,
+    7546,
+    7886,
+    8405,
+    8635,
+    9179,
+    9354,
+    9586
+  ],
+  "target_subset": 24
+}

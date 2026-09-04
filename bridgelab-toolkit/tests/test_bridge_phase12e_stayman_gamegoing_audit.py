@@ -45,6 +45,6 @@ def test_phase12e_does_not_leak_or_add_routes():
     audit = run_stayman_gamegoing_audit()
     assert not audit.default_registry_has_stayman_continuation_policy
     assert PolicyRegistry().stayman_continuation_strength_policy_ids == ()
-    assert audit.production_route_count == len(create_standard_sayc_router().routes) == 44
+    assert audit.production_route_count == len(create_standard_sayc_router().routes) == 45
     assert not audit.production_defaults_changed
     assert audit.knowledge_markdown_changed == 0

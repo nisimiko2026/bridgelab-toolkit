@@ -123,8 +123,8 @@ def test_exact_fixture_and_combined_policy_benchmark_results():
 
 def test_routes_prior_phases_and_defaults_are_unchanged():
     result = run_stayman_dual_major_opener_response_benchmark()
-    assert result.route_count == 44
-    assert len(create_standard_sayc_router().routes) == 44
+    assert result.route_count == 45
+    assert len(create_standard_sayc_router().routes) == 45
     assert result.default_dual_major_policy is None
     assert result.default_continuation_policy is None
     assert result.phase12g_calls == {"4H": 17, "4S": 21}

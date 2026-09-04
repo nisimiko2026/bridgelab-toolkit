@@ -136,7 +136,7 @@ def test_policy_architecture_adds_no_route_or_production_call():
     policy = StaymanGameGoingAuditFixture()
     registry = PolicyRegistry.from_stayman_continuation_strength_policies((policy,))
     router = create_standard_sayc_router(registry)
-    assert len(router.routes) == 44
+    assert len(router.routes) == 45
     assert router.evaluate(context(policy.policy_id)).recommended_call is None
     assert create_standard_sayc_router().evaluate(context()).recommended_call is None
 
@@ -149,7 +149,7 @@ def test_phase12f_benchmark_reproduction_and_future_target():
     assert result.dual_major_abstentions == 36
     assert result.no_fit_branches_deferred
     assert result.production_routes_before == 42
-    assert result.production_routes_after == 44
+    assert result.production_routes_after == 45
     assert result.production_bidding_calls_added == 0
 
 

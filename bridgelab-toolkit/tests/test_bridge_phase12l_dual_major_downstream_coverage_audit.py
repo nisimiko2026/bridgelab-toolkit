@@ -74,8 +74,8 @@ def test_source_rows_defer_without_policy_preference_or_new_candidate():
 
 def test_routes_defaults_prior_phases_and_jacoby_are_unchanged():
     audit = run_stayman_dual_major_downstream_coverage_audit()
-    assert audit.route_count == 44
-    assert len(create_standard_sayc_router().routes) == 44
+    assert audit.route_count == 45
+    assert len(create_standard_sayc_router().routes) == 45
     assert audit.default_dual_major_policy is None
     assert audit.default_continuation_policy is None
     assert PolicyRegistry().stayman_dual_major_response_policy_ids == ()

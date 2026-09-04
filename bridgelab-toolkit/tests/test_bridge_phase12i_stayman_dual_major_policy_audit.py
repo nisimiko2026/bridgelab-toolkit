@@ -55,12 +55,12 @@ def test_guards_and_prior_phase_invariants_are_unchanged():
     source = inspect.getsource(module).casefold()
     assert "high_card_points" not in source
     assert "hcp" not in source
-    assert len(create_standard_sayc_router().routes) == 44
+    assert len(create_standard_sayc_router().routes) == 45
     registry = PolicyRegistry()
     assert registry.stayman_continuation_strength_policy_ids == ()
     assert registry.stayman_dual_major_response_policy_ids == ()
     audit = run_stayman_dual_major_policy_audit()
-    assert audit.route_count == 44
+    assert audit.route_count == 45
     assert audit.responder_continuation_policy_changed is False
     assert audit.phase12g_calls == {"4H": 17, "4S": 21}
     assert audit.phase12h_residual_by_family == {

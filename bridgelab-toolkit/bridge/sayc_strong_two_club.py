@@ -6,6 +6,9 @@ from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 
 _SOURCE = KnowledgeSource("bidding/systems/sayc", "Responses")
+_BALANCED_REBID_SOURCE = KnowledgeSource(
+    "bidding/natural-bids/responses/response-to-2-clubs", "Opener's Rebids"
+)
 _NAMES={"sayc","standard american yellow card"}
 
 @dataclass(frozen=True, slots=True)
@@ -30,3 +33,39 @@ class SaycStrongTwoClubWaitingResponseRule:
 
 def create_sayc_strong_two_club_response_engine() -> BiddingEngine:
     return BiddingEngine((SaycStrongTwoClubWaitingResponseRule(),))
+
+
+@dataclass(frozen=True, slots=True)
+class SaycStrongTwoClubBalancedRebidRule:
+    """Source-gated balanced 22–24 HCP rebid after the 2D waiting response."""
+
+    rule_id: str = "sayc.opener.2c.2d.2nt.balanced-22-24"
+
+    def evaluate(self, context: BiddingContext) -> RuleDecision:
+        if context.system.system.casefold() not in _NAMES:
+            return RuleDecision.not_applicable(self.rule_id, "Rule is SAYC only.")
+        if context.auction.serialize() != "2C P 2D P":
+            return RuleDecision.not_applicable(
+                self.rule_id,
+                "Requires the exact uncontested 2C-P-2D-P opener-rebid position.",
+            )
+        evaluation = context.evaluation
+        if not evaluation.is_balanced or not 22 <= evaluation.hcp <= 24:
+            return RuleDecision.not_applicable(
+                self.rule_id,
+                "Frozen source supports only a balanced 22–24 HCP opener rebidding 2NT.",
+            )
+        return RuleDecision.recommend(
+            rule_id=self.rule_id,
+            candidate=Call.parse("2NT"),
+            priority=100,
+            explanation=(
+                "After the 2D waiting response, the frozen source maps a balanced "
+                "22–24 HCP strong-2C opener to 2NT."
+            ),
+            sources=(_BALANCED_REBID_SOURCE,),
+        )
+
+
+def create_sayc_strong_two_club_balanced_rebid_engine() -> BiddingEngine:
+    return BiddingEngine((SaycStrongTwoClubBalancedRebidRule(),))

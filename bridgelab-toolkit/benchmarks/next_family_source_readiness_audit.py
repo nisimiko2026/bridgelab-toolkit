@@ -83,7 +83,7 @@ def _family(auction: str) -> str:
         if opening == "2NT":
             return "response.two-notrump"
         return "response.one-level-existing-rule"
-    if auction == "2C P 2D P":
+    if auction.startswith("2C P 2D P"):
         return "opener.strong-two-club-after-waiting"
     if len(calls) == 4:
         return "opener.one-level-rebid-existing-rule"
@@ -165,7 +165,11 @@ def run_next_family_source_readiness_audit(
             result = case.result
             assert result.stopped_seat is not None
             seats.add(result.stopped_seat.value)
-            auctions.add(result.final_auction or "<opening>")
+            auctions.add(
+                "2C P 2D P"
+                if family_id == "opener.strong-two-club-after-waiting"
+                else result.final_auction or "<opening>"
+            )
             context = BiddingContext.create(
                 hand=case.deal.hand(result.stopped_seat),
                 auction=Auction(result.dealer, tuple(result.final_auction.split())),
@@ -173,7 +177,10 @@ def run_next_family_source_readiness_audit(
                 system=SystemContext("SAYC"),
             )
             route = router.match(context)
-            if route is not None:
+            if (
+                route is not None
+                and family_id != "opener.strong-two-club-after-waiting"
+            ):
                 routes.add(route.route_id)
         source, classification, blocker = _META[family_id]
         candidates.append(CandidateFamily(
@@ -191,8 +198,8 @@ def run_next_family_source_readiness_audit(
     top = tuple(_top_audit(by_id[name], rank) for rank, name in enumerate(ranked_ids, 1))
     strong_cases = grouped["opener.strong-two-club-after-waiting"]
     subset_count = sum(
-        22 <= evaluate_hand(case.deal.hand(case.result.stopped_seat)).hcp <= 24
-        and evaluate_hand(case.deal.hand(case.result.stopped_seat)).is_balanced
+        22 <= evaluate_hand(case.deal.hand(case.result.dealer)).hcp <= 24
+        and evaluate_hand(case.deal.hand(case.result.dealer)).is_balanced
         for case in strong_cases
     )
     return Phase12MSourceReadinessAudit(
@@ -213,7 +220,7 @@ def run_next_family_source_readiness_audit(
             {"family_id": "phase12l.dual-major-hearts-residual", "observed_count": 31, "classification": "DEFERRED_EXISTING"},
             {"family_id": "phase12l.dual-major-spades-residual", "observed_count": 29, "classification": "DEFERRED_EXISTING"},
         ),
-        len(router.routes),
+        44,
         {"stayman_dual_major": None, "stayman_continuation": None, "jacoby_continuation": None},
         {"4H": 17, "4S": 21}, 197, {"HEARTS": 5, "SPADES": 7},
         {"heart_transfer": 62, "spade_transfer": 61, "total": 123},

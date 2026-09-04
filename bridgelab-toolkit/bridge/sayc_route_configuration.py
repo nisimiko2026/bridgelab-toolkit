@@ -22,7 +22,10 @@ from .bidding_engine import BiddingEngine
 from .engine_router import BiddingEngineRouter, EngineRoute, auction_calls
 from .policy_registry import PolicyRegistry
 from .sayc import create_sayc_opening_engine
-from .sayc_strong_two_club import create_sayc_strong_two_club_response_engine
+from .sayc_strong_two_club import (
+    create_sayc_strong_two_club_balanced_rebid_engine,
+    create_sayc_strong_two_club_response_engine,
+)
 from .sayc_2nt_texas import create_sayc_two_notrump_texas_accept_engine
 from .sayc_1nt_jacoby import (
     create_sayc_one_notrump_jacoby_response_engine,
@@ -90,6 +93,7 @@ def create_standard_sayc_router(
     support_double=create_sayc_support_double_example_engine(registry)
     direct_one_notrump=create_sayc_direct_one_notrump_overcall_engine(registry)
     strong_two_club_response=create_sayc_strong_two_club_response_engine()
+    strong_two_club_balanced_rebid=create_sayc_strong_two_club_balanced_rebid_engine()
     one_notrump_jacoby=create_sayc_one_notrump_jacoby_response_engine()
     one_notrump_jacoby_accept=create_sayc_one_notrump_jacoby_accept_engine()
     one_notrump_jacoby_continuation=create_sayc_one_notrump_jacoby_continuation_engine(registry)
@@ -141,6 +145,12 @@ def create_standard_sayc_router(
         EngineRoute("sayc.support_double.1d.1s.2c",auction_calls("1D","P","1S","2C"),support_double,97),
         EngineRoute("sayc.support_double.1h.1s.2d",auction_calls("1H","P","1S","2D"),support_double,97),
         EngineRoute("sayc.response.2c.waiting",auction_calls("2C","P"),strong_two_club_response,96),
+        EngineRoute(
+            "sayc.opener.2c.2d.balanced",
+            auction_calls("2C", "P", "2D", "P"),
+            strong_two_club_balanced_rebid,
+            95,
+        ),
         EngineRoute("sayc.response.1nt.jacoby",auction_calls("1NT","P"),one_notrump_jacoby,95),
         EngineRoute("sayc.opener.1nt.jacoby.2d",auction_calls("1NT","P","2D","P"),one_notrump_jacoby_accept,94),
         EngineRoute("sayc.opener.1nt.jacoby.2h",auction_calls("1NT","P","2H","P"),one_notrump_jacoby_accept,94),

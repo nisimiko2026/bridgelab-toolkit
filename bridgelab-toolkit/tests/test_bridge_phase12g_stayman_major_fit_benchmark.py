@@ -17,7 +17,7 @@ def context(calls):
 
 def test_exact_routes_and_default_abstention():
     router = create_standard_sayc_router()
-    assert len(router.routes) == 44
+    assert len(router.routes) == 45
     assert router.match(context(("1NT", "P", "2C", "P", "2H", "P"))).route_id == "sayc.responder.1nt.stayman.after.2h"
     assert router.match(context(("1NT", "P", "2C", "P", "2S", "P"))).route_id == "sayc.responder.1nt.stayman.after.2s"
     assert router.match(context(("1NT", "P", "2C", "P", "2D", "P"))) is None
@@ -37,9 +37,8 @@ def test_exact_phase12g_fixture_benchmark():
     assert (result.coverage_numerator, result.coverage_denominator) == (38, 235)
     assert result.coverage_pct == 16.17
     assert result.dual_major_abstentions == 36
-    assert result.production_route_count == 44
+    assert result.production_route_count == 45
 
 
 def test_phase12g_benchmark_is_structurally_deterministic():
     assert run_stayman_major_fit_game_benchmark() == run_stayman_major_fit_game_benchmark()
-

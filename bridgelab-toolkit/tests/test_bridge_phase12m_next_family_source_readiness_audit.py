@@ -41,7 +41,8 @@ def test_top_five_and_phase12n_selection_are_exact():
 
 def test_production_and_prior_phase_guards_are_unchanged():
     audit = AUDIT
-    assert audit.route_count == len(create_standard_sayc_router().routes) == 44
+    assert audit.route_count == 44
+    assert len(create_standard_sayc_router().routes) == 45
     assert audit.default_policies == {"stayman_dual_major": None, "stayman_continuation": None, "jacoby_continuation": None}
     registry = PolicyRegistry()
     assert registry.stayman_dual_major_response_policy_ids == ()

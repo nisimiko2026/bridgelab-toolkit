@@ -80,9 +80,9 @@ def test_phase12h_adds_no_hcp_classifier_route_or_default_policy():
     source = inspect.getsource(module).casefold()
     assert "high_card_points" not in source
     assert "hcp" not in source
-    assert len(create_standard_sayc_router().routes) == 44
+    assert len(create_standard_sayc_router().routes) == 45
     assert PolicyRegistry().stayman_continuation_strength_policy_ids == ()
     audit = run_stayman_residual_coverage_audit()
-    assert audit.route_count == 44
+    assert audit.route_count == 45
     assert audit.source_safe_subset_candidates == ()
     assert audit.recommendation == "D. DEFER STAYMAN RESIDUALS"
