@@ -1,0 +1,213 @@
+{
+  "benchmark": {
+    "abstained": 9239,
+    "completed": 761,
+    "phase12_default_calls_added": 62,
+    "policy_gated_available": 123,
+    "production_calls": 7871,
+    "seeds": 10000
+  },
+  "closure_gate": false,
+  "decision": "B. CLOSE PHASE 12 \u2014 PHASE 12 COMPLETE",
+  "deferred": [
+    {
+      "blocker": "strength/continuation precedence and exceptions",
+      "classification": "SOURCE_PARTIAL",
+      "family": "Stayman residuals",
+      "population": 197
+    },
+    {
+      "blocker": "qualitative suit rebids and precedence",
+      "classification": "SOURCE_PARTIAL",
+      "family": "strong-2C residuals",
+      "population": 23
+    },
+    {
+      "blocker": "typical ranges and convention precedence",
+      "classification": "SOURCE_PARTIAL",
+      "family": "natural 1NT responses",
+      "population": 124
+    },
+    {
+      "blocker": "exact-prefix call precedence and exceptions",
+      "classification": "SOURCE_PARTIAL",
+      "family": "responder rebids",
+      "population": 1194
+    },
+    {
+      "blocker": "judgment, fit, stoppers, vulnerability",
+      "classification": "SOURCE_PARTIAL",
+      "family": "three-level preempt responses",
+      "population": 166
+    },
+    {
+      "blocker": "inquiry method, forcing status, replies",
+      "classification": "PARTNERSHIP_DEPENDENT",
+      "family": "weak-two responses",
+      "population": 540
+    },
+    {
+      "blocker": "residual Stayman/natural precedence",
+      "classification": "SOURCE_PARTIAL",
+      "family": "2NT responses",
+      "population": 33
+    }
+  ],
+  "inventory": [
+    {
+      "audited_by": null,
+      "family_id": "opener.one-level-rebid-existing-rule",
+      "final_status": "NOT_YET_AUDITED",
+      "phase12m_population": 406,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 406
+    },
+    {
+      "audited_by": "12N/12O",
+      "family_id": "opener.strong-two-club-after-waiting",
+      "final_status": "PARTIALLY_IMPLEMENTED",
+      "phase12m_population": 47,
+      "production_calls_added": 24,
+      "production_implemented": true,
+      "remaining_residual": 23
+    },
+    {
+      "audited_by": null,
+      "family_id": "opening.unresolved",
+      "final_status": "NOT_YET_AUDITED",
+      "phase12m_population": 5889,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 5889
+    },
+    {
+      "audited_by": "12Q",
+      "family_id": "responder.rebid-after-opener-rebid",
+      "final_status": "DEFERRED_SOURCE_PARTIAL",
+      "phase12m_population": 1194,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 1194
+    },
+    {
+      "audited_by": null,
+      "family_id": "response.one-level-existing-rule",
+      "final_status": "NOT_YET_AUDITED",
+      "phase12m_population": 693,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 693
+    },
+    {
+      "audited_by": "12P",
+      "family_id": "response.one-notrump",
+      "final_status": "PARTIALLY_IMPLEMENTED",
+      "phase12m_population": 271,
+      "production_calls_added": 0,
+      "production_implemented": true,
+      "remaining_residual": 271
+    },
+    {
+      "audited_by": "12R",
+      "family_id": "response.three-level-preempt",
+      "final_status": "DEFERRED_SOURCE_PARTIAL",
+      "phase12m_population": 166,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 166
+    },
+    {
+      "audited_by": "12T",
+      "family_id": "response.two-notrump",
+      "final_status": "DEFERRED_SOURCE_PARTIAL",
+      "phase12m_population": 33,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 33
+    },
+    {
+      "audited_by": "12S",
+      "family_id": "response.weak-two",
+      "final_status": "DEFERRED_POLICY_REQUIRED",
+      "phase12m_population": 540,
+      "production_calls_added": 0,
+      "production_implemented": false,
+      "remaining_residual": 540
+    }
+  ],
+  "knowledge_markdown_changed": 0,
+  "phase13_recommendation": "Phase 13 \u2014 End-to-End Deal Analysis and Recommendation/Explanation Architecture: connect bidding output, declarer/defensive play, probability evidence, and benchmarked explanations into one measurable deal-analysis pipeline.",
+  "policies": [
+    {
+      "absent": "ABSTAIN",
+      "configured": "policy-selected continuation",
+      "default": false,
+      "name": "JacobyContinuationStrengthPolicy",
+      "phase": "12B"
+    },
+    {
+      "absent": "ABSTAIN",
+      "configured": "policy-selected continuation",
+      "default": false,
+      "name": "StaymanContinuationStrengthPolicy",
+      "phase": "12F"
+    },
+    {
+      "absent": "ABSTAIN",
+      "configured": "HEARTS/SPADES response",
+      "default": false,
+      "name": "StaymanDualMajorResponsePolicy",
+      "phase": "12J"
+    }
+  ],
+  "production_changes": 0,
+  "production_defaults_changed": false,
+  "routes": {
+    "added": [
+      [
+        "2NT Jacoby/Stayman/Texas responder routes",
+        "12A-12E"
+      ],
+      [
+        "Stayman continuation routes",
+        "12G"
+      ],
+      [
+        "sayc.opener.2c.2d.balanced",
+        "12N"
+      ]
+    ],
+    "audit_only_growth": 0,
+    "current": 45,
+    "phase12e": 42,
+    "phase12g": 44,
+    "phase12n": 45
+  },
+  "untouched": [
+    {
+      "classification": "SOURCE_PARTIAL",
+      "family_id": "opening.unresolved",
+      "obvious_complete_contract": false,
+      "population": 5889,
+      "route": "sayc.opening",
+      "value": "high volume, low source certainty"
+    },
+    {
+      "classification": "SOURCE_PARTIAL",
+      "family_id": "response.one-level-existing-rule",
+      "obvious_complete_contract": false,
+      "population": 693,
+      "route": "existing responder routes",
+      "value": "medium"
+    },
+    {
+      "classification": "SOURCE_PARTIAL",
+      "family_id": "opener.one-level-rebid-existing-rule",
+      "obvious_complete_contract": false,
+      "population": 406,
+      "route": "existing opener routes",
+      "value": "medium"
+    }
+  ]
+}
