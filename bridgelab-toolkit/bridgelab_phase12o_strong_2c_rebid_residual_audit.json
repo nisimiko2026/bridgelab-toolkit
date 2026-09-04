@@ -1,0 +1,677 @@
+{
+  "deal_count": 10000,
+  "decision": "D. DEFER REMAINING STRONG-2C REBIDS",
+  "default_policies": {
+    "jacoby_continuation": null,
+    "stayman_continuation": null,
+    "stayman_dual_major": null
+  },
+  "exact_shape_distribution": {
+    "1-2-7-3": 1,
+    "1-5-3-4": 1,
+    "2-2-4-5": 1,
+    "2-4-5-2": 1,
+    "2-6-1-4": 1,
+    "3-1-7-2": 1,
+    "3-2-4-4": 1,
+    "3-2-6-2": 1,
+    "3-3-1-6": 1,
+    "3-4-4-2": 1,
+    "3-6-3-1": 1,
+    "3-8-1-1": 1,
+    "4-0-6-3": 1,
+    "4-1-4-4": 1,
+    "4-2-5-2": 1,
+    "4-3-1-5": 1,
+    "4-7-1-1": 1,
+    "5-1-4-3": 1,
+    "5-3-4-1": 2,
+    "5-4-3-1": 1,
+    "6-3-1-3": 1,
+    "6-3-2-2": 1
+  },
+  "hcp_distribution": {
+    "22": 13,
+    "23": 5,
+    "24": 3,
+    "25": 1,
+    "26": 1
+  },
+  "jacoby_no_policy": {
+    "heart_transfer": 62,
+    "spade_transfer": 61,
+    "total": 123
+  },
+  "knowledge_markdown_changed": 0,
+  "original_family": 47,
+  "other_route_attempts": 0,
+  "phase12g_calls": {
+    "4H": 17,
+    "4S": 21
+  },
+  "phase12h_residual": 197,
+  "phase12k_no_policy_abstentions": 36,
+  "phase12l_terminal": {
+    "HEARTS": 5,
+    "SPADES": 7
+  },
+  "phase12n_2nt_calls": 24,
+  "phase12n_handled": 24,
+  "phase12p_recommendation": "Phase 12P \u2014 Natural 1NT Response Source-Readiness Audit: return to the Phase 12M inventory and audit the next-ranked response.one-notrump family, excluding already implemented/deferred Stayman and Jacoby branches.",
+  "policies_added": 0,
+  "positions": [
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 24,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit"
+      ],
+      "seed": 5,
+      "shape": "6-3-2-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 2,
+        "2": 3,
+        "3": 6
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 23,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "two-suited shape"
+      ],
+      "seed": 32,
+      "shape": "5-1-4-3",
+      "suit_lengths_cdhs": {
+        "0": 3,
+        "1": 4,
+        "2": 1,
+        "3": 5
+      }
+    },
+    {
+      "balanced": true,
+      "current_action": "ABSTAIN",
+      "hcp": 26,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "balanced_above_24",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "two-suited shape"
+      ],
+      "seed": 665,
+      "shape": "3-2-4-4",
+      "suit_lengths_cdhs": {
+        "0": 4,
+        "1": 4,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "6+ card suit",
+        "7+ card suit"
+      ],
+      "seed": 754,
+      "shape": "1-2-7-3",
+      "suit_lengths_cdhs": {
+        "0": 3,
+        "1": 7,
+        "2": 2,
+        "3": 1
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "two-suited shape"
+      ],
+      "seed": 1489,
+      "shape": "5-4-3-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 3,
+        "2": 4,
+        "3": 5
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "6+ card suit",
+        "two-suited shape"
+      ],
+      "seed": 1925,
+      "shape": "4-0-6-3",
+      "suit_lengths_cdhs": {
+        "0": 3,
+        "1": 6,
+        "2": 0,
+        "3": 4
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "6+ card suit"
+      ],
+      "seed": 2053,
+      "shape": "3-2-6-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 6,
+        "2": 2,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 24,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit",
+        "7+ card suit",
+        "two-suited shape"
+      ],
+      "seed": 2083,
+      "shape": "4-7-1-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 1,
+        "2": 7,
+        "3": 4
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "two-suited shape"
+      ],
+      "seed": 2413,
+      "shape": "4-2-5-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 5,
+        "2": 2,
+        "3": 4
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "6+ card suit",
+        "7+ card suit"
+      ],
+      "seed": 2868,
+      "shape": "3-1-7-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 7,
+        "2": 1,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 24,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit",
+        "two-suited shape"
+      ],
+      "seed": 4981,
+      "shape": "2-6-1-4",
+      "suit_lengths_cdhs": {
+        "0": 4,
+        "1": 1,
+        "2": 6,
+        "3": 2
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 23,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_tied_longest",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "two-suited shape"
+      ],
+      "seed": 5531,
+      "shape": "4-1-4-4",
+      "suit_lengths_cdhs": {
+        "0": 4,
+        "1": 4,
+        "2": 1,
+        "3": 4
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 23,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "two-suited shape"
+      ],
+      "seed": 5710,
+      "shape": "1-5-3-4",
+      "suit_lengths_cdhs": {
+        "0": 4,
+        "1": 3,
+        "2": 5,
+        "3": 1
+      }
+    },
+    {
+      "balanced": true,
+      "current_action": "ABSTAIN",
+      "hcp": 25,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "balanced_above_24",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "two-suited shape"
+      ],
+      "seed": 5916,
+      "shape": "3-4-4-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 4,
+        "2": 4,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 23,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "two-suited shape"
+      ],
+      "seed": 6075,
+      "shape": "4-3-1-5",
+      "suit_lengths_cdhs": {
+        "0": 5,
+        "1": 1,
+        "2": 3,
+        "3": 4
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "6+ card suit"
+      ],
+      "seed": 6538,
+      "shape": "3-3-1-6",
+      "suit_lengths_cdhs": {
+        "0": 6,
+        "1": 1,
+        "2": 3,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "two-suited shape"
+      ],
+      "seed": 6863,
+      "shape": "5-3-4-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 4,
+        "2": 3,
+        "3": 5
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit"
+      ],
+      "seed": 7248,
+      "shape": "6-3-1-3",
+      "suit_lengths_cdhs": {
+        "0": 3,
+        "1": 1,
+        "2": 3,
+        "3": 6
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit"
+      ],
+      "seed": 7786,
+      "shape": "3-6-3-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 3,
+        "2": 6,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "two-suited shape"
+      ],
+      "seed": 8379,
+      "shape": "5-3-4-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 4,
+        "2": 3,
+        "3": 5
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card major",
+        "6+ card suit",
+        "7+ card suit"
+      ],
+      "seed": 9817,
+      "shape": "3-8-1-1",
+      "suit_lengths_cdhs": {
+        "0": 1,
+        "1": 1,
+        "2": 8,
+        "3": 3
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 23,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "two-suited shape"
+      ],
+      "seed": 9902,
+      "shape": "2-2-4-5",
+      "suit_lengths_cdhs": {
+        "0": 5,
+        "1": 4,
+        "2": 2,
+        "3": 2
+      }
+    },
+    {
+      "balanced": false,
+      "current_action": "ABSTAIN",
+      "hcp": 22,
+      "other_route_attempted": false,
+      "phase12n_rule_abstains": true,
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "route_reached": "sayc.opener.2c.2d.balanced",
+      "secondary_flags": [
+        "5+ card minor",
+        "two-suited shape"
+      ],
+      "seed": 10000,
+      "shape": "2-4-5-2",
+      "suit_lengths_cdhs": {
+        "0": 2,
+        "1": 5,
+        "2": 4,
+        "3": 2
+      }
+    }
+  ],
+  "primary_bucket_counts": {
+    "balanced_above_24": 2,
+    "balanced_below_22": 0,
+    "unbalanced_22_24_single_longest_major": 11,
+    "unbalanced_22_24_single_longest_minor": 9,
+    "unbalanced_22_24_tied_longest": 1,
+    "unbalanced_above_24": 0,
+    "unbalanced_below_22": 0
+  },
+  "production_defaults_changed": false,
+  "production_rules_added": 0,
+  "residual_total": 23,
+  "route_count": 45,
+  "route_id": "sayc.opener.2c.2d.balanced",
+  "route_reached": 23,
+  "routes_added": 0,
+  "rule_abstained": 23,
+  "secondary_flag_counts": {
+    "5+ card major": 11,
+    "5+ card minor": 9,
+    "6+ card suit": 11,
+    "7+ card suit": 4,
+    "two-suited shape": 15
+  },
+  "source_certainty_matrix": [
+    {
+      "blocker": "Zero observations and no complete frozen-source mapping.",
+      "candidate_source_calls": [],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 0,
+      "executable_subset": false,
+      "frozen_source_finding": "No residual observations occurred in this structural bucket.",
+      "observed_hcp_range": null,
+      "primary_bucket": "balanced_below_22",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "balanced below 22"
+    },
+    {
+      "blocker": "No call or level is defined for balanced 25+ HCP.",
+      "candidate_source_calls": [
+        "2NT",
+        "3NT"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 2,
+      "executable_subset": false,
+      "frozen_source_finding": "The only exact balanced rebid range in the frozen source is 22\u201324 -> 2NT.",
+      "observed_hcp_range": "25-26",
+      "primary_bucket": "balanced_above_24",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "balanced above 24"
+    },
+    {
+      "blocker": "Zero observations and no complete frozen-source mapping.",
+      "candidate_source_calls": [],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 0,
+      "executable_subset": false,
+      "frozen_source_finding": "No residual observations occurred in this structural bucket.",
+      "observed_hcp_range": null,
+      "primary_bucket": "unbalanced_below_22",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "unbalanced below 22"
+    },
+    {
+      "blocker": "No exact length/strength threshold, spade mapping, level precedence, or exceptions.",
+      "candidate_source_calls": [
+        "2H",
+        "2S"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "exact_count": 11,
+      "executable_subset": false,
+      "frozen_source_finding": "The source gives 2H as a qualitative strong-heart example, not a complete major-suit contract.",
+      "observed_hcp_range": "22-24",
+      "primary_bucket": "unbalanced_22_24_single_longest_major",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "unbalanced 22 24 single longest major"
+    },
+    {
+      "blocker": "No exact length/strength threshold, diamond mapping, level precedence, or exceptions.",
+      "candidate_source_calls": [
+        "3C",
+        "3D"
+      ],
+      "classification": "SOURCE_PARTIAL",
+      "exact_count": 9,
+      "executable_subset": false,
+      "frozen_source_finding": "The source gives 3C as a qualitative powerful-club example, not a complete minor-suit contract.",
+      "observed_hcp_range": "22-23",
+      "primary_bucket": "unbalanced_22_24_single_longest_minor",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "unbalanced 22 24 single longest minor"
+    },
+    {
+      "blocker": "Tie treatment and competing-suit precedence are absent.",
+      "candidate_source_calls": [
+        "2H",
+        "2S",
+        "3C",
+        "3D"
+      ],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 1,
+      "executable_subset": false,
+      "frozen_source_finding": "Frozen strong-2C material supplies no tied-suit choice or precedence.",
+      "observed_hcp_range": "23-23",
+      "primary_bucket": "unbalanced_22_24_tied_longest",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "unbalanced 22 24 tied longest"
+    },
+    {
+      "blocker": "Zero observations and no complete frozen-source mapping.",
+      "candidate_source_calls": [],
+      "classification": "SOURCE_INSUFFICIENT",
+      "exact_count": 0,
+      "executable_subset": false,
+      "frozen_source_finding": "No residual observations occurred in this structural bucket.",
+      "observed_hcp_range": null,
+      "primary_bucket": "unbalanced_above_24",
+      "recommended_action": "defer",
+      "shape_suit_characteristics": "unbalanced above 24"
+    }
+  ],
+  "source_safe_candidates": [],
+  "start_seed": 1
+}
