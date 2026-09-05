@@ -1,0 +1,313 @@
+{
+  "closure_fixtures": 16,
+  "complete": 9,
+  "component_inventory": [
+    {
+      "component": "structured deal summary",
+      "fixtures": 16,
+      "immutable": true,
+      "limitation": "aggregation only",
+      "phase": "14A",
+      "production_dependency": "existing subsystem results only",
+      "provenance": "original objects retained",
+      "public_function": "build_deal_summary",
+      "public_types": "DealSummaryInput, DealSummaryItem, DealSummaryResult, DealSummaryStatus",
+      "status": "PRODUCTION_READY"
+    },
+    {
+      "component": "deterministic explanation rendering",
+      "fixtures": 16,
+      "immutable": true,
+      "limitation": "renders existing decisions only",
+      "phase": "14B",
+      "production_dependency": "DealSummaryResult only",
+      "provenance": "summary items and evidence retained",
+      "public_function": "render_deal_summary",
+      "public_types": "DealSummaryRendering, DealSummaryRenderedSection, DealSummaryRenderingStatus",
+      "status": "PRODUCTION_READY"
+    },
+    {
+      "component": "end-to-end summary integration",
+      "fixtures": 16,
+      "immutable": true,
+      "limitation": "accepts already-computed results",
+      "phase": "14C",
+      "production_dependency": "Phase 14A and 14B",
+      "provenance": "rendering to original result remains navigable",
+      "public_function": "build_and_render_deal_summary",
+      "public_types": "DealSummaryPipelineResult, DealSummaryPipelineStatus",
+      "status": "PRODUCTION_READY"
+    }
+  ],
+  "cumulative": {
+    "phase14a_cumulative_requests": 126,
+    "phase14b_cumulative_requests": 142,
+    "phase14c_cumulative_requests": 158,
+    "phase14d_closure_requests": 16,
+    "phase14d_cumulative_requests": 174
+  },
+  "deterministic_repeats": 16,
+  "error_boundaries": {
+    "integration_error": "DealSummaryPipelineFailureCode",
+    "rendering_error": "DealSummaryRendering failure text/status",
+    "subsystem_error": "preserved as ERROR",
+    "summary_error": "DealSummaryFailureCode"
+  },
+  "errors": 1,
+  "evidence_references": 21,
+  "fixture_results": [
+    {
+      "name": "bidding-only",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "declarer-only",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "bidding-declarer",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 2,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "bidding-probability",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "declarer-probability",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "recommendation-opening-unresolved",
+      "pipeline_status": "partial",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "partial",
+      "summary_status": "partial",
+      "unresolved_references": 1
+    },
+    {
+      "name": "recommendation-defense-unresolved",
+      "pipeline_status": "partial",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "partial",
+      "summary_status": "partial",
+      "unresolved_references": 1
+    },
+    {
+      "name": "abstention-no-decision",
+      "pipeline_status": "no-decision",
+      "provenance_preserved": true,
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "summary_status": "no-decision",
+      "unresolved_references": 2
+    },
+    {
+      "name": "all-no-decision",
+      "pipeline_status": "no-decision",
+      "provenance_preserved": true,
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "summary_status": "no-decision",
+      "unresolved_references": 2
+    },
+    {
+      "name": "subsystem-error",
+      "pipeline_status": "error",
+      "provenance_preserved": true,
+      "recommendation_references": 0,
+      "rendering_status": "error",
+      "summary_status": "error",
+      "unresolved_references": 0
+    },
+    {
+      "name": "empty",
+      "pipeline_status": "no-decision",
+      "provenance_preserved": true,
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "summary_status": "no-decision",
+      "unresolved_references": 0
+    },
+    {
+      "name": "knowledge-source",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "exact-probability",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 0,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "trace-preservation",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    },
+    {
+      "name": "long-mixed",
+      "pipeline_status": "partial",
+      "provenance_preserved": true,
+      "recommendation_references": 2,
+      "rendering_status": "partial",
+      "summary_status": "partial",
+      "unresolved_references": 2
+    },
+    {
+      "name": "deterministic-repeat",
+      "pipeline_status": "complete",
+      "provenance_preserved": true,
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "summary_status": "available",
+      "unresolved_references": 0
+    }
+  ],
+  "guards": {
+    "defensive_algorithms": 0,
+    "new_probability_formulas": 0,
+    "opening_lead_algorithms": 0,
+    "opening_lead_policy_default": null,
+    "ordinary": "7871/761/9239",
+    "phase13l": "16; recommendations 4; abstentions 2; no-decisions 9; evidence 1; errors 0",
+    "phase14a": "16; 8/1/5/2; references 8",
+    "phase14b": "16; 8/2/4/2; references 11; repeats 16/16",
+    "phase14c": "16; 9/3/3/1; references 13; evidence 21; unresolved 7",
+    "probability_engines": 1,
+    "production_defaults_changed": false,
+    "routes": 45
+  },
+  "integrated_recommendation_references": 13,
+  "invention_audit": {
+    "actions": 0,
+    "best_action": 0,
+    "bids": 0,
+    "cards": 0,
+    "confidence": 0,
+    "hidden_card_inference": 0,
+    "numbers": 0,
+    "probability_values": 0,
+    "recomputed_recommendations": 0,
+    "sources": 0,
+    "stages": 0
+  },
+  "no_decision": 3,
+  "partial": 3,
+  "phase14_complete": true,
+  "phase15_direction": "E. FULL-DEAL ANALYSIS / ORCHESTRATION",
+  "pipeline_successes": 16,
+  "production_recommendations": 4,
+  "provenance_loss_fixtures": 0,
+  "provenance_preserved_fixtures": 16,
+  "readiness_matrix": [
+    {
+      "area": "STRUCTURED_SUMMARY",
+      "capability": "architecture",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STRUCTURED_SUMMARY",
+      "capability": "recommendation references",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STRUCTURED_SUMMARY",
+      "capability": "evidence references",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STRUCTURED_SUMMARY",
+      "capability": "unresolved references",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STRUCTURED_SUMMARY",
+      "capability": "failure handling",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "RENDERING",
+      "capability": "deterministic text and stage ordering",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "RENDERING",
+      "capability": "recommendation/no-decision/abstention/error",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "RENDERING",
+      "capability": "probability and source rendering",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INTEGRATION",
+      "capability": "summary and rendering build",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INTEGRATION",
+      "capability": "provenance linking",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INTEGRATION",
+      "capability": "backward compatibility",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INTEGRATION",
+      "capability": "deterministic repeatability",
+      "readiness": "PRODUCTION_READY"
+    }
+  ],
+  "rendered_recommendation_references": 13,
+  "rendering_successes": 16,
+  "status_mapping": {
+    "AVAILABLE": "COMPLETE",
+    "ERROR": "ERROR",
+    "NO_DECISION": "NO_DECISION",
+    "PARTIAL": "PARTIAL"
+  },
+  "structured_summary_successes": 16,
+  "summary_recommendation_references": 13,
+  "unresolved_references": 8
+}
