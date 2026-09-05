@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from collections.abc import Mapping
+from dataclasses import dataclass, field
 from enum import Enum
 
 from .bidding_rules import BiddingContext
@@ -18,8 +19,11 @@ from .full_deal_analysis import (
     analyze_full_deal,
     full_deal_analysis_to_dict,
 )
+from .models import Card
 from .opening_lead_state import OpeningLeadInput
 from .policy_registry import PolicyRegistry
+from .probability_engine import ProbabilityContext
+from .probability_questions import KnownCardCountQuestion
 
 
 class FullDealApplicationErrorCode(str, Enum):
@@ -47,11 +51,13 @@ class FullDealApplicationRequest:
     declarer_play: DeclarerPlayInput | None = None
     defensive_play: DefensivePlayInput | None = None
     probability_requests: tuple[FullDealProbabilityRequest, ...] = ()
-    policies: PolicyRegistry = PolicyRegistry()
+    policies: PolicyRegistry = field(default_factory=PolicyRegistry)
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "requested_stages", tuple(self.requested_stages))
-        object.__setattr__(self, "probability_requests", tuple(self.probability_requests))
+        object.__setattr__(
+            self, "probability_requests", tuple(self.probability_requests)
+        )
 
 
 @dataclass(frozen=True, slots=True)
@@ -73,6 +79,76 @@ class FullDealApplicationResponse:
     rendered_text: str
     errors: tuple[FullDealApplicationError, ...] = ()
     diagnostics: tuple[tuple[str, str], ...] = ()
+
+
+def full_deal_application_request_from_dict(
+    payload: Mapping[str, object],
+) -> FullDealApplicationRequest:
+    """Build the narrow JSON-facing request without performing domain analysis."""
+
+    if not isinstance(payload, Mapping):
+        raise TypeError("application request must be a JSON object")
+    supported = {"deal", "requested_stages", "probability_requests"}
+    unknown = sorted(set(payload) - supported)
+    if unknown:
+        raise ValueError(f"Unsupported request field: {unknown[0]!r}.")
+    stages = payload.get("requested_stages", ())
+    probabilities = payload.get("probability_requests", ())
+    if not isinstance(stages, (list, tuple)):
+        stages = (stages,)
+    if not isinstance(probabilities, (list, tuple)):
+        probabilities = (probabilities,)
+    converted: list[object] = []
+    for item in probabilities:
+        if not isinstance(item, Mapping) or item.get("question") != "known-card-count":
+            converted.append(item)
+            continue
+        context = item.get("context")
+        if not isinstance(context, Mapping):
+            converted.append(item)
+            continue
+        try:
+            visible = frozenset(
+                Card.parse(str(value)) for value in context.get("visible_cards", ())
+            )
+            played = frozenset(
+                Card.parse(str(value)) for value in context.get("played_cards", ())
+            )
+            unknown_count = int(context["unknown_card_count"])
+        except (KeyError, TypeError, ValueError):
+            converted.append(item)
+            continue
+        converted.append(
+            FullDealProbabilityRequest(
+                KnownCardCountQuestion(),
+                ProbabilityContext(visible, played, unknown_count),
+            )
+        )
+    return FullDealApplicationRequest(
+        deal=payload.get("deal"),
+        requested_stages=tuple(stages),
+        probability_requests=tuple(converted),  # type: ignore[arg-type]
+    )
+
+
+def full_deal_application_response_to_dict(
+    response: FullDealApplicationResponse,
+) -> dict[str, object]:
+    """Return a deterministic, JSON-ready application response."""
+
+    if not isinstance(response, FullDealApplicationResponse):
+        raise TypeError("response must be FullDealApplicationResponse")
+    return {
+        "success": response.success,
+        "status": response.status,
+        "errors": tuple(
+            {"code": error.code.value, "field": error.field, "message": error.message}
+            for error in response.errors
+        ),
+        "result": response.structured_result,
+        "rendered_text": response.rendered_text,
+        "diagnostics": response.diagnostics,
+    }
 
 
 _STAGE_ALIASES = {

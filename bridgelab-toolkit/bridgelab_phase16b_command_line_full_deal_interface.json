@@ -1,0 +1,236 @@
+{
+  "application_interface_calls": 24,
+  "application_validation_failures": 5,
+  "cli_fixtures": 28,
+  "cli_parse_failures": 3,
+  "cumulative": {
+    "phase16a_application_requests": 22,
+    "phase16b_application_interface_calls": 24,
+    "phase16b_cli_executions": 28,
+    "phase16b_production_orchestration_calls": 19
+  },
+  "deterministic_json_repeats": 1,
+  "deterministic_text_repeats": 1,
+  "duplicate_application_interface_calls": 0,
+  "duplicate_production_orchestration_calls": 0,
+  "exit_code_counts": {
+    "0": 20,
+    "1": 0,
+    "2": 3,
+    "3": 5,
+    "4": 0
+  },
+  "failed_executions": 8,
+  "fixture_results": [
+    {
+      "exit_code": 0,
+      "format": "help",
+      "name": "help",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "valid-auction-file",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "auction-recommendation-text",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "auction-recommendation-json",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "declarer-unblock-text",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "opening-unresolved",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "defensive-unresolved",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "known-card-count-text",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "known-card-count-json",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "auction-probability",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "mixed-multi-stage",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "explicit-subset",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "skipped-stage",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 3,
+      "format": "text",
+      "name": "malformed-seat",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 3,
+      "format": "json",
+      "name": "duplicate-card",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 3,
+      "format": "text",
+      "name": "malformed-stage",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 3,
+      "format": "json",
+      "name": "malformed-probability",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "utf8-output",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "repeat-text-a",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "name": "repeat-text-b",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "repeat-json-a",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "repeat-json-b",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 3,
+      "format": "text",
+      "name": "exit-code",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "provenance-json",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "name": "single-call",
+      "stderr": false,
+      "stdout": true
+    },
+    {
+      "exit_code": 2,
+      "format": "text",
+      "name": "malformed-json",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 2,
+      "format": "json",
+      "name": "missing-file",
+      "stderr": true,
+      "stdout": false
+    },
+    {
+      "exit_code": 2,
+      "format": "text",
+      "name": "top-level-array",
+      "stderr": true,
+      "stdout": false
+    }
+  ],
+  "hidden_information_violations": 0,
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "json_outputs": 9,
+  "phase16c_direction": "E. PHASE 16 COVERAGE / CLOSURE AUDIT",
+  "production_errors": 0,
+  "production_orchestration_calls": 19,
+  "provenance_preserved_json_responses": 9,
+  "structured_json_successes": 9,
+  "successful_executions": 20,
+  "text_outputs": 10,
+  "unexpected_internal_errors": 0
+}

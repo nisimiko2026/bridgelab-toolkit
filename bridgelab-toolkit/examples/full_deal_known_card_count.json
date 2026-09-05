@@ -1,0 +1,12 @@
+{
+  "probability_requests": [
+    {
+      "question": "known-card-count",
+      "context": {
+        "visible_cards": ["AS", "KH"],
+        "played_cards": [],
+        "unknown_card_count": 50
+      }
+    }
+  ]
+}

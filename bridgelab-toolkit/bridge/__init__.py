@@ -265,6 +265,8 @@ from .full_deal_application import (
     FullDealApplicationRequest, FullDealApplicationResponse,
     FullDealApplicationValidationResult, analyze_full_deal_application,
     application_request_to_full_deal_input,
+    full_deal_application_request_from_dict,
+    full_deal_application_response_to_dict,
 )
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
@@ -353,4 +355,6 @@ __all__ += [
     "FullDealApplicationRequest", "FullDealApplicationResponse",
     "FullDealApplicationValidationResult", "analyze_full_deal_application",
     "application_request_to_full_deal_input",
+    "full_deal_application_request_from_dict",
+    "full_deal_application_response_to_dict",
 ]
