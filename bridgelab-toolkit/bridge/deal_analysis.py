@@ -13,6 +13,7 @@ from .declarer_play_state import DeclarerPlayInput, DeclarerPlayState, build_dec
 from .declarer_recommendation import DeclarerRecommendation, evaluate_declarer_play
 from .defensive_play_state import DefensivePlayInput, build_defensive_play_state
 from .models import Card, Seat
+from .opening_lead_state import OpeningLeadInput, build_opening_lead_state
 from .probability_evidence import ProbabilityEvidence
 
 
@@ -101,6 +102,7 @@ class DealAnalysisContext:
     bidding: BiddingContext | None = None
     declarer_play: DeclarerPlayInput | None = None
     defensive_play: DefensivePlayInput | None = None
+    opening_lead: OpeningLeadInput | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -205,6 +207,23 @@ def analyze_deal_decision(
             (declarer, *other),
             code,
             debug_metadata=debug,
+        )
+    if stage is AnalysisStage.OPENING_LEAD:
+        built = build_opening_lead_state(context.opening_lead)
+        code = AbstentionCode.ENGINE_UNAVAILABLE if built.is_ready else AbstentionCode.MISSING_STATE
+        explanation = (
+            "Opening-lead state is ready, but no production opening-lead recommendation engine is available."
+            if built.is_ready else built.explanation
+        )
+        lead = SubsystemResult(
+            Subsystem.DEFENSE, True, AnalysisStatus.NO_DECISION, AnalysisAction(ActionKind.NONE),
+            explanation, abstention_code=code,
+        )
+        other = tuple(_inactive(system, stage) for system in (Subsystem.DECLARER_PLAY, Subsystem.PROBABILITY, Subsystem.SOURCE))
+        return DealAnalysisResult(
+            stage, None if built.state is None else built.state.opening_leader,
+            AnalysisStatus.NO_DECISION, lead.action, explanation, (), (lead, *other), code,
+            debug_metadata=(("opening-lead-state", "ready" if built.is_ready else built.failure_code.value),),
         )
     if stage is AnalysisStage.DEFENSIVE_PLAY:
         built = build_defensive_play_state(context.defensive_play)

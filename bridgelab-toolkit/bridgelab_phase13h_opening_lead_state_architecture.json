@@ -1,0 +1,263 @@
+{
+  "architecture": {
+    "abstentions": 3,
+    "action_counts": {
+      "bid": 2,
+      "card-play": 2,
+      "none": 54
+    },
+    "auction_positions": 5,
+    "bidding_recommendations": 2,
+    "declarer_positions": 23,
+    "declarer_recommendations": 2,
+    "defensive_positions": 15,
+    "defensive_recommendations": 0,
+    "errors": 0,
+    "invalid_or_incomplete_opening_lead_states": 3,
+    "no_decisions": 51,
+    "opening_lead_positions": 14,
+    "opening_lead_recommendations": 0,
+    "probability_evidence_items": 3,
+    "total_positions_or_requests": 70,
+    "valid_opening_lead_states": 11
+  },
+  "auction_present_states": 1,
+  "deterministic_repeats": 1,
+  "fixture_results": [
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "valid-notrump",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "valid-suit-contract",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "balanced-hand",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "long-suit",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "singleton",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "doubled-contract",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "vulnerability",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": true,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "complete-auction",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "incomplete",
+      "failure_code": "missing-leader-hand",
+      "legal_lead_count": 0,
+      "name": "missing-leader-hand",
+      "state_ready": false,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "invalid",
+      "failure_code": "invalid-leader-seat",
+      "legal_lead_count": 0,
+      "name": "wrong-leader-seat",
+      "state_ready": false,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "invalid",
+      "failure_code": "invalid-card-state",
+      "legal_lead_count": 0,
+      "name": "invalid-card-state",
+      "state_ready": false,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "no-dummy-required",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "valid-no-engine",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "auction_present": false,
+      "classification": "valid",
+      "failure_code": null,
+      "legal_lead_count": 13,
+      "name": "deterministic-repeat",
+      "state_ready": true,
+      "status": "no-decision"
+    }
+  ],
+  "guards": {
+    "defensive_recommendations": 0,
+    "illegal_recommendations": 0,
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G": {
+        "4H": 17,
+        "4S": 21
+      },
+      "H": 197,
+      "L": {
+        "abstained": 7,
+        "completed": 5
+      },
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby": {
+        "hearts": 62,
+        "spades": 61
+      }
+    },
+    "probability_engines": 1,
+    "probability_formulas_added": 0,
+    "routes": 45,
+    "simple_unblock_hits": 2
+  },
+  "incomplete_states": 1,
+  "invalid_states": 2,
+  "legal_lead_counts": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    13,
+    0,
+    0,
+    0,
+    13,
+    13,
+    13
+  ],
+  "opening_lead_fixtures": 14,
+  "partnership_policy_audit": {
+    "coded_tens_nines": "NOT_PRESENT",
+    "fourth_best": "PARTNERSHIP_POLICY_REQUIRED",
+    "honor_sequence": "PARTNERSHIP_POLICY_REQUIRED",
+    "interior_sequence": "SOURCE_PARTIAL",
+    "mud": "NOT_PRESENT",
+    "passive_aggressive": "SOURCE_PARTIAL",
+    "production_defaults": "NONE",
+    "rusinow": "PARTNERSHIP_POLICY_REQUIRED",
+    "second_highest_bad_suit": "SOURCE_INSUFFICIENT",
+    "third_fifth": "PARTNERSHIP_POLICY_REQUIRED",
+    "top_of_nothing": "PARTNERSHIP_POLICY_REQUIRED",
+    "top_of_sequence": "PARTNERSHIP_POLICY_REQUIRED",
+    "trump_lead": "SOURCE_PARTIAL",
+    "unsupported_ace_king": "SOURCE_PARTIAL"
+  },
+  "phase13i_direction": "B. OPENING-LEAD POLICY ARCHITECTURE",
+  "probability_context_builds": 11,
+  "recommendations": 0,
+  "reusable_inventory": [
+    {
+      "module": "bridge.models",
+      "reuse": "direct",
+      "types": "Card/Suit/Rank/Seat/Vulnerability/Hand"
+    },
+    {
+      "module": "bridge.auction",
+      "reuse": "direct immutable snapshot",
+      "types": "Bid/Strain/Doubling/Contract/AuctionEntry"
+    },
+    {
+      "module": "bridge.defensive_play_state",
+      "reuse": "semantic pattern only; dummy/trick excluded",
+      "types": "defender validation/accounting concepts"
+    },
+    {
+      "module": "bridge.probability_engine",
+      "reuse": "leader-known cards only",
+      "types": "ProbabilityContext"
+    }
+  ],
+  "valid_states": 11
+}

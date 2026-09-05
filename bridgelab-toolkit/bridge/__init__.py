@@ -233,6 +233,11 @@ from .defensive_play_state import (
     DefensiveStateFailureCode, build_defensive_play_state,
     build_defensive_probability_context,
 )
+from .opening_lead_state import (
+    OpeningLeadInput, OpeningLeadState, OpeningLeadStateBuildResult,
+    OpeningLeadStateFailureCode, build_opening_lead_probability_context,
+    build_opening_lead_state,
+)
 
 
 from .jacoby_continuation_strength_policy import (
@@ -300,4 +305,7 @@ __all__ += [
     "DefensivePlayInput", "DefensivePlayState", "DefensiveStateBuildResult",
     "DefensiveStateFailureCode", "build_defensive_play_state",
     "build_defensive_probability_context",
+    "OpeningLeadInput", "OpeningLeadState", "OpeningLeadStateBuildResult",
+    "OpeningLeadStateFailureCode", "build_opening_lead_probability_context",
+    "build_opening_lead_state",
 ]

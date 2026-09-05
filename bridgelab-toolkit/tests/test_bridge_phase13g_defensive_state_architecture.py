@@ -161,7 +161,7 @@ def test_declarer_probability_and_auction_guards_are_unchanged():
     assert opening.action.bid.serialize() == "2S" and len(ROUTER.routes) == 45
 
 
-def test_opening_lead_remains_distinct_and_unintegrated():
+def test_opening_lead_remains_distinct_with_its_own_missing_state():
     result = analyze_deal_decision(DealAnalysisContext(AnalysisStage.OPENING_LEAD), bidding_router=ROUTER)
     assert result.stage is AnalysisStage.OPENING_LEAD and result.action.kind is ActionKind.NONE
-    assert result.abstention_code is AbstentionCode.UNSUPPORTED_STAGE
+    assert result.abstention_code is AbstentionCode.MISSING_STATE
