@@ -214,9 +214,19 @@ from .declarer_recommendation import (
     evaluate_declarer_play,
 )
 from .probability_evidence import (
-    KnownCardCountQuestion, ProbabilityEvidence, ProbabilityEvidenceFailureCode,
+    ProbabilityEvidence, ProbabilityEvidenceFailureCode,
     ProbabilityEvidenceResult, ProbabilityEvidenceStatus, ProbabilityEvidenceType,
     collect_declarer_probability_evidence,
+)
+from .probability_engine import (
+    CalculationMode, DEFAULT_PROBABILITY_ENGINE_REGISTRY, FormulaIdentifier,
+    ProbabilityContext, ProbabilityEngineFailureCode, ProbabilityEngineRegistry,
+    ProbabilityEngineResult, ProbabilityEngineStatus, build_probability_context,
+    evaluate_probability,
+)
+from .probability_questions import (
+    KnownCardCountQuestion, MonteCarloQuestion, ProbabilityQuestion, RestrictedChoiceQuestion,
+    SuitDistributionQuestion, TrumpBreakQuestion, VacantPlacesQuestion,
 )
 
 
@@ -276,4 +286,10 @@ __all__ += [
     "KnownCardCountQuestion", "ProbabilityEvidence", "ProbabilityEvidenceFailureCode",
     "ProbabilityEvidenceResult", "ProbabilityEvidenceStatus", "ProbabilityEvidenceType",
     "collect_declarer_probability_evidence",
+    "CalculationMode", "DEFAULT_PROBABILITY_ENGINE_REGISTRY", "FormulaIdentifier",
+    "ProbabilityContext", "ProbabilityEngineFailureCode", "ProbabilityEngineRegistry",
+    "ProbabilityEngineResult", "ProbabilityEngineStatus", "build_probability_context",
+    "evaluate_probability", "MonteCarloQuestion", "ProbabilityQuestion",
+    "RestrictedChoiceQuestion", "SuitDistributionQuestion", "TrumpBreakQuestion",
+    "VacantPlacesQuestion",
 ]

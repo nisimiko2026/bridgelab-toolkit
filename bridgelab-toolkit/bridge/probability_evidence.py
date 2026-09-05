@@ -7,6 +7,7 @@ from enum import Enum
 
 from .bidding_rules import KnowledgeSource
 from .declarer_play_state import DeclarerPlayState
+from .probability_questions import KnownCardCountQuestion as KnownCardCountQuestion, ProbabilityQuestion
 
 
 class ProbabilityEvidenceType(str, Enum):
@@ -23,15 +24,7 @@ class ProbabilityEvidenceFailureCode(str, Enum):
     MISSING_QUESTION = "missing-question"
     INSUFFICIENT_KNOWN_CARDS = "insufficient-known-cards"
     INVALID_CARD_ACCOUNTING = "invalid-card-accounting"
-
-
-@dataclass(frozen=True, slots=True)
-class KnownCardCountQuestion:
-    subject: str = "declarer-visible card accounting"
-
-    def __post_init__(self) -> None:
-        if not self.subject.strip():
-            raise ValueError("evidence subject must not be blank")
+    UNSUPPORTED_EVIDENCE_TYPE = "unsupported-evidence-type"
 
 
 @dataclass(frozen=True, slots=True)
@@ -64,37 +57,27 @@ class ProbabilityEvidenceResult:
 
 def collect_declarer_probability_evidence(
     state: DeclarerPlayState | None,
-    question: KnownCardCountQuestion | None,
+    question: ProbabilityQuestion | None,
 ) -> ProbabilityEvidenceResult:
-    """Normalize existing state accounting; perform no probability calculation."""
+    """Backward-compatible evidence adapter over the probability engine."""
     if question is None:
         return ProbabilityEvidenceResult(
             ProbabilityEvidenceStatus.UNAVAILABLE,
             failure_code=ProbabilityEvidenceFailureCode.MISSING_QUESTION,
             explanation="An explicit supported evidence question is required.",
         )
-    if state is None:
-        return ProbabilityEvidenceResult(
-            ProbabilityEvidenceStatus.UNAVAILABLE,
-            failure_code=ProbabilityEvidenceFailureCode.INSUFFICIENT_KNOWN_CARDS,
-            explanation="A validated declarer state is required for known-card accounting.",
-        )
-    visible = len(state.visible_cards)
-    played = len(state.played_cards)
-    unknown = state.unknown_card_count
-    if visible + played + unknown != 52:
-        return ProbabilityEvidenceResult(
-            ProbabilityEvidenceStatus.ERROR,
-            failure_code=ProbabilityEvidenceFailureCode.INVALID_CARD_ACCOUNTING,
-            explanation="Known-card accounting does not reconcile to the 52-card deck.",
-        )
-    evidence = ProbabilityEvidence(
-        ProbabilityEvidenceType.KNOWN_CARD_COUNT,
-        question.subject.strip(),
-        ("Only declarer-visible holdings and cards in validated play history are known.",
-         "Hidden defender cards and distributions remain unknown."),
-        (("visible-cards", str(visible)), ("played-cards", str(played))),
-        str(unknown),
-        trace=(("deck-size", "52"), ("known-unique", str(visible + played)), ("unknown", str(unknown))),
+    from .probability_engine import ProbabilityEngineFailureCode, ProbabilityEngineStatus, evaluate_probability
+
+    result = evaluate_probability(question, state)
+    if result.status is ProbabilityEngineStatus.SUCCESS:
+        return ProbabilityEvidenceResult(ProbabilityEvidenceStatus.AVAILABLE, result.evidence)
+    failure = {
+        ProbabilityEngineFailureCode.INSUFFICIENT_STATE: ProbabilityEvidenceFailureCode.INSUFFICIENT_KNOWN_CARDS,
+        ProbabilityEngineFailureCode.INVALID_CARD_ACCOUNTING: ProbabilityEvidenceFailureCode.INVALID_CARD_ACCOUNTING,
+        ProbabilityEngineFailureCode.ENGINE_NOT_REGISTERED: ProbabilityEvidenceFailureCode.UNSUPPORTED_EVIDENCE_TYPE,
+    }.get(result.failure_code)
+    return ProbabilityEvidenceResult(
+        ProbabilityEvidenceStatus.ERROR if result.status is ProbabilityEngineStatus.ERROR else ProbabilityEvidenceStatus.UNAVAILABLE,
+        failure_code=failure,
+        explanation=result.explanation,
     )
-    return ProbabilityEvidenceResult(ProbabilityEvidenceStatus.AVAILABLE, (evidence,))

@@ -1,0 +1,205 @@
+{
+  "architecture": {
+    "bidding_recommendations": 2,
+    "declarer_recommendations": 2,
+    "errors": 0,
+    "invalid_input_results": 1,
+    "no_decisions": 23,
+    "probability_evidence_items": 3,
+    "total_positions_or_requests": 42,
+    "unavailable_evidence_requests": 8
+  },
+  "errors": 0,
+  "exact_results": 1,
+  "fixture_results": [
+    {
+      "failure_code": null,
+      "formula_id": "known-card-count-v1",
+      "mode": "exact",
+      "name": "known-card-success",
+      "numeric_probability": null,
+      "question_type": "KnownCardCountQuestion",
+      "result": "44",
+      "status": "success"
+    },
+    {
+      "failure_code": "invalid-card-accounting",
+      "formula_id": null,
+      "mode": null,
+      "name": "invalid-known-card-accounting",
+      "numeric_probability": null,
+      "question_type": "KnownCardCountQuestion",
+      "result": null,
+      "status": "invalid-input"
+    },
+    {
+      "failure_code": "engine-not-registered",
+      "formula_id": null,
+      "mode": null,
+      "name": "restricted-choice-unregistered",
+      "numeric_probability": null,
+      "question_type": "RestrictedChoiceQuestion",
+      "result": null,
+      "status": "unavailable"
+    },
+    {
+      "failure_code": "engine-not-registered",
+      "formula_id": null,
+      "mode": null,
+      "name": "vacant-places-unregistered",
+      "numeric_probability": null,
+      "question_type": "VacantPlacesQuestion",
+      "result": null,
+      "status": "unavailable"
+    },
+    {
+      "failure_code": "engine-not-registered",
+      "formula_id": null,
+      "mode": null,
+      "name": "suit-distribution-unregistered",
+      "numeric_probability": null,
+      "question_type": "SuitDistributionQuestion",
+      "result": null,
+      "status": "unavailable"
+    },
+    {
+      "failure_code": "engine-not-registered",
+      "formula_id": null,
+      "mode": null,
+      "name": "trump-break-unregistered",
+      "numeric_probability": null,
+      "question_type": "TrumpBreakQuestion",
+      "result": null,
+      "status": "unavailable"
+    },
+    {
+      "failure_code": "engine-not-registered",
+      "formula_id": null,
+      "mode": null,
+      "name": "monte-carlo-unregistered",
+      "numeric_probability": null,
+      "question_type": "MonteCarloQuestion",
+      "result": null,
+      "status": "unavailable"
+    }
+  ],
+  "guards": {
+    "illegal_recommendations": 0,
+    "jacoby_hearts": 62,
+    "jacoby_spades": 61,
+    "ordinary_abstained": 9239,
+    "ordinary_completed": 761,
+    "ordinary_production_calls": 7871,
+    "phase12g_4h": 17,
+    "phase12g_4s": 21,
+    "phase12h": 197,
+    "phase12l_abstained": 7,
+    "phase12l_completed": 5,
+    "phase12n": 24,
+    "phase12o": 23,
+    "phase12q": 1194,
+    "phase12r": 166,
+    "phase12s": 540,
+    "phase12t": 33,
+    "routes": 45,
+    "simple_unblock_hits": 2
+  },
+  "invalid_input_results": 1,
+  "inventory": [
+    {
+      "adaptable": true,
+      "formula": "52 - unique visible/played",
+      "module": "bridge.declarer_play_state",
+      "production": true,
+      "source_linked": false,
+      "tested": true
+    },
+    {
+      "adaptable": false,
+      "capability": "seeded full-deal generation",
+      "formula": null,
+      "module": "bridge.deals",
+      "production": true,
+      "tested": true
+    },
+    {
+      "adaptable": false,
+      "capability": "seeded bidding simulation",
+      "formula": null,
+      "module": "bridge.batch_simulation",
+      "production": true,
+      "tested": true
+    },
+    {
+      "adaptable": false,
+      "formula": "prose/tables only",
+      "module": "knowledge/play/declarer-play/probability",
+      "production": false,
+      "tested": false
+    }
+  ],
+  "phase13g_direction": "E. DEFENSIVE STATE ARCHITECTURE",
+  "questions": 7,
+  "readiness": {
+    "KNOWN_CARD_COUNT": {
+      "engine": true,
+      "formula": true,
+      "production_safe": true,
+      "source": false,
+      "state_inputs": true,
+      "status": "READY",
+      "tests": true
+    },
+    "MONTE_CARLO": {
+      "engine": false,
+      "formula": false,
+      "production_safe": false,
+      "source": false,
+      "state_inputs": "partial",
+      "status": "PARTIALLY_READY",
+      "tests": false
+    },
+    "RESTRICTED_CHOICE": {
+      "engine": false,
+      "formula": false,
+      "production_safe": false,
+      "source": true,
+      "state_inputs": "partial",
+      "status": "ARCHITECTURE_READY",
+      "tests": false
+    },
+    "SUIT_DISTRIBUTION": {
+      "engine": false,
+      "formula": false,
+      "production_safe": false,
+      "source": true,
+      "state_inputs": true,
+      "status": "ARCHITECTURE_READY",
+      "tests": false
+    },
+    "TRUMP_BREAKS": {
+      "engine": false,
+      "formula": false,
+      "production_safe": false,
+      "source": true,
+      "state_inputs": true,
+      "status": "ARCHITECTURE_READY",
+      "tests": false
+    },
+    "VACANT_PLACES": {
+      "engine": false,
+      "formula": false,
+      "production_safe": false,
+      "source": true,
+      "state_inputs": "partial",
+      "status": "ARCHITECTURE_READY",
+      "tests": false
+    }
+  },
+  "registered_engines": [
+    "KnownCardCountQuestion"
+  ],
+  "simulated_results": 0,
+  "successful_results": 1,
+  "unavailable_results": 5
+}
