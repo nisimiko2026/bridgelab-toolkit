@@ -1,0 +1,417 @@
+{
+  "application_interface_calls": 13,
+  "application_validation_failures": 1,
+  "backward_compatibility": "PASS",
+  "cli_failed_executions": 4,
+  "cli_parse_failures": 3,
+  "cli_successful_executions": 13,
+  "closure_fixtures": 35,
+  "complete": 5,
+  "component_inventory": [
+    {
+      "component": "application boundary",
+      "immutable": true,
+      "limitation": "coordinates existing bridge intelligence only",
+      "phase": "16A",
+      "public_functions": "application_request_to_full_deal_input, analyze_full_deal_application, request/response JSON helpers",
+      "public_types": "FullDealApplicationRequest, FullDealApplicationValidationResult, FullDealApplicationError, FullDealApplicationErrorCode, FullDealApplicationResponse",
+      "status": "PRODUCTION_READY"
+    },
+    {
+      "component": "command-line adapter",
+      "entry_point": "python -m bridge.full_deal_cli",
+      "inputs": "UTF-8 JSON file or stdin",
+      "limitation": "narrow JSON schema; no GUI or network API",
+      "outputs": "text or deterministic JSON",
+      "phase": "16B",
+      "status": "PRODUCTION_READY"
+    }
+  ],
+  "cumulative": {
+    "ordinary": "7871/761/9239",
+    "phase16a_fixtures": 22,
+    "phase16b_fixtures": 28,
+    "production_recommendations": 4,
+    "routes": 45
+  },
+  "deterministic_application_repeats": 12,
+  "deterministic_cli_json_repeats": 1,
+  "deterministic_cli_text_repeats": 1,
+  "direct_subsystem_calls_from_application": 0,
+  "direct_subsystem_calls_from_cli": 0,
+  "duplicate_application_interface_calls": 0,
+  "duplicate_production_orchestration_calls": 0,
+  "error": 4,
+  "exit_code_counts": {
+    "0": 13,
+    "1": 0,
+    "2": 3,
+    "3": 1,
+    "4": 0
+  },
+  "fixture_results": [
+    {
+      "layer": "application",
+      "name": "application-auction-only",
+      "status": "complete",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-auction-recommendation",
+      "status": "complete",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-simple-unblock-king",
+      "status": "complete",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-opening-unresolved",
+      "status": "no-decision",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-defense-unresolved",
+      "status": "no-decision",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-known-card-count",
+      "status": "complete",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-auction-probability",
+      "status": "complete",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-mixed",
+      "status": "partial",
+      "valid": true
+    },
+    {
+      "layer": "application",
+      "name": "application-invalid-seat",
+      "status": "error",
+      "valid": false
+    },
+    {
+      "layer": "application",
+      "name": "application-duplicate-card",
+      "status": "error",
+      "valid": false
+    },
+    {
+      "layer": "application",
+      "name": "application-malformed-stage",
+      "status": "error",
+      "valid": false
+    },
+    {
+      "layer": "application",
+      "name": "application-malformed-probability",
+      "status": "error",
+      "valid": false
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-file-text"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-file-json"
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-stdin-text"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-stdin-json"
+    },
+    {
+      "exit_code": 3,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-application-error"
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-utf8"
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-repeat-text-a"
+    },
+    {
+      "exit_code": 0,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-repeat-text-b"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-repeat-json-a"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-repeat-json-b"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-knowledge-source"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-probability-evidence"
+    },
+    {
+      "exit_code": 0,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-skipped-stage"
+    },
+    {
+      "exit_code": 2,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-malformed-json"
+    },
+    {
+      "exit_code": 2,
+      "format": "text",
+      "layer": "cli",
+      "name": "cli-missing-file"
+    },
+    {
+      "exit_code": 2,
+      "format": "json",
+      "layer": "cli",
+      "name": "cli-top-level-array"
+    },
+    {
+      "exit_code": 0,
+      "format": "help",
+      "layer": "cli",
+      "name": "cli-help"
+    },
+    {
+      "layer": "guard",
+      "name": "hidden-information-boundary",
+      "passed": true
+    },
+    {
+      "layer": "guard",
+      "name": "single-application-call",
+      "passed": true
+    },
+    {
+      "layer": "guard",
+      "name": "single-production-call",
+      "passed": true
+    },
+    {
+      "layer": "guard",
+      "name": "exit-code-audit",
+      "passed": true
+    },
+    {
+      "layer": "guard",
+      "name": "backward-compatibility",
+      "passed": true
+    },
+    {
+      "layer": "guard",
+      "name": "security-audit",
+      "passed": true
+    }
+  ],
+  "hidden_information_violations": 0,
+  "internal_errors": 0,
+  "invalid_application_requests": 4,
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "json_outputs": 7,
+  "no_decision": 2,
+  "partial": 1,
+  "phase16_complete": true,
+  "phase17_direction": "E. BRIDGE-INTELLIGENCE EXPANSION PROGRAM",
+  "production_errors": 0,
+  "production_orchestration_calls": 20,
+  "provenance_lost": 0,
+  "provenance_preserved": 15,
+  "readiness_matrix": [
+    {
+      "area": "APPLICATION_REQUEST",
+      "capability": "immutable request model",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_REQUEST",
+      "capability": "canonical conversion",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_REQUEST",
+      "capability": "structured validation",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_REQUEST",
+      "capability": "unsupported input",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_RESPONSE",
+      "capability": "immutable response model",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_RESPONSE",
+      "capability": "canonical result",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_RESPONSE",
+      "capability": "rendered text",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_RESPONSE",
+      "capability": "structured serialization",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_DELEGATION",
+      "capability": "single production call",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "APPLICATION_DELEGATION",
+      "capability": "no subsystem bypass",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_INPUT",
+      "capability": "JSON file",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_INPUT",
+      "capability": "stdin and UTF-8",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_INPUT",
+      "capability": "malformed/missing/wrong type",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_OUTPUT",
+      "capability": "text",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_OUTPUT",
+      "capability": "JSON",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_OUTPUT",
+      "capability": "stdout/stderr",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_EXECUTION",
+      "capability": "exit codes",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_EXECUTION",
+      "capability": "help/import",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "CLI_EXECUTION",
+      "capability": "Windows paths and pipes",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SAFETY",
+      "capability": "hidden information",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SAFETY",
+      "capability": "safe JSON parser",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SAFETY",
+      "capability": "no traceback",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SAFETY",
+      "capability": "no bridge logic duplication",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PROVENANCE",
+      "capability": "KnowledgeSource",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PROVENANCE",
+      "capability": "ProbabilityEvidence",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PROVENANCE",
+      "capability": "stage accounting/skips",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PROVENANCE",
+      "capability": "trace/diagnostics",
+      "readiness": "PRODUCTION_READY"
+    }
+  ],
+  "structured_json_failures": 0,
+  "structured_json_successes": 7,
+  "text_output_mismatches": 0,
+  "text_outputs": 5,
+  "unsafe_parser_findings": 0,
+  "valid_application_requests": 8
+}

@@ -96,7 +96,7 @@ def run_command_line_full_deal_benchmark() -> CommandLineFullDealBenchmark:
         ("duplicate-card", {"deal": "N:AKQJ.T98.765.432|E:AKQJ.T98.765.432"}, "json"),
         ("malformed-stage", malformed_stage, "text"),
         ("malformed-probability", malformed_probability, "json"),
-        ("utf8-output", probability, "text"),
+        ("utf8-output", probability, "json"),
         ("repeat-text-a", valid, "text"),
         ("repeat-text-b", valid, "text"),
         ("repeat-json-a", probability, "json"),
@@ -195,7 +195,9 @@ def run_command_line_full_deal_benchmark() -> CommandLineFullDealBenchmark:
         len(rows),
         successes,
         len(rows) - successes,
-        sum(row["format"] == "text" and row["exit_code"] == 0 for row in rows),
+        sum(
+            row["format"] in {"text", "help"} and row["exit_code"] == 0 for row in rows
+        ),
         json_success,
         exit_counts["2"],
         exit_counts["3"],
