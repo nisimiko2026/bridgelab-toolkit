@@ -122,7 +122,7 @@ def _inactive(subsystem: Subsystem, stage: AnalysisStage) -> SubsystemResult:
         False,
         AnalysisStatus.NO_DECISION,
         AnalysisAction(ActionKind.NONE),
-        f"No production {subsystem.value} adapter is available for {stage.value} in Phase 13A.",
+        f"No production {subsystem.value} adapter is available for {stage.value}.",
         abstention_code=AbstentionCode.UNSUPPORTED_STAGE,
     )
 
@@ -138,6 +138,34 @@ def analyze_deal_decision(
         _inactive(system, stage)
         for system in (Subsystem.DECLARER_PLAY, Subsystem.DEFENSE, Subsystem.PROBABILITY, Subsystem.SOURCE)
     )
+    if stage is AnalysisStage.DECLARER_PLAY:
+        explanation = (
+            "Declarer play was detected, but no production declarer state model or "
+            "card-recommendation entry point is available."
+        )
+        declarer = SubsystemResult(
+            Subsystem.DECLARER_PLAY,
+            True,
+            AnalysisStatus.NO_DECISION,
+            AnalysisAction(ActionKind.NONE),
+            explanation,
+            abstention_code=AbstentionCode.MISSING_STATE,
+        )
+        other = tuple(
+            _inactive(system, stage)
+            for system in (Subsystem.DEFENSE, Subsystem.PROBABILITY, Subsystem.SOURCE)
+        )
+        return DealAnalysisResult(
+            stage,
+            None if context.bidding is None else context.bidding.seat,
+            AnalysisStatus.NO_DECISION,
+            declarer.action,
+            explanation,
+            (),
+            (declarer, *other),
+            AbstentionCode.MISSING_STATE,
+            debug_metadata=(("adapter", "declarer-play-unavailable"),),
+        )
     if stage is not AnalysisStage.AUCTION or context.bidding is None:
         return DealAnalysisResult(
             stage,

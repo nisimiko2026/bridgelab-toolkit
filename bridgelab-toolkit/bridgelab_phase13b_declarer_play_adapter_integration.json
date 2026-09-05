@@ -1,0 +1,171 @@
+{
+  "abstentions": 3,
+  "action_counts": {
+    "bid": 2,
+    "none": 8
+  },
+  "analyzed_positions": 10,
+  "declarer_inventory": [
+    {
+      "can_abstain": false,
+      "canonical_target": false,
+      "deterministic": null,
+      "entry_point": null,
+      "explanation": false,
+      "finding": "No production-capable declarer-play module exists in the repository.",
+      "input_type": null,
+      "knowledge_source": false,
+      "module_path": null,
+      "output_type": null,
+      "probability_evidence": false,
+      "returns_card": false
+    }
+  ],
+  "errors": 0,
+  "fixture_results": [
+    {
+      "abstention_code": null,
+      "action": "2S",
+      "action_kind": "bid",
+      "evidence_count": 1,
+      "name": "bidding-success",
+      "probability_evidence_count": 0,
+      "stage": "auction",
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": "rule-abstained",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 14,
+      "name": "routed-source-abstention",
+      "probability_evidence_count": 0,
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": "no-route",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "no-route",
+      "probability_evidence_count": 0,
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": "policy-required",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 1,
+      "name": "missing-policy",
+      "probability_evidence_count": 0,
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": null,
+      "action": "2NT",
+      "action_kind": "bid",
+      "evidence_count": 1,
+      "name": "strong-2c-phase12n",
+      "probability_evidence_count": 0,
+      "stage": "auction",
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": "missing-state",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "declarer-play-gap",
+      "probability_evidence_count": 0,
+      "stage": "declarer-play",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "unsupported-stage",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "defensive-play-gap",
+      "probability_evidence_count": 0,
+      "stage": "defensive-play",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "unsupported-stage",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "incomplete-state",
+      "probability_evidence_count": 0,
+      "stage": "deal-summary",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "missing-state",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "declarer-missing-state",
+      "probability_evidence_count": 0,
+      "stage": "declarer-play",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "missing-state",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "declarer-repeat",
+      "probability_evidence_count": 0,
+      "stage": "declarer-play",
+      "status": "no-decision"
+    }
+  ],
+  "no_decisions": 5,
+  "ordinary_benchmark": {
+    "abstained": 9239,
+    "completed": 761,
+    "production_calls": 7871,
+    "seeds": 10000
+  },
+  "phase12_guards": {
+    "jacoby": {
+      "hearts": 62,
+      "spades": 61
+    },
+    "phase12g": {
+      "4H": 17,
+      "4S": 21
+    },
+    "phase12h": 197,
+    "phase12l": {
+      "abstained": 7,
+      "completed": 5
+    },
+    "phase12n": 24,
+    "phase12o": 23,
+    "phase12q": 1194,
+    "phase12r": 166,
+    "phase12s": 540,
+    "phase12t": 33,
+    "routes": 45
+  },
+  "phase13c_direction": "D. DECLARER STATE ARCHITECTURE",
+  "probability_inventory": {
+    "distribution_probabilities": "NOT USED BY CURRENT DECLARER ENGINE",
+    "monte_carlo": "NOT USED BY CURRENT DECLARER ENGINE",
+    "restricted_choice": "NOT USED BY CURRENT DECLARER ENGINE",
+    "trump_breaks": "NOT USED BY CURRENT DECLARER ENGINE",
+    "vacant_places": "NOT USED BY CURRENT DECLARER ENGINE"
+  },
+  "recommendations": 2,
+  "stage_counts": {
+    "auction": 5,
+    "deal-summary": 1,
+    "declarer-play": 3,
+    "defensive-play": 1
+  }
+}
