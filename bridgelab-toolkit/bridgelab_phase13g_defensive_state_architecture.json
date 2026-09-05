@@ -1,0 +1,246 @@
+{
+  "architecture": {
+    "abstentions": 3,
+    "action_counts": {
+      "bid": 2,
+      "card-play": 2,
+      "none": 40
+    },
+    "auction_positions": 5,
+    "bidding_recommendations": 2,
+    "declarer_positions": 23,
+    "declarer_recommendations": 2,
+    "defensive_positions": 15,
+    "defensive_recommendations": 0,
+    "errors": 0,
+    "invalid_or_incomplete_defensive_states": 6,
+    "no_decisions": 37,
+    "total_positions_or_requests": 56,
+    "valid_defensive_states": 9
+  },
+  "defensive_fixtures": 14,
+  "deterministic_repeats": 1,
+  "fixture_results": [
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "follow-suit",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "void-led-suit",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "second-hand",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "third-hand",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "fourth-hand",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "dummy-visible",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "later-trick",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "incomplete",
+      "failure_code": "missing-defender-hand",
+      "legal_action_count": 0,
+      "name": "missing-defender-hand",
+      "state_ready": false,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "incomplete",
+      "failure_code": "missing-dummy-hand",
+      "legal_action_count": 0,
+      "name": "missing-dummy",
+      "state_ready": false,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "invalid",
+      "failure_code": "actor-is-declarer",
+      "legal_action_count": 0,
+      "name": "actor-declarer",
+      "state_ready": false,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "invalid",
+      "failure_code": "actor-is-dummy",
+      "legal_action_count": 0,
+      "name": "actor-dummy",
+      "state_ready": false,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "invalid",
+      "failure_code": "invalid-card-state",
+      "legal_action_count": 0,
+      "name": "duplicate-card",
+      "state_ready": false,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "valid-no-engine",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "classification": "valid",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "deterministic-repeat",
+      "state_ready": true,
+      "top_level_status": "no-decision"
+    }
+  ],
+  "follow_suit_cases": 1,
+  "guards": {
+    "illegal_recommendations": 0,
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G": {
+        "4H": 17,
+        "4S": 21
+      },
+      "H": 197,
+      "L": {
+        "abstained": 7,
+        "completed": 5
+      },
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby": {
+        "hearts": 62,
+        "spades": 61
+      }
+    },
+    "probability_engines": 1,
+    "probability_formulas_added": 0,
+    "routes": 45,
+    "simple_unblock_hits": 2
+  },
+  "incomplete_states": 2,
+  "invalid_states": 3,
+  "inventory": [
+    {
+      "module": "bridge.models",
+      "reuse": "direct",
+      "types": "Card/Suit/Rank/Seat/Vulnerability"
+    },
+    {
+      "module": "bridge.auction",
+      "reuse": "direct",
+      "types": "Bid/Strain/Doubling/Contract"
+    },
+    {
+      "module": "bridge.declarer_play_state",
+      "reuse": "shared helper",
+      "types": "PlayedCard/Trick/legal_cards"
+    },
+    {
+      "module": "bridge.probability_engine",
+      "reuse": "defender-known bridge",
+      "types": "ProbabilityContext"
+    }
+  ],
+  "legal_action_counts": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2
+  ],
+  "phase13h_direction": "B. OPENING-LEAD STATE ARCHITECTURE",
+  "probability_readiness": {
+    "KNOWN_CARD_COUNT": "READY",
+    "MONTE_CARLO": "PARTIALLY_READY",
+    "RESTRICTED_CHOICE": "ARCHITECTURE_READY",
+    "SUIT_DISTRIBUTION": "ARCHITECTURE_READY",
+    "TRUMP_BREAKS": "ARCHITECTURE_READY",
+    "VACANT_PLACES": "ARCHITECTURE_READY"
+  },
+  "recommendations": 0,
+  "signaling_policy_audit": {
+    "attitude": "POLICY_REQUIRED",
+    "count": "POLICY_REQUIRED",
+    "opening_lead_agreements": "POLICY_REQUIRED",
+    "production_defaults": "NONE",
+    "standard_signals": "POLICY_REQUIRED",
+    "suit_preference": "POLICY_REQUIRED",
+    "upside_down_signals": "POLICY_REQUIRED"
+  },
+  "valid_states": 9,
+  "void_cases": 1
+}

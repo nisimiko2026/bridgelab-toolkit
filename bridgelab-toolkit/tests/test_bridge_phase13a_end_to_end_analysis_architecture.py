@@ -27,7 +27,7 @@ def result(name):
 def test_stage_detection_and_unsupported_state_are_stable():
     assert result("bidding-success")["stage"] == "auction"
     assert result("declarer-play-gap")["status"] == "no-decision"
-    assert result("defensive-play-gap")["abstention_code"] == "unsupported-stage"
+    assert result("defensive-play-gap")["abstention_code"] == "missing-state"
     assert result("incomplete-state")["stage"] == "deal-summary"
 
 

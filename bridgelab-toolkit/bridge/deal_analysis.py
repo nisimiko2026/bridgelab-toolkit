@@ -11,6 +11,7 @@ from .bidding_rules import BiddingContext, KnowledgeSource
 from .engine_router import BiddingEngineRouter
 from .declarer_play_state import DeclarerPlayInput, DeclarerPlayState, build_declarer_play_state
 from .declarer_recommendation import DeclarerRecommendation, evaluate_declarer_play
+from .defensive_play_state import DefensivePlayInput, build_defensive_play_state
 from .models import Card, Seat
 from .probability_evidence import ProbabilityEvidence
 
@@ -99,6 +100,7 @@ class DealAnalysisContext:
     stage: AnalysisStage | None = None
     bidding: BiddingContext | None = None
     declarer_play: DeclarerPlayInput | None = None
+    defensive_play: DefensivePlayInput | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -203,6 +205,23 @@ def analyze_deal_decision(
             (declarer, *other),
             code,
             debug_metadata=debug,
+        )
+    if stage is AnalysisStage.DEFENSIVE_PLAY:
+        built = build_defensive_play_state(context.defensive_play)
+        code = AbstentionCode.ENGINE_UNAVAILABLE if built.is_ready else AbstentionCode.MISSING_STATE
+        explanation = (
+            "Defensive state is ready, but no production defensive recommendation engine is available."
+            if built.is_ready else built.explanation
+        )
+        defense = SubsystemResult(
+            Subsystem.DEFENSE, True, AnalysisStatus.NO_DECISION, AnalysisAction(ActionKind.NONE),
+            explanation, abstention_code=code,
+        )
+        other = tuple(_inactive(system, stage) for system in (Subsystem.DECLARER_PLAY, Subsystem.PROBABILITY, Subsystem.SOURCE))
+        return DealAnalysisResult(
+            stage, None if built.state is None else built.state.current_actor,
+            AnalysisStatus.NO_DECISION, defense.action, explanation, (), (defense, *other), code,
+            debug_metadata=(("defensive-state", "ready" if built.is_ready else built.failure_code.value),),
         )
     if stage is not AnalysisStage.AUCTION or context.bidding is None:
         return DealAnalysisResult(

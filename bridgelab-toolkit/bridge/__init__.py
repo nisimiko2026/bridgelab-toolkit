@@ -228,6 +228,11 @@ from .probability_questions import (
     KnownCardCountQuestion, MonteCarloQuestion, ProbabilityQuestion, RestrictedChoiceQuestion,
     SuitDistributionQuestion, TrumpBreakQuestion, VacantPlacesQuestion,
 )
+from .defensive_play_state import (
+    DefensivePlayInput, DefensivePlayState, DefensiveStateBuildResult,
+    DefensiveStateFailureCode, build_defensive_play_state,
+    build_defensive_probability_context,
+)
 
 
 from .jacoby_continuation_strength_policy import (
@@ -292,4 +297,7 @@ __all__ += [
     "evaluate_probability", "MonteCarloQuestion", "ProbabilityQuestion",
     "RestrictedChoiceQuestion", "SuitDistributionQuestion", "TrumpBreakQuestion",
     "VacantPlacesQuestion",
+    "DefensivePlayInput", "DefensivePlayState", "DefensiveStateBuildResult",
+    "DefensiveStateFailureCode", "build_defensive_play_state",
+    "build_defensive_probability_context",
 ]

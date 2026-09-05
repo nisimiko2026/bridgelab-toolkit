@@ -87,7 +87,7 @@ def test_routes_remain_45_and_no_route_was_added():
 
 def test_defensive_play_remains_explicitly_unintegrated():
     assert row("defensive-play-gap")["status"] == "no-decision"
-    assert row("defensive-play-gap")["abstention_code"] == "unsupported-stage"
+    assert row("defensive-play-gap")["abstention_code"] == "missing-state"
 
 
 def test_extended_architecture_counts_are_exact():
