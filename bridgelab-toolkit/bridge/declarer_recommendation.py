@@ -9,6 +9,7 @@ from .auction import Strain
 from .bidding_rules import KnowledgeSource
 from .declarer_play_state import DeclarerHandRole, DeclarerPlayState
 from .models import Card, Rank, Suit
+from .probability_evidence import ProbabilityEvidence
 
 
 UNBLOCK_SOURCE = KnowledgeSource(
@@ -41,6 +42,7 @@ class DeclarerRecommendation:
     sources: tuple[KnowledgeSource, ...] = ()
     reason: DeclarerRecommendationReason | None = None
     trace: tuple[tuple[str, str], ...] = ()
+    probability_evidence: tuple[ProbabilityEvidence, ...] = ()
 
     @property
     def has_recommendation(self) -> bool:

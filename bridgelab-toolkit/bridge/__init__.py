@@ -213,6 +213,11 @@ from .declarer_recommendation import (
     DeclarerRecommendationStatus, DeclarerTechnique, UNBLOCK_SOURCE,
     evaluate_declarer_play,
 )
+from .probability_evidence import (
+    KnownCardCountQuestion, ProbabilityEvidence, ProbabilityEvidenceFailureCode,
+    ProbabilityEvidenceResult, ProbabilityEvidenceStatus, ProbabilityEvidenceType,
+    collect_declarer_probability_evidence,
+)
 
 
 from .jacoby_continuation_strength_policy import (
@@ -268,4 +273,7 @@ __all__ += [
     "DeclarerRecommendation", "DeclarerRecommendationReason",
     "DeclarerRecommendationStatus", "DeclarerTechnique", "UNBLOCK_SOURCE",
     "evaluate_declarer_play",
+    "KnownCardCountQuestion", "ProbabilityEvidence", "ProbabilityEvidenceFailureCode",
+    "ProbabilityEvidenceResult", "ProbabilityEvidenceStatus", "ProbabilityEvidenceType",
+    "collect_declarer_probability_evidence",
 ]

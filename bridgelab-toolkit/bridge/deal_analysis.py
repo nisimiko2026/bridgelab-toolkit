@@ -4,13 +4,15 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
+from typing import Callable
 
 from .auction import Call
 from .bidding_rules import BiddingContext, KnowledgeSource
 from .engine_router import BiddingEngineRouter
-from .declarer_play_state import DeclarerPlayInput, build_declarer_play_state
-from .declarer_recommendation import evaluate_declarer_play
+from .declarer_play_state import DeclarerPlayInput, DeclarerPlayState, build_declarer_play_state
+from .declarer_recommendation import DeclarerRecommendation, evaluate_declarer_play
 from .models import Card, Seat
+from .probability_evidence import ProbabilityEvidence
 
 
 class AnalysisStage(str, Enum):
@@ -109,7 +111,7 @@ class DealAnalysisResult:
     evidence: tuple[AnalysisEvidence, ...]
     subsystem_results: tuple[SubsystemResult, ...]
     abstention_code: AbstentionCode | None = None
-    probability_evidence: tuple[AnalysisEvidence, ...] = ()
+    probability_evidence: tuple[ProbabilityEvidence, ...] = ()
     debug_metadata: tuple[tuple[str, str], ...] = ()
 
 
@@ -136,6 +138,7 @@ def analyze_deal_decision(
     context: DealAnalysisContext,
     *,
     bidding_router: BiddingEngineRouter | None = None,
+    declarer_evaluator: Callable[[DeclarerPlayState], DeclarerRecommendation] | None = None,
 ) -> DealAnalysisResult:
     """Dispatch only to existing production systems and normalize their result."""
     stage = detect_analysis_stage(context)
@@ -147,7 +150,8 @@ def analyze_deal_decision(
         built = build_declarer_play_state(context.declarer_play)
         if built.is_ready:
             assert built.state is not None
-            recommendation = evaluate_declarer_play(built.state)
+            evaluator = evaluate_declarer_play if declarer_evaluator is None else declarer_evaluator
+            recommendation = evaluator(built.state)
             if recommendation.has_recommendation:
                 assert recommendation.card is not None and recommendation.technique is not None
                 evidence = tuple(
@@ -163,6 +167,7 @@ def analyze_deal_decision(
                 return DealAnalysisResult(
                     stage, built.state.current_actor, AnalysisStatus.RECOMMENDATION,
                     declarer.action, recommendation.explanation, evidence, (declarer, *other),
+                    probability_evidence=recommendation.probability_evidence,
                     debug_metadata=recommendation.trace,
                 )
             code = (

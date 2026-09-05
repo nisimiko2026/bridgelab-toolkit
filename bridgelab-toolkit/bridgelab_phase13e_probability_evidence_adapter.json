@@ -1,0 +1,179 @@
+{
+  "architecture": {
+    "bidding_recommendations": 2,
+    "declarer_recommendations": 2,
+    "errors": 0,
+    "no_decisions": 23,
+    "probability_evidence_items": 2,
+    "total_positions_or_requests": 35,
+    "unavailable_evidence_requests": 3
+  },
+  "counts_by_evidence_type": {
+    "known-card-count": 2,
+    "unavailable": 3
+  },
+  "deterministic_exact_calculations": 2,
+  "deterministic_simulations": 0,
+  "errors": 0,
+  "evidence_requests": 5,
+  "guards": {
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G": {
+        "4H": 17,
+        "4S": 21
+      },
+      "H": 197,
+      "L": {
+        "abstained": 7,
+        "completed": 5
+      },
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby": {
+        "hearts": 62,
+        "spades": 61
+      }
+    },
+    "phase13d": {
+      "illegal_recommendations": 0,
+      "positive_recommendations": 2,
+      "recommended_rank": "KING",
+      "technique": "SIMPLE_UNBLOCK_KING"
+    },
+    "routes": 45
+  },
+  "module_inventory": [
+    {
+      "adapter": "READY",
+      "calculation": "exact deterministic",
+      "entry_point": "visible_cards/played_cards/unknown_card_count",
+      "module": "bridge.declarer_play_state",
+      "production_used": true
+    },
+    {
+      "adapter": "NOT_READY",
+      "entry_point": null,
+      "family": "restricted choice",
+      "gap": "no production calculation",
+      "module": null
+    },
+    {
+      "adapter": "NOT_READY",
+      "entry_point": null,
+      "family": "vacant places",
+      "gap": "no production calculation",
+      "module": null
+    },
+    {
+      "adapter": "NOT_READY",
+      "entry_point": null,
+      "family": "suit distributions",
+      "gap": "no production calculation",
+      "module": null
+    },
+    {
+      "adapter": "NOT_READY",
+      "entry_point": null,
+      "family": "trump breaks",
+      "gap": "no production calculation",
+      "module": null
+    },
+    {
+      "adapter": "NOT_READY",
+      "entry_point": "seeded deal/bidding simulation",
+      "family": "Monte Carlo declarer evidence",
+      "gap": "simulates deals/auctions, not declarer-line outcomes",
+      "module": "bridge.deals/bridge.batch_simulation"
+    }
+  ],
+  "phase13f_direction": "E. PROBABILITY ENGINE ARCHITECTURE",
+  "readiness": {
+    "known_card_count": {
+      "blocker": "none",
+      "status": "READY"
+    },
+    "monte_carlo": {
+      "blocker": "no declarer-play sampler or line-success evaluator",
+      "status": "NOT_READY"
+    },
+    "restricted_choice": {
+      "blocker": "no production posterior calculator or typed event inputs",
+      "status": "NOT_READY"
+    },
+    "suit_distribution": {
+      "blocker": "no production distribution calculator",
+      "status": "NOT_READY"
+    },
+    "trump_breaks": {
+      "blocker": "no production trump-break calculator",
+      "status": "NOT_READY"
+    },
+    "vacant_places": {
+      "blocker": "no production seat-weight calculator or defender constraints",
+      "status": "NOT_READY"
+    }
+  },
+  "representative_results": [
+    {
+      "deterministic": true,
+      "evidence_type": "known-card-count",
+      "failure_code": null,
+      "name": "known-count",
+      "probability": null,
+      "result": "44",
+      "simulated": false,
+      "status": "available"
+    },
+    {
+      "deterministic": true,
+      "evidence_type": "known-card-count",
+      "failure_code": null,
+      "name": "custom-subject",
+      "probability": null,
+      "result": "44",
+      "simulated": false,
+      "status": "available"
+    },
+    {
+      "deterministic": null,
+      "evidence_type": null,
+      "failure_code": "missing-question",
+      "name": "missing-question",
+      "probability": null,
+      "result": null,
+      "simulated": null,
+      "status": "unavailable"
+    },
+    {
+      "deterministic": null,
+      "evidence_type": null,
+      "failure_code": "insufficient-known-cards",
+      "name": "missing-state",
+      "probability": null,
+      "result": null,
+      "simulated": null,
+      "status": "unavailable"
+    },
+    {
+      "deterministic": null,
+      "evidence_type": null,
+      "failure_code": "insufficient-known-cards",
+      "name": "repeat-missing-state",
+      "probability": null,
+      "result": null,
+      "simulated": null,
+      "status": "unavailable"
+    }
+  ],
+  "successful_results": 2,
+  "unavailable_results": 3
+}
