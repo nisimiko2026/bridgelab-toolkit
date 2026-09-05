@@ -1,0 +1,425 @@
+{
+  "benchmark": {
+    "abstentions": 2,
+    "bidding_recommendations": 3,
+    "blocker_counts": {
+      "engine_blocked": 5,
+      "missing_state": 3,
+      "policy_blocked": 1,
+      "source_blocked": 2
+    },
+    "deal_summary_recommendations": 0,
+    "declarer_recommendations": 1,
+    "defensive_recommendations": 0,
+    "engine_available_counts": {
+      "auction": 3,
+      "deal_summary": 0,
+      "declarer": 1,
+      "defensive": 0,
+      "opening_lead": 0,
+      "probability": 1
+    },
+    "errors": 0,
+    "evidence_results": 1,
+    "fixture_counts": {
+      "bidding": 5,
+      "deal_summary": 1,
+      "declarer": 3,
+      "defensive": 2,
+      "opening_lead": 3,
+      "probability": 2
+    },
+    "no_decisions": 9,
+    "opening_lead_recommendations": 0,
+    "recommendation_rate": 0.25,
+    "recommendations_total": 4,
+    "source_executable_counts": {
+      "auction": 3,
+      "deal_summary": 0,
+      "declarer": 1,
+      "defensive": 0,
+      "opening_lead": 0,
+      "probability": 1
+    },
+    "state_valid_counts": {
+      "auction": 4,
+      "deal_summary": 0,
+      "declarer": 2,
+      "defensive": 1,
+      "opening_lead": 2,
+      "probability": 2
+    },
+    "total_deterministic_closure_fixtures": 16
+  },
+  "failure_taxonomy": {
+    "AMBIGUITY": 0,
+    "ENGINE_NOT_REGISTERED": 1,
+    "ENGINE_UNAVAILABLE": 4,
+    "INSUFFICIENT_SOURCE": 0,
+    "INVALID_STATE": 0,
+    "MISSING_POLICY": 0,
+    "MISSING_STATE": 3,
+    "NO_ROUTE": 1,
+    "RULE_ABSTENTION": 1,
+    "UNSUPPORTED_STAGE": 1
+  },
+  "fixtures": [
+    {
+      "name": "ordinary-bidding",
+      "outcome": "RECOMMENDATION",
+      "reason": "RULE_MATCH",
+      "recommendation": true,
+      "stage": "AUCTION"
+    },
+    {
+      "name": "strong-2c-balanced",
+      "outcome": "RECOMMENDATION",
+      "reason": "RULE_MATCH",
+      "recommendation": true,
+      "stage": "AUCTION"
+    },
+    {
+      "name": "bidding-routed-abstention",
+      "outcome": "ABSTENTION",
+      "reason": "RULE_ABSTENTION",
+      "recommendation": false,
+      "stage": "AUCTION"
+    },
+    {
+      "name": "bidding-route-missing",
+      "outcome": "ABSTENTION",
+      "reason": "NO_ROUTE",
+      "recommendation": false,
+      "stage": "AUCTION"
+    },
+    {
+      "name": "simple-unblock-king",
+      "outcome": "RECOMMENDATION",
+      "reason": "SIMPLE_UNBLOCK_KING",
+      "recommendation": true,
+      "stage": "DECLARER_PLAY"
+    },
+    {
+      "name": "declarer-no-technique",
+      "outcome": "NO_DECISION",
+      "reason": "ENGINE_UNAVAILABLE",
+      "recommendation": false,
+      "stage": "DECLARER_PLAY"
+    },
+    {
+      "name": "declarer-incomplete",
+      "outcome": "NO_DECISION",
+      "reason": "MISSING_STATE",
+      "recommendation": false,
+      "stage": "DECLARER_PLAY"
+    },
+    {
+      "name": "opening-lead-no-engine",
+      "outcome": "NO_DECISION",
+      "reason": "ENGINE_UNAVAILABLE",
+      "recommendation": false,
+      "stage": "OPENING_LEAD"
+    },
+    {
+      "name": "opening-lead-policy-no-engine",
+      "outcome": "NO_DECISION",
+      "reason": "ENGINE_UNAVAILABLE",
+      "recommendation": false,
+      "stage": "OPENING_LEAD"
+    },
+    {
+      "name": "opening-lead-incomplete",
+      "outcome": "NO_DECISION",
+      "reason": "MISSING_STATE",
+      "recommendation": false,
+      "stage": "OPENING_LEAD"
+    },
+    {
+      "name": "defensive-no-engine",
+      "outcome": "NO_DECISION",
+      "reason": "ENGINE_UNAVAILABLE",
+      "recommendation": false,
+      "stage": "DEFENSIVE_PLAY"
+    },
+    {
+      "name": "defensive-incomplete",
+      "outcome": "NO_DECISION",
+      "reason": "MISSING_STATE",
+      "recommendation": false,
+      "stage": "DEFENSIVE_PLAY"
+    },
+    {
+      "name": "known-card-count",
+      "outcome": "EVIDENCE",
+      "reason": "READY",
+      "recommendation": false,
+      "stage": "PROBABILITY_EVIDENCE"
+    },
+    {
+      "name": "unregistered-probability",
+      "outcome": "NO_DECISION",
+      "reason": "ENGINE_NOT_REGISTERED",
+      "recommendation": false,
+      "stage": "PROBABILITY_EVIDENCE"
+    },
+    {
+      "name": "deal-summary",
+      "outcome": "NO_DECISION",
+      "reason": "UNSUPPORTED_STAGE",
+      "recommendation": false,
+      "stage": "DEAL_SUMMARY"
+    },
+    {
+      "name": "deterministic-repeat",
+      "outcome": "RECOMMENDATION",
+      "reason": "RULE_MATCH",
+      "recommendation": true,
+      "stage": "AUCTION"
+    }
+  ],
+  "guards": {
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G_4H": 17,
+      "G_4S": 21,
+      "H": 197,
+      "L_abstained": 7,
+      "L_completed": 5,
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby_hearts": 62,
+      "jacoby_spades": 61
+    },
+    "phase13": {
+      "defensive_recommendations": 0,
+      "illegal_declarer_recommendations": 0,
+      "lead_executable_13j": 0,
+      "lead_executable_13k_after": 0,
+      "lead_executable_13k_before": 0,
+      "opening_known_cards": 13,
+      "opening_lead_recommendations": 0,
+      "opening_unknown_cards": 39,
+      "policy_explicit": 8,
+      "policy_unresolved": 2,
+      "probability_engines": 1,
+      "simple_unblock_king": 2
+    },
+    "routes": 45
+  },
+  "phase13_complete": true,
+  "phase14_direction": "E. DEAL-SUMMARY / EXPLANATION ENGINE",
+  "phase_inventory": [
+    {
+      "component": "unified deal-analysis architecture",
+      "phase": "13A",
+      "status": "ARCHITECTURE_READY"
+    },
+    {
+      "component": "declarer-play adapter",
+      "phase": "13B",
+      "status": "PRODUCTION_EXECUTABLE"
+    },
+    {
+      "component": "DeclarerPlayState",
+      "phase": "13C",
+      "status": "ARCHITECTURE_READY"
+    },
+    {
+      "component": "SIMPLE_UNBLOCK_KING",
+      "phase": "13D",
+      "status": "PRODUCTION_EXECUTABLE"
+    },
+    {
+      "component": "probability-evidence adapter",
+      "phase": "13E",
+      "status": "PARTIALLY_EXECUTABLE"
+    },
+    {
+      "component": "probability-engine architecture",
+      "phase": "13F",
+      "status": "PARTIALLY_EXECUTABLE"
+    },
+    {
+      "component": "DefensivePlayState",
+      "phase": "13G",
+      "status": "ARCHITECTURE_READY"
+    },
+    {
+      "component": "OpeningLeadState",
+      "phase": "13H",
+      "status": "ARCHITECTURE_READY"
+    },
+    {
+      "component": "OpeningLeadPolicy",
+      "phase": "13I",
+      "status": "ARCHITECTURE_READY"
+    },
+    {
+      "component": "opening-lead source audit",
+      "phase": "13J",
+      "status": "SOURCE_BLOCKED"
+    },
+    {
+      "component": "fourth-best source enrichment",
+      "phase": "13K",
+      "status": "POLICY_BLOCKED"
+    }
+  ],
+  "policy_coverage": {
+    "inherited_bidding_policy_families": 10,
+    "missing_policy_implies_standard": false,
+    "opening_lead_default": null,
+    "opening_lead_policy_axes": 3,
+    "phase13_default_policies_added": 0
+  },
+  "probability_matrix": [
+    {
+      "architecture": true,
+      "mode": "exact",
+      "production_usable": true,
+      "question": "KNOWN_CARD_COUNT",
+      "registered": true,
+      "source_readiness": "READY"
+    },
+    {
+      "architecture": true,
+      "mode": "exact",
+      "production_usable": false,
+      "question": "RESTRICTED_CHOICE",
+      "registered": false,
+      "source_readiness": "ARCHITECTURE_READY"
+    },
+    {
+      "architecture": true,
+      "mode": "exact",
+      "production_usable": false,
+      "question": "VACANT_PLACES",
+      "registered": false,
+      "source_readiness": "ARCHITECTURE_READY"
+    },
+    {
+      "architecture": true,
+      "mode": "exact",
+      "production_usable": false,
+      "question": "SUIT_DISTRIBUTION",
+      "registered": false,
+      "source_readiness": "ARCHITECTURE_READY"
+    },
+    {
+      "architecture": true,
+      "mode": "exact",
+      "production_usable": false,
+      "question": "TRUMP_BREAKS",
+      "registered": false,
+      "source_readiness": "ARCHITECTURE_READY"
+    },
+    {
+      "architecture": true,
+      "mode": "simulated",
+      "production_usable": false,
+      "question": "MONTE_CARLO",
+      "registered": false,
+      "source_readiness": "PARTIALLY_READY"
+    }
+  ],
+  "source_coverage": {
+    "declarer_techniques": 1,
+    "defensive_techniques": 0,
+    "opening_lead_techniques": 0,
+    "registered_probability_calculations": 1
+  },
+  "stage_readiness": [
+    {
+      "deterministic_fixtures": 4,
+      "no_decision_behavior": "NO_ROUTE or RULE_ABSTENTION",
+      "policy_readiness": "EXPLICIT",
+      "primary_blocker": "none for covered routes",
+      "probability_readiness": "NOT_REQUIRED",
+      "production_adapter": true,
+      "production_engines": 45,
+      "readiness": "PRODUCTION_EXECUTABLE",
+      "recommendations": 3,
+      "source_readiness": "READY",
+      "stage": "AUCTION",
+      "state_architecture": "READY"
+    },
+    {
+      "deterministic_fixtures": 3,
+      "no_decision_behavior": "ENGINE_UNAVAILABLE or MISSING_STATE",
+      "policy_readiness": "ARCHITECTURE_READY_DEFAULT_NONE",
+      "primary_blocker": "suit selection, scope, exceptions, precedence",
+      "probability_readiness": "ARCHITECTURE_READY",
+      "production_adapter": true,
+      "production_engines": 0,
+      "readiness": "ENGINE_BLOCKED",
+      "recommendations": 0,
+      "source_readiness": "SOURCE_BLOCKED",
+      "stage": "OPENING_LEAD",
+      "state_architecture": "READY"
+    },
+    {
+      "deterministic_fixtures": 3,
+      "no_decision_behavior": "ENGINE_UNAVAILABLE or MISSING_STATE",
+      "policy_readiness": "NOT_REQUIRED",
+      "primary_blocker": "additional source-executable techniques",
+      "probability_readiness": "PARTIALLY_EXECUTABLE",
+      "production_adapter": true,
+      "production_engines": 1,
+      "readiness": "PARTIALLY_EXECUTABLE",
+      "recommendations": 1,
+      "source_readiness": "ONE_SOURCE_EXECUTABLE",
+      "stage": "DECLARER_PLAY",
+      "state_architecture": "READY"
+    },
+    {
+      "deterministic_fixtures": 2,
+      "no_decision_behavior": "ENGINE_UNAVAILABLE or MISSING_STATE",
+      "policy_readiness": "NOT_AUDITED",
+      "primary_blocker": "source-readiness audit and first engine",
+      "probability_readiness": "ARCHITECTURE_READY",
+      "production_adapter": true,
+      "production_engines": 0,
+      "readiness": "ENGINE_BLOCKED",
+      "recommendations": 0,
+      "source_readiness": "SOURCE_READINESS_NOT_AUDITED",
+      "stage": "DEFENSIVE_PLAY",
+      "state_architecture": "READY"
+    },
+    {
+      "deterministic_fixtures": 1,
+      "no_decision_behavior": "UNSUPPORTED_STAGE",
+      "policy_readiness": "NOT_REQUIRED",
+      "primary_blocker": "typed aggregation and production narrative",
+      "probability_readiness": "NOT_CONNECTED",
+      "production_adapter": false,
+      "production_engines": 0,
+      "readiness": "NOT_IMPLEMENTED",
+      "recommendations": 0,
+      "source_readiness": "NOT_AUDITED",
+      "stage": "DEAL_SUMMARY",
+      "state_architecture": "NOT_IMPLEMENTED"
+    },
+    {
+      "deterministic_fixtures": 2,
+      "no_decision_behavior": "ENGINE_NOT_REGISTERED",
+      "policy_readiness": "NOT_REQUIRED",
+      "primary_blocker": "five unregistered calculation families",
+      "probability_readiness": "ONE_ENGINE_REGISTERED",
+      "production_adapter": true,
+      "production_engines": 1,
+      "readiness": "PARTIALLY_EXECUTABLE",
+      "recommendations": 0,
+      "source_readiness": "ONE_SOURCE_EXECUTABLE",
+      "stage": "PROBABILITY_EVIDENCE",
+      "state_architecture": "READY"
+    }
+  ]
+}
