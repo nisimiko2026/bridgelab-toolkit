@@ -1,0 +1,222 @@
+{
+  "application_fixtures": 22,
+  "complete": 9,
+  "cumulative": {
+    "phase16_application_requests": 22,
+    "phase16_invalid_requests": 6,
+    "phase16_production_orchestration_calls": 16,
+    "phase16_valid_requests": 16,
+    "production_recommendations": 4
+  },
+  "deterministic_repeats": 22,
+  "duplicate_orchestration_calls": 0,
+  "error": 6,
+  "fixture_results": [
+    {
+      "errors": [],
+      "name": "minimal-auction",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "auction-recommendation",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "simple-unblock-king",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "opening-unresolved",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "defense-unresolved",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "known-card-count",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "auction-probability",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "declarer-probability",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "mixed-multi-stage",
+      "rendered": true,
+      "status": "partial",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "explicit-subset",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "skipped-stage",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "missing-field",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [
+        "parse-error"
+      ],
+      "name": "malformed-seat",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    },
+    {
+      "errors": [
+        "parse-error"
+      ],
+      "name": "malformed-card",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    },
+    {
+      "errors": [
+        "parse-error"
+      ],
+      "name": "duplicate-card",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    },
+    {
+      "errors": [
+        "validation-error"
+      ],
+      "name": "malformed-stage",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    },
+    {
+      "errors": [
+        "validation-error"
+      ],
+      "name": "malformed-probability",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    },
+    {
+      "errors": [],
+      "name": "knowledge-source",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "serialization",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "repeat",
+      "rendered": true,
+      "status": "complete",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [],
+      "name": "complete-deal-boundary",
+      "rendered": true,
+      "status": "no-decision",
+      "structured": true,
+      "valid": true
+    },
+    {
+      "errors": [
+        "unsupported-input"
+      ],
+      "name": "structured-error",
+      "rendered": false,
+      "status": "error",
+      "structured": false,
+      "valid": false
+    }
+  ],
+  "hidden_information_violations": 0,
+  "invalid_requests": 6,
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "no_decision": 6,
+  "parse_failures": 3,
+  "partial": 1,
+  "phase16b_direction": "A. COMMAND-LINE FULL-DEAL INTERFACE",
+  "production_errors": 0,
+  "production_orchestration_calls": 16,
+  "provenance_preserved_responses": 22,
+  "rendered_responses": 16,
+  "structured_responses": 16,
+  "unsupported_input_failures": 1,
+  "valid_requests": 16,
+  "validation_failures": 2
+}

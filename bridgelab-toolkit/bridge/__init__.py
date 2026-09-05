@@ -260,6 +260,12 @@ from .full_deal_analysis import (
     FullDealSkippedStage, FullDealSkipReason, analyze_full_deal,
     full_deal_analysis_to_dict,
 )
+from .full_deal_application import (
+    FullDealApplicationError, FullDealApplicationErrorCode,
+    FullDealApplicationRequest, FullDealApplicationResponse,
+    FullDealApplicationValidationResult, analyze_full_deal_application,
+    application_request_to_full_deal_input,
+)
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
 
@@ -343,4 +349,8 @@ __all__ += [
     "FullDealAnalysisInput", "FullDealAnalysisResult", "FullDealProbabilityRequest",
     "FullDealSkippedStage", "FullDealSkipReason", "analyze_full_deal",
     "full_deal_analysis_to_dict",
+    "FullDealApplicationError", "FullDealApplicationErrorCode",
+    "FullDealApplicationRequest", "FullDealApplicationResponse",
+    "FullDealApplicationValidationResult", "analyze_full_deal_application",
+    "application_request_to_full_deal_input",
 ]
