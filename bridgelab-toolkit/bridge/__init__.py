@@ -198,6 +198,12 @@ from .milestone_execution import CheckpointSpec, checkpoint_plan, completed_chec
 
 from .abstention_diagnostics import AbstentionDiagnostic, AbstentionReason, DiagnosedEngineResult, RuleRejection, evaluate_with_abstention_diagnostic
 
+from .deal_analysis import (
+    AbstentionCode, ActionKind, AnalysisAction, AnalysisEvidence, AnalysisStage,
+    AnalysisStatus, DealAnalysisContext, DealAnalysisResult, Subsystem,
+    SubsystemResult, analyze_deal_decision, detect_analysis_stage,
+)
+
 
 from .jacoby_continuation_strength_policy import (
     JacobyContinuationStrengthAssessment,
@@ -241,3 +247,9 @@ from .policy_registry import (
     configured_stayman_dual_major_response_policy_id,
     resolve_stayman_dual_major_response_policy,
 )
+
+__all__ += [
+    "AbstentionCode", "ActionKind", "AnalysisAction", "AnalysisEvidence",
+    "AnalysisStage", "AnalysisStatus", "DealAnalysisContext", "DealAnalysisResult",
+    "Subsystem", "SubsystemResult", "analyze_deal_decision", "detect_analysis_stage",
+]

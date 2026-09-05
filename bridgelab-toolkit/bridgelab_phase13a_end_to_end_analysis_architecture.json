@@ -1,0 +1,130 @@
+{
+  "abstentions": 3,
+  "analyzed_positions": 8,
+  "fixture_results": [
+    {
+      "abstention_code": null,
+      "action": "2S",
+      "action_kind": "bid",
+      "evidence_count": 1,
+      "name": "bidding-success",
+      "stage": "auction",
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": "rule-abstained",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 14,
+      "name": "routed-source-abstention",
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": "no-route",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "no-route",
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": "policy-required",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 1,
+      "name": "missing-policy",
+      "stage": "auction",
+      "status": "abstain"
+    },
+    {
+      "abstention_code": null,
+      "action": "2NT",
+      "action_kind": "bid",
+      "evidence_count": 1,
+      "name": "strong-2c-phase12n",
+      "stage": "auction",
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": "unsupported-stage",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "declarer-play-gap",
+      "stage": "declarer-play",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "unsupported-stage",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "defensive-play-gap",
+      "stage": "defensive-play",
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "unsupported-stage",
+      "action": null,
+      "action_kind": "none",
+      "evidence_count": 0,
+      "name": "incomplete-state",
+      "stage": "deal-summary",
+      "status": "no-decision"
+    }
+  ],
+  "integration_inventory": {
+    "bidding": {
+      "adapter": "active",
+      "production_entry_point": "BiddingEngineRouter.evaluate"
+    },
+    "declarer_play": {
+      "adapter": "missing",
+      "production_entry_point": null
+    },
+    "defensive_play": {
+      "adapter": "missing",
+      "production_entry_point": null
+    },
+    "probability": {
+      "adapter": "missing",
+      "available_evidence": "HandEvaluation suit honor/quality evidence only",
+      "production_entry_point": null
+    }
+  },
+  "ordinary_benchmark": {
+    "abstained": 9239,
+    "completed": 761,
+    "production_calls": 7871,
+    "seeds": 10000
+  },
+  "phase12_guards": {
+    "jacoby": {
+      "hearts": 62,
+      "spades": 61
+    },
+    "phase12g": {
+      "4H": 17,
+      "4S": 21
+    },
+    "phase12n": 24,
+    "phase12o": 23,
+    "phase12q": 1194,
+    "phase12r": 166,
+    "phase12s": 540,
+    "phase12t": 33,
+    "routes": 45,
+    "stayman_residual": 197
+  },
+  "phase13b_direction": "A. DECLARER-PLAY ADAPTER / RECOMMENDATION INTEGRATION",
+  "recommendations": 2,
+  "stage_counts": {
+    "auction": 5,
+    "deal-summary": 1,
+    "declarer-play": 1,
+    "defensive-play": 1
+  },
+  "unsupported_states": 3
+}
