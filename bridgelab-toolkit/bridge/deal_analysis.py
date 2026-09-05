@@ -8,6 +8,7 @@ from enum import Enum
 from .auction import Call
 from .bidding_rules import BiddingContext, KnowledgeSource
 from .engine_router import BiddingEngineRouter
+from .declarer_play_state import DeclarerPlayInput, build_declarer_play_state
 from .models import Card, Seat
 
 
@@ -42,6 +43,7 @@ class AbstentionCode(str, Enum):
     MISSING_STATE = "missing-state"
     UNSUPPORTED_STAGE = "unsupported-stage"
     AMBIGUOUS_ACTION = "ambiguous-action"
+    ENGINE_UNAVAILABLE = "engine-unavailable"
 
 
 class Subsystem(str, Enum):
@@ -92,6 +94,7 @@ class SubsystemResult:
 class DealAnalysisContext:
     stage: AnalysisStage | None = None
     bidding: BiddingContext | None = None
+    declarer_play: DeclarerPlayInput | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -139,9 +142,11 @@ def analyze_deal_decision(
         for system in (Subsystem.DECLARER_PLAY, Subsystem.DEFENSE, Subsystem.PROBABILITY, Subsystem.SOURCE)
     )
     if stage is AnalysisStage.DECLARER_PLAY:
+        built = build_declarer_play_state(context.declarer_play)
+        code = AbstentionCode.ENGINE_UNAVAILABLE if built.is_ready else AbstentionCode.MISSING_STATE
         explanation = (
-            "Declarer play was detected, but no production declarer state model or "
-            "card-recommendation entry point is available."
+            "Declarer state is ready, but no production card-recommendation engine is available."
+            if built.is_ready else f"No production declarer state model was supplied: {built.explanation}"
         )
         declarer = SubsystemResult(
             Subsystem.DECLARER_PLAY,
@@ -149,7 +154,7 @@ def analyze_deal_decision(
             AnalysisStatus.NO_DECISION,
             AnalysisAction(ActionKind.NONE),
             explanation,
-            abstention_code=AbstentionCode.MISSING_STATE,
+            abstention_code=code,
         )
         other = tuple(
             _inactive(system, stage)
@@ -163,8 +168,8 @@ def analyze_deal_decision(
             explanation,
             (),
             (declarer, *other),
-            AbstentionCode.MISSING_STATE,
-            debug_metadata=(("adapter", "declarer-play-unavailable"),),
+            code,
+            debug_metadata=(("declarer-state", "ready" if built.is_ready else built.failure_code.value),),
         )
     if stage is not AnalysisStage.AUCTION or context.bidding is None:
         return DealAnalysisResult(

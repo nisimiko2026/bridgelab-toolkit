@@ -203,6 +203,11 @@ from .deal_analysis import (
     AnalysisStatus, DealAnalysisContext, DealAnalysisResult, Subsystem,
     SubsystemResult, analyze_deal_decision, detect_analysis_stage,
 )
+from .declarer_play_state import (
+    DeclarerHandRole, DeclarerPlayInput, DeclarerPlayState,
+    DeclarerStateBuildResult, DeclarerStateFailureCode, PlayedCard, Trick,
+    build_declarer_play_state, legal_cards,
+)
 
 
 from .jacoby_continuation_strength_policy import (
@@ -252,4 +257,7 @@ __all__ += [
     "AbstentionCode", "ActionKind", "AnalysisAction", "AnalysisEvidence",
     "AnalysisStage", "AnalysisStatus", "DealAnalysisContext", "DealAnalysisResult",
     "Subsystem", "SubsystemResult", "analyze_deal_decision", "detect_analysis_stage",
+    "DeclarerHandRole", "DeclarerPlayInput", "DeclarerPlayState",
+    "DeclarerStateBuildResult", "DeclarerStateFailureCode", "PlayedCard", "Trick",
+    "build_declarer_play_state", "legal_cards",
 ]

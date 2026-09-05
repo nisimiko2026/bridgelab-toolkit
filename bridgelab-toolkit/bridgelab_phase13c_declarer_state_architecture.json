@@ -1,0 +1,178 @@
+{
+  "abstentions": 3,
+  "action_counts": {
+    "bid": 2,
+    "none": 18
+  },
+  "auction_positions": 5,
+  "declarer_positions": 13,
+  "errors": 0,
+  "guards": {
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G": {
+        "4H": 17,
+        "4S": 21
+      },
+      "H": 197,
+      "L": {
+        "abstained": 7,
+        "completed": 5
+      },
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby": {
+        "hearts": 62,
+        "spades": 61
+      }
+    },
+    "phase13b": {
+      "abstentions": 3,
+      "errors": 0,
+      "no_decisions": 5,
+      "positions": 10,
+      "recommendations": 2
+    },
+    "routes": 45
+  },
+  "invalid_or_incomplete_declarer_states": 5,
+  "no_decisions": 15,
+  "phase13d_direction": "A. FIRST DECLARER RECOMMENDATION ENGINE",
+  "probability_readiness": {
+    "monte_carlo": {
+      "missing": "consistent hidden-hand sampler and inference constraints",
+      "status": "PARTIALLY_READY"
+    },
+    "restricted_choice": {
+      "missing": "inference/event model for equivalent honors",
+      "status": "PARTIALLY_READY"
+    },
+    "suit_distribution": {
+      "missing": "probability calculator and defender constraints",
+      "status": "PARTIALLY_READY"
+    },
+    "trump_breaks": {
+      "missing": "probability calculator",
+      "status": "PARTIALLY_READY"
+    },
+    "vacant_places": {
+      "missing": "defender known-card constraints",
+      "status": "PARTIALLY_READY"
+    }
+  },
+  "recommendations": 2,
+  "reusable_inventory": [
+    {
+      "module": "bridge.models",
+      "reuse": "YES; Hand adapted to remaining-card sets",
+      "types": "Card, Suit, Rank, Seat, Vulnerability, Hand"
+    },
+    {
+      "module": "bridge.auction",
+      "reuse": "YES",
+      "types": "Bid, Strain, Doubling, Contract, Auction"
+    },
+    {
+      "module": "bridge.deals",
+      "reuse": "INPUT SOURCE; complete hidden hands not stored",
+      "types": "Deal"
+    },
+    {
+      "module": "bridge.declarer_play_state",
+      "reuse": "NEW CANONICAL PLAY STATE",
+      "types": "PlayedCard, Trick, DeclarerPlayState"
+    }
+  ],
+  "state_fixtures": [
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "opening-lead-dummy-visible",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 3,
+      "name": "declarer-hand-to-play",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "dummy-hand-to-play",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "must-follow-suit",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 2,
+      "name": "void-in-led-suit",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "partially-completed-trick",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "later-trick-history",
+      "state_ready": true,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": "missing-dummy-hand",
+      "legal_action_count": 0,
+      "name": "missing-dummy",
+      "state_ready": false,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": "invalid-card-state",
+      "legal_action_count": 0,
+      "name": "invalid-duplicate",
+      "state_ready": false,
+      "status": "no-decision"
+    },
+    {
+      "action_kind": "none",
+      "failure_code": null,
+      "legal_action_count": 1,
+      "name": "valid-no-engine",
+      "state_ready": true,
+      "status": "no-decision"
+    }
+  ],
+  "total_positions": 20,
+  "valid_declarer_states": 8
+}
