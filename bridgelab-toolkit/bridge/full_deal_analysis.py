@@ -67,8 +67,6 @@ class FullDealAnalysisInput:
     def __post_init__(self) -> None:
         object.__setattr__(self, "requested_stages", tuple(self.requested_stages))
         object.__setattr__(self, "probability_requests", tuple(self.probability_requests))
-        if any(not isinstance(stage, AnalysisStage) for stage in self.requested_stages):
-            raise TypeError("requested stages must use canonical AnalysisStage values")
 
 
 @dataclass(frozen=True, slots=True)
@@ -112,6 +110,28 @@ _STAGE_ORDER = (
 )
 
 
+def _invalid_result(
+    request: FullDealAnalysisInput | None,
+    explanation: str,
+) -> FullDealAnalysisResult:
+    pipeline = build_and_render_deal_summary(DealSummaryInput())
+    skipped = FullDealSkippedStage(
+        "request", FullDealSkipReason.UNSUPPORTED_REQUEST, explanation
+    )
+    return FullDealAnalysisResult(
+        request,
+        (),
+        (),
+        (),
+        (skipped,),
+        (),
+        (),
+        pipeline,
+        DealSummaryPipelineStatus.ERROR,
+        (("request", "invalid"), ("summary-built", "yes"), ("rendering-built", "yes")),
+    )
+
+
 def analyze_full_deal(
     request: FullDealAnalysisInput,
     *,
@@ -122,22 +142,15 @@ def analyze_full_deal(
     """Evaluate each explicit legal-view stage once, then reuse the Phase 14 pipeline."""
 
     if not isinstance(request, FullDealAnalysisInput):
-        pipeline = build_and_render_deal_summary(DealSummaryInput())
-        skipped = FullDealSkippedStage(
-            "request", FullDealSkipReason.UNSUPPORTED_REQUEST, "Invalid full-deal request."
-        )
-        return FullDealAnalysisResult(
-            None,
-            (),
-            (),
-            (),
-            (skipped,),
-            (),
-            (),
-            pipeline,
-            DealSummaryPipelineStatus.ERROR,
-            (("request", "invalid"), ("summary-built", "yes"), ("rendering-built", "yes")),
-        )
+        return _invalid_result(None, "Invalid full-deal request.")
+    if any(not isinstance(stage, AnalysisStage) for stage in request.requested_stages):
+        return _invalid_result(request, "Requested stages must use AnalysisStage values.")
+    if any(
+        not isinstance(item, FullDealProbabilityRequest)
+        or not isinstance(item.question, ProbabilityQuestion)
+        for item in request.probability_requests
+    ):
+        return _invalid_result(request, "Invalid probability request.")
 
     requested = tuple(stage for stage in _STAGE_ORDER if stage in request.requested_stages)
     stage_inputs = {
@@ -232,3 +245,77 @@ def analyze_full_deal(
         pipeline.status,
         trace,
     )
+
+
+def full_deal_analysis_to_dict(result: FullDealAnalysisResult) -> dict[str, object]:
+    """Return a deterministic public representation without flattening provenance."""
+
+    if not isinstance(result, FullDealAnalysisResult):
+        raise TypeError("result must be FullDealAnalysisResult")
+
+    def source_value(source: object) -> str | None:
+        return None if source is None else source.serialize()  # type: ignore[attr-defined]
+
+    subsystem = tuple(
+        {
+            "stage": item.stage.value,
+            "seat": None if item.seat is None else item.seat.value,
+            "status": item.status.value,
+            "action": {
+                "kind": item.action.kind.value,
+                "bid": None if item.action.bid is None else item.action.bid.serialize(),
+                "card": None if item.action.card is None else item.action.card.serialize(),
+            },
+            "explanation": item.explanation,
+            "abstention_code": (
+                None if item.abstention_code is None else item.abstention_code.value
+            ),
+            "sources": tuple(source_value(value.source) for value in item.evidence),
+            "trace": item.debug_metadata,
+        }
+        for item in result.subsystem_results
+    )
+    probabilities = tuple(
+        {
+            "status": item.status.value,
+            "mode": None if item.mode is None else item.mode.value,
+            "formula": None if item.formula_id is None else item.formula_id.value,
+            "failure_code": None if item.failure_code is None else item.failure_code.value,
+            "explanation": item.explanation,
+            "trace": item.trace,
+            "evidence": tuple(
+                {
+                    "type": evidence.evidence_type.value,
+                    "subject": evidence.subject,
+                    "assumptions": evidence.assumptions,
+                    "known_facts": evidence.known_facts,
+                    "result": evidence.result,
+                    "probability": evidence.probability,
+                    "source": source_value(evidence.source),
+                    "trace": evidence.trace,
+                }
+                for evidence in item.evidence
+            ),
+        }
+        for item in result.probability_results
+    )
+    return {
+        "status": result.status.value,
+        "requested_stages": result.requested_stages,
+        "applicable_stages": result.applicable_stages,
+        "attempted_stages": result.attempted_stages,
+        "skipped_stages": tuple(
+            {
+                "stage": item.stage,
+                "reason": item.reason.value,
+                "explanation": item.explanation,
+            }
+            for item in result.skipped_stages
+        ),
+        "subsystem_results": subsystem,
+        "probability_results": probabilities,
+        "summary_status": result.summary.status.value,
+        "rendering_status": result.rendering.status.value,
+        "rendered_text": result.text,
+        "trace": result.trace,
+    }
