@@ -281,3 +281,49 @@ Before using fourth-best leads, discuss:
 - Fourth-best leads are primarily used against **notrump contracts**.
 - The **Rule of Eleven** helps partner interpret fourth-best leads.
 - Always combine the lead convention with the information revealed by the auction.
+
+---
+
+## Source Contract for Implementation
+
+### Rule name
+
+Fourth-best card treatment within an independently selected suit.
+
+### Scope
+
+- **Decision stage:** opening lead only. This article does not define later defensive leads.
+- **Contract type:** primarily notrump. The article says some partnerships also use the method against suit contracts, so suit-contract use requires an additional explicit partnership agreement.
+
+### Policy dependency
+
+The partnership must explicitly select the **FOURTH_BEST** length-lead method. Missing or unknown policy does not imply fourth-best.
+
+### Trigger
+
+This is a **card-within-suit** treatment, not a suit-selection rule. It applies only after another source-grounded rule or explicit input has already selected a suit, and only when that selected suit has at least four cards and does not contain a touching honor sequence whose agreed honor lead takes precedence.
+
+The four-card minimum follows directly from the meaning of “fourth-highest.” This article does not choose among multiple suits in the leader's hand.
+
+### Card choice
+
+Within the independently selected qualifying suit, lead the fourth-highest card when its cards are ordered from highest rank to lowest rank.
+
+### Exceptions and unresolved boundaries
+
+- A touching honor sequence uses the partnership's agreed honor lead instead.
+- Singleton, doubleton, and three-card holdings do not contain a fourth-highest card and therefore do not satisfy this treatment's trigger.
+- Trump leads, partner's bid suit, passive-versus-active selection, unsupported-honor choices, and selection among multiple eligible suits are outside this rule.
+- Suit-contract use is unresolved without an additional partnership agreement.
+
+### Precedence
+
+This article explicitly gives the agreed touching-honor-sequence lead precedence **within the selected suit**. It does not establish a universal priority among different candidate suits or among singleton, partner-suit, trump, passive, and aggressive leads.
+
+### Source evidence
+
+This contract restates the article's existing **Overview**, **Basic Principle**, **Honor Sequences Take Priority**, **Against Notrump Contracts**, **Against Suit Contracts**, and **Partnership Agreements** sections. It introduces no external bridge rule.
+
+### Implementation status
+
+**POLICY_PARTIAL.** Once a qualifying suit is independently selected, the card treatment is unique and requires no hidden cards or probability model. A full `OpeningLeadState`-to-card recommendation is not executable because this article does not select the suit and the current policy does not resolve contract scope.

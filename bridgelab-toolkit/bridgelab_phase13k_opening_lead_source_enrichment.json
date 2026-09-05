@@ -1,0 +1,89 @@
+{
+  "ambiguous_candidates_after": 1,
+  "architecture": {
+    "abstentions": 3,
+    "bidding_recommendations": 2,
+    "cumulative_positions_or_requests": 110,
+    "declarer_recommendations": 2,
+    "defensive_recommendations": 0,
+    "errors": 0,
+    "no_decisions": 51,
+    "opening_lead_recommendations": 0,
+    "opening_lead_states": 14,
+    "policy_requests": 10,
+    "source_enrichment_requests": 15,
+    "source_readiness_audit_requests": 15
+  },
+  "before_after": [
+    {
+      "after": "POLICY_PARTIAL",
+      "before": "POLICY_PARTIAL",
+      "candidate": "fourth-best from length"
+    },
+    {
+      "after": "POLICY_PARTIAL",
+      "before": "POLICY_PARTIAL",
+      "candidate": "third-and-fifth"
+    },
+    {
+      "after": "EXCEPTION_INCOMPLETE",
+      "before": "EXCEPTION_INCOMPLETE",
+      "candidate": "standard honor sequence"
+    },
+    {
+      "after": "POLICY_PARTIAL",
+      "before": "POLICY_PARTIAL",
+      "candidate": "Rusinow touching sequence"
+    },
+    {
+      "after": "EXCEPTION_INCOMPLETE",
+      "before": "EXCEPTION_INCOMPLETE",
+      "candidate": "top of nothing"
+    },
+    {
+      "after": "SOURCE_PARTIAL",
+      "before": "SOURCE_PARTIAL",
+      "candidate": "singleton lead"
+    },
+    {
+      "after": "SOURCE_PARTIAL",
+      "before": "SOURCE_PARTIAL",
+      "candidate": "partner's suit"
+    },
+    {
+      "after": "AMBIGUOUS_CARD_CHOICE",
+      "before": "AMBIGUOUS_CARD_CHOICE",
+      "candidate": "longest/strongest versus NT"
+    },
+    {
+      "after": "SOURCE_PARTIAL",
+      "before": "SOURCE_PARTIAL",
+      "candidate": "trump lead"
+    },
+    {
+      "after": "NOT_PRESENT",
+      "before": "NOT_PRESENT",
+      "candidate": "MUD"
+    }
+  ],
+  "candidate_rules_reaudited": 10,
+  "exception_incomplete_candidates_after": 2,
+  "executable_candidates_after": 0,
+  "executable_candidates_before": 0,
+  "phase13l_direction": "E. PHASE 13 COVERAGE / CLOSURE AUDIT",
+  "policy_executable_candidates_after": 0,
+  "recommendations_generated": 0,
+  "source_claims_added": 7,
+  "source_claims_clarified": 5,
+  "source_files_changed": [
+    "knowledge/play/defence/opening-leads/fourth-best.md"
+  ],
+  "sources_consulted": [
+    "fourth-best.md: Overview",
+    "fourth-best.md: Basic Principle",
+    "fourth-best.md: Honor Sequences Take Priority",
+    "fourth-best.md: Against Notrump Contracts",
+    "fourth-best.md: Against Suit Contracts",
+    "fourth-best.md: Partnership Agreements"
+  ]
+}
