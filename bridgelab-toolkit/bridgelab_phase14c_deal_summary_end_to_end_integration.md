@@ -36,6 +36,21 @@ The result exposes original subsystem objects, structured summary, rendered summ
 
 Underlying production recommendations remain four; summary, rendering, and integration counts are references only. Historical Phase 14A, Phase 14B, and Phase 13L metrics remain unchanged.
 
+## Historical guards
+
+- Phase 14A: 16 fixtures; AVAILABLE/PARTIAL/NO_DECISION/ERROR = 8/1/5/2; recommendation references = 8 (bidding 6, declarer 2).
+- Phase 14B: 16 fixtures; AVAILABLE/PARTIAL/NO_DECISION/ERROR = 8/2/4/2; rendered recommendation references = 11; deterministic repeats = 16/16.
+- Phase 13L: 16 fixtures; production recommendations/abstentions/no-decisions/evidence/errors = 4/2/9/1/0; recommendation rate = 25%.
+- Opening-lead/defensive algorithms = 0/0; registered probability engines = 1; no new declarer algorithm or probability formula.
+
+## Regression validation
+
+- Phase 14C focused tests: 10 passed.
+- Selected Phase 13A–14C, PolicyRegistry, and router regressions: 230 passed.
+- Selected Phase 12 cumulative guards: 71 passed.
+- Ruff over every Phase 14C Python file: clean.
+- Ordinary deterministic benchmark: production calls/completed/abstained = 7,871/761/9,239.
+
 ## Phase 14D
 
 **D. PHASE 14 COVERAGE / CLOSURE AUDIT**
