@@ -106,13 +106,13 @@ def test_missing_fields_produce_structured_failures(change, code):
     assert build_declarer_play_state(complete_input(**change)).failure_code is code
 
 
-def test_valid_state_reports_engine_unavailable_not_missing_state():
+def test_valid_state_does_not_report_missing_state():
     actual = analyze_deal_decision(
         DealAnalysisContext(AnalysisStage.DECLARER_PLAY, declarer_play=complete_input()),
         bidding_router=ROUTER,
     )
     assert actual.status is AnalysisStatus.NO_DECISION
-    assert actual.abstention_code is AbstentionCode.ENGINE_UNAVAILABLE
+    assert actual.abstention_code is not AbstentionCode.MISSING_STATE
     assert actual.action.kind is ActionKind.NONE and actual.action.card is None
 
 

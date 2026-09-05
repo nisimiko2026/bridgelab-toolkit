@@ -9,6 +9,7 @@ from .auction import Call
 from .bidding_rules import BiddingContext, KnowledgeSource
 from .engine_router import BiddingEngineRouter
 from .declarer_play_state import DeclarerPlayInput, build_declarer_play_state
+from .declarer_recommendation import evaluate_declarer_play
 from .models import Card, Seat
 
 
@@ -44,6 +45,7 @@ class AbstentionCode(str, Enum):
     UNSUPPORTED_STAGE = "unsupported-stage"
     AMBIGUOUS_ACTION = "ambiguous-action"
     ENGINE_UNAVAILABLE = "engine-unavailable"
+    TECHNIQUE_NOT_APPLICABLE = "technique-not-applicable"
 
 
 class Subsystem(str, Enum):
@@ -143,11 +145,37 @@ def analyze_deal_decision(
     )
     if stage is AnalysisStage.DECLARER_PLAY:
         built = build_declarer_play_state(context.declarer_play)
-        code = AbstentionCode.ENGINE_UNAVAILABLE if built.is_ready else AbstentionCode.MISSING_STATE
-        explanation = (
-            "Declarer state is ready, but no production card-recommendation engine is available."
-            if built.is_ready else f"No production declarer state model was supplied: {built.explanation}"
-        )
+        if built.is_ready:
+            assert built.state is not None
+            recommendation = evaluate_declarer_play(built.state)
+            if recommendation.has_recommendation:
+                assert recommendation.card is not None and recommendation.technique is not None
+                evidence = tuple(
+                    AnalysisEvidence("knowledge-source", recommendation.explanation, source)
+                    for source in recommendation.sources
+                )
+                declarer = SubsystemResult(
+                    Subsystem.DECLARER_PLAY, True, AnalysisStatus.RECOMMENDATION,
+                    AnalysisAction(ActionKind.CARD_PLAY, card=recommendation.card),
+                    recommendation.explanation, evidence,
+                )
+                other = tuple(_inactive(system, stage) for system in (Subsystem.DEFENSE, Subsystem.PROBABILITY, Subsystem.SOURCE))
+                return DealAnalysisResult(
+                    stage, built.state.current_actor, AnalysisStatus.RECOMMENDATION,
+                    declarer.action, recommendation.explanation, evidence, (declarer, *other),
+                    debug_metadata=recommendation.trace,
+                )
+            code = (
+                AbstentionCode.AMBIGUOUS_ACTION
+                if recommendation.reason is not None and recommendation.reason.value == "ambiguous-action"
+                else AbstentionCode.TECHNIQUE_NOT_APPLICABLE
+            )
+            explanation = recommendation.explanation
+            debug = recommendation.trace
+        else:
+            code = AbstentionCode.MISSING_STATE
+            explanation = f"No production declarer state model was supplied: {built.explanation}"
+            debug = (("declarer-state", built.failure_code.value),)
         declarer = SubsystemResult(
             Subsystem.DECLARER_PLAY,
             True,
@@ -169,7 +197,7 @@ def analyze_deal_decision(
             (),
             (declarer, *other),
             code,
-            debug_metadata=(("declarer-state", "ready" if built.is_ready else built.failure_code.value),),
+            debug_metadata=debug,
         )
     if stage is not AnalysisStage.AUCTION or context.bidding is None:
         return DealAnalysisResult(

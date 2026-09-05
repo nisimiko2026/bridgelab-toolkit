@@ -208,6 +208,11 @@ from .declarer_play_state import (
     DeclarerStateBuildResult, DeclarerStateFailureCode, PlayedCard, Trick,
     build_declarer_play_state, legal_cards,
 )
+from .declarer_recommendation import (
+    DeclarerRecommendation, DeclarerRecommendationReason,
+    DeclarerRecommendationStatus, DeclarerTechnique, UNBLOCK_SOURCE,
+    evaluate_declarer_play,
+)
 
 
 from .jacoby_continuation_strength_policy import (
@@ -260,4 +265,7 @@ __all__ += [
     "DeclarerHandRole", "DeclarerPlayInput", "DeclarerPlayState",
     "DeclarerStateBuildResult", "DeclarerStateFailureCode", "PlayedCard", "Trick",
     "build_declarer_play_state", "legal_cards",
+    "DeclarerRecommendation", "DeclarerRecommendationReason",
+    "DeclarerRecommendationStatus", "DeclarerTechnique", "UNBLOCK_SOURCE",
+    "evaluate_declarer_play",
 ]

@@ -1,0 +1,168 @@
+{
+  "abstentions": 0,
+  "architecture": {
+    "abstentions": 3,
+    "action_counts": {
+      "bid": 2,
+      "card-play": 2,
+      "none": 26
+    },
+    "auction_positions": 5,
+    "bidding_recommendations": 2,
+    "declarer_positions": 23,
+    "declarer_recommendations": 2,
+    "errors": 0,
+    "no_decisions": 23,
+    "recommendations": 4,
+    "total_positions": 30
+  },
+  "declarer_positions": 10,
+  "errors": 0,
+  "fixture_results": [
+    {
+      "abstention_code": null,
+      "action_kind": "card-play",
+      "card": "KC",
+      "name": "exact-positive",
+      "near_miss": false,
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": null,
+      "action_kind": "card-play",
+      "card": "KC",
+      "name": "declarer-hand-geometry",
+      "near_miss": false,
+      "status": "recommendation"
+    },
+    {
+      "abstention_code": "technique-not-applicable",
+      "action_kind": "none",
+      "card": null,
+      "name": "dummy-hand-reversed",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "technique-not-applicable",
+      "action_kind": "none",
+      "card": null,
+      "name": "one-rank-near-miss",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "technique-not-applicable",
+      "action_kind": "none",
+      "card": null,
+      "name": "missing-king",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "ambiguous-action",
+      "action_kind": "none",
+      "card": null,
+      "name": "ambiguous-two-suits",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "technique-not-applicable",
+      "action_kind": "none",
+      "card": null,
+      "name": "nonempty-trick-legality-boundary",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "technique-not-applicable",
+      "action_kind": "none",
+      "card": null,
+      "name": "unrelated-position",
+      "near_miss": true,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": "missing-state",
+      "action_kind": "none",
+      "card": null,
+      "name": "incomplete-state",
+      "near_miss": false,
+      "status": "no-decision"
+    },
+    {
+      "abstention_code": null,
+      "action_kind": "card-play",
+      "card": "KC",
+      "name": "repeat-positive",
+      "near_miss": false,
+      "status": "recommendation"
+    }
+  ],
+  "guards": {
+    "ordinary": {
+      "abstained": 9239,
+      "completed": 761,
+      "production_calls": 7871
+    },
+    "phase12": {
+      "G": {
+        "4H": 17,
+        "4S": 21
+      },
+      "H": 197,
+      "L": {
+        "abstained": 7,
+        "completed": 5
+      },
+      "N": 24,
+      "O": 23,
+      "Q": 1194,
+      "R": 166,
+      "S": 540,
+      "T": 33,
+      "jacoby": {
+        "hearts": 62,
+        "spades": 61
+      }
+    },
+    "phase13c": {
+      "abstentions": 3,
+      "declarer_recommendations": 0,
+      "errors": 0,
+      "no_decisions": 15,
+      "positions": 20,
+      "recommendations": 2
+    },
+    "routes": 45
+  },
+  "illegal_recommendations": 0,
+  "near_miss_positions": 6,
+  "no_decisions": 7,
+  "phase13e_direction": "B. PROBABILITY-EVIDENCE ADAPTER",
+  "recommendations": 3,
+  "source_inventory": [
+    {
+      "classification": "SOURCE_EXECUTABLE",
+      "source": "unblock.md#Example 1 \u2013 Simple Unblock",
+      "technique": "Simple Unblock"
+    },
+    {
+      "classification": "PROBABILITY_REQUIRED",
+      "source": "marked-finesse.md",
+      "technique": "Marked Finesse"
+    },
+    {
+      "classification": "SOURCE_PARTIAL",
+      "source": "safety-play.md",
+      "technique": "Safety Play"
+    },
+    {
+      "classification": "SOURCE_PARTIAL",
+      "source": "establishing-long-suits.md",
+      "technique": "Establishing Long Suits"
+    }
+  ],
+  "technique_hits": 3
+}
