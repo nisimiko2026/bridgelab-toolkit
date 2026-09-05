@@ -255,6 +255,10 @@ from .deal_summary_pipeline import (
     DealSummaryPipelineFailureCode, DealSummaryPipelineResult,
     DealSummaryPipelineStatus, build_and_render_deal_summary,
 )
+from .full_deal_analysis import (
+    FullDealAnalysisInput, FullDealAnalysisResult, FullDealProbabilityRequest,
+    FullDealSkippedStage, FullDealSkipReason, analyze_full_deal,
+)
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
 
@@ -335,4 +339,6 @@ __all__ += [
     "DealSummaryRenderingStatus", "render_deal_summary",
     "DealSummaryPipelineFailureCode", "DealSummaryPipelineResult",
     "DealSummaryPipelineStatus", "build_and_render_deal_summary",
+    "FullDealAnalysisInput", "FullDealAnalysisResult", "FullDealProbabilityRequest",
+    "FullDealSkippedStage", "FullDealSkipReason", "analyze_full_deal",
 ]

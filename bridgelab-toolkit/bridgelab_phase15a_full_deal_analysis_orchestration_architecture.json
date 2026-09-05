@@ -1,0 +1,282 @@
+{
+  "attempted_stage_references": 29,
+  "auction_evaluations": 8,
+  "complete": 9,
+  "cumulative": {
+    "orchestration_recommendation_references": 12,
+    "phase14d_closure_fixtures": 16,
+    "phase14d_provenance_lost": 0,
+    "phase14d_provenance_preserved": 16,
+    "phase15_requests": 18,
+    "production_recommendations": 4
+  },
+  "declarer_evaluations": 4,
+  "defensive_evaluations": 4,
+  "deterministic_repeats": 18,
+  "error": 0,
+  "evidence_references": 18,
+  "fixture_results": [
+    {
+      "attempted": [
+        "auction"
+      ],
+      "name": "auction-only",
+      "recommendations": 1,
+      "requested": [
+        "auction"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "auction"
+      ],
+      "name": "auction-summary",
+      "recommendations": 1,
+      "requested": [
+        "auction"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "declarer-play"
+      ],
+      "name": "simple-unblock-king",
+      "recommendations": 1,
+      "requested": [
+        "declarer-play"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "opening-no-engine",
+      "recommendations": 0,
+      "requested": [
+        "opening-lead"
+      ],
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "defensive-play"
+      ],
+      "name": "defense-no-engine",
+      "recommendations": 0,
+      "requested": [
+        "defensive-play"
+      ],
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "probability-evidence"
+      ],
+      "name": "known-card-count",
+      "recommendations": 0,
+      "requested": [
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "auction",
+        "probability-evidence"
+      ],
+      "name": "auction-probability",
+      "recommendations": 1,
+      "requested": [
+        "auction",
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "declarer-play",
+        "probability-evidence"
+      ],
+      "name": "declarer-probability",
+      "recommendations": 1,
+      "requested": [
+        "declarer-play",
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "auction",
+        "opening-lead"
+      ],
+      "name": "mixed",
+      "recommendations": 1,
+      "requested": [
+        "auction",
+        "opening-lead"
+      ],
+      "skipped": [],
+      "status": "partial"
+    },
+    {
+      "attempted": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "name": "all-applicable",
+      "recommendations": 2,
+      "requested": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "partial"
+    },
+    {
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "missing-contract",
+      "recommendations": 0,
+      "requested": [
+        "opening-lead"
+      ],
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "defensive-play"
+      ],
+      "name": "invalid-stage-state",
+      "recommendations": 0,
+      "requested": [
+        "defensive-play"
+      ],
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "explicit-subset",
+      "recommendations": 0,
+      "requested": [
+        "auction",
+        "opening-lead"
+      ],
+      "skipped": [
+        "auction"
+      ],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "hidden-boundary",
+      "recommendations": 0,
+      "requested": [
+        "opening-lead"
+      ],
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "attempted": [
+        "auction"
+      ],
+      "name": "knowledge-source",
+      "recommendations": 1,
+      "requested": [
+        "auction"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "probability-evidence"
+      ],
+      "name": "probability-evidence",
+      "recommendations": 0,
+      "requested": [
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "auction"
+      ],
+      "name": "deterministic-repeat",
+      "recommendations": 1,
+      "requested": [
+        "auction"
+      ],
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "attempted": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "name": "full-mixed",
+      "recommendations": 2,
+      "requested": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "skipped": [],
+      "status": "partial"
+    }
+  ],
+  "fixtures": 18,
+  "hidden_information_violations": 0,
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "no_decision": 6,
+  "opening_lead_evaluations": 7,
+  "orchestration_recommendation_references": 12,
+  "partial": 3,
+  "phase15b_direction": "A. FULL-DEAL ORCHESTRATION PRODUCTION INTEGRATION",
+  "probability_evaluations": 6,
+  "production_recommendations": 4,
+  "recomputed_subsystem_decisions": 0,
+  "rendered_recommendation_references": 12,
+  "rendering_builds": 18,
+  "requested_stage_references": 30,
+  "skipped_stage_references": 1,
+  "summary_builds": 18,
+  "summary_recommendation_references": 12,
+  "unresolved_references": 11
+}
