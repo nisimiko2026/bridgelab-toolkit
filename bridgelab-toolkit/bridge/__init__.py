@@ -251,6 +251,10 @@ from .deal_summary_rendering import (
     DealSummaryRenderedSection, DealSummaryRendering,
     DealSummaryRenderingStatus, render_deal_summary,
 )
+from .deal_summary_pipeline import (
+    DealSummaryPipelineFailureCode, DealSummaryPipelineResult,
+    DealSummaryPipelineStatus, build_and_render_deal_summary,
+)
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
 
@@ -329,4 +333,6 @@ __all__ += [
     "DealSummaryResult", "DealSummaryStatus", "build_deal_summary",
     "DealSummaryRenderedSection", "DealSummaryRendering",
     "DealSummaryRenderingStatus", "render_deal_summary",
+    "DealSummaryPipelineFailureCode", "DealSummaryPipelineResult",
+    "DealSummaryPipelineStatus", "build_and_render_deal_summary",
 ]

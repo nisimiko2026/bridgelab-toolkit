@@ -1,0 +1,220 @@
+{
+  "cumulative": {
+    "cumulative_requests": 158,
+    "integrated_evidence_references": 21,
+    "integrated_recommendation_references": 13,
+    "integrated_unresolved_references": 7,
+    "integration_errors": 1,
+    "integration_requests": 16,
+    "production_recommendations": 4,
+    "rendered_recommendation_references": 11,
+    "rendering_requests": 16,
+    "summary_recommendation_references": 8,
+    "summary_requests": 16
+  },
+  "deterministic_repeats_matched": 16,
+  "error_integrations": 1,
+  "evidence_references": 21,
+  "fixture_results": [
+    {
+      "failure": null,
+      "name": "bidding-only",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Auction"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "declarer-only",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Declarer Play"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "bidding-declarer",
+      "recommendation_references": 2,
+      "rendering_status": "available",
+      "stages": [
+        "Auction",
+        "Declarer Play"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "bidding-probability",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Auction",
+        "Probability Evidence"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "declarer-probability",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Declarer Play",
+        "Probability Evidence"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "recommendation-opening-unresolved",
+      "recommendation_references": 1,
+      "rendering_status": "partial",
+      "stages": [
+        "Auction",
+        "Opening Lead"
+      ],
+      "status": "partial",
+      "summary_status": "partial"
+    },
+    {
+      "failure": null,
+      "name": "recommendation-defense-unresolved",
+      "recommendation_references": 1,
+      "rendering_status": "partial",
+      "stages": [
+        "Auction",
+        "Defensive Play"
+      ],
+      "status": "partial",
+      "summary_status": "partial"
+    },
+    {
+      "failure": null,
+      "name": "all-no-decision",
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "stages": [
+        "Opening Lead",
+        "Defensive Play"
+      ],
+      "status": "no-decision",
+      "summary_status": "no-decision"
+    },
+    {
+      "failure": null,
+      "name": "abstention",
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "stages": [
+        "Auction"
+      ],
+      "status": "no-decision",
+      "summary_status": "no-decision"
+    },
+    {
+      "failure": null,
+      "name": "subsystem-error",
+      "recommendation_references": 0,
+      "rendering_status": "error",
+      "stages": [
+        "Defensive Play"
+      ],
+      "status": "error",
+      "summary_status": "error"
+    },
+    {
+      "failure": null,
+      "name": "empty",
+      "recommendation_references": 0,
+      "rendering_status": "no-decision",
+      "stages": [],
+      "status": "no-decision",
+      "summary_status": "no-decision"
+    },
+    {
+      "failure": null,
+      "name": "knowledge-source",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Auction"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "probability-evidence",
+      "recommendation_references": 0,
+      "rendering_status": "available",
+      "stages": [
+        "Probability Evidence"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "trace",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Declarer Play"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "deterministic-repeat",
+      "recommendation_references": 1,
+      "rendering_status": "available",
+      "stages": [
+        "Auction"
+      ],
+      "status": "complete",
+      "summary_status": "available"
+    },
+    {
+      "failure": null,
+      "name": "long-full-stage",
+      "recommendation_references": 2,
+      "rendering_status": "partial",
+      "stages": [
+        "Auction",
+        "Opening Lead",
+        "Declarer Play",
+        "Defensive Play",
+        "Probability Evidence"
+      ],
+      "status": "partial",
+      "summary_status": "partial"
+    }
+  ],
+  "integration_fixtures": 16,
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "no_decision_integrations": 3,
+  "partial_integrations": 3,
+  "phase14d_direction": "D. PHASE 14 COVERAGE / CLOSURE AUDIT",
+  "production_recommendation_references": 13,
+  "provenance_preserved_cases": 16,
+  "recomputed_recommendations": 0,
+  "rendered_recommendation_references": 13,
+  "rendering_builds": 16,
+  "successful_integrations": 9,
+  "summary_builds": 16,
+  "unresolved_stage_references": 7
+}
