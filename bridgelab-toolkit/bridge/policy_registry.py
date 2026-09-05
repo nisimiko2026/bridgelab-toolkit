@@ -24,6 +24,7 @@ from .support_double_eligibility_policy import SupportDoubleEligibilityAssessmen
 from .jacoby_continuation_strength_policy import JacobyContinuationStrengthAssessment, JacobyContinuationStrengthPolicy, assess_jacoby_continuation_strength
 from .stayman_continuation_strength_policy import StaymanContinuationStrengthAssessment, StaymanContinuationStrengthPolicy, assess_stayman_continuation_strength
 from .stayman_dual_major_response_policy import StaymanDualMajorResponseAssessment, StaymanDualMajorResponsePolicy, assess_stayman_dual_major_response
+from .opening_lead_policy import OpeningLeadPolicy
 
 
 STOPPER_POLICY_OPTION = "stopper_policy"
@@ -36,6 +37,7 @@ SUPPORT_DOUBLE_ELIGIBILITY_POLICY_OPTION = "support_double_eligibility_policy"
 JACOBY_CONTINUATION_STRENGTH_POLICY_OPTION = "jacoby_continuation_strength_policy"
 STAYMAN_CONTINUATION_STRENGTH_POLICY_OPTION = "stayman_continuation_strength_policy"
 STAYMAN_DUAL_MAJOR_RESPONSE_POLICY_OPTION = "stayman_dual_major_response_policy"
+OPENING_LEAD_POLICY_OPTION = "opening_lead_policy"
 
 
 @dataclass(frozen=True, slots=True)
@@ -52,6 +54,7 @@ class PolicyRegistry:
     _jacoby_continuation_strength: tuple[tuple[str, JacobyContinuationStrengthPolicy], ...] = ()
     _stayman_continuation_strength: tuple[tuple[str, StaymanContinuationStrengthPolicy], ...] = ()
     _stayman_dual_major_response: tuple[tuple[str, StaymanDualMajorResponsePolicy], ...] = ()
+    _opening_leads: tuple[tuple[str, OpeningLeadPolicy], ...] = ()
 
     @classmethod
     def from_stopper_policies(
@@ -98,6 +101,7 @@ class PolicyRegistry:
         jacoby_continuation_strength_policies: Iterable[JacobyContinuationStrengthPolicy] = (),
         stayman_continuation_strength_policies: Iterable[StaymanContinuationStrengthPolicy] = (),
         stayman_dual_major_response_policies: Iterable[StaymanDualMajorResponsePolicy] = (),
+        opening_lead_policies: Iterable[OpeningLeadPolicy] = (),
     ) -> "PolicyRegistry":
         stopper_registry = cls.from_stopper_policies(stopper_policies)
         quality_items = _normalize_quality_policies(suit_quality_policies)
@@ -109,7 +113,8 @@ class PolicyRegistry:
         jacoby_items = _normalize_jacoby_continuation_strength_policies(jacoby_continuation_strength_policies)
         stayman_items = _normalize_stayman_continuation_strength_policies(stayman_continuation_strength_policies)
         dual_major_items = _normalize_stayman_dual_major_response_policies(stayman_dual_major_response_policies)
-        return cls(stopper_registry._stoppers, quality_items, strength_items, offensive_items, shortness_items, advancer_items, support_double_items, jacoby_items, stayman_items, dual_major_items)
+        opening_lead_items = _normalize_opening_lead_policies(opening_lead_policies)
+        return cls(stopper_registry._stoppers, quality_items, strength_items, offensive_items, shortness_items, advancer_items, support_double_items, jacoby_items, stayman_items, dual_major_items, opening_lead_items)
 
     @classmethod
     def from_suit_quality_policies(
@@ -274,6 +279,25 @@ class PolicyRegistry:
         if not wanted:
             raise ValueError("policy_id must not be blank")
         for stored_id, policy in self._stayman_dual_major_response:
+            if stored_id.casefold() == wanted:
+                return policy
+        return None
+
+    @classmethod
+    def from_opening_lead_policies(cls, policies: Iterable[OpeningLeadPolicy]):
+        return cls((), (), (), (), (), (), (), (), (), (), _normalize_opening_lead_policies(policies))
+
+    @property
+    def opening_lead_policy_ids(self) -> tuple[str, ...]:
+        return tuple(policy_id for policy_id, _ in self._opening_leads)
+
+    def opening_lead_policy(self, policy_id: str) -> OpeningLeadPolicy | None:
+        if not isinstance(policy_id, str):
+            raise TypeError("policy_id must be a string")
+        wanted = policy_id.strip().casefold()
+        if not wanted:
+            raise ValueError("policy_id must not be blank")
+        for stored_id, policy in self._opening_leads:
             if stored_id.casefold() == wanted:
                 return policy
         return None
@@ -725,6 +749,24 @@ def _normalize_stayman_dual_major_response_policies(policies):
         folded = policy_id.casefold()
         if folded in seen:
             raise ValueError(f"duplicate Stayman dual-major response policy_id: {policy_id}")
+        seen.add(folded)
+        items.append((policy_id, policy))
+    items.sort(key=lambda item: item[0].casefold())
+    return tuple(items)
+
+
+def _normalize_opening_lead_policies(
+    policies: Iterable[OpeningLeadPolicy],
+) -> tuple[tuple[str, OpeningLeadPolicy], ...]:
+    items: list[tuple[str, OpeningLeadPolicy]] = []
+    seen: set[str] = set()
+    for policy in policies:
+        if not isinstance(policy, OpeningLeadPolicy):
+            raise TypeError("opening-lead policy must be OpeningLeadPolicy")
+        policy_id = policy.policy_id
+        folded = policy_id.casefold()
+        if folded in seen:
+            raise ValueError(f"duplicate opening-lead policy_id: {policy_id}")
         seen.add(folded)
         items.append((policy_id, policy))
     items.sort(key=lambda item: item[0].casefold())

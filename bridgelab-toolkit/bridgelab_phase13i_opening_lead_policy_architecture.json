@@ -1,0 +1,189 @@
+{
+  "architecture": {
+    "abstentions": 3,
+    "auction_positions": 5,
+    "bidding_recommendations": 2,
+    "declarer_positions": 23,
+    "declarer_recommendations": 2,
+    "defensive_positions": 15,
+    "defensive_recommendations": 0,
+    "errors": 0,
+    "explicit_opening_lead_policies": 8,
+    "no_decisions": 51,
+    "opening_lead_policy_requests": 10,
+    "opening_lead_positions": 14,
+    "opening_lead_recommendations": 0,
+    "probability_evidence_items": 3,
+    "total_positions_or_requests": 80,
+    "unresolved_policies": 2
+  },
+  "explicit_policies": 8,
+  "fixture_results": [
+    {
+      "honor_style": "unknown",
+      "length_method": "unknown",
+      "name": "no-policy",
+      "policy_id": null,
+      "recommendation": null,
+      "resolved": false,
+      "sources": [],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "fourth-best",
+      "name": "fourth-best",
+      "policy_id": "fourth",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/fourth-best#Basic Principle"
+      ],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "third-and-fifth",
+      "name": "third-fifth",
+      "policy_id": "third-fifth",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/third-fifth#Basic Principle"
+      ],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "standard",
+      "length_method": "unknown",
+      "name": "standard-honors",
+      "policy_id": "standard",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/standard-leads#Sequence Leads"
+      ],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "rusinow",
+      "length_method": "unknown",
+      "name": "rusinow",
+      "policy_id": "rusinow",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/rusinow#Basic Principle"
+      ],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "unknown",
+      "name": "top-enabled",
+      "policy_id": "top-enabled",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/top-of-nothing#Definition"
+      ],
+      "top_of_nothing": "enabled"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "unknown",
+      "name": "top-disabled",
+      "policy_id": "top-disabled",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/top-of-nothing#Definition"
+      ],
+      "top_of_nothing": "disabled"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "unknown",
+      "name": "all-unknown",
+      "policy_id": "unknown",
+      "recommendation": null,
+      "resolved": false,
+      "sources": [],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "unknown",
+      "length_method": "fourth-best",
+      "name": "deterministic-repeat",
+      "policy_id": "fourth-repeat",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/fourth-best#Basic Principle"
+      ],
+      "top_of_nothing": "unknown"
+    },
+    {
+      "honor_style": "rusinow",
+      "length_method": "unknown",
+      "name": "source-preservation",
+      "policy_id": "evidence",
+      "recommendation": null,
+      "resolved": true,
+      "sources": [
+        "play/defence/opening-leads/rusinow#Basic Principle"
+      ],
+      "top_of_nothing": "unknown"
+    }
+  ],
+  "invalid_policies": 0,
+  "phase13j_direction": "B. OPENING-LEAD SOURCE-READINESS AUDIT",
+  "policy_fixtures": 10,
+  "recommendations_generated": 0,
+  "source_backed_policy_dimensions": 3,
+  "source_inventory": [
+    {
+      "classification": "POLICY_EXECUTABLE",
+      "contract_distinction": true,
+      "exceptions": true,
+      "heading": "Basic Principle",
+      "path": "knowledge/play/defence/opening-leads/fourth-best.md"
+    },
+    {
+      "classification": "POLICY_EXECUTABLE",
+      "contract_distinction": true,
+      "exceptions": true,
+      "heading": "Basic Principle",
+      "path": "knowledge/play/defence/opening-leads/third-fifth.md"
+    },
+    {
+      "classification": "POLICY_EXECUTABLE",
+      "contract_distinction": true,
+      "exceptions": true,
+      "heading": "Sequence Leads",
+      "path": "knowledge/play/defence/opening-leads/standard-leads.md"
+    },
+    {
+      "classification": "POLICY_EXECUTABLE",
+      "contract_distinction": true,
+      "exceptions": true,
+      "heading": "Basic Principle",
+      "path": "knowledge/play/defence/opening-leads/rusinow.md"
+    },
+    {
+      "classification": "POLICY_EXECUTABLE",
+      "contract_distinction": true,
+      "exceptions": true,
+      "heading": "Definition",
+      "path": "knowledge/play/defence/opening-leads/top-of-nothing.md"
+    }
+  ],
+  "unknown_policies": 2,
+  "unsupported_dimensions": [
+    "mud",
+    "coded-tens-nines",
+    "journalist-leads",
+    "attitude-leads",
+    "unsupported-ace-king"
+  ]
+}
