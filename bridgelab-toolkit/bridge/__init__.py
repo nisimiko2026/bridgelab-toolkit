@@ -247,6 +247,10 @@ from .deal_summary import (
     DealSummaryFailureCode, DealSummaryInput, DealSummaryItem,
     DealSummaryResult, DealSummaryStatus, build_deal_summary,
 )
+from .deal_summary_rendering import (
+    DealSummaryRenderedSection, DealSummaryRendering,
+    DealSummaryRenderingStatus, render_deal_summary,
+)
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
 
@@ -323,4 +327,6 @@ __all__ += [
     "assess_opening_lead_policy", "OPENING_LEAD_POLICY_OPTION",
     "DealSummaryFailureCode", "DealSummaryInput", "DealSummaryItem",
     "DealSummaryResult", "DealSummaryStatus", "build_deal_summary",
+    "DealSummaryRenderedSection", "DealSummaryRendering",
+    "DealSummaryRenderingStatus", "render_deal_summary",
 ]

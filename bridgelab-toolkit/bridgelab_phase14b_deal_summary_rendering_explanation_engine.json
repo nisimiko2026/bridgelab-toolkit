@@ -1,0 +1,212 @@
+{
+  "cumulative": {
+    "cumulative_requests": 142,
+    "production_recommendations": 4,
+    "rendered_evidence_references": 17,
+    "rendered_recommendation_references": 11,
+    "rendered_unresolved_references": 8,
+    "rendering_errors": 2,
+    "rendering_requests": 16,
+    "summary_recommendation_references": 8,
+    "summary_requests": 16
+  },
+  "deterministic_repeats_matched": 16,
+  "fixture_results": [
+    {
+      "evidence": 0,
+      "name": "bidding-only",
+      "recommendations": 1,
+      "sections": [
+        "Auction"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "declarer-only",
+      "recommendations": 1,
+      "sections": [
+        "Declarer Play"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nDeclarer Play: Play KS. declarer explanation. Trace: fixture=declarer. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "bidding-declarer",
+      "recommendations": 2,
+      "sections": [
+        "Auction",
+        "Declarer Play"
+      ],
+      "sources": 2,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock.\n\nDeclarer Play: Play KS. declarer explanation. Trace: fixture=declarer. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "opening-lead-unavailable",
+      "recommendations": 0,
+      "sections": [
+        "Opening Lead"
+      ],
+      "sources": 0,
+      "status": "no-decision",
+      "text": "Deal analysis summary\n\nNo actionable recommendation is currently available.\n\nOpening Lead: No decision [engine-unavailable]. opening lead engine unavailable explanation. Trace: fixture=opening lead engine unavailable."
+    },
+    {
+      "evidence": 0,
+      "name": "defensive-unavailable",
+      "recommendations": 0,
+      "sections": [
+        "Defensive Play"
+      ],
+      "sources": 0,
+      "status": "no-decision",
+      "text": "Deal analysis summary\n\nNo actionable recommendation is currently available.\n\nDefensive Play: No decision [engine-unavailable]. defensive engine unavailable explanation. Trace: fixture=defensive engine unavailable."
+    },
+    {
+      "evidence": 1,
+      "name": "exact-probability",
+      "recommendations": 0,
+      "sections": [
+        "Probability Evidence"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nProbability evidence: success. Mode: exact. Unknown cards: 39. known-cards: 13. Assumption: Visible cards only. Trace: known=13, unknown=39. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 1,
+      "name": "recommendation-probability",
+      "recommendations": 1,
+      "sections": [
+        "Auction",
+        "Probability Evidence"
+      ],
+      "sources": 2,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock.\n\nProbability evidence: success. Mode: exact. Unknown cards: 39. known-cards: 13. Assumption: Visible cards only. Trace: known=13, unknown=39. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "mixed-partial",
+      "recommendations": 1,
+      "sections": [
+        "Auction",
+        "Opening Lead"
+      ],
+      "sources": 1,
+      "status": "partial",
+      "text": "Deal analysis summary\n\nAnalysis is partial; some stages remain unresolved.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock.\n\nOpening Lead: No decision [engine-unavailable]. opening lead engine unavailable explanation. Trace: fixture=opening lead engine unavailable."
+    },
+    {
+      "evidence": 0,
+      "name": "all-no-decision",
+      "recommendations": 0,
+      "sections": [
+        "Opening Lead",
+        "Defensive Play"
+      ],
+      "sources": 0,
+      "status": "no-decision",
+      "text": "Deal analysis summary\n\nNo actionable recommendation is currently available.\n\nOpening Lead: No decision [engine-unavailable]. opening lead engine unavailable explanation. Trace: fixture=opening lead engine unavailable.\n\nDefensive Play: No decision [engine-unavailable]. defensive engine unavailable explanation. Trace: fixture=defensive engine unavailable."
+    },
+    {
+      "evidence": 0,
+      "name": "abstention",
+      "recommendations": 0,
+      "sections": [
+        "Auction"
+      ],
+      "sources": 0,
+      "status": "no-decision",
+      "text": "Deal analysis summary\n\nNo actionable recommendation is currently available.\n\nAuction: Abstained [engine-unavailable]. auction abstention explanation. Trace: fixture=auction abstention."
+    },
+    {
+      "evidence": 0,
+      "name": "error",
+      "recommendations": 0,
+      "sections": [
+        "Defensive Play"
+      ],
+      "sources": 0,
+      "status": "error",
+      "text": "Deal analysis summary\n\nThe analysis contains an error.\n\nDefensive Play: Error. defensive error explanation. Trace: fixture=defensive error."
+    },
+    {
+      "evidence": 0,
+      "name": "knowledge-source",
+      "recommendations": 1,
+      "sections": [
+        "Auction"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "trace",
+      "recommendations": 1,
+      "sections": [
+        "Declarer Play"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nDeclarer Play: Play KS. declarer explanation. Trace: fixture=declarer. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 0,
+      "name": "duplicate-error",
+      "recommendations": 0,
+      "sections": [],
+      "sources": 0,
+      "status": "error",
+      "text": "Deal analysis summary\n\nThe analysis contains an error.\n\nDuplicate analysis stages are not supported."
+    },
+    {
+      "evidence": 0,
+      "name": "deterministic-repeat",
+      "recommendations": 1,
+      "sections": [
+        "Auction"
+      ],
+      "sources": 1,
+      "status": "available",
+      "text": "Deal analysis summary\n\nAnalysis contains available recommendations or evidence.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    },
+    {
+      "evidence": 1,
+      "name": "long-mixed",
+      "recommendations": 2,
+      "sections": [
+        "Auction",
+        "Opening Lead",
+        "Declarer Play",
+        "Defensive Play",
+        "Probability Evidence"
+      ],
+      "sources": 3,
+      "status": "partial",
+      "text": "Deal analysis summary\n\nAnalysis is partial; some stages remain unresolved.\n\nAuction: Recommend 2NT. auction explanation. Trace: fixture=auction. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock.\n\nOpening Lead: No decision [engine-unavailable]. opening lead engine unavailable explanation. Trace: fixture=opening lead engine unavailable.\n\nDeclarer Play: Play KS. declarer explanation. Trace: fixture=declarer. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock.\n\nDefensive Play: No decision [engine-unavailable]. defensive engine unavailable explanation. Trace: fixture=defensive engine unavailable.\n\nProbability evidence: success. Mode: exact. Unknown cards: 39. known-cards: 13. Assumption: Visible cards only. Trace: known=13, unknown=39. Sources: play/declarer-play/general-techniques/unblock#Example 1 \u2013 Simple Unblock."
+    }
+  ],
+  "invented_actions": 0,
+  "invented_numbers": 0,
+  "invented_probabilities": 0,
+  "invented_sources": 0,
+  "phase14c_direction": "D. DEAL-SUMMARY END-TO-END INTEGRATION",
+  "rendered_available": 8,
+  "rendered_error": 2,
+  "rendered_error_sections": 1,
+  "rendered_evidence_references": 17,
+  "rendered_no_decision": 4,
+  "rendered_partial": 2,
+  "rendered_recommendation_references": 11,
+  "rendered_unresolved_sections": 8,
+  "rendering_fixtures": 16
+}
