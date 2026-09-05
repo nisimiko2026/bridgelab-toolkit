@@ -1,0 +1,535 @@
+{
+  "applicable_references": 26,
+  "attempted_references": 26,
+  "closure_fixtures": 20,
+  "complete": 11,
+  "component_inventory": [
+    {
+      "component": "full-deal orchestration architecture",
+      "dependencies": "canonical stage adapters and Phase 14 pipeline",
+      "immutable": true,
+      "information_boundary": "legal-view inputs only",
+      "limitation": "coordinates existing intelligence only",
+      "phase": "15A",
+      "public_functions": "analyze_full_deal",
+      "public_types": "FullDealAnalysisInput, FullDealProbabilityRequest, FullDealSkippedStage, FullDealAnalysisResult, FullDealSkipReason",
+      "selection": "explicit deterministic stage order",
+      "serialization": "added by Phase 15B",
+      "status": "PRODUCTION_READY",
+      "validation": "typed skips and result boundaries"
+    },
+    {
+      "component": "production integration",
+      "dependencies": "public bridge package",
+      "immutable": true,
+      "information_boundary": "no complete-deal adapter path",
+      "limitation": "no CLI/GUI/API presentation boundary",
+      "phase": "15B",
+      "public_functions": "analyze_full_deal, full_deal_analysis_to_dict",
+      "public_types": "Phase 15A result contract",
+      "selection": "preserves Phase 15A semantics",
+      "serialization": "deterministic structured dictionary",
+      "status": "PRODUCTION_READY",
+      "validation": "structured invalid-request ERROR"
+    }
+  ],
+  "cumulative": {
+    "phase15_cumulative_requests": 56,
+    "phase15a_requests": 18,
+    "phase15b_requests": 18,
+    "phase15c_recommendation_references": 12,
+    "phase15c_requests": 20,
+    "production_recommendations": 4
+  },
+  "deterministic_repeats": 20,
+  "duplicate_subsystem_evaluations": 0,
+  "error": 1,
+  "error_boundaries": {
+    "abstention": "preserved",
+    "no_decision": "preserved",
+    "orchestration": "pipeline ERROR plus structured skip",
+    "rendering": "DealSummaryRendering status",
+    "stage_input": "typed subsystem NO_DECISION",
+    "subsystem_error": "preserved",
+    "summary": "DealSummaryFailureCode",
+    "validation": "structured ERROR"
+  },
+  "evidence_references": 18,
+  "fixture_results": [
+    {
+      "applicable": [
+        "auction"
+      ],
+      "attempted": [
+        "auction"
+      ],
+      "name": "auction-only",
+      "provenance_preserved": true,
+      "requested": [
+        "auction"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "auction"
+      ],
+      "attempted": [
+        "auction"
+      ],
+      "name": "auction-recommendation",
+      "provenance_preserved": true,
+      "requested": [
+        "auction"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "declarer-play"
+      ],
+      "attempted": [
+        "declarer-play"
+      ],
+      "name": "simple-unblock-king",
+      "provenance_preserved": true,
+      "requested": [
+        "declarer-play"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "opening-lead"
+      ],
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "opening-unresolved",
+      "provenance_preserved": true,
+      "requested": [
+        "opening-lead"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [
+        "defensive-play"
+      ],
+      "attempted": [
+        "defensive-play"
+      ],
+      "name": "defense-unresolved",
+      "provenance_preserved": true,
+      "requested": [
+        "defensive-play"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [
+        "probability-evidence"
+      ],
+      "attempted": [
+        "probability-evidence"
+      ],
+      "name": "known-card-count",
+      "provenance_preserved": true,
+      "requested": [
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "auction",
+        "probability-evidence"
+      ],
+      "attempted": [
+        "auction",
+        "probability-evidence"
+      ],
+      "name": "auction-probability",
+      "provenance_preserved": true,
+      "requested": [
+        "auction",
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "declarer-play",
+        "probability-evidence"
+      ],
+      "attempted": [
+        "declarer-play",
+        "probability-evidence"
+      ],
+      "name": "declarer-probability",
+      "provenance_preserved": true,
+      "requested": [
+        "declarer-play",
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "auction",
+        "opening-lead"
+      ],
+      "attempted": [
+        "auction",
+        "opening-lead"
+      ],
+      "name": "mixed-multi-stage",
+      "provenance_preserved": true,
+      "requested": [
+        "auction",
+        "opening-lead"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "partial"
+    },
+    {
+      "applicable": [
+        "opening-lead"
+      ],
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "explicit-stage-subset",
+      "provenance_preserved": true,
+      "requested": [
+        "auction",
+        "opening-lead"
+      ],
+      "serialization_stable": true,
+      "skipped": [
+        {
+          "reason": "insufficient-stage-state",
+          "stage": "auction"
+        }
+      ],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [],
+      "attempted": [],
+      "name": "skipped-stage",
+      "provenance_preserved": true,
+      "requested": [
+        "defensive-play"
+      ],
+      "serialization_stable": true,
+      "skipped": [
+        {
+          "reason": "insufficient-stage-state",
+          "stage": "defensive-play"
+        }
+      ],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [
+        "opening-lead"
+      ],
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "missing-stage-state",
+      "provenance_preserved": true,
+      "requested": [
+        "opening-lead"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [],
+      "attempted": [],
+      "name": "invalid-top-level",
+      "provenance_preserved": true,
+      "requested": [],
+      "serialization_stable": true,
+      "skipped": [
+        {
+          "reason": "unsupported-request",
+          "stage": "request"
+        }
+      ],
+      "status": "error"
+    },
+    {
+      "applicable": [
+        "auction"
+      ],
+      "attempted": [
+        "auction"
+      ],
+      "name": "knowledge-source",
+      "provenance_preserved": true,
+      "requested": [
+        "auction"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "probability-evidence"
+      ],
+      "attempted": [
+        "probability-evidence"
+      ],
+      "name": "probability-evidence",
+      "provenance_preserved": true,
+      "requested": [
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "opening-lead"
+      ],
+      "attempted": [
+        "opening-lead"
+      ],
+      "name": "hidden-boundary",
+      "provenance_preserved": true,
+      "requested": [
+        "opening-lead"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "no-decision"
+    },
+    {
+      "applicable": [
+        "auction",
+        "probability-evidence"
+      ],
+      "attempted": [
+        "auction",
+        "probability-evidence"
+      ],
+      "name": "serialization",
+      "provenance_preserved": true,
+      "requested": [
+        "auction",
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "auction"
+      ],
+      "attempted": [
+        "auction"
+      ],
+      "name": "deterministic-repeat",
+      "provenance_preserved": true,
+      "requested": [
+        "auction"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    },
+    {
+      "applicable": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "attempted": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "name": "complete-multi-stage",
+      "provenance_preserved": true,
+      "requested": [
+        "auction",
+        "opening-lead",
+        "declarer-play",
+        "defensive-play",
+        "probability-evidence"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "partial"
+    },
+    {
+      "applicable": [
+        "auction"
+      ],
+      "attempted": [
+        "auction"
+      ],
+      "name": "public-result-contract",
+      "provenance_preserved": true,
+      "requested": [
+        "auction"
+      ],
+      "serialization_stable": true,
+      "skipped": [],
+      "status": "complete"
+    }
+  ],
+  "hidden_information_violations": 0,
+  "invention_audit": {
+    "actions": 0,
+    "best_action_conclusions": 0,
+    "bids": 0,
+    "cards": 0,
+    "confidence_scores": 0,
+    "hidden_card_inference": 0,
+    "numbers": 0,
+    "probability_values": 0,
+    "sources": 0,
+    "stages": 0
+  },
+  "no_decision": 6,
+  "orchestration_recommendation_references": 12,
+  "partial": 2,
+  "phase15_complete": true,
+  "phase16_direction": "E. USER-FACING FULL-DEAL APPLICATION INTERFACE",
+  "production_recommendations": 4,
+  "provenance_lost": 0,
+  "provenance_preserved": 20,
+  "readiness_matrix": [
+    {
+      "area": "FULL_DEAL_INPUT",
+      "capability": "immutable request and canonical Deal/stage inputs",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STAGE_ORCHESTRATION",
+      "capability": "requested/applicable/attempted/skipped",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STAGE_ORCHESTRATION",
+      "capability": "deterministic order and typed skips",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "STAGE_ORCHESTRATION",
+      "capability": "single subsystem evaluation",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INFORMATION_BOUNDARIES",
+      "capability": "auction",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INFORMATION_BOUNDARIES",
+      "capability": "opening lead",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INFORMATION_BOUNDARIES",
+      "capability": "declarer",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INFORMATION_BOUNDARIES",
+      "capability": "defense",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "INFORMATION_BOUNDARIES",
+      "capability": "probability",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SUMMARY_INTEGRATION",
+      "capability": "DealSummaryInput and Phase 14 pipeline",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SUMMARY_INTEGRATION",
+      "capability": "structured and rendered result",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PUBLIC_API",
+      "capability": "exports and stable entry point",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "PUBLIC_API",
+      "capability": "backward compatibility",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "VALIDATION",
+      "capability": "invalid request/stage/probability",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "VALIDATION",
+      "capability": "malformed stage state",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SERIALIZATION",
+      "capability": "deterministic structured form",
+      "readiness": "PRODUCTION_READY"
+    },
+    {
+      "area": "SERIALIZATION",
+      "capability": "sources/probability/skips/trace/text",
+      "readiness": "PRODUCTION_READY"
+    }
+  ],
+  "recomputed_subsystem_decisions": 0,
+  "rendered_recommendation_references": 12,
+  "rendering_builds": 20,
+  "requested_references": 28,
+  "serialization_failures": 0,
+  "serialization_successes": 20,
+  "skipped_references": 3,
+  "subsystem_evaluations": {
+    "auction": 9,
+    "declarer-play": 3,
+    "defensive-play": 2,
+    "opening-lead": 6,
+    "probability-evidence": 6
+  },
+  "summary_builds": 20,
+  "summary_recommendation_references": 12,
+  "unresolved_references": 8
+}
