@@ -243,6 +243,10 @@ from .opening_lead_policy import (
     OpeningLeadPolicyAssessment, OpeningLeadTopOfNothing,
     assess_opening_lead_policy,
 )
+from .deal_summary import (
+    DealSummaryFailureCode, DealSummaryInput, DealSummaryItem,
+    DealSummaryResult, DealSummaryStatus, build_deal_summary,
+)
 from .policy_registry import OPENING_LEAD_POLICY_OPTION
 
 
@@ -317,4 +321,6 @@ __all__ += [
     "OpeningLeadHonorStyle", "OpeningLeadLengthMethod", "OpeningLeadPolicy",
     "OpeningLeadPolicyAssessment", "OpeningLeadTopOfNothing",
     "assess_opening_lead_policy", "OPENING_LEAD_POLICY_OPTION",
+    "DealSummaryFailureCode", "DealSummaryInput", "DealSummaryItem",
+    "DealSummaryResult", "DealSummaryStatus", "build_deal_summary",
 ]

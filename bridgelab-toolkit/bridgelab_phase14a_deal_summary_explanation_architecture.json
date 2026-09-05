@@ -1,0 +1,201 @@
+{
+  "available_summaries": 8,
+  "bidding_recommendation_items": 6,
+  "cumulative": {
+    "cumulative_requests": 126,
+    "phase13_closure_requests": 16,
+    "production_recommendations": 4,
+    "summary_errors": 2,
+    "summary_evidence_items": 11,
+    "summary_recommendation_references": 8,
+    "summary_requests": 16,
+    "unresolved_summary_items": 6
+  },
+  "declarer_recommendation_items": 2,
+  "defensive_recommendation_items": 0,
+  "error_summaries": 2,
+  "evidence_items": 11,
+  "fixture_results": [
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "bidding-only",
+      "recommendations": 1,
+      "stages": [
+        "auction"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "declarer-only",
+      "recommendations": 1,
+      "stages": [
+        "declarer-play"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 2,
+      "failure_code": null,
+      "name": "bidding-declarer",
+      "recommendations": 2,
+      "stages": [
+        "auction",
+        "declarer-play"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 0,
+      "failure_code": null,
+      "name": "opening-lead-no-decision",
+      "recommendations": 0,
+      "stages": [
+        "opening-lead"
+      ],
+      "status": "no-decision",
+      "unresolved": 1
+    },
+    {
+      "evidence": 0,
+      "failure_code": null,
+      "name": "defensive-no-decision",
+      "recommendations": 0,
+      "stages": [
+        "defensive-play"
+      ],
+      "status": "no-decision",
+      "unresolved": 1
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "exact-probability-only",
+      "recommendations": 0,
+      "stages": [],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 2,
+      "failure_code": null,
+      "name": "recommendation-probability",
+      "recommendations": 1,
+      "stages": [
+        "auction"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "mixed",
+      "recommendations": 1,
+      "stages": [
+        "auction",
+        "opening-lead"
+      ],
+      "status": "partial",
+      "unresolved": 1
+    },
+    {
+      "evidence": 0,
+      "failure_code": null,
+      "name": "all-no-decision",
+      "recommendations": 0,
+      "stages": [
+        "opening-lead",
+        "defensive-play"
+      ],
+      "status": "no-decision",
+      "unresolved": 2
+    },
+    {
+      "evidence": 0,
+      "failure_code": null,
+      "name": "abstention",
+      "recommendations": 0,
+      "stages": [
+        "auction"
+      ],
+      "status": "no-decision",
+      "unresolved": 1
+    },
+    {
+      "evidence": 0,
+      "failure_code": null,
+      "name": "subsystem-error",
+      "recommendations": 0,
+      "stages": [
+        "defensive-play"
+      ],
+      "status": "error",
+      "unresolved": 0
+    },
+    {
+      "evidence": 0,
+      "failure_code": "duplicate-stage",
+      "name": "duplicate-stage",
+      "recommendations": 0,
+      "stages": [],
+      "status": "error",
+      "unresolved": 0
+    },
+    {
+      "evidence": 0,
+      "failure_code": "missing-subsystem-results",
+      "name": "empty",
+      "recommendations": 0,
+      "stages": [],
+      "status": "no-decision",
+      "unresolved": 0
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "deterministic-repeat",
+      "recommendations": 1,
+      "stages": [
+        "auction"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "source-preservation",
+      "recommendations": 1,
+      "stages": [
+        "auction"
+      ],
+      "status": "available",
+      "unresolved": 0
+    },
+    {
+      "evidence": 1,
+      "failure_code": null,
+      "name": "probability-preservation",
+      "recommendations": 0,
+      "stages": [],
+      "status": "available",
+      "unresolved": 0
+    }
+  ],
+  "invented_probabilities": 0,
+  "invented_recommendations": 0,
+  "no_decision_summaries": 5,
+  "opening_lead_recommendation_items": 0,
+  "partial_summaries": 1,
+  "phase14b_direction": "A. DEAL-SUMMARY RENDERING / EXPLANATION ENGINE",
+  "recommendation_items": 8,
+  "source_backed_items": 11,
+  "summary_fixtures": 16,
+  "unresolved_items": 6
+}
