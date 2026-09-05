@@ -1,0 +1,312 @@
+{
+  "architecture": {
+    "abstentions": 3,
+    "bidding_recommendations": 2,
+    "cumulative_positions_or_requests": 95,
+    "declarer_recommendations": 2,
+    "defensive_recommendations": 0,
+    "errors": 0,
+    "no_decisions": 51,
+    "opening_lead_recommendations": 0,
+    "opening_lead_states": 14,
+    "policy_requests": 10,
+    "source_readiness_audit_requests": 15
+  },
+  "candidate_fixtures": 15,
+  "candidate_rules": 10,
+  "candidates": [
+    {
+      "ambiguity": "No deterministic suit choice, minimum length, or complete suit/NT scope.",
+      "classification": "POLICY_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Basic Principle",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": "FOURTH_BEST",
+      "rule": "fourth-best from length",
+      "source": "knowledge/play/defence/opening-leads/fourth-best.md",
+      "state_sufficient": true,
+      "stated_rule": "Fourth-highest from a long suit without a touching sequence.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "No deterministic suit choice; short-length and contract exceptions are incomplete.",
+      "classification": "POLICY_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Basic Principle",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": "THIRD_AND_FIFTH",
+      "rule": "third-and-fifth",
+      "source": "knowledge/play/defence/opening-leads/third-fifth.md",
+      "state_sufficient": true,
+      "stated_rule": "Third-highest from odd length and fifth-highest from even length.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Several eligible suits and ace/king/interior-sequence variants remain.",
+      "classification": "EXCEPTION_INCOMPLETE",
+      "exceptions_complete": false,
+      "heading": "Sequence Leads",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": "STANDARD",
+      "rule": "standard honor sequence",
+      "source": "knowledge/play/defence/opening-leads/standard-leads.md",
+      "state_sufficient": true,
+      "stated_rule": "Lead the top card from a sequence.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Contract scope and ace/king/interior-sequence agreements remain unresolved.",
+      "classification": "POLICY_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Basic Principle",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": "RUSINOW",
+      "rule": "Rusinow touching sequence",
+      "source": "knowledge/play/defence/opening-leads/rusinow.md",
+      "state_sufficient": true,
+      "stated_rule": "Lead the second-highest honor from a touching sequence.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Suit selection, minimum length, NT scope, and precedence over length are incomplete.",
+      "classification": "EXCEPTION_INCOMPLETE",
+      "exceptions_complete": false,
+      "heading": "Definition",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": "ENABLED",
+      "rule": "top of nothing",
+      "source": "knowledge/play/defence/opening-leads/top-of-nothing.md",
+      "state_sufficient": true,
+      "stated_rule": "Lead the highest card from a suit containing no honors.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Source calls this preferred/usually, with no tie-break or exceptions.",
+      "classification": "SOURCE_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Short Suit Leads",
+      "notrump_scope": "no",
+      "precedence_complete": false,
+      "required_policy": null,
+      "rule": "singleton lead",
+      "source": "knowledge/play/defence/opening-leads/standard-leads.md",
+      "state_sufficient": true,
+      "stated_rule": "Lead a singleton against a suit contract to seek a ruff.",
+      "suit_scope": "yes",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Exact auction trigger, card, and competing-suit precedence are incomplete.",
+      "classification": "SOURCE_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Opening Lead",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": null,
+      "rule": "partner's suit",
+      "source": "knowledge/play/defence/opening-leads/lead-partners-suit.md",
+      "state_sufficient": true,
+      "stated_rule": "Prefer partner's bid suit subject to holding and auction context.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Longest and strongest may identify different or tied suits.",
+      "classification": "AMBIGUOUS_CARD_CHOICE",
+      "exceptions_complete": false,
+      "heading": "Against Notrump Contracts",
+      "notrump_scope": "yes",
+      "precedence_complete": false,
+      "required_policy": "FOURTH_BEST",
+      "rule": "longest/strongest versus NT",
+      "source": "knowledge/play/defence/opening-leads/standard-leads.md",
+      "state_sufficient": true,
+      "stated_rule": "Prefer the longest and strongest suit, commonly using fourth-best.",
+      "suit_scope": "partial",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "No source-complete trigger or exception contract.",
+      "classification": "SOURCE_PARTIAL",
+      "exceptions_complete": false,
+      "heading": "Suit Contract Opening Leads",
+      "notrump_scope": "no",
+      "precedence_complete": false,
+      "required_policy": null,
+      "rule": "trump lead",
+      "source": "knowledge/play/defence/opening-leads/standard-leads.md",
+      "state_sufficient": true,
+      "stated_rule": "A trump lead is occasionally preferred.",
+      "suit_scope": "yes",
+      "unique_card": false
+    },
+    {
+      "ambiguity": "Named/absent without a usable rule contract.",
+      "classification": "NOT_PRESENT",
+      "exceptions_complete": false,
+      "heading": "Opening Leads",
+      "notrump_scope": "partial",
+      "precedence_complete": false,
+      "required_policy": null,
+      "rule": "MUD",
+      "source": "knowledge/play/defence/opening-leads/opening-leads-index.md",
+      "state_sufficient": false,
+      "stated_rule": "No executable MUD contract.",
+      "suit_scope": "partial",
+      "unique_card": false
+    }
+  ],
+  "classification_counts": {
+    "AMBIGUOUS_CARD_CHOICE": 1,
+    "EXCEPTION_INCOMPLETE": 2,
+    "NOT_PRESENT": 1,
+    "POLICY_EXECUTABLE": 0,
+    "POLICY_PARTIAL": 3,
+    "SOURCE_EXECUTABLE": 0,
+    "SOURCE_INSUFFICIENT": 0,
+    "SOURCE_PARTIAL": 3
+  },
+  "executable_fixtures": 0,
+  "fixtures": [
+    {
+      "blocker": "suit choice and scope incomplete",
+      "candidate": "fourth-best from length",
+      "executable": false,
+      "name": "fourth-positive-looking",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "minimum length incomplete",
+      "candidate": "fourth-best from length",
+      "executable": false,
+      "name": "fourth-near-miss",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "suit choice incomplete",
+      "candidate": "third-and-fifth",
+      "executable": false,
+      "name": "third-fifth-positive-looking",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "exceptions incomplete",
+      "candidate": "standard honor sequence",
+      "executable": false,
+      "name": "standard-honor",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "contract scope incomplete",
+      "candidate": "Rusinow touching sequence",
+      "executable": false,
+      "name": "rusinow-honor",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "length and scope incomplete",
+      "candidate": "top of nothing",
+      "executable": false,
+      "name": "top-nothing-positive-looking",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "cross-suit precedence incomplete",
+      "candidate": "standard honor sequence",
+      "executable": false,
+      "name": "honor-versus-length",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "policy precedence incomplete",
+      "candidate": "top of nothing",
+      "executable": false,
+      "name": "top-nothing-versus-length",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "multiple plausible suits",
+      "candidate": "longest/strongest versus NT",
+      "executable": false,
+      "name": "notrump-contract",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "preferred wording and exceptions incomplete",
+      "candidate": "singleton lead",
+      "executable": false,
+      "name": "suit-contract",
+      "policy_required": false,
+      "recommendation": null
+    },
+    {
+      "blocker": "tied eligible suits",
+      "candidate": "longest/strongest versus NT",
+      "executable": false,
+      "name": "ambiguous-card-choice",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "ace/king exceptions incomplete",
+      "candidate": "Rusinow touching sequence",
+      "executable": false,
+      "name": "incomplete-exception",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "missing policy",
+      "candidate": "fourth-best from length",
+      "executable": false,
+      "name": "missing-policy",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "unknown is not Standard",
+      "candidate": "standard honor sequence",
+      "executable": false,
+      "name": "unknown-policy",
+      "policy_required": true,
+      "recommendation": null
+    },
+    {
+      "blocker": "same audited blocker",
+      "candidate": "top of nothing",
+      "executable": false,
+      "name": "deterministic-repeat",
+      "policy_required": true,
+      "recommendation": null
+    }
+  ],
+  "non_executable_fixtures": 15,
+  "phase13k_direction": "E. OPENING-LEAD SOURCE ENRICHMENT REQUIRED",
+  "policy_required_fixtures": 14,
+  "recommendations_generated": 0,
+  "source_files_audited": 10,
+  "top_candidates": [
+    "standard honor sequence",
+    "Rusinow touching sequence",
+    "fourth-best from length"
+  ]
+}
