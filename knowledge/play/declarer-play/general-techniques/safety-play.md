@@ -1,337 +1,344 @@
 ---
-title: Safety Play
-description: Explains safety play, a line chosen to maximize the chance of making a contract against adverse distributions.
-category: play
-subcategory: declarer-play
-difficulty: Intermediate
-tags: 
-  - declarer-play
-  - endplay
-  - finesse
-  - lead
-  - play
-  - slam
-  - squeeze
-systems: []
-aliases: []
-acronyms: []
-references: 
-  - acronyms
-  - play/declarer-play/elimination-and-endplays/elimination-index
-  - play/declarer-play/elimination-and-endplays/elimination
-  - play/declarer-play/elimination-and-endplays/endplay
-  - play/declarer-play/general-techniques/communication
-  - play/declarer-play/general-techniques/ducking
-  - play/declarer-play/general-techniques/finesses/finesse
-  - play/declarer-play/general-techniques/finesses/finesses-index
-  - play/declarer-play/index-declarer-play
-  - play/declarer-play/planning/planning-index
-  - play/declarer-play/planning/planning-the-play
-  - play/declarer-play/planning/timing
-  - play/declarer-play/probability/probability-index
-  - play/declarer-play/probability/restricted-choice
-  - play/defence/signaling/count
-  - references/references-index
-last_updated: 2026-07-27
-status: Draft
----
 
+# Implementation Readiness Contract
 
-````md id="safetyplay1"
-# Safety Play Technique
+## Status
 
-## Overview
+**Source readiness: SOURCE_PARTIAL**
 
-A **Safety Play** is a declarer-play technique in which declarer deliberately chooses a line of play that **maximizes the probability of making the contract**, even if it reduces the chance of taking extra tricks.
+This section defines the implementation boundary for BridgeLab.
 
-Unlike a normal percentage play, which seeks the highest probability of winning a particular suit, a Safety Play focuses on **ensuring the contract succeeds**. It is especially important in **slam contracts** and at **IMP scoring**, where making the contract is far more valuable than gaining an overtrick.
+The descriptive material above explains the purpose and strategic concept of a
+safety play. It does not, by itself, define a universal deterministic
+card-selection algorithm.
+
+BridgeLab must therefore not convert the general principle
+
+> Play safely for the contract, not for the maximum number of tricks.
+
+into an automatic card recommendation without additional state-specific
+evidence.
 
 ---
 
-# Purpose
+## Purpose of the Technique
 
-Safety Plays allow declarer to:
+A safety play chooses a line intended to maximize the probability of making the
+contract, even when that line may reduce the chance of taking additional
+tricks.
 
-- Maximize the chance of making the contract.
-- Protect against unfavorable suit breaks.
-- Guard against an unfortunate honor position.
-- Avoid unnecessary risks.
-- Trade possible overtricks for increased security.
-
----
-
-# Basic Principle
-
-The guiding principle is:
-
-> **"Play safely for the contract, not for the maximum number of tricks."**
-
-A Safety Play often sacrifices an overtrick to protect against the most dangerous layouts.
+The relevant objective is therefore the contract result rather than simply the
+maximum number of tricks available from one suit.
 
 ---
 
-# When to Use
+## Required Contract Objective
 
-Safety Plays are appropriate when:
+Before BridgeLab can select a safety play, the required contract objective must
+be known.
 
-- The contract is close.
-- Making the contract is more important than overtricks.
-- There is a significant risk of an unfavorable distribution.
-- A safer line greatly increases the chance of success.
-- Playing for maximum tricks introduces unnecessary danger.
+At minimum, an executable decision would require enough state to determine:
 
----
+- the contract;
+- tricks already won;
+- tricks still required to make the contract;
+- the role of the candidate suit or line in producing those tricks.
 
-# Safety Play vs. Percentage Play
-
-Although related, they are different concepts.
-
-| Safety Play | Percentage Play |
-|--------------|----------------|
-| Maximize the chance of making the contract | Maximize the probability of success in a particular suit or line |
-| Often sacrifices overtricks | Often seeks the maximum number of tricks |
-| Common at IMPs and slams | Common in all forms of scoring |
-
-Sometimes the correct percentage play is **not** the correct safety play.
+A safety-play recommendation must not be generated merely because one line
+appears less risky in isolation.
 
 ---
 
-# Example 1 – Missing Four Cards
+## Required Visible State
 
-Holding:
+Any future implementation must operate only from information legitimately
+available to declarer at the decision point.
 
-```
-Dummy
-♠ AQJ10
+Potentially relevant visible information includes:
 
-Declarer
-♠ K765
-```
+- declarer's cards;
+- dummy's cards;
+- cards already played;
+- the current trick;
+- the contract;
+- tricks already completed;
+- legal cards available to the acting hand.
 
-Missing:
+Unknown defender holdings must remain unknown unless their location has become
+logically established from the legal play history.
 
-```
-♠ 9843
-```
-
-Needing four tricks, declarer may cash the Ace and King first to guard against an unlikely but dangerous 4–0 split rather than immediately taking a finesse for an extra trick.
-
----
-
-# Example 2 – Missing Queen
-
-Holding:
-
-```
-Dummy
-♥ AKJ
-
-Declarer
-♥ 765
-```
-
-If the contract only requires two heart tricks, declarer may simply cash the Ace and King instead of risking a finesse for all three tricks.
+No hidden defender hand may be consulted by the recommendation engine.
 
 ---
 
-# Example 3 – Slam Contract
+## Candidate-Line Requirement
 
-Contract:
+A safety-play decision requires at least two legally available candidate lines
+whose consequences can be compared with respect to making the contract.
 
-```
-6NT
-```
+The general source material does not provide a complete algorithm for
+enumerating every possible candidate line.
 
-Declarer needs twelve tricks.
+Therefore:
 
-One suit offers:
-
-- A finesse for an overtrick.
-- A safer line that guarantees the contract whenever the suit divides normally.
-
-The safety play is preferred because losing the finesse could defeat the slam.
+**candidate-line generation remains unresolved.**
 
 ---
 
-# Planning the Play
+## Alternative-Line Comparison
 
-Before Trick One, ask:
+The source describes the strategic objective of preferring the line that makes
+the contract more often.
 
-- How many tricks are required?
-- Where are my potential losers?
-- Which suit is dangerous?
-- Is an overtrick important?
-- Can I increase the probability of making the contract by giving up an overtrick?
+For production execution, BridgeLab would additionally need a deterministic
+method for comparing the success probability of the relevant candidate lines.
 
----
+That comparison may require information about:
 
-# Common Safety Plays
+- possible defender distributions;
+- honor locations;
+- entries;
+- communication;
+- timing;
+- available tricks;
+- potential losers;
+- adverse suit breaks.
 
-Typical Safety Plays include:
+The present source does not provide a complete computational contract covering
+all of these factors.
 
-- Cashing high honors before finessing.
-- Playing for an unfavorable suit split.
-- Giving up a trick early to preserve communication.
-- Ducking to cut communications.
-- Taking a sure line rather than a speculative finesse.
+Therefore:
 
----
-
-# Matchpoints vs. IMPs
-
-## Matchpoints
-
-At Matchpoints:
-
-- Overtricks are valuable.
-- Safety Plays are used less frequently.
-- Declarer may choose a riskier line to gain an extra trick.
+**general alternative-line comparison remains unresolved.**
 
 ---
 
-## IMPs
+## Probability Dependency
 
-At IMPs:
+Many safety-play decisions require probability assessment.
 
-- Making the contract is paramount.
-- Safety Plays are used much more often.
-- Sacrificing an overtrick is usually correct if it increases the chance of success.
+BridgeLab must not manufacture such probabilities.
 
----
+At the current implementation boundary, a safety-play rule may depend only on a
+probability calculation supplied by a registered production probability engine
+or on a state-specific result explicitly established by an executable source
+contract.
 
-# Timing
+The existence of a strategically safer-looking line is not sufficient.
 
-Timing is critical.
+Probability methods such as:
 
-Many Safety Plays must be made **before** it becomes obvious they are needed.
+- restricted choice;
+- vacant places;
+- suit-distribution probabilities;
+- trump-break probabilities;
+- Monte Carlo simulation
 
-Once the dangerous position develops, it is often too late.
-
----
-
-# Common Mistakes
-
-- Playing for unnecessary overtricks.
-- Ignoring unfavorable distributions.
-- Taking speculative finesses.
-- Forgetting the scoring method.
-- Failing to plan before Trick One.
+must not be used implicitly when the corresponding production calculation is
+not available.
 
 ---
 
-# Defensive Countermeasures
+## Example Boundary
 
-Defenders should:
+The examples in this document illustrate the concept of safety play.
 
-- Force declarer into risky lines.
-- Conceal suit distribution.
-- Falsecard when appropriate.
-- Preserve communications.
-- Encourage declarer to abandon the safe line.
+They are educational examples and must not automatically be interpreted as
+complete production rules.
 
----
+Before any example becomes executable, BridgeLab must separately verify that
+the example defines:
 
-# Advantages
+1. the exact visible holding;
+2. the contract objective;
+3. the number of tricks required;
+4. the acting hand;
+5. the current trick state;
+6. the legal candidate cards;
+7. the competing line or lines;
+8. the success condition for each line;
+9. any required probability assumptions;
+10. all exceptions relevant to the recommendation.
 
-- Greatly improves the chance of making the contract.
-- Particularly valuable in slams.
-- Reduces the effect of bad breaks.
-- Essential at IMP scoring.
-- Encourages disciplined declarer play.
-
----
-
-# Disadvantages
-
-- Often sacrifices overtricks.
-- May score lower at Matchpoints.
-- Requires careful planning and probability assessment.
+If those conditions are not fully defined, the example remains descriptive
+rather than executable.
 
 ---
 
-# Related Techniques
+## Exceptions and Competing Considerations
 
-| Technique | Purpose |
-|-----------|---------|
-| Percentage Play | Choose the mathematically best line |
-| Ducking | Improve timing and cut communications |
-| Elimination Play | Remove defenders' safe exits |
-| Endplay | Force a favorable lead |
-| Squeeze | Create extra tricks through pressure |
-| Restricted Choice | Refine probabilities after an honor appears |
+The general safety-play principle may interact with:
 
----
+- entry preservation;
+- communication between declarer and dummy;
+- timing;
+- danger-hand considerations;
+- suit establishment;
+- ducking;
+- finesses;
+- elimination or endplay possibilities;
+- adverse distributions;
+- scoring objectives.
 
-# Declarer's Checklist
+The current source does not provide exhaustive precedence among these
+considerations.
 
-Before selecting a Safety Play:
+Therefore:
 
-- What is the minimum number of tricks required?
-- Which line guarantees the contract most often?
-- Am I risking the contract for an overtrick?
-- Does the scoring method favor safety?
-- Have I considered unfavorable suit breaks?
-
----
-
-# Memory Guide
-
-## Five Steps
-
-1. Count required tricks.
-2. Identify the danger.
-3. Compare alternative lines.
-4. Choose the safest line.
-5. Ignore unnecessary overtricks.
+**exception and precedence handling remains incomplete.**
 
 ---
 
-# Comparison
+## Legal-Action Requirement
 
-| Technique | Main Idea |
-|-----------|-----------|
-| Safety Play | Maximize the chance of making the contract |
-| Percentage Play | Choose the statistically best line |
-| Ducking | Lose a trick intentionally to gain later |
-| Endplay | Force a defender to lead favorably |
-| Squeeze | Force a defender to abandon a guard |
+Any future recommendation must select an exact legal card from the acting hand.
 
----
+A strategic instruction such as:
 
-# Typical Decision
+- play safely;
+- cash high honors;
+- avoid the finesse;
+- protect against the bad break
 
-```
-Need Contract
-↓
-
-Risky Line?
-
-↓
-
-Yes
-
-↓
-
-Safer Alternative Exists?
-
-↓
-
-Play the Safety Line
-```
+is not sufficient unless the source and current state identify the exact legal
+card required.
 
 ---
 
-# Memory Aid
+## Hidden-Information Restriction
 
-**Safety Play = "Make the Contract First."**
+A safety-play recommendation must never depend on the actual unseen defender
+holdings.
 
-Remember:
+A recommendation may use:
 
-- **Making the contract is the primary objective.**
-- **Do not risk the contract for an unnecessary overtrick.**
-- **Consider the most dangerous suit breaks.**
-- **Safety Plays are especially valuable in slams and IMP scoring.**
-- **Plan the safe line before Trick One.**
+- visible cards;
+- played cards;
+- deductions legitimately established from play;
+- explicitly supported probability evidence.
 
-Safety Plays are one of the defining characteristics of expert declarer play. Rather than pursuing every possible overtrick, expert declarers focus on selecting the line that succeeds most often, particularly when the contract itself is valuable. Mastering Safety Plays leads to more consistent results and fewer avoidable failures.
-````
+It may not inspect the complete deal merely to determine which line happens to
+work.
+
+---
+
+## Precedence
+
+No general precedence rule is established here between Safety Play and other
+declarer techniques.
+
+In particular, this source does not establish a universal precedence over:
+
+- finesse;
+- ducking;
+- hold-up play;
+- elimination;
+- endplay;
+- squeeze;
+- suit establishment;
+- restricted-choice reasoning.
+
+A future narrow production rule must define its own bounded precedence and
+exceptions.
+
+---
+
+## Architecture Readiness
+
+The existing declarer-play architecture can represent important parts of the
+required state, including:
+
+- declarer and dummy visible cards;
+- played cards;
+- trick history;
+- current legal cards;
+- contract information.
+
+However, the general Safety Play technique additionally requires comparison of
+alternative lines and, in many cases, probability or multi-trick planning.
+
+Those capabilities are not established by this source contract.
+
+Architecture status for the general technique:
+
+**PARTIALLY REPRESENTABLE**
+
+---
+
+## Source-Executable Gate
+
+The general Safety Play technique is not production executable until a bounded
+candidate satisfies all of the following:
+
+- deterministic visible-state trigger;
+- deterministic contract objective;
+- exact legal action;
+- bounded scope;
+- bounded exceptions;
+- sufficient competing-line precedence;
+- no hidden-card inference;
+- no unresolved partnership policy;
+- no unavailable probability dependency;
+- complete representation by the production state model.
+
+Current result:
+
+**SOURCE_PARTIAL**
+
+---
+
+## Recommended Implementation Strategy
+
+Do not attempt to implement Safety Play as one universal rule.
+
+Instead, identify a narrowly bounded safety-play position from verified source
+material and audit that position independently.
+
+A narrow candidate may become production executable if its:
+
+- holding;
+- contract objective;
+- trick requirement;
+- legal action;
+- competing line;
+- exceptions;
+- probability requirements
+
+are all explicitly defined.
+
+Until such a candidate passes the complete source-executable gate, BridgeLab
+must abstain from producing a Safety Play recommendation.
+
+---
+
+## Unresolved Items
+
+The following remain unresolved for general production use:
+
+1. universal candidate-line generation;
+2. exact comparison of alternative lines;
+3. probability calculation for adverse distributions;
+4. multi-trick consequence evaluation;
+5. complete entry and communication modeling;
+6. exhaustive exceptions;
+7. precedence against competing declarer techniques;
+8. exact card selection for arbitrary safety-play positions.
+
+These unresolved items are intentional.
+
+They must not be filled by inference or by undocumented bridge knowledge.
+
+---
+
+## BridgeLab Implementation Status
+
+**Technique:** Safety Play  
+**Source classification:** SOURCE_PARTIAL  
+**Production algorithm:** Not implemented  
+**Production recommendation:** Not enabled  
+**Policy dependency:** None identified  
+**Hidden-card inference permitted:** No  
+**Unregistered probability calculations permitted:** No  
+
+The next readiness step is to identify and verify one narrowly bounded
+safety-play position rather than implementing the general technique.
