@@ -5,12 +5,32 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
+from core.provenance import (
+    ProvenanceCategory,
+    ProvenanceManifestEntry,
+    ProvenanceValidator,
+)
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BRIDGELAB_ROOT = REPO_ROOT.parent
 
 PHASE17A_JSON = (
     REPO_ROOT
     / "bridgelab_phase17a_bridge_intelligence_source_readiness_audit.json"
+)
+PHASE17A_MANIFEST = ProvenanceManifestEntry(
+    logical_id="phase17a.bridge-intelligence-source-readiness-audit.json",
+    category=ProvenanceCategory.ARTIFACT,
+    canonical_path=(
+        "bridgelab-toolkit/"
+        "bridgelab_phase17a_bridge_intelligence_source_readiness_audit.json"
+    ),
+    archive_fallbacks=(
+        "bridgelab-toolkit/archive/phase17/"
+        "bridgelab_phase17a_bridge_intelligence_source_readiness_audit.json",
+    ),
+    provenance_commit="5c61e35",
+    expected_blob_oid="15bc182d55e0e039ff10f37251ace1a5876d7273",
 )
 
 SAFETY_PLAY_PATH = (
@@ -125,12 +145,15 @@ class Phase17BDeclarerSourceEnrichmentAudit:
 
 
 def _load_phase17a() -> dict[str, Any]:
-    if not PHASE17A_JSON.exists():
+    result = ProvenanceValidator(BRIDGELAB_ROOT).resolve_and_validate(
+        PHASE17A_MANIFEST
+    )
+    if not result.is_authorized or result.resolved_path is None:
         raise FileNotFoundError(
-            f"Phase 17A JSON report not found: {PHASE17A_JSON}"
+            "Phase 17A JSON report failed provenance validation: "
+            f"{result.status.value}: {result.reason}"
         )
-
-    return json.loads(PHASE17A_JSON.read_text(encoding="utf-8"))
+    return json.loads(result.resolved_path.read_text(encoding="utf-8"))
 
 
 def _load_safety_play() -> str:

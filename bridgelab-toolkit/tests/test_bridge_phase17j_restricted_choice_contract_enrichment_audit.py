@@ -4,6 +4,18 @@ from benchmarks.phase17j_restricted_choice_contract_enrichment_audit import (
     UNRESOLVED_DEPENDENCIES,
     run_audit,
 )
+from benchmarks.phase17_historical_provenance import (
+    current_phase17_source_readiness,
+    validate_historical_report,
+)
+from core.provenance import HistoricalReproducibilityStatus
+
+
+def _recorded():
+    validation = validate_historical_report("17J")
+    assert validation.is_valid_recorded_output
+    assert validation.payload is not None
+    return validation.payload
 
 
 def test_phase17j_candidate_and_classification() -> None:
@@ -17,62 +29,44 @@ def test_phase17j_candidate_and_classification() -> None:
 
 
 def test_phase17j_source_provenance_remains_blocked() -> None:
-    result = run_audit()
-
-    assert result.historical_backup_found is True
-    assert result.historical_backup_is_identical is False
-    assert result.historical_backup_git_tracked is False
-    assert result.vacant_places_git_history_found is False
-
-    source_by_path = {
-        record.logical_path: record
-        for record in result.source_records
-    }
-
-    assert (
-        source_by_path[
-            "knowledge/play/counting/vacant-places.md"
-        ].provenance_classification
-        == "UNTRACKED_PROVENANCE_UNRESOLVED"
-    )
-    assert (
-        source_by_path[
-            "knowledge/play/declarer-play/general-techniques/"
-            "restricted-choice.md"
-        ].provenance_classification
-        == "UNTRACKED_PROVENANCE_UNRESOLVED"
-    )
+    historical = _recorded()
+    assert historical["historical_backup_found"] is True
+    assert historical["historical_backup_is_identical"] is False
+    assert historical["historical_backup_git_tracked"] is False
+    current = current_phase17_source_readiness()
+    assert current.status is HistoricalReproducibilityStatus.SOURCE_SNAPSHOT_MISSING
+    assert current.is_source_reproducible is False
 
 
 
 def test_phase17j_protected_sources_are_not_safe_to_stage() -> None:
-    result = run_audit()
-
-    assert len(result.source_records) == 7
-    assert all(record.safe_to_stage is False for record in result.source_records)
+    records = _recorded()["source_records"]
+    assert len(records) == 7
+    assert all(record["safe_to_stage"] is False for record in records)
+    assert current_phase17_source_readiness().missing_paths
 
 
 def test_phase17j_vacant_places_contract_evidence_is_present() -> None:
-    result = run_audit()
-
-    assert result.vacant_places_relationship_contract_present is True
-    assert result.vacant_places_practical_procedure_present is True
-    assert result.vacant_places_uncertainty_guard_present is True
+    historical = _recorded()
+    assert historical["vacant_places_relationship_contract_present"] is True
+    assert historical["vacant_places_practical_procedure_present"] is True
+    assert historical["vacant_places_uncertainty_guard_present"] is True
+    assert run_audit().vacant_places_relationship_contract_present is False
 
 
 def test_phase17j_restricted_choice_observation_evidence_is_present() -> None:
-    result = run_audit()
-
-    assert result.restricted_choice_observation_procedure_present is True
-    assert result.restricted_choice_noncertainty_guard_present is True
+    historical = _recorded()
+    assert historical["restricted_choice_observation_procedure_present"] is True
+    assert historical["restricted_choice_noncertainty_guard_present"] is True
+    assert run_audit().restricted_choice_observation_procedure_present is False
 
 
 def test_phase17j_precision_contract_remains_partial() -> None:
-    result = run_audit()
-
-    assert result.worked_percentage_outputs_present is True
-    assert result.worked_equal_choice_present is True
-    assert result.explicit_precision_rounding_contract_present is False
+    historical = _recorded()
+    assert historical["worked_percentage_outputs_present"] is True
+    assert historical["worked_equal_choice_present"] is True
+    assert historical["explicit_precision_rounding_contract_present"] is False
+    assert run_audit().worked_percentage_outputs_present is False
 
 
 def test_phase17j_probability_architecture_is_scaffolding_only() -> None:

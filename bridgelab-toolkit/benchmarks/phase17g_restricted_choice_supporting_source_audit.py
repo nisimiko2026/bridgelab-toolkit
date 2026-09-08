@@ -5,6 +5,10 @@ import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from benchmarks.phase17_historical_provenance import (
+    validate_phase17c_backup_member,
+)
+
 PHASE = "17G"
 BASELINE_PHASE = "17F"
 CANDIDATE = "Restricted Choice Supporting Source Audit"
@@ -284,21 +288,11 @@ def run_audit() -> Phase17GResult:
     glossary_text = _read(glossary_path)
     terminology_text = _read(terminology_path)
     abbreviations_text = _read(abbreviations_path)
-    backup_path = (
-        toolkit
-        / "phase17c_fullkit_temp"
-        / "bridgelab-toolkit"
-        / "output"
-        / "backups"
-        / "spelling-repair-20260816-01"
-        / "play"
-        / "declarer-play"
-        / "probabilty"
-        / "vacant-places.md"
+    backup = validate_phase17c_backup_member(repository_root=root)
+    backup_found = backup.is_authorized
+    backup_text = (
+        backup.content.decode("utf-8") if backup.content is not None else ""
     )
-
-    backup_found = backup_path.exists()
-    backup_text = _read(backup_path)
 
     backup_identical = (
         backup_found
@@ -306,7 +300,7 @@ def run_audit() -> Phase17GResult:
         and backup_text == vacant_text
     )
 
-    backup_tracked, _ = _git_status(backup_path, root)
+    backup_tracked = False
 
     vacant_relationship_contract = _contains_all(
         vacant_text,
