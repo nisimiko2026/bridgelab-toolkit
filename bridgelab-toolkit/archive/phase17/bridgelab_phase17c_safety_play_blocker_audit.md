@@ -6,9 +6,9 @@
 
 
 
-\*\*Phase:\*\* 17C  
+\*\*Phase:\*\* 17C
 
-\*\*Candidate:\*\* NARROW\_SAFETY\_PLAY\_POSITION  
+\*\*Candidate:\*\* NARROW\_SAFETY\_PLAY\_POSITION
 
 \*\*Purpose:\*\* Determine whether the Phase 17B Safety Play source enrichment is sufficient to authorize one narrowly bounded production declarer-play recommendation.
 
@@ -294,29 +294,29 @@ Phase 17C is audit-only.
 
 
 
-New bidding rules: 0  
+New bidding rules: 0
 
-New bidding routes: 0  
+New bidding routes: 0
 
-New declarer-play algorithms: 0  
+New declarer-play algorithms: 0
 
-New opening-lead algorithms: 0  
+New opening-lead algorithms: 0
 
-New defensive-play algorithms: 0  
+New defensive-play algorithms: 0
 
-New probability formulas: 0  
+New probability formulas: 0
 
-New production recommendations: 0  
+New production recommendations: 0
 
 Production defaults changed: NO
 
 
 
-The existing `SIMPLE\_UNBLOCK\_KING` production declarer technique remains unchanged.
+The existing `SIMPLE\\\_UNBLOCK\\\_KING` production declarer technique remains unchanged.
 
 
 
-The existing `KNOWN\_CARD\_COUNT` probability engine remains unchanged.
+The existing `KNOWN\\\_CARD\\\_COUNT` probability engine remains unchanged.
 
 
 
