@@ -225,8 +225,14 @@ from .probability_engine import (
     evaluate_probability,
 )
 from .probability_questions import (
-    KnownCardCountQuestion, MonteCarloQuestion, ProbabilityQuestion, RestrictedChoiceQuestion,
+    KnownCardCountQuestion, MonteCarloQuestion, ProbabilityQuestion,
+    PublicCardOwnership, PublicEvidence, PublicEvidenceKind,
+    RestrictedChoiceObservationStatus, RestrictedChoiceQuestion,
     SuitDistributionQuestion, TrumpBreakQuestion, VacantPlacesQuestion,
+)
+from .probability_question_adapters import (
+    build_restricted_choice_question,
+    build_vacant_places_question_from_play_history,
 )
 from .defensive_play_state import (
     DefensivePlayInput, DefensivePlayState, DefensiveStateBuildResult,
@@ -331,8 +337,11 @@ __all__ += [
     "ProbabilityContext", "ProbabilityEngineFailureCode", "ProbabilityEngineRegistry",
     "ProbabilityEngineResult", "ProbabilityEngineStatus", "build_probability_context",
     "evaluate_probability", "MonteCarloQuestion", "ProbabilityQuestion",
-    "RestrictedChoiceQuestion", "SuitDistributionQuestion", "TrumpBreakQuestion",
-    "VacantPlacesQuestion",
+    "PublicCardOwnership", "PublicEvidence", "PublicEvidenceKind",
+    "RestrictedChoiceObservationStatus", "RestrictedChoiceQuestion",
+    "SuitDistributionQuestion", "TrumpBreakQuestion", "VacantPlacesQuestion",
+    "build_restricted_choice_question",
+    "build_vacant_places_question_from_play_history",
     "DefensivePlayInput", "DefensivePlayState", "DefensiveStateBuildResult",
     "DefensiveStateFailureCode", "build_defensive_play_state",
     "build_defensive_probability_context",

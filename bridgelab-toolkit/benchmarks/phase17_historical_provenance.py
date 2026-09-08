@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -143,6 +144,7 @@ class CurrentSourceReadiness:
     status: HistoricalReproducibilityStatus
     missing_paths: tuple[str, ...]
     available_paths: tuple[str, ...]
+    source_states: tuple[tuple[str, str], ...]
 
     @property
     def is_source_reproducible(self) -> bool:
@@ -151,20 +153,52 @@ class CurrentSourceReadiness:
 
 def current_phase17_source_readiness(
     *,
-    project_root: Path = Path(__file__).resolve().parents[1],
+    repository_root: Path = GIT_ROOT,
 ) -> CurrentSourceReadiness:
     missing = tuple(
-        path for path in CURRENT_REQUIRED_SOURCE_PATHS if not (project_root / path).is_file()
+        path
+        for path in CURRENT_REQUIRED_SOURCE_PATHS
+        if not (repository_root / path).is_file()
     )
     available = tuple(
-        path for path in CURRENT_REQUIRED_SOURCE_PATHS if (project_root / path).is_file()
+        path
+        for path in CURRENT_REQUIRED_SOURCE_PATHS
+        if (repository_root / path).is_file()
+    )
+    source_states = tuple(
+        (
+            path,
+            (
+                "MISSING"
+                if path in missing
+                else (
+                    "TRACKED_BASELINE_PRESENT_BUT_HISTORICAL_CONTENT_UNAVAILABLE"
+                    if subprocess.run(
+                        (
+                            "git",
+                            "-C",
+                            str(repository_root),
+                            "ls-files",
+                            "--error-unmatch",
+                            "--",
+                            path,
+                        ),
+                        check=False,
+                        capture_output=True,
+                    ).returncode
+                    == 0
+                    else "PRESENT_PROVENANCE_UNRESOLVED"
+                )
+            ),
+        )
+        for path in CURRENT_REQUIRED_SOURCE_PATHS
     )
     status = (
         HistoricalReproducibilityStatus.REPRODUCIBLE
         if not missing
         else HistoricalReproducibilityStatus.SOURCE_SNAPSHOT_MISSING
     )
-    return CurrentSourceReadiness(status, missing, available)
+    return CurrentSourceReadiness(status, missing, available, source_states)
 
 
 def _recorded_output_reproducibility() -> HistoricalReproducibility:

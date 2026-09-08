@@ -17,16 +17,19 @@ from benchmarks.phase17_bridge_intelligence_source_readiness_audit import (
     run_phase17_source_readiness_audit,
 )
 from benchmarks.phase17_historical_provenance import (
+    CURRENT_REQUIRED_SOURCE_PATHS,
     GIT_ROOT,
     MISSING_SOURCE_SNAPSHOTS,
     PHASE17_HISTORICAL_REPORT_MANIFEST,
     PHASE17C_BACKUP_MEMBER_BLOB,
+    current_phase17_source_readiness,
     validate_historical_payload,
     validate_historical_report,
     validate_phase17c_backup_member,
 )
 from bridge import create_standard_sayc_router
-from bridge.models import Suit
+from bridge.declarer_play_state import PlayedCard
+from bridge.models import Card, Seat, Suit
 from bridge.probability_engine import DEFAULT_PROBABILITY_ENGINE_REGISTRY
 from bridge.probability_questions import (
     RestrictedChoiceQuestion,
@@ -92,6 +95,20 @@ def test_authorized_output_does_not_claim_source_reproducibility() -> None:
     assert result.reproducibility.missing_source_snapshots == MISSING_SOURCE_SNAPSHOTS
 
 
+def test_current_readiness_distinguishes_baseline_from_missing_snapshots() -> None:
+    readiness = current_phase17_source_readiness()
+    assert readiness.available_paths == (CURRENT_REQUIRED_SOURCE_PATHS[0],)
+    assert readiness.missing_paths == CURRENT_REQUIRED_SOURCE_PATHS[1:]
+    assert dict(readiness.source_states) == {
+        CURRENT_REQUIRED_SOURCE_PATHS[0]: (
+            "TRACKED_BASELINE_PRESENT_BUT_HISTORICAL_CONTENT_UNAVAILABLE"
+        ),
+        CURRENT_REQUIRED_SOURCE_PATHS[1]: "MISSING",
+        CURRENT_REQUIRED_SOURCE_PATHS[2]: "MISSING",
+        CURRENT_REQUIRED_SOURCE_PATHS[3]: "MISSING",
+    }
+
+
 def test_exact_phase17c_zip_member_is_blob_pinned_without_extraction() -> None:
     result = validate_phase17c_backup_member()
     assert result.status is ProvenanceStatus.AUTHORIZED
@@ -124,8 +141,17 @@ def test_historical_validation_changes_no_production_invariants() -> None:
     assert len(create_standard_sayc_router().routes) == 45
     assert len(registry.registrations) == 1
     assert registry.calculator_for(
-        RestrictedChoiceQuestion("restricted", subject_suit=Suit.SPADES)
+        RestrictedChoiceQuestion(
+            "restricted",
+            subject_suit=Suit.SPADES,
+            observed_defender=Seat.EAST,
+            observed_play=PlayedCard(Seat.EAST, Card.parse("KS")),
+        )
     ) is None
     assert registry.calculator_for(
-        VacantPlacesQuestion("vacant", subject_suit=Suit.SPADES)
+        VacantPlacesQuestion(
+            "vacant",
+            subject_suit=Suit.SPADES,
+            defenders=(Seat.EAST, Seat.WEST),
+        )
     ) is None

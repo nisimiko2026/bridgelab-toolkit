@@ -7,7 +7,7 @@ from bridge import (
     CalculationMode, Card, DEFAULT_PROBABILITY_ENGINE_REGISTRY, FormulaIdentifier,
     KnownCardCountQuestion, MonteCarloQuestion, ProbabilityContext,
     ProbabilityEngineFailureCode, ProbabilityEngineStatus, ProbabilityEvidenceStatus,
-    RestrictedChoiceQuestion, Suit, SuitDistributionQuestion, TrumpBreakQuestion,
+    PlayedCard, RestrictedChoiceQuestion, Seat, Suit, SuitDistributionQuestion, TrumpBreakQuestion,
     VacantPlacesQuestion, analyze_deal_decision, collect_declarer_probability_evidence,
     create_standard_sayc_router, evaluate_declarer_play, evaluate_probability,
 )
@@ -24,8 +24,13 @@ def test_question_models_are_immutable():
 
 
 def test_question_variants_capture_only_explicit_inputs():
-    assert RestrictedChoiceQuestion("honor choice", Suit.CLUBS).observed_play == ()
-    assert VacantPlacesQuestion("seat capacity", Suit.HEARTS).known_seat_constraints == ()
+    play = PlayedCard(Seat.EAST, Card.parse("KC"))
+    assert RestrictedChoiceQuestion(
+        "honor choice", Suit.CLUBS, Seat.EAST, play
+    ).observed_play == play
+    assert VacantPlacesQuestion(
+        "seat capacity", Suit.HEARTS, (Seat.EAST, Seat.WEST)
+    ).public_card_ownership == ()
     assert SuitDistributionQuestion("club split", Suit.CLUBS, 5).cards_outstanding == 5
     assert TrumpBreakQuestion("trump split", Suit.SPADES, 5).candidate_distributions == ()
     assert MonteCarloQuestion("line simulation", seed=7, trials=100).seed == 7
@@ -77,8 +82,15 @@ def test_missing_state_is_structured_unavailable():
 
 
 @pytest.mark.parametrize("question", [
-    RestrictedChoiceQuestion("restricted choice", Suit.CLUBS),
-    VacantPlacesQuestion("vacant places", Suit.CLUBS),
+    RestrictedChoiceQuestion(
+        "restricted choice",
+        Suit.CLUBS,
+        Seat.EAST,
+        PlayedCard(Seat.EAST, Card.parse("KC")),
+    ),
+    VacantPlacesQuestion(
+        "vacant places", Suit.CLUBS, (Seat.EAST, Seat.WEST)
+    ),
     SuitDistributionQuestion("suit distribution", Suit.CLUBS, 5),
     TrumpBreakQuestion("trump break", Suit.SPADES, 5),
     MonteCarloQuestion("simulation", seed=1, trials=100),
@@ -99,7 +111,13 @@ def test_backward_compatible_evidence_adapter_uses_engine():
 
 def test_adapter_returns_structured_unavailable_for_future_question():
     result = collect_declarer_probability_evidence(
-        state(), RestrictedChoiceQuestion("restricted choice", Suit.CLUBS)
+        state(),
+        RestrictedChoiceQuestion(
+            "restricted choice",
+            Suit.CLUBS,
+            Seat.EAST,
+            PlayedCard(Seat.EAST, Card.parse("KC")),
+        ),
     )
     assert result.status is ProbabilityEvidenceStatus.UNAVAILABLE
     assert result.failure_code.value == "unsupported-evidence-type"

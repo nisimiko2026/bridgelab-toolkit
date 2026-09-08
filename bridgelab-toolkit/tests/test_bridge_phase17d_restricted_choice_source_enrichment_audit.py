@@ -44,7 +44,8 @@ def test_phase17d_required_sources_have_provenance_blockers() -> None:
     assert set(CURRENT_REQUIRED_SOURCE_PATHS[1:]) <= unresolved
     current = current_phase17_source_readiness()
     assert current.status is HistoricalReproducibilityStatus.SOURCE_SNAPSHOT_MISSING
-    assert set(CURRENT_REQUIRED_SOURCE_PATHS) == set(current.missing_paths)
+    assert set(CURRENT_REQUIRED_SOURCE_PATHS[1:]) == set(current.missing_paths)
+    assert current.available_paths == (CURRENT_REQUIRED_SOURCE_PATHS[0],)
 
 
 def test_phase17d_protected_sources_are_not_safe_to_stage() -> None:

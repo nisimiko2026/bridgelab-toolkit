@@ -440,12 +440,15 @@ def run_audit() -> Phase17KResult:
     restricted_question_exists = (
         "class RestrictedChoiceQuestion" in questions_text
         and "observed_play" in questions_text
-        and "known_cards" in questions_text
+        and "observed_defender" in questions_text
+        and "prior_public_plays" in questions_text
+        and "publicly_established_choice_sets" in questions_text
     )
 
     vacant_question_exists = (
         "class VacantPlacesQuestion" in questions_text
-        and "known_seat_constraints" in questions_text
+        and "defenders" in questions_text
+        and "public_card_ownership" in questions_text
     )
 
     registry_text = ""

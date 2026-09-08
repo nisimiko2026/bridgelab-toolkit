@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 
 from benchmarks.probability_evidence_adapter import _state
-from bridge.models import Card, Suit
+from bridge.declarer_play_state import PlayedCard
+from bridge.models import Card, Seat, Suit
 from bridge.probability_engine import (
     DEFAULT_PROBABILITY_ENGINE_REGISTRY, CalculationMode, ProbabilityContext,
     ProbabilityEngineStatus, evaluate_probability,
@@ -46,8 +47,25 @@ def run_probability_engine_architecture_benchmark() -> ProbabilityEngineArchitec
         ("known-card-success", KnownCardCountQuestion(), valid, None),
         ("invalid-known-card-accounting", KnownCardCountQuestion(), None,
          ProbabilityContext(frozenset({Card.parse("AS")}), frozenset(), 49)),
-        ("restricted-choice-unregistered", RestrictedChoiceQuestion("restricted choice", Suit.CLUBS), valid, None),
-        ("vacant-places-unregistered", VacantPlacesQuestion("vacant places", Suit.CLUBS), valid, None),
+        (
+            "restricted-choice-unregistered",
+            RestrictedChoiceQuestion(
+                "restricted choice",
+                Suit.CLUBS,
+                Seat.EAST,
+                PlayedCard(Seat.EAST, Card.parse("KC")),
+            ),
+            valid,
+            None,
+        ),
+        (
+            "vacant-places-unregistered",
+            VacantPlacesQuestion(
+                "vacant places", Suit.CLUBS, (Seat.EAST, Seat.WEST)
+            ),
+            valid,
+            None,
+        ),
         ("suit-distribution-unregistered", SuitDistributionQuestion("suit distribution", Suit.CLUBS, 5), valid, None),
         ("trump-break-unregistered", TrumpBreakQuestion("trump break", Suit.SPADES, 5), valid, None),
         ("monte-carlo-unregistered", MonteCarloQuestion("simulation", seed=1, trials=100), valid, None),
