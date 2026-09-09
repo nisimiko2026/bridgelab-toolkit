@@ -234,6 +234,7 @@ from .probability_question_adapters import (
     build_restricted_choice_question,
     build_vacant_places_question_from_play_history,
 )
+from .probability_values import ProbabilityValue
 from .defensive_play_state import (
     DefensivePlayInput, DefensivePlayState, DefensiveStateBuildResult,
     DefensiveStateFailureCode, build_defensive_play_state,
@@ -342,6 +343,7 @@ __all__ += [
     "SuitDistributionQuestion", "TrumpBreakQuestion", "VacantPlacesQuestion",
     "build_restricted_choice_question",
     "build_vacant_places_question_from_play_history",
+    "ProbabilityValue",
     "DefensivePlayInput", "DefensivePlayState", "DefensiveStateBuildResult",
     "DefensiveStateFailureCode", "build_defensive_play_state",
     "build_defensive_probability_context",
