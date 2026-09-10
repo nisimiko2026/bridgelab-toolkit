@@ -6,7 +6,8 @@ from collections.abc import Mapping
 from dataclasses import dataclass, field
 from enum import Enum
 
-from .bidding_rules import BiddingContext
+from .auction import Auction
+from .bidding_rules import BiddingContext, SystemContext
 from .deal_analysis import AnalysisStage
 from .deals import Deal
 from .declarer_play_state import DeclarerPlayInput
@@ -19,7 +20,7 @@ from .full_deal_analysis import (
     analyze_full_deal,
     full_deal_analysis_to_dict,
 )
-from .models import Card
+from .models import Card, Hand, Seat, Vulnerability
 from .opening_lead_state import OpeningLeadInput
 from .policy_registry import PolicyRegistry
 from .probability_engine import ProbabilityContext
@@ -81,6 +82,85 @@ class FullDealApplicationResponse:
     diagnostics: tuple[tuple[str, str], ...] = ()
 
 
+def _require_mapping(value: object, field: str) -> Mapping[str, object]:
+    if not isinstance(value, Mapping):
+        raise TypeError(f"{field} must be a JSON object")
+    if any(not isinstance(key, str) for key in value):
+        raise TypeError(f"{field} keys must be strings")
+    return value  # type: ignore[return-value]
+
+
+def _reject_unknown_fields(
+    value: Mapping[str, object], supported: set[str], field: str
+) -> None:
+    unknown = sorted(set(value) - supported)
+    if unknown:
+        raise ValueError(f"Unsupported {field} field: {unknown[0]!r}.")
+
+
+def _require_string(value: object, field: str) -> str:
+    if not isinstance(value, str):
+        raise TypeError(f"{field} must be a string")
+    return value
+
+
+def _bidding_context_from_dict(value: object) -> BiddingContext | None:
+    if value is None:
+        return None
+    bidding = _require_mapping(value, "bidding")
+    required = {"hand", "auction", "vulnerability", "system"}
+    _reject_unknown_fields(bidding, required, "bidding")
+    missing = sorted(required - set(bidding))
+    if missing:
+        raise ValueError(f"Missing bidding field: {missing[0]!r}.")
+
+    auction_value = _require_mapping(bidding["auction"], "bidding.auction")
+    _reject_unknown_fields(auction_value, {"dealer", "calls"}, "bidding.auction")
+    if "dealer" not in auction_value:
+        raise ValueError("Missing bidding.auction field: 'dealer'.")
+    calls = auction_value.get("calls", ())
+    if not isinstance(calls, (list, tuple)):
+        raise TypeError("bidding.auction.calls must be an array")
+    if any(not isinstance(call, str) for call in calls):
+        raise TypeError("bidding.auction.calls values must be strings")
+    auction = Auction(
+        Seat.parse(
+            _require_string(auction_value["dealer"], "bidding.auction.dealer")
+        ),
+        calls,
+    )
+
+    vulnerability_text = _require_string(
+        bidding["vulnerability"], "bidding.vulnerability"
+    )
+    try:
+        vulnerability = Vulnerability(vulnerability_text)
+    except ValueError as exc:
+        raise ValueError(
+            "bidding.vulnerability must be one of: None, NS, EW, Both"
+        ) from exc
+
+    system_value = _require_mapping(bidding["system"], "bidding.system")
+    _reject_unknown_fields(system_value, {"id", "options"}, "bidding.system")
+    if "id" not in system_value:
+        raise ValueError("Missing bidding.system field: 'id'.")
+    options = _require_mapping(
+        system_value.get("options", {}), "bidding.system.options"
+    )
+    if any(not isinstance(item, str) for item in options.values()):
+        raise TypeError("bidding.system.options values must be strings")
+    system = SystemContext.from_mapping(
+        _require_string(system_value["id"], "bidding.system.id"), options
+    )
+
+    return BiddingContext.create(
+        hand=Hand.parse(_require_string(bidding["hand"], "bidding.hand")),
+        auction=auction,
+        vulnerability=vulnerability,
+        system=system,
+    )
+
+
 def full_deal_application_request_from_dict(
     payload: Mapping[str, object],
 ) -> FullDealApplicationRequest:
@@ -88,7 +168,7 @@ def full_deal_application_request_from_dict(
 
     if not isinstance(payload, Mapping):
         raise TypeError("application request must be a JSON object")
-    supported = {"deal", "requested_stages", "probability_requests"}
+    supported = {"bidding", "deal", "requested_stages", "probability_requests"}
     unknown = sorted(set(payload) - supported)
     if unknown:
         raise ValueError(f"Unsupported request field: {unknown[0]!r}.")
@@ -127,6 +207,7 @@ def full_deal_application_request_from_dict(
     return FullDealApplicationRequest(
         deal=payload.get("deal"),
         requested_stages=tuple(stages),
+        bidding=_bidding_context_from_dict(payload.get("bidding")),
         probability_requests=tuple(converted),  # type: ignore[arg-type]
     )
 
@@ -176,6 +257,7 @@ def application_request_to_full_deal_input(
             ),
         )
     deal = request.deal
+    serialized_deal_supplied = isinstance(deal, str)
     if isinstance(deal, str):
         try:
             deal = Deal.parse(deal)
@@ -196,6 +278,22 @@ def application_request_to_full_deal_input(
                     FullDealApplicationErrorCode.UNSUPPORTED_INPUT,
                     "deal",
                     "Deal must be a canonical Deal or serialized deal string.",
+                ),
+            ),
+        )
+    if (
+        serialized_deal_supplied
+        and isinstance(request.bidding, BiddingContext)
+        and deal is not None
+        and deal.hand(request.bidding.seat) != request.bidding.hand
+    ):
+        return FullDealApplicationValidationResult(
+            None,
+            (
+                FullDealApplicationError(
+                    FullDealApplicationErrorCode.VALIDATION_ERROR,
+                    "bidding.hand",
+                    "Bidding hand conflicts with the deal hand for the current bidder.",
                 ),
             ),
         )

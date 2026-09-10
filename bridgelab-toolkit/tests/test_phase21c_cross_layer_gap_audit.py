@@ -84,16 +84,44 @@ def test_typed_input_fields_are_inspected_from_live_dataclass(audit):
 
 
 def test_json_cli_fields_are_inspected_from_live_parser(audit):
-    assert _json_parser_fields() == {"deal", "requested_stages", "probability_requests"}
-    assert dict(audit.summary)["json_cli_input_representable"] == 1
-    assert dict(audit.gap_counts)[GapType.PUBLIC_JSON_INPUT_GAP.value] == 46
+    assert _json_parser_fields() == {
+        "bidding",
+        "deal",
+        "requested_stages",
+        "probability_requests",
+    }
+    summary = dict(audit.summary)
+    assert summary["json_cli_input_representable"] == 46
+    assert summary["json_cli_publicly_reachable"] == 46
+    assert summary["json_cli_not_reachable"] == 1
+    assert dict(audit.gap_counts)[GapType.PUBLIC_JSON_INPUT_GAP.value] == 1
 
 
-def test_typed_and_json_reachability_remain_distinct(audit):
+def test_current_typed_and_json_reachability_by_capability(audit):
     routes = [item for item in audit.entries if item.element_type is ProductionElementType.BIDDING_ROUTE]
-    assert all(item.typed_input_state is InputRepresentationState.TYPED_ONLY for item in routes)
+    probability = next(
+        item
+        for item in audit.entries
+        if item.element_type is ProductionElementType.PROBABILITY_ENGINE
+    )
+    declarer = next(
+        item
+        for item in audit.entries
+        if item.element_type is ProductionElementType.DECLARER_TECHNIQUE
+    )
+    assert all(
+        item.typed_input_state is InputRepresentationState.TYPED_AND_JSON
+        for item in routes
+    )
     assert all(item.typed_reachability_state is ReachabilityState.REQUIRES_EXPLICIT_DEPENDENCY for item in routes)
-    assert all(item.json_cli_reachability_state is ReachabilityState.NOT_REACHABLE for item in routes)
+    assert all(
+        item.json_cli_reachability_state is ReachabilityState.PUBLICLY_REACHABLE
+        for item in routes
+    )
+    assert probability.typed_input_state is InputRepresentationState.TYPED_AND_JSON
+    assert probability.json_cli_reachability_state is ReachabilityState.PUBLICLY_REACHABLE
+    assert declarer.typed_input_state is InputRepresentationState.TYPED_ONLY
+    assert declarer.json_cli_reachability_state is ReachabilityState.NOT_REACHABLE
 
 
 def test_public_output_state_comes_from_live_serializer(audit):

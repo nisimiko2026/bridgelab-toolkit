@@ -427,7 +427,6 @@ def run_audit() -> CrossLayerGapAudit:
         "declarer": 1,
         "phase21a_routes": 45,
         "typed": 47,
-        "json": 1,
     }
     observed = {
         "entries": len(entries),
@@ -436,10 +435,29 @@ def run_audit() -> CrossLayerGapAudit:
         "declarer": sum(item.element_type is ProductionElementType.DECLARER_TECHNIQUE for item in entries),
         "phase21a_routes": len(phase21a_routes),
         "typed": sum(item.typed_input_state in {InputRepresentationState.TYPED_AND_JSON, InputRepresentationState.TYPED_ONLY} for item in entries),
-        "json": sum(item.json_cli_input_state is InputRepresentationState.TYPED_AND_JSON for item in entries),
     }
+    json_representable = sum(
+        item.json_cli_input_state is InputRepresentationState.TYPED_AND_JSON
+        for item in entries
+    )
+    json_not_reachable = sum(
+        item.json_cli_reachability_state is ReachabilityState.NOT_REACHABLE
+        for item in entries
+    )
     valid = (
         observed == expected
+        and json_representable + json_not_reachable == len(entries)
+        and all(
+            (
+                item.json_cli_input_state
+                is InputRepresentationState.TYPED_AND_JSON
+            )
+            == (
+                item.json_cli_reachability_state
+                is ReachabilityState.PUBLICLY_REACHABLE
+            )
+            for item in entries
+        )
         and len({(item.element_type, item.element_id) for item in entries}) == len(entries)
         and all(item.evidence_ids for item in entries)
         and all(item.gap_types for item in entries)
