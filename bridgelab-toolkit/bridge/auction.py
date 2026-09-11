@@ -203,6 +203,27 @@ class Contract:
     def serialize(self) -> str:
         return f"{self.bid.serialize()}{self.doubling.value} {self.declarer.value}"
 
+    @classmethod
+    def parse(cls, value: str) -> Contract:
+        if not isinstance(value, str):
+            raise TypeError("contract must be a string")
+        parts = value.split()
+        if len(parts) != 2:
+            raise ValueError(f"invalid canonical contract: {value!r}")
+        bid_text, declarer_text = parts
+        if bid_text.endswith("XX"):
+            doubling = Doubling.REDOUBLED
+            bid_text = bid_text[:-2]
+        elif bid_text.endswith("X"):
+            doubling = Doubling.DOUBLED
+            bid_text = bid_text[:-1]
+        else:
+            doubling = Doubling.UNDOUBLED
+        contract = cls(Bid.parse(bid_text), Seat.parse(declarer_text), doubling)
+        if contract.serialize() != value:
+            raise ValueError(f"invalid canonical contract: {value!r}")
+        return contract
+
 
 class Auction:
     """Mutable auction sequence with deterministic legality checks.

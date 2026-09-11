@@ -6,11 +6,11 @@ from collections.abc import Mapping
 from dataclasses import dataclass, field
 from enum import Enum
 
-from .auction import Auction
+from .auction import Auction, Contract
 from .bidding_rules import BiddingContext, SystemContext
 from .deal_analysis import AnalysisStage
 from .deals import Deal
-from .declarer_play_state import DeclarerPlayInput
+from .declarer_play_state import DeclarerPlayInput, PlayedCard, Trick
 from .defensive_play_state import DefensivePlayInput
 from .engine_router import BiddingEngineRouter
 from .full_deal_analysis import (
@@ -161,6 +161,143 @@ def _bidding_context_from_dict(value: object) -> BiddingContext | None:
     )
 
 
+def _card_set_from_array(value: object, field: str) -> frozenset[Card]:
+    if not isinstance(value, (list, tuple)):
+        raise TypeError(f"{field} must be an array")
+    cards = tuple(Card.parse(_require_string(item, field)) for item in value)
+    if len(cards) != len(set(cards)):
+        raise ValueError(f"{field} contains a duplicate card")
+    return frozenset(cards)
+
+
+def _played_card_from_dict(value: object, field: str) -> PlayedCard:
+    play = _require_mapping(value, field)
+    required = {"seat", "card"}
+    _reject_unknown_fields(play, required, field)
+    missing = sorted(required - set(play))
+    if missing:
+        raise ValueError(f"Missing {field} field: {missing[0]!r}.")
+    return PlayedCard(
+        Seat.parse(_require_string(play["seat"], f"{field}.seat")),
+        Card.parse(_require_string(play["card"], f"{field}.card")),
+    )
+
+
+def _trick_from_dict(value: object, field: str, *, complete: bool) -> Trick:
+    trick_value = _require_mapping(value, field)
+    required = {"leader", "plays"}
+    _reject_unknown_fields(trick_value, required, field)
+    missing = sorted(required - set(trick_value))
+    if missing:
+        raise ValueError(f"Missing {field} field: {missing[0]!r}.")
+    plays_value = trick_value["plays"]
+    if not isinstance(plays_value, (list, tuple)):
+        raise TypeError(f"{field}.plays must be an array")
+    trick = Trick(
+        Seat.parse(_require_string(trick_value["leader"], f"{field}.leader")),
+        tuple(
+            _played_card_from_dict(play, f"{field}.plays[{index}]")
+            for index, play in enumerate(plays_value)
+        ),
+    )
+    if complete and not trick.is_complete:
+        raise ValueError(f"{field} must contain exactly four plays")
+    if not complete and trick.is_complete:
+        raise ValueError(f"{field} cannot already be complete")
+    return trick
+
+
+def _declarer_play_input_from_dict(value: object) -> DeclarerPlayInput | None:
+    if value is None:
+        return None
+    declarer = _require_mapping(value, "declarer_play")
+    required = {
+        "contract",
+        "declarer_cards",
+        "dummy_cards",
+        "completed_tricks",
+        "current_trick",
+    }
+    supported = required | {"vulnerability"}
+    _reject_unknown_fields(declarer, supported, "declarer_play")
+    missing = sorted(required - set(declarer))
+    if missing:
+        raise ValueError(f"Missing declarer_play field: {missing[0]!r}.")
+
+    contract = Contract.parse(
+        _require_string(declarer["contract"], "declarer_play.contract")
+    )
+    completed_value = declarer["completed_tricks"]
+    if not isinstance(completed_value, (list, tuple)):
+        raise TypeError("declarer_play.completed_tricks must be an array")
+    completed = tuple(
+        _trick_from_dict(
+            trick, f"declarer_play.completed_tricks[{index}]", complete=True
+        )
+        for index, trick in enumerate(completed_value)
+    )
+    current = _trick_from_dict(
+        declarer["current_trick"], "declarer_play.current_trick", complete=False
+    )
+    current_actor = (
+        current.leader if not current.plays else current.plays[-1].seat.next()
+    )
+    vulnerability = None
+    if "vulnerability" in declarer:
+        vulnerability_text = _require_string(
+            declarer["vulnerability"], "declarer_play.vulnerability"
+        )
+        try:
+            vulnerability = Vulnerability(vulnerability_text)
+        except ValueError as exc:
+            raise ValueError(
+                "declarer_play.vulnerability must be one of: None, NS, EW, Both"
+            ) from exc
+    return DeclarerPlayInput(
+        contract=contract,
+        declarer_seat=contract.declarer,
+        declarer_cards=_card_set_from_array(
+            declarer["declarer_cards"], "declarer_play.declarer_cards"
+        ),
+        dummy_cards=_card_set_from_array(
+            declarer["dummy_cards"], "declarer_play.dummy_cards"
+        ),
+        current_actor=current_actor,
+        completed_tricks=completed,
+        current_trick=current,
+        vulnerability=vulnerability,
+        opening_leader=contract.declarer.next(),
+    )
+
+
+def _declarer_deal_conflict(
+    deal: Deal, source: DeclarerPlayInput
+) -> str | None:
+    if source.contract is None:
+        return None
+    declarer = source.contract.declarer
+    dummy = declarer.partner()
+    visible = (
+        (declarer, source.declarer_cards),
+        (dummy, source.dummy_cards),
+    )
+    for seat, cards in visible:
+        if cards is not None and not cards <= deal.hand(seat).cards:
+            return "Declarer-play holdings conflict with card ownership in the deal."
+    tricks = (*source.completed_tricks, source.current_trick) if (
+        source.completed_tricks is not None and source.current_trick is not None
+    ) else ()
+    played_cards: set[Card] = set()
+    for trick in tricks:
+        for play in trick.plays:
+            if play.card not in deal.hand(play.seat).cards:
+                return "Declarer-play history conflicts with card ownership in the deal."
+            played_cards.add(play.card)
+    if any(cards is not None and cards & played_cards for _, cards in visible):
+        return "Declarer-play holdings conflict with played-card history."
+    return None
+
+
 def full_deal_application_request_from_dict(
     payload: Mapping[str, object],
 ) -> FullDealApplicationRequest:
@@ -168,7 +305,13 @@ def full_deal_application_request_from_dict(
 
     if not isinstance(payload, Mapping):
         raise TypeError("application request must be a JSON object")
-    supported = {"bidding", "deal", "requested_stages", "probability_requests"}
+    supported = {
+        "bidding",
+        "deal",
+        "declarer_play",
+        "requested_stages",
+        "probability_requests",
+    }
     unknown = sorted(set(payload) - supported)
     if unknown:
         raise ValueError(f"Unsupported request field: {unknown[0]!r}.")
@@ -208,6 +351,7 @@ def full_deal_application_request_from_dict(
         deal=payload.get("deal"),
         requested_stages=tuple(stages),
         bidding=_bidding_context_from_dict(payload.get("bidding")),
+        declarer_play=_declarer_play_input_from_dict(payload.get("declarer_play")),
         probability_requests=tuple(converted),  # type: ignore[arg-type]
     )
 
@@ -297,6 +441,19 @@ def application_request_to_full_deal_input(
                 ),
             ),
         )
+    if serialized_deal_supplied and request.declarer_play is not None and deal is not None:
+        conflict = _declarer_deal_conflict(deal, request.declarer_play)
+        if conflict is not None:
+            return FullDealApplicationValidationResult(
+                None,
+                (
+                    FullDealApplicationError(
+                        FullDealApplicationErrorCode.VALIDATION_ERROR,
+                        "declarer_play",
+                        conflict,
+                    ),
+                ),
+            )
     stages: list[AnalysisStage] = []
     errors: list[FullDealApplicationError] = []
     for index, value in enumerate(request.requested_stages):

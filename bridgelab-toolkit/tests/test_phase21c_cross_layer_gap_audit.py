@@ -87,14 +87,15 @@ def test_json_cli_fields_are_inspected_from_live_parser(audit):
     assert _json_parser_fields() == {
         "bidding",
         "deal",
+        "declarer_play",
         "requested_stages",
         "probability_requests",
     }
     summary = dict(audit.summary)
-    assert summary["json_cli_input_representable"] == 46
-    assert summary["json_cli_publicly_reachable"] == 46
-    assert summary["json_cli_not_reachable"] == 1
-    assert dict(audit.gap_counts)[GapType.PUBLIC_JSON_INPUT_GAP.value] == 1
+    assert summary["json_cli_input_representable"] == len(audit.entries) == 47
+    assert summary["json_cli_publicly_reachable"] == len(audit.entries)
+    assert summary["json_cli_not_reachable"] == 0
+    assert GapType.PUBLIC_JSON_INPUT_GAP.value not in dict(audit.gap_counts)
 
 
 def test_current_typed_and_json_reachability_by_capability(audit):
@@ -120,8 +121,8 @@ def test_current_typed_and_json_reachability_by_capability(audit):
     )
     assert probability.typed_input_state is InputRepresentationState.TYPED_AND_JSON
     assert probability.json_cli_reachability_state is ReachabilityState.PUBLICLY_REACHABLE
-    assert declarer.typed_input_state is InputRepresentationState.TYPED_ONLY
-    assert declarer.json_cli_reachability_state is ReachabilityState.NOT_REACHABLE
+    assert declarer.typed_input_state is InputRepresentationState.TYPED_AND_JSON
+    assert declarer.json_cli_reachability_state is ReachabilityState.PUBLICLY_REACHABLE
 
 
 def test_public_output_state_comes_from_live_serializer(audit):
