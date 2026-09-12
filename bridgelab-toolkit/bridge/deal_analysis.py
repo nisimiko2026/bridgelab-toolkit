@@ -112,6 +112,37 @@ class DealAnalysisContext:
 
 
 @dataclass(frozen=True, slots=True)
+class PolicyVisibility:
+    """Public structural metadata for a policy-gated matched bidding route.
+
+    This record states only that the matched route declares explicit policy
+    dependencies.  It does not claim that a policy was consulted, resolved,
+    satisfied, selected, or causally responsible for the outcome.
+    """
+
+    requirement: str
+    dependencies: tuple[str, ...]
+
+    def __post_init__(self) -> None:
+        if self.requirement != "POLICY_GATED":
+            raise ValueError("public policy visibility only represents POLICY_GATED")
+        dependencies = tuple(str(item).strip() for item in self.dependencies)
+        if not dependencies or any(not item for item in dependencies):
+            raise ValueError(
+                "POLICY_GATED visibility requires nonblank dependencies"
+            )
+        if len({item.casefold() for item in dependencies}) != len(dependencies):
+            raise ValueError("policy visibility dependencies must be unique")
+        object.__setattr__(self, "dependencies", dependencies)
+
+    def serialize(self) -> dict[str, object]:
+        return {
+            "requirement": self.requirement,
+            "dependencies": self.dependencies,
+        }
+
+
+@dataclass(frozen=True, slots=True)
 class DealAnalysisResult:
     stage: AnalysisStage
     seat: Seat | None
@@ -124,6 +155,7 @@ class DealAnalysisResult:
     probability_evidence: tuple[ProbabilityEvidence, ...] = ()
     debug_metadata: tuple[tuple[str, str], ...] = ()
     capability: CapabilityIdentity | None = None
+    policy: PolicyVisibility | None = None
 
 
 def detect_analysis_stage(context: DealAnalysisContext) -> AnalysisStage:
@@ -142,6 +174,15 @@ def _inactive(subsystem: Subsystem, stage: AnalysisStage) -> SubsystemResult:
         AnalysisAction(ActionKind.NONE),
         f"No production {subsystem.value} adapter is available for {stage.value}.",
         abstention_code=AbstentionCode.UNSUPPORTED_STAGE,
+    )
+
+
+def _policy_visibility_from_match(match) -> PolicyVisibility | None:
+    if match is None or not match.policy_dependencies:
+        return None
+    return PolicyVisibility(
+        "POLICY_GATED",
+        match.policy_dependencies,
     )
 
 
@@ -277,6 +318,7 @@ def analyze_deal_decision(
         raise ValueError("auction analysis requires an explicit production bidding router")
 
     match = bidding_router.match(context.bidding)
+    policy_visibility = _policy_visibility_from_match(match)
     engine_result = bidding_router.evaluate(context.bidding)
     if engine_result.has_recommendation:
         decision = engine_result.recommended
@@ -305,6 +347,7 @@ def analyze_deal_decision(
             capability=(
                 None if match is None else bidding_route_capability(match.route_id)
             ),
+            policy=policy_visibility,
         )
 
     rejected = tuple(decision.explanation for decision in engine_result.decisions if decision.explanation)
@@ -338,4 +381,5 @@ def analyze_deal_decision(
         code,
         debug_metadata=(("route", match.route_id if match else "none"),),
         capability=(None if match is None else bidding_route_capability(match.route_id)),
+        policy=policy_visibility,
     )

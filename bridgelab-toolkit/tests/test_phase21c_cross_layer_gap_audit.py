@@ -132,6 +132,7 @@ def test_public_output_state_comes_from_live_serializer(audit):
     assert "engine_type" not in keys
     assert "production_element_id" not in keys
     assert "capability" in keys
+    assert "policy" in keys
     assert all(item.public_output_state is OutputVisibilityState.PARTIAL for item in audit.entries)
     assert GapType.PUBLIC_OUTPUT_IDENTITY_GAP.value not in dict(audit.gap_counts)
 
@@ -142,10 +143,20 @@ def test_runtime_not_observed_is_not_structural_unreachability(audit):
 
 
 def test_policy_visibility_reuses_phase21a_static_classification(audit):
-    policy_routes = [item for item in audit.entries if item.policy_requirement_state is PolicyRequirementState.POLICY_GATED]
+    policy_routes = [
+        item
+        for item in audit.entries
+        if item.policy_requirement_state is PolicyRequirementState.POLICY_GATED
+    ]
     assert len(policy_routes) == 19
-    assert all(item.policy_visibility_state is OutputVisibilityState.PARTIAL for item in policy_routes)
-    assert dict(audit.gap_counts)[GapType.POLICY_OBSERVABILITY_GAP.value] == 19
+    assert all(
+        item.policy_visibility_state is OutputVisibilityState.PRESENT
+        for item in policy_routes
+    )
+    assert (
+        GapType.POLICY_OBSERVABILITY_GAP.value
+        not in dict(audit.gap_counts)
+    )
 
 
 def test_provenance_visibility_reuses_phase21b_states_without_false_public_gap(audit):
@@ -172,9 +183,9 @@ def test_provenance_visibility_reuses_phase21b_states_without_false_public_gap(a
     assert GapType.PROVENANCE_OBSERVABILITY_GAP.value not in dict(audit.gap_counts)
 
 
-def test_current_gap_summary_keeps_policy_gap_but_closes_provenance_gap(audit):
+def test_current_gap_summary_closes_public_interface_observability_gaps(audit):
     gaps = dict(audit.gap_counts)
-    assert gaps[GapType.POLICY_OBSERVABILITY_GAP.value] == 19
+    assert gaps.get(GapType.POLICY_OBSERVABILITY_GAP.value, 0) == 0
     assert gaps.get(GapType.PROVENANCE_OBSERVABILITY_GAP.value, 0) == 0
     assert gaps.get(GapType.PUBLIC_JSON_INPUT_GAP.value, 0) == 0
     assert gaps.get(GapType.PUBLIC_OUTPUT_IDENTITY_GAP.value, 0) == 0

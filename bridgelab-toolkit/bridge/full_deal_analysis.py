@@ -281,6 +281,11 @@ def full_deal_analysis_to_dict(result: FullDealAnalysisResult) -> dict[str, obje
                 if item.capability is None
                 else {"capability": item.capability.serialize()}
             ),
+            **(
+                {}
+                if item.policy is None
+                else {"policy": item.policy.serialize()}
+            ),
         }
         for item in result.subsystem_results
     )

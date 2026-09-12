@@ -6,6 +6,11 @@ contain bidding rules and does not manufacture recommendations.
 Routes are explicit predicates over ``BiddingContext``.  More specific routes
 may be assigned higher priority.  Equal-priority matches are resolved by
 registration order, making routing deterministic and auditable.
+
+``policy_dependencies`` is structural metadata only.  It identifies explicit
+policy dependencies already declared by the configured production route.  It
+does not claim that a policy was consulted, resolved, satisfied, selected, or
+causally responsible for a recommendation or abstention.
 """
 
 from __future__ import annotations
@@ -33,18 +38,33 @@ class EngineRoute:
     matcher: ContextMatcher
     engine: RecommendationEngine
     priority: int = 0
+    policy_dependencies: tuple[str, ...] = ()
 
     def __post_init__(self) -> None:
         route_id = self.route_id.strip()
         if not route_id:
             raise ValueError("route_id must not be blank")
         object.__setattr__(self, "route_id", route_id)
+
         if not callable(self.matcher):
             raise TypeError("matcher must be callable")
         if not isinstance(self.priority, int) or isinstance(self.priority, bool):
             raise TypeError("priority must be an integer")
         if not isinstance(self.engine, RecommendationEngine):
             raise TypeError("engine must satisfy RecommendationEngine")
+
+        normalized: list[str] = []
+        seen: set[str] = set()
+        for dependency in self.policy_dependencies:
+            value = str(dependency).strip()
+            if not value:
+                raise ValueError("policy dependency must not be blank")
+            key = value.casefold()
+            if key in seen:
+                raise ValueError(f"duplicate policy dependency: {value}")
+            seen.add(key)
+            normalized.append(value)
+        object.__setattr__(self, "policy_dependencies", tuple(normalized))
 
 
 @dataclass(frozen=True, slots=True)
@@ -53,6 +73,7 @@ class EngineRouteMatch:
     priority: int
     registration_order: int
     engine: RecommendationEngine
+    policy_dependencies: tuple[str, ...] = ()
 
 
 class BiddingEngineRouter:
@@ -64,19 +85,21 @@ class BiddingEngineRouter:
         *,
         fallback: RecommendationEngine | None = None,
     ) -> None:
-        collected=tuple(routes)
-        seen=set()
+        collected = tuple(routes)
+        seen = set()
         for route in collected:
             if not isinstance(route, EngineRoute):
                 raise TypeError("routes must contain EngineRoute values")
-            key=route.route_id.casefold()
+            key = route.route_id.casefold()
             if key in seen:
                 raise ValueError(f"duplicate route_id: {route.route_id}")
             seen.add(key)
+
         if fallback is not None and not isinstance(fallback, RecommendationEngine):
             raise TypeError("fallback must satisfy RecommendationEngine")
-        self._routes=collected
-        self._fallback=fallback
+
+        self._routes = collected
+        self._fallback = fallback
 
     @property
     def routes(self) -> tuple[EngineRoute, ...]:
@@ -86,29 +109,43 @@ class BiddingEngineRouter:
         if not isinstance(context, BiddingContext):
             raise TypeError("context must be BiddingContext")
 
-        matches=[]
-        for order,route in enumerate(self._routes):
-            result=route.matcher(context)
-            if not isinstance(result,bool):
-                raise TypeError(f"route matcher {route.route_id!r} must return bool")
+        matches = []
+        for order, route in enumerate(self._routes):
+            result = route.matcher(context)
+            if not isinstance(result, bool):
+                raise TypeError(
+                    f"route matcher {route.route_id!r} must return bool"
+                )
             if result:
-                matches.append((order,route))
+                matches.append((order, route))
 
         if not matches:
             return None
 
-        matches.sort(key=lambda item:(-item[1].priority,item[0],item[1].route_id.casefold()))
-        order,route=matches[0]
-        return EngineRouteMatch(route.route_id,route.priority,order,route.engine)
+        matches.sort(
+            key=lambda item: (
+                -item[1].priority,
+                item[0],
+                item[1].route_id.casefold(),
+            )
+        )
+        order, route = matches[0]
+        return EngineRouteMatch(
+            route.route_id,
+            route.priority,
+            order,
+            route.engine,
+            route.policy_dependencies,
+        )
 
     def resolve(self, context: BiddingContext) -> RecommendationEngine | None:
-        matched=self.match(context)
+        matched = self.match(context)
         if matched is not None:
             return matched.engine
         return self._fallback
 
     def evaluate(self, context: BiddingContext) -> BiddingEngineResult:
-        engine=self.resolve(context)
+        engine = self.resolve(context)
         if engine is None:
             # Same abstention shape as an empty BiddingEngine, without guessing.
             return BiddingEngine(()).evaluate(context)
@@ -121,7 +158,7 @@ def auction_calls(*calls: str) -> ContextMatcher:
     This helper is mechanics-only.  The caller chooses which auction belongs
     to which engine; no system meaning is embedded here.
     """
-    expected=" ".join(c.strip().upper() for c in calls)
+    expected = " ".join(c.strip().upper() for c in calls)
 
     def matches(context: BiddingContext) -> bool:
         return context.auction.serialize().upper() == expected

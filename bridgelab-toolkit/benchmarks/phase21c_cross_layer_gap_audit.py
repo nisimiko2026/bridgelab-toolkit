@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import ast
 import inspect
+import textwrap
 from collections import Counter
 from dataclasses import dataclass, fields
 from enum import Enum
@@ -27,6 +28,8 @@ from benchmarks.phase21b_provenance_coverage_audit import (
     ProvenanceLinkState,
 )
 from bridge.full_deal_analysis import full_deal_analysis_to_dict
+from bridge.deal_analysis import PolicyVisibility
+from bridge.sayc_route_configuration import create_standard_sayc_router
 from bridge.capability_identity import (
     KNOWN_CARD_COUNT_CAPABILITY,
     SIMPLE_UNBLOCK_KING_CAPABILITY,
@@ -191,6 +194,52 @@ def _serializer_keys() -> frozenset[str]:
     return frozenset(keys)
 
 
+def _policy_serializer_keys() -> frozenset[str]:
+    tree = ast.parse(textwrap.dedent(inspect.getsource(PolicyVisibility.serialize)))
+    keys: set[str] = set()
+    for node in ast.walk(tree):
+        if not isinstance(node, ast.Dict):
+            continue
+        for key in node.keys:
+            if isinstance(key, ast.Constant) and isinstance(key.value, str):
+                keys.add(key.value)
+    return frozenset(keys)
+
+
+def _router_policy_dependencies() -> dict[str, tuple[str, ...]]:
+    return {
+        route.route_id: route.policy_dependencies
+        for route in create_standard_sayc_router().routes
+    }
+
+
+def _policy_is_publicly_observable(
+    production: ProductionProvenanceEntry,
+    policy: StaticRoutePolicyVisibility | None,
+    serializer_keys: frozenset[str],
+    policy_serializer_keys: frozenset[str],
+    router_policy_dependencies: dict[str, tuple[str, ...]],
+) -> bool:
+    """Return whether structural policy-gating metadata is publicly observable.
+
+    This check is intentionally narrower than runtime policy consultation.  A
+    positive result means only that a matched policy-gated route can expose its
+    audited dependency labels through the public ``policy`` field.
+    """
+    if policy is None or policy.policy_requirement is not PolicyRequirementState.POLICY_GATED:
+        return True
+    if production.route_id is None:
+        return False
+
+    route_dependencies = router_policy_dependencies.get(production.route_id, ())
+    return (
+        bool(route_dependencies)
+        and set(route_dependencies) == set(policy.policy_dependencies)
+        and "policy" in serializer_keys
+        and {"requirement", "dependencies"} <= policy_serializer_keys
+    )
+
+
 def _public_capability_id(entry: ProductionProvenanceEntry) -> tuple[str, str] | None:
     if entry.element_type is ProductionElementType.BIDDING_ROUTE:
         if entry.route_id is None:
@@ -282,7 +331,13 @@ def _evidence_ids(
             )
         )
         if policy is not None and policy.policy_requirement is PolicyRequirementState.POLICY_GATED:
-            evidence.append(f"phase21a:policy-dependencies:{entry.route_id}")
+            evidence.extend(
+                (
+                    f"phase21a:policy-dependencies:{entry.route_id}",
+                    f"router:policy-dependencies:{entry.route_id}",
+                    "serializer:subsystem:policy",
+                )
+            )
     elif entry.element_type is ProductionElementType.DECLARER_TECHNIQUE:
         evidence.extend(("app:typed-field:declarer_play", "serializer:subsystem:trace", "serializer:subsystem:sources", "serializer:capability-identity:present"))
     elif entry.element_type is ProductionElementType.PROBABILITY_ENGINE:
@@ -335,6 +390,8 @@ def _entry(
     consumer_fields: frozenset[str],
     json_fields: frozenset[str],
     serializer_keys: frozenset[str],
+    policy_serializer_keys: frozenset[str],
+    router_policy_dependencies: dict[str, tuple[str, ...]],
     routes_with_rule_edges: frozenset[str],
     documentation_consistent: bool,
 ) -> CrossLayerCapabilityEntry:
@@ -353,8 +410,18 @@ def _entry(
         else ReachabilityState.NOT_REACHABLE
     )
     policy_requirement = None if policy is None else policy.policy_requirement
+    policy_observable = _policy_is_publicly_observable(
+        production,
+        policy,
+        serializer_keys,
+        policy_serializer_keys,
+        router_policy_dependencies,
+    )
     policy_visibility = (
-        OutputVisibilityState.PARTIAL
+        OutputVisibilityState.PRESENT
+        if policy_requirement is PolicyRequirementState.POLICY_GATED
+        and policy_observable
+        else OutputVisibilityState.PARTIAL
         if policy_requirement is PolicyRequirementState.POLICY_GATED
         else OutputVisibilityState.NOT_APPLICABLE
     )
@@ -374,7 +441,10 @@ def _entry(
     identity_contract_present = "capability" in serializer_keys
     if not identity_contract_present or _public_capability_id(production) is None:
         gaps.append(GapType.PUBLIC_OUTPUT_IDENTITY_GAP)
-    if policy_visibility is OutputVisibilityState.PARTIAL:
+    if (
+        policy_requirement is PolicyRequirementState.POLICY_GATED
+        and not policy_observable
+    ):
         gaps.append(GapType.POLICY_OBSERVABILITY_GAP)
     provenance_observable = _provenance_is_publicly_observable(
         production,
@@ -415,6 +485,18 @@ def _entry(
             " Stable public capability identity is serialized separately from trace "
             "and other decision-detail evidence."
         )
+    if policy_requirement is PolicyRequirementState.POLICY_GATED:
+        if policy_observable:
+            notes += (
+                " Structural policy-gating dependencies are exposed through the "
+                "public policy field; this does not claim consultation, resolution, "
+                "satisfaction, selection, or causal use of a policy."
+            )
+        else:
+            notes += (
+                " Policy-gating metadata is not fully aligned across the audited "
+                "route inventory, production router, and public serializer."
+            )
     return CrossLayerCapabilityEntry(
         production.element_type,
         production.element_id,
@@ -464,6 +546,8 @@ def run_audit() -> CrossLayerGapAudit:
     consumer_fields = _typed_consumer_fields()
     json_fields = _json_parser_fields()
     serializer_keys = _serializer_keys()
+    policy_serializer_keys = _policy_serializer_keys()
+    router_policy_dependencies = _router_policy_dependencies()
     routes_with_rule_edges = frozenset(edge.route_id for edge in provenance.route_rule_edges)
     documentation_consistent = _documentation_consistent()
     entries = tuple(
@@ -474,6 +558,8 @@ def run_audit() -> CrossLayerGapAudit:
             consumer_fields,
             json_fields,
             serializer_keys,
+            policy_serializer_keys,
+            router_policy_dependencies,
             routes_with_rule_edges,
             documentation_consistent,
         )
@@ -496,6 +582,7 @@ def run_audit() -> CrossLayerGapAudit:
                 "json_cli_not_reachable": sum(item.json_cli_reachability_state is ReachabilityState.NOT_REACHABLE for item in entries),
                 "runtime_not_observed": sum(item.runtime_visibility_state is RuntimeVisibilityState.NOT_OBSERVED for item in entries),
                 "policy_audit_visible": sum(item.policy_requirement_state is PolicyRequirementState.POLICY_GATED for item in entries),
+                "policy_publicly_visible": sum(item.policy_visibility_state is OutputVisibilityState.PRESENT for item in entries),
                 "policy_not_applicable": sum(item.policy_visibility_state is OutputVisibilityState.NOT_APPLICABLE for item in entries),
                 "public_output_partial": sum(item.public_output_state is OutputVisibilityState.PARTIAL for item in entries),
                 "documentation_present": sum(item.documentation_state is LayerPresenceState.PRESENT for item in entries),
@@ -514,6 +601,7 @@ def run_audit() -> CrossLayerGapAudit:
         ("phase21a-static-routes", EvidenceKind.STATIC),
         ("phase21b-provenance", EvidenceKind.STATIC),
         ("public-serializer", EvidenceKind.STATIC),
+        ("router-policy-metadata", EvidenceKind.STATIC),
     )
     expected = {
         "entries": 47,
@@ -571,6 +659,7 @@ def run_audit() -> CrossLayerGapAudit:
             "Current registered production capabilities are represented by both typed and JSON/CLI input contracts.",
             "NOT_OBSERVED means not observed by Phase 21C; it never implies structurally unreachable or absence of evidence elsewhere.",
             "Stable public capability identity is an ownership contract; trace remains decision-detail evidence.",
+            "Public policy observability exposes structural dependency labels only; it does not establish that a policy was consulted, resolved, satisfied, selected, or causally used.",
             "Public provenance observability does not establish source authority, correctness, verification, or complete capability coverage.",
             "NO_LINK is intentional absence of production-attached provenance, not hidden provenance.",
             "Expected deferred absence is not a production defect.",
@@ -599,7 +688,16 @@ def main() -> int:
     print("capability identity = stable public ownership identity; trace remains decision-detail evidence")
     print("POLICY VISIBILITY")
     print(f"policy_audit_visible = {dict(audit.summary)['policy_audit_visible']}")
-    print("policy gap = audit-visible policy metadata/state is not explicitly serialized")
+    print(f"policy_publicly_visible = {dict(audit.summary)['policy_publicly_visible']}")
+    policy_gap_count = dict(audit.gap_counts).get(
+        GapType.POLICY_OBSERVABILITY_GAP.value,
+        0,
+    )
+    print(f"policy_observability_gap = {policy_gap_count}")
+    print(
+        "public policy metadata exposes structural dependency labels only; "
+        "it does not claim runtime consultation or resolution"
+    )
     print("PROVENANCE VISIBILITY")
     for state, count in _count([item.provenance_visibility_state.value for item in audit.entries]):
         print(f"{state} = {count}")

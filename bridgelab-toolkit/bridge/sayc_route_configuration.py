@@ -6,6 +6,10 @@ the exact uncontested auction states they were built to handle.
 Where several existing engines own the same response position, their existing
 rule registries are combined into one ``BiddingEngine``.  No rule is modified,
 and normal engine priority/candidate handling remains authoritative.
+
+Route ``policy_dependencies`` are structural metadata only.  They mirror the
+already-audited policy dependencies of the configured rules and do not assert
+that any policy was consulted or resolved at runtime.
 """
 
 from __future__ import annotations
@@ -55,6 +59,21 @@ from .sayc_takeout_double import create_sayc_takeout_double_engine
 from .sayc_takeout_advancer import create_sayc_takeout_advancer_minimum_engine
 from .sayc_support_double import create_sayc_support_double_example_engine
 from .sayc_direct_notrump_overcall import create_sayc_direct_one_notrump_overcall_engine
+
+
+_DIRECT_OVERCALL_POLICY_DEPENDENCIES = (
+    "suit_quality",
+    "playing_strength",
+    "offensive_hand",
+    "opponent_suit_shortness",
+    "stopper",
+)
+_TAKEOUT_ADVANCER_POLICY_DEPENDENCIES = ("takeout_advancer_strength",)
+_SUPPORT_DOUBLE_POLICY_DEPENDENCIES = ("support_double_eligibility",)
+_JACOBY_CONTINUATION_POLICY_DEPENDENCIES = ("jacoby_continuation_strength",)
+_STAYMAN_OPENER_POLICY_DEPENDENCIES = ("stayman_dual_major_response",)
+_STAYMAN_CONTINUATION_POLICY_DEPENDENCIES = ("stayman_continuation_strength",)
+_TWO_OVER_ONE_RESPONSE_POLICY_DEPENDENCIES = ("suit_quality",)
 
 
 def combine_existing_engines(*engines: BiddingEngine) -> BiddingEngine:
@@ -132,18 +151,18 @@ def create_standard_sayc_router(
 
     return BiddingEngineRouter((
         EngineRoute("sayc.opening",auction_calls(),opening,100),
-        EngineRoute("sayc.overcall.direct.after.1c",auction_calls("1C"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98),
-        EngineRoute("sayc.overcall.direct.after.1d",auction_calls("1D"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98),
-        EngineRoute("sayc.overcall.direct.after.1h",auction_calls("1H"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98),
-        EngineRoute("sayc.overcall.direct.after.1s",auction_calls("1S"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98),
-        EngineRoute("sayc.advancer.takeout.after.1c",auction_calls("1C","X","P"),takeout_advancer,97),
-        EngineRoute("sayc.advancer.takeout.after.1d",auction_calls("1D","X","P"),takeout_advancer,97),
-        EngineRoute("sayc.advancer.takeout.after.1h",auction_calls("1H","X","P"),takeout_advancer,97),
-        EngineRoute("sayc.advancer.takeout.after.1s",auction_calls("1S","X","P"),takeout_advancer,97),
-        EngineRoute("sayc.support_double.1d.1h.1s",auction_calls("1D","P","1H","1S"),support_double,97),
-        EngineRoute("sayc.support_double.1c.1h.1s",auction_calls("1C","P","1H","1S"),support_double,97),
-        EngineRoute("sayc.support_double.1d.1s.2c",auction_calls("1D","P","1S","2C"),support_double,97),
-        EngineRoute("sayc.support_double.1h.1s.2d",auction_calls("1H","P","1S","2D"),support_double,97),
+        EngineRoute("sayc.overcall.direct.after.1c",auction_calls("1C"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.overcall.direct.after.1d",auction_calls("1D"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.overcall.direct.after.1h",auction_calls("1H"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.overcall.direct.after.1s",auction_calls("1S"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.advancer.takeout.after.1c",auction_calls("1C","X","P"),takeout_advancer,97,_TAKEOUT_ADVANCER_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.advancer.takeout.after.1d",auction_calls("1D","X","P"),takeout_advancer,97,_TAKEOUT_ADVANCER_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.advancer.takeout.after.1h",auction_calls("1H","X","P"),takeout_advancer,97,_TAKEOUT_ADVANCER_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.advancer.takeout.after.1s",auction_calls("1S","X","P"),takeout_advancer,97,_TAKEOUT_ADVANCER_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.support_double.1d.1h.1s",auction_calls("1D","P","1H","1S"),support_double,97,_SUPPORT_DOUBLE_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.support_double.1c.1h.1s",auction_calls("1C","P","1H","1S"),support_double,97,_SUPPORT_DOUBLE_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.support_double.1d.1s.2c",auction_calls("1D","P","1S","2C"),support_double,97,_SUPPORT_DOUBLE_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.support_double.1h.1s.2d",auction_calls("1H","P","1S","2D"),support_double,97,_SUPPORT_DOUBLE_POLICY_DEPENDENCIES),
         EngineRoute("sayc.response.2c.waiting",auction_calls("2C","P"),strong_two_club_response,96),
         EngineRoute(
             "sayc.opener.2c.2d.balanced",
@@ -154,11 +173,11 @@ def create_standard_sayc_router(
         EngineRoute("sayc.response.1nt.jacoby",auction_calls("1NT","P"),one_notrump_jacoby,95),
         EngineRoute("sayc.opener.1nt.jacoby.2d",auction_calls("1NT","P","2D","P"),one_notrump_jacoby_accept,94),
         EngineRoute("sayc.opener.1nt.jacoby.2h",auction_calls("1NT","P","2H","P"),one_notrump_jacoby_accept,94),
-        EngineRoute("sayc.responder.1nt.jacoby.hearts.continuation",auction_calls("1NT","P","2D","P","2H","P"),one_notrump_jacoby_continuation,93),
-        EngineRoute("sayc.responder.1nt.jacoby.spades.continuation",auction_calls("1NT","P","2H","P","2S","P"),one_notrump_jacoby_continuation,93),
-        EngineRoute("sayc.opener.1nt.stayman",auction_calls("1NT","P","2C","P"),one_notrump_stayman_response,94),
-        EngineRoute("sayc.responder.1nt.stayman.after.2h",auction_calls("1NT","P","2C","P","2H","P"),one_notrump_stayman_continuation,93),
-        EngineRoute("sayc.responder.1nt.stayman.after.2s",auction_calls("1NT","P","2C","P","2S","P"),one_notrump_stayman_continuation,93),
+        EngineRoute("sayc.responder.1nt.jacoby.hearts.continuation",auction_calls("1NT","P","2D","P","2H","P"),one_notrump_jacoby_continuation,93,_JACOBY_CONTINUATION_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.responder.1nt.jacoby.spades.continuation",auction_calls("1NT","P","2H","P","2S","P"),one_notrump_jacoby_continuation,93,_JACOBY_CONTINUATION_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.opener.1nt.stayman",auction_calls("1NT","P","2C","P"),one_notrump_stayman_response,94,_STAYMAN_OPENER_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.responder.1nt.stayman.after.2h",auction_calls("1NT","P","2C","P","2H","P"),one_notrump_stayman_continuation,93,_STAYMAN_CONTINUATION_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.responder.1nt.stayman.after.2s",auction_calls("1NT","P","2C","P","2S","P"),one_notrump_stayman_continuation,93,_STAYMAN_CONTINUATION_POLICY_DEPENDENCIES),
         EngineRoute("sayc.response.2nt.jacoby",auction_calls("2NT","P"),two_notrump_jacoby,95),
         EngineRoute("sayc.opener.2nt.jacoby.3d",auction_calls("2NT","P","3D","P"),two_notrump_jacoby_accept,94),
         EngineRoute("sayc.opener.2nt.jacoby.3h",auction_calls("2NT","P","3H","P"),two_notrump_jacoby_accept,94),
@@ -167,8 +186,8 @@ def create_standard_sayc_router(
         EngineRoute("sayc.opener.2nt.texas.4h",auction_calls("2NT","P","4H","P"),two_notrump_texas_accept,94),
         EngineRoute("sayc.response.1c",auction_calls("1C","P"),one_club,90),
         EngineRoute("sayc.response.1d",auction_calls("1D","P"),one_diamond,90),
-        EngineRoute("sayc.response.1h",auction_calls("1H","P"),one_heart,90),
-        EngineRoute("sayc.response.1s",auction_calls("1S","P"),one_spade,90),
+        EngineRoute("sayc.response.1h",auction_calls("1H","P"),one_heart,90,_TWO_OVER_ONE_RESPONSE_POLICY_DEPENDENCIES),
+        EngineRoute("sayc.response.1s",auction_calls("1S","P"),one_spade,90,_TWO_OVER_ONE_RESPONSE_POLICY_DEPENDENCIES),
 
         EngineRoute("sayc.opener.1d.1h",auction_calls("1D","P","1H","P"),one_diamond_one_heart_rebid,85),
         EngineRoute("sayc.opener.1d.1s",auction_calls("1D","P","1S","P"),one_diamond_one_spade_rebid,85),
