@@ -272,6 +272,11 @@ def full_deal_analysis_to_dict(result: FullDealAnalysisResult) -> dict[str, obje
             ),
             "sources": tuple(source_value(value.source) for value in item.evidence),
             "trace": item.debug_metadata,
+            **(
+                {}
+                if item.capability is None
+                else {"capability": item.capability.serialize()}
+            ),
         }
         for item in result.subsystem_results
     )
@@ -295,6 +300,11 @@ def full_deal_analysis_to_dict(result: FullDealAnalysisResult) -> dict[str, obje
                     "trace": evidence.trace,
                 }
                 for evidence in item.evidence
+            ),
+            **(
+                {}
+                if item.capability is None
+                else {"capability": item.capability.serialize()}
             ),
         }
         for item in result.probability_results

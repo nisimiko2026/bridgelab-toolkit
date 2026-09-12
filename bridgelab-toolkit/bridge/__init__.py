@@ -230,6 +230,10 @@ from .probability_questions import (
     RestrictedChoiceObservationStatus, RestrictedChoiceQuestion,
     SuitDistributionQuestion, TrumpBreakQuestion, VacantPlacesQuestion,
 )
+from .capability_identity import (
+    CapabilityIdentity, CapabilityType, KNOWN_CARD_COUNT_CAPABILITY,
+    SIMPLE_UNBLOCK_KING_CAPABILITY, bidding_route_capability,
+)
 from .probability_question_adapters import (
     build_restricted_choice_question,
     build_vacant_places_question_from_play_history,

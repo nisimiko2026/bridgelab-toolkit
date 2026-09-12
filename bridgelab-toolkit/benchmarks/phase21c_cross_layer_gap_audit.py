@@ -27,6 +27,11 @@ from benchmarks.phase21b_provenance_coverage_audit import (
     ProvenanceLinkState,
 )
 from bridge.full_deal_analysis import full_deal_analysis_to_dict
+from bridge.capability_identity import (
+    KNOWN_CARD_COUNT_CAPABILITY,
+    SIMPLE_UNBLOCK_KING_CAPABILITY,
+    bidding_route_capability,
+)
 from bridge.full_deal_application import (
     FullDealApplicationRequest,
     application_request_to_full_deal_input,
@@ -186,6 +191,31 @@ def _serializer_keys() -> frozenset[str]:
     return frozenset(keys)
 
 
+def _public_capability_id(entry: ProductionProvenanceEntry) -> tuple[str, str] | None:
+    if entry.element_type is ProductionElementType.BIDDING_ROUTE:
+        if entry.route_id is None:
+            return None
+        identity = bidding_route_capability(entry.route_id)
+    elif entry.element_type is ProductionElementType.PROBABILITY_ENGINE:
+        identity = (
+            KNOWN_CARD_COUNT_CAPABILITY
+            if entry.element_id == "KnownCardCountQuestion"
+            else None
+        )
+    elif entry.element_type is ProductionElementType.DECLARER_TECHNIQUE:
+        identity = (
+            SIMPLE_UNBLOCK_KING_CAPABILITY
+            if entry.element_id == "simple-unblock-king"
+            else None
+        )
+    else:
+        identity = None
+    if identity is None:
+        return None
+    serialized = identity.serialize()
+    return serialized["type"], serialized["id"]
+
+
 def _documentation_consistent() -> bool:
     try:
         text = PHASE20_CLOSURE.read_text(encoding="utf-8-sig")
@@ -247,15 +277,15 @@ def _evidence_ids(
                 "app:typed-field:bidding",
                 "app:json-parser:supported-fields",
                 "serializer:subsystem:trace",
-                "serializer:explicit-production-element-identity:absent",
+                "serializer:capability-identity:present",
             )
         )
         if policy is not None and policy.policy_requirement is PolicyRequirementState.POLICY_GATED:
             evidence.append(f"phase21a:policy-dependencies:{entry.route_id}")
     elif entry.element_type is ProductionElementType.DECLARER_TECHNIQUE:
-        evidence.extend(("app:typed-field:declarer_play", "serializer:subsystem:trace", "serializer:explicit-production-element-identity:absent"))
+        evidence.extend(("app:typed-field:declarer_play", "serializer:subsystem:trace", "serializer:capability-identity:present"))
     elif entry.element_type is ProductionElementType.PROBABILITY_ENGINE:
-        evidence.extend(("app:typed-field:probability_requests", "app:json-field:probability_requests", "serializer:probability_results", "serializer:explicit-engine-identity:absent"))
+        evidence.extend(("app:typed-field:probability_requests", "app:json-field:probability_requests", "serializer:probability_results", "serializer:capability-identity:present"))
     evidence.append("closure:phase20:production-invariants")
     return tuple(evidence)
 
@@ -299,7 +329,11 @@ def _entry(
     gaps = []
     if input_state is InputRepresentationState.TYPED_ONLY:
         gaps.append(GapType.PUBLIC_JSON_INPUT_GAP)
-    if "engine_type" not in serializer_keys:
+    # ``capability`` is the top-level serialized field.  Its nested
+    # ``type`` and ``id`` keys are supplied by CapabilityIdentity.serialize()
+    # and therefore must not be required as top-level serializer keys.
+    identity_contract_present = "capability" in serializer_keys
+    if not identity_contract_present or _public_capability_id(production) is None:
         gaps.append(GapType.PUBLIC_OUTPUT_IDENTITY_GAP)
     if policy_visibility is OutputVisibilityState.PARTIAL:
         gaps.append(GapType.POLICY_OBSERVABILITY_GAP)
@@ -317,11 +351,16 @@ def _entry(
     )
     if is_probability:
         notes += " NO_LINK means no production-attached provenance, not no documentation."
-    notes += (
-        " PUBLIC_OUTPUT_IDENTITY_GAP means explicit production-element or engine-class "
-        "identity is not directly serialized; trace, stage, action, and technique evidence "
-        "may still expose narrower identity information."
-    )
+    if GapType.PUBLIC_OUTPUT_IDENTITY_GAP in gaps:
+        notes += (
+            " PUBLIC_OUTPUT_IDENTITY_GAP means the stable capability identity contract "
+            "is not available for this registered production element."
+        )
+    else:
+        notes += (
+            " Stable public capability identity is serialized separately from trace "
+            "and other decision-detail evidence."
+        )
     return CrossLayerCapabilityEntry(
         production.element_type,
         production.element_id,
@@ -473,9 +512,9 @@ def run_audit() -> CrossLayerGapAudit:
         GapType.KNOWN_LEGACY_TEST_DRIFT,
         (
             "Layer agreement does not establish bridge correctness.",
-            "JSON/CLI input scope is narrower than the typed application request.",
+            "Current registered production capabilities are represented by both typed and JSON/CLI input contracts.",
             "NOT_OBSERVED means not observed by Phase 21C; it never implies structurally unreachable or absence of evidence elsewhere.",
-            "PUBLIC_OUTPUT_IDENTITY_GAP concerns explicit production-element or engine-class identity, not all trace identity.",
+            "Stable public capability identity is an ownership contract; trace remains decision-detail evidence.",
             "Provenance visibility does not establish source authority.",
             "Expected deferred absence is not a production defect.",
         ),
@@ -498,7 +537,9 @@ def main() -> int:
             print(f"{key} = {value}")
     print("PUBLIC OUTPUT VISIBILITY")
     print(f"public_output_partial = {dict(audit.summary)['public_output_partial']}")
-    print("identity gap = explicit production-element/engine-class identity is not directly serialized; trace identity may still exist")
+    identity_gap_count = dict(audit.gap_counts).get(GapType.PUBLIC_OUTPUT_IDENTITY_GAP.value, 0)
+    print(f"public_output_identity_gap = {identity_gap_count}")
+    print("capability identity = stable public ownership identity; trace remains decision-detail evidence")
     print("POLICY VISIBILITY")
     print(f"policy_audit_visible = {dict(audit.summary)['policy_audit_visible']}")
     print("policy gap = audit-visible policy metadata/state is not explicitly serialized")

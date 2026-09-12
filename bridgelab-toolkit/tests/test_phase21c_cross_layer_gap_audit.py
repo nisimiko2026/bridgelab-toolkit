@@ -131,7 +131,9 @@ def test_public_output_state_comes_from_live_serializer(audit):
     assert {"mode", "formula", "evidence", "probability_results"} <= keys
     assert "engine_type" not in keys
     assert "production_element_id" not in keys
+    assert "capability" in keys
     assert all(item.public_output_state is OutputVisibilityState.PARTIAL for item in audit.entries)
+    assert GapType.PUBLIC_OUTPUT_IDENTITY_GAP.value not in dict(audit.gap_counts)
 
 
 def test_runtime_not_observed_is_not_structural_unreachability(audit):

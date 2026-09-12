@@ -8,6 +8,12 @@ from typing import Callable
 
 from .auction import Call
 from .bidding_rules import BiddingContext, KnowledgeSource
+from .capability_identity import (
+    CapabilityIdentity,
+    CapabilityType,
+    SIMPLE_UNBLOCK_KING_CAPABILITY,
+    bidding_route_capability,
+)
 from .engine_router import BiddingEngineRouter
 from .declarer_play_state import DeclarerPlayInput, DeclarerPlayState, build_declarer_play_state
 from .declarer_recommendation import DeclarerRecommendation, evaluate_declarer_play
@@ -117,6 +123,7 @@ class DealAnalysisResult:
     abstention_code: AbstentionCode | None = None
     probability_evidence: tuple[ProbabilityEvidence, ...] = ()
     debug_metadata: tuple[tuple[str, str], ...] = ()
+    capability: CapabilityIdentity | None = None
 
 
 def detect_analysis_stage(context: DealAnalysisContext) -> AnalysisStage:
@@ -173,6 +180,14 @@ def analyze_deal_decision(
                     declarer.action, recommendation.explanation, evidence, (declarer, *other),
                     probability_evidence=recommendation.probability_evidence,
                     debug_metadata=recommendation.trace,
+                    capability=(
+                        SIMPLE_UNBLOCK_KING_CAPABILITY
+                        if declarer_evaluator is None
+                        else CapabilityIdentity(
+                            CapabilityType.DECLARER_TECHNIQUE,
+                            recommendation.technique.value,
+                        )
+                    ),
                 )
             code = (
                 AbstentionCode.AMBIGUOUS_ACTION
@@ -207,6 +222,11 @@ def analyze_deal_decision(
             (declarer, *other),
             code,
             debug_metadata=debug,
+            capability=(
+                SIMPLE_UNBLOCK_KING_CAPABILITY
+                if built.is_ready and declarer_evaluator is None
+                else None
+            ),
         )
     if stage is AnalysisStage.OPENING_LEAD:
         built = build_opening_lead_state(context.opening_lead)
@@ -282,6 +302,9 @@ def analyze_deal_decision(
             evidence,
             (bidding, *inactive),
             debug_metadata=(("route", match.route_id if match else "fallback"), ("rule", decision.rule_id)),
+            capability=(
+                None if match is None else bidding_route_capability(match.route_id)
+            ),
         )
 
     rejected = tuple(decision.explanation for decision in engine_result.decisions if decision.explanation)
@@ -314,4 +337,5 @@ def analyze_deal_decision(
         (bidding, *inactive),
         code,
         debug_metadata=(("route", match.route_id if match else "none"),),
+        capability=(None if match is None else bidding_route_capability(match.route_id)),
     )

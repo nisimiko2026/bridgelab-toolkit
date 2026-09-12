@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Callable
 
+from .capability_identity import CapabilityIdentity, KNOWN_CARD_COUNT_CAPABILITY
 from .declarer_play_state import DeclarerPlayState
 from .models import Card
 from .probability_evidence import ProbabilityEvidence, ProbabilityEvidenceType
@@ -53,6 +54,7 @@ class ProbabilityEngineResult:
     failure_code: ProbabilityEngineFailureCode | None = None
     explanation: str = ""
     trace: tuple[tuple[str, str], ...] = ()
+    capability: CapabilityIdentity | None = None
 
     @property
     def is_success(self) -> bool:
@@ -97,6 +99,7 @@ def _known_card_count(
             failure_code=ProbabilityEngineFailureCode.INVALID_CARD_ACCOUNTING,
             explanation="Known-card accounting does not reconcile to the 52-card deck.",
             trace=trace,
+            capability=KNOWN_CARD_COUNT_CAPABILITY,
         )
     evidence = ProbabilityEvidence(
         ProbabilityEvidenceType.KNOWN_CARD_COUNT, question.subject.strip(),
@@ -108,6 +111,7 @@ def _known_card_count(
     return ProbabilityEngineResult(
         ProbabilityEngineStatus.SUCCESS, (evidence,), CalculationMode.EXACT,
         FormulaIdentifier.KNOWN_CARD_COUNT_V1, trace=trace,
+        capability=KNOWN_CARD_COUNT_CAPABILITY,
     )
 
 
@@ -135,8 +139,21 @@ def evaluate_probability(
             ProbabilityEngineStatus.UNAVAILABLE,
             failure_code=ProbabilityEngineFailureCode.INSUFFICIENT_STATE,
             explanation="A validated declarer state or explicit probability context is required.",
+            capability=(
+                KNOWN_CARD_COUNT_CAPABILITY
+                if isinstance(question, KnownCardCountQuestion)
+                else None
+            ),
         )
     try:
         return calculator(question, supplied_context)
     except (TypeError, ValueError) as exc:
-        return ProbabilityEngineResult(ProbabilityEngineStatus.ERROR, explanation=str(exc))
+        return ProbabilityEngineResult(
+            ProbabilityEngineStatus.ERROR,
+            explanation=str(exc),
+            capability=(
+                KNOWN_CARD_COUNT_CAPABILITY
+                if isinstance(question, KnownCardCountQuestion)
+                else None
+            ),
+        )
