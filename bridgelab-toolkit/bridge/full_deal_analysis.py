@@ -270,7 +270,11 @@ def full_deal_analysis_to_dict(result: FullDealAnalysisResult) -> dict[str, obje
             "abstention_code": (
                 None if item.abstention_code is None else item.abstention_code.value
             ),
-            "sources": tuple(source_value(value.source) for value in item.evidence),
+            "sources": tuple(
+                source_value(value.source)
+                for value in item.evidence
+                if value.source is not None
+            ),
             "trace": item.debug_metadata,
             **(
                 {}

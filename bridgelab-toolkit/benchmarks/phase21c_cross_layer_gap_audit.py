@@ -277,17 +277,55 @@ def _evidence_ids(
                 "app:typed-field:bidding",
                 "app:json-parser:supported-fields",
                 "serializer:subsystem:trace",
+                "serializer:subsystem:sources",
                 "serializer:capability-identity:present",
             )
         )
         if policy is not None and policy.policy_requirement is PolicyRequirementState.POLICY_GATED:
             evidence.append(f"phase21a:policy-dependencies:{entry.route_id}")
     elif entry.element_type is ProductionElementType.DECLARER_TECHNIQUE:
-        evidence.extend(("app:typed-field:declarer_play", "serializer:subsystem:trace", "serializer:capability-identity:present"))
+        evidence.extend(("app:typed-field:declarer_play", "serializer:subsystem:trace", "serializer:subsystem:sources", "serializer:capability-identity:present"))
     elif entry.element_type is ProductionElementType.PROBABILITY_ENGINE:
-        evidence.extend(("app:typed-field:probability_requests", "app:json-field:probability_requests", "serializer:probability_results", "serializer:capability-identity:present"))
+        evidence.extend(("app:typed-field:probability_requests", "app:json-field:probability_requests", "serializer:probability_results", "serializer:probability:evidence-source", "serializer:capability-identity:present"))
     evidence.append("closure:phase20:production-invariants")
     return tuple(evidence)
+
+
+def _provenance_is_publicly_observable(
+    production: ProductionProvenanceEntry,
+    serializer_keys: frozenset[str],
+    routes_with_rule_edges: frozenset[str],
+) -> bool:
+    """Return whether current production provenance is publicly observable.
+
+    This is an observability check only. It does not establish source
+    authority, correctness, verification, or complete capability coverage.
+
+    DIRECT provenance is observable when the production element has attached
+    source identifiers and the public subsystem serializer exposes ``sources``.
+
+    RUNTIME_CONDITIONAL provenance is observable when the route has audited
+    route-to-rule edges and the public subsystem serializer exposes ``sources``.
+    Applicable RuleDecision values already carry the actual KnowledgeSource
+    values selected at runtime.
+
+    NO_LINK is an intentional absence of production-attached provenance, so
+    there is no hidden provenance to expose and therefore no observability gap.
+    """
+    if production.link_state is ProvenanceLinkState.NO_LINK:
+        return True
+
+    if production.link_state is ProvenanceLinkState.DIRECT:
+        return bool(production.source_ids) and "sources" in serializer_keys
+
+    if production.link_state is ProvenanceLinkState.RUNTIME_CONDITIONAL:
+        return (
+            production.route_id is not None
+            and production.route_id in routes_with_rule_edges
+            and "sources" in serializer_keys
+        )
+
+    return False
 
 
 def _entry(
@@ -297,6 +335,7 @@ def _entry(
     consumer_fields: frozenset[str],
     json_fields: frozenset[str],
     serializer_keys: frozenset[str],
+    routes_with_rule_edges: frozenset[str],
     documentation_consistent: bool,
 ) -> CrossLayerCapabilityEntry:
     input_state = _input_state(production, typed_fields, consumer_fields, json_fields)
@@ -337,10 +376,12 @@ def _entry(
         gaps.append(GapType.PUBLIC_OUTPUT_IDENTITY_GAP)
     if policy_visibility is OutputVisibilityState.PARTIAL:
         gaps.append(GapType.POLICY_OBSERVABILITY_GAP)
-    if production.link_state in {
-        ProvenanceLinkState.RUNTIME_CONDITIONAL,
-        ProvenanceLinkState.NO_LINK,
-    }:
+    provenance_observable = _provenance_is_publicly_observable(
+        production,
+        serializer_keys,
+        routes_with_rule_edges,
+    )
+    if not provenance_observable:
         gaps.append(GapType.PROVENANCE_OBSERVABILITY_GAP)
     if not gaps:
         gaps.append(GapType.NO_STRUCTURAL_GAP)
@@ -349,8 +390,21 @@ def _entry(
         if input_state is InputRepresentationState.TYPED_ONLY
         else "Current registered capability is represented by the JSON/CLI input contract."
     )
-    if is_probability:
-        notes += " NO_LINK means no production-attached provenance, not no documentation."
+    if production.link_state is ProvenanceLinkState.NO_LINK:
+        notes += (
+            " NO_LINK means no production-attached provenance exists to expose; "
+            "this is intentional absence, not a public observability defect."
+        )
+    elif production.link_state is ProvenanceLinkState.RUNTIME_CONDITIONAL:
+        notes += (
+            " Runtime-selected rule provenance is exposed through the existing "
+            "public sources field when an applicable rule supplies KnowledgeSource."
+        )
+    elif production.link_state is ProvenanceLinkState.DIRECT:
+        notes += (
+            " Direct attached provenance is exposed through the existing public "
+            "sources field."
+        )
     if GapType.PUBLIC_OUTPUT_IDENTITY_GAP in gaps:
         notes += (
             " PUBLIC_OUTPUT_IDENTITY_GAP means the stable capability identity contract "
@@ -410,6 +464,7 @@ def run_audit() -> CrossLayerGapAudit:
     consumer_fields = _typed_consumer_fields()
     json_fields = _json_parser_fields()
     serializer_keys = _serializer_keys()
+    routes_with_rule_edges = frozenset(edge.route_id for edge in provenance.route_rule_edges)
     documentation_consistent = _documentation_consistent()
     entries = tuple(
         _entry(
@@ -419,6 +474,7 @@ def run_audit() -> CrossLayerGapAudit:
             consumer_fields,
             json_fields,
             serializer_keys,
+            routes_with_rule_edges,
             documentation_consistent,
         )
         for item in provenance.production_entries
@@ -515,7 +571,8 @@ def run_audit() -> CrossLayerGapAudit:
             "Current registered production capabilities are represented by both typed and JSON/CLI input contracts.",
             "NOT_OBSERVED means not observed by Phase 21C; it never implies structurally unreachable or absence of evidence elsewhere.",
             "Stable public capability identity is an ownership contract; trace remains decision-detail evidence.",
-            "Provenance visibility does not establish source authority.",
+            "Public provenance observability does not establish source authority, correctness, verification, or complete capability coverage.",
+            "NO_LINK is intentional absence of production-attached provenance, not hidden provenance.",
             "Expected deferred absence is not a production defect.",
         ),
         "PASS" if valid else "FAIL",
@@ -546,7 +603,9 @@ def main() -> int:
     print("PROVENANCE VISIBILITY")
     for state, count in _count([item.provenance_visibility_state.value for item in audit.entries]):
         print(f"{state} = {count}")
-    print("provenance gaps indicate incomplete public/static observability, not invalid provenance")
+    provenance_gap_count = dict(audit.gap_counts).get(GapType.PROVENANCE_OBSERVABILITY_GAP.value, 0)
+    print(f"provenance_observability_gap = {provenance_gap_count}")
+    print("existing sources/source serialization exposes attached runtime provenance; NO_LINK is intentional absence")
     print("DOCUMENTATION CONSISTENCY")
     print(f"documentation_present = {dict(audit.summary)['documentation_present']}")
     print("EXPECTED / DEFERRED ABSENCES")

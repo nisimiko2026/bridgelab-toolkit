@@ -148,11 +148,36 @@ def test_policy_visibility_reuses_phase21a_static_classification(audit):
     assert dict(audit.gap_counts)[GapType.POLICY_OBSERVABILITY_GAP.value] == 19
 
 
-def test_provenance_visibility_reuses_phase21b_states(audit):
+def test_provenance_visibility_reuses_phase21b_states_without_false_public_gap(audit):
     provenance = run_provenance_audit()
-    expected = {(item.element_type, item.element_id): item.link_state for item in provenance.production_entries}
-    assert all(expected[(item.element_type, item.element_id)] is item.provenance_visibility_state for item in audit.entries)
-    assert dict(audit.gap_counts)[GapType.PROVENANCE_OBSERVABILITY_GAP.value] == 46
+    expected = {
+        (item.element_type, item.element_id): item.link_state
+        for item in provenance.production_entries
+    }
+    assert all(
+        expected[(item.element_type, item.element_id)]
+        is item.provenance_visibility_state
+        for item in audit.entries
+    )
+    link_counts = {
+        state.value: sum(
+            item.provenance_visibility_state is state
+            for item in audit.entries
+        )
+        for state in set(expected.values())
+    }
+    assert link_counts["RUNTIME_CONDITIONAL"] == 45
+    assert link_counts["DIRECT"] == 1
+    assert link_counts["NO_LINK"] == 1
+    assert GapType.PROVENANCE_OBSERVABILITY_GAP.value not in dict(audit.gap_counts)
+
+
+def test_current_gap_summary_keeps_policy_gap_but_closes_provenance_gap(audit):
+    gaps = dict(audit.gap_counts)
+    assert gaps[GapType.POLICY_OBSERVABILITY_GAP.value] == 19
+    assert gaps.get(GapType.PROVENANCE_OBSERVABILITY_GAP.value, 0) == 0
+    assert gaps.get(GapType.PUBLIC_JSON_INPUT_GAP.value, 0) == 0
+    assert gaps.get(GapType.PUBLIC_OUTPUT_IDENTITY_GAP.value, 0) == 0
 
 
 def test_expected_absence_and_not_applicable_are_distinct(audit):
