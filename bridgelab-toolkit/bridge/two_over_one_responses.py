@@ -29,7 +29,7 @@ from dataclasses import dataclass
 from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
-from .major_response_options import TwoOverOneTreatment, two_over_one_treatment
+from .system_profiles import supports_two_over_one_game_force
 from .models import Suit
 from .policy_registry import PolicyRegistry, assess_configured_suit_quality
 from .suit_quality_policy import SuitQualityStatus
@@ -44,8 +44,6 @@ PRIORITIES_SOURCE = KnowledgeSource(MAJOR_RESPONSE_ARTICLE, "Responder's Priorit
 WITHOUT_SUPPORT_SOURCE = KnowledgeSource(MAJOR_RESPONSE_ARTICLE, "Responding Without Support")
 NEW_SUIT_SOURCE = KnowledgeSource(MAJOR_RESPONSE_ARTICLE, "New Suit Responses")
 TWO_OVER_ONE_SOURCE = KnowledgeSource(MAJOR_RESPONSE_ARTICLE, "Two-over-One Game Force")
-
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _exact_major_response(context: BiddingContext, opening: Strain) -> bool:
@@ -71,13 +69,10 @@ class _TwoOverOneMinorResponseRule:
     rule_id: str
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
-            return RuleDecision.not_applicable(self.rule_id, "Rule is defined for configured SAYC partnerships.")
-
-        if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
+        if not supports_two_over_one_game_force(context.system):
             return RuleDecision.not_applicable(
                 self.rule_id,
-                "Partnership has not explicitly selected Two-over-One Game Force.",
+                "Configured system profile and partnership treatment do not enable Two-over-One Game Force.",
             )
 
         if not _exact_major_response(context, self.opening):

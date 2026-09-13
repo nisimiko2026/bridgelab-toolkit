@@ -61,6 +61,15 @@ def test_four_controlled_two_over_one_responses(opening, hand, expected):
     assert result.recommended_call.serialize() == expected
     assert "fixture.quality" in result.recommended.explanation
 
+def test_two_over_one_profile_can_use_controlled_response_rules():
+    result = create_sayc_two_over_one_response_engine(registry()).evaluate(
+        context(
+            "1S",
+            "82.KQ3.64.AKQJ97",
+            system="TWO_OVER_ONE_GF",
+        )
+    )
+    assert result.recommended_call.serialize() == "2C"
 
 def test_requires_explicit_game_force_treatment():
     result = create_sayc_two_over_one_response_engine(registry()).evaluate(
