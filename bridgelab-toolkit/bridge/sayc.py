@@ -26,12 +26,9 @@ from .auction import Call, CallType
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 
-_SAYC_NAMES = {
-    "sayc",
-    "standard american yellow card",
-}
 
 _SAYC_OPENING_REQUIREMENTS = KnowledgeSource(
     "bidding/systems/sayc",
@@ -64,7 +61,7 @@ _SPADE_LENGTH = KnowledgeSource(
 
 
 def _is_sayc(context: BiddingContext) -> bool:
-    return context.system.system.casefold() in _SAYC_NAMES
+    return classify_system_profile(context.system) is SystemProfile.SAYC
 
 
 def _is_unopened(context: BiddingContext) -> bool:
