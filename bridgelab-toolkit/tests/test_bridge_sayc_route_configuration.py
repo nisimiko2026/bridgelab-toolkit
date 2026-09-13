@@ -13,9 +13,9 @@ def ctx(calls,hand,options=None):
     )
 
 
-def test_standard_router_has_seventeen_explicit_routes():
+def test_standard_router_has_forty_five_explicit_routes():
     router=create_standard_sayc_router()
-    assert len(router.routes)==17
+    assert len(router.routes)==45
 
 
 def test_opening_position_routes_to_opening_engine():

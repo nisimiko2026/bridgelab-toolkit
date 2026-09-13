@@ -37,11 +37,20 @@ class SaycOpeningRulesTests(unittest.TestCase):
         self.assertEqual(
             [rule.rule_id for rule in rules],
             [
+                "sayc.opening.2c",
                 "sayc.opening.1nt",
+                "sayc.opening.2nt",
                 "sayc.opening.1h",
                 "sayc.opening.1s",
                 "sayc.opening.1c",
                 "sayc.opening.1d",
+                "sayc.opening.weak2.2s",
+                "sayc.opening.weak2.2h",
+                "sayc.opening.weak2.2d",
+                "sayc.opening.preempt3.3s",
+                "sayc.opening.preempt3.3h",
+                "sayc.opening.preempt3.3d",
+                "sayc.opening.preempt3.3c",
             ],
         )
 

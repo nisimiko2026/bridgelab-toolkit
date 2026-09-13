@@ -1,4 +1,42 @@
 ---
+title: Safety Play
+description: Explains safety play, a line chosen to maximize the chance of making a contract against adverse distributions.
+category: play
+subcategory: declarer-play
+difficulty: Intermediate
+tags:
+  - declarer-play
+  - endplay
+  - finesse
+  - lead
+  - play
+  - slam
+  - squeeze
+systems: []
+aliases: []
+acronyms: []
+references:
+  - acronyms
+  - play/declarer-play/elimination-and-endplays/elimination-index
+  - play/declarer-play/elimination-and-endplays/elimination
+  - play/declarer-play/elimination-and-endplays/endplay
+  - play/declarer-play/general-techniques/communication
+  - play/declarer-play/general-techniques/ducking
+  - play/declarer-play/general-techniques/finesses/finesse
+  - play/declarer-play/general-techniques/finesses/finesses-index
+  - play/declarer-play/index-declarer-play
+  - play/declarer-play/planning/planning-index
+  - play/declarer-play/planning/planning-the-play
+  - play/declarer-play/planning/timing
+  - play/declarer-play/probability/probability-index
+  - play/declarer-play/probability/restricted-choice
+  - play/defence/signaling/count
+  - references/references-index
+last_updated: 2026-07-27
+status: Draft
+---
+
+# Safety Play Technique
 
 # Implementation Readiness Contract
 
