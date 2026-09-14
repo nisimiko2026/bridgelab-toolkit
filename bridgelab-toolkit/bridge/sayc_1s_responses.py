@@ -26,6 +26,7 @@ from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 
 ARTICLE = "bidding/natural-bids/responses/response-to-major-opening"
@@ -36,12 +37,11 @@ LIMIT_RAISE = KnowledgeSource(ARTICLE, "Limit Raise")
 OTHER_MAJOR = KnowledgeSource(ARTICLE, "Responding with Another Major")
 SAYC = KnowledgeSource(ARTICLE, "SAYC")
 
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 _MAJOR_RAISE_STYLE_OPTION = "major_raise_style"
 
 
 def _gate(context: BiddingContext, rule_id: str) -> RuleDecision | None:
-    if context.system.system.casefold() not in _SAYC_NAMES:
+    if classify_system_profile(context.system) is not SystemProfile.SAYC:
         return RuleDecision.not_applicable(rule_id, "Rule is defined only for SAYC.")
 
     entries = context.auction.entries
