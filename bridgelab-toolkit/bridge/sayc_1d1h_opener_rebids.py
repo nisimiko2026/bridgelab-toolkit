@@ -22,6 +22,7 @@ from .auction import Call,CallType,Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext,KnowledgeSource,RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 SAYC_ARTICLE="bidding/systems/sayc"
 MINOR_ARTICLE="bidding/natural-bids/rebids/opener-after-minor"
@@ -30,7 +31,6 @@ SECOND_SUIT=KnowledgeSource(MINOR_ARTICLE,"Showing a Second Suit")
 MINOR_REBID=KnowledgeSource(MINOR_ARTICLE,"Rebidding the Minor")
 NOTRUMP=KnowledgeSource(MINOR_ARTICLE,"Notrump Rebids")
 SUPPORT=KnowledgeSource(MINOR_ARTICLE,"Supporting Responder / Four-Card Support")
-_SAYC={"sayc","standard american yellow card"}
 
 def _exact(context:BiddingContext)->bool:
     e=context.auction.entries
@@ -46,7 +46,7 @@ def _exact(context:BiddingContext)->bool:
     )
 
 def _scope(rule_id:str,context:BiddingContext):
-    if context.system.system.casefold() not in _SAYC:
+    if classify_system_profile(context.system) is not SystemProfile.SAYC:
         return RuleDecision.not_applicable(rule_id,"Rule is scoped to SAYC.")
     if not _exact(context):
         return RuleDecision.not_applicable(rule_id,"Requires exact 1♦ — Pass — 1♥ — Pass — ?.")

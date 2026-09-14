@@ -23,6 +23,7 @@ from .auction import Call,CallType,Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext,KnowledgeSource,RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 ARTICLE="bidding/systems/sayc"
 MINOR_ARTICLE="bidding/natural-bids/rebids/opener-after-minor"
@@ -33,7 +34,6 @@ REVERSE=KnowledgeSource(ARTICLE,"Reverse Bids")
 SUPPORT=KnowledgeSource(ARTICLE,"Opener's Rebids After 1♣")
 MINOR_NT=KnowledgeSource(MINOR_ARTICLE,"Notrump Rebids")
 MINOR_REBID=KnowledgeSource(MINOR_ARTICLE,"Rebidding the Minor")
-_SAYC={"sayc","standard american yellow card"}
 
 def _exact(c:BiddingContext)->bool:
     e=c.auction.entries
@@ -47,7 +47,7 @@ def _exact(c:BiddingContext)->bool:
       and lho.call.kind is CallType.PASS)
 
 def _scope(rule_id,c):
-    if c.system.system.casefold() not in _SAYC:
+    if classify_system_profile(c.system) is not SystemProfile.SAYC:
         return RuleDecision.not_applicable(rule_id,"Rule is scoped to SAYC.")
     if not _exact(c):
         return RuleDecision.not_applicable(rule_id,"Requires exact 1♦ — Pass — 1♠ — Pass — ?.")

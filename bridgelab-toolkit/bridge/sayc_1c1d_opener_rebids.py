@@ -19,11 +19,11 @@ from .auction import Call,CallType,Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext,KnowledgeSource,RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 ARTICLE="bidding/systems/sayc"
 PRIORITY=KnowledgeSource(ARTICLE,"Opener's Rebids After 1♣")
 MINOR=KnowledgeSource(ARTICLE,"Rebidding Minor")
 NOTRUMP=KnowledgeSource(ARTICLE,"Notrump Rebids")
-_SAYC={"sayc","standard american yellow card"}
 
 def _exact(c):
  e=c.auction.entries
@@ -34,7 +34,7 @@ def _exact(c):
  and r.call.bid.level==1 and r.call.bid.strain is Strain.DIAMONDS and lho.call.kind is CallType.PASS)
 
 def _scope(rule,c):
- if c.system.system.casefold() not in _SAYC:return RuleDecision.not_applicable(rule,"Rule is scoped to SAYC.")
+ if classify_system_profile(c.system) is not SystemProfile.SAYC:return RuleDecision.not_applicable(rule,"Rule is scoped to SAYC.")
  if not _exact(c):return RuleDecision.not_applicable(rule,"Requires exact 1♣ — Pass — 1♦ — Pass — ?.")
 
 @dataclass(frozen=True,slots=True)
