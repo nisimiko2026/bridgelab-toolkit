@@ -45,6 +45,7 @@ from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .major_response_options import TwoOverOneTreatment, two_over_one_treatment
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 
 ARTICLE = "bidding/systems/2-over-1"
@@ -52,8 +53,6 @@ OPENER_REBIDS_SOURCE = KnowledgeSource(ARTICLE, "Opener's Rebids")
 SECOND_SUIT_SOURCE = KnowledgeSource(ARTICLE, "Priority 1 — Show a Second Suit")
 SUPPORT_SOURCE = KnowledgeSource(ARTICLE, "Priority 2 — Support Responder")
 OWN_SUIT_SOURCE = KnowledgeSource(ARTICLE, "Priority 3 — Rebid Own Suit")
-
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _exact_established_two_over_one(
@@ -89,7 +88,7 @@ class SaycTwoOverOneOneSpadeTwoClubTwoDiamondRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.2d"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is scoped to configured SAYC partnerships.")
 
         if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
@@ -128,7 +127,7 @@ class SaycTwoOverOneOneHeartTwoDiamondTwoSpadeRule:
     rule_id: str = "sayc.2over1.opener.1h.2d.2s"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is scoped to configured SAYC partnerships.")
 
         if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
@@ -165,7 +164,7 @@ class SaycTwoOverOneOneSpadeTwoClubThreeClubRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.3c"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(
                 self.rule_id,
                 "Rule is scoped to configured SAYC partnerships.",
@@ -219,7 +218,7 @@ class SaycTwoOverOneOneSpadeTwoClubTwoSpadeRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.2s"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(
                 self.rule_id,
                 "Rule is scoped to configured SAYC partnerships.",

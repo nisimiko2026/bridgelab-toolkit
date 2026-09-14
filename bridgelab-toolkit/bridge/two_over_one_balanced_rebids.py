@@ -24,13 +24,12 @@ from .auction import CallType, Strain
 from .bidding_rules import BiddingContext, KnowledgeSource
 from .evaluation import ShapeClass
 from .major_response_options import TwoOverOneTreatment, two_over_one_treatment
+from .system_profiles import SystemProfile, classify_system_profile
 
 
 ARTICLE = "bidding/systems/2-over-1"
 FIRST_RESPONSIBILITY_SOURCE = KnowledgeSource(ARTICLE, "Opener's First Responsibility")
 BALANCED_REBID_SOURCE = KnowledgeSource(ARTICLE, "Priority 4 — Balanced Rebids")
-
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 @dataclass(frozen=True, slots=True)
@@ -88,7 +87,7 @@ def assess_one_heart_two_diamond_balanced_rebid(
         raise TypeError("context must be BiddingContext")
 
     exact = (
-        context.system.system.casefold() in _SAYC_NAMES
+        classify_system_profile(context.system) is SystemProfile.SAYC
         and _exact_one_heart_two_diamond_rebid(context)
     )
     gf = two_over_one_treatment(context.system) is TwoOverOneTreatment.GAME_FORCE
