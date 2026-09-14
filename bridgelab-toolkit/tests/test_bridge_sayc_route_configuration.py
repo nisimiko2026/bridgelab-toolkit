@@ -91,3 +91,27 @@ def test_wrong_registry_type_is_rejected():
         pass
     else:
         raise AssertionError("expected TypeError")
+
+def test_routed_two_over_one_unsupported_rebids_abstain():
+    router = create_standard_sayc_router()
+
+    cases = {
+        ("1H", "P", "2C", "P"): "sayc.2over1.opener.1h.2c",
+        ("1S", "P", "2D", "P"): "sayc.2over1.opener.1s.2d",
+    }
+
+    for calls, route_id in cases.items():
+        context = ctx(
+            calls,
+            "AKQJ9.KQ3.JT8.32",
+            {"two_over_one": "game_force"},
+        )
+
+        match = router.match(context)
+
+        assert match is not None
+        assert match.route_id == route_id
+
+        result = router.evaluate(context)
+
+        assert not result.has_recommendation
