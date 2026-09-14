@@ -10,6 +10,7 @@ from .auction import Call
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 from .policy_registry import (
     PolicyRegistry,
     assess_configured_stayman_dual_major_response,
@@ -18,7 +19,6 @@ from .stayman_dual_major_response_policy import StaymanDualMajorResponse
 
 _SOURCE = "bidding/conventions/responses/stayman"
 _RESPONSES = KnowledgeSource(_SOURCE, "Opener's Responses")
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _calls(context: BiddingContext) -> tuple[str, ...]:
@@ -31,7 +31,7 @@ class SaycOneNotrumpStaymanOpenerResponseRule:
     rule_id: str = "sayc.opener.1nt.stayman"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is defined only for SAYC.")
         if _calls(context) != ("1NT", "P", "2C", "P"):
             return RuleDecision.not_applicable(

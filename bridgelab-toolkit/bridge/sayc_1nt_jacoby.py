@@ -4,15 +4,15 @@ from .auction import Call
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 _SOURCE=KnowledgeSource("bidding/conventions/transfers/jacoby-transfers","Jacoby Transfers")
-_SAYC={"sayc","standard american yellow card"}
 def _calls(c): return tuple(e.call.serialize() for e in c.auction.entries)
 
 @dataclass(frozen=True,slots=True)
 class SaycOneNotrumpJacobyResponseRule:
     rule_id:str="sayc.response.1nt.jacoby"
     def evaluate(self,c):
-        if c.system.system.casefold() not in _SAYC: return RuleDecision.not_applicable(self.rule_id,"SAYC only.")
+        if classify_system_profile(c.system) is not SystemProfile.SAYC: return RuleDecision.not_applicable(self.rule_id,"SAYC only.")
         if _calls(c)!=("1NT","P"): return RuleDecision.not_applicable(self.rule_id,"Requires uncontested 1NT-P.")
         h,s=c.evaluation.length(Suit.HEARTS),c.evaluation.length(Suit.SPADES)
         if h>=5 and s<5: bid,why="2D","5+ hearts only: Jacoby transfer."
@@ -24,7 +24,7 @@ class SaycOneNotrumpJacobyResponseRule:
 class SaycOneNotrumpJacobyAcceptanceRule:
     rule_id:str="sayc.opener.1nt.jacoby.accept"
     def evaluate(self,c):
-        if c.system.system.casefold() not in _SAYC: return RuleDecision.not_applicable(self.rule_id,"SAYC only.")
+        if classify_system_profile(c.system) is not SystemProfile.SAYC: return RuleDecision.not_applicable(self.rule_id,"SAYC only.")
         a=_calls(c)
         if a==("1NT","P","2D","P"): bid="2H"
         elif a==("1NT","P","2H","P"): bid="2S"
@@ -49,7 +49,7 @@ class SaycOneNotrumpJacobyContinuationRule:
     rule_id: str = "sayc.responder.1nt.jacoby.continuation"
 
     def evaluate(self, c):
-        if c.system.system.casefold() not in _SAYC:
+        if classify_system_profile(c.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "SAYC only.")
         a = _calls(c)
         if a == ("1NT", "P", "2D", "P", "2H", "P"):
