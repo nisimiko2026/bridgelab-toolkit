@@ -1,0 +1,71 @@
+{
+  "all_routes_reachable": true,
+  "article": "bidding/systems/2-over-1",
+  "canonical_family_count": 4,
+  "cases": [
+    {
+      "auction": "1H-P-2C-P",
+      "blocker": "No source-explicit call, shape threshold, suit-ordering rule, support contract, own-suit contract, or balanced range is defined for this exact canonical auction.",
+      "current_probe_action": "ABSTAIN",
+      "decision": "DEFER",
+      "expected_route": "sayc.2over1.opener.1h.2c",
+      "production_coverage": "NONE",
+      "route_reachable": true,
+      "route_reached": "sayc.2over1.opener.1h.2c",
+      "source_finding": "The frozen source gives no exact opener-rebid contract for the 1H-2C branch.",
+      "source_status": "SOURCE_INSUFFICIENT"
+    },
+    {
+      "auction": "1H-P-2D-P",
+      "blocker": "The source does not define a complete opener-rebid table for every shape and strength in this auction.",
+      "current_probe_action": "ABSTAIN",
+      "decision": "KEEP_EXISTING_RULES",
+      "expected_route": "sayc.2over1.opener.1h.2d",
+      "production_coverage": "PARTIAL",
+      "route_reachable": true,
+      "route_reached": "sayc.2over1.opener.1h.2d",
+      "source_finding": "The frozen source explicitly supports the 2S second-suit example with five or more hearts and four or more spades. Balanced evidence is tracked separately and remains conservative.",
+      "source_status": "SOURCE_PARTIAL"
+    },
+    {
+      "auction": "1S-P-2C-P",
+      "blocker": "The source does not define a complete opener-rebid table or a general precedence rule between multiple available second suits.",
+      "current_probe_action": "ABSTAIN",
+      "decision": "KEEP_EXISTING_RULES",
+      "expected_route": "sayc.2over1.opener.1s.2c",
+      "production_coverage": "PARTIAL",
+      "route_reachable": true,
+      "route_reached": "sayc.2over1.opener.1s.2c",
+      "source_finding": "The frozen source explicitly supports selected 2D second-suit, 3C support, and objective six-spade 2S branches.",
+      "source_status": "SOURCE_PARTIAL"
+    },
+    {
+      "auction": "1S-P-2D-P",
+      "blocker": "No source-explicit call, shape threshold, suit-ordering rule, support contract, own-suit contract, or balanced range is defined for this exact canonical auction.",
+      "current_probe_action": "ABSTAIN",
+      "decision": "DEFER",
+      "expected_route": "sayc.2over1.opener.1s.2d",
+      "production_coverage": "NONE",
+      "route_reachable": true,
+      "route_reached": "sayc.2over1.opener.1s.2d",
+      "source_finding": "The frozen source gives no exact opener-rebid contract for the 1S-2D branch.",
+      "source_status": "SOURCE_INSUFFICIENT"
+    }
+  ],
+  "decision": "DEFER UNSUPPORTED TWO-OVER-ONE OPENER REBIDS",
+  "knowledge_markdown_changed": 0,
+  "partially_supported_routes": [
+    "sayc.2over1.opener.1h.2d",
+    "sayc.2over1.opener.1s.2c"
+  ],
+  "policies_added": 0,
+  "production_defaults_changed": false,
+  "production_rules_added": 0,
+  "route_count": 45,
+  "routes_added": 0,
+  "unsupported_all_abstain": true,
+  "unsupported_routes": [
+    "sayc.2over1.opener.1h.2c",
+    "sayc.2over1.opener.1s.2d"
+  ]
+}
