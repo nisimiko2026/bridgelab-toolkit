@@ -10,9 +10,9 @@ from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .policy_registry import PolicyRegistry, assess_configured_stopper
 from .stopper_policy import StopperStatus
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE=KnowledgeSource("bidding/systems/sayc","Notrump Overcalls — Direct 1NT")
-_SAYC={"sayc","standard american yellow card"}
 
 def _direct_suit_opening(context):
     entries=context.auction.entries
@@ -27,7 +27,7 @@ class SaycDirectOneNotrumpOvercallRule:
     registry: PolicyRegistry
     rule_id: str="sayc.overcall.direct.1nt"
     def evaluate(self,context):
-        if context.system.system.casefold() not in _SAYC:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id,"Rule is SAYC-only.")
         opening=_direct_suit_opening(context)
         if opening is None:

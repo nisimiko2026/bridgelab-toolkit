@@ -17,9 +17,9 @@ from .models import Suit
 from .policy_registry import PolicyRegistry, assess_configured_suit_quality, assess_configured_playing_strength
 from .suit_quality_policy import SuitQualityStatus
 from .playing_strength_policy import PlayingStrengthStatus
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE = KnowledgeSource("bidding/systems/sayc", "Natural Overcalls")
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _direct_one_level_opening(context: BiddingContext) -> Strain | None:
@@ -48,7 +48,7 @@ class SaycNaturalOneLevelOvercallRule:
     rule_id: str = "sayc.overcall.one_level.natural"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is defined for configured SAYC partnerships.")
 
         opening = _direct_one_level_opening(context)
