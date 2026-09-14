@@ -16,6 +16,7 @@ from .auction import Call,CallType,Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext,KnowledgeSource,RuleDecision
 from .major_response_options import MajorRaiseStyle, major_raise_style
+from .system_profiles import SystemProfile, classify_system_profile
 
 SAYC="bidding/systems/sayc"
 MAJOR="bidding/natural-bids/rebids/opener-after-major"
@@ -23,7 +24,6 @@ SIMPLE=KnowledgeSource(SAYC,"Major-Suit Raises / Simple Raise")
 EXAMPLE=KnowledgeSource(SAYC,"Example 1 – Simple Major Fit")
 STRENGTH=KnowledgeSource(MAJOR,"Strength Categories / Minimum")
 AFTER_RAISE=KnowledgeSource(MAJOR,"Rebids After Different Responses / After Raise")
-_SAYC={"sayc","standard american yellow card"}
 
 def _exact(c, strain):
  e=c.auction.entries
@@ -41,7 +41,7 @@ class SaycSimpleMajorRaiseMinimumPassRule:
  strain:Strain
  rule_id:str
  def evaluate(self,c):
-  if c.system.system.casefold() not in _SAYC:
+  if classify_system_profile(c.system) is not SystemProfile.SAYC:
    return RuleDecision.not_applicable(self.rule_id,"Rule is scoped to SAYC.")
   if major_raise_style(c.system) is not MajorRaiseStyle.TRADITIONAL:
    return RuleDecision.not_applicable(self.rule_id,"Requires the traditional major-raise treatment.")

@@ -23,6 +23,7 @@ from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 from .evaluation import ShapeClass
 
 
@@ -31,11 +32,10 @@ PRIORITIES = KnowledgeSource(ARTICLE, "Responder's Priorities")
 NOTRUMP = KnowledgeSource(ARTICLE, "Notrump Responses")
 TWO_NT = KnowledgeSource(ARTICLE, "2NT")
 THREE_NT = KnowledgeSource(ARTICLE, "3NT")
-_SAYC = {"sayc", "standard american yellow card"}
 
 
 def _gate(context: BiddingContext, rule_id: str) -> RuleDecision | None:
-    if context.system.system.casefold() not in _SAYC:
+    if classify_system_profile(context.system) is not SystemProfile.SAYC:
         return RuleDecision.not_applicable(rule_id, "Rule is defined only for SAYC.")
     entries = context.auction.entries
     if len(entries) != 2:

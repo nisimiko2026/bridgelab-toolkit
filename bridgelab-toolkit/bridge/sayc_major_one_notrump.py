@@ -36,6 +36,7 @@ from .major_response_options import (
     forcing_one_notrump_treatment,
 )
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 
 ARTICLE = "bidding/natural-bids/responses/response-to-major-opening"
@@ -44,7 +45,6 @@ ONE_NT = KnowledgeSource(ARTICLE, "1NT")
 OTHER_MAJOR = KnowledgeSource(ARTICLE, "Responding with Another Major")
 SAYC = KnowledgeSource(ARTICLE, "SAYC")
 
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _gate(
@@ -52,7 +52,7 @@ def _gate(
     rule_id: str,
     opening_strain: Strain,
 ) -> RuleDecision | None:
-    if context.system.system.casefold() not in _SAYC_NAMES:
+    if classify_system_profile(context.system) is not SystemProfile.SAYC:
         return RuleDecision.not_applicable(rule_id, "Rule is defined only for SAYC.")
 
     entries = context.auction.entries
