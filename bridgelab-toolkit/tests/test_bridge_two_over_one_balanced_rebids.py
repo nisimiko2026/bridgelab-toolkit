@@ -71,6 +71,29 @@ def test_non_sayc_is_not_exact_scope():
     assert not assessment.exact_auction
 
 
+
+def test_native_two_over_one_profile_is_in_exact_scope_when_game_force_configured():
+    assessment = assess_one_heart_two_diamond_balanced_rebid(
+        context("KQ3.AKQ97.QJ2.32", system="TWO_OVER_ONE_GF")
+    )
+
+    assert assessment.exact_auction
+    assert assessment.game_force_configured
+
+
+def test_native_two_over_one_profile_without_game_force_is_not_executable():
+    assessment = assess_one_heart_two_diamond_balanced_rebid(
+        context(
+            "KQ3.AKQ97.QJ2.32",
+            system="TWO_OVER_ONE_GF",
+            treatment="natural",
+        )
+    )
+
+    assert assessment.exact_auction
+    assert not assessment.game_force_configured
+    assert not assessment.executable
+
 def test_source_trace_records_both_canonical_headings():
     assessment = assess_one_heart_two_diamond_balanced_rebid(
         context("KQ3.AKQ97.QJ2.32")

@@ -86,8 +86,12 @@ def assess_one_heart_two_diamond_balanced_rebid(
     if not isinstance(context, BiddingContext):
         raise TypeError("context must be BiddingContext")
 
+    profile = classify_system_profile(context.system)
     exact = (
-        classify_system_profile(context.system) is SystemProfile.SAYC
+        profile in {
+            SystemProfile.SAYC,
+            SystemProfile.TWO_OVER_ONE_GF,
+        }
         and _exact_one_heart_two_diamond_rebid(context)
     )
     gf = two_over_one_treatment(context.system) is TwoOverOneTreatment.GAME_FORCE

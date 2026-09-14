@@ -69,6 +69,27 @@ def test_non_sayc_abstains():
     assert not result.has_recommendation
 
 
+
+def test_native_two_over_one_profile_with_explicit_game_force_is_eligible():
+    ctx = context(
+        ("1S", "P", "2C", "P"),
+        "AKQ97.82.KQJ4.32",
+        system="TWO_OVER_ONE_GF",
+    )
+    result = create_sayc_two_over_one_opener_rebid_engine().evaluate(ctx)
+    assert result.recommended_call.serialize() == "2D"
+
+
+def test_native_two_over_one_profile_still_requires_explicit_game_force():
+    ctx = context(
+        ("1S", "P", "2C", "P"),
+        "AKQ97.82.KQJ4.32",
+        system="TWO_OVER_ONE_GF",
+        treatment="natural",
+    )
+    result = create_sayc_two_over_one_opener_rebid_engine().evaluate(ctx)
+    assert not result.has_recommendation
+
 def test_source_trace_uses_opener_rebid_priority():
     ctx = context(("1S", "P", "2C", "P"), "AKQ97.82.KQJ4.32")
     result = create_sayc_two_over_one_opener_rebid_engine().evaluate(ctx)

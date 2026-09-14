@@ -43,9 +43,8 @@ from dataclasses import dataclass
 from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
-from .major_response_options import TwoOverOneTreatment, two_over_one_treatment
 from .models import Suit
-from .system_profiles import SystemProfile, classify_system_profile
+from .system_profiles import supports_two_over_one_game_force
 
 
 ARTICLE = "bidding/systems/2-over-1"
@@ -88,11 +87,11 @@ class SaycTwoOverOneOneSpadeTwoClubTwoDiamondRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.2d"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if classify_system_profile(context.system) is not SystemProfile.SAYC:
-            return RuleDecision.not_applicable(self.rule_id, "Rule is scoped to configured SAYC partnerships.")
-
-        if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
-            return RuleDecision.not_applicable(self.rule_id, "Partnership has not explicitly selected Two-over-One Game Force.")
+        if not supports_two_over_one_game_force(context.system):
+            return RuleDecision.not_applicable(
+                self.rule_id,
+                "Rule requires an eligible system with explicit Two-over-One Game Force.",
+            )
 
         if not _exact_established_two_over_one(context, Strain.SPADES, Strain.CLUBS):
             return RuleDecision.not_applicable(self.rule_id, "Requires exact 1♠ — Pass — 2♣ — Pass — ?.")
@@ -127,11 +126,11 @@ class SaycTwoOverOneOneHeartTwoDiamondTwoSpadeRule:
     rule_id: str = "sayc.2over1.opener.1h.2d.2s"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if classify_system_profile(context.system) is not SystemProfile.SAYC:
-            return RuleDecision.not_applicable(self.rule_id, "Rule is scoped to configured SAYC partnerships.")
-
-        if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
-            return RuleDecision.not_applicable(self.rule_id, "Partnership has not explicitly selected Two-over-One Game Force.")
+        if not supports_two_over_one_game_force(context.system):
+            return RuleDecision.not_applicable(
+                self.rule_id,
+                "Rule requires an eligible system with explicit Two-over-One Game Force.",
+            )
 
         if not _exact_established_two_over_one(context, Strain.HEARTS, Strain.DIAMONDS):
             return RuleDecision.not_applicable(self.rule_id, "Requires exact 1♥ — Pass — 2♦ — Pass — ?.")
@@ -164,16 +163,10 @@ class SaycTwoOverOneOneSpadeTwoClubThreeClubRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.3c"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if classify_system_profile(context.system) is not SystemProfile.SAYC:
+        if not supports_two_over_one_game_force(context.system):
             return RuleDecision.not_applicable(
                 self.rule_id,
-                "Rule is scoped to configured SAYC partnerships.",
-            )
-
-        if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
-            return RuleDecision.not_applicable(
-                self.rule_id,
-                "Partnership has not explicitly selected Two-over-One Game Force.",
+                "Rule requires an eligible system with explicit Two-over-One Game Force.",
             )
 
         if not _exact_established_two_over_one(context, Strain.SPADES, Strain.CLUBS):
@@ -218,16 +211,10 @@ class SaycTwoOverOneOneSpadeTwoClubTwoSpadeRule:
     rule_id: str = "sayc.2over1.opener.1s.2c.2s"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if classify_system_profile(context.system) is not SystemProfile.SAYC:
+        if not supports_two_over_one_game_force(context.system):
             return RuleDecision.not_applicable(
                 self.rule_id,
-                "Rule is scoped to configured SAYC partnerships.",
-            )
-
-        if two_over_one_treatment(context.system) is not TwoOverOneTreatment.GAME_FORCE:
-            return RuleDecision.not_applicable(
-                self.rule_id,
-                "Partnership has not explicitly selected Two-over-One Game Force.",
+                "Rule requires an eligible system with explicit Two-over-One Game Force.",
             )
 
         if not _exact_established_two_over_one(context, Strain.SPADES, Strain.CLUBS):
