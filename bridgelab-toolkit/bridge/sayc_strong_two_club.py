@@ -4,19 +4,19 @@ from dataclasses import dataclass
 from .auction import Call
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE = KnowledgeSource("bidding/systems/sayc", "Responses")
 _BALANCED_REBID_SOURCE = KnowledgeSource(
     "bidding/natural-bids/responses/response-to-2-clubs", "Opener's Rebids"
 )
-_NAMES={"sayc","standard american yellow card"}
 
 @dataclass(frozen=True, slots=True)
 class SaycStrongTwoClubWaitingResponseRule:
     rule_id: str = "sayc.response.2c.2d.waiting"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id,"Rule is SAYC only.")
         if context.auction.serialize() != "2C P":
             return RuleDecision.not_applicable(self.rule_id,"Requires exact uncontested 2C-P response position.")
@@ -42,7 +42,7 @@ class SaycStrongTwoClubBalancedRebidRule:
     rule_id: str = "sayc.opener.2c.2d.2nt.balanced-22-24"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is SAYC only.")
         if context.auction.serialize() != "2C P 2D P":
             return RuleDecision.not_applicable(

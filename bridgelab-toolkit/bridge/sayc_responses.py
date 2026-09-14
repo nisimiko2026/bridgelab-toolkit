@@ -34,6 +34,7 @@ from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 
 _SOURCE = "bidding/natural-bids/responses/response-to-1-club"
@@ -44,11 +45,10 @@ _MAJOR_RESPONSES = KnowledgeSource(_SOURCE, "Responses with Major Suits")
 _DIAMONDS = KnowledgeSource(_SOURCE, "Responding with Diamonds")
 _NOTRUMP = KnowledgeSource(_SOURCE, "Notrump Responses")
 
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _is_sayc(context: BiddingContext) -> bool:
-    return context.system.system.casefold() in _SAYC_NAMES
+    return classify_system_profile(context.system) is SystemProfile.SAYC
 
 
 def _is_exact_uncontested_one_club_response(context: BiddingContext) -> bool:
