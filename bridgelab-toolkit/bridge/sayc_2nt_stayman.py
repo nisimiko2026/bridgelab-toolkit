@@ -10,10 +10,10 @@ from .auction import Call
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE = "bidding/conventions/responses/stayman"
 _RESPONSES = KnowledgeSource(_SOURCE, "2NT Auctions")
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _calls(context: BiddingContext) -> tuple[str, ...]:
@@ -25,7 +25,7 @@ class SaycTwoNotrumpStaymanOpenerResponseRule:
     rule_id: str = "sayc.opener.2nt.stayman"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is defined only for SAYC.")
         if _calls(context) != ("2NT", "P", "3C", "P"):
             return RuleDecision.not_applicable(

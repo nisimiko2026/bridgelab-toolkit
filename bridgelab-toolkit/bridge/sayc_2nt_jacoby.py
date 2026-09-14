@@ -12,16 +12,16 @@ from .auction import Call, CallType, Strain
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
 from .models import Suit
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE = "bidding/conventions/transfers/jacoby-transfers"
 _TRANSFER = KnowledgeSource(_SOURCE, "Jacoby Transfer After 2NT")
 _REQUIREMENTS = KnowledgeSource(_SOURCE, "Requirements")
 _ACCEPT = KnowledgeSource(_SOURCE, "Opener's Responsibilities")
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _is_sayc(context: BiddingContext) -> bool:
-    return context.system.system.casefold() in _SAYC_NAMES
+    return classify_system_profile(context.system) is SystemProfile.SAYC
 
 
 def _calls(context: BiddingContext) -> tuple[str, ...]:

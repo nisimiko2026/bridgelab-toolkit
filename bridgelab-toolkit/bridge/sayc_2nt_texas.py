@@ -9,10 +9,10 @@ from dataclasses import dataclass
 from .auction import Call
 from .bidding_engine import BiddingEngine
 from .bidding_rules import BiddingContext, KnowledgeSource, RuleDecision
+from .system_profiles import SystemProfile, classify_system_profile
 
 _SOURCE = "bidding/conventions/transfers/texas-transfers"
 _TRANSFER = KnowledgeSource(_SOURCE, "Transfer Structure")
-_SAYC_NAMES = {"sayc", "standard american yellow card"}
 
 
 def _calls(context: BiddingContext) -> tuple[str, ...]:
@@ -24,7 +24,7 @@ class SaycTwoNotrumpTexasAcceptanceRule:
     rule_id: str = "sayc.opener.2nt.texas.accept"
 
     def evaluate(self, context: BiddingContext) -> RuleDecision:
-        if context.system.system.casefold() not in _SAYC_NAMES:
+        if classify_system_profile(context.system) is not SystemProfile.SAYC:
             return RuleDecision.not_applicable(self.rule_id, "Rule is defined only for SAYC.")
 
         calls = _calls(context)
