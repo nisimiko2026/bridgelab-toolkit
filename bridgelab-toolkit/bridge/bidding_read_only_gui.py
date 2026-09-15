@@ -11,7 +11,7 @@ from .full_deal_application import (
     full_deal_application_request_from_dict,
 )
 from .sayc_route_configuration import create_standard_sayc_router
-from .models import Seat, Vulnerability
+from .models import Hand, Seat, Vulnerability
 from .system_profiles import SystemProfile, classify_system_profile
 
 
@@ -21,6 +21,23 @@ SYSTEM_VALUES = tuple(
     profile.value for profile in SystemProfile if profile is not SystemProfile.UNKNOWN
 )
 SEAT_COLUMNS = tuple(Seat)
+
+
+@dataclass(frozen=True, slots=True)
+class StructuredHandEntry:
+    """Editable suit text; the canonical Hand parser owns card validity."""
+
+    spades: str
+    hearts: str
+    diamonds: str
+    clubs: str
+
+    def to_canonical_hand(self) -> str:
+        groups = tuple(
+            "".join(value.split()).upper() or "-"
+            for value in (self.spades, self.hearts, self.diamonds, self.clubs)
+        )
+        return Hand.parse(".".join(groups)).serialize()
 
 
 def friendly_call(canonical: str) -> str:
@@ -212,7 +229,10 @@ def main() -> None:
     root = tk.Tk()
     root.title("BridgeLab bidding view")
     fields = (
-        ("Hand (S.H.D.C)", "hand", "KQJ876.32.43.543", None),
+        ("♠ Spades", "spades", "KQJ876", None),
+        ("♥ Hearts", "hearts", "32", None),
+        ("♦ Diamonds", "diamonds", "43", None),
+        ("♣ Clubs", "clubs", "543", None),
         ("Dealer", "dealer", DEALER_VALUES[0], DEALER_VALUES),
         ("Vulnerability", "vulnerability", VULNERABILITY_VALUES[0], VULNERABILITY_VALUES),
         ("System/profile", "system", SYSTEM_VALUES[0], SYSTEM_VALUES),
@@ -306,8 +326,22 @@ def main() -> None:
     entries["dealer"].bind("<<ComboboxSelected>>", dealer_changed)
 
     def show() -> None:
+        try:
+            hand = StructuredHandEntry(
+                spades=entries["spades"].get(),
+                hearts=entries["hearts"].get(),
+                diamonds=entries["diamonds"].get(),
+                clubs=entries["clubs"].get(),
+            ).to_canonical_hand()
+        except (TypeError, ValueError) as exc:
+            lines = ["Input error", str(exc)]
+            output.configure(state="normal")
+            output.delete("1.0", "end")
+            output.insert("end", "\n".join(lines))
+            output.configure(state="disabled")
+            return
         form = BiddingForm(
-            hand=entries["hand"].get(),
+            hand=hand,
             dealer=auction_state.dealer.value,
             auction_calls=auction_state.to_bidding_calls(),
             vulnerability=entries["vulnerability"].get(),
