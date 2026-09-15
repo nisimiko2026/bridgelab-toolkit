@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections.abc import Mapping
 from dataclasses import dataclass
 
-from .auction import Auction, Call
+from .auction import Auction, Bid, Call, CallType, Strain
 from .full_deal_application import (
     analyze_full_deal_application,
     full_deal_application_request_from_dict,
@@ -19,6 +19,44 @@ DEALER_VALUES = tuple(seat.value for seat in Seat)
 VULNERABILITY_VALUES = tuple(value.value for value in Vulnerability)
 SYSTEM_VALUES = tuple(
     profile.value for profile in SystemProfile if profile is not SystemProfile.UNKNOWN
+)
+SEAT_COLUMNS = tuple(Seat)
+
+
+def friendly_call(canonical: str) -> str:
+    """Translate one canonical call into a presentation-only label."""
+    call = Call.parse(canonical)
+    if call.kind is CallType.PASS:
+        return "Pass"
+    if call.kind is CallType.DOUBLE:
+        return "Double"
+    if call.kind is CallType.REDOUBLE:
+        return "Redouble"
+    assert call.bid is not None
+    strain = {
+        Strain.CLUBS: "♣",
+        Strain.DIAMONDS: "♦",
+        Strain.HEARTS: "♥",
+        Strain.SPADES: "♠",
+        Strain.NOTRUMP: "NT",
+    }[call.bid.strain]
+    return f"{call.bid.level}{strain}"
+
+
+def canonical_call(label: str) -> str:
+    """Reverse a friendly label without changing the domain parser."""
+    aliases = {"Pass": "P", "Double": "X", "Redouble": "XX"}
+    value = aliases.get(label, label)
+    value = value.replace("♣", "C").replace("♦", "D")
+    value = value.replace("♥", "H").replace("♠", "S")
+    return Call.parse(value).serialize()
+
+
+ALL_CANONICAL_CALLS = (
+    "P",
+    "X",
+    "XX",
+    *tuple(Bid(level, strain).serialize() for level in range(1, 8) for strain in Strain),
 )
 
 
@@ -104,6 +142,23 @@ class AuctionEntryModel:
     def to_bidding_calls(self) -> tuple[str, ...]:
         return self.calls
 
+    @property
+    def table_rows(self) -> tuple[tuple[str, str, str, str], ...]:
+        """Arrange canonical seat-tagged entries into four display columns."""
+        rows: list[list[str]] = []
+        row = ["", "", "", ""]
+        previous_column = -1
+        for entry in self.auction.entries:
+            column = SEAT_COLUMNS.index(entry.seat)
+            if column <= previous_column:
+                rows.append(row)
+                row = ["", "", "", ""]
+            row[column] = friendly_call(entry.call.serialize())
+            previous_column = column
+        if any(row):
+            rows.append(row)
+        return tuple(tuple(row) for row in rows)  # type: ignore[misc]
+
 
 def analyze_bidding_view(payload: Mapping[str, object]) -> dict[str, object]:
     """Normalize one bidding position without making a bidding decision here."""
@@ -180,31 +235,44 @@ def main() -> None:
     call_choice = ttk.Combobox(root, width=12, state="readonly")
     ttk.Label(root, text="Next call").grid(row=len(fields), column=0, sticky="w", padx=8)
     call_choice.grid(row=len(fields), column=1, sticky="w", padx=8)
+    table = ttk.Treeview(
+        root, columns=DEALER_VALUES, show="headings", height=5, selectmode="none"
+    )
+    for seat in DEALER_VALUES:
+        table.heading(seat, text=seat)
+        table.column(seat, width=100, anchor="center")
+    table.grid(row=len(fields) + 1, column=0, columnspan=2, padx=8, pady=4)
     ttk.Label(root, textvariable=auction_text).grid(
-        row=len(fields) + 1, column=0, columnspan=2, sticky="w", padx=8, pady=4
+        row=len(fields) + 2, column=0, columnspan=2, sticky="w", padx=8
     )
     ttk.Label(root, textvariable=entry_message).grid(
-        row=len(fields) + 3, column=0, columnspan=2, sticky="w", padx=8
+        row=len(fields) + 4, column=0, columnspan=2, sticky="w", padx=8
     )
 
     output = tk.Text(root, width=70, height=12, wrap="word", state="disabled")
-    output.grid(row=len(fields) + 5, column=0, columnspan=2, padx=8, pady=8)
+    output.grid(row=len(fields) + 7, column=0, columnspan=2, padx=8, pady=8)
 
     def refresh_auction() -> None:
-        values = auction_state.legal_call_values
-        call_choice.configure(values=values)
-        call_choice.set(values[0] if values else "")
-        calls = " ".join(auction_state.calls) or "(empty)"
+        canonical_values = auction_state.legal_call_values
+        labels = tuple(friendly_call(value) for value in canonical_values)
+        call_choice.configure(values=labels, state="readonly" if labels else "disabled")
+        call_choice.set(labels[0] if labels else "")
+        for item in table.get_children():
+            table.delete(item)
+        for row in auction_state.table_rows:
+            table.insert("", "end", values=row)
         auction_text.set(
-            f"Dealer: {auction_state.dealer.value} | Calls: {calls} | "
+            f"Dealer: {auction_state.dealer.value} | "
             f"Next: {auction_state.next_seat.value} | Complete: "
             f"{'yes' if auction_state.is_complete else 'no'}"
         )
+        add_button.configure(state="disabled" if auction_state.is_complete else "normal")
+        undo_button.configure(state="normal" if auction_state.calls else "disabled")
 
     def add_call() -> None:
         nonlocal auction_state
         try:
-            auction_state = auction_state.add(call_choice.get())
+            auction_state = auction_state.add(canonical_call(call_choice.get()))
             entry_message.set("")
         except (TypeError, ValueError) as exc:
             entry_message.set(f"Input error: {exc}")
@@ -229,9 +297,11 @@ def main() -> None:
         refresh_auction()
 
     controls = ttk.Frame(root)
-    controls.grid(row=len(fields) + 2, column=0, columnspan=2, pady=4)
-    ttk.Button(controls, text="Add", command=add_call).pack(side="left", padx=3)
-    ttk.Button(controls, text="Undo", command=undo_call).pack(side="left", padx=3)
+    controls.grid(row=len(fields) + 3, column=0, columnspan=2, pady=4)
+    add_button = ttk.Button(controls, text="Add", command=add_call)
+    add_button.pack(side="left", padx=3)
+    undo_button = ttk.Button(controls, text="Undo", command=undo_call)
+    undo_button.pack(side="left", padx=3)
     ttk.Button(controls, text="Clear", command=clear_auction).pack(side="left", padx=3)
     entries["dealer"].bind("<<ComboboxSelected>>", dealer_changed)
 
@@ -264,7 +334,7 @@ def main() -> None:
         output.configure(state="disabled")
 
     ttk.Button(root, text="Analyze", command=show).grid(
-        row=len(fields) + 4, column=0, columnspan=2, pady=6
+        row=len(fields) + 6, column=0, columnspan=2, pady=6
     )
     refresh_auction()
     show()
