@@ -1,0 +1,98 @@
+{
+  "phase": "28B",
+  "phase28a_loaded": true,
+  "phase28a_closure_ready": true,
+  "production_route_count": 45,
+  "current_families": [
+    {
+      "family": "response.one-level-existing-rule",
+      "classification": "CURRENT_SOURCE_GROUNDED_PARTIAL_COVERAGE",
+      "decision": "AUDITED_CURRENT_STATE_NO_BLIND_EXPANSION",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Current production has source-grounded partial coverage; Phase 28A found no basis for blind production expansion."
+    },
+    {
+      "family": "opener.one-level-rebid-existing-rule",
+      "classification": "CURRENT_SOURCE_GROUNDED_PARTIAL_COVERAGE",
+      "decision": "AUDITED_CURRENT_STATE_NO_BLIND_EXPANSION",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Current production has source-grounded partial coverage; Phase 28A found no basis for blind production expansion."
+    }
+  ],
+  "deferred_families": [
+    {
+      "family": "Stayman residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "strong-2C residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "natural 1NT responses",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "responder rebids",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "three-level preempt responses",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "weak-two responses",
+      "classification": "PARTNERSHIP_DEPENDENT",
+      "decision": "DEFER_POLICY_REQUIRED",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Executable behavior depends on an explicit partnership policy."
+    },
+    {
+      "family": "2NT response residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source remains incomplete for an executable production contract."
+    },
+    {
+      "family": "Two-over-One unsupported opener rebids",
+      "classification": "SOURCE_INSUFFICIENT",
+      "decision": "DEFER",
+      "source_ready": false,
+      "closure_safe": true,
+      "rationale": "Frozen source is insufficient for a safe production implementation."
+    }
+  ],
+  "remaining_high_value_source_ready": 0,
+  "production_rules_added": 0,
+  "routes_added": 0,
+  "policies_added": 0,
+  "production_defaults_changed": false,
+  "knowledge_markdown_changed": 0,
+  "closure_gate": true,
+  "decision": "PHASE 28 BIDDING COVERAGE COMPLETE"
+}

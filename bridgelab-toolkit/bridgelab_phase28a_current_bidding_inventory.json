@@ -1,0 +1,341 @@
+{
+  "phase": "28A",
+  "production_route_count": 45,
+  "response_modules": [
+    {
+      "module": "bridge/sayc_responses.py",
+      "rule_ids": [
+        "sayc.response.1c.pass",
+        "sayc.response.1c.1h",
+        "sayc.response.1c.1s",
+        "sayc.response.1c.1d",
+        "sayc.response.1c.1nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(_SOURCE, 'Strength Categories')",
+        "KnowledgeSource(_SOURCE, \"Responder's Priorities\")",
+        "KnowledgeSource(_SOURCE, 'Responses with Major Suits')",
+        "KnowledgeSource(_SOURCE, 'Responding with Diamonds')",
+        "KnowledgeSource(_SOURCE, 'Notrump Responses')"
+      ],
+      "abstention_guards": 7
+    },
+    {
+      "module": "bridge/sayc_1d_responses.py",
+      "rule_ids": [
+        "sayc.response.1d.pass",
+        "sayc.response.1d.1h",
+        "sayc.response.1d.1s"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(_SOURCE, 'Strength Categories')",
+        "KnowledgeSource(_SOURCE, \"Responder's Priorities\")",
+        "KnowledgeSource(_SOURCE, 'Responding with a Major Suit')",
+        "KnowledgeSource(_SOURCE, '1♥')",
+        "KnowledgeSource(_SOURCE, '1♠')"
+      ],
+      "abstention_guards": 5
+    },
+    {
+      "module": "bridge/sayc_1h_responses.py",
+      "rule_ids": [
+        "sayc.response.1h.pass",
+        "sayc.response.1h.2h",
+        "sayc.response.1h.3h",
+        "sayc.response.1h.1s"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, 'Strength Categories')",
+        "KnowledgeSource(ARTICLE, \"Responder's Priorities\")",
+        "KnowledgeSource(ARTICLE, 'Simple Raise')",
+        "KnowledgeSource(ARTICLE, 'Limit Raise')",
+        "KnowledgeSource(ARTICLE, 'Responding with Another Major')",
+        "KnowledgeSource(ARTICLE, 'SAYC')"
+      ],
+      "abstention_guards": 13
+    },
+    {
+      "module": "bridge/sayc_1s_responses.py",
+      "rule_ids": [
+        "sayc.response.1s.pass",
+        "sayc.response.1s.2s",
+        "sayc.response.1s.3s"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, 'Strength Categories')",
+        "KnowledgeSource(ARTICLE, \"Responder's Priorities\")",
+        "KnowledgeSource(ARTICLE, 'Simple Raise')",
+        "KnowledgeSource(ARTICLE, 'Limit Raise')",
+        "KnowledgeSource(ARTICLE, 'Responding with Another Major')",
+        "KnowledgeSource(ARTICLE, 'SAYC')"
+      ],
+      "abstention_guards": 10
+    },
+    {
+      "module": "bridge/sayc_1d_notrump.py",
+      "rule_ids": [
+        "sayc.response.1d.2nt",
+        "sayc.response.1d.3nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Responder's Priorities\")",
+        "KnowledgeSource(ARTICLE, 'Notrump Responses')",
+        "KnowledgeSource(ARTICLE, '2NT')",
+        "KnowledgeSource(ARTICLE, '3NT')"
+      ],
+      "abstention_guards": 9
+    },
+    {
+      "module": "bridge/sayc_major_one_notrump.py",
+      "rule_ids": [
+        "sayc.response.1h.1nt",
+        "sayc.response.1s.1nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Responder's Priorities\")",
+        "KnowledgeSource(ARTICLE, '1NT')",
+        "KnowledgeSource(ARTICLE, 'Responding with Another Major')",
+        "KnowledgeSource(ARTICLE, 'SAYC')"
+      ],
+      "abstention_guards": 8
+    },
+    {
+      "module": "bridge/two_over_one_responses.py",
+      "rule_ids": [],
+      "source_pointers": [
+        "KnowledgeSource(SYSTEM_ARTICLE, 'What Creates a Game Force?')",
+        "KnowledgeSource(SYSTEM_ARTICLE, 'Hands Suitable for a 2/1 Response')",
+        "KnowledgeSource(MAJOR_RESPONSE_ARTICLE, \"Responder's Priorities\")",
+        "KnowledgeSource(MAJOR_RESPONSE_ARTICLE, 'Responding Without Support')",
+        "KnowledgeSource(MAJOR_RESPONSE_ARTICLE, 'New Suit Responses')",
+        "KnowledgeSource(MAJOR_RESPONSE_ARTICLE, 'Two-over-One Game Force')"
+      ],
+      "abstention_guards": 10
+    }
+  ],
+  "opener_rebid_modules": [
+    {
+      "module": "bridge/sayc_1c1d_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1c.1d.1h",
+        "sayc.opener.1c.1d.1s",
+        "sayc.opener.1c.1d.2c",
+        "sayc.opener.1c.1d.1nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Opener's Rebids After 1♣\")",
+        "KnowledgeSource(ARTICLE, 'Rebidding Minor')",
+        "KnowledgeSource(ARTICLE, 'Notrump Rebids')"
+      ],
+      "abstention_guards": 10
+    },
+    {
+      "module": "bridge/sayc_1c1h_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1c.1h.2h",
+        "sayc.opener.1c.1h.1s",
+        "sayc.opener.1c.1h.2c",
+        "sayc.opener.1c.1h.1nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Opener's Rebids After 1♣\")",
+        "KnowledgeSource(ARTICLE, 'Notrump Rebids')",
+        "KnowledgeSource(ARTICLE, 'Rebidding Minor')"
+      ],
+      "abstention_guards": 12
+    },
+    {
+      "module": "bridge/sayc_1c1s_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1c.1s.2s",
+        "sayc.opener.1c.1s.2h.reverse",
+        "sayc.opener.1c.1s.2d",
+        "sayc.opener.1c.1s.1nt",
+        "sayc.opener.1c.1s.2nt",
+        "sayc.opener.1c.1s.2c"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(SAYC, \"Opener's Rebids After 1♣\")",
+        "KnowledgeSource(MINOR_ARTICLE, 'Showing a Second Suit')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Reverse Bids')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Notrump Rebids')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Rebidding the Minor')"
+      ],
+      "abstention_guards": 20
+    },
+    {
+      "module": "bridge/sayc_1d1h_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1d.1h.2h",
+        "sayc.opener.1d.1h.1s",
+        "sayc.opener.1d.1h.2c",
+        "sayc.opener.1d.1h.1nt",
+        "sayc.opener.1d.1h.2nt",
+        "sayc.opener.1d.1h.2d"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(MINOR_ARTICLE, 'Rebids After Different Responses / After 1♥ or 1♠')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Showing a Second Suit')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Rebidding the Minor')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Notrump Rebids')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Supporting Responder / Four-Card Support')"
+      ],
+      "abstention_guards": 18
+    },
+    {
+      "module": "bridge/sayc_1d1s_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1d.1s.2s",
+        "sayc.opener.1d.1s.2h.reverse",
+        "sayc.opener.1d.1s.2c",
+        "sayc.opener.1d.1s.1nt",
+        "sayc.opener.1d.1s.2nt",
+        "sayc.opener.1d.1s.2d"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Opening 1♦ / Opener's Rebids\")",
+        "KnowledgeSource(ARTICLE, 'Common Rebidding Priorities')",
+        "KnowledgeSource(ARTICLE, 'Notrump Rebids')",
+        "KnowledgeSource(ARTICLE, 'Reverse Bids')",
+        "KnowledgeSource(ARTICLE, \"Opener's Rebids After 1♣\")",
+        "KnowledgeSource(MINOR_ARTICLE, 'Notrump Rebids')",
+        "KnowledgeSource(MINOR_ARTICLE, 'Rebidding the Minor')"
+      ],
+      "abstention_guards": 21
+    },
+    {
+      "module": "bridge/sayc_1h1s_opener_rebids.py",
+      "rule_ids": [
+        "sayc.opener.1h.1s.2d",
+        "sayc.opener.1h.1s.2h",
+        "sayc.opener.1h.1s.1nt",
+        "sayc.opener.1h.1s.2nt"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(MAJOR_ARTICLE, 'Rebids After Different Responses / After New Suit Response')",
+        "KnowledgeSource(MAJOR_ARTICLE, 'Showing a Second Suit')",
+        "KnowledgeSource(MAJOR_ARTICLE, 'Rebidding the Major')",
+        "KnowledgeSource(MAJOR_ARTICLE, 'Notrump Rebids')"
+      ],
+      "abstention_guards": 15
+    },
+    {
+      "module": "bridge/sayc_major_raise_opener_rebids.py",
+      "rule_ids": [],
+      "source_pointers": [
+        "KnowledgeSource(SAYC, 'Major-Suit Raises / Simple Raise')",
+        "KnowledgeSource(SAYC, 'Example 1 – Simple Major Fit')",
+        "KnowledgeSource(MAJOR, 'Strength Categories / Minimum')",
+        "KnowledgeSource(MAJOR, 'Rebids After Different Responses / After Raise')"
+      ],
+      "abstention_guards": 4
+    },
+    {
+      "module": "bridge/two_over_one_opener_rebids.py",
+      "rule_ids": [
+        "sayc.2over1.opener.1s.2c.2d",
+        "sayc.2over1.opener.1h.2d.2s",
+        "sayc.2over1.opener.1s.2c.3c",
+        "sayc.2over1.opener.1s.2c.2s"
+      ],
+      "source_pointers": [
+        "KnowledgeSource(ARTICLE, \"Opener's Rebids\")",
+        "KnowledgeSource(ARTICLE, 'Priority 1 — Show a Second Suit')",
+        "KnowledgeSource(ARTICLE, 'Priority 2 — Support Responder')",
+        "KnowledgeSource(ARTICLE, 'Priority 3 — Rebid Own Suit')"
+      ],
+      "abstention_guards": 17
+    }
+  ],
+  "families": [
+    {
+      "family_id": "response.one-level-existing-rule",
+      "phase12u_population": 693,
+      "phase12u_status": "NOT_YET_AUDITED",
+      "current_rule_count": 19,
+      "current_routes": [
+        "sayc.response.1c",
+        "sayc.response.1d",
+        "sayc.response.1h",
+        "sayc.response.1s"
+      ],
+      "source_pointer_count": 36,
+      "abstention_guards": 62,
+      "classification": "CURRENT_SOURCE_GROUNDED_PARTIAL_COVERAGE",
+      "decision": "AUDITED_CURRENT_STATE_NO_BLIND_EXPANSION"
+    },
+    {
+      "family_id": "opener.one-level-rebid-existing-rule",
+      "phase12u_population": 406,
+      "phase12u_status": "NOT_YET_AUDITED",
+      "current_rule_count": 34,
+      "current_routes": [
+        "sayc.opener.1c.1d",
+        "sayc.opener.1c.1h",
+        "sayc.opener.1c.1s",
+        "sayc.opener.1d.1h",
+        "sayc.opener.1d.1s",
+        "sayc.opener.1h.1s",
+        "sayc.opener.1h.2h",
+        "sayc.opener.1s.2s",
+        "sayc.2over1.opener.1h.2c",
+        "sayc.2over1.opener.1h.2d",
+        "sayc.2over1.opener.1s.2c",
+        "sayc.2over1.opener.1s.2d"
+      ],
+      "source_pointer_count": 35,
+      "abstention_guards": 117,
+      "classification": "CURRENT_SOURCE_GROUNDED_PARTIAL_COVERAGE",
+      "decision": "AUDITED_CURRENT_STATE_NO_BLIND_EXPANSION"
+    }
+  ],
+  "deferred_families": [
+    {
+      "family": "Stayman residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "strong-2C residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "natural 1NT responses",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "responder rebids",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "three-level preempt responses",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "weak-two responses",
+      "classification": "PARTNERSHIP_DEPENDENT",
+      "decision": "DEFER_POLICY_REQUIRED"
+    },
+    {
+      "family": "2NT response residuals",
+      "classification": "SOURCE_PARTIAL",
+      "decision": "DEFER"
+    },
+    {
+      "family": "Two-over-One unsupported opener rebids",
+      "classification": "SOURCE_INSUFFICIENT",
+      "decision": "DEFER"
+    }
+  ],
+  "production_rules_added": 0,
+  "routes_added": 0,
+  "policies_added": 0,
+  "production_defaults_changed": false,
+  "knowledge_markdown_changed": 0,
+  "closure_ready": true,
+  "decision": "PROCEED TO PHASE 28 FINAL CLOSURE AUDIT"
+}
