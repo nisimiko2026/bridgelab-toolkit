@@ -1,0 +1,34 @@
+{
+  "integrity": "passed",
+  "main": {
+    "cohort:5-3_long-hand-singleton": 1000,
+    "cohort:5-3_reciprocal": 500,
+    "cohort:5-3_short-hand-singleton": 1000,
+    "cohort:5-4_long-hand-singleton": 1000,
+    "cohort:5-4_reciprocal": 500,
+    "cohort:5-4_short-hand-singleton": 1000,
+    "cohort:5-5_equal-hand-singleton": 1000,
+    "cohort:5-5_reciprocal": 500,
+    "cohort:6-3_long-hand-singleton": 1000,
+    "cohort:6-3_reciprocal": 500,
+    "cohort:6-3_short-hand-singleton": 1000,
+    "cohort:6-4_long-hand-singleton": 1000,
+    "cohort:6-4_reciprocal": 500,
+    "cohort:6-4_short-hand-singleton": 1000,
+    "cohort:7-3_long-hand-singleton": 1000,
+    "cohort:7-3_reciprocal": 500,
+    "cohort:7-3_short-hand-singleton": 1000,
+    "main_solver_records": 38575,
+    "main_source_rows": 14000,
+    "ordinary_doubleton_controls": 11000,
+    "ordinary_three_card_controls": 5575,
+    "reciprocal_direct_controls": 500,
+    "reciprocal_four_corner_controls": 2500,
+    "verified_card_moves": 32650
+  },
+  "sensitivity": {
+    "sensitivity_records": 2793,
+    "verified_card_moves": 2793
+  },
+  "sensitivity_sources": 220
+}

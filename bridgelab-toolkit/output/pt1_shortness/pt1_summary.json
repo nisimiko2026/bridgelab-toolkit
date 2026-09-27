@@ -1,0 +1,1319 @@
+{
+  "all_outcome_separation_flags": "unavailable; no trick observations or confidence intervals",
+  "batches": [
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-5": 162,
+        "1-4": 1182,
+        "2-3": 2712,
+        "3-2": 2691,
+        "4-1": 1115,
+        "5-0": 138
+      },
+      "by_ruffable_losers": {
+        "0": 374,
+        "1": 2094,
+        "2": 2732,
+        "3": 1920,
+        "4": 733,
+        "5": 133,
+        "6": 13,
+        "7": 1
+      },
+      "by_trump_honor_count": {
+        "0": 70,
+        "1": 881,
+        "2": 3124,
+        "3": 3107,
+        "4": 818
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.803,
+      "seed": 20260925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-5": 17,
+        "1-4": 143,
+        "2-3": 356,
+        "3-2": 328,
+        "4-1": 146,
+        "5-0": 10
+      },
+      "by_ruffable_losers": {
+        "1": 2,
+        "2": 10,
+        "3": 40,
+        "4": 133,
+        "5": 207,
+        "6": 237,
+        "7": 197,
+        "8": 119,
+        "9": 47,
+        "10": 8
+      },
+      "by_trump_honor_count": {
+        "0": 7,
+        "1": 124,
+        "2": 385,
+        "3": 377,
+        "4": 107
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.382,
+      "seed": 20360925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-5": 14,
+        "1-4": 132,
+        "2-3": 360,
+        "3-2": 334,
+        "4-1": 136,
+        "5-0": 24
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "0": 11,
+        "1": 95,
+        "2": 387,
+        "3": 404,
+        "4": 103
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.311,
+      "seed": 20460925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-5": 20,
+        "1-4": 145,
+        "2-3": 356,
+        "3-2": 328,
+        "4-1": 141,
+        "5-0": 10
+      },
+      "by_ruffable_losers": {
+        "0": 30,
+        "1": 163,
+        "2": 295,
+        "3": 307,
+        "4": 142,
+        "5": 47,
+        "6": 16
+      },
+      "by_trump_honor_count": {
+        "0": 8,
+        "1": 119,
+        "2": 410,
+        "3": 371,
+        "4": 92
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.383,
+      "seed": 20560925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        3
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-4": 394,
+        "1-3": 1961,
+        "2-2": 3306,
+        "3-1": 1975,
+        "4-0": 364
+      },
+      "by_ruffable_losers": {
+        "0": 508,
+        "1": 2696,
+        "2": 2797,
+        "3": 1564,
+        "4": 382,
+        "5": 47,
+        "6": 6
+      },
+      "by_trump_honor_count": {
+        "0": 6,
+        "1": 436,
+        "2": 2380,
+        "3": 3742,
+        "4": 1436
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.762,
+      "seed": 21260925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 42,
+        "1-3": 239,
+        "2-2": 416,
+        "3-1": 261,
+        "4-0": 42
+      },
+      "by_ruffable_losers": {
+        "0": 2,
+        "1": 2,
+        "2": 32,
+        "3": 105,
+        "4": 160,
+        "5": 233,
+        "6": 243,
+        "7": 156,
+        "8": 49,
+        "9": 15,
+        "10": 2,
+        "11": 1
+      },
+      "by_trump_honor_count": {
+        "0": 2,
+        "1": 48,
+        "2": 309,
+        "3": 461,
+        "4": 180
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.361,
+      "seed": 21360925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 51,
+        "1-3": 245,
+        "2-2": 407,
+        "3-1": 249,
+        "4-0": 48
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "0": 1,
+        "1": 55,
+        "2": 312,
+        "3": 457,
+        "4": 175
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.302,
+      "seed": 21460925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 60,
+        "1-3": 245,
+        "2-2": 403,
+        "3-1": 234,
+        "4-0": 58
+      },
+      "by_ruffable_losers": {
+        "0": 39,
+        "1": 165,
+        "2": 308,
+        "3": 284,
+        "4": 145,
+        "5": 50,
+        "6": 9
+      },
+      "by_trump_honor_count": {
+        "0": 3,
+        "1": 38,
+        "2": 294,
+        "3": 474,
+        "4": 191
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.345,
+      "seed": 21560925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        3
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-4": 386,
+        "1-3": 2028,
+        "2-2": 3262,
+        "3-1": 1923,
+        "4-0": 401
+      },
+      "by_ruffable_losers": {
+        "0": 454,
+        "1": 2266,
+        "2": 2717,
+        "3": 1804,
+        "4": 623,
+        "5": 132,
+        "6": 4
+      },
+      "by_trump_honor_count": {
+        "0": 9,
+        "1": 401,
+        "2": 2451,
+        "3": 3723,
+        "4": 1416
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.804,
+      "seed": 22260925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 43,
+        "1-3": 238,
+        "2-2": 402,
+        "3-1": 240,
+        "4-0": 77
+      },
+      "by_ruffable_losers": {
+        "1": 7,
+        "2": 22,
+        "3": 79,
+        "4": 160,
+        "5": 230,
+        "6": 240,
+        "7": 156,
+        "8": 70,
+        "9": 27,
+        "10": 9
+      },
+      "by_trump_honor_count": {
+        "1": 47,
+        "2": 333,
+        "3": 458,
+        "4": 162
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.367,
+      "seed": 22360925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 51,
+        "1-3": 242,
+        "2-2": 407,
+        "3-1": 253,
+        "4-0": 47
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "1": 45,
+        "2": 324,
+        "3": 447,
+        "4": 184
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.305,
+      "seed": 22460925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-4": 47,
+        "1-3": 234,
+        "2-2": 420,
+        "3-1": 259,
+        "4-0": 40
+      },
+      "by_ruffable_losers": {
+        "0": 41,
+        "1": 244,
+        "2": 322,
+        "3": 251,
+        "4": 107,
+        "5": 32,
+        "6": 3
+      },
+      "by_trump_honor_count": {
+        "0": 1,
+        "1": 50,
+        "2": 283,
+        "3": 489,
+        "4": 177
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.347,
+      "seed": 22560925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        4
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-3": 858,
+        "1-2": 3130,
+        "2-1": 3163,
+        "3-0": 849
+      },
+      "by_ruffable_losers": {
+        "0": 654,
+        "1": 3488,
+        "2": 2621,
+        "3": 1047,
+        "4": 178,
+        "5": 12
+      },
+      "by_trump_honor_count": {
+        "1": 116,
+        "2": 1516,
+        "3": 4017,
+        "4": 2351
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.711,
+      "seed": 23260925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 107,
+        "1-2": 388,
+        "2-1": 383,
+        "3-0": 122
+      },
+      "by_ruffable_losers": {
+        "0": 1,
+        "1": 11,
+        "2": 33,
+        "3": 112,
+        "4": 213,
+        "5": 273,
+        "6": 203,
+        "7": 99,
+        "8": 41,
+        "9": 13,
+        "10": 1
+      },
+      "by_trump_honor_count": {
+        "1": 11,
+        "2": 192,
+        "3": 500,
+        "4": 297
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.35,
+      "seed": 23360925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 109,
+        "1-2": 393,
+        "2-1": 385,
+        "3-0": 113
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "1": 17,
+        "2": 186,
+        "3": 529,
+        "4": 268
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.3,
+      "seed": 23460925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        3
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 112,
+        "1-2": 357,
+        "2-1": 411,
+        "3-0": 120
+      },
+      "by_ruffable_losers": {
+        "0": 43,
+        "1": 195,
+        "2": 332,
+        "3": 260,
+        "4": 127,
+        "5": 35,
+        "6": 7,
+        "7": 1
+      },
+      "by_trump_honor_count": {
+        "1": 13,
+        "2": 214,
+        "3": 486,
+        "4": 287
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.414,
+      "seed": 23560925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        3
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-3": 906,
+        "1-2": 3139,
+        "2-1": 3069,
+        "3-0": 886
+      },
+      "by_ruffable_losers": {
+        "0": 545,
+        "1": 2877,
+        "2": 2767,
+        "3": 1398,
+        "4": 372,
+        "5": 39,
+        "6": 2
+      },
+      "by_trump_honor_count": {
+        "1": 117,
+        "2": 1524,
+        "3": 3963,
+        "4": 2396
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.871,
+      "seed": 24260925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 110,
+        "1-2": 355,
+        "2-1": 418,
+        "3-0": 117
+      },
+      "by_ruffable_losers": {
+        "1": 8,
+        "2": 40,
+        "3": 117,
+        "4": 224,
+        "5": 263,
+        "6": 185,
+        "7": 113,
+        "8": 42,
+        "9": 6,
+        "10": 2
+      },
+      "by_trump_honor_count": {
+        "1": 7,
+        "2": 180,
+        "3": 493,
+        "4": 320
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.366,
+      "seed": 24360925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 121,
+        "1-2": 408,
+        "2-1": 364,
+        "3-0": 107
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "1": 9,
+        "2": 178,
+        "3": 501,
+        "4": 312
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.317,
+      "seed": 24460925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 99,
+        "1-2": 393,
+        "2-1": 389,
+        "3-0": 119
+      },
+      "by_ruffable_losers": {
+        "0": 64,
+        "1": 221,
+        "2": 323,
+        "3": 257,
+        "4": 107,
+        "5": 25,
+        "6": 3
+      },
+      "by_trump_honor_count": {
+        "1": 8,
+        "2": 176,
+        "3": 529,
+        "4": 287
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.351,
+      "seed": 24560925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        4
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-3": 907,
+        "1-2": 3099,
+        "2-1": 3137,
+        "3-0": 857
+      },
+      "by_ruffable_losers": {
+        "0": 437,
+        "1": 2386,
+        "2": 2767,
+        "3": 1698,
+        "4": 607,
+        "5": 96,
+        "6": 9
+      },
+      "by_trump_honor_count": {
+        "1": 111,
+        "2": 1521,
+        "3": 3943,
+        "4": 2425
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "equal-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.876,
+      "seed": 25260925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        5
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 102,
+        "1-2": 381,
+        "2-1": 398,
+        "3-0": 119
+      },
+      "by_ruffable_losers": {
+        "0": 4,
+        "1": 11,
+        "2": 35,
+        "3": 108,
+        "4": 199,
+        "5": 254,
+        "6": 224,
+        "7": 121,
+        "8": 34,
+        "9": 9,
+        "10": 1
+      },
+      "by_trump_honor_count": {
+        "1": 12,
+        "2": 170,
+        "3": 525,
+        "4": 293
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.386,
+      "seed": 25360925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        5
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-3": 128,
+        "1-2": 388,
+        "2-1": 370,
+        "3-0": 114
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "1": 8,
+        "2": 190,
+        "3": 490,
+        "4": 312
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.318,
+      "seed": 25460925,
+      "standard_deviation": null,
+      "structure": [
+        5,
+        5
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-2": 1938,
+        "1-1": 4201,
+        "2-0": 1861
+      },
+      "by_ruffable_losers": {
+        "0": 699,
+        "1": 3518,
+        "2": 2667,
+        "3": 956,
+        "4": 154,
+        "5": 6
+      },
+      "by_trump_honor_count": {
+        "2": 632,
+        "3": 3748,
+        "4": 3620
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.748,
+      "seed": 26260925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 248,
+        "1-1": 516,
+        "2-0": 236
+      },
+      "by_ruffable_losers": {
+        "0": 2,
+        "1": 21,
+        "2": 72,
+        "3": 155,
+        "4": 260,
+        "5": 266,
+        "6": 155,
+        "7": 49,
+        "8": 16,
+        "9": 4
+      },
+      "by_trump_honor_count": {
+        "2": 79,
+        "3": 465,
+        "4": 456
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.375,
+      "seed": 26360925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 225,
+        "1-1": 545,
+        "2-0": 230
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "2": 76,
+        "3": 458,
+        "4": 466
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.306,
+      "seed": 26460925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        4
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 221,
+        "1-1": 533,
+        "2-0": 246
+      },
+      "by_ruffable_losers": {
+        "0": 52,
+        "1": 265,
+        "2": 327,
+        "3": 243,
+        "4": 91,
+        "5": 19,
+        "6": 3
+      },
+      "by_trump_honor_count": {
+        "2": 65,
+        "3": 467,
+        "4": 468
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.356,
+      "seed": 26560925,
+      "standard_deviation": null,
+      "structure": [
+        7,
+        4
+      ]
+    },
+    {
+      "accepted": 8000,
+      "by_oriented_defender_split": {
+        "0-2": 1954,
+        "1-1": 4169,
+        "2-0": 1877
+      },
+      "by_ruffable_losers": {
+        "0": 593,
+        "1": 2972,
+        "2": 2797,
+        "3": 1282,
+        "4": 322,
+        "5": 31,
+        "6": 3
+      },
+      "by_trump_honor_count": {
+        "2": 619,
+        "3": 3708,
+        "4": 3673
+      },
+      "confidence_interval": null,
+      "generated": 8000,
+      "kind": "short-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 2.726,
+      "seed": 27260925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        5
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 236,
+        "1-1": 530,
+        "2-0": 234
+      },
+      "by_ruffable_losers": {
+        "1": 21,
+        "2": 54,
+        "3": 153,
+        "4": 263,
+        "5": 232,
+        "6": 181,
+        "7": 73,
+        "8": 17,
+        "9": 6
+      },
+      "by_trump_honor_count": {
+        "2": 66,
+        "3": 469,
+        "4": 465
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "reciprocal-singletons",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.369,
+      "seed": 27360925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        5
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 236,
+        "1-1": 497,
+        "2-0": 267
+      },
+      "by_ruffable_losers": {
+        "0": 1000
+      },
+      "by_trump_honor_count": {
+        "2": 71,
+        "3": 483,
+        "4": 446
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "baseline",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.31,
+      "seed": 27460925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        5
+      ]
+    },
+    {
+      "accepted": 1000,
+      "by_oriented_defender_split": {
+        "0-2": 234,
+        "1-1": 527,
+        "2-0": 239
+      },
+      "by_ruffable_losers": {
+        "0": 75,
+        "1": 327,
+        "2": 329,
+        "3": 205,
+        "4": 58,
+        "5": 5,
+        "6": 1
+      },
+      "by_trump_honor_count": {
+        "2": 81,
+        "3": 481,
+        "4": 438
+      },
+      "confidence_interval": null,
+      "generated": 1000,
+      "kind": "long-hand-singleton",
+      "mean_delta_tricks": null,
+      "median_delta_tricks": null,
+      "outcome_status": "unavailable-no-double-dummy-solver",
+      "p_gain_0": null,
+      "p_gain_ge_1": null,
+      "p_gain_ge_2": null,
+      "p_gain_ge_3": null,
+      "runtime_seconds": 0.334,
+      "seed": 27560925,
+      "standard_deviation": null,
+      "structure": [
+        6,
+        5
+      ]
+    }
+  ],
+  "case_file": "pt1_cases.jsonl.gz",
+  "comparison_strata": "total trumps, two-point HCP band, exact combined trump honors, side-honor count, potential ruffable losers, side-ace entry count, unordered defender trump split",
+  "equal_fit_long_hand_singleton": "not-applicable; 5-5 has no longer or shorter hand",
+  "primary_target_per_structure": 8000,
+  "sampling_method": "combinatorially weighted conditioned partnership side lengths; uniformly shuffled defender residual cards",
+  "secondary_target_per_structure_per_kind": 1000,
+  "seed": 20260925,
+  "solver_status": "unavailable",
+  "structural_comparisons": {
+    "seven_three_vs_six_four_vs_five_five": {
+      "one_singleton": {
+        "cases_in_shared_strata": {
+          "5-5": 5659,
+          "6-4": 5795,
+          "7-3": 5983
+        },
+        "matched_outcome_status": "unavailable-no-double-dummy-solver",
+        "separation_flag": "unavailable-no-trick-outcomes",
+        "shared_observable_strata": 1297
+      },
+      "reciprocal_singletons": {
+        "cases_in_shared_strata": {
+          "5-5": 204,
+          "6-4": 198,
+          "7-3": 183
+        },
+        "matched_outcome_status": "unavailable-no-double-dummy-solver",
+        "separation_flag": "unavailable-no-trick-outcomes",
+        "shared_observable_strata": 107
+      }
+    },
+    "six_three_vs_five_four": {
+      "one_singleton": {
+        "cases_in_shared_strata": {
+          "5-4": 5441,
+          "6-3": 5617
+        },
+        "matched_outcome_status": "unavailable-no-double-dummy-solver",
+        "separation_flag": "unavailable-no-trick-outcomes",
+        "shared_observable_strata": 2110
+      },
+      "reciprocal_singletons": {
+        "cases_in_shared_strata": {
+          "5-4": 165,
+          "6-3": 170
+        },
+        "matched_outcome_status": "unavailable-no-double-dummy-solver",
+        "separation_flag": "unavailable-no-trick-outcomes",
+        "shared_observable_strata": 133
+      }
+    }
+  },
+  "total_accepted": 87000,
+  "total_generated": 87000
+}

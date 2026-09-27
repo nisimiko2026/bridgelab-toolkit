@@ -1,0 +1,4 @@
+# Optional DDS-backed PT-1A calibration dependency.
+# endplay 0.5.12 publishes Windows x64 wheels for CPython 3.9–3.13.
+# The validated runtime is CPython 3.12; production bidding does not need it.
+endplay==0.5.12

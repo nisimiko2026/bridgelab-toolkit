@@ -1,0 +1,421 @@
+{
+  "case_file": "pt1a_solver_cases.jsonl.gz",
+  "cohorts": {
+    "primary_5-3": {
+      "accepted_sets": 1000,
+      "generated": 1000,
+      "shape_rejected": 0,
+      "solver_complete_cases": 1000,
+      "solver_rejected": 0
+    },
+    "primary_6-3_vs_5-4": {
+      "accepted_sets": 1000,
+      "generated": 1000,
+      "shape_rejected": 0,
+      "solver_complete_cases": 2000,
+      "solver_rejected": 0
+    },
+    "primary_6-5": {
+      "accepted_sets": 1000,
+      "generated": 1000,
+      "shape_rejected": 0,
+      "solver_complete_cases": 1000,
+      "solver_rejected": 0
+    },
+    "primary_7-3_vs_6-4_vs_5-5": {
+      "accepted_sets": 1000,
+      "generated": 1000,
+      "shape_rejected": 0,
+      "solver_complete_cases": 3000,
+      "solver_rejected": 0
+    },
+    "primary_7-4": {
+      "accepted_sets": 1000,
+      "generated": 1000,
+      "shape_rejected": 0,
+      "solver_complete_cases": 1000,
+      "solver_rejected": 0
+    },
+    "reciprocal_6-3_vs_5-4": {
+      "accepted_sets": 400,
+      "generated": 404,
+      "shape_rejected": 4,
+      "solver_complete_cases": 800,
+      "solver_rejected": 0
+    },
+    "reciprocal_7-3_vs_6-4_vs_5-5": {
+      "accepted_sets": 400,
+      "generated": 434,
+      "shape_rejected": 34,
+      "solver_complete_cases": 1200,
+      "solver_rejected": 0
+    }
+  },
+  "declarer": "N",
+  "interpretation": "DDS outcomes measure controlled trump-allocation contrasts; they are not NPT, APT, or final shortness coefficients.",
+  "matching": {
+    "bucketed_within_each_pair": [],
+    "changed_exposure": "one low trump North-to-South and one low unstudied side card South-to-North per step",
+    "exact_within_each_pair": [
+      "partnership HCP",
+      "total partnership trumps",
+      "trump honors by hand",
+      "side-suit honors by hand",
+      "studied shortness suit and ruffable losers",
+      "side-ace entry indicators by hand",
+      "oriented defender trump split",
+      "all 26 defender cards",
+      "declarer",
+      "trump suit"
+    ],
+    "new_reciprocal_complete_matched_sets": {
+      "6-3_vs_5-4": 400,
+      "7-3_vs_6-4_vs_5-5": 400
+    },
+    "prior_reciprocal_shared_strata": {
+      "6-3_vs_5-4": 133,
+      "7-3_vs_6-4_vs_5-5": 107
+    }
+  },
+  "mean_solver_seconds_per_call": 0.007954482569906395,
+  "median_solver_seconds_per_call": 0.0028117999900132418,
+  "primary_paired_deltas": {
+    "5-4_minus_6-3": {
+      "delta_distribution": {
+        "-3": 1,
+        "-2": 6,
+        "-1": 210,
+        "0": 649,
+        "1": 125,
+        "2": 9
+      },
+      "matched_pairs": 1000,
+      "mean_95_percent_normal_ci": [
+        -0.12108584379010878,
+        -0.042914156209891224
+      ],
+      "mean_delta_tricks": -0.082,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.217,
+      "p_delta_positive": 0.134,
+      "p_delta_zero": 0.649,
+      "p_gain_ge_1": 0.134,
+      "p_gain_ge_2": 0.009,
+      "sample_standard_deviation": 0.6306137277872039,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "5-5_minus_6-4": {
+      "delta_distribution": {
+        "-2": 2,
+        "-1": 215,
+        "0": 657,
+        "1": 122,
+        "2": 4
+      },
+      "matched_pairs": 1000,
+      "mean_95_percent_normal_ci": [
+        -0.12584760551830243,
+        -0.052152394481697555
+      ],
+      "mean_delta_tricks": -0.089,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.217,
+      "p_delta_positive": 0.126,
+      "p_delta_zero": 0.657,
+      "p_gain_ge_1": 0.126,
+      "p_gain_ge_2": 0.004,
+      "sample_standard_deviation": 0.5945018355164536,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "5-5_minus_7-3": {
+      "delta_distribution": {
+        "-3": 1,
+        "-2": 80,
+        "-1": 277,
+        "0": 544,
+        "1": 79,
+        "2": 18,
+        "3": 1
+      },
+      "matched_pairs": 1000,
+      "mean_95_percent_normal_ci": [
+        -0.37246682123579455,
+        -0.27153317876420546
+      ],
+      "mean_delta_tricks": -0.322,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.358,
+      "p_delta_positive": 0.098,
+      "p_delta_zero": 0.544,
+      "p_gain_ge_1": 0.098,
+      "p_gain_ge_2": 0.019,
+      "sample_standard_deviation": 0.8142352110901241,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "6-4_minus_7-3": {
+      "delta_distribution": {
+        "-2": 4,
+        "-1": 305,
+        "0": 614,
+        "1": 74,
+        "2": 3
+      },
+      "matched_pairs": 1000,
+      "mean_95_percent_normal_ci": [
+        -0.26982839812574677,
+        -0.19617160187425325
+      ],
+      "mean_delta_tricks": -0.233,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.309,
+      "p_delta_positive": 0.077,
+      "p_delta_zero": 0.614,
+      "p_gain_ge_1": 0.077,
+      "p_gain_ge_2": 0.003,
+      "sample_standard_deviation": 0.5941919421063063,
+      "status": "solver-measured-paired-structural-contrast"
+    }
+  },
+  "primary_solver_tricks": {
+    "5-3": {
+      "mean_solver_tricks": 8.532,
+      "median_solver_tricks": 9.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "3": 10,
+        "4": 29,
+        "5": 55,
+        "6": 93,
+        "7": 121,
+        "8": 151,
+        "9": 185,
+        "10": 174,
+        "11": 103,
+        "12": 67,
+        "13": 12
+      }
+    },
+    "5-4": {
+      "mean_solver_tricks": 9.452,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "3": 2,
+        "4": 1,
+        "5": 9,
+        "6": 32,
+        "7": 89,
+        "8": 153,
+        "9": 204,
+        "10": 223,
+        "11": 171,
+        "12": 97,
+        "13": 19
+      }
+    },
+    "5-5": {
+      "mean_solver_tricks": 9.901,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "5": 2,
+        "6": 17,
+        "7": 47,
+        "8": 117,
+        "9": 206,
+        "10": 233,
+        "11": 222,
+        "12": 130,
+        "13": 26
+      }
+    },
+    "6-3": {
+      "mean_solver_tricks": 9.534,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "3": 1,
+        "4": 2,
+        "5": 5,
+        "6": 39,
+        "7": 85,
+        "8": 139,
+        "9": 197,
+        "10": 219,
+        "11": 188,
+        "12": 99,
+        "13": 26
+      }
+    },
+    "6-4": {
+      "mean_solver_tricks": 9.99,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "6": 12,
+        "7": 45,
+        "8": 113,
+        "9": 203,
+        "10": 228,
+        "11": 231,
+        "12": 133,
+        "13": 35
+      }
+    },
+    "6-5": {
+      "mean_solver_tricks": 10.202,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "6": 3,
+        "7": 17,
+        "8": 93,
+        "9": 185,
+        "10": 287,
+        "11": 228,
+        "12": 153,
+        "13": 34
+      }
+    },
+    "7-3": {
+      "mean_solver_tricks": 10.223,
+      "median_solver_tricks": 10.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "5": 1,
+        "6": 8,
+        "7": 26,
+        "8": 87,
+        "9": 189,
+        "10": 244,
+        "11": 232,
+        "12": 170,
+        "13": 43
+      }
+    },
+    "7-4": {
+      "mean_solver_tricks": 10.495,
+      "median_solver_tricks": 11.0,
+      "solver_complete": 1000,
+      "trick_distribution": {
+        "6": 1,
+        "7": 9,
+        "8": 44,
+        "9": 171,
+        "10": 268,
+        "11": 274,
+        "12": 188,
+        "13": 45
+      }
+    }
+  },
+  "primary_target_per_structure": 1000,
+  "reciprocal_paired_deltas": {
+    "5-4_minus_6-3": {
+      "delta_distribution": {
+        "-1": 40,
+        "0": 281,
+        "1": 71,
+        "2": 8
+      },
+      "matched_pairs": 400,
+      "mean_95_percent_normal_ci": [
+        0.059975157159192084,
+        0.1750248428408079
+      ],
+      "mean_delta_tricks": 0.1175,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.1,
+      "p_delta_positive": 0.1975,
+      "p_delta_zero": 0.7025,
+      "p_gain_ge_1": 0.1975,
+      "p_gain_ge_2": 0.02,
+      "sample_standard_deviation": 0.5869881922531419,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "5-5_minus_6-4": {
+      "delta_distribution": {
+        "-1": 30,
+        "0": 275,
+        "1": 87,
+        "2": 8
+      },
+      "matched_pairs": 400,
+      "mean_95_percent_normal_ci": [
+        0.12535298583416474,
+        0.23964701416583525
+      ],
+      "mean_delta_tricks": 0.1825,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.075,
+      "p_delta_positive": 0.2375,
+      "p_delta_zero": 0.6875,
+      "p_gain_ge_1": 0.2375,
+      "p_gain_ge_2": 0.02,
+      "sample_standard_deviation": 0.5831327976105638,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "5-5_minus_7-3": {
+      "delta_distribution": {
+        "-2": 10,
+        "-1": 56,
+        "0": 253,
+        "1": 64,
+        "2": 16,
+        "3": 1
+      },
+      "matched_pairs": 400,
+      "mean_95_percent_normal_ci": [
+        -0.017176087673199912,
+        0.1321760876731999
+      ],
+      "mean_delta_tricks": 0.0575,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.165,
+      "p_delta_positive": 0.2025,
+      "p_delta_zero": 0.6325,
+      "p_gain_ge_1": 0.2025,
+      "p_gain_ge_2": 0.0425,
+      "sample_standard_deviation": 0.7620008946244888,
+      "status": "solver-measured-paired-structural-contrast"
+    },
+    "6-4_minus_7-3": {
+      "delta_distribution": {
+        "-1": 82,
+        "0": 288,
+        "1": 28,
+        "2": 2
+      },
+      "matched_pairs": 400,
+      "mean_95_percent_normal_ci": [
+        -0.17686368773297131,
+        -0.07313631226702869
+      ],
+      "mean_delta_tricks": -0.125,
+      "median_delta_tricks": 0.0,
+      "p_delta_negative": 0.205,
+      "p_delta_positive": 0.075,
+      "p_delta_zero": 0.72,
+      "p_gain_ge_1": 0.075,
+      "p_gain_ge_2": 0.005,
+      "sample_standard_deviation": 0.5292213033976664,
+      "status": "solver-measured-paired-structural-contrast"
+    }
+  },
+  "reciprocal_target_per_comparison_family": 400,
+  "runtime_projection_seconds": {
+    "100000_per_structure_8_structures": 6363.586055925116,
+    "8000_per_structure_8_structures": 509.0868844740093,
+    "full_pt2_31_cohorts_at_100000_each": 24658.895966709824
+  },
+  "seed": 20261001,
+  "solver_calls": 10000,
+  "solver_implementation": "endplay/DDS",
+  "solver_status_counts": {
+    "success": 10000
+  },
+  "solver_version": "0.5.12",
+  "strain": "S",
+  "total_solver_seconds": 79.54482569906395,
+  "validation_wall_seconds": 87.93659100006334
+}
