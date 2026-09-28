@@ -262,6 +262,22 @@ def sample_hidden_hands(state: AuctionInformationState,
         else:
             samples.append(HiddenSample(hands))
 
+    return _summarize_samples(state, config, samples, proposals, tuple(sorted(rejected.items())))
+
+
+def _summarize_samples(state, config, samples, proposals, rejections, *,
+                       conflicts=(), algorithm="uniform-unseen-shuffle-rejection-v1"):
+    """Shared empirical weighting only; each sampler owns its generation law."""
+    soft = _soft_evidence(state)
+    by_key = {item.key: item for item in soft}
+    if any(rule.key not in by_key for rule in config.likelihoods):
+        raise ValueError("likelihoods must reference existing soft evidence")
+    unresolved = tuple(item.key for item in soft if item.key not in {r.key for r in config.likelihoods})
+    if conflicts:
+        return HiddenHandResult(state.perspective, config, SamplingStatus.CONTRADICTORY,
+                                WeightingStatus.NO_SAMPLES, 0, (), (), (), Fraction(), (),
+                                state.updates, soft, unresolved, tuple(conflicts), state, algorithm)
+    seats = (state.partner, *state.opponents)
     raw = []
     for sample in samples:
         weight = Fraction(1)
@@ -294,8 +310,8 @@ def sample_hidden_hands(state: AuctionInformationState,
     return HiddenHandResult(
         state.perspective, config,
         SamplingStatus.COMPLETE if len(samples) == config.requested else SamplingStatus.BUDGET_EXHAUSTED,
-        weighting, proposals, tuple(samples), tuple(sorted(rejected.items())),
-        weights, ess, tuple(marginals), state.updates, soft, unresolved, (), state)
+        weighting, proposals, tuple(samples), tuple(rejections),
+        weights, ess, tuple(marginals), state.updates, soft, unresolved, (), state, algorithm)
 
 
 def vacant_place_reference(state: AuctionInformationState, trump: Suit, outstanding: int,

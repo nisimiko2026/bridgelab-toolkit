@@ -121,14 +121,10 @@ def test_no_decision_logic_no_deal_retention_and_prior_audits_available():
 
 
 def test_audit_does_not_modify_existing_tracked_files():
-    before = subprocess.check_output(["git", "diff", "HEAD", "--name-only"], cwd=ROOT)
+    # Compare content as well as paths, allowing unrelated work already present.
+    # A phase-specific allowlist incorrectly rejects later uncommitted research.
+    command = ["git", "diff", "--binary", "HEAD"]
+    before = subprocess.check_output(command, cwd=ROOT)
     build_opening_pass_source_report()
-    after = subprocess.check_output(["git", "diff", "HEAD", "--name-only"], cwd=ROOT)
+    after = subprocess.check_output(command, cwd=ROOT)
     assert before == after
-    permitted = {
-        "bridgelab-toolkit/bridge/opening_pass_source_policy_audit.py",
-        "bridgelab-toolkit/tests/test_bridge_phase29l_opening_pass_source_policy_audit.py",
-        "bridgelab-toolkit/bridgelab_phase29l_opening_pass_source_policy_audit.md",
-        "bridgelab-toolkit/bridgelab_phase29l_opening_pass_source_policy_audit.json",
-    }
-    assert set(after.decode().splitlines()) <= permitted
