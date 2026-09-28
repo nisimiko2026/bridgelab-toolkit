@@ -1,0 +1,3732 @@
+{
+  "hypotheses": 5000,
+  "original_evaluable": 3819,
+  "expanded_evaluable": 3819,
+  "incremental_coverage": 0,
+  "strata": {
+    "state": {
+      "singleton_defender_diamonds_5_3": {
+        "total": 500,
+        "evaluable": 499,
+        "missing": 1,
+        "missing_rate": 0.002,
+        "primary_reasons": {
+          "partner_studied_spots_insufficient_honors_locked": 1
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_spots_insufficient_honors_locked": 1
+        }
+      },
+      "singleton_support_eq4": {
+        "total": 500,
+        "evaluable": 382,
+        "missing": 118,
+        "missing_rate": 0.236,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 112,
+          "partner_studied_spots_insufficient_honors_locked": 6
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 112,
+          "partner_studied_spots_insufficient_honors_locked": 21
+        }
+      },
+      "singleton_support_ge3": {
+        "total": 500,
+        "evaluable": 402,
+        "missing": 98,
+        "missing_rate": 0.196,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 92,
+          "partner_studied_spots_insufficient_honors_locked": 6
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 92,
+          "partner_studied_spots_insufficient_honors_locked": 24
+        }
+      },
+      "singleton_support_ge4": {
+        "total": 500,
+        "evaluable": 382,
+        "missing": 118,
+        "missing_rate": 0.236,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 115,
+          "partner_studied_spots_insufficient_honors_locked": 3
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 115,
+          "partner_studied_spots_insufficient_honors_locked": 24
+        }
+      },
+      "singleton_unknown_fit": {
+        "total": 500,
+        "evaluable": 437,
+        "missing": 63,
+        "missing_rate": 0.126,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 61,
+          "partner_studied_spots_insufficient_honors_locked": 2
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 61,
+          "partner_studied_spots_insufficient_honors_locked": 8
+        }
+      },
+      "void_defender_diamonds_5_3": {
+        "total": 500,
+        "evaluable": 496,
+        "missing": 4,
+        "missing_rate": 0.008,
+        "primary_reasons": {
+          "partner_studied_spots_insufficient_honors_locked": 4
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_spots_insufficient_honors_locked": 4
+        }
+      },
+      "void_support_eq4": {
+        "total": 500,
+        "evaluable": 277,
+        "missing": 223,
+        "missing_rate": 0.446,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 213,
+          "partner_studied_spots_insufficient_honors_locked": 10
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 213,
+          "partner_studied_spots_insufficient_honors_locked": 86
+        }
+      },
+      "void_support_ge3": {
+        "total": 500,
+        "evaluable": 313,
+        "missing": 187,
+        "missing_rate": 0.374,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 178,
+          "partner_studied_spots_insufficient_honors_locked": 9
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 178,
+          "partner_studied_spots_insufficient_honors_locked": 65
+        }
+      },
+      "void_support_ge4": {
+        "total": 500,
+        "evaluable": 276,
+        "missing": 224,
+        "missing_rate": 0.448,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 212,
+          "partner_studied_spots_insufficient_honors_locked": 12
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 212,
+          "partner_studied_spots_insufficient_honors_locked": 81
+        }
+      },
+      "void_unknown_fit": {
+        "total": 500,
+        "evaluable": 355,
+        "missing": 145,
+        "missing_rate": 0.29,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 139,
+          "partner_studied_spots_insufficient_honors_locked": 6
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 139,
+          "partner_studied_spots_insufficient_honors_locked": 56
+        }
+      }
+    },
+    "shortness": {
+      "singleton": {
+        "total": 2500,
+        "evaluable": 2102,
+        "missing": 398,
+        "missing_rate": 0.1592,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 380,
+          "partner_studied_spots_insufficient_honors_locked": 18
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 380,
+          "partner_studied_spots_insufficient_honors_locked": 78
+        }
+      },
+      "void": {
+        "total": 2500,
+        "evaluable": 1717,
+        "missing": 783,
+        "missing_rate": 0.3132,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 742,
+          "partner_studied_spots_insufficient_honors_locked": 41
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 742,
+          "partner_studied_spots_insufficient_honors_locked": 292
+        }
+      }
+    },
+    "trump_structure": {
+      "5-0": {
+        "total": 23,
+        "evaluable": 23,
+        "missing": 0,
+        "missing_rate": 0.0,
+        "primary_reasons": {},
+        "all_reasons_nonexclusive": {}
+      },
+      "5-1": {
+        "total": 135,
+        "evaluable": 127,
+        "missing": 8,
+        "missing_rate": 0.05925925925925926,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 8
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 8,
+          "partner_studied_spots_insufficient_honors_locked": 2
+        }
+      },
+      "5-2": {
+        "total": 302,
+        "evaluable": 251,
+        "missing": 51,
+        "missing_rate": 0.16887417218543047,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 49,
+          "partner_studied_spots_insufficient_honors_locked": 2
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 49,
+          "partner_studied_spots_insufficient_honors_locked": 11
+        }
+      },
+      "5-3": {
+        "total": 879,
+        "evaluable": 670,
+        "missing": 209,
+        "missing_rate": 0.23777019340159272,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 198,
+          "partner_studied_spots_insufficient_honors_locked": 11
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 198,
+          "partner_studied_spots_insufficient_honors_locked": 64
+        }
+      },
+      "5-4": {
+        "total": 3220,
+        "evaluable": 2505,
+        "missing": 715,
+        "missing_rate": 0.2220496894409938,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 679,
+          "partner_studied_spots_insufficient_honors_locked": 36
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 679,
+          "partner_studied_spots_insufficient_honors_locked": 215
+        }
+      },
+      "5-5": {
+        "total": 372,
+        "evaluable": 214,
+        "missing": 158,
+        "missing_rate": 0.42473118279569894,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 149,
+          "partner_studied_spots_insufficient_honors_locked": 9
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 149,
+          "partner_studied_spots_insufficient_honors_locked": 66
+        }
+      },
+      "5-6": {
+        "total": 66,
+        "evaluable": 29,
+        "missing": 37,
+        "missing_rate": 0.5606060606060606,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 36,
+          "partner_studied_spots_insufficient_honors_locked": 1
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 36,
+          "partner_studied_spots_insufficient_honors_locked": 12
+        }
+      },
+      "5-7": {
+        "total": 3,
+        "evaluable": 0,
+        "missing": 3,
+        "missing_rate": 1.0,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 3
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 3
+        }
+      }
+    },
+    "studied_suit": {
+      "D": {
+        "total": 5000,
+        "evaluable": 3819,
+        "missing": 1181,
+        "missing_rate": 0.2362,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 1122,
+          "partner_studied_spots_insufficient_honors_locked": 59
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 1122,
+          "partner_studied_spots_insufficient_honors_locked": 370
+        }
+      }
+    },
+    "trump_role": {
+      "equal": {
+        "total": 372,
+        "evaluable": 214,
+        "missing": 158,
+        "missing_rate": 0.42473118279569894,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 149,
+          "partner_studied_spots_insufficient_honors_locked": 9
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 149,
+          "partner_studied_spots_insufficient_honors_locked": 66
+        }
+      },
+      "long": {
+        "total": 4559,
+        "evaluable": 3576,
+        "missing": 983,
+        "missing_rate": 0.21561745996929152,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 934,
+          "partner_studied_spots_insufficient_honors_locked": 49
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 934,
+          "partner_studied_spots_insufficient_honors_locked": 292
+        }
+      },
+      "short": {
+        "total": 69,
+        "evaluable": 29,
+        "missing": 40,
+        "missing_rate": 0.5797101449275363,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 39,
+          "partner_studied_spots_insufficient_honors_locked": 1
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 39,
+          "partner_studied_spots_insufficient_honors_locked": 12
+        }
+      }
+    },
+    "ruffable_loser_proxy": {
+      "0": {
+        "total": 196,
+        "evaluable": 43,
+        "missing": 153,
+        "missing_rate": 0.7806122448979592,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 140,
+          "partner_studied_spots_insufficient_honors_locked": 13
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 140,
+          "partner_studied_spots_insufficient_honors_locked": 70
+        }
+      },
+      "1": {
+        "total": 576,
+        "evaluable": 220,
+        "missing": 356,
+        "missing_rate": 0.6180555555555556,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 341,
+          "partner_studied_spots_insufficient_honors_locked": 15
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 341,
+          "partner_studied_spots_insufficient_honors_locked": 119
+        }
+      },
+      "2": {
+        "total": 1058,
+        "evaluable": 767,
+        "missing": 291,
+        "missing_rate": 0.27504725897920607,
+        "primary_reasons": {
+          "partner_studied_spots_insufficient_honors_locked": 8,
+          "partner_studied_doubleton_floor": 283
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_spots_insufficient_honors_locked": 117,
+          "partner_studied_doubleton_floor": 283
+        }
+      },
+      "3": {
+        "total": 1395,
+        "evaluable": 1025,
+        "missing": 370,
+        "missing_rate": 0.26523297491039427,
+        "primary_reasons": {
+          "partner_studied_doubleton_floor": 358,
+          "partner_studied_spots_insufficient_honors_locked": 12
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_doubleton_floor": 358,
+          "partner_studied_spots_insufficient_honors_locked": 53
+        }
+      },
+      "4": {
+        "total": 902,
+        "evaluable": 891,
+        "missing": 11,
+        "missing_rate": 0.012195121951219513,
+        "primary_reasons": {
+          "partner_studied_spots_insufficient_honors_locked": 11
+        },
+        "all_reasons_nonexclusive": {
+          "partner_studied_spots_insufficient_honors_locked": 11
+        }
+      },
+      "5": {
+        "total": 723,
+        "evaluable": 723,
+        "missing": 0,
+        "missing_rate": 0.0,
+        "primary_reasons": {},
+        "all_reasons_nonexclusive": {}
+      },
+      "6": {
+        "total": 122,
+        "evaluable": 122,
+        "missing": 0,
+        "missing_rate": 0.0,
+        "primary_reasons": {},
+        "all_reasons_nonexclusive": {}
+      },
+      "7": {
+        "total": 23,
+        "evaluable": 23,
+        "missing": 0,
+        "missing_rate": 0.0,
+        "primary_reasons": {},
+        "all_reasons_nonexclusive": {}
+      },
+      "8": {
+        "total": 5,
+        "evaluable": 5,
+        "missing": 0,
+        "missing_rate": 0.0,
+        "primary_reasons": {},
+        "all_reasons_nonexclusive": {}
+      }
+    }
+  },
+  "pre_control_differences": {
+    "all": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "partner_trumps": {
+          "evaluable_mean": 3.6404818015187224,
+          "missing_mean": 3.920406435224386,
+          "missing_minus_evaluable": 0.2799246337056638,
+          "standardized_difference": 0.32568725485739014,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "total_trumps": {
+          "evaluable_mean": 8.640481801518723,
+          "missing_mean": 8.920406435224386,
+          "missing_minus_evaluable": 0.27992463370566334,
+          "standardized_difference": 0.32568725485738964,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 3.3885833987954963,
+          "missing_mean": 1.7713801862828111,
+          "missing_minus_evaluable": -1.6172032125126852,
+          "standardized_difference": -1.3414641728837722,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8732652526839487,
+          "missing_mean": 0.9712108382726503,
+          "missing_minus_evaluable": 0.09794558558870159,
+          "standardized_difference": 0.1260339768515862,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.008641005498822,
+          "missing_mean": 9.646062658763759,
+          "missing_minus_evaluable": 0.637421653264937,
+          "standardized_difference": 0.16737117402574106,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.6616915422885574,
+          "missing_mean": 3.6232006773920404,
+          "missing_minus_evaluable": 0.961509135103483,
+          "standardized_difference": 0.8292914891221858,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.42471851269966,
+          "missing_mean": 2.3708721422523285,
+          "missing_minus_evaluable": -2.0538463704473315,
+          "standardized_difference": -2.4111809328540117,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.273108143493061,
+          "missing_mean": 3.0855207451312445,
+          "missing_minus_evaluable": 0.8124126016381834,
+          "standardized_difference": 0.7092531259859796,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_N_S": {
+          "evaluable_mean": 3.6404818015187224,
+          "missing_mean": 3.920406435224386,
+          "missing_minus_evaluable": 0.2799246337056638,
+          "standardized_difference": 0.32568725485739014,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.513485205551191,
+          "missing_mean": 10.11176968670618,
+          "missing_minus_evaluable": -0.4017155188450108,
+          "standardized_difference": -0.10359269725919608,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.7643362136684995,
+          "missing_mean": 3.157493649449619,
+          "missing_minus_evaluable": -0.6068425642188804,
+          "standardized_difference": -0.47401530900492367,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_E_D": {
+          "evaluable_mean": 3.764598062319979,
+          "missing_mean": 5.093141405588485,
+          "missing_minus_evaluable": 1.3285433432685059,
+          "standardized_difference": 1.051107885257819,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.220738413197172,
+          "missing_mean": 2.6731583403895005,
+          "missing_minus_evaluable": -0.5475800728076714,
+          "standardized_difference": -0.444410090168767,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.2503273108143493,
+          "missing_mean": 2.076206604572396,
+          "missing_minus_evaluable": -0.1741207062419532,
+          "standardized_difference": -0.16795136149936102,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_S_D": {
+          "evaluable_mean": 0.5504058654097932,
+          "missing_mean": 0.3370025402201524,
+          "missing_minus_evaluable": -0.21340332518964078,
+          "standardized_difference": -0.43980073376375073,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_S_H": {
+          "evaluable_mean": 4.449594134590207,
+          "missing_mean": 4.662997459779848,
+          "missing_minus_evaluable": 0.213403325189641,
+          "standardized_difference": 0.43980073376375123,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.477873788949987,
+          "missing_mean": 10.242167654530059,
+          "missing_minus_evaluable": -0.23570613441992805,
+          "standardized_difference": -0.05993443827129756,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.573972244042943,
+          "missing_mean": 3.2193056731583405,
+          "missing_minus_evaluable": -0.3546665708846026,
+          "standardized_difference": -0.28678564578214916,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_W_D": {
+          "evaluable_mean": 4.260277559570568,
+          "missing_mean": 5.198983911939035,
+          "missing_minus_evaluable": 0.9387063523684667,
+          "standardized_difference": 0.7446370608012967,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.05655930871956,
+          "missing_mean": 2.578323454699407,
+          "missing_minus_evaluable": -0.478235854020153,
+          "standardized_difference": -0.3960810240118003,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.1091908876669283,
+          "missing_mean": 2.0033869602032177,
+          "missing_minus_evaluable": -0.10580392746371059,
+          "standardized_difference": -0.1021820480405202,
+          "evaluable_n": 3819,
+          "missing_n": 1181
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 2102,
+            "void": 1717
+          },
+          "missing_counts": {
+            "singleton": 398,
+            "void": 783
+          },
+          "total_variation": 0.21340332518964075
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 3819
+          },
+          "missing_counts": {
+            "D": 1181
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-1": 127,
+            "5-2": 251,
+            "5-4": 2505,
+            "5-3": 670,
+            "5-5": 214,
+            "5-0": 23,
+            "5-6": 29
+          },
+          "missing_counts": {
+            "5-3": 209,
+            "5-5": 158,
+            "5-2": 51,
+            "5-6": 37,
+            "5-4": 715,
+            "5-7": 3,
+            "5-1": 8
+          },
+          "total_variation": 0.10555538187665885
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 3576,
+            "equal": 214,
+            "short": 29
+          },
+          "missing_counts": {
+            "long": 983,
+            "equal": 158,
+            "short": 40
+          },
+          "total_variation": 0.1040253077497667
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-5": 331,
+            "3-4": 156,
+            "4-4": 333,
+            "2-7": 47,
+            "5-3": 222,
+            "2-5": 68,
+            "1-7": 17,
+            "4-3": 180,
+            "3-6": 153,
+            "6-3": 163,
+            "5-2": 78,
+            "5-4": 335,
+            "1-6": 12,
+            "4-0": 2,
+            "3-2": 17,
+            "3-5": 1237,
+            "2-4": 39,
+            "2-6": 85,
+            "2-3": 10,
+            "3-3": 59,
+            "4-2": 42,
+            "7-1": 15,
+            "1-5": 15,
+            "6-2": 90,
+            "8-1": 5,
+            "6-1": 13,
+            "4-1": 6,
+            "7-0": 2,
+            "5-1": 19,
+            "7-2": 47,
+            "1-4": 6,
+            "1-8": 9,
+            "2-1": 1,
+            "5-0": 1,
+            "1-3": 1,
+            "8-0": 2,
+            "0-7": 1
+          },
+          "missing_counts": {
+            "5-5": 236,
+            "4-6": 195,
+            "5-6": 89,
+            "6-5": 80,
+            "4-7": 47,
+            "6-4": 161,
+            "7-3": 66,
+            "3-7": 70,
+            "3-8": 12,
+            "5-4": 13,
+            "2-8": 20,
+            "8-3": 15,
+            "6-3": 8,
+            "8-2": 17,
+            "7-4": 48,
+            "5-7": 12,
+            "3-5": 7,
+            "3-6": 8,
+            "6-6": 15,
+            "4-5": 17,
+            "3-9": 1,
+            "7-5": 16,
+            "2-7": 2,
+            "9-2": 2,
+            "7-2": 2,
+            "1-9": 3,
+            "9-1": 2,
+            "4-8": 5,
+            "8-4": 2,
+            "9-3": 2,
+            "2-9": 2,
+            "4-9": 1,
+            "4-4": 2,
+            "7-6": 1,
+            "6-7": 1,
+            "5-8": 1
+          },
+          "total_variation": 0.9500423370025403
+        }
+      }
+    },
+    "singleton_defender_diamonds_5_3": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "total_trumps": {
+          "evaluable_mean": 9,
+          "missing_mean": 9,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 2.535070140280561,
+          "missing_mean": 0,
+          "missing_minus_evaluable": -2.535070140280561,
+          "standardized_difference": -4.767885181774756,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8376753507014028,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0.16232464929859725,
+          "standardized_difference": 0.3033048476739967,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.006012024048097,
+          "missing_mean": 14,
+          "missing_minus_evaluable": 4.993987975951903,
+          "standardized_difference": 1.8836468498468941,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.655310621242485,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0.34468937875751493,
+          "standardized_difference": 0.4956196108993651,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_N_D": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.344689378757515,
+          "missing_mean": 2,
+          "missing_minus_evaluable": -0.34468937875751493,
+          "standardized_difference": -0.4956196108993651,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_N_S": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.464929859719438,
+          "missing_mean": 8,
+          "missing_minus_evaluable": -2.4649298597194385,
+          "standardized_difference": -0.8777659105491858,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_E_C": {
+          "evaluable_mean": 4.066132264529058,
+          "missing_mean": 3,
+          "missing_minus_evaluable": -1.0661322645290578,
+          "standardized_difference": -1.3367551496404348,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_E_D": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.661322645290581,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 1.3386773547094188,
+          "standardized_difference": 1.6719814270747204,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.2725450901803605,
+          "missing_mean": 2,
+          "missing_minus_evaluable": -0.27254509018036055,
+          "standardized_difference": -0.41380225473757765,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_S_D": {
+          "evaluable_mean": 1,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_S_H": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.529058116232465,
+          "missing_mean": 8,
+          "missing_minus_evaluable": -2.5290581162324646,
+          "standardized_difference": -0.856261763994481,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.278557114228457,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0.7214428857715429,
+          "standardized_difference": 0.8965131808614397,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_W_D": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_W_H": {
+          "evaluable_mean": 2.993987975951904,
+          "missing_mean": 2,
+          "missing_minus_evaluable": -0.9939879759519039,
+          "standardized_difference": -1.226963747306824,
+          "evaluable_n": 499,
+          "missing_n": 1
+        },
+        "length_W_S": {
+          "evaluable_mean": 1.7274549098196392,
+          "missing_mean": 2,
+          "missing_minus_evaluable": 0.27254509018036077,
+          "standardized_difference": 0.413802254737578,
+          "evaluable_n": 499,
+          "missing_n": 1
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 499
+          },
+          "missing_counts": {
+            "singleton": 1
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 499
+          },
+          "missing_counts": {
+            "D": 1
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-4": 499
+          },
+          "missing_counts": {
+            "5-4": 1
+          },
+          "total_variation": 0.0
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 499
+          },
+          "missing_counts": {
+            "long": 1
+          },
+          "total_variation": 0.0
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "3-5": 499
+          },
+          "missing_counts": {
+            "3-5": 1
+          },
+          "total_variation": 0.0
+        }
+      }
+    },
+    "singleton_support_eq4": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "total_trumps": {
+          "evaluable_mean": 9,
+          "missing_mean": 9,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 2.5706806282722514,
+          "missing_mean": 0.652542372881356,
+          "missing_minus_evaluable": -1.9181382553908954,
+          "standardized_difference": -2.24308661904278,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8429319371727748,
+          "missing_mean": 1.0338983050847457,
+          "missing_minus_evaluable": 0.19096636791197086,
+          "standardized_difference": 0.24395031201868003,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_N": {
+          "evaluable_mean": 8.659685863874346,
+          "missing_mean": 9.457627118644067,
+          "missing_minus_evaluable": 0.7979412547697216,
+          "standardized_difference": 0.2028576913629444,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.5706806282722514,
+          "missing_mean": 3.73728813559322,
+          "missing_minus_evaluable": 1.1666075073209687,
+          "standardized_difference": 1.0182715044565953,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.013089005235602,
+          "missing_mean": 1.8728813559322033,
+          "missing_minus_evaluable": -2.140207649303399,
+          "standardized_difference": -2.7384836960217362,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.4162303664921465,
+          "missing_mean": 3.389830508474576,
+          "missing_minus_evaluable": 0.9736001419824296,
+          "standardized_difference": 0.8653921654080117,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_S": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.827225130890053,
+          "missing_mean": 10.127118644067796,
+          "missing_minus_evaluable": -0.7001064868222571,
+          "standardized_difference": -0.1861950915937487,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.6387434554973823,
+          "missing_mean": 2.9491525423728815,
+          "missing_minus_evaluable": -0.6895909131245008,
+          "standardized_difference": -0.5448191667170657,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_D": {
+          "evaluable_mean": 3.979057591623037,
+          "missing_mean": 5.135593220338983,
+          "missing_minus_evaluable": 1.1565356287159458,
+          "standardized_difference": 0.9120221921696019,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.316753926701571,
+          "missing_mean": 2.906779661016949,
+          "missing_minus_evaluable": -0.4099742656846219,
+          "standardized_difference": -0.3359600654399724,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.0654450261780104,
+          "missing_mean": 2.0084745762711864,
+          "missing_minus_evaluable": -0.05697044990682398,
+          "standardized_difference": -0.062472466539910475,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_D": {
+          "evaluable_mean": 1,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_H": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.513089005235603,
+          "missing_mean": 10.415254237288135,
+          "missing_minus_evaluable": -0.09783476794746804,
+          "standardized_difference": -0.02335371097663586,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.7905759162303663,
+          "missing_mean": 3.3135593220338984,
+          "missing_minus_evaluable": -0.4770165941964679,
+          "standardized_difference": -0.38554356767518017,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_D": {
+          "evaluable_mean": 4.007853403141361,
+          "missing_mean": 4.991525423728813,
+          "missing_minus_evaluable": 0.9836720205874521,
+          "standardized_difference": 0.7711901240009263,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.2670157068062826,
+          "missing_mean": 2.7033898305084745,
+          "missing_minus_evaluable": -0.5636258762978081,
+          "standardized_difference": -0.4568751752039197,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_S": {
+          "evaluable_mean": 1.9345549738219896,
+          "missing_mean": 1.9915254237288136,
+          "missing_minus_evaluable": 0.05697044990682398,
+          "standardized_difference": 0.062472466539910475,
+          "evaluable_n": 382,
+          "missing_n": 118
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 382
+          },
+          "missing_counts": {
+            "singleton": 118
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 382
+          },
+          "missing_counts": {
+            "D": 118
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-4": 382
+          },
+          "missing_counts": {
+            "5-4": 118
+          },
+          "total_variation": 0.0
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 382
+          },
+          "missing_counts": {
+            "long": 118
+          },
+          "total_variation": 0.0
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "5-4": 38,
+            "4-5": 47,
+            "6-3": 22,
+            "2-5": 11,
+            "2-6": 13,
+            "3-6": 15,
+            "5-2": 11,
+            "4-4": 44,
+            "4-3": 21,
+            "5-3": 29,
+            "3-5": 28,
+            "6-2": 16,
+            "3-3": 10,
+            "3-4": 27,
+            "7-2": 8,
+            "2-7": 10,
+            "1-7": 3,
+            "2-4": 7,
+            "4-0": 1,
+            "5-1": 4,
+            "1-6": 4,
+            "2-3": 2,
+            "3-2": 1,
+            "4-1": 1,
+            "1-4": 1,
+            "1-8": 1,
+            "7-0": 1,
+            "6-1": 2,
+            "4-2": 3,
+            "1-5": 1
+          },
+          "missing_counts": {
+            "7-4": 2,
+            "4-6": 25,
+            "3-8": 2,
+            "4-5": 4,
+            "5-5": 26,
+            "3-7": 6,
+            "6-4": 26,
+            "6-5": 4,
+            "5-6": 4,
+            "8-3": 3,
+            "7-3": 8,
+            "8-2": 1,
+            "6-3": 1,
+            "4-7": 4,
+            "7-5": 1,
+            "5-4": 1
+          },
+          "total_variation": 0.9491525423728814
+        }
+      }
+    },
+    "singleton_support_ge3": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "partner_trumps": {
+          "evaluable_mean": 3.5348258706467663,
+          "missing_mean": 3.806122448979592,
+          "missing_minus_evaluable": 0.2712965783328256,
+          "standardized_difference": 0.3410486128624598,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "total_trumps": {
+          "evaluable_mean": 8.534825870646767,
+          "missing_mean": 8.806122448979592,
+          "missing_minus_evaluable": 0.2712965783328247,
+          "standardized_difference": 0.3410486128624587,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 2.5248756218905473,
+          "missing_mean": 0.7040816326530612,
+          "missing_minus_evaluable": -1.820793989237486,
+          "standardized_difference": -2.2171963353699535,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8731343283582089,
+          "missing_mean": 0.8877551020408163,
+          "missing_minus_evaluable": 0.01462077368260739,
+          "standardized_difference": 0.018431842967265067,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.310945273631841,
+          "missing_mean": 9.36734693877551,
+          "missing_minus_evaluable": 0.05640166514366918,
+          "standardized_difference": 0.015227339230566506,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.8507462686567164,
+          "missing_mean": 3.7857142857142856,
+          "missing_minus_evaluable": 0.9349680170575692,
+          "standardized_difference": 0.834798348680603,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.039800995024875,
+          "missing_mean": 1.8673469387755102,
+          "missing_minus_evaluable": -2.1724540562493653,
+          "standardized_difference": -2.6565997834582213,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.574626865671642,
+          "missing_mean": 3.5408163265306123,
+          "missing_minus_evaluable": 0.9661894608589705,
+          "standardized_difference": 0.878065625511244,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_N_S": {
+          "evaluable_mean": 3.5348258706467663,
+          "missing_mean": 3.806122448979592,
+          "missing_minus_evaluable": 0.2712965783328256,
+          "standardized_difference": 0.3410486128624598,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.328358208955224,
+          "missing_mean": 10.612244897959183,
+          "missing_minus_evaluable": 0.28388668900395864,
+          "standardized_difference": 0.07304169215884912,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.5074626865671643,
+          "missing_mean": 2.9591836734693877,
+          "missing_minus_evaluable": -0.5482790130977766,
+          "standardized_difference": -0.4499327189983694,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_E_D": {
+          "evaluable_mean": 4.104477611940299,
+          "missing_mean": 5.173469387755102,
+          "missing_minus_evaluable": 1.068991775814803,
+          "standardized_difference": 0.8421935990743366,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.1492537313432836,
+          "missing_mean": 2.7653061224489797,
+          "missing_minus_evaluable": -0.3839476088943039,
+          "standardized_difference": -0.3159469325777856,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.2388059701492535,
+          "missing_mean": 2.1020408163265305,
+          "missing_minus_evaluable": -0.13676515382272303,
+          "standardized_difference": -0.1263404716023146,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_S_D": {
+          "evaluable_mean": 1,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_S_H": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.360696517412935,
+          "missing_mean": 10.020408163265307,
+          "missing_minus_evaluable": -0.3402883541476278,
+          "standardized_difference": -0.09109233263552081,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.6417910447761193,
+          "missing_mean": 3.2551020408163267,
+          "missing_minus_evaluable": -0.38668900395979255,
+          "standardized_difference": -0.32082070835379467,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_W_D": {
+          "evaluable_mean": 3.855721393034826,
+          "missing_mean": 4.959183673469388,
+          "missing_minus_evaluable": 1.1034622804345622,
+          "standardized_difference": 0.8513533709498428,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.2761194029850746,
+          "missing_mean": 2.693877551020408,
+          "missing_minus_evaluable": -0.5822418519646666,
+          "standardized_difference": -0.4957612650296485,
+          "evaluable_n": 402,
+          "missing_n": 98
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.22636815920398,
+          "missing_mean": 2.0918367346938775,
+          "missing_minus_evaluable": -0.13453142451010258,
+          "standardized_difference": -0.13553892685725977,
+          "evaluable_n": 402,
+          "missing_n": 98
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 402
+          },
+          "missing_counts": {
+            "singleton": 98
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 402
+          },
+          "missing_counts": {
+            "D": 98
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-3": 234,
+            "5-4": 128,
+            "5-5": 33,
+            "5-6": 7
+          },
+          "missing_counts": {
+            "5-4": 33,
+            "5-3": 44,
+            "5-5": 17,
+            "5-6": 4
+          },
+          "total_variation": 0.13310996040207126
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 362,
+            "equal": 33,
+            "short": 7
+          },
+          "missing_counts": {
+            "long": 77,
+            "equal": 17,
+            "short": 4
+          },
+          "total_variation": 0.11478322672352524
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-3": 28,
+            "5-2": 18,
+            "2-6": 16,
+            "3-5": 36,
+            "6-2": 16,
+            "4-4": 42,
+            "5-3": 31,
+            "4-5": 41,
+            "6-3": 28,
+            "5-4": 43,
+            "2-7": 5,
+            "7-2": 6,
+            "1-5": 5,
+            "3-6": 18,
+            "3-4": 18,
+            "1-7": 2,
+            "7-1": 2,
+            "4-2": 6,
+            "3-3": 13,
+            "2-5": 7,
+            "2-4": 5,
+            "3-2": 4,
+            "5-1": 6,
+            "8-1": 2,
+            "6-1": 1,
+            "4-1": 1,
+            "5-0": 1,
+            "1-8": 1
+          },
+          "missing_counts": {
+            "6-4": 16,
+            "5-5": 25,
+            "4-6": 18,
+            "5-4": 3,
+            "5-6": 4,
+            "6-5": 4,
+            "7-3": 5,
+            "3-7": 6,
+            "8-2": 4,
+            "7-4": 4,
+            "5-7": 2,
+            "8-3": 1,
+            "3-5": 1,
+            "4-7": 3,
+            "6-3": 1,
+            "3-6": 1
+          },
+          "total_variation": 0.9387755102040816
+        }
+      }
+    },
+    "singleton_support_ge4": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4.272251308900524,
+          "missing_mean": 4.330508474576271,
+          "missing_minus_evaluable": 0.058257165675747125,
+          "standardized_difference": 0.10437576976080168,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "total_trumps": {
+          "evaluable_mean": 9.272251308900524,
+          "missing_mean": 9.330508474576272,
+          "missing_minus_evaluable": 0.05825716567574801,
+          "standardized_difference": 0.10437576976080326,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 2.4764397905759163,
+          "missing_mean": 0.6186440677966102,
+          "missing_minus_evaluable": -1.857795722779306,
+          "standardized_difference": -2.3070760838344855,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8141361256544503,
+          "missing_mean": 0.864406779661017,
+          "missing_minus_evaluable": 0.05027065400656672,
+          "standardized_difference": 0.06830174356409863,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_N": {
+          "evaluable_mean": 8.513089005235603,
+          "missing_mean": 9.110169491525424,
+          "missing_minus_evaluable": 0.5970804862898209,
+          "standardized_difference": 0.16009636063037838,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.473821989528796,
+          "missing_mean": 3.635593220338983,
+          "missing_minus_evaluable": 1.1617712308101873,
+          "standardized_difference": 1.0193202097522844,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_D": {
+          "evaluable_mean": 3.8900523560209423,
+          "missing_mean": 1.7796610169491525,
+          "missing_minus_evaluable": -2.11039133907179,
+          "standardized_difference": -2.739856432717642,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.363874345549738,
+          "missing_mean": 3.2542372881355934,
+          "missing_minus_evaluable": 0.8903629425858552,
+          "standardized_difference": 0.7943717966193531,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_N_S": {
+          "evaluable_mean": 4.272251308900524,
+          "missing_mean": 4.330508474576271,
+          "missing_minus_evaluable": 0.058257165675747125,
+          "standardized_difference": 0.10437576976080168,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.832460732984293,
+          "missing_mean": 10.161016949152541,
+          "missing_minus_evaluable": -0.6714437838317515,
+          "standardized_difference": -0.1850367803460686,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.75130890052356,
+          "missing_mean": 3.0677966101694913,
+          "missing_minus_evaluable": -0.6835122903540687,
+          "standardized_difference": -0.51513323519418,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_D": {
+          "evaluable_mean": 4.112565445026178,
+          "missing_mean": 5.084745762711864,
+          "missing_minus_evaluable": 0.9721803176856865,
+          "standardized_difference": 0.7737757197728321,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.3010471204188483,
+          "missing_mean": 2.9237288135593222,
+          "missing_minus_evaluable": -0.37731830685952605,
+          "standardized_difference": -0.29474846609917865,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_E_S": {
+          "evaluable_mean": 1.8350785340314135,
+          "missing_mean": 1.923728813559322,
+          "missing_minus_evaluable": 0.0886502795279085,
+          "standardized_difference": 0.09390565228158282,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_D": {
+          "evaluable_mean": 1,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_H": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.654450261780104,
+          "missing_mean": 10.728813559322035,
+          "missing_minus_evaluable": 0.0743632975419306,
+          "standardized_difference": 0.01865855634867964,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.774869109947644,
+          "missing_mean": 3.2966101694915255,
+          "missing_minus_evaluable": -0.4782589404561186,
+          "standardized_difference": -0.379027589873973,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_D": {
+          "evaluable_mean": 3.9973821989528795,
+          "missing_mean": 5.135593220338983,
+          "missing_minus_evaluable": 1.1382110213861032,
+          "standardized_difference": 0.9543267868591345,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.3350785340314135,
+          "missing_mean": 2.8220338983050848,
+          "missing_minus_evaluable": -0.5130446357263287,
+          "standardized_difference": -0.42346232496636055,
+          "evaluable_n": 382,
+          "missing_n": 118
+        },
+        "length_W_S": {
+          "evaluable_mean": 1.8926701570680629,
+          "missing_mean": 1.7457627118644068,
+          "missing_minus_evaluable": -0.14690744520365606,
+          "standardized_difference": -0.15418998428907799,
+          "evaluable_n": 382,
+          "missing_n": 118
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 382
+          },
+          "missing_counts": {
+            "singleton": 118
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 382
+          },
+          "missing_counts": {
+            "D": 118
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-5": 78,
+            "5-4": 291,
+            "5-6": 13
+          },
+          "missing_counts": {
+            "5-5": 26,
+            "5-4": 86,
+            "5-6": 5,
+            "5-7": 1
+          },
+          "total_variation": 0.03296654539000804
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "equal": 78,
+            "long": 291,
+            "short": 13
+          },
+          "missing_counts": {
+            "equal": 26,
+            "long": 86,
+            "short": 6
+          },
+          "total_variation": 0.03296654539000804
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "2-5": 8,
+            "5-3": 36,
+            "4-3": 22,
+            "5-4": 57,
+            "3-5": 37,
+            "2-7": 4,
+            "3-6": 19,
+            "4-4": 49,
+            "4-5": 42,
+            "2-6": 9,
+            "1-5": 2,
+            "3-4": 23,
+            "4-2": 6,
+            "1-7": 2,
+            "7-2": 12,
+            "1-4": 1,
+            "6-2": 11,
+            "7-1": 2,
+            "5-2": 6,
+            "6-3": 18,
+            "3-3": 4,
+            "2-4": 5,
+            "1-3": 1,
+            "6-1": 2,
+            "3-2": 2,
+            "1-8": 1,
+            "2-3": 1
+          },
+          "missing_counts": {
+            "6-6": 2,
+            "4-6": 28,
+            "7-3": 5,
+            "6-4": 19,
+            "6-5": 5,
+            "7-4": 8,
+            "5-5": 29,
+            "5-6": 5,
+            "3-7": 5,
+            "3-6": 1,
+            "3-8": 2,
+            "4-5": 1,
+            "2-8": 1,
+            "8-2": 2,
+            "3-5": 1,
+            "3-9": 1,
+            "8-3": 1,
+            "4-7": 1,
+            "7-5": 1
+          },
+          "total_variation": 0.9745762711864406
+        }
+      }
+    },
+    "singleton_unknown_fit": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "partner_trumps": {
+          "evaluable_mean": 2.551487414187643,
+          "missing_mean": 3.365079365079365,
+          "missing_minus_evaluable": 0.813591950891722,
+          "standardized_difference": 0.6934164704119223,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "total_trumps": {
+          "evaluable_mean": 7.551487414187643,
+          "missing_mean": 8.365079365079366,
+          "missing_minus_evaluable": 0.8135919508917224,
+          "standardized_difference": 0.6934164704119228,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 2.8375286041189933,
+          "missing_mean": 0.6349206349206349,
+          "missing_minus_evaluable": -2.2026079691983584,
+          "standardized_difference": -2.361051498208863,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.9633867276887872,
+          "missing_mean": 0.9206349206349206,
+          "missing_minus_evaluable": -0.04275180705386661,
+          "standardized_difference": -0.054142618719501864,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.935926773455378,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0.06407322654462178,
+          "standardized_difference": 0.01697285562439867,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_N_C": {
+          "evaluable_mean": 3.276887871853547,
+          "missing_mean": 4.2063492063492065,
+          "missing_minus_evaluable": 0.9294613344956595,
+          "standardized_difference": 0.7904746036200686,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.354691075514874,
+          "missing_mean": 1.7619047619047619,
+          "missing_minus_evaluable": -2.5927863136101124,
+          "standardized_difference": -2.9329072339982774,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.816933638443936,
+          "missing_mean": 3.6666666666666665,
+          "missing_minus_evaluable": 0.8497330282227304,
+          "standardized_difference": 0.678451206895394,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_N_S": {
+          "evaluable_mean": 2.551487414187643,
+          "missing_mean": 3.365079365079365,
+          "missing_minus_evaluable": 0.813591950891722,
+          "standardized_difference": 0.6934164704119223,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "hcp_E": {
+          "evaluable_mean": 9.759725400457667,
+          "missing_mean": 10.238095238095237,
+          "missing_minus_evaluable": 0.4783698376375707,
+          "standardized_difference": 0.1262799768669231,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.3684210526315788,
+          "missing_mean": 2.9682539682539684,
+          "missing_minus_evaluable": -0.4001670843776104,
+          "standardized_difference": -0.3218592070964314,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_E_D": {
+          "evaluable_mean": 3.8329519450800915,
+          "missing_mean": 4.698412698412699,
+          "missing_minus_evaluable": 0.8654607533326071,
+          "standardized_difference": 0.6884693740404525,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.102974828375286,
+          "missing_mean": 2.888888888888889,
+          "missing_minus_evaluable": -0.21408593948639698,
+          "standardized_difference": -0.17533069655993563,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.6956521739130435,
+          "missing_mean": 2.4444444444444446,
+          "missing_minus_evaluable": -0.2512077294685988,
+          "standardized_difference": -0.2105523568576187,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_S_D": {
+          "evaluable_mean": 1,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_S_H": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.304347826086957,
+          "missing_mean": 9.761904761904763,
+          "missing_minus_evaluable": -0.5424430641821942,
+          "standardized_difference": -0.14047815557383322,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.354691075514874,
+          "missing_mean": 2.8253968253968256,
+          "missing_minus_evaluable": -0.5292942501180486,
+          "standardized_difference": -0.465581445265415,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_W_D": {
+          "evaluable_mean": 3.8123569794050343,
+          "missing_mean": 5.5396825396825395,
+          "missing_minus_evaluable": 1.7273255602775053,
+          "standardized_difference": 1.3118795135536476,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.080091533180778,
+          "missing_mean": 2.4444444444444446,
+          "missing_minus_evaluable": -0.6356470887363335,
+          "standardized_difference": -0.5357022544140645,
+          "evaluable_n": 437,
+          "missing_n": 63
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.7528604118993134,
+          "missing_mean": 2.1904761904761907,
+          "missing_minus_evaluable": -0.5623842214231227,
+          "standardized_difference": -0.46799196439317037,
+          "evaluable_n": 437,
+          "missing_n": 63
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "singleton": 437
+          },
+          "missing_counts": {
+            "singleton": 63
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 437
+          },
+          "missing_counts": {
+            "D": 63
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-1": 67,
+            "5-2": 134,
+            "5-4": 75,
+            "5-3": 121,
+            "5-5": 21,
+            "5-0": 17,
+            "5-6": 2
+          },
+          "missing_counts": {
+            "5-3": 26,
+            "5-5": 7,
+            "5-2": 14,
+            "5-6": 2,
+            "5-4": 13,
+            "5-7": 1
+          },
+          "total_variation": 0.2766336130180524
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 414,
+            "equal": 21,
+            "short": 2
+          },
+          "missing_counts": {
+            "long": 53,
+            "equal": 7,
+            "short": 3
+          },
+          "total_variation": 0.10609857978279028
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-5": 35,
+            "3-4": 31,
+            "4-4": 57,
+            "2-7": 6,
+            "5-3": 28,
+            "2-5": 9,
+            "1-7": 3,
+            "4-3": 43,
+            "3-6": 17,
+            "6-3": 17,
+            "5-2": 18,
+            "5-4": 38,
+            "1-6": 3,
+            "4-0": 1,
+            "3-2": 8,
+            "3-5": 31,
+            "2-4": 16,
+            "2-6": 12,
+            "2-3": 3,
+            "3-3": 16,
+            "4-2": 13,
+            "7-1": 2,
+            "1-5": 4,
+            "6-2": 7,
+            "8-1": 2,
+            "6-1": 2,
+            "4-1": 4,
+            "7-0": 1,
+            "5-1": 4,
+            "7-2": 2,
+            "1-4": 2,
+            "1-8": 1,
+            "2-1": 1
+          },
+          "missing_counts": {
+            "5-5": 12,
+            "4-6": 12,
+            "5-6": 8,
+            "6-5": 4,
+            "4-7": 2,
+            "6-4": 9,
+            "7-3": 2,
+            "3-7": 5,
+            "3-8": 2,
+            "5-4": 1,
+            "2-8": 4,
+            "8-3": 1,
+            "6-3": 1
+          },
+          "total_variation": 0.9682539682539683
+        }
+      }
+    },
+    "void_defender_diamonds_5_3": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "total_trumps": {
+          "evaluable_mean": 9,
+          "missing_mean": 9,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 4.483870967741935,
+          "missing_mean": 1,
+          "missing_minus_evaluable": -3.483870967741935,
+          "standardized_difference": -6.630478933183652,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8407258064516129,
+          "missing_mean": 1.75,
+          "missing_minus_evaluable": 0.9092741935483871,
+          "standardized_difference": 1.5064204740767226,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "hcp_N": {
+          "evaluable_mean": 8.39516129032258,
+          "missing_mean": 14.5,
+          "missing_minus_evaluable": 6.10483870967742,
+          "standardized_difference": 1.8566948120223208,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.274193548387097,
+          "missing_mean": 2.5,
+          "missing_minus_evaluable": 0.22580645161290303,
+          "standardized_difference": 0.25133596788666157,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_N_D": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_N_H": {
+          "evaluable_mean": 1.7258064516129032,
+          "missing_mean": 1.5,
+          "missing_minus_evaluable": -0.22580645161290325,
+          "standardized_difference": -0.2513359678866618,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_N_S": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.965725806451612,
+          "missing_mean": 9.5,
+          "missing_minus_evaluable": -1.465725806451612,
+          "standardized_difference": -0.34831082526328244,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_E_C": {
+          "evaluable_mean": 4.227822580645161,
+          "missing_mean": 4.5,
+          "missing_minus_evaluable": 0.27217741935483897,
+          "standardized_difference": 0.2812161316069602,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_E_D": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.5201612903225805,
+          "missing_mean": 3.75,
+          "missing_minus_evaluable": 0.22983870967741948,
+          "standardized_difference": 0.26074057103249954,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.252016129032258,
+          "missing_mean": 1.75,
+          "missing_minus_evaluable": -0.502016129032258,
+          "standardized_difference": -0.7183358140745226,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_S_D": {
+          "evaluable_mean": 0,
+          "missing_mean": 0,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_S_H": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.639112903225806,
+          "missing_mean": 6,
+          "missing_minus_evaluable": -4.639112903225806,
+          "standardized_difference": -1.3744971598104265,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.497983870967742,
+          "missing_mean": 3,
+          "missing_minus_evaluable": -0.497983870967742,
+          "standardized_difference": -0.5222378315334768,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_W_D": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_W_H": {
+          "evaluable_mean": 2.754032258064516,
+          "missing_mean": 2.75,
+          "missing_minus_evaluable": -0.004032258064516014,
+          "standardized_difference": -0.004207720550119342,
+          "evaluable_n": 496,
+          "missing_n": 4
+        },
+        "length_W_S": {
+          "evaluable_mean": 1.747983870967742,
+          "missing_mean": 2.25,
+          "missing_minus_evaluable": 0.502016129032258,
+          "standardized_difference": 0.7183358140745226,
+          "evaluable_n": 496,
+          "missing_n": 4
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "void": 496
+          },
+          "missing_counts": {
+            "void": 4
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 496
+          },
+          "missing_counts": {
+            "D": 4
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-4": 496
+          },
+          "missing_counts": {
+            "5-4": 4
+          },
+          "total_variation": 0.0
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 496
+          },
+          "missing_counts": {
+            "long": 4
+          },
+          "total_variation": 0.0
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "3-5": 496
+          },
+          "missing_counts": {
+            "3-5": 4
+          },
+          "total_variation": 0.0
+        }
+      }
+    },
+    "void_support_eq4": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "total_trumps": {
+          "evaluable_mean": 9,
+          "missing_mean": 9,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 4.187725631768953,
+          "missing_mean": 2.2690582959641254,
+          "missing_minus_evaluable": -1.9186673358048276,
+          "standardized_difference": -2.2679231807475357,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8375451263537906,
+          "missing_mean": 1.0044843049327354,
+          "missing_minus_evaluable": 0.1669391785789448,
+          "standardized_difference": 0.21965887022933803,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "hcp_N": {
+          "evaluable_mean": 8.548736462093864,
+          "missing_mean": 9.887892376681615,
+          "missing_minus_evaluable": 1.3391559145877512,
+          "standardized_difference": 0.3672286054181172,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.4476534296028882,
+          "missing_mean": 3.5426008968609866,
+          "missing_minus_evaluable": 1.0949474672580983,
+          "standardized_difference": 1.0426805091737716,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.602888086642599,
+          "missing_mean": 2.587443946188341,
+          "missing_minus_evaluable": -2.015444140454258,
+          "standardized_difference": -2.8399823240178113,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_N_H": {
+          "evaluable_mean": 1.9494584837545126,
+          "missing_mean": 2.8699551569506725,
+          "missing_minus_evaluable": 0.9204966731961599,
+          "standardized_difference": 0.9104248307286624,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_N_S": {
+          "evaluable_mean": 4,
+          "missing_mean": 4,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.653429602888087,
+          "missing_mean": 9.964125560538116,
+          "missing_minus_evaluable": -0.6893040423499706,
+          "standardized_difference": -0.1755532300486695,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.7870036101083033,
+          "missing_mean": 3.282511210762332,
+          "missing_minus_evaluable": -0.5044923993459713,
+          "standardized_difference": -0.3927398610564164,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_E_D": {
+          "evaluable_mean": 4.187725631768953,
+          "missing_mean": 5.076233183856503,
+          "missing_minus_evaluable": 0.8885075520875496,
+          "standardized_difference": 0.6931644838346864,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.0577617328519855,
+          "missing_mean": 2.6457399103139014,
+          "missing_minus_evaluable": -0.41202182253808406,
+          "standardized_difference": -0.3358696381489051,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_E_S": {
+          "evaluable_mean": 1.967509025270758,
+          "missing_mean": 1.9955156950672646,
+          "missing_minus_evaluable": 0.028006669796506456,
+          "standardized_difference": 0.03033206096778745,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_S_D": {
+          "evaluable_mean": 0,
+          "missing_mean": 0,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_S_H": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.797833935018051,
+          "missing_mean": 10.147982062780269,
+          "missing_minus_evaluable": -0.6498518722377824,
+          "standardized_difference": -0.1776040773719929,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.765342960288809,
+          "missing_mean": 3.1748878923766815,
+          "missing_minus_evaluable": -0.5904550679121274,
+          "standardized_difference": -0.50804022143756,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_W_D": {
+          "evaluable_mean": 4.209386281588448,
+          "missing_mean": 5.336322869955157,
+          "missing_minus_evaluable": 1.1269365883667088,
+          "standardized_difference": 0.8916334814452817,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_W_H": {
+          "evaluable_mean": 2.9927797833935017,
+          "missing_mean": 2.484304932735426,
+          "missing_minus_evaluable": -0.5084748506580756,
+          "standardized_difference": -0.4198067227523004,
+          "evaluable_n": 277,
+          "missing_n": 223
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.032490974729242,
+          "missing_mean": 2.004484304932735,
+          "missing_minus_evaluable": -0.028006669796506678,
+          "standardized_difference": -0.03033206096778769,
+          "evaluable_n": 277,
+          "missing_n": 223
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "void": 277
+          },
+          "missing_counts": {
+            "void": 223
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 277
+          },
+          "missing_counts": {
+            "D": 223
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-4": 277
+          },
+          "missing_counts": {
+            "5-4": 223
+          },
+          "total_variation": 0.0
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 277
+          },
+          "missing_counts": {
+            "long": 223
+          },
+          "total_variation": 0.0
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-5": 42,
+            "5-4": 50,
+            "6-2": 12,
+            "5-3": 20,
+            "4-4": 31,
+            "3-5": 26,
+            "4-3": 8,
+            "2-5": 6,
+            "6-3": 23,
+            "3-6": 19,
+            "2-7": 6,
+            "3-4": 10,
+            "2-6": 10,
+            "5-2": 5,
+            "7-2": 4,
+            "2-3": 1,
+            "7-1": 1,
+            "1-7": 2,
+            "3-3": 1
+          },
+          "missing_counts": {
+            "5-5": 40,
+            "4-6": 30,
+            "3-6": 2,
+            "3-8": 1,
+            "7-3": 8,
+            "7-5": 6,
+            "5-6": 24,
+            "6-6": 3,
+            "8-2": 4,
+            "6-4": 25,
+            "4-7": 13,
+            "8-3": 3,
+            "6-5": 21,
+            "7-4": 8,
+            "5-7": 5,
+            "4-5": 2,
+            "3-7": 13,
+            "5-4": 3,
+            "1-9": 1,
+            "4-4": 1,
+            "4-8": 2,
+            "2-8": 4,
+            "9-1": 1,
+            "2-9": 1,
+            "2-7": 1,
+            "6-3": 1
+          },
+          "total_variation": 0.9551569506726457
+        }
+      }
+    },
+    "void_support_ge3": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "partner_trumps": {
+          "evaluable_mean": 3.4249201277955272,
+          "missing_mean": 3.748663101604278,
+          "missing_minus_evaluable": 0.3237429738087507,
+          "standardized_difference": 0.4268452901996285,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "total_trumps": {
+          "evaluable_mean": 8.424920127795527,
+          "missing_mean": 8.748663101604278,
+          "missing_minus_evaluable": 0.3237429738087503,
+          "standardized_difference": 0.4268452901996279,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 4.402555910543131,
+          "missing_mean": 2.4171122994652405,
+          "missing_minus_evaluable": -1.9854436110778906,
+          "standardized_difference": -2.223548071403246,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8785942492012779,
+          "missing_mean": 1.0053475935828877,
+          "missing_minus_evaluable": 0.1267533443816098,
+          "standardized_difference": 0.15896777397815776,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.20447284345048,
+          "missing_mean": 9.989304812834225,
+          "missing_minus_evaluable": 0.7848319693837453,
+          "standardized_difference": 0.20555470166929254,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.533546325878594,
+          "missing_mean": 3.6310160427807485,
+          "missing_minus_evaluable": 1.0974697169021543,
+          "standardized_difference": 0.9479248526142902,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.891373801916933,
+          "missing_mean": 2.7433155080213902,
+          "missing_minus_evaluable": -2.1480582938955424,
+          "standardized_difference": -2.8316339568944957,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.1501597444089455,
+          "missing_mean": 2.877005347593583,
+          "missing_minus_evaluable": 0.7268456031846373,
+          "standardized_difference": 0.6486508012432888,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_N_S": {
+          "evaluable_mean": 3.4249201277955272,
+          "missing_mean": 3.748663101604278,
+          "missing_minus_evaluable": 0.3237429738087507,
+          "standardized_difference": 0.4268452901996285,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.431309904153355,
+          "missing_mean": 10.122994652406417,
+          "missing_minus_evaluable": -0.3083152517469383,
+          "standardized_difference": -0.07542259000151819,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.779552715654952,
+          "missing_mean": 3.106951871657754,
+          "missing_minus_evaluable": -0.672600843997198,
+          "standardized_difference": -0.5182343346018042,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_E_D": {
+          "evaluable_mean": 3.990415335463259,
+          "missing_mean": 5.133689839572193,
+          "missing_minus_evaluable": 1.1432745041089336,
+          "standardized_difference": 0.8647198490122864,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_E_H": {
+          "evaluable_mean": 2.9712460063897765,
+          "missing_mean": 2.6149732620320854,
+          "missing_minus_evaluable": -0.3562727443576912,
+          "standardized_difference": -0.29937428152573486,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.258785942492013,
+          "missing_mean": 2.144385026737968,
+          "missing_minus_evaluable": -0.11440091575404487,
+          "standardized_difference": -0.11239394826193685,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_S_D": {
+          "evaluable_mean": 0,
+          "missing_mean": 0,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_S_H": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.364217252396166,
+          "missing_mean": 9.88770053475936,
+          "missing_minus_evaluable": -0.47651671763680703,
+          "standardized_difference": -0.12013453919585353,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.686900958466454,
+          "missing_mean": 3.2620320855614975,
+          "missing_minus_evaluable": -0.42486887290495634,
+          "standardized_difference": -0.3237041798798661,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_W_D": {
+          "evaluable_mean": 4.118210862619808,
+          "missing_mean": 5.122994652406417,
+          "missing_minus_evaluable": 1.0047837897866092,
+          "standardized_difference": 0.7507246750152374,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_W_H": {
+          "evaluable_mean": 2.878594249201278,
+          "missing_mean": 2.5080213903743314,
+          "missing_minus_evaluable": -0.37057285882694657,
+          "standardized_difference": -0.299783437319255,
+          "evaluable_n": 313,
+          "missing_n": 187
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.31629392971246,
+          "missing_mean": 2.106951871657754,
+          "missing_minus_evaluable": -0.20934205805470585,
+          "standardized_difference": -0.20425636022937446,
+          "evaluable_n": 313,
+          "missing_n": 187
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "void": 313
+          },
+          "missing_counts": {
+            "void": 187
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 313
+          },
+          "missing_counts": {
+            "D": 187
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-3": 206,
+            "5-4": 82,
+            "5-5": 24,
+            "5-6": 1
+          },
+          "missing_counts": {
+            "5-3": 89,
+            "5-4": 64,
+            "5-5": 27,
+            "5-6": 6,
+            "5-7": 1
+          },
+          "total_variation": 0.18221113597922467
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 288,
+            "equal": 24,
+            "short": 1
+          },
+          "missing_counts": {
+            "long": 153,
+            "equal": 27,
+            "short": 7
+          },
+          "total_variation": 0.10194597734533832
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-5": 38,
+            "3-5": 34,
+            "2-5": 8,
+            "5-4": 38,
+            "3-4": 18,
+            "5-3": 26,
+            "4-3": 16,
+            "3-6": 22,
+            "3-3": 5,
+            "4-2": 8,
+            "6-3": 18,
+            "4-4": 31,
+            "2-4": 5,
+            "2-6": 10,
+            "7-1": 3,
+            "8-0": 1,
+            "5-2": 6,
+            "2-7": 6,
+            "1-6": 2,
+            "1-7": 1,
+            "6-2": 10,
+            "6-1": 2,
+            "7-2": 2,
+            "5-1": 1,
+            "0-7": 1,
+            "1-8": 1
+          },
+          "missing_counts": {
+            "5-5": 41,
+            "7-3": 12,
+            "5-6": 12,
+            "4-6": 28,
+            "6-4": 26,
+            "3-7": 12,
+            "7-4": 12,
+            "1-9": 2,
+            "3-8": 3,
+            "6-3": 2,
+            "8-3": 1,
+            "8-2": 2,
+            "6-5": 12,
+            "3-6": 1,
+            "6-6": 3,
+            "4-7": 5,
+            "2-8": 3,
+            "9-1": 1,
+            "5-4": 2,
+            "7-2": 1,
+            "4-8": 1,
+            "8-4": 1,
+            "4-5": 3,
+            "7-5": 1
+          },
+          "total_variation": 0.9518716577540107
+        }
+      }
+    },
+    "void_support_ge4": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "partner_trumps": {
+          "evaluable_mean": 4.217391304347826,
+          "missing_mean": 4.459821428571429,
+          "missing_minus_evaluable": 0.24243012422360266,
+          "standardized_difference": 0.43701887203890744,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "total_trumps": {
+          "evaluable_mean": 9.217391304347826,
+          "missing_mean": 9.459821428571429,
+          "missing_minus_evaluable": 0.24243012422360266,
+          "standardized_difference": 0.43701887203890744,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 4.11231884057971,
+          "missing_mean": 2.299107142857143,
+          "missing_minus_evaluable": -1.8132116977225672,
+          "standardized_difference": -2.0438441386010924,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.8478260869565217,
+          "missing_mean": 0.9508928571428571,
+          "missing_minus_evaluable": 0.10306677018633537,
+          "standardized_difference": 0.13435940824141912,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "hcp_N": {
+          "evaluable_mean": 8.409420289855072,
+          "missing_mean": 9.058035714285714,
+          "missing_minus_evaluable": 0.6486154244306412,
+          "standardized_difference": 0.1796152792782246,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_N_C": {
+          "evaluable_mean": 2.2971014492753623,
+          "missing_mean": 3.25,
+          "missing_minus_evaluable": 0.9528985507246377,
+          "standardized_difference": 0.8621987615365427,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_N_D": {
+          "evaluable_mean": 4.673913043478261,
+          "missing_mean": 2.5625,
+          "missing_minus_evaluable": -2.1114130434782608,
+          "standardized_difference": -2.684531035945301,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_N_H": {
+          "evaluable_mean": 1.8115942028985508,
+          "missing_mean": 2.7276785714285716,
+          "missing_minus_evaluable": 0.9160843685300208,
+          "standardized_difference": 0.9260209678148774,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_N_S": {
+          "evaluable_mean": 4.217391304347826,
+          "missing_mean": 4.459821428571429,
+          "missing_minus_evaluable": 0.24243012422360266,
+          "standardized_difference": 0.43701887203890744,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.764492753623188,
+          "missing_mean": 10.330357142857142,
+          "missing_minus_evaluable": -0.43413561076604523,
+          "standardized_difference": -0.11452407104117657,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.858695652173913,
+          "missing_mean": 3.361607142857143,
+          "missing_minus_evaluable": -0.4970885093167703,
+          "standardized_difference": -0.38687454607927385,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_E_D": {
+          "evaluable_mean": 4.159420289855072,
+          "missing_mean": 5.294642857142857,
+          "missing_minus_evaluable": 1.1352225672877845,
+          "standardized_difference": 0.839147850499587,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_E_H": {
+          "evaluable_mean": 3.079710144927536,
+          "missing_mean": 2.611607142857143,
+          "missing_minus_evaluable": -0.46810300207039335,
+          "standardized_difference": -0.38297640691618495,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_E_S": {
+          "evaluable_mean": 1.9021739130434783,
+          "missing_mean": 1.7321428571428572,
+          "missing_minus_evaluable": -0.17003105590062106,
+          "standardized_difference": -0.1886281702973823,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_S_D": {
+          "evaluable_mean": 0,
+          "missing_mean": 0,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_S_H": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "hcp_W": {
+          "evaluable_mean": 10.826086956521738,
+          "missing_mean": 10.611607142857142,
+          "missing_minus_evaluable": -0.214479813664596,
+          "standardized_difference": -0.0536757644876761,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.8442028985507246,
+          "missing_mean": 3.388392857142857,
+          "missing_minus_evaluable": -0.4558100414078674,
+          "standardized_difference": -0.3637817191858503,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_W_D": {
+          "evaluable_mean": 4.166666666666667,
+          "missing_mean": 5.142857142857143,
+          "missing_minus_evaluable": 0.9761904761904763,
+          "standardized_difference": 0.7122255938136016,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_W_H": {
+          "evaluable_mean": 3.108695652173913,
+          "missing_mean": 2.6607142857142856,
+          "missing_minus_evaluable": -0.4479813664596275,
+          "standardized_difference": -0.36892280222477153,
+          "evaluable_n": 276,
+          "missing_n": 224
+        },
+        "length_W_S": {
+          "evaluable_mean": 1.8804347826086956,
+          "missing_mean": 1.8080357142857142,
+          "missing_minus_evaluable": -0.07239906832298137,
+          "standardized_difference": -0.07907550866585336,
+          "evaluable_n": 276,
+          "missing_n": 224
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "void": 276
+          },
+          "missing_counts": {
+            "void": 224
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 276
+          },
+          "missing_counts": {
+            "D": 224
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-5": 50,
+            "5-4": 221,
+            "5-6": 5
+          },
+          "missing_counts": {
+            "5-6": 18,
+            "5-5": 67,
+            "5-4": 139
+          },
+          "total_variation": 0.18018892339544512
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "equal": 50,
+            "long": 221,
+            "short": 5
+          },
+          "missing_counts": {
+            "short": 18,
+            "equal": 67,
+            "long": 139
+          },
+          "total_variation": 0.18018892339544512
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-5": 35,
+            "5-3": 25,
+            "5-4": 40,
+            "4-3": 12,
+            "4-4": 30,
+            "2-6": 9,
+            "3-5": 25,
+            "7-1": 3,
+            "3-4": 12,
+            "3-6": 22,
+            "6-3": 21,
+            "5-2": 3,
+            "6-2": 6,
+            "2-5": 5,
+            "1-8": 4,
+            "7-2": 8,
+            "4-2": 1,
+            "8-1": 1,
+            "2-4": 1,
+            "2-7": 5,
+            "5-1": 2,
+            "6-1": 2,
+            "1-6": 2,
+            "1-7": 1,
+            "3-3": 1
+          },
+          "missing_counts": {
+            "6-6": 4,
+            "6-5": 16,
+            "4-8": 2,
+            "4-6": 29,
+            "5-4": 2,
+            "5-6": 19,
+            "4-7": 11,
+            "3-6": 1,
+            "5-5": 36,
+            "7-4": 8,
+            "7-3": 18,
+            "8-3": 4,
+            "7-5": 6,
+            "3-7": 12,
+            "6-4": 28,
+            "4-5": 6,
+            "3-8": 1,
+            "9-2": 1,
+            "5-7": 4,
+            "2-8": 2,
+            "9-3": 2,
+            "8-4": 1,
+            "2-9": 1,
+            "8-2": 3,
+            "4-9": 1,
+            "6-3": 2,
+            "4-4": 1,
+            "7-6": 1,
+            "6-7": 1,
+            "5-8": 1
+          },
+          "total_variation": 0.9464285714285714
+        }
+      }
+    },
+    "void_unknown_fit": {
+      "numeric": {
+        "own_trumps": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "partner_trumps": {
+          "evaluable_mean": 2.4873239436619716,
+          "missing_mean": 3.103448275862069,
+          "missing_minus_evaluable": 0.6161243322000973,
+          "standardized_difference": 0.5656918591998535,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "total_trumps": {
+          "evaluable_mean": 7.487323943661972,
+          "missing_mean": 8.10344827586207,
+          "missing_minus_evaluable": 0.6161243322000978,
+          "standardized_difference": 0.5656918591998539,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "ruffable_loser_proxy": {
+          "evaluable_mean": 4.495774647887324,
+          "missing_mean": 2.4551724137931035,
+          "missing_minus_evaluable": -2.0406022340942207,
+          "standardized_difference": -2.1677990497249513,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "side_ace_entries": {
+          "evaluable_mean": 0.9971830985915493,
+          "missing_mean": 1,
+          "missing_minus_evaluable": 0.0028169014084507005,
+          "standardized_difference": 0.0034587841841970577,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "hcp_N": {
+          "evaluable_mean": 9.946478873239437,
+          "missing_mean": 10.2,
+          "missing_minus_evaluable": 0.25352112676056215,
+          "standardized_difference": 0.06377460292574098,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_N_C": {
+          "evaluable_mean": 3.104225352112676,
+          "missing_mean": 3.882758620689655,
+          "missing_minus_evaluable": 0.7785332685769792,
+          "standardized_difference": 0.6642004919298901,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_N_D": {
+          "evaluable_mean": 5.014084507042254,
+          "missing_mean": 2.668965517241379,
+          "missing_minus_evaluable": -2.345118989800875,
+          "standardized_difference": -2.865902698459913,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_N_H": {
+          "evaluable_mean": 2.3943661971830985,
+          "missing_mean": 3.3448275862068964,
+          "missing_minus_evaluable": 0.9504613890237978,
+          "standardized_difference": 0.7829780757284706,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_N_S": {
+          "evaluable_mean": 2.4873239436619716,
+          "missing_mean": 3.103448275862069,
+          "missing_minus_evaluable": 0.6161243322000973,
+          "standardized_difference": 0.5656918591998535,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "hcp_E": {
+          "evaluable_mean": 10.174647887323944,
+          "missing_mean": 9.572413793103449,
+          "missing_minus_evaluable": -0.6022340942204956,
+          "standardized_difference": -0.159407474766424,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_E_C": {
+          "evaluable_mean": 3.515492957746479,
+          "missing_mean": 3.1379310344827585,
+          "missing_minus_evaluable": -0.3775619232637206,
+          "standardized_difference": -0.3044266139088647,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_E_D": {
+          "evaluable_mean": 3.9971830985915493,
+          "missing_mean": 4.917241379310345,
+          "missing_minus_evaluable": 0.9200582807187954,
+          "standardized_difference": 0.7018589121087065,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_E_H": {
+          "evaluable_mean": 2.676056338028169,
+          "missing_mean": 2.2896551724137932,
+          "missing_minus_evaluable": -0.38640116561437576,
+          "standardized_difference": -0.34551780122917325,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_E_S": {
+          "evaluable_mean": 2.8112676056338026,
+          "missing_mean": 2.6551724137931036,
+          "missing_minus_evaluable": -0.15609519184069898,
+          "standardized_difference": -0.13902112166998498,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "hcp_S": {
+          "evaluable_mean": 10,
+          "missing_mean": 10,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_S_C": {
+          "evaluable_mean": 3,
+          "missing_mean": 3,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_S_D": {
+          "evaluable_mean": 0,
+          "missing_mean": 0,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_S_H": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_S_S": {
+          "evaluable_mean": 5,
+          "missing_mean": 5,
+          "missing_minus_evaluable": 0,
+          "standardized_difference": null,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "hcp_W": {
+          "evaluable_mean": 9.87887323943662,
+          "missing_mean": 10.227586206896552,
+          "missing_minus_evaluable": 0.34871296745993163,
+          "standardized_difference": 0.08917842307306871,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_W_C": {
+          "evaluable_mean": 3.380281690140845,
+          "missing_mean": 2.9793103448275864,
+          "missing_minus_evaluable": -0.4009713453132586,
+          "standardized_difference": -0.31579594297985014,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_W_D": {
+          "evaluable_mean": 3.988732394366197,
+          "missing_mean": 5.413793103448276,
+          "missing_minus_evaluable": 1.4250607090820786,
+          "standardized_difference": 1.1067655747492937,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_W_H": {
+          "evaluable_mean": 2.9295774647887325,
+          "missing_mean": 2.3655172413793104,
+          "missing_minus_evaluable": -0.5640602234094221,
+          "standardized_difference": -0.47067047324503986,
+          "evaluable_n": 355,
+          "missing_n": 145
+        },
+        "length_W_S": {
+          "evaluable_mean": 2.7014084507042253,
+          "missing_mean": 2.2413793103448274,
+          "missing_minus_evaluable": -0.4600291403593979,
+          "standardized_difference": -0.41391593098640495,
+          "evaluable_n": 355,
+          "missing_n": 145
+        }
+      },
+      "categorical": {
+        "shortness": {
+          "evaluable_counts": {
+            "void": 355
+          },
+          "missing_counts": {
+            "void": 145
+          },
+          "total_variation": 0.0
+        },
+        "studied_suit": {
+          "evaluable_counts": {
+            "D": 355
+          },
+          "missing_counts": {
+            "D": 145
+          },
+          "total_variation": 0.0
+        },
+        "trump_structure": {
+          "evaluable_counts": {
+            "5-2": 117,
+            "5-1": 60,
+            "5-3": 109,
+            "5-4": 54,
+            "5-0": 6,
+            "5-5": 8,
+            "5-6": 1
+          },
+          "missing_counts": {
+            "5-3": 50,
+            "5-2": 37,
+            "5-4": 34,
+            "5-5": 14,
+            "5-1": 8,
+            "5-6": 2
+          },
+          "total_variation": 0.205148130160272
+        },
+        "trump_role": {
+          "evaluable_counts": {
+            "long": 346,
+            "equal": 8,
+            "short": 1
+          },
+          "missing_counts": {
+            "long": 129,
+            "equal": 14,
+            "short": 2
+          },
+          "total_variation": 0.08499271491015058
+        },
+        "defender_split": {
+          "evaluable_counts": {
+            "4-3": 30,
+            "3-6": 21,
+            "4-5": 51,
+            "4-4": 49,
+            "3-3": 9,
+            "2-6": 6,
+            "3-5": 25,
+            "3-4": 17,
+            "3-2": 2,
+            "5-2": 11,
+            "6-3": 16,
+            "5-3": 27,
+            "2-5": 14,
+            "2-7": 5,
+            "2-3": 3,
+            "4-2": 5,
+            "5-4": 31,
+            "6-2": 12,
+            "7-2": 5,
+            "6-1": 2,
+            "5-1": 2,
+            "1-7": 3,
+            "7-1": 2,
+            "1-5": 3,
+            "1-4": 2,
+            "1-6": 1,
+            "8-0": 1
+          },
+          "missing_counts": {
+            "4-6": 25,
+            "3-7": 11,
+            "6-4": 12,
+            "6-5": 14,
+            "2-8": 6,
+            "7-3": 8,
+            "2-7": 1,
+            "5-7": 1,
+            "5-6": 13,
+            "5-5": 27,
+            "3-6": 2,
+            "4-7": 8,
+            "9-2": 1,
+            "7-5": 1,
+            "7-4": 6,
+            "8-3": 1,
+            "8-2": 1,
+            "6-6": 3,
+            "7-2": 1,
+            "4-5": 1,
+            "3-8": 1,
+            "5-4": 1
+          },
+          "total_variation": 0.9586206896551724
+        }
+      }
+    }
+  },
+  "wall_seconds": 1.895375900203362,
+  "dds_calls": 0,
+  "proof": "Required studied spots, partner terminal length >=2, and summed own removable side spots are necessary and sufficient under fixed honors/trumps/defenders and own side-length floors. Nonminimal same-suit transpositions cannot repair their violation.",
+  "missingness_conclusion": "Structural deterministic selection. Not a missing-at-random assertion."
+}

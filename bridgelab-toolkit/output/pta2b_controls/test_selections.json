@@ -1,0 +1,31 @@
+{
+  "evaluation_probability": [
+    "tests\\test_bridge_hand_evaluation.py",
+    "tests\\test_bridge_phase13e_probability_evidence_adapter.py",
+    "tests\\test_bridge_phase13f_probability_engine_architecture.py",
+    "tests\\test_bridge_phase18c_probability_input_contracts.py",
+    "tests\\test_bridge_phase18e_probability_value_policy.py",
+    "tests\\test_play_probability_category_repair.py"
+  ],
+  "auction_context_profile": [
+    "tests\\test_bridge_auction.py",
+    "tests\\test_bridge_auction_simulation.py",
+    "tests\\test_bridge_json_cli_bidding_context_support.py",
+    "tests\\test_bridge_phase29c_controlled_auction_entry.py",
+    "tests\\test_bridge_phase29d_auction_table_display.py",
+    "tests\\test_bridge_phase29g_full_auction_simulation.py",
+    "tests\\test_bridge_phase29h_full_auction_coverage_report.py",
+    "tests\\test_bridge_phase29x_partnership_profiles.py",
+    "tests\\test_bridge_phase29y_nisim_nily_partnership_profile.py",
+    "tests\\test_bridge_phase30a_profile_compiler.py",
+    "tests\\test_bridge_phase30c_profile_opening_adapter.py",
+    "tests\\test_bridge_phase30d_profile_opening_production_gate.py",
+    "tests\\test_bridge_phase30f_profile_opening_current_readiness.py",
+    "tests\\test_bridge_system_profiles.py"
+  ],
+  "pt1_family": [
+    "tests\\test_bridge_pt1_playing_trick_calibration.py",
+    "tests\\test_bridge_pt1a_solver.py",
+    "tests\\test_bridge_pt1b_shortness.py"
+  ]
+}

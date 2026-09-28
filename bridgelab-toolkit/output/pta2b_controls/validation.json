@@ -1,0 +1,57 @@
+{
+  "checkpoint": "c23cfc8f986c625f62248d6295e85641c9d43da4",
+  "branch": "codex/phase18b",
+  "working_directory": "C:\\Users\\nisim\\Documents\\BridgeLab-phase18b-worktree\\bridgelab-toolkit",
+  "historical": {
+    "result": "2673 passed, 9 skipped, 143 subtests passed in 1189.17s (0:19:49)",
+    "exit_code": 0
+  },
+  "tests": {
+    "focused_python314": {
+      "passed": 173,
+      "skipped": 4,
+      "exit_code": 0
+    },
+    "dds_focused_python312": {
+      "passed": 56,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    "evaluation_probability": {
+      "passed": 111,
+      "exit_code": 0
+    },
+    "auction_context_profile": {
+      "passed": 285,
+      "exit_code": 0
+    },
+    "pt1_family": {
+      "passed": 38,
+      "skipped": 9,
+      "exit_code": 0
+    }
+  },
+  "known_runtime_limitation": {
+    "initial_python312_combined": {
+      "passed": 170,
+      "failed": 7,
+      "exit_code": 1
+    },
+    "independent_baseline_reproduction": {
+      "failed": 1,
+      "exit_code": 1
+    },
+    "cause": "Unchanged probability_questions.py:149 zero-argument super in slotted dataclass",
+    "production_fix_attempted": false
+  },
+  "production_changed": false,
+  "routes_before": 45,
+  "routes_after": 45,
+  "recommendation": "PT-A2C needed for further counterfactual methodology",
+  "source_sha256": {
+    "bridge/counterfactual_calibration.py": "c0ab5953b5408832a3188cdeb7c6d7f492cfb4e0e4f9ff9069efdb548648d840",
+    "benchmarks/pta2b_control_validation.py": "7046494484a65535532fe0614df2c07aa701f6c920627547ca4479597d916dfe",
+    "tests/test_bridge_pta2b_counterfactual_calibration.py": "5caacacc3b979d70a85c16840708fa29cbf36178c20c72cb0d55b8ffeba8bf3d"
+  },
+  "notes": "Overlapping selections must not be summed. Core/tests passed before summary-only benchmark finalization; benchmark AST and saved-result consistency were checked afterward."
+}
