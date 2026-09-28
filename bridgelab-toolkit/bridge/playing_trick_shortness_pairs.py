@@ -115,9 +115,9 @@ def _preserved(source: Deal, control: Deal, trump: Suit) -> bool:
     return True
 
 
-def singleton_candidates(deal: Deal, short_hand: Seat, studied_suit: Suit,
-                         trump: Suit) -> tuple[tuple[Deal, CardExchange], ...]:
-    """Enumerate all legal one-step controls in stable suit/rank order.
+def shortness_step_candidates(deal: Deal, short_hand: Seat, studied_suit: Suit,
+                              trump: Suit) -> tuple[tuple[Deal, CardExchange], ...]:
+    """Enumerate one PT-1B spot exchange, also allowing a void first step.
 
     Compensation suit and opposite studied holding remain at least doubletons,
     so the exchange does not create another studied shortness exposure.
@@ -125,7 +125,7 @@ def singleton_candidates(deal: Deal, short_hand: Seat, studied_suit: Suit,
     if short_hand not in (Seat.NORTH, Seat.SOUTH) or studied_suit is trump:
         raise ValueError("partnership short hand and nontrump suit required")
     other = short_hand.partner()
-    if deal.hand(short_hand).length(studied_suit) not in (1, 2):
+    if deal.hand(short_hand).length(studied_suit) not in (0, 1, 2):
         return ()
     if deal.hand(other).length(studied_suit) < 3:
         return ()
@@ -139,6 +139,16 @@ def singleton_candidates(deal: Deal, short_hand: Seat, studied_suit: Suit,
                 if _preserved(deal, control, trump):
                     results.append((control, exchange))
     return tuple(results)
+
+
+def singleton_candidates(deal: Deal, short_hand: Seat, studied_suit: Suit,
+                         trump: Suit) -> tuple[tuple[Deal, CardExchange], ...]:
+    """Original PT-1B singleton/doubleton API, with unchanged admissibility."""
+    if short_hand not in (Seat.NORTH, Seat.SOUTH) or studied_suit is trump:
+        raise ValueError("partnership short hand and nontrump suit required")
+    if deal.hand(short_hand).length(studied_suit) not in (1, 2):
+        return ()
+    return shortness_step_candidates(deal, short_hand, studied_suit, trump)
 
 
 def select_singleton_control(case: CalibrationCase, *, length: int,

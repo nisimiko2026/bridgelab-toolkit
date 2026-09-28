@@ -1,0 +1,37 @@
+{
+  "identical_partial_information_results": true,
+  "source_worlds": [
+    "N:J953.5.AK954.K43|E:76.AKQT.T82.AQ95|S:AKQ42.9876.3.J76|W:T8.J432.QJ76.T82",
+    "N:J98.Q2.KQT97.953|E:T753.KT543.2.K84|S:AKQ42.9876.3.J76|W:6.AJ.AJ8654.AQT2"
+  ],
+  "state_fingerprint": "62a4853d6a69382e62846ccc7342295a639976fb252ae17a5ff21e603af596cb",
+  "config": {
+    "sampling": {
+      "requested": 32,
+      "max_proposals": 200000,
+      "seed": 83000,
+      "likelihoods": []
+    },
+    "control_seed": 3202,
+    "solver_configuration": [
+      [
+        "implementation",
+        "endplay/DDS"
+      ],
+      [
+        "endplay_version",
+        "0.5.12"
+      ]
+    ]
+  },
+  "partial_mean": 0.3333333333333333,
+  "sampled": 32,
+  "evaluable": 27,
+  "later_realized_targets": [
+    0,
+    -1
+  ],
+  "dds_calls": 112,
+  "dds_failures": 0,
+  "wall_seconds": 4.570280899992213
+}
