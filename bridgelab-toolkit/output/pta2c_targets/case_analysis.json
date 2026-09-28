@@ -1,0 +1,1317 @@
+{
+  "agreement": {
+    "source_deal_id": "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+    "perspective": "S",
+    "studied_suit": 1,
+    "trump": 3,
+    "declarer": "N",
+    "configuration": {
+      "reference_draws": 8,
+      "matching_pool": 32,
+      "matched_controls": 4,
+      "control_seed": 12002,
+      "priority": "defenders_then_partner",
+      "exchange_controls": 8
+    },
+    "source_solver": {
+      "implementation": "endplay/DDS",
+      "version": "0.5.12",
+      "deal_id": "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+      "declarer": "N",
+      "strain": 3,
+      "opening_lead": null,
+      "status": "success",
+      "maximum_declarer_tricks": 9,
+      "elapsed_seconds": 0.0,
+      "error": null
+    },
+    "candidates": [
+      {
+        "target": "B_structural_relocation",
+        "exclusions": [],
+        "delta": 0,
+        "source_tricks": 9,
+        "control_mean_tricks": 9,
+        "control_count": 1,
+        "distinct_controls": 1,
+        "candidate_population": 48,
+        "control_trick_sd": null,
+        "finite_reference_se": null,
+        "delta_range": [
+          0,
+          0
+        ],
+        "distances": [
+          [
+            0,
+            2,
+            1,
+            2
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:J976.K9.AK85.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.876.73.J76|W:T853.AQ54.T9.T93",
+        "mean_changed_defender_cards": 0,
+        "partner_studied_lengths": [
+          4
+        ]
+      },
+      {
+        "target": "C_finite_matched_expectation",
+        "exclusions": [],
+        "delta": 0,
+        "source_tricks": 9,
+        "control_mean_tricks": 9,
+        "control_count": 4,
+        "distinct_controls": 4,
+        "candidate_population": 32,
+        "control_trick_sd": 0.816496580927726,
+        "finite_reference_se": null,
+        "delta_range": [
+          -1,
+          1
+        ],
+        "distances": [
+          [
+            2,
+            2,
+            3,
+            1
+          ],
+          [
+            2,
+            4,
+            1,
+            2
+          ],
+          [
+            2,
+            4,
+            1,
+            2
+          ],
+          [
+            2,
+            6,
+            3,
+            2
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:J976.K6.AK875.72|E:-.J872.QJ963.AKQ9|S:AKQ42.95.T4.J865|W:T853.AQT43.2.T43",
+        "mean_changed_defender_cards": 9.25,
+        "partner_studied_lengths": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "target": "D_uniform_conditional_baseline",
+        "exclusions": [],
+        "delta": -0.375,
+        "source_tricks": 9,
+        "control_mean_tricks": 9.375,
+        "control_count": 8,
+        "distinct_controls": 8,
+        "candidate_population": 41031085455360,
+        "control_trick_sd": 0.5175491695067657,
+        "finite_reference_se": 0.18298126367784995,
+        "delta_range": [
+          -1,
+          0
+        ],
+        "distances": [
+          [
+            10,
+            2,
+            3,
+            2
+          ],
+          [
+            4,
+            4,
+            3,
+            2
+          ],
+          [
+            6,
+            2,
+            1,
+            2
+          ],
+          [
+            6,
+            4,
+            1,
+            2
+          ],
+          [
+            4,
+            4,
+            1,
+            2
+          ],
+          [
+            12,
+            4,
+            1,
+            1
+          ],
+          [
+            10,
+            6,
+            3,
+            2
+          ],
+          [
+            8,
+            4,
+            3,
+            2
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:J976.K5.AK93.932|E:-.JT43.QJ6.AKQT75|S:AKQ42.82.T8.J864|W:T853.AQ976.7542.-",
+        "mean_changed_defender_cards": 10.375,
+        "partner_studied_lengths": [
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "support": {
+      "exclusions": [],
+      "physical_assignments": 41031085455360,
+      "own_free_slots": 7,
+      "own_required_studied_spots": 2
+    },
+    "features": [
+      [
+        "defender_split",
+        "5-2"
+      ],
+      [
+        "hcp_E",
+        13
+      ],
+      [
+        "hcp_N",
+        11
+      ],
+      [
+        "hcp_S",
+        10
+      ],
+      [
+        "hcp_W",
+        6
+      ],
+      [
+        "length_E_C",
+        4
+      ],
+      [
+        "length_E_D",
+        5
+      ],
+      [
+        "length_E_H",
+        4
+      ],
+      [
+        "length_E_S",
+        0
+      ],
+      [
+        "length_N_C",
+        3
+      ],
+      [
+        "length_N_D",
+        5
+      ],
+      [
+        "length_N_H",
+        1
+      ],
+      [
+        "length_N_S",
+        4
+      ],
+      [
+        "length_S_C",
+        3
+      ],
+      [
+        "length_S_D",
+        1
+      ],
+      [
+        "length_S_H",
+        4
+      ],
+      [
+        "length_S_S",
+        5
+      ],
+      [
+        "length_W_C",
+        3
+      ],
+      [
+        "length_W_D",
+        2
+      ],
+      [
+        "length_W_H",
+        4
+      ],
+      [
+        "length_W_S",
+        4
+      ],
+      [
+        "own_trumps",
+        5
+      ],
+      [
+        "partner_trumps",
+        4
+      ],
+      [
+        "ruffable_loser_proxy",
+        2
+      ],
+      [
+        "shortness",
+        "singleton"
+      ],
+      [
+        "side_ace_entries",
+        1
+      ],
+      [
+        "studied_suit",
+        "D"
+      ],
+      [
+        "total_trumps",
+        9
+      ],
+      [
+        "trump_role",
+        "long"
+      ],
+      [
+        "trump_structure",
+        "5-4"
+      ]
+    ],
+    "exchange": {
+      "failure_reasons": [],
+      "distribution": {
+        "count": 8,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0,
+        "maximum": 0,
+        "spread": 0,
+        "standard_deviation": 0.0
+      },
+      "first_valid_delta": 0,
+      "pta2_selected_delta": 0,
+      "legal_controls": 18,
+      "exhaustive": false
+    },
+    "label": "singleton_support_ge3",
+    "cohort": "PTA2B_conditional"
+  },
+  "large_disagreement": {
+    "source_deal_id": "N:JT83.2.AJ743.AK8|E:96.AJT43.QT5.Q42|S:AKQ42.98765.-.J76|W:75.KQ.K9862.T953",
+    "perspective": "S",
+    "studied_suit": 1,
+    "trump": 3,
+    "declarer": "N",
+    "configuration": {
+      "reference_draws": 8,
+      "matching_pool": 32,
+      "matched_controls": 4,
+      "control_seed": 12002,
+      "priority": "defenders_then_partner",
+      "exchange_controls": 8
+    },
+    "source_solver": {
+      "implementation": "endplay/DDS",
+      "version": "0.5.12",
+      "deal_id": "N:JT83.2.AJ743.AK8|E:96.AJT43.QT5.Q42|S:AKQ42.98765.-.J76|W:75.KQ.K9862.T953",
+      "declarer": "N",
+      "strain": 3,
+      "opening_lead": null,
+      "status": "success",
+      "maximum_declarer_tricks": 11,
+      "elapsed_seconds": 0.0,
+      "error": null
+    },
+    "candidates": [
+      {
+        "target": "B_structural_relocation",
+        "exclusions": [],
+        "delta": 1,
+        "source_tricks": 11,
+        "control_mean_tricks": 10,
+        "control_count": 1,
+        "distinct_controls": 1,
+        "candidate_population": 1240,
+        "control_trick_sd": null,
+        "finite_reference_se": null,
+        "delta_range": [
+          1,
+          1
+        ],
+        "distances": [
+          [
+            0,
+            4,
+            2,
+            4
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.62.AJ3.AK87|E:96.AJT43.QT5.Q42|S:AKQ42.9875.74.J6|W:75.KQ.K9862.T953",
+        "mean_changed_defender_cards": 0,
+        "partner_studied_lengths": [
+          3
+        ]
+      },
+      {
+        "target": "C_finite_matched_expectation",
+        "exclusions": [],
+        "delta": 1,
+        "source_tricks": 11,
+        "control_mean_tricks": 10,
+        "control_count": 4,
+        "distinct_controls": 4,
+        "candidate_population": 32,
+        "control_trick_sd": 1.4142135623730951,
+        "finite_reference_se": null,
+        "delta_range": [
+          0,
+          3
+        ],
+        "distances": [
+          [
+            2,
+            4,
+            4,
+            3
+          ],
+          [
+            2,
+            6,
+            2,
+            4
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.982.AJ76.AK|E:96.AJT54.QT5.Q76|S:AKQ42.63.94.JT53|W:75.KQ7.K832.9842",
+        "mean_changed_defender_cards": 9.5,
+        "partner_studied_lengths": [
+          2,
+          4
+        ]
+      },
+      {
+        "target": "D_uniform_conditional_baseline",
+        "exclusions": [],
+        "delta": 0.625,
+        "source_tricks": 11,
+        "control_mean_tricks": 10.375,
+        "control_count": 8,
+        "distinct_controls": 8,
+        "candidate_population": 30773314091520,
+        "control_trick_sd": 1.0606601717798212,
+        "finite_reference_se": 0.37499999999999994,
+        "delta_range": [
+          -1,
+          2
+        ],
+        "distances": [
+          [
+            8,
+            2,
+            2,
+            2
+          ],
+          [
+            8,
+            2,
+            4,
+            3
+          ],
+          [
+            8,
+            0,
+            6,
+            2
+          ],
+          [
+            4,
+            4,
+            2,
+            4
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ],
+          [
+            10,
+            2,
+            4,
+            3
+          ],
+          [
+            6,
+            2,
+            4,
+            3
+          ],
+          [
+            12,
+            4,
+            6,
+            4
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.-.AJ865.AK84|E:96.AJT82.QT94.Q5|S:AKQ42.964.72.J62|W:75.KQ753.K3.T973",
+        "mean_changed_defender_cards": 10.625,
+        "partner_studied_lengths": [
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "support": {
+      "exclusions": [],
+      "physical_assignments": 30773314091520,
+      "own_free_slots": 7,
+      "own_required_studied_spots": 2
+    },
+    "features": [
+      [
+        "defender_split",
+        "3-5"
+      ],
+      [
+        "hcp_E",
+        9
+      ],
+      [
+        "hcp_N",
+        13
+      ],
+      [
+        "hcp_S",
+        10
+      ],
+      [
+        "hcp_W",
+        8
+      ],
+      [
+        "length_E_C",
+        3
+      ],
+      [
+        "length_E_D",
+        3
+      ],
+      [
+        "length_E_H",
+        5
+      ],
+      [
+        "length_E_S",
+        2
+      ],
+      [
+        "length_N_C",
+        3
+      ],
+      [
+        "length_N_D",
+        5
+      ],
+      [
+        "length_N_H",
+        1
+      ],
+      [
+        "length_N_S",
+        4
+      ],
+      [
+        "length_S_C",
+        3
+      ],
+      [
+        "length_S_D",
+        0
+      ],
+      [
+        "length_S_H",
+        5
+      ],
+      [
+        "length_S_S",
+        5
+      ],
+      [
+        "length_W_C",
+        4
+      ],
+      [
+        "length_W_D",
+        5
+      ],
+      [
+        "length_W_H",
+        2
+      ],
+      [
+        "length_W_S",
+        2
+      ],
+      [
+        "own_trumps",
+        5
+      ],
+      [
+        "partner_trumps",
+        4
+      ],
+      [
+        "ruffable_loser_proxy",
+        4
+      ],
+      [
+        "shortness",
+        "void"
+      ],
+      [
+        "side_ace_entries",
+        2
+      ],
+      [
+        "studied_suit",
+        "D"
+      ],
+      [
+        "total_trumps",
+        9
+      ],
+      [
+        "trump_role",
+        "long"
+      ],
+      [
+        "trump_structure",
+        "5-4"
+      ]
+    ],
+    "exchange": {
+      "failure_reasons": [],
+      "distribution": {
+        "count": 8,
+        "mean": 2.5,
+        "median": 3.0,
+        "minimum": 1,
+        "maximum": 3,
+        "spread": 2,
+        "standard_deviation": 0.8660254037844386
+      },
+      "first_valid_delta": 1,
+      "pta2_selected_delta": 3,
+      "legal_controls": 60,
+      "exhaustive": false
+    },
+    "label": "void_defender_diamonds_5_3",
+    "cohort": "PTA2B_conditional"
+  },
+  "newly_defined": {
+    "source_deal_id": "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+    "perspective": "S",
+    "studied_suit": 1,
+    "trump": 3,
+    "declarer": "N",
+    "configuration": {
+      "reference_draws": 8,
+      "matching_pool": 32,
+      "matched_controls": 4,
+      "control_seed": 12002,
+      "priority": "defenders_then_partner",
+      "exchange_controls": 8
+    },
+    "source_solver": {
+      "implementation": "endplay/DDS",
+      "version": "0.5.12",
+      "deal_id": "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+      "declarer": "N",
+      "strain": 3,
+      "opening_lead": null,
+      "status": "success",
+      "maximum_declarer_tricks": 10,
+      "elapsed_seconds": 0.0,
+      "error": null
+    },
+    "candidates": [
+      {
+        "target": "B_structural_relocation",
+        "exclusions": [],
+        "delta": -1,
+        "source_tricks": 10,
+        "control_mean_tricks": 11,
+        "control_count": 1,
+        "distinct_controls": 1,
+        "candidate_population": 48,
+        "control_trick_sd": null,
+        "finite_reference_se": null,
+        "delta_range": [
+          -1,
+          -1
+        ],
+        "distances": [
+          [
+            0,
+            2,
+            1,
+            1
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:9876.AK3.J.KQ732|E:5.Q2.AKQT9542.84|S:AKQ42.9876.73.J6|W:JT3.JT54.86.AT95",
+        "mean_changed_defender_cards": 0,
+        "partner_studied_lengths": [
+          1
+        ]
+      },
+      {
+        "target": "C_finite_matched_expectation",
+        "exclusions": [],
+        "delta": 1.25,
+        "source_tricks": 10,
+        "control_mean_tricks": 8.75,
+        "control_count": 4,
+        "distinct_controls": 4,
+        "candidate_population": 32,
+        "control_trick_sd": 0.5,
+        "finite_reference_se": null,
+        "delta_range": [
+          1,
+          2
+        ],
+        "distances": [
+          [
+            2,
+            2,
+            3,
+            1
+          ],
+          [
+            4,
+            2,
+            3,
+            0
+          ],
+          [
+            4,
+            2,
+            5,
+            1
+          ],
+          [
+            4,
+            2,
+            5,
+            1
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:9876.AK53.J4.KQ2|E:5.Q42.AKQT976.T9|S:AKQ42.87.52.J653|W:JT3.JT96.83.A874",
+        "mean_changed_defender_cards": 11.25,
+        "partner_studied_lengths": [
+          2,
+          3
+        ]
+      },
+      {
+        "target": "D_uniform_conditional_baseline",
+        "exclusions": [],
+        "delta": 0.625,
+        "source_tricks": 10,
+        "control_mean_tricks": 9.375,
+        "control_count": 8,
+        "distinct_controls": 8,
+        "candidate_population": 19233321307200,
+        "control_trick_sd": 0.7440238091428449,
+        "finite_reference_se": 0.2630521404045756,
+        "delta_range": [
+          0,
+          2
+        ],
+        "distances": [
+          [
+            6,
+            2,
+            3,
+            0
+          ],
+          [
+            12,
+            2,
+            3,
+            0
+          ],
+          [
+            4,
+            2,
+            5,
+            1
+          ],
+          [
+            10,
+            2,
+            3,
+            1
+          ],
+          [
+            12,
+            4,
+            1,
+            1
+          ],
+          [
+            10,
+            2,
+            1,
+            0
+          ],
+          [
+            8,
+            2,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            1,
+            1
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:9876.AK.J54.KQ52|E:5.Q8642.AKQ962.3|S:AKQ42.T3.T7.JT96|W:JT3.J975.83.A874",
+        "mean_changed_defender_cards": 11.5,
+        "partner_studied_lengths": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "support": {
+      "exclusions": [],
+      "physical_assignments": 19233321307200,
+      "own_free_slots": 7,
+      "own_required_studied_spots": 2
+    },
+    "features": [
+      [
+        "defender_split",
+        "8-2"
+      ],
+      [
+        "hcp_E",
+        11
+      ],
+      [
+        "hcp_N",
+        13
+      ],
+      [
+        "hcp_S",
+        10
+      ],
+      [
+        "hcp_W",
+        6
+      ],
+      [
+        "length_E_C",
+        2
+      ],
+      [
+        "length_E_D",
+        8
+      ],
+      [
+        "length_E_H",
+        2
+      ],
+      [
+        "length_E_S",
+        1
+      ],
+      [
+        "length_N_C",
+        4
+      ],
+      [
+        "length_N_D",
+        2
+      ],
+      [
+        "length_N_H",
+        3
+      ],
+      [
+        "length_N_S",
+        4
+      ],
+      [
+        "length_S_C",
+        3
+      ],
+      [
+        "length_S_D",
+        1
+      ],
+      [
+        "length_S_H",
+        4
+      ],
+      [
+        "length_S_S",
+        5
+      ],
+      [
+        "length_W_C",
+        4
+      ],
+      [
+        "length_W_D",
+        2
+      ],
+      [
+        "length_W_H",
+        4
+      ],
+      [
+        "length_W_S",
+        3
+      ],
+      [
+        "own_trumps",
+        5
+      ],
+      [
+        "partner_trumps",
+        4
+      ],
+      [
+        "ruffable_loser_proxy",
+        1
+      ],
+      [
+        "shortness",
+        "singleton"
+      ],
+      [
+        "side_ace_entries",
+        1
+      ],
+      [
+        "studied_suit",
+        "D"
+      ],
+      [
+        "total_trumps",
+        9
+      ],
+      [
+        "trump_role",
+        "long"
+      ],
+      [
+        "trump_structure",
+        "5-4"
+      ]
+    ],
+    "exchange": {
+      "failure_reasons": [
+        "partner_studied_doubleton_floor"
+      ],
+      "distribution": {
+        "count": 0,
+        "mean": null,
+        "median": null,
+        "minimum": null,
+        "maximum": null,
+        "spread": null,
+        "standard_deviation": null
+      },
+      "first_valid_delta": null,
+      "pta2_selected_delta": null,
+      "legal_controls": 0,
+      "exhaustive": true
+    },
+    "label": "singleton_support_ge4",
+    "cohort": "PTA2B_conditional"
+  },
+  "large_exchange_spread": {
+    "source_deal_id": "N:JT83.2.AJ743.AK8|E:96.AJT43.QT5.Q42|S:AKQ42.98765.-.J76|W:75.KQ.K9862.T953",
+    "perspective": "S",
+    "studied_suit": 1,
+    "trump": 3,
+    "declarer": "N",
+    "configuration": {
+      "reference_draws": 8,
+      "matching_pool": 32,
+      "matched_controls": 4,
+      "control_seed": 12002,
+      "priority": "defenders_then_partner",
+      "exchange_controls": 8
+    },
+    "source_solver": {
+      "implementation": "endplay/DDS",
+      "version": "0.5.12",
+      "deal_id": "N:JT83.2.AJ743.AK8|E:96.AJT43.QT5.Q42|S:AKQ42.98765.-.J76|W:75.KQ.K9862.T953",
+      "declarer": "N",
+      "strain": 3,
+      "opening_lead": null,
+      "status": "success",
+      "maximum_declarer_tricks": 11,
+      "elapsed_seconds": 0.0,
+      "error": null
+    },
+    "candidates": [
+      {
+        "target": "B_structural_relocation",
+        "exclusions": [],
+        "delta": 1,
+        "source_tricks": 11,
+        "control_mean_tricks": 10,
+        "control_count": 1,
+        "distinct_controls": 1,
+        "candidate_population": 1240,
+        "control_trick_sd": null,
+        "finite_reference_se": null,
+        "delta_range": [
+          1,
+          1
+        ],
+        "distances": [
+          [
+            0,
+            4,
+            2,
+            4
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.62.AJ3.AK87|E:96.AJT43.QT5.Q42|S:AKQ42.9875.74.J6|W:75.KQ.K9862.T953",
+        "mean_changed_defender_cards": 0,
+        "partner_studied_lengths": [
+          3
+        ]
+      },
+      {
+        "target": "C_finite_matched_expectation",
+        "exclusions": [],
+        "delta": 1,
+        "source_tricks": 11,
+        "control_mean_tricks": 10,
+        "control_count": 4,
+        "distinct_controls": 4,
+        "candidate_population": 32,
+        "control_trick_sd": 1.4142135623730951,
+        "finite_reference_se": null,
+        "delta_range": [
+          0,
+          3
+        ],
+        "distances": [
+          [
+            2,
+            4,
+            4,
+            3
+          ],
+          [
+            2,
+            6,
+            2,
+            4
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.982.AJ76.AK|E:96.AJT54.QT5.Q76|S:AKQ42.63.94.JT53|W:75.KQ7.K832.9842",
+        "mean_changed_defender_cards": 9.5,
+        "partner_studied_lengths": [
+          2,
+          4
+        ]
+      },
+      {
+        "target": "D_uniform_conditional_baseline",
+        "exclusions": [],
+        "delta": 0.625,
+        "source_tricks": 11,
+        "control_mean_tricks": 10.375,
+        "control_count": 8,
+        "distinct_controls": 8,
+        "candidate_population": 30773314091520,
+        "control_trick_sd": 1.0606601717798212,
+        "finite_reference_se": 0.37499999999999994,
+        "delta_range": [
+          -1,
+          2
+        ],
+        "distances": [
+          [
+            8,
+            2,
+            2,
+            2
+          ],
+          [
+            8,
+            2,
+            4,
+            3
+          ],
+          [
+            8,
+            0,
+            6,
+            2
+          ],
+          [
+            4,
+            4,
+            2,
+            4
+          ],
+          [
+            4,
+            2,
+            2,
+            3
+          ],
+          [
+            10,
+            2,
+            4,
+            3
+          ],
+          [
+            6,
+            2,
+            4,
+            3
+          ],
+          [
+            12,
+            4,
+            6,
+            4
+          ]
+        ],
+        "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation",
+        "representative_control": "N:JT83.-.AJ865.AK84|E:96.AJT82.QT94.Q5|S:AKQ42.964.72.J62|W:75.KQ753.K3.T973",
+        "mean_changed_defender_cards": 10.625,
+        "partner_studied_lengths": [
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "support": {
+      "exclusions": [],
+      "physical_assignments": 30773314091520,
+      "own_free_slots": 7,
+      "own_required_studied_spots": 2
+    },
+    "features": [
+      [
+        "defender_split",
+        "3-5"
+      ],
+      [
+        "hcp_E",
+        9
+      ],
+      [
+        "hcp_N",
+        13
+      ],
+      [
+        "hcp_S",
+        10
+      ],
+      [
+        "hcp_W",
+        8
+      ],
+      [
+        "length_E_C",
+        3
+      ],
+      [
+        "length_E_D",
+        3
+      ],
+      [
+        "length_E_H",
+        5
+      ],
+      [
+        "length_E_S",
+        2
+      ],
+      [
+        "length_N_C",
+        3
+      ],
+      [
+        "length_N_D",
+        5
+      ],
+      [
+        "length_N_H",
+        1
+      ],
+      [
+        "length_N_S",
+        4
+      ],
+      [
+        "length_S_C",
+        3
+      ],
+      [
+        "length_S_D",
+        0
+      ],
+      [
+        "length_S_H",
+        5
+      ],
+      [
+        "length_S_S",
+        5
+      ],
+      [
+        "length_W_C",
+        4
+      ],
+      [
+        "length_W_D",
+        5
+      ],
+      [
+        "length_W_H",
+        2
+      ],
+      [
+        "length_W_S",
+        2
+      ],
+      [
+        "own_trumps",
+        5
+      ],
+      [
+        "partner_trumps",
+        4
+      ],
+      [
+        "ruffable_loser_proxy",
+        4
+      ],
+      [
+        "shortness",
+        "void"
+      ],
+      [
+        "side_ace_entries",
+        2
+      ],
+      [
+        "studied_suit",
+        "D"
+      ],
+      [
+        "total_trumps",
+        9
+      ],
+      [
+        "trump_role",
+        "long"
+      ],
+      [
+        "trump_structure",
+        "5-4"
+      ]
+    ],
+    "exchange": {
+      "failure_reasons": [],
+      "distribution": {
+        "count": 8,
+        "mean": 2.5,
+        "median": 3.0,
+        "minimum": 1,
+        "maximum": 3,
+        "spread": 2,
+        "standard_deviation": 0.8660254037844386
+      },
+      "first_valid_delta": 1,
+      "pta2_selected_delta": 3,
+      "legal_controls": 60,
+      "exhaustive": false
+    },
+    "label": "void_defender_diamonds_5_3",
+    "cohort": "PTA2B_conditional"
+  }
+}

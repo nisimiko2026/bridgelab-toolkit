@@ -1,0 +1,55 @@
+{
+  "dds_calls_for_classification": 0,
+  "cases": [
+    {
+      "hand": "AKQJT.AKQ.2.AKQJ",
+      "source": "N:42.8652.Q8643.82|E:853.93.AJT9.7543|S:AKQJT.AKQ.2.AKQJ|W:976.JT74.K75.T96",
+      "A_exclusions": [
+        "own_compensation_spots_insufficient_honors_locked"
+      ],
+      "B_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ],
+      "C_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ],
+      "D_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ]
+    },
+    {
+      "hand": "AKQJT9876543.2.-.-",
+      "source": "N:-.T84.AKT73.AQJ82|E:-.AJ95.J9654.7543|S:AKQJT9876543.2.-.-|W:2.KQ763.Q82.KT96",
+      "A_exclusions": [
+        "own_side_suit_doubleton_floor"
+      ],
+      "B_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ],
+      "C_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ],
+      "D_exclusions": [
+        "fixed_honors_and_trumps_leave_no_doubleton_capacity"
+      ]
+    },
+    {
+      "hand": "AKQJ9876.543.-.T2",
+      "source": "N:-.AQ862.Q953.AK93|E:52.K9.KJ876.8654|S:AKQJ9876.543.-.T2|W:T43.JT7.AT42.QJ7",
+      "A_exclusions": [
+        "own_side_suit_doubleton_floor"
+      ],
+      "B_exclusions": [
+        "structural_own_compensation_floor"
+      ],
+      "C_exclusions": [],
+      "D_exclusions": []
+    }
+  ],
+  "exclusion_counts": {
+    "A": 3,
+    "B": 3,
+    "C": 2,
+    "D": 2
+  }
+}

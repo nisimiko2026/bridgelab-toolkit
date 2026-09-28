@@ -1,0 +1,52 @@
+{
+  "checkpoint": "ed131bf134e38842bd9c1412c28379b6a9d3ffb3",
+  "recommendation": "PT-A2D TARGET METHODOLOGY REQUIRED",
+  "adopted_target": null,
+  "historical": {
+    "result": "2673 passed, 9 skipped, 143 subtests passed in 919.83s (0:15:19)",
+    "exit_code": 0
+  },
+  "tests": {
+    "affected_pta2c_before_new_diagnostics": {
+      "passed": 24,
+      "skipped": 2
+    },
+    "phases_python314": {
+      "passed": 199,
+      "skipped": 6,
+      "exit_code": 0
+    },
+    "dds_phases": {
+      "passed": 84,
+      "skipped": 0,
+      "exit_code": 0
+    },
+    "final_pta2c_cases_in_combined_selections": 28,
+    "evaluation_probability": {
+      "passed": 111,
+      "exit_code": 0
+    },
+    "auction_context_profile": {
+      "passed": 285,
+      "exit_code": 0
+    },
+    "pt1_family": {
+      "passed": 38,
+      "skipped": 9,
+      "exit_code": 0
+    }
+  },
+  "new_benchmark_dds_calls": 1561,
+  "dds_failures": 0,
+  "production_changed": false,
+  "routes_before": 45,
+  "routes_after": 45,
+  "estimand_warning": "The 100% B/C/D definition coverage on two saved visible hands is not recovery of the exchange target. Defenders and/or collateral shortness may change.",
+  "source_sha256": {
+    "bridge/shortness_target_redesign.py": "343bcefc347bde02325624e9ed16e3d4a1b6c1a14ba0bb6b7f96d69ba305ab50",
+    "benchmarks/pta2c_target_validation.py": "40a5c82cb19d10bab3652a113c3a4b13341a236d30386c7b27c9a2dd003a605f",
+    "benchmarks/pta2c_validation_diagnostics.py": "d4c994680c07b7cdb322ce27ae26bd5fc64b63151c6e5fe397f0b7dd78e624b1",
+    "tests/test_bridge_pta2c_target_redesign.py": "88c7064797fa7f697be672362f2161c220761f2710a8081f2f92efeaa784cda1"
+  },
+  "post_test_edit": "Clarified diagnostic scope text for B only; measured results and executable logic unchanged."
+}

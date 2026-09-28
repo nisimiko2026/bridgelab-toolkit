@@ -1,0 +1,593 @@
+{
+  "source_deal_id": "N:-.AQ862.Q953.AK93|E:52.K9.KJ876.8654|S:AKQJ9876.543.-.T2|W:T43.JT7.AT42.QJ7",
+  "perspective": "S",
+  "studied_suit": 1,
+  "trump": 3,
+  "declarer": "N",
+  "configuration": {
+    "reference_draws": 8,
+    "matching_pool": 32,
+    "matched_controls": 4,
+    "control_seed": 12002,
+    "priority": "defenders_then_partner",
+    "exchange_controls": 8
+  },
+  "source_solver": {
+    "implementation": "endplay/DDS",
+    "version": "0.5.12",
+    "deal_id": "N:-.AQ862.Q953.AK93|E:52.K9.KJ876.8654|S:AKQJ9876.543.-.T2|W:T43.JT7.AT42.QJ7",
+    "declarer": "N",
+    "strain": 3,
+    "opening_lead": null,
+    "status": "success",
+    "maximum_declarer_tricks": 12,
+    "elapsed_seconds": 0.0,
+    "error": null
+  },
+  "exchange": {
+    "source_deal_id": "N:-.AQ862.Q953.AK93|E:52.K9.KJ876.8654|S:AKQJ9876.543.-.T2|W:T43.JT7.AT42.QJ7",
+    "family": "minimal_pt1b_distinct_terminal",
+    "diagnosis": {
+      "reasons": [
+        "own_side_suit_doubleton_floor"
+      ],
+      "required_transfers": 2,
+      "partner_studied_length": 4,
+      "partner_studied_spots": 3,
+      "compensation_shape_capacity": 1,
+      "compensation_spot_capacity": 1,
+      "minimal_unique_controls": 0
+    },
+    "failure_reasons": [
+      "own_side_suit_doubleton_floor"
+    ],
+    "minimal_unique_controls": 0,
+    "original_path_count": 0,
+    "legal_controls": 0,
+    "selected_controls": 0,
+    "controls_solved": 0,
+    "exhaustive": true,
+    "control_results": [],
+    "distribution": {
+      "count": 0,
+      "mean": null,
+      "median": null,
+      "minimum": null,
+      "maximum": null,
+      "spread": null,
+      "standard_deviation": null
+    },
+    "first_valid_delta": null,
+    "pta2_selected_delta": null,
+    "source_solver": null,
+    "solver_records": [],
+    "features": [
+      [
+        "defender_split",
+        "5-4"
+      ],
+      [
+        "hcp_E",
+        7
+      ],
+      [
+        "hcp_N",
+        15
+      ],
+      [
+        "hcp_S",
+        10
+      ],
+      [
+        "hcp_W",
+        8
+      ],
+      [
+        "length_E_C",
+        4
+      ],
+      [
+        "length_E_D",
+        5
+      ],
+      [
+        "length_E_H",
+        2
+      ],
+      [
+        "length_E_S",
+        2
+      ],
+      [
+        "length_N_C",
+        4
+      ],
+      [
+        "length_N_D",
+        4
+      ],
+      [
+        "length_N_H",
+        5
+      ],
+      [
+        "length_N_S",
+        0
+      ],
+      [
+        "length_S_C",
+        2
+      ],
+      [
+        "length_S_D",
+        0
+      ],
+      [
+        "length_S_H",
+        3
+      ],
+      [
+        "length_S_S",
+        8
+      ],
+      [
+        "length_W_C",
+        3
+      ],
+      [
+        "length_W_D",
+        4
+      ],
+      [
+        "length_W_H",
+        3
+      ],
+      [
+        "length_W_S",
+        3
+      ],
+      [
+        "own_trumps",
+        8
+      ],
+      [
+        "partner_trumps",
+        0
+      ],
+      [
+        "ruffable_loser_proxy",
+        4
+      ],
+      [
+        "shortness",
+        "void"
+      ],
+      [
+        "side_ace_entries",
+        2
+      ],
+      [
+        "studied_suit",
+        "D"
+      ],
+      [
+        "total_trumps",
+        8
+      ],
+      [
+        "trump_role",
+        "long"
+      ],
+      [
+        "trump_structure",
+        "8-0"
+      ]
+    ]
+  },
+  "candidates": [
+    {
+      "target": "B_structural_relocation",
+      "exclusions": [
+        "structural_own_compensation_floor"
+      ],
+      "delta": null,
+      "source_tricks": 12,
+      "control_mean_tricks": null,
+      "control_count": 0,
+      "distinct_controls": 0,
+      "candidate_population": 0,
+      "control_trick_sd": null,
+      "finite_reference_se": null,
+      "delta_range": null,
+      "distances": [],
+      "control_results": [],
+      "note": "not evaluable; never zero"
+    },
+    {
+      "target": "C_finite_matched_expectation",
+      "exclusions": [],
+      "delta": 1,
+      "source_tricks": 12,
+      "control_mean_tricks": 11,
+      "control_count": 4,
+      "distinct_controls": 4,
+      "candidate_population": 32,
+      "control_trick_sd": 0.0,
+      "finite_reference_se": null,
+      "delta_range": [
+        1,
+        1
+      ],
+      "distances": [
+        [
+          2,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          0,
+          2,
+          2
+        ],
+        [
+          4,
+          0,
+          2,
+          2
+        ],
+        [
+          4,
+          2,
+          2,
+          2
+        ]
+      ],
+      "control_results": [
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ63.Q86.AKT865|E:52.K82.KJT3.9432|S:AKQJ9876.T74.52.-|W:T43.J95.A974.QJ7",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ542.Q642.AKT9|E:52.K8.KJ95.87642|S:AKQJ9876.763.T3.-|W:T43.JT9.A87.QJ53",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQT52.Q964.AKT5|E:52.K3.KJT83.8742|S:AKQJ9876.86.72.9|W:T43.J974.A5.QJ63",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ96.QT72.AKT75|E:52.K542.KJ6.9642|S:AKQJ9876.87.54.3|W:T43.JT3.A983.QJ8",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        }
+      ],
+      "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation"
+    },
+    {
+      "target": "D_uniform_conditional_baseline",
+      "exclusions": [],
+      "delta": 1.125,
+      "source_tricks": 12,
+      "control_mean_tricks": 10.875,
+      "control_count": 8,
+      "distinct_controls": 8,
+      "candidate_population": 28208871250560,
+      "control_trick_sd": 0.3535533905932738,
+      "finite_reference_se": 0.125,
+      "delta_range": [
+        1,
+        2
+      ],
+      "distances": [
+        [
+          12,
+          2,
+          2,
+          2
+        ],
+        [
+          6,
+          2,
+          2,
+          2
+        ],
+        [
+          10,
+          6,
+          2,
+          3
+        ],
+        [
+          10,
+          2,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          2,
+          2,
+          3
+        ],
+        [
+          6,
+          2,
+          2,
+          1
+        ],
+        [
+          8,
+          4,
+          2,
+          4
+        ]
+      ],
+      "control_results": [
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQT6.QT95.AKT87|E:52.K5432.KJ432.2|S:AKQJ9876.87.86.9|W:T43.J9.A7.QJ6543",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 10,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ94.Q975.AK654|E:52.K872.KJ84.982|S:AKQJ9876.3.63.T7|W:T43.JT65.AT2.QJ3",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ4.Q87.AKT6542|E:52.K5.KJT6432.98|S:AKQJ9876.T76.95.-|W:T43.J9832.A.QJ73",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ53.Q842.AKT54|E:52.KT9862.KJ73.8|S:AKQJ9876.-.T5.963|W:T43.J74.A96.QJ72",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ52.QT8.AK9854|E:52.KT6.KJ762.T73|S:AKQJ9876.97.43.6|W:T43.J843.A95.QJ2",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQT63.Q83.AKT74|E:52.K74.KJT62.986|S:AKQJ9876.2.97.53|W:T43.J985.A54.QJ2",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQT4.Q9876.AKT5|E:52.K32.KJT.98763|S:AKQJ9876.76.43.2|W:T43.J985.A52.QJ4",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        },
+        {
+          "implementation": "endplay/DDS",
+          "version": "0.5.12",
+          "deal_id": "N:-.AQ764.Q9.AKT543|E:52.K3.KJT7632.87|S:AKQJ9876.82.54.6|W:T43.JT95.A8.QJ92",
+          "declarer": "N",
+          "strain": 3,
+          "opening_lead": null,
+          "status": "success",
+          "maximum_declarer_tricks": 11,
+          "elapsed_seconds": 0.0,
+          "error": null
+        }
+      ],
+      "note": "IID reference SE only for D; matched C controls are selected/dependent; B is one specified relocation"
+    }
+  ],
+  "support": {
+    "exclusions": [],
+    "physical_assignments": 28208871250560,
+    "own_free_slots": 5,
+    "own_required_studied_spots": 2
+  },
+  "features": [
+    [
+      "defender_split",
+      "5-4"
+    ],
+    [
+      "hcp_E",
+      7
+    ],
+    [
+      "hcp_N",
+      15
+    ],
+    [
+      "hcp_S",
+      10
+    ],
+    [
+      "hcp_W",
+      8
+    ],
+    [
+      "length_E_C",
+      4
+    ],
+    [
+      "length_E_D",
+      5
+    ],
+    [
+      "length_E_H",
+      2
+    ],
+    [
+      "length_E_S",
+      2
+    ],
+    [
+      "length_N_C",
+      4
+    ],
+    [
+      "length_N_D",
+      4
+    ],
+    [
+      "length_N_H",
+      5
+    ],
+    [
+      "length_N_S",
+      0
+    ],
+    [
+      "length_S_C",
+      2
+    ],
+    [
+      "length_S_D",
+      0
+    ],
+    [
+      "length_S_H",
+      3
+    ],
+    [
+      "length_S_S",
+      8
+    ],
+    [
+      "length_W_C",
+      3
+    ],
+    [
+      "length_W_D",
+      4
+    ],
+    [
+      "length_W_H",
+      3
+    ],
+    [
+      "length_W_S",
+      3
+    ],
+    [
+      "own_trumps",
+      8
+    ],
+    [
+      "partner_trumps",
+      0
+    ],
+    [
+      "ruffable_loser_proxy",
+      4
+    ],
+    [
+      "shortness",
+      "void"
+    ],
+    [
+      "side_ace_entries",
+      2
+    ],
+    [
+      "studied_suit",
+      "D"
+    ],
+    [
+      "total_trumps",
+      8
+    ],
+    [
+      "trump_role",
+      "long"
+    ],
+    [
+      "trump_structure",
+      "8-0"
+    ]
+  ]
+}

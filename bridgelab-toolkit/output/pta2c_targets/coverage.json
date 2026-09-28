@@ -1,0 +1,25 @@
+{
+  "n": 5000,
+  "coverage": {
+    "A": 0.7638,
+    "B": 1.0,
+    "C": 1.0,
+    "D": 1.0
+  },
+  "by_shortness": {
+    "singleton": {
+      "A": 0.8408,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 1.0
+    },
+    "void": {
+      "A": 0.6868,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 1.0
+    }
+  },
+  "warning": "Different targets/invariants, not recovered exchange outcomes. Fixed-card-capacity exclusions persist outside these two visible hands.",
+  "dds_calls": 0
+}
