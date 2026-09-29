@@ -11,16 +11,14 @@ from enum import Enum
 
 from .auction import Auction, Call, CallType
 from .bidding_engine import BiddingEngineResult
-from .bidding_rules import BiddingContext, RuleDecision, SystemContext
-from .major_response_options import (
-    FORCING_ONE_NOTRUMP_OPTION, MAJOR_RAISE_STYLE_OPTION, TWO_OVER_ONE_OPTION,
-)
+from .bidding_rules import BiddingContext, RuleDecision
 from .models import Hand, Vulnerability
 from .partnership_profiles import (
-    AgreementResolution, PartnershipProfile, ResolvedAgreement,
+    PartnershipProfile, ResolvedAgreement,
     ResolvedBiddingProfile, resolve_partnership_profile,
 )
-from .policy_registry import PolicyRegistry, SUIT_QUALITY_POLICY_OPTION
+from .policy_registry import PolicyRegistry
+from .profile_rule_support import response_system as _response_system, top_priority_conflicts
 from .sayc_route_configuration import create_standard_sayc_router
 
 
@@ -57,14 +55,6 @@ class FirstResponseAssessment:
         return None if self.selected is None else self.selected.candidate
 
 
-# These are bindings to existing option parsers, not new convention meanings.
-_MAJOR_OPTIONS = {
-    "response.major.1nt": (FORCING_ONE_NOTRUMP_OPTION, {"forcing", "nonforcing"}),
-    "response.major.two_over_one": (TWO_OVER_ONE_OPTION, {"game_force", "natural"}),
-    "response.major.raises": (MAJOR_RAISE_STYLE_OPTION, {"traditional", "bergen"}),
-}
-
-
 def _first_opening(auction: Auction) -> str:
     if not isinstance(auction, Auction):
         raise TypeError("auction must be Auction")
@@ -78,56 +68,6 @@ def _first_opening(auction: Auction) -> str:
             or entries[index].seat is not auction.next_seat.partner()):
         raise ValueError("requires responder's first call after partner's opening; no rebids")
     return entries[index].call.serialize()
-
-
-def _response_system(
-    profile: PartnershipProfile, resolved: ResolvedBiddingProfile, opening: str,
-    suit_quality_policy_id: str | None,
-) -> tuple[SystemContext, tuple[str, ...]]:
-    options: dict[str, str] = {}
-    blockers: list[str] = []
-    major = opening in ("1H", "1S")
-    families = ("opening", f"opening.{opening.lower()}", "response",
-                f"response.{opening.lower()}")
-    if major:
-        families += ("response.major",)
-    elif opening in ("1C", "1D"):
-        families += ("response.minor",)
-
-    def relevant(family: str) -> bool:
-        # Generic opening/response declarations apply globally within this
-        # profile, but unrelated opening families do not contaminate the call.
-        return family in families or any(
-            family.startswith(prefix + ".") for prefix in families
-            if prefix not in ("opening", "response")
-        )
-
-    for agreement in resolved.agreements:
-        if not relevant(agreement.family):
-            continue
-        binding = _MAJOR_OPTIONS.get(agreement.family) if major else None
-        if (binding is None or agreement.parameters
-                or agreement.treatment_id not in binding[1]):
-            blockers.append(f"Unsupported effective treatment or parameters: {agreement.family}")
-            continue
-        options[binding[0]] = agreement.treatment_id
-
-    # The resolver removes disabled families. Preserve that explicit removal:
-    # notably, absence must not resurrect the rules' traditional-raise default.
-    for selection in profile.agreements:
-        if selection.resolution is not AgreementResolution.DISABLE or not relevant(selection.family):
-            continue
-        binding = _MAJOR_OPTIONS.get(selection.family) if major else None
-        if binding is None:
-            blockers.append(f"Disabled opening/response family: {selection.family}")
-        else:
-            options[binding[0]] = "other" if selection.family == "response.major.raises" else "unspecified"
-
-    if suit_quality_policy_id is not None:
-        if not isinstance(suit_quality_policy_id, str) or not suit_quality_policy_id.strip():
-            raise ValueError("suit_quality_policy_id must be a nonblank string")
-        options[SUIT_QUALITY_POLICY_OPTION] = suit_quality_policy_id.strip()
-    return SystemContext.from_mapping(resolved.base_system.value, options), tuple(sorted(blockers))
 
 
 def assess_first_response(
@@ -174,9 +114,8 @@ def assess_first_response(
 
     # Engine priority is authoritative, but registration order alone must not
     # conceal equally ranked contradictory calls. Preserve all trace evidence.
-    top = evidence.recommended.priority
-    tied = tuple(item for item in evidence.candidates if item.priority == top)
-    if len(tied) > 1:
+    tied = top_priority_conflicts(evidence)
+    if tied:
         return result(FirstResponseDisposition.CONFLICT,
                       "Equal-priority response rules disagree; no single call is justified.",
                       evidence=evidence, issues=tuple(item.rule_id for item in tied))
