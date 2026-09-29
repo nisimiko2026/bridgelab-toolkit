@@ -144,7 +144,7 @@ def assess_opening_policy(hand: Hand, *, auction: Auction, vulnerability: Vulner
     holdings = tuple("".join(card.rank.symbol for card in hand.cards_in(suit)) for suit in (Suit.SPADES, Suit.HEARTS, Suit.DIAMONDS, Suit.CLUBS))
     relative = relative_vulnerability(vulnerability, auction.next_seat)
     position = len(auction.calls) + 1
-    score = hcp + sum(sorted(lengths, reverse=True)[:2])
+    score = facts.rule_of_20.score
     normal = hcp >= 12 or score >= 20
     checks = []
     P, N, U = State.POSITIVE, State.NEGATIVE, State.UNKNOWN

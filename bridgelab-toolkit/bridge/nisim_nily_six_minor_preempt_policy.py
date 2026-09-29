@@ -10,7 +10,7 @@ from dataclasses import asdict, dataclass
 from enum import Enum
 
 from .models import Hand, Seat, Vulnerability
-from .nisim_nily_opening_policy import assess_rule_of_20
+from .evaluation import evaluate_hand
 
 
 class _Serializable:
@@ -168,21 +168,21 @@ def assess_six_minor_three_level_preempt(
     if not isinstance(seat, Seat) or not isinstance(vulnerability, Vulnerability):
         raise TypeError("canonical Seat and Vulnerability required")
 
-    s_cards, h_cards, d_cards, c_cards = _serialized_suit_groups(hand)
-    groups = (s_cards, h_cards, d_cards, c_cards)
-    lengths = tuple(len(group) for group in groups)
+    _, _, d_cards, c_cards = _serialized_suit_groups(hand)
+    facts = evaluate_hand(hand)
+    lengths = facts.suit_lengths
     d, c = lengths[2], lengths[3]
     candidates = [("D", d_cards)] if d == 6 else []
     if c == 6:
         candidates.append(("C", c_cards))
-    r20 = assess_rule_of_20(hand)
+    r20 = facts.rule_of_20
 
     other_minor_length = c if candidates and candidates[0][0] == "D" else d
     if len(candidates) != 1 or max(lengths[:2] + (other_minor_length,)) >= 5:
         return SixMinorPreemptAssessment(
             SixMinorDecision.NOT_APPLICABLE, None, None, None, None, None,
             opening_position, r20.score, max(lengths[:2]) == 4, 0,
-            sum(group.count("A") for group in groups), None,
+            sum(item.has_ace for item in facts.suit_honor_evidence), None,
             "Exact six-card-minor exception requires one and only one six-card minor and no other five-card-or-longer suit.",
         )
 
@@ -190,14 +190,10 @@ def assess_six_minor_three_level_preempt(
     quality, quality_score = _six_minor_quality(minor_cards)
     relation = _six_minor_vulnerability_relation(seat, vulnerability)
     has_four_major = max(lengths[0], lengths[1]) == 4
-    outside_groups = groups[:2] + ((c_cards,) if minor == "D" else (d_cards,))
-    hcp_value = {"A": 4, "K": 3, "Q": 2, "J": 1}
-    outside_hcp = sum(
-        hcp_value.get(rank, 0) for group in outside_groups for rank in group
-    )
-    total_aces = sum(group.count("A") for group in groups)
+    outside_hcp = facts.hcp - facts.hcp_by_suit[2 if minor == "D" else 3]
+    total_aces = sum(item.has_ace for item in facts.suit_honor_evidence)
 
-    if r20.qualifies:
+    if r20.score >= 20:
         return SixMinorPreemptAssessment(
             SixMinorDecision.ONE_LEVEL, minor, quality, quality_score, None, relation,
             opening_position, r20.score, has_four_major, outside_hcp, total_aces,

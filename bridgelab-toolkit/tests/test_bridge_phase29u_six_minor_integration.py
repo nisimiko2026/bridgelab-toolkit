@@ -95,16 +95,19 @@ def test_seven_card_minor_is_not_applicable_and_preserves_29s():
     assert result.supported_call == result.base.supported_call
 
 
-def test_six_five_shape_is_not_applicable_and_preserves_29s():
+def test_six_five_shape_uses_later_approved_30n_minor_selector():
     result = _assess("7.8.KQJT96.QJT98")
     assert result.six_minor.decision is SixMinorDecision.NOT_APPLICABLE
-    assert not result.integration_applied
+    assert result.integration_applied
     assert result.classification is result.base.classification
+    assert result.base.supported_call is None
+    assert result.supported_call == "1D"
+    assert result.selected_family == "one_level"
 
 
 def test_result_is_immutable_versioned_and_not_production_adopted():
     result = _assess("7.84.KQJT96.9742", position=3, vul=Vulnerability.EW)
-    assert result.policy_version == "nisim-nily.opening-policy-six-minor@29U.1"
+    assert result.policy_version == "nisim-nily.opening-policy-six-minor@B1.3"
     assert result.production_adopted is False
     with pytest.raises(FrozenInstanceError):
         result.supported_call = "1D"
