@@ -3,7 +3,8 @@
 This module intentionally stops short of bidding decisions.  It derives
 repeatable facts from a :class:`bridge.models.Hand`: HCP, controls, suit
 lengths, distribution, shortage counts, source-defined balanced-shape
-classification, and raw honor evidence by suit.
+classification, raw Rule-of-20 arithmetic, a documented raw loser count,
+and honor/rank-pattern evidence by suit.
 
 Source conventions reflected here come from the canonical BridgeLab corpus:
 
@@ -61,6 +62,28 @@ class ShapeClass(Enum):
     UNBALANCED = "unbalanced"
 
 
+class Shortness(Enum):
+    """Exact length category, never a bonus or a fit-dependent valuation."""
+
+    VOID = "void"
+    SINGLETON = "singleton"
+    DOUBLETON = "doubleton"
+    NONE = "none"
+
+
+@dataclass(frozen=True, slots=True)
+class RuleOf20Facts:
+    """Raw HCP plus the two longest lengths; no opening qualification."""
+
+    hcp: int
+    longest_suit_length: int
+    second_longest_suit_length: int
+
+    @property
+    def score(self) -> int:
+        return self.hcp + self.longest_suit_length + self.second_longest_suit_length
+
+
 @dataclass(frozen=True, slots=True)
 class SuitHonorEvidence:
     """Objective honor/length facts for one suit.
@@ -99,6 +122,49 @@ class SuitHonorEvidence:
     @property
     def honor_count(self) -> int:
         return len(self.honors)
+
+    @property
+    def hcp(self) -> int:
+        return sum(_HCP_BY_RANK.get(rank, 0) for rank in self.honors)
+
+    @property
+    def shortness(self) -> Shortness:
+        return {0: Shortness.VOID, 1: Shortness.SINGLETON,
+                2: Shortness.DOUBLETON}.get(self.length, Shortness.NONE)
+
+    @property
+    def has_guarded_king(self) -> bool:
+        return self.has_king and self.length >= 2
+
+    @property
+    def first_round_control(self) -> bool:
+        """Ace/void pattern; shortness needs suit-contract context to be useful.
+
+        This is not a guaranteed trick, a stopper, or permission to cue-bid.
+        """
+        return self.has_ace or self.length == 0
+
+    @property
+    def second_round_control(self) -> bool:
+        """Guarded-king/singleton pattern, separate from the ace/void pattern.
+
+        A first-round pattern does not automatically set this flag. Honor and
+        shortness bases remain inspectable via has_guarded_king and shortness.
+        """
+        return self.has_guarded_king or self.length == 1
+
+    @property
+    def losers(self) -> int:
+        """Raw supported-queen LTC convention, not a trick prediction.
+
+        Consider at most three cards. Credit A; credit K with >=2 cards;
+        credit Q with >=3 cards only when accompanied by A or K. Thus Qxx
+        has three losers, matching the repository's losing-trick-count table.
+        No fit adjustment, fractional correction or bidding decision is made.
+        """
+        return (min(self.length, 3) - int(self.has_ace)
+                - int(self.has_guarded_king)
+                - int(self.length >= 3 and self.has_queen and (self.has_ace or self.has_king)))
 
 
 
@@ -191,6 +257,46 @@ class HandEvaluation:
     @property
     def has_singleton(self) -> bool:
         return self.singletons > 0
+
+    @property
+    def hcp_by_suit(self) -> tuple[int, ...]:
+        """Suit HCP in the existing S.H.D.C order."""
+        return tuple(evidence.hcp for evidence in self.suit_honor_evidence)
+
+    @property
+    def rule_of_20(self) -> RuleOf20Facts:
+        return RuleOf20Facts(self.hcp, self.distribution[0], self.distribution[1])
+
+    @property
+    def first_round_controls(self) -> tuple[Suit, ...]:
+        """Suits with ace/void patterns, not a point count or trick guarantee."""
+        return tuple(e.suit for e in self.suit_honor_evidence if e.first_round_control)
+
+    @property
+    def second_round_controls(self) -> tuple[Suit, ...]:
+        """Suits with guarded-king/singleton patterns, in S.H.D.C order."""
+        return tuple(e.suit for e in self.suit_honor_evidence if e.second_round_control)
+
+    @property
+    def losers_by_suit(self) -> tuple[int, ...]:
+        return tuple(e.losers for e in self.suit_honor_evidence)
+
+    @property
+    def losers(self) -> int:
+        return sum(self.losers_by_suit)
+
+    @property
+    def shortness_by_suit(self) -> tuple[Shortness, ...]:
+        return tuple(e.shortness for e in self.suit_honor_evidence)
+
+    @property
+    def natural_playing_trick_evidence(self) -> tuple[SuitQualityEvidence, ...]:
+        """Existing raw lengths/ranks/honors/sequences, without a trick value.
+
+        No ruffing, adjusted value, DDS, or partnership policy is evaluated.
+        This is the same evidence tuple, not a second playing-trick model.
+        """
+        return self.suit_quality_evidence
 
 
 def high_card_points(hand: Hand) -> int:

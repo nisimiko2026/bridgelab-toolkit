@@ -61,10 +61,10 @@ approved here; a qualifying <=10 hand gains no general opening entitlement.
 12+ normal strength does not depend on this score. Seat/exception integration
 and opening-family applicability remain separate from this calculation.
 """
-    facts = evaluate_hand(hand)
-    longest, second = sorted(facts.suit_lengths, reverse=True)[:2]
-    score = facts.hcp + longest + second
-    return RuleOf20Assessment(facts.hcp, longest, second, score, score >= 20, facts.hcp == 11)
+    facts = evaluate_hand(hand).rule_of_20
+    return RuleOf20Assessment(facts.hcp, facts.longest_suit_length,
+                              facts.second_longest_suit_length, facts.score,
+                              facts.score >= 20, facts.hcp == 11)
 
 
 @dataclass(frozen=True, slots=True)
