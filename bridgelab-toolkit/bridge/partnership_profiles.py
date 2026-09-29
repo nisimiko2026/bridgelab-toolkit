@@ -93,7 +93,8 @@ class AgreementSelection:
     """Explicit choice for one family, with case-insensitive family/key IDs.
 
     Parameters configure ENABLE/REPLACE. INHERIT keeps the complete base
-    agreement, including its parameters; DISABLE removes it entirely.
+    agreement, including its parameters; DISABLE removes it entirely. Neither
+    accepts parameters: silently dropping them would hide a conflicting choice.
     """
 
     family: str
@@ -110,6 +111,8 @@ class AgreementSelection:
         else:
             object.__setattr__(self, "treatment_id", _text(self.treatment_id, "treatment_id"))
         object.__setattr__(self, "parameters", _parameters(self.parameters))
+        if self.resolution in (AgreementResolution.INHERIT, AgreementResolution.DISABLE) and self.parameters:
+            raise ValueError("INHERIT/DISABLE parameters must be empty")
 
     def option(self, key: str, default: str | None = None) -> str | None:
         return dict(self.parameters).get(_text(key, "option key").casefold(), default)
@@ -209,13 +212,28 @@ def resolve_partnership_profile(
 ) -> ResolvedBiddingProfile:
     """Resolve only the supplied data, without registry, I/O, or rule activation.
 
-    Unmentioned base families are retained. INHERIT with no base stays absent.
-    REPLACE and ENABLE set the complete partnership treatment and parameters.
-    Capabilities are independent metadata, not derived from effective families.
+    The profile's explicit base_system identifies the system; this resolver
+    does not invent defaults or infer a system from a partnership name. Callers
+    supply that system's effective defaults, with SYSTEM source scope and an
+    explicit treatment. Validate every default before applying overrides, so
+    an override cannot mask ambiguous or partnership-scoped base data.
+
+    Unmentioned base families and INHERIT retain the complete base value and
+    provenance. INHERIT with no base stays absent. DISABLE removes a family.
+    REPLACE and ENABLE both take precedence over the base and set the complete
+    partnership treatment and parameters, without merging parameter keys.
+    Duplicate families within either layer are errors, never last-write-wins.
+    Capabilities and profile source IDs remain independent metadata unchanged
+    in meaning; treatment selection neither activates rules nor creates sources.
     """
     if not isinstance(profile, PartnershipProfile):
         raise TypeError("profile must be PartnershipProfile")
     base = _agreements(base_agreements, ResolvedAgreement)
+    for agreement in base:
+        if agreement.source_scope is not AgreementSourceScope.SYSTEM:
+            raise ValueError(f"base agreement must have SYSTEM source scope: {agreement.family}")
+        if agreement.treatment_id is None:
+            raise ValueError(f"base agreement lacks treatment: {agreement.family}")
     effective = {agreement.family: agreement for agreement in base}
     for selection in profile.agreements:
         if selection.resolution is AgreementResolution.INHERIT:

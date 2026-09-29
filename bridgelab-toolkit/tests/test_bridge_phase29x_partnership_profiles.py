@@ -303,3 +303,107 @@ def test_resolution_leaves_production_routes_contexts_and_behavior_unchanged(nis
     assert audit.production_changed is False
     assert audit.ready_for_production is False
     assert audit.route_count == 45
+
+
+@pytest.mark.parametrize("resolution", (Resolution.INHERIT, Resolution.DISABLE))
+def test_nonconfiguring_selections_reject_parameters_instead_of_losing_them(resolution):
+    with pytest.raises(ValueError, match="parameters must be empty"):
+        AgreementSelection("opening.2d", resolution, parameters=(("strength", "weak"),))
+
+
+@pytest.mark.parametrize("override", (False, True))
+def test_partnership_scoped_defaults_cannot_leak_into_another_profile(override):
+    from bridge.nisim_nily_partnership_profile import NISIM_NILY_PROFILE
+
+    first = resolve_partnership_profile(NISIM_NILY_PROFILE)
+    selection = (AgreementSelection("opening.2d", Resolution.REPLACE, "other"),) if override else ()
+    other = PartnershipProfile("another-pair", "1", SystemProfile.TWO_OVER_ONE_GF, selection)
+    with pytest.raises(ValueError, match="SYSTEM source scope"):
+        resolve_partnership_profile(other, base_agreements=first.agreements)
+    assert resolve_partnership_profile(other).agreement("response.major.raises") is None
+
+
+@pytest.mark.parametrize("resolution", (Resolution.INHERIT, Resolution.DISABLE))
+@pytest.mark.parametrize("override", (False, True))
+def test_ambiguous_defaults_rejected_before_any_override(resolution, override):
+    base = (ResolvedAgreement("opening.2d", None, resolution, Scope.SYSTEM),)
+    selection = (AgreementSelection("opening.2d", Resolution.REPLACE, "explicit"),) if override else ()
+    profile = PartnershipProfile("pair", "1", SystemProfile.SAYC, selection)
+    with pytest.raises(ValueError, match="base agreement lacks treatment"):
+        resolve_partnership_profile(profile, base_agreements=base)
+
+
+@pytest.mark.parametrize("system", (SystemProfile.SAYC, SystemProfile.TWO_OVER_ONE_GF))
+def test_explicit_base_identity_and_inherited_provenance_survive_resolution(system):
+    base = (ResolvedAgreement("Opening.1NT", "opaque-default", Resolution.INHERIT,
+                              Scope.SYSTEM, (("Range", "15-17"), ("Note", "Case-Sensitive"))),)
+    profile = PartnershipProfile("same-name", "1", system,
+        (AgreementSelection("OPENING.1NT", Resolution.INHERIT),),
+        sources=(" Source:A ", "source:a", "Source:A"))
+    resolved = resolve_partnership_profile(profile, base_agreements=base)
+    assert resolved.base_system is system
+    assert resolved.agreement("opening.1nt") is base[0]
+    assert resolved.agreement("opening.1nt").parameters == (("note", "Case-Sensitive"), ("range", "15-17"))
+    assert resolved.agreement("opening.1nt").source_scope is Scope.SYSTEM
+    assert resolved.sources == ("Source:A", "source:a")
+    assert json.loads(resolved.to_json())["sources"] == ["Source:A", "source:a"]
+
+
+@pytest.mark.parametrize("name", ("UNKNOWN", "Precision", "Blue Club", "nisim-nily"))
+def test_unsupported_system_names_are_not_partnership_or_system_aliases(name):
+    from bridge.system_profiles import classify_system_profile
+
+    system = classify_system_profile(SystemContext(name))
+    assert system is SystemProfile.UNKNOWN
+    with pytest.raises(ValueError, match="UNKNOWN base system"):
+        PartnershipProfile("pair", "1", system, ())
+
+
+@pytest.mark.parametrize("resolution", (Resolution.ENABLE, Resolution.REPLACE))
+def test_override_replaces_parameters_and_scope_even_with_same_treatment_id(resolution):
+    base = (ResolvedAgreement("family", "same", Resolution.ENABLE, Scope.SYSTEM,
+                              (("old", "base-only"), ("range", "old"))),)
+    profile = PartnershipProfile("pair", "1", SystemProfile.SAYC,
+        (AgreementSelection("FAMILY", resolution, "same", (("Range", "New Value"),)),),
+        sources=("partnership:card",))
+    result = resolve_partnership_profile(profile, base_agreements=base)
+    assert result.agreement("family").parameters == (("range", "New Value"),)
+    assert result.agreement("family").source_scope is Scope.PARTNERSHIP
+    assert result.agreement("family").resolution is resolution
+    assert result.sources == profile.sources
+    assert base[0].option("old") == "base-only"
+
+
+@pytest.mark.parametrize("same_treatment", (True, False))
+def test_duplicate_defaults_are_rejected_even_when_overridden(base, same_treatment):
+    duplicate = replace(base[0], family=" OPENING.2D ",
+                        treatment_id=base[0].treatment_id if same_treatment else "conflict")
+    profile = PartnershipProfile("pair", "1", SystemProfile.SAYC,
+        (AgreementSelection("opening.2d", Resolution.REPLACE, "chosen"),))
+    with pytest.raises(ValueError, match="duplicate agreement family"):
+        resolve_partnership_profile(profile, base_agreements=base + (duplicate,))
+
+
+@pytest.mark.parametrize("record_type", (AgreementSelection, ResolvedAgreement))
+def test_parameter_keys_reject_casefold_duplicates_even_with_equal_values(record_type):
+    kwargs = {"source_scope": Scope.SYSTEM} if record_type is ResolvedAgreement else {}
+    with pytest.raises(ValueError, match="duplicate parameter key"):
+        record_type("family", treatment_id="opaque", resolution=Resolution.ENABLE,
+                    parameters=(("Straße", "same"), ("STRASSE", "same")), **kwargs)
+
+
+def test_profiles_with_different_explicit_system_defaults_are_order_independent():
+    from bridge.nisim_nily_partnership_profile import NISIM_NILY_PROFILE
+
+    sayc = PartnershipProfile("another-pair", "1", SystemProfile.SAYC, ())
+    sayc_base = (ResolvedAgreement("opening.2d", "sayc-default", Resolution.ENABLE, Scope.SYSTEM),)
+    gf_base = (ResolvedAgreement("opening.2d", "gf-default", Resolution.ENABLE, Scope.SYSTEM),)
+    before = resolve_partnership_profile(sayc, base_agreements=sayc_base)
+    nisim = resolve_partnership_profile(NISIM_NILY_PROFILE, base_agreements=gf_base)
+    after = resolve_partnership_profile(sayc, base_agreements=tuple(reversed(sayc_base)))
+    assert before.to_json() == after.to_json()
+    assert after.base_system is SystemProfile.SAYC
+    assert after.agreement("opening.2d").treatment_id == "sayc-default"
+    assert nisim.base_system is SystemProfile.TWO_OVER_ONE_GF
+    assert nisim.agreement("opening.2d").treatment_id == "multi_2d"
+    assert nisim.sources == NISIM_NILY_PROFILE.sources
