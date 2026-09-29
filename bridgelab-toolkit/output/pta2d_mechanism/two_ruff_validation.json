@@ -1,0 +1,106 @@
+[
+  {
+    "name": "two_ruff_capacity",
+    "cards": [
+      [
+        "2D 3D AC KC QC",
+        "AD KD AS KS 4C",
+        "2S 3S 2C 3C 8C",
+        "QD JD 5C 6C 9C"
+      ],
+      "N"
+    ],
+    "exact": {
+      "status": "exact",
+      "optimum": 3,
+      "profiles": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "studied_ruff_bounds": [
+        0,
+        2
+      ],
+      "every_optimal_line_requires_studied_ruff": false,
+      "reciprocal_ruff_presence": [
+        false,
+        false
+      ],
+      "optimal_line_count": 98304
+    },
+    "cost": {
+      "nodes": 191173,
+      "cache_hits": 185811,
+      "optimal_edges": 22016,
+      "restricted_solver_calls": 0,
+      "cached_positions": 189318
+    },
+    "dds_crosscheck": "root value and every optimal first action",
+    "dds_cost": {
+      "calls": 1,
+      "cache_hits": 0,
+      "seconds": 0.0005592999514192343
+    },
+    "restricted": [
+      {
+        "result": {
+          "policy": "ban_studied_ruff_actions",
+          "status": "exact",
+          "value": 1,
+          "loss": 2
+        },
+        "cost": {
+          "nodes": 84045,
+          "cache_hits": 61092,
+          "optimal_edges": 0,
+          "restricted_solver_calls": 1,
+          "cached_positions": 83558
+        }
+      },
+      {
+        "result": {
+          "policy": "ban_when_nonruff_legal_card_exists",
+          "status": "exact",
+          "value": 2,
+          "loss": 1
+        },
+        "cost": {
+          "nodes": 85437,
+          "cache_hits": 61520,
+          "optimal_edges": 0,
+          "restricted_solver_calls": 1,
+          "cached_positions": 84758
+        }
+      },
+      {
+        "result": {
+          "policy": "do_not_credit_studied_winning_ruffs",
+          "status": "exact",
+          "value": 1,
+          "loss": 2
+        },
+        "cost": {
+          "nodes": 175612,
+          "cache_hits": 138849,
+          "optimal_edges": 0,
+          "restricted_solver_calls": 1,
+          "cached_positions": 174429
+        }
+      }
+    ],
+    "seconds": 15.899209100054577
+  }
+]

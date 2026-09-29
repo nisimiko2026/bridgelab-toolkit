@@ -1,0 +1,1598 @@
+{
+  "synthetic": [
+    {
+      "name": "one_ruff",
+      "cards": [
+        [
+          "QC 9D 8S",
+          "2D 3D QS",
+          "TC 3S 7S",
+          "2C QD AD"
+        ],
+        "W"
+      ],
+      "exact": {
+        "status": "exact",
+        "optimum": 2,
+        "profiles": [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "studied_ruff_bounds": [
+          1,
+          1
+        ],
+        "every_optimal_line_requires_studied_ruff": true,
+        "reciprocal_ruff_presence": [
+          false,
+          true
+        ],
+        "optimal_line_count": 40
+      },
+      "cost": {
+        "nodes": 640,
+        "cache_hits": 490,
+        "optimal_edges": 246,
+        "restricted_solver_calls": 0,
+        "cached_positions": 534
+      },
+      "dds_cost": {
+        "calls": 207,
+        "cache_hits": 1,
+        "seconds": 0.02468870161101222
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "strict_rule_can_force_no_permitted_play",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 123,
+            "cache_hits": 4,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 119
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "exact",
+            "value": 1,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 247,
+            "cache_hits": 24,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 215
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "exact",
+            "value": 1,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 369,
+            "cache_hits": 46,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 327
+          }
+        }
+      ],
+      "seconds": 2.068659800104797
+    },
+    {
+      "name": "zero_singleton",
+      "cards": [
+        [
+          "4C 5S AS",
+          "5C 6C QS",
+          "8C 3D 8S",
+          "4D TD JD"
+        ],
+        "E"
+      ],
+      "exact": {
+        "status": "exact",
+        "optimum": 3,
+        "profiles": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "studied_ruff_bounds": [
+          0,
+          0
+        ],
+        "every_optimal_line_requires_studied_ruff": false,
+        "reciprocal_ruff_presence": [
+          false,
+          false
+        ],
+        "optimal_line_count": 36
+      },
+      "cost": {
+        "nodes": 635,
+        "cache_hits": 445,
+        "optimal_edges": 192,
+        "restricted_solver_calls": 0,
+        "cached_positions": 545
+      },
+      "dds_cost": {
+        "calls": 157,
+        "cache_hits": 1,
+        "seconds": 0.0322679013479501
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 442,
+            "cache_hits": 66,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 388
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 442,
+            "cache_hits": 66,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 388
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 442,
+            "cache_hits": 66,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 388
+          }
+        }
+      ],
+      "seconds": 0.10842010006308556
+    },
+    {
+      "name": "ambiguous_singleton",
+      "cards": [
+        [
+          "6C 9D KD",
+          "5C 4D 5D",
+          "JD 3S JS",
+          "3C 4C TD"
+        ],
+        "S"
+      ],
+      "exact": {
+        "status": "exact",
+        "optimum": 3,
+        "profiles": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "studied_ruff_bounds": [
+          0,
+          1
+        ],
+        "every_optimal_line_requires_studied_ruff": false,
+        "reciprocal_ruff_presence": [
+          false,
+          false
+        ],
+        "optimal_line_count": 608
+      },
+      "cost": {
+        "nodes": 2379,
+        "cache_hits": 3707,
+        "optimal_edges": 1672,
+        "restricted_solver_calls": 0,
+        "cached_positions": 2130
+      },
+      "dds_cost": {
+        "calls": 1065,
+        "cache_hits": 1,
+        "seconds": 0.21101740119047463
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 1120,
+            "cache_hits": 517,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1049
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 1148,
+            "cache_hits": 525,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1065
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "exact",
+            "value": 3,
+            "loss": 0
+          },
+          "cost": {
+            "nodes": 1148,
+            "cache_hits": 525,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1065
+          }
+        }
+      ],
+      "seconds": 0.5068061000201851
+    },
+    {
+      "name": "crossruff_void",
+      "cards": [
+        [
+          "3D 3S TS",
+          "7C AC KD",
+          "4C JC 7S",
+          "5C 9C 6D"
+        ],
+        "N"
+      ],
+      "exact": {
+        "status": "exact",
+        "optimum": 3,
+        "profiles": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "studied_ruff_bounds": [
+          1,
+          1
+        ],
+        "every_optimal_line_requires_studied_ruff": true,
+        "reciprocal_ruff_presence": [
+          true,
+          true
+        ],
+        "optimal_line_count": 16
+      },
+      "cost": {
+        "nodes": 794,
+        "cache_hits": 290,
+        "optimal_edges": 98,
+        "restricted_solver_calls": 0,
+        "cached_positions": 680
+      },
+      "dds_cost": {
+        "calls": 83,
+        "cache_hits": 1,
+        "seconds": 0.0060354010201990604
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "exact",
+            "value": 2,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 623,
+            "cache_hits": 110,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 549
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "exact",
+            "value": 2,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 623,
+            "cache_hits": 110,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 549
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "exact",
+            "value": 2,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 679,
+            "cache_hits": 118,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 597
+          }
+        }
+      ],
+      "seconds": 0.05445190006867051
+    },
+    {
+      "name": "ruff_option_threat",
+      "cards": [
+        [
+          "QC 9D 8S JD",
+          "2D 3D QS KS",
+          "TC 3S 7S 4C",
+          "2C QD AD KD"
+        ],
+        "W"
+      ],
+      "exact": {
+        "status": "exact",
+        "optimum": 1,
+        "profiles": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "studied_ruff_bounds": [
+          0,
+          1
+        ],
+        "every_optimal_line_requires_studied_ruff": false,
+        "reciprocal_ruff_presence": [
+          false,
+          false
+        ],
+        "optimal_line_count": 2688
+      },
+      "cost": {
+        "nodes": 11044,
+        "cache_hits": 12077,
+        "optimal_edges": 4073,
+        "restricted_solver_calls": 0,
+        "cached_positions": 10412
+      },
+      "dds_cost": {
+        "calls": 2868,
+        "cache_hits": 1,
+        "seconds": 0.5798807025421411
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "strict_rule_can_force_no_permitted_play",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 2072,
+            "cache_hits": 645,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 2012
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "exact",
+            "value": 0,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 2460,
+            "cache_hits": 937,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 2308
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "exact",
+            "value": 0,
+            "loss": 1
+          },
+          "cost": {
+            "nodes": 7896,
+            "cache_hits": 3965,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 7544
+          }
+        }
+      ],
+      "seconds": 1.5223900000564754
+    }
+  ],
+  "full_deals": [
+    {
+      "source": "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+      "label": "singleton_unknown_fit",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": 0,
+        "exchange_mean": 0.875,
+        "B_structural_relocation": 1,
+        "C_finite_matched_expectation": 0.25,
+        "D_uniform_conditional_baseline": 0.5
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 10,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 95
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 663,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1358
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 666,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1388
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 666,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1388
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": [
+          0,
+          5
+        ],
+        "exchange_mean": [
+          -0.875,
+          4.125
+        ],
+        "B_structural_relocation": [
+          -1,
+          4
+        ],
+        "C_finite_matched_expectation": [
+          -0.25,
+          4.75
+        ],
+        "D_uniform_conditional_baseline": [
+          -0.5,
+          4.5
+        ]
+      },
+      "cost": {
+        "path_nodes": 249,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.07287730043753982,
+        "seconds": 0.17956530000083148
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 4,
+        "trump_length_role": "longer",
+        "own_studied_length": 1
+      }
+    },
+    {
+      "source": "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+      "label": "singleton_unknown_fit",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": -1,
+        "exchange_mean": -0.3333333333333333,
+        "B_structural_relocation": -1,
+        "C_finite_matched_expectation": -1,
+        "D_uniform_conditional_baseline": -0.875
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 10,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 95
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 615,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1406
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 551,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1384
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 551,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1384
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": [
+          1,
+          6
+        ],
+        "exchange_mean": [
+          0.3333333333333333,
+          5.333333333333333
+        ],
+        "B_structural_relocation": [
+          1,
+          6
+        ],
+        "C_finite_matched_expectation": [
+          1,
+          6
+        ],
+        "D_uniform_conditional_baseline": [
+          0.875,
+          5.875
+        ]
+      },
+      "cost": {
+        "path_nodes": 214,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.10440510045737028,
+        "seconds": 0.23818220011889935
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 2,
+        "trump_length_role": "longer",
+        "own_studied_length": 1
+      }
+    },
+    {
+      "source": "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+      "label": "singleton_support_ge3",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": 0,
+        "exchange_mean": 0.0,
+        "B_structural_relocation": 0,
+        "C_finite_matched_expectation": 0,
+        "D_uniform_conditional_baseline": -0.375
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 9,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 109
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 638,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1364
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": [
+          0,
+          5
+        ],
+        "exchange_mean": [
+          0.0,
+          5.0
+        ],
+        "B_structural_relocation": [
+          0,
+          5
+        ],
+        "C_finite_matched_expectation": [
+          0,
+          5
+        ],
+        "D_uniform_conditional_baseline": [
+          0.375,
+          5.375
+        ]
+      },
+      "cost": {
+        "path_nodes": 250,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.057982400292530656,
+        "seconds": 0.17155799991451204
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 4,
+        "trump_length_role": "longer",
+        "own_studied_length": 1
+      }
+    },
+    {
+      "source": "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+      "label": "singleton_support_ge4",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": -1,
+        "C_finite_matched_expectation": 1.25,
+        "D_uniform_conditional_baseline": 0.625
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 10,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 87
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 944,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1395
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 944,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1395
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 944,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1395
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": [
+          1,
+          6
+        ],
+        "C_finite_matched_expectation": [
+          -1.25,
+          3.75
+        ],
+        "D_uniform_conditional_baseline": [
+          -0.625,
+          4.375
+        ]
+      },
+      "cost": {
+        "path_nodes": 225,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.038248700089752674,
+        "seconds": 0.1906308000907302
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 4,
+        "trump_length_role": "longer",
+        "own_studied_length": 1
+      }
+    },
+    {
+      "source": "N:7653.Q.AKQ5.A982|E:J8.AT4.J73.KQT54|S:AKQ42.98765.-.J76|W:T9.KJ32.T98642.3",
+      "label": "void_unknown_fit",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": 1,
+        "C_finite_matched_expectation": 0.5,
+        "D_uniform_conditional_baseline": 0.5
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 11,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 109
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 663,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1329
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 619,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1405
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 619,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1405
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": [
+          -1,
+          4
+        ],
+        "C_finite_matched_expectation": [
+          -0.5,
+          4.5
+        ],
+        "D_uniform_conditional_baseline": [
+          -0.5,
+          4.5
+        ]
+      },
+      "cost": {
+        "path_nodes": 237,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.056718999752774835,
+        "seconds": 0.19550899998284876
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 4,
+        "trump_length_role": "longer",
+        "own_studied_length": 0
+      }
+    },
+    {
+      "source": "N:JT965.J4.QJ.8542|E:3.AK32.9876.KT93|S:AKQ42.98765.-.J76|W:87.QT.AKT5432.AQ",
+      "label": "void_support_ge3",
+      "cohort": "PTA2B_conditional",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": 1,
+        "C_finite_matched_expectation": 1.25,
+        "D_uniform_conditional_baseline": 0.75
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 8,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 93
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 807,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1349
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1026,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1403
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1026,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1403
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null,
+        "B_structural_relocation": [
+          -1,
+          4
+        ],
+        "C_finite_matched_expectation": [
+          -1.25,
+          3.75
+        ],
+        "D_uniform_conditional_baseline": [
+          -0.75,
+          4.25
+        ]
+      },
+      "cost": {
+        "path_nodes": 267,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.02696449961513281,
+        "seconds": 0.14585620001889765
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 5,
+        "trump_length_role": "equal",
+        "own_studied_length": 0
+      }
+    },
+    {
+      "source": "N:42.8652.Q8643.82|E:853.93.AJT9.7543|S:AKQJT.AKQ.2.AKQJ|W:976.JT74.K75.T96",
+      "label": "AKQJT.AKQ.2.AKQJ",
+      "cohort": "extreme",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 12,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 5,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 99
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 792,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1414
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 792,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1414
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 792,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1414
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "cost": {
+        "path_nodes": 251,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.01803339971229434,
+        "seconds": 0.14666360011324286
+      },
+      "physical_features": {
+        "own_trumps": 5,
+        "partner_trumps": 2,
+        "trump_length_role": "longer",
+        "own_studied_length": 1
+      }
+    },
+    {
+      "source": "N:-.T84.AKT73.AQJ82|E:-.AJ95.J9654.7543|S:AKQJT9876543.2.-.-|W:2.KQ763.Q82.KT96",
+      "label": "AKQJT9876543.2.-.-",
+      "cohort": "extreme",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 12,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 12,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 115
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "cost": {
+        "path_nodes": 368,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.022443200461566448,
+        "seconds": 0.1508473998401314
+      },
+      "physical_features": {
+        "own_trumps": 12,
+        "partner_trumps": 0,
+        "trump_length_role": "longer",
+        "own_studied_length": 0
+      }
+    },
+    {
+      "source": "N:-.AQ862.Q953.AK93|E:52.K9.KJ876.8654|S:AKQJ9876.543.-.T2|W:T43.JT7.AT42.QJ7",
+      "label": "AKQJ9876.543.-.T2",
+      "cohort": "extreme",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "bounds": {
+        "status": "budget_exhausted",
+        "optimum": 12,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 8,
+        "extrema_exact": false,
+        "every_optimal_line_requires_ruff": null,
+        "resolved_subpositions": 95
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 967,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1374
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "cost": {
+        "path_nodes": 247,
+        "cached_path_positions": 128,
+        "dds_calls": 128,
+        "dds_cache_hits": 1,
+        "dds_seconds": 0.07409089803695679,
+        "seconds": 0.2214879000093788
+      },
+      "physical_features": {
+        "own_trumps": 8,
+        "partner_trumps": 0,
+        "trump_length_role": "longer",
+        "own_studied_length": 0
+      }
+    },
+    {
+      "source": "N:-.-.-.AKQJT98765432|E:-.2.AKQJT9876543.-|S:-.AKQJT9876543.2.-|W:AKQJT98765432.-.-.-",
+      "label": "no_own_trump",
+      "cohort": "extreme",
+      "prior": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "bounds": {
+        "status": "exact",
+        "optimum": 0,
+        "minimum_lower_bound": 0,
+        "maximum_upper_bound": 0,
+        "extrema_exact": true,
+        "every_optimal_line_requires_ruff": false,
+        "resolved_subpositions": 1
+      },
+      "restricted": [
+        {
+          "result": {
+            "policy": "ban_studied_ruff_actions",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "ban_when_nonruff_legal_card_exists",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        },
+        {
+          "result": {
+            "policy": "do_not_credit_studied_winning_ruffs",
+            "status": "budget_exhausted",
+            "value": null,
+            "loss": null
+          },
+          "cost": {
+            "nodes": 1500,
+            "cache_hits": 1007,
+            "optimal_edges": 0,
+            "restricted_solver_calls": 1,
+            "cached_positions": 1375
+          }
+        }
+      ],
+      "comparison_difference_envelopes": {
+        "exchange_first": null,
+        "exchange_mean": null
+      },
+      "cost": {
+        "path_nodes": 0,
+        "cached_path_positions": 0,
+        "dds_calls": 1,
+        "dds_cache_hits": 0,
+        "dds_seconds": 0.0005342001095414162,
+        "seconds": 0.1301424999255687
+      },
+      "physical_features": {
+        "own_trumps": 0,
+        "partner_trumps": 0,
+        "trump_length_role": "equal",
+        "own_studied_length": 1
+      }
+    }
+  ],
+  "comparisons": {
+    "B_structural_relocation": {
+      "n": 0,
+      "reason_if_no_overlap": "No jointly exact scalar mechanism/prior values; interval envelopes retained, correlations not invented."
+    },
+    "C_finite_matched_expectation": {
+      "n": 0,
+      "reason_if_no_overlap": "No jointly exact scalar mechanism/prior values; interval envelopes retained, correlations not invented."
+    },
+    "D_uniform_conditional_baseline": {
+      "n": 0,
+      "reason_if_no_overlap": "No jointly exact scalar mechanism/prior values; interval envelopes retained, correlations not invented."
+    },
+    "exchange_first": {
+      "n": 0,
+      "reason_if_no_overlap": "No jointly exact scalar mechanism/prior values; interval envelopes retained, correlations not invented."
+    },
+    "exchange_mean": {
+      "n": 0,
+      "reason_if_no_overlap": "No jointly exact scalar mechanism/prior values; interval envelopes retained, correlations not invented."
+    }
+  },
+  "zero_dds_census": {
+    "total": 5000,
+    "exchange_available": 3819,
+    "exchange_unavailable": 1181,
+    "physical_positions_valid": 5000
+  },
+  "adopted_target": null,
+  "expectation_pilot": "not run: full-information target not adopted",
+  "recommendation": "PT-A2E mechanism methodology required",
+  "wall_seconds": 7.683698100037873,
+  "warning": "Ruff event counts, action restrictions and modified reward games are different estimands. Budget envelopes are not attained optimal-line extrema. No control deal is transformed.",
+  "interval_comparisons": {
+    "B_structural_relocation": {
+      "n": 6,
+      "mean_difference_envelope": [
+        -0.16666666666666666,
+        4.833333333333333
+      ],
+      "median_difference_envelope": [
+        -0.5,
+        4.5
+      ],
+      "pearson": null,
+      "spearman": null,
+      "sign_disagreement_count_bounds": [
+        2,
+        6
+      ],
+      "certain_large_disagreements": [],
+      "possible_large_disagreements": [
+        "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+        "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+        "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+        "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+        "N:7653.Q.AKQ5.A982|E:J8.AT4.J73.KQT54|S:AKQ42.98765.-.J76|W:T9.KJ32.T98642.3",
+        "N:JT965.J4.QJ.8542|E:3.AK32.9876.KT93|S:AKQ42.98765.-.J76|W:87.QT.AKT5432.AQ"
+      ],
+      "interpretation": "Unresolved envelopes; no midpoint, target point estimate, rank or correlation is inferred."
+    },
+    "C_finite_matched_expectation": {
+      "n": 6,
+      "mean_difference_envelope": [
+        -0.375,
+        4.625
+      ],
+      "median_difference_envelope": [
+        -0.375,
+        4.625
+      ],
+      "pearson": null,
+      "spearman": null,
+      "sign_disagreement_count_bounds": [
+        1,
+        6
+      ],
+      "certain_large_disagreements": [],
+      "possible_large_disagreements": [
+        "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+        "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+        "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+        "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+        "N:7653.Q.AKQ5.A982|E:J8.AT4.J73.KQT54|S:AKQ42.98765.-.J76|W:T9.KJ32.T98642.3",
+        "N:JT965.J4.QJ.8542|E:3.AK32.9876.KT93|S:AKQ42.98765.-.J76|W:87.QT.AKT5432.AQ"
+      ],
+      "interpretation": "Unresolved envelopes; no midpoint, target point estimate, rank or correlation is inferred."
+    },
+    "D_uniform_conditional_baseline": {
+      "n": 6,
+      "mean_difference_envelope": [
+        -0.1875,
+        4.8125
+      ],
+      "median_difference_envelope": [
+        -0.5,
+        4.5
+      ],
+      "pearson": null,
+      "spearman": null,
+      "sign_disagreement_count_bounds": [
+        2,
+        6
+      ],
+      "certain_large_disagreements": [],
+      "possible_large_disagreements": [
+        "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+        "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+        "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93",
+        "N:9876.AK3.J7.KQ32|E:5.Q2.AKQT9542.84|S:AKQ42.9876.3.J76|W:JT3.JT54.86.AT95",
+        "N:7653.Q.AKQ5.A982|E:J8.AT4.J73.KQT54|S:AKQ42.98765.-.J76|W:T9.KJ32.T98642.3",
+        "N:JT965.J4.QJ.8542|E:3.AK32.9876.KT93|S:AKQ42.98765.-.J76|W:87.QT.AKT5432.AQ"
+      ],
+      "interpretation": "Unresolved envelopes; no midpoint, target point estimate, rank or correlation is inferred."
+    },
+    "exchange_first": {
+      "n": 3,
+      "mean_difference_envelope": [
+        0.3333333333333333,
+        5.333333333333333
+      ],
+      "median_difference_envelope": [
+        0,
+        5
+      ],
+      "pearson": null,
+      "spearman": null,
+      "sign_disagreement_count_bounds": [
+        1,
+        3
+      ],
+      "certain_large_disagreements": [],
+      "possible_large_disagreements": [
+        "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+        "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+        "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93"
+      ],
+      "interpretation": "Unresolved envelopes; no midpoint, target point estimate, rank or correlation is inferred."
+    },
+    "exchange_mean": {
+      "n": 3,
+      "mean_difference_envelope": [
+        -0.18055555555555555,
+        4.819444444444445
+      ],
+      "median_difference_envelope": [
+        0.0,
+        5.0
+      ],
+      "pearson": null,
+      "spearman": null,
+      "sign_disagreement_count_bounds": [
+        1,
+        3
+      ],
+      "certain_large_disagreements": [],
+      "possible_large_disagreements": [
+        "N:T853.3.K742.AQ84|E:J7.KJ52.T6.KT532|S:AKQ42.9876.3.J76|W:96.AQT4.AQJ985.9",
+        "N:93.A432.AJ2.AK32|E:J65.KJT5.974.Q84|S:AKQ42.9876.3.J76|W:T87.Q.KQT865.T95",
+        "N:J976.K.AK875.852|E:-.JT32.QJ642.AKQ4|S:AKQ42.9876.3.J76|W:T853.AQ54.T9.T93"
+      ],
+      "interpretation": "Unresolved envelopes; no midpoint, target point estimate, rank or correlation is inferred."
+    }
+  }
+}
