@@ -71,7 +71,7 @@ NISIM_NILY_JACOBY_2NT_PROFILE = PartnershipProfile(
 # and the dedicated Jacoby API remain unchanged. No generic article is a card.
 # Only the convention card's explicit fragments are recorded; missing upper
 # support bounds, forcing flags and 3C/3D mappings are NOT inferred.
-NISIM_NILY_BERGEN_PROFILE = PartnershipProfile(
+NISIM_NILY_BERGEN_PROFILE_B24B2 = PartnershipProfile(
     profile_id=NISIM_NILY_PROFILE.profile_id,
     version="B2.4B2",
     base_system=NISIM_NILY_PROFILE.base_system,
@@ -93,4 +93,44 @@ NISIM_NILY_BERGEN_PROFILE = PartnershipProfile(
             )),
     ),
     sources=NISIM_NILY_JACOBY_2NT_PROFILE.sources,
+)
+
+
+# B2.4B3 supersedes the incomplete card above. Ranges are partnership data,
+# not generic Bergen defaults. See B2_4B3_STANDARD_BERGEN.md for approval.
+BERGEN_STANDARD_APPROVAL = "B2_4B3_STANDARD_BERGEN"
+_NISIM_NILY_STANDARD_BERGEN_PARAMETERS = (
+    ("card_source", "bidding/convention-cards/cc-nily-nisim"),
+    ("variant", "STANDARD"),
+    ("competition", "UNCONTESTED_ONLY"),
+    ("strength_metric", "hcp"),
+    ("branch_policy", "exclusive"),
+    ("jacoby_relationship", "defer_to_jacoby"),
+    ("jacoby_treatment", JACOBY_2NT_TREATMENT),
+) + tuple(
+    (f"{slot}.{key}", value)
+    for slot, call, meaning, low, high, minimum, maximum, artificial, forcing in (
+        ("simple_raise", "2M", "simple natural raise", "6", "9", "3", "3", "false", "nonforcing"),
+        ("three_clubs", "3C", "Bergen limit raise", "10", "12", "4", "13", "true", "invitational"),
+        ("three_diamonds", "3D", "Bergen preemptive raise", "0", "6", "4", "13", "true", "nonforcing"),
+        ("three_major", "3M", "mixed natural raise", "7", "9", "4", "4", "false", "nonforcing"),
+    )
+    for key, value in (
+        ("call", call), ("enabled", "true"), ("meaning", meaning),
+        ("min_hcp", low), ("max_hcp", high),
+        ("min_support", minimum), ("max_support", maximum),
+        ("artificial", artificial), ("forcing", forcing),
+    )
+)
+
+NISIM_NILY_BERGEN_PROFILE = PartnershipProfile(
+    profile_id=NISIM_NILY_PROFILE.profile_id,
+    version="B2.4B3",
+    base_system=NISIM_NILY_PROFILE.base_system,
+    agreements=tuple(a for a in NISIM_NILY_JACOBY_2NT_PROFILE.agreements
+                     if a.family != "response.major.raises") + (
+        AgreementSelection("response.major.raises", AgreementResolution.ENABLE,
+                           "BERGEN_RAISES", _NISIM_NILY_STANDARD_BERGEN_PARAMETERS),
+    ),
+    sources=NISIM_NILY_JACOBY_2NT_PROFILE.sources + (BERGEN_STANDARD_APPROVAL,),
 )

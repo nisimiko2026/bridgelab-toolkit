@@ -15,7 +15,7 @@ from bridge.evaluation import evaluate_hand
 from bridge.models import Hand, Seat, Vulnerability
 from bridge.nisim_nily_jacoby_2nt import assess_jacoby_2nt_response
 from bridge.nisim_nily_partnership_profile import (
-    NISIM_NILY_PROFILE, NISIM_NILY_BERGEN_PROFILE, NISIM_NILY_JACOBY_2NT_PROFILE,
+    NISIM_NILY_PROFILE, NISIM_NILY_BERGEN_PROFILE_B24B2, NISIM_NILY_JACOBY_2NT_PROFILE,
 )
 from bridge.partnership_profiles import (
     AgreementResolution as R, AgreementSelection, AgreementSourceScope as Scope,
@@ -160,7 +160,7 @@ def test_exclusive_overlap_rejected_but_nonexclusive_conflict_has_no_arbitrary_w
     assert result.status is S.CONFLICT and selected(result) is None
 
 
-@pytest.mark.parametrize('profile', (NISIM_NILY_PROFILE,NISIM_NILY_JACOBY_2NT_PROFILE,NISIM_NILY_BERGEN_PROFILE))
+@pytest.mark.parametrize('profile', (NISIM_NILY_PROFILE,NISIM_NILY_JACOBY_2NT_PROFILE,NISIM_NILY_BERGEN_PROFILE_B24B2))
 def test_nisim_nily_uses_only_its_incomplete_card_not_generic_or_base_defaults(profile):
     base=(ResolvedAgreement(BERGEN_FAMILY,BERGEN_RAISES,R.ENABLE,Scope.SYSTEM,tuple(parameters().items())),)
     result=assess(profile,base_agreements=base)
@@ -171,7 +171,7 @@ def test_nisim_nily_uses_only_its_incomplete_card_not_generic_or_base_defaults(p
 
 
 def test_new_nisim_card_records_source_fragments_without_filling_in_ranges():
-    agreement=next(a for a in NISIM_NILY_BERGEN_PROFILE.agreements if a.family == BERGEN_FAMILY)
+    agreement=next(a for a in NISIM_NILY_BERGEN_PROFILE_B24B2.agreements if a.family == BERGEN_FAMILY)
     p=dict(agreement.parameters)
     assert agreement.treatment_id == BERGEN_RAISES
     assert (p['simple_raise.min_hcp'],p['simple_raise.max_hcp']) == ('8','10')
@@ -304,5 +304,5 @@ def test_explicit_jacoby_disable_is_consumed_without_blocking_bergen():
 
 def test_incomplete_parameterized_bergen_does_not_bypass_jacoby_guards():
     result=assess_jacoby_2nt_response(hand('1S',13),auction=Auction(Seat.NORTH,('1S','P')),
-        vulnerability=Vulnerability.NONE,profile=NISIM_NILY_BERGEN_PROFILE)
+        vulnerability=Vulnerability.NONE,profile=NISIM_NILY_BERGEN_PROFILE_B24B2)
     assert selected(result) is None and result.blockers

@@ -131,7 +131,8 @@ def _resolve(resolved):
     if not resolved.sources:
         raise BergenConfigurationIncomplete('Bergen requires card provenance in profile.sources')
     params = dict(source.parameters)
-    allowed = {'card_source', 'strength_metric', 'branch_policy', 'jacoby_relationship', 'jacoby_treatment'}
+    allowed = {'card_source', 'strength_metric', 'branch_policy', 'jacoby_relationship',
+               'jacoby_treatment', 'variant', 'competition'}
     allowed.update(f'{slot}.{field}' for slot in _SLOTS for field in _FIELDS)
     if set(params) - allowed:
         raise BergenConfigurationError('Unsupported card parameters: ' + ', '.join(sorted(set(params) - allowed)))
@@ -139,6 +140,12 @@ def _resolve(resolved):
     if (params['card_source'] not in resolved.sources
             or not params['card_source'].startswith('bidding/convention-cards/')):
         raise BergenConfigurationError('card_source must identify an explicit convention card in profile.sources')
+    # Variant names are labels, never a source of implicit ranges. Older B2.4B2
+    # cards retain their exact-uncontested scope when these labels are absent.
+    if 'variant' in params and not params['variant']:
+        raise BergenConfigurationIncomplete('variant must be nonblank when supplied')
+    if 'competition' in params and params['competition'] != 'UNCONTESTED_ONLY':
+        raise BergenConfigurationError('Only UNCONTESTED_ONLY Bergen is implemented')
     if params['strength_metric'] != 'hcp':
         raise BergenConfigurationError('Only explicit HCP ranges are supported; no point conversion')
     if params['branch_policy'] not in ('exclusive', 'conflict'):

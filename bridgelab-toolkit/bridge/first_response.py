@@ -1,7 +1,7 @@
-"""B2.1 first-response composition of existing routes, never new bidding rules.
+"""First-response composition of existing routes and explicit card assessors.
 
-The partnership resolver owns agreement precedence. The existing router and
-rule registries own all hand predicates, sources and call meanings. This
+The partnership resolver owns agreement precedence. Existing rules and
+card assessors own hand predicates, sources and call meanings. This
 opt-in assessment is not wired into production or any rebid path.
 """
 from __future__ import annotations
@@ -75,7 +75,7 @@ def assess_first_response(
     profile: PartnershipProfile, base_agreements: tuple[ResolvedAgreement, ...] = (),
     registry: PolicyRegistry | None = None, suit_quality_policy_id: str | None = None,
 ) -> FirstResponseAssessment:
-    """Resolve a profile and assess only an existing first-response route.
+    """Resolve a profile and assess existing routes or an explicit Bergen card.
 
     Base defaults must be supplied explicitly as SYSTEM-scope agreements, as in
     the existing resolver. No system-name substitution, passed-hand normalization
@@ -95,6 +95,34 @@ def assess_first_response(
         return FirstResponseAssessment(resolved, context, opening,
             None if route is None else route.route_id, disposition, selected,
             evidence, tuple(issues), reason)
+
+    # B2.4B3: an explicitly parameterized Bergen card owns its raise slice.
+    # This opt-in composition adds no production route or convention predicate.
+    raises = resolved.agreement("response.major.raises")
+    if opening in ("1H", "1S") and raises is not None and (
+            raises.treatment_id == "BERGEN_RAISES"
+            or (raises.treatment_id == "bergen" and raises.parameters)):
+        from .bergen_raises import BergenStatus, assess_bergen_response
+        card_result = assess_bergen_response(hand, auction=auction,
+            vulnerability=vulnerability, profile=profile, base_agreements=base_agreements)
+        evidence = None
+        if card_result.status is BergenStatus.DEFER_TO_JACOBY:
+            from .nisim_nily_jacoby_2nt import assess_jacoby_2nt_response
+            jacoby = assess_jacoby_2nt_response(hand, auction=auction,
+                vulnerability=vulnerability, profile=profile, base_agreements=base_agreements)
+            selected, reason = jacoby.selected, jacoby.reason
+            evidence = jacoby.engine_result
+            disposition = FirstResponseDisposition(jacoby.disposition.value)
+            issues = jacoby.blockers
+        else:
+            selected, reason = card_result.selected, card_result.reason
+            disposition = (FirstResponseDisposition.RECOMMENDED if selected is not None
+                else FirstResponseDisposition.CONFLICT if card_result.status is BergenStatus.CONFLICT
+                else FirstResponseDisposition.ABSTAIN)
+            issues = () if selected is not None else (reason,)
+        # No standard route executed this card decision; retain its own sources.
+        return FirstResponseAssessment(resolved, context, opening, None, disposition,
+                                      selected, evidence, issues, reason)
 
     if blockers:
         return result(FirstResponseDisposition.ABSTAIN,
