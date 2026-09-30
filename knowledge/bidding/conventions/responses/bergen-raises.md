@@ -1,49 +1,50 @@
 ---
 title: Bergen Raises
-description: A convention that uses jump responses after a major-suit opening to distinguish constructive, invitational, and preemptive raises while conserving bidding space.
+description: A convention that uses jump responses after a major-suit opening to distinguish
+  constructive, invitational, and preemptive raises while conserving bidding space.
 category: bidding
-subcategory: Responses to Major Openings
+subcategory: conventions
 difficulty: Intermediate
-tags: 
-  - blackwood
-  - competitive
-  - conventions
-  - cue bid
-  - double
-  - drury
-  - forcing
-  - jacoby
-  - negative
-  - opening
-  - preempt
-  - rebid
-  - redouble
-  - response
-  - responses to major openings
-  - slam
-  - support
-  - takeout
+tags:
+- blackwood
+- competitive
+- conventions
+- cue bid
+- double
+- drury
+- forcing
+- jacoby
+- negative
+- opening
+- preempt
+- rebid
+- redouble
+- response
+- responses to major openings
+- slam
+- support
+- takeout
 systems: []
 aliases: []
 acronyms: []
-references: 
-  - acronyms
-  - bidding/bidding-index
-  - bidding/conventions/competitive/bid-competitive-index
-  - bidding/conventions/competitive/jordan-2nt
-  - bidding/conventions/conventions-index
-  - bidding/conventions/doubles/doubles-index
-  - bidding/conventions/doubles/take-out-double
-  - bidding/conventions/game-invitations/game-invitations
-  - bidding/conventions/responses/jacoby-notrump
-  - bidding/conventions/responses/mixed-raise
-  - bidding/conventions/responses/responses-index
-  - bidding/conventions/slam-conventions/slam-bid-index
-  - bidding/natural-bids/responses/limit-raise
-  - bidding/principles/bidding-fundamentals/vulnerability
-  - bidding/principles/partnership/partnership-agreements
-  - references/references-index
-last_updated: 2026-07-22
+references:
+- acronyms
+- bidding/bidding-index
+- bidding/conventions/competitive/bid-competitive-index
+- bidding/conventions/competitive/jordan-2nt
+- bidding/conventions/conventions-index
+- bidding/conventions/doubles/doubles-index
+- bidding/conventions/doubles/take-out-double
+- bidding/conventions/game-invitations/game-invitations
+- bidding/conventions/responses/jacoby-notrump
+- bidding/conventions/responses/mixed-raise
+- bidding/conventions/responses/responses-index
+- bidding/conventions/slam-conventions/slam-bid-index
+- bidding/natural-bids/responses/limit-raise
+- bidding/principles/bidding-fundamentals/vulnerability
+- bidding/principles/partnership/partnership-agreements
+- references/references-index
+last_updated: '2026-09-30'
 status: Draft
 ---
 
@@ -99,29 +100,34 @@ Some partnerships require exactly four-card support for Bergen Raises.
 
 Several versions exist.
 
-The most widely played modern structure is:
+The agreed Standard Bergen structure used here for Nisim–Nily is:
 
 | Response | Meaning |
 |----------|---------|
-| 2♥ / 2♠ | Simple raise (6–9 points, 3-card support) |
-| 3♣ | Limit Raise (10–12 points, 4+ trumps) |
-| 3♦ | Preemptive Raise (0–6 points, 4+ trumps) |
-| 3♥ / 3♠ | Mixed Raise (7–9 points, 4-card support) |
-| 2NT | Jacoby 2NT (Game forcing) |
+| 2♥ / 2♠ | Simple raise (6–9 HCP, exactly 3-card support) |
+| 3♣ | Bergen constructive raise (6–9 HCP, exactly 4-card support) |
+| 3♦ | Bergen limit raise (10–12 HCP, exactly 4-card support) |
+| 3♥ / 3♠ | Weak direct raise (0–5 HCP, exactly 4-card support), natural and non-forcing |
+| 2NT | Jacoby 2NT (game forcing, 4+ support) |
 
-Older partnerships may interchange the meanings of **3♣** and **3♦**.
+This is the Bergen structure used in this article. Do not interchange the meanings
+of **3♣** and **3♦** unless a partnership card explicitly defines a different variant.
 
-Always discuss the structure before play.
+The sequences in this article assume an uncontested auction.
 
 ---
 
 # Requirements
 
-Responder normally holds:
+Responder's support requirement depends on the selected response:
 
-- Four-card or longer trump support.
-- Distribution suitable for raising immediately.
-- Values appropriate to the agreed response.
+- **2M**: exactly three-card support.
+- **3♣**: exactly four-card support.
+- **3♦**: exactly four-card support.
+- **3M**: 0–5 HCP, exactly four-card support, natural and non-forcing.
+- **2NT**: four-card or longer support with game-forcing values.
+
+Bergen is **off after opponent intervention** in this structure.
 
 ---
 
@@ -148,7 +154,7 @@ Some partnerships use four-card support.
 
 ---
 
-# 3♣ — Limit Raise
+# 3♣ — Bergen Constructive Raise
 
 ```
 1♥
@@ -160,45 +166,49 @@ or
 ```
 1♠
 3♣*
+```
+
+Shows:
+
+- 6–9 HCP
+- Exactly four-card support
+- Artificial Bergen raise
+- Non-forcing
+
+This response separates a four-card constructive raise from the simple **2M**
+raise, which shows only three-card support.
+
+---
+
+# 3♦ — Bergen Limit Raise
+
+```
+1♥
+3♦*
+```
+
+or
+
+```
+1♠
+3♦*
 ```
 
 Shows:
 
 - 10–12 HCP
-- Four or more trumps
+- Exactly four-card support
+- Artificial Bergen limit raise
 - Invitational values
 
-Opener decides whether to accept the invitation.
+Opener decides whether to accept the invitation, sign off, or continue toward slam
+according to the partnership's continuation agreements.
 
 ---
 
-# 3♦ — Preemptive Raise
+# Direct 3M — Weak Raise
 
-```
-1♥
-3♦*
-```
-
-or
-
-```
-1♠
-3♦*
-```
-
-Shows:
-
-- Weak hand
-- Four or more trumps
-- Distributional values
-
-The primary objective is to consume bidding space.
-
----
-
-# Mixed Raise
-
-Many partnerships assign:
+The direct jump raise:
 
 ```
 1♥
@@ -212,13 +222,18 @@ or
 3♠
 ```
 
-to show:
+shows:
 
-- 7–9 HCP
-- Four-card support
-- Good offensive distribution
+- 0–5 HCP
+- Exactly four-card support
+- Weak direct raise
+- Natural and non-forcing
 
-This hand is too strong for a weak preempt but not strong enough for a limit raise.
+This direct **3M** raise is not the 6–9 HCP Bergen **3♣** raise and is not the
+10–12 HCP Bergen **3♦** limit raise.
+
+The 0–5 HCP range is explicitly approved by the Nisim–Nily partnership card.
+At 6 HCP with exactly four trumps, the approved response is 3♣, not 3M.
 
 ---
 
@@ -227,7 +242,7 @@ This hand is too strong for a weak preempt but not strong enough for a limit rai
 Hands with:
 
 - Game-forcing values
-- Four-card support
+- Four-card or longer support
 
 normally begin with:
 
@@ -249,12 +264,16 @@ After a Bergen Raise, opener evaluates:
 - Controls.
 - Slam potential.
 
-Possible actions include:
+Depending on the exact Bergen response and the partnership's continuation card,
+possible actions may include:
 
 - Pass.
 - Sign off in game.
 - Cue bid.
 - Begin slam investigation.
+
+The exact continuation is partnership-specific and must not be inferred from the
+Bergen response alone.
 
 ---
 
@@ -262,13 +281,16 @@ Possible actions include:
 
 Responder reevaluates after opener's rebid.
 
-Possible continuations include:
+Possible continuations, when explicitly defined by the partnership card, may include:
 
 - Pass.
 - Bid game.
 - Cue bid.
 - Roman Key Card Blackwood.
 - Slam investigation.
+
+No continuation should be assigned automatically unless the partnership agreement
+defines it.
 
 ---
 
@@ -311,52 +333,50 @@ Every partnership should agree on the exact meanings.
 
 # Partnership Agreements
 
-Partners should discuss:
+The partnership card must state:
 
-- Whether Bergen applies with three or four-card support.
-- Meanings of 3♣ and 3♦.
-- Mixed Raise treatment.
-- Responses to interference.
-- Slam continuations.
-- Competitive auctions.
+- **2M** = 6–9 HCP with exactly three-card support.
+- **3♣** = 6–9 HCP with exactly four-card support.
+- **3♦** = 10–12 HCP with exactly four-card support.
+- **3M** = 0–5 HCP, weak natural non-forcing raise with exactly four-card support.
+- **2NT** = Jacoby 2NT with game-forcing values and 4+ support.
+- Bergen is off after opponent intervention.
+- Any opener/responder continuation rules used after a Bergen response.
 
 ---
 
 # Example Auctions
 
-## Example 1 — Limit Raise
+## Example 1 — Constructive Bergen Raise
 
 ```
 1♠
 3♣*
-Pass
 ```
 
-Responder shows invitational values with four-card support.
+Responder shows **6–9 HCP** with **exactly four-card support**.
 
 ---
 
-## Example 2 — Weak Raise
+## Example 2 — Limit Bergen Raise
 
 ```
 1♥
 3♦*
-Pass
 ```
 
-Responder preempts with four-card support.
+Responder shows **10–12 HCP** with **exactly four-card support**.
 
 ---
 
-## Example 3 — Mixed Raise
+## Example 3 — Weak Direct Raise
 
 ```
 1♠
 3♠
-Pass
 ```
 
-Shows constructive values with four-card support.
+Shows **0–5 HCP** with **exactly four-card support**: a weak natural, non-forcing direct raise.
 
 ---
 
@@ -375,7 +395,8 @@ Jacoby 2NT replaces Bergen Raises for game-forcing hands.
 
 ## Overview
 
-The sequences above assume an uncontested auction. Once the opponents interfere, many partnerships suspend Bergen Raises and adopt natural competitive methods.
+The sequences above apply only to an **uncontested auction**. In the Bergen structure
+defined in this article, Bergen Raises are **off after opponent intervention**.
 
 ---
 
@@ -387,14 +408,11 @@ Example
 1♥   (1♠)   ?
 ```
 
-Many partnerships play:
+In this structure:
 
-- Bergen Off.
-- Cue raises.
-- Negative Doubles.
-- Natural raises.
-
-Others retain parts of the Bergen structure when bidding space remains.
+- Bergen is off.
+- Competitive calls are handled by the partnership's separate competitive-bidding agreements.
+- Do not reuse the uncontested Bergen meanings after an overcall.
 
 ---
 
@@ -406,14 +424,10 @@ Example
 1♠   (Double)   ?
 ```
 
-Common agreements include:
+In this structure Bergen is off after a takeout double.
 
-- Redouble showing values.
-- Jordan 2NT (Limit Raise or better).
-- Bergen Off.
-- Natural raises.
-
-Many expert partnerships replace Bergen Raises with **Jordan 2NT** after a takeout double.
+Responses such as redouble, Jordan 2NT, cue raises, or natural raises belong to
+separate competitive agreements and are not defined by Bergen itself.
 
 ---
 
@@ -479,12 +493,12 @@ When opponents interfere:
 
 ## Confusing Different Bergen Versions
 
-There is no universal structure.
+Different Bergen variants exist, so the partnership card must identify the one in use.
 
-Always agree whether:
+In this article the meanings are fixed:
 
-- 3♣ is constructive or limit.
-- 3♦ is weak or invitational.
+- **3♣ = 6–9 HCP, exactly four-card support.**
+- **3♦ = 10–12 HCP, exactly four-card support.**
 
 ---
 
@@ -514,25 +528,27 @@ Know your agreements.
 
 ---
 
-## Forgetting Mixed Raises
+## Misclassifying the Direct 3M Raise
 
-The direct jump to **3♥** or **3♠** often has a special meaning.
+In this structure the direct jump to **3♥** or **3♠** is a **0–5 HCP weak natural, non-forcing raise with exactly
+four-card support**. Do not treat it as the 6–9 HCP **3♣** Bergen raise or the
+10–12 HCP **3♦** limit raise.
 
 ---
 
 # Tips
 
-- Learn one Bergen structure thoroughly rather than several.
-- Agree exactly which hands qualify for each response.
-- Discuss Jordan 2NT together with Bergen Raises.
-- Practice competitive auctions separately.
-- Remember that Bergen Raises are designed to make opener's rebid easier.
+- Learn the partnership's exact Bergen structure rather than mixing variants.
+- Remember: **3♣ = 6–9 / four-card support; 3♦ = 10–12 / four-card support**.
+- Keep the weak direct **3M** raise separate from the Bergen **3♣** and **3♦** calls.
+- Practice competitive auctions separately because Bergen is off after intervention.
+- Define opener continuations explicitly on the convention card.
 
 ---
 
 # Summary
 
-Bergen Raises are one of the most effective conventions for responding to a major-suit opening. By assigning different meanings to jump raises, they allow responder to distinguish weak, constructive, invitational, and game-forcing hands while simultaneously increasing preemptive pressure on the opponents. Although several versions exist, the convention significantly improves competitive judgment and game selection when supported by clear partnership agreements.
+In the Bergen structure defined here, responder distinguishes support and strength after an uncontested major-suit opening: **2M** shows 6–9 HCP with three-card support, **3♣** shows 6–9 HCP with exactly four-card support, **3♦** shows 10–12 HCP with exactly four-card support, **3M** is a 0–5 HCP weak natural, non-forcing direct raise with exactly four-card support, and **2NT** is Jacoby 2NT with game-forcing values and 4+ support. Bergen is off after opponent intervention. Exact continuation sequences must be defined by the partnership card.
 
 ---
 

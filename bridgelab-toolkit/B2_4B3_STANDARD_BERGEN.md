@@ -2,9 +2,10 @@
 
 ## Authority and active card
 
-The user's B2.4B3 agreement is the authority for this card revision. It supersedes
-older incomplete Nisim–Nily Bergen fragments (8–10 simple raise / weak 3M) for
-this explicit opt-in profile. Generic Bergen reference prose supplies no values.
+The user's B2.4B3-FINAL agreement is the authority for this card revision.
+It replaces the earlier 3C/3D mapping and explicitly defines 3M as a 0–5 HCP
+weak direct raise with exactly four trumps. Generic reference prose supplies
+no executable defaults.
 
 Use `NISIM_NILY_BERGEN_PROFILE`, version `B2.4B3`, layered on `TWO_OVER_ONE_GF`.
 The original Phase 29Y and Jacoby profile snapshots are unchanged. The incomplete
@@ -18,14 +19,16 @@ branches enabled, `variant=STANDARD`, `competition=UNCONTESTED_ONLY`,
 | Response after 1H/1S–Pass | HCP | Support | Meaning | Forcing status |
 | --- | --- | --- | --- | --- |
 | 2M | 6–9 | Exactly 3 | Natural simple raise | Nonforcing |
-| 3C | 10–12 | 4+ | Artificial Bergen limit raise | Invitational, not game forcing |
-| 3D | 0–6 | 4+ | Artificial Bergen preemptive raise | Nonforcing |
-| 3M | 7–9 | Exactly 4 | Natural mixed raise | Nonforcing |
+| 3C | 6–9 | Exactly 4 | Artificial Bergen raise | Nonforcing |
+| 3D | 10–12 | Exactly 4 | Artificial Bergen limit raise | Invitational, not game forcing |
+| 3M | 0–5 | Exactly 4 | Weak natural direct raise | Nonforcing |
 | 2NT | 13+ | 4+ | Existing artificial Jacoby raise | Game forcing |
 
-The card records a support maximum of 13 for 4+ branches: the physical hand
-limit. HCP and support predicates together are mutually exclusive. No generic
-Bergen rule contains this partnership's numeric mapping.
+The 3M, 3C and 3D branches each require exactly four trumps. Their HCP
+ranges are 0–5, 6–9 and 10–12 respectively, with no overlap. Simple 2M uses
+exactly three trumps; Jacoby uses 13+ HCP and 4+ trumps. The existing generic
+selector consumes these resolved predicates unchanged. No generic Bergen rule
+contains this partnership's numeric mapping.
 
 ## First-response selection and compatibility
 
@@ -57,7 +60,7 @@ The historical corpus card is not parsed at runtime or silently rewritten.
 
 Within the major-raise selector, these bands remain uncovered:
 
-- 7–9 HCP with 5+ trumps (mixed raise requires exactly four).
+- Below 13 HCP with 5+ trumps.
 - 0–5 or 10+ HCP with exactly three trumps.
 - Fewer than three trumps, regardless of strength.
 
@@ -69,13 +72,15 @@ remain unchanged. No Drury, Splinter, Swiss, DDS or PT valuation work is include
 
 ## Focused validation
 
-788 passed, no failures or skips, exit 0. This includes 135 new B2.4B3 cases:
-both majors, HCP/support boundaries, exact support limits, disjoint candidates,
-meaning/provenance, intervention, seat orientation, deterministic first-response
-selection, partnership isolation and absence of Bergen opener continuations.
+Final correction validation: **741 passed**, no failures or skips, exit 0.
+This includes 143 B2.4B3 cases covering both majors, HCP/support boundaries,
+exact support limits, unique selected calls, meaning/provenance, interference
+(including 0 and 5 HCP weak raises), seat orientation, deterministic selection,
+partnership isolation and absence of Bergen opener continuations. B2.4B2,
+related first-response/profile tests and Jacoby A2/A3/A4 compatibility passed.
 
 ```text
-python -m pytest -q tests/test_bridge_b24b3_standard_bergen.py tests/test_bridge_b24b2_bergen_configuration.py tests/test_bridge_b24b_bergen_audit.py tests/test_bridge_b21_first_response.py tests/test_bridge_phase29x_partnership_profiles.py tests/test_bridge_phase29y_nisim_nily_partnership_profile.py tests/test_bridge_b24a2_nisim_nily_jacoby_2nt.py tests/test_bridge_b24a3_jacoby_continuations.py tests/test_bridge_b24a4_jacoby_slam_continuations.py
+python -m pytest -q tests/test_bridge_b24b3_standard_bergen.py tests/test_bridge_b24b2_bergen_configuration.py tests/test_bridge_b21_first_response.py tests/test_bridge_phase29x_partnership_profiles.py tests/test_bridge_phase29y_nisim_nily_partnership_profile.py tests/test_bridge_b24a2_nisim_nily_jacoby_2nt.py tests/test_bridge_b24a3_jacoby_continuations.py tests/test_bridge_b24a4_jacoby_slam_continuations.py
 ```
 
 No historical regression or research datasets were run.
@@ -83,4 +88,10 @@ No historical regression or research datasets were run.
 Activation is in the opt-in first-response API, not the production router.
 All work used the Documents phase18b worktree on `codex/phase18b`, starting at
 `86537c983301136731cdc0b55b29259ee0544a0b`. OneDrive was untouched.
-Nothing was staged, committed or pushed. Ready to commit this responder-only phase.
+The earlier B2.4B3 work was committed as
+`d7d5645e9388b6dd717beef81adb4ee40e2c110f` before this correction request.
+This correction starts from that actual HEAD; no history is rewritten and no
+correction is staged, committed or pushed. Ready to commit the final mapping.
+The knowledge reference `knowledge/bidding/conventions/responses/bergen-raises.md`
+now states 3M = 0–5 HCP, 3C = 6–9 HCP and 3D = 10–12 HCP, each with exactly
+four-card support. Its table, 3M section, examples and summary agree.

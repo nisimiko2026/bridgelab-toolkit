@@ -111,9 +111,9 @@ _NISIM_NILY_STANDARD_BERGEN_PARAMETERS = (
     (f"{slot}.{key}", value)
     for slot, call, meaning, low, high, minimum, maximum, artificial, forcing in (
         ("simple_raise", "2M", "simple natural raise", "6", "9", "3", "3", "false", "nonforcing"),
-        ("three_clubs", "3C", "Bergen limit raise", "10", "12", "4", "13", "true", "invitational"),
-        ("three_diamonds", "3D", "Bergen preemptive raise", "0", "6", "4", "13", "true", "nonforcing"),
-        ("three_major", "3M", "mixed natural raise", "7", "9", "4", "4", "false", "nonforcing"),
+        ("three_clubs", "3C", "Bergen raise", "6", "9", "4", "4", "true", "nonforcing"),
+        ("three_diamonds", "3D", "Bergen limit raise", "10", "12", "4", "4", "true", "invitational"),
+        ("three_major", "3M", "weak direct raise", "0", "5", "4", "4", "false", "nonforcing"),
     )
     for key, value in (
         ("call", call), ("enabled", "true"), ("meaning", meaning),

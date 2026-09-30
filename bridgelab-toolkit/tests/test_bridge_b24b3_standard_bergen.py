@@ -54,10 +54,10 @@ def selected(result):
 def test_approved_partition_boundaries_have_one_or_no_outcome(opening,hcp,support):
     # Explicit user-approved partition; especially HCP 6 separates by support.
     expected = None
-    if 0<=hcp<=6 and support>=4: expected='3D'
+    if 0<=hcp<=5 and support==4: expected='3'+opening[-1]
     elif 6<=hcp<=9 and support==3: expected='2'+opening[-1]
-    elif 7<=hcp<=9 and support==4: expected='3'+opening[-1]
-    elif 10<=hcp<=12 and support>=4: expected='3C'
+    elif 6<=hcp<=9 and support==4: expected='3C'
+    elif 10<=hcp<=12 and support==4: expected='3D'
     elif hcp>=13 and support>=4: expected='2NT'
     bergen=assess(assess_bergen_response,opening,hcp,support)
     jacoby=assess(assess_jacoby_2nt_response,opening,hcp,support)
@@ -76,9 +76,9 @@ def test_approved_partition_boundaries_have_one_or_no_outcome(opening,hcp,suppor
 
 @pytest.mark.parametrize('call,meaning,hcp,support,artificial,forcing',[
     ('2M','simple natural raise',(6,9),(3,3),False,'nonforcing'),
-    ('3C','Bergen limit raise',(10,12),(4,13),True,'invitational'),
-    ('3D','Bergen preemptive raise',(0,6),(4,13),True,'nonforcing'),
-    ('3M','mixed natural raise',(7,9),(4,4),False,'nonforcing'),
+    ('3C','Bergen raise',(6,9),(4,4),True,'nonforcing'),
+    ('3D','Bergen limit raise',(10,12),(4,4),True,'invitational'),
+    ('3M','weak direct raise',(0,5),(4,4),False,'nonforcing'),
 ])
 def test_exact_card_meanings_and_provenance(call,meaning,hcp,support,artificial,forcing):
     agreement=resolve_bergen_agreement(PROFILE)
@@ -97,7 +97,7 @@ def test_exact_card_meanings_and_provenance(call,meaning,hcp,support,artificial,
 
 
 @pytest.mark.parametrize('calls', [('1H','1S'),('1S','X'),('1H','2C'),('P','1S','P')])
-@pytest.mark.parametrize('hcp',(6,10,13))
+@pytest.mark.parametrize('hcp',(0,5,6,10,13))
 def test_intervention_or_unsupported_passed_hand_prefix_abstains(calls,hcp):
     opening=next(c for c in calls if c in ('1H','1S'))
     for api in (assess_bergen_response,assess_first_response,assess_jacoby_2nt_response):
@@ -143,8 +143,8 @@ def test_standard_label_does_not_override_explicit_card_mapping():
     different=replace(PROFILE,profile_id='explicit-other-card',agreements=tuple(
         replace(a,parameters=tuple(p.items())) if a.family==BERGEN_FAMILY else a
         for a in PROFILE.agreements))
-    assert selected(assess(assess_bergen_response,hcp=11,profile=different))=='3D'
-    assert selected(assess(assess_bergen_response,hcp=11))=='3C'
+    assert selected(assess(assess_bergen_response,hcp=11,profile=different))=='3C'
+    assert selected(assess(assess_bergen_response,hcp=11))=='3D'
 
 
 def test_competitive_card_request_is_rejected_not_silently_ignored():
