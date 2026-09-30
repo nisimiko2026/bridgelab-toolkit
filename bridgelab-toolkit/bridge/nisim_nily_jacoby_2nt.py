@@ -98,10 +98,23 @@ def _context(hand, auction, vulnerability, profile, base_agreements):
             or agreement.source_scope is not AgreementSourceScope.PARTNERSHIP
             or agreement.parameters != JACOBY_2NT_PARAMETERS):
         issues.append("Requires the explicit approved partnership Jacoby 2NT agreement and parameters")
-    # The dedicated binding consumes only the exact Jacoby family. All other
-    # effective meanings still pass through the existing shared fallback guards.
+    # The dedicated binding consumes Jacoby and validates any parameterized
+    # Bergen card. Other meanings retain the existing shared fallback guards.
+    consumed = {JACOBY_2NT_FAMILY}
+    bergen = resolved.agreement("response.major.raises")
+    if bergen is not None and (bergen.treatment_id == "BERGEN_RAISES"
+                              or (bergen.treatment_id == "bergen" and bergen.parameters)):
+        # Parameterized cards require the generic Bergen validator. Only a
+        # complete compatible card may bypass the old opaque-option guard.
+        from .bergen_raises import BergenConfigurationError, resolve_bergen_agreement
+        try:
+            resolve_bergen_agreement(profile, base_agreements=base_agreements)
+        except BergenConfigurationError as exc:
+            issues.append(str(exc))
+        else:
+            consumed.add("response.major.raises")
     remainder = replace(resolved, agreements=tuple(a for a in resolved.agreements
-                                                  if a.family != JACOBY_2NT_FAMILY))
+                                                  if a.family not in consumed))
     system, blockers = response_system(profile, remainder, opening, None,
                                        extra_families=("rebid", "opener.rebid", "responder.rebid"))
     issues.extend(blockers)

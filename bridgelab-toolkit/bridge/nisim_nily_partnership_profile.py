@@ -66,3 +66,31 @@ NISIM_NILY_JACOBY_2NT_PROFILE = PartnershipProfile(
     ),
     sources=NISIM_NILY_PROFILE.sources + (JACOBY_2NT_APPROVAL,),
 )
+
+# B2.4B2 card revision is deliberately incomplete. Historical profile snapshots
+# and the dedicated Jacoby API remain unchanged. No generic article is a card.
+# Only the convention card's explicit fragments are recorded; missing upper
+# support bounds, forcing flags and 3C/3D mappings are NOT inferred.
+NISIM_NILY_BERGEN_PROFILE = PartnershipProfile(
+    profile_id=NISIM_NILY_PROFILE.profile_id,
+    version="B2.4B2",
+    base_system=NISIM_NILY_PROFILE.base_system,
+    agreements=tuple(a for a in NISIM_NILY_JACOBY_2NT_PROFILE.agreements
+                     if a.family != "response.major.raises") + (
+        AgreementSelection("response.major.raises", AgreementResolution.ENABLE,
+            "BERGEN_RAISES", (
+                ("card_source", "bidding/convention-cards/cc-nily-nisim"),
+                ("simple_raise.call", "2M"),
+                ("simple_raise.meaning", "simple raise"),
+                ("simple_raise.min_hcp", "8"),
+                ("simple_raise.max_hcp", "10"),
+                ("simple_raise.min_support", "3"),
+                ("three_clubs.call", "3C"),
+                ("three_diamonds.call", "3D"),
+                ("three_major.call", "3M"),
+                ("three_major.meaning", "weak raise"),
+                ("three_major.min_support", "4"),
+            )),
+    ),
+    sources=NISIM_NILY_JACOBY_2NT_PROFILE.sources,
+)
