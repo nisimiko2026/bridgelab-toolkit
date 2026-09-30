@@ -48,3 +48,21 @@ NISIM_NILY_PROFILE = PartnershipProfile(
     ),
     sources=("bidding/convention-cards/cc-nily-nisim",),
 )
+
+# Explicit opt-in revision: preserves the validated Phase 29Y profile snapshot.
+# Authority is the user's B2.4A2 agreement, recorded in B2_4A2_NISIM_NILY_JACOBY_2NT.md.
+JACOBY_2NT_FAMILY = "response.major.2nt"
+JACOBY_2NT_TREATMENT = "nisim_nily_jacoby_2nt"
+JACOBY_2NT_PARAMETERS = (("min_hcp", "13"), ("min_support", "4"))
+JACOBY_2NT_APPROVAL = "B2_4A2_NISIM_NILY_JACOBY_2NT"
+
+NISIM_NILY_JACOBY_2NT_PROFILE = PartnershipProfile(
+    profile_id=NISIM_NILY_PROFILE.profile_id,
+    version="B2.4A2",
+    base_system=NISIM_NILY_PROFILE.base_system,
+    agreements=NISIM_NILY_PROFILE.agreements + (
+        AgreementSelection(JACOBY_2NT_FAMILY, AgreementResolution.ENABLE,
+                           JACOBY_2NT_TREATMENT, JACOBY_2NT_PARAMETERS),
+    ),
+    sources=NISIM_NILY_PROFILE.sources + (JACOBY_2NT_APPROVAL,),
+)
