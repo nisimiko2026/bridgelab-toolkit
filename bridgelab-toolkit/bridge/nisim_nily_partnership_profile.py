@@ -134,3 +134,22 @@ NISIM_NILY_BERGEN_PROFILE = PartnershipProfile(
     ),
     sources=NISIM_NILY_JACOBY_2NT_PROFILE.sources + (BERGEN_STANDARD_APPROVAL,),
 )
+
+# B2.4B5 is a separate opt-in continuation agreement; responder data is unchanged.
+MAJOR_RAISE_CONTINUATION_FAMILY = "opener.major.raises"
+MAJOR_RAISE_CONTINUATION_TREATMENT = "nisim_nily_major_raise_continuations"
+MAJOR_RAISE_CONTINUATION_PARAMETERS = (
+    ("competition", "UNCONTESTED_ONLY"),
+    ("shortness_after_hearts", "2S"),
+    ("shortness_after_spades", "2NT"),
+)
+NISIM_NILY_MAJOR_RAISE_PROFILE = PartnershipProfile(
+    profile_id=NISIM_NILY_BERGEN_PROFILE.profile_id,
+    version="B2.4B5",
+    base_system=NISIM_NILY_BERGEN_PROFILE.base_system,
+    agreements=NISIM_NILY_BERGEN_PROFILE.agreements + (
+        AgreementSelection(MAJOR_RAISE_CONTINUATION_FAMILY, AgreementResolution.ENABLE,
+                           MAJOR_RAISE_CONTINUATION_TREATMENT, MAJOR_RAISE_CONTINUATION_PARAMETERS),
+    ),
+    sources=NISIM_NILY_BERGEN_PROFILE.sources + ("B2_4B5_MAJOR_RAISE_CONTINUATIONS",),
+)
