@@ -21,8 +21,10 @@ from .models import Hand, Seat, Vulnerability
 
 
 _TAG_RE = re.compile(
-    r'^\[([A-Za-z0-9_]+)\s+"(.*)"\]\s*$'
+    r'^\[([A-Za-z0-9_]+)\s*"([^"]*)"\]\s*$'
 )
+
+_ANNOTATION_REF_RE = re.compile(r"^=\d+=$")
 
 
 _VULNERABILITY = {
@@ -135,6 +137,41 @@ def _parse_deal(
     )
 
 
+
+def _strip_pbn_comments(
+    text: str,
+) -> str:
+    """Remove PBN brace comments, including multiline comments.
+
+    PBN comments are annotations, not auction calls.  Replace comment
+    characters with spaces while preserving newlines so surrounding
+    tokens cannot be accidentally concatenated.
+    """
+
+    output: list[str] = []
+    depth = 0
+
+    for char in text:
+        if char == "{":
+            depth += 1
+            output.append(" ")
+            continue
+
+        if char == "}" and depth:
+            depth -= 1
+            output.append(" ")
+            continue
+
+        if depth:
+            output.append(
+                "\n" if char == "\n" else " "
+            )
+        else:
+            output.append(char)
+
+    return "".join(output)
+
+
 def _auction_tokens(
     lines: tuple[str, ...],
 ) -> tuple[str, ...]:
@@ -142,7 +179,11 @@ def _auction_tokens(
 
     tokens: list[str] = []
 
-    for line in lines:
+    cleaned_lines = _strip_pbn_comments(
+        "\n".join(lines)
+    ).splitlines()
+
+    for line in cleaned_lines:
         stripped = line.strip()
 
         if not stripped:
@@ -152,7 +193,9 @@ def _auction_tokens(
             continue
 
         tokens.extend(
-            stripped.split()
+            token
+            for token in stripped.split()
+            if not _ANNOTATION_REF_RE.fullmatch(token)
         )
 
     return tuple(tokens)
@@ -184,24 +227,47 @@ def _parse_auction(
     *,
     dealer: Seat,
     lines: tuple[str, ...],
-) -> Auction:
+) -> tuple[Auction, bool]:
     """Parse a PBN auction.
 
     AP means "all pass from this point" and is expanded
     until BridgeLab reports the auction complete.
+
+    Legacy source files can contain stray auction tokens after a legally
+    completed auction.  Those tokens are ignored at the PBN boundary rather
+    than being passed into BridgeLab core legality.  The returned boolean
+    records whether meaningful trailing tokens were ignored.
     """
 
     auction = Auction(
         dealer
     )
 
-    for token in _auction_tokens(
+    tokens = _auction_tokens(
         lines
-    ):
+    )
+
+    ignored_trailing_tokens = False
+
+    for index, token in enumerate(tokens):
         normalized = token.strip()
 
         if not normalized:
             continue
+
+        if normalized == "*":
+            break
+
+        # Once BridgeLab reports a complete auction, any later PBN calls are
+        # source-level trailing data.  Preserve that fact in provenance but
+        # do not weaken or bypass core auction legality.
+        if auction.is_complete:
+            ignored_trailing_tokens = any(
+                remaining.strip()
+                and remaining.strip() != "*"
+                for remaining in tokens[index:]
+            )
+            break
 
         upper = normalized.upper()
 
@@ -209,9 +275,12 @@ def _parse_auction(
             while not auction.is_complete:
                 auction.add("P")
 
-            continue
-
-        if normalized == "*":
+            if any(
+                remaining.strip()
+                and remaining.strip() != "*"
+                for remaining in tokens[index + 1:]
+            ):
+                ignored_trailing_tokens = True
             break
 
         auction.add(
@@ -220,7 +289,7 @@ def _parse_auction(
             )
         )
 
-    return auction
+    return auction, ignored_trailing_tokens
 
 
 def _parse_optional_int(
@@ -316,6 +385,7 @@ def _record_from_block(
     source: str,
     provider_version: str | None,
     record_index: int,
+    transformations: tuple[str, ...] = (),
 ) -> CanonicalBoardRecord | None:
     """Convert one PBN board block to a canonical record."""
 
@@ -372,10 +442,26 @@ def _record_from_block(
                 "with Dealer"
             )
 
-        auction = _parse_auction(
-            dealer=dealer,
-            lines=auction_lines,
-        )
+        try:
+            auction, ignored_trailing_tokens = _parse_auction(
+                dealer=dealer,
+                lines=auction_lines,
+            )
+            if ignored_trailing_tokens:
+                transformations = (
+                    *transformations,
+                    "ignored-trailing-pbn-auction-tokens",
+                )
+        except (TypeError, ValueError) as exc:
+            board_text = tags.get("Board", f"record-{record_index}")
+            room_text = tags.get("Room", "?")
+            auction_text = " ".join(_auction_tokens(auction_lines))
+            raise type(exc)(
+                "PBN auction parse failed "
+                f"(board={board_text!r}, room={room_text!r}, "
+                f"dealer={dealer.value!r}, auction={auction_text!r}): "
+                f"{exc}"
+            ) from exc
 
     contract = _parse_optional_contract(
         tags.get("Contract"),
@@ -400,6 +486,7 @@ def _record_from_block(
             ),
             transformations=(
                 "parsed-native-pbn",
+                *transformations,
             ),
         ),
         dealer=dealer,
@@ -507,6 +594,12 @@ def read_pbn_text(
 
     record_index = 0
 
+    # Some legacy PBN exports use [Deal "#"] for the second
+    # room of a board.  Preserve concrete Deal values by board
+    # number so the inherited value can be resolved without
+    # guessing a starting seat or hand order.
+    concrete_deals_by_board: dict[str, str] = {}
+
     def flush() -> None:
         nonlocal tags
         nonlocal auction_lines
@@ -518,8 +611,57 @@ def read_pbn_text(
 
         record_index += 1
 
+        record_tags = dict(
+            tags
+        )
+
+        record_transformations: list[
+            str
+        ] = []
+
+        deal_value = record_tags.get(
+            "Deal"
+        )
+
+        board_key = record_tags.get(
+            "Board"
+        )
+
+        if (
+            deal_value is not None
+            and deal_value.strip() == "#"
+        ):
+            if (
+                board_key is None
+                or board_key not in concrete_deals_by_board
+            ):
+                raise ValueError(
+                    "PBN inherited Deal has no prior "
+                    "concrete Deal for the same board"
+                )
+
+            record_tags["Deal"] = (
+                concrete_deals_by_board[
+                    board_key
+                ]
+            )
+
+            record_transformations.append(
+                "resolved-pbn-inherited-deal"
+            )
+
+        elif (
+            deal_value is not None
+            and deal_value.strip()
+            and deal_value.strip() != "#"
+            and board_key is not None
+        ):
+            concrete_deals_by_board[
+                board_key
+            ] = deal_value
+
         record = _record_from_block(
-            tags=tags,
+            tags=record_tags,
             auction_lines=tuple(
                 auction_lines
             ),
@@ -534,6 +676,9 @@ def read_pbn_text(
             ),
             record_index=(
                 record_index
+            ),
+            transformations=tuple(
+                record_transformations
             ),
         )
 
@@ -565,11 +710,19 @@ def read_pbn_text(
                 match.group(2)
             )
 
-            # Event normally starts the next
-            # PBN board.  Flush only once the
-            # current block already contains
-            # an actual Deal.
+            # A repeated Board tag starts a new PBN record.
+            # This is essential for team/match files where Open
+            # and Closed rooms are separate records for the same
+            # board number and Event is not repeated between them.
+            #
+            # Event remains a secondary boundary for conventional
+            # PBN files once the current block contains a Deal.
             if (
+                tag_name == "Board"
+                and "Board" in tags
+            ):
+                flush()
+            elif (
                 tag_name == "Event"
                 and tags
                 and "Deal" in tags
@@ -616,15 +769,42 @@ def read_pbn_file(
     CanonicalBoardRecord,
     ...
 ]:
-    """Read canonical records directly from a PBN file."""
+    """Read canonical records directly from a PBN file.
+
+    UTF-8 remains the primary/default encoding.
+
+    When the default UTF-8 decoding fails, legacy PBN files
+    are retried using Windows-1252. An explicitly requested
+    non-UTF-8 encoding is used exactly as supplied and is not
+    silently replaced by another encoding.
+    """
 
     file_path = Path(
         path
     )
 
-    text = file_path.read_text(
-        encoding=encoding,
-    )
+    try:
+        text = file_path.read_text(
+            encoding=encoding,
+        )
+
+    except UnicodeDecodeError:
+        normalized_encoding = (
+            encoding
+            .strip()
+            .lower()
+            .replace("_", "-")
+        )
+
+        if normalized_encoding not in {
+            "utf-8",
+            "utf8",
+        }:
+            raise
+
+        text = file_path.read_text(
+            encoding="cp1252",
+        )
 
     return read_pbn_text(
         text,

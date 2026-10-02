@@ -528,3 +528,42 @@ def test_non_string_text_rejected():
             123,
             source="sample.pbn",
         )
+
+
+def test_trailing_tokens_after_completed_auction_are_ignored_and_recorded() -> None:
+    text = """
+[Event "Legacy malformed auction"]
+[Board "3"]
+[Room "Closed"]
+[Dealer "S"]
+[Vulnerable "EW"]
+[Deal "S:K72.2.Q543.AK632 543.A4.AJT2.Q985 AQJ986.J8765.7.T T.KQT93.K986.J74"]
+[Auction "S"]
+4H Pass Pass Pass
+1C Pass 1S X
+Pass 2C 2H Pass
+3S 4D 4S Pass
+Pass Pass
+[Contract "4H"]
+[Declarer "S"]
+[Result "9"]
+"""
+
+    records = read_pbn_text(
+        text,
+        source="legacy.pbn",
+    )
+
+    assert len(records) == 1
+
+    record = records[0]
+
+    assert record.auction is not None
+    assert record.auction.is_complete
+    assert len(record.auction.entries) == 4
+    assert record.auction.final_contract == record.contract
+
+    assert (
+        "ignored-trailing-pbn-auction-tokens"
+        in record.provenance.transformations
+    )
