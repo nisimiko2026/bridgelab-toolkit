@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from .corpus import CanonicalBoardRecord
 from .decision_evidence import DecisionEvidence, Disagreement
 from .double_dummy_evidence import DoubleDummyEvidence
+from .simulation_outcome import SimulationOutcomeSummary
 from .simulation_statistics import SimulationStatistics
 
 
@@ -23,6 +24,7 @@ class DecisionCase:
     external: tuple[DecisionEvidence[object], ...] = ()
     corpus: tuple[CanonicalBoardRecord, ...] = ()
     simulations: tuple[SimulationStatistics, ...] = ()
+    outcome_simulations: tuple[SimulationOutcomeSummary, ...] = ()
     double_dummy: tuple[DoubleDummyEvidence, ...] = ()
     disagreements: tuple[Disagreement, ...] = ()
     notes: tuple[str, ...] = ()
@@ -54,6 +56,11 @@ class DecisionCase:
             "simulations",
             self.simulations,
             SimulationStatistics,
+        )
+        self._validate_tuple(
+            "outcome_simulations",
+            self.outcome_simulations,
+            SimulationOutcomeSummary,
         )
         self._validate_tuple(
             "double_dummy",

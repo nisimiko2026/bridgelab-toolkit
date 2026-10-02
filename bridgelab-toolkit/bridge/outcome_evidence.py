@@ -1,10 +1,14 @@
 """Attach measured outcome evidence to an existing DecisionCase.
 
-A6.7 — Outcome Evidence Integration.
+A6.7.1 — Outcome Simulation Evidence Correction.
 
-DecisionCase already has dedicated passive collections for simulation and
-double-dummy evidence. This module enriches those collections without turning
-reference measurements into recommendations, disagreements, or policy changes.
+Auction-simulation statistics and scored outcome simulations are different
+evidence types. Scored SimulationOutcomeSummary values are appended to
+DecisionCase.outcome_simulations; DecisionCase.simulations remains reserved
+for the existing auction-simulation statistics.
+
+Reference measurements remain passive evidence: they are not recommendations,
+disagreements, votes, winners, or policy changes.
 """
 
 from __future__ import annotations
@@ -14,13 +18,13 @@ from typing import Iterable
 
 from .decision_case import DecisionCase
 from .double_dummy_evidence import DoubleDummyEvidence
-from .simulation_statistics import SimulationStatistics
+from .simulation_outcome import SimulationOutcomeSummary
 
 
 def add_outcome_evidence(
     case: DecisionCase,
     *,
-    simulations: Iterable[SimulationStatistics] = (),
+    outcome_simulations: Iterable[SimulationOutcomeSummary] = (),
     double_dummy: Iterable[DoubleDummyEvidence] = (),
     notes: Iterable[str] = (),
 ) -> DecisionCase:
@@ -29,9 +33,9 @@ def add_outcome_evidence(
         raise TypeError("case must be DecisionCase")
 
     simulation_items = _typed_tuple(
-        "simulations",
-        simulations,
-        SimulationStatistics,
+        "outcome_simulations",
+        outcome_simulations,
+        SimulationOutcomeSummary,
     )
     double_dummy_items = _typed_tuple(
         "double_dummy",
@@ -42,7 +46,7 @@ def add_outcome_evidence(
 
     return replace(
         case,
-        simulations=case.simulations + simulation_items,
+        outcome_simulations=case.outcome_simulations + simulation_items,
         double_dummy=case.double_dummy + double_dummy_items,
         notes=case.notes + note_items,
     )
