@@ -290,7 +290,7 @@ def test_unbound_relevant_profile_meaning_blocks_bergen_fallback():
 
 
 def test_no_production_route_adoption():
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47
     assert assess(card()).production_adopted is False
 
 

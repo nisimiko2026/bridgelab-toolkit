@@ -281,7 +281,7 @@ def test_single_result_and_explicit_conflict(monkeypatch,bid,priority,expected):
 def test_all_existing_opener_routes_preserve_engine_evidence_and_production_count():
     router=create_standard_sayc_router()
     before=tuple((r.route_id,r.priority,r.policy_dependencies) for r in router.routes)
-    assert len(before)==45
+    assert len(before)==47
     pairs=[('1C','1D'),('1C','1H'),('1C','1S'),('1D','1H'),('1D','1S'),
            ('1H','1S'),('1H','2H'),('1S','2S'),('1H','2C'),('1H','2D'),('1S','2C'),('1S','2D'),
            ('1NT','2D'),('1NT','2H'),('1NT','2C'),('2NT','3D'),('2NT','3H'),('2NT','3C'),

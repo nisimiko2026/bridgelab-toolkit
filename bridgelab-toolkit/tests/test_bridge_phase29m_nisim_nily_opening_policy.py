@@ -137,7 +137,7 @@ def test_production_and_prior_diagnostics_remain_compatible():
     build_nisim_nily_opening_policy()
     assess_rule_of_20(Hand.parse("KQJ98.A974.8.J73"))
     assert tuple(r.rule_id for r in sayc_opening_rules()) == before
-    assert len(before) == 14 and len(create_standard_sayc_router().routes) == 45
+    assert len(before) == 14 and len(create_standard_sayc_router().routes) == 47
     # Policy approval does not change today's known equal-major production boundary.
     context = BiddingContext.create(hand=Hand.parse("AKJ98.KQ974.8.73"), auction=Auction(Seat.NORTH),
                                     vulnerability=Vulnerability.NONE, system=SystemContext("SAYC"))

@@ -221,7 +221,7 @@ def test_research_only_dependency_boundary():
     for name in ("bridge/sayc.py","bridge/sayc_route_configuration.py","bridge/engine_router.py"):
         assert "expected_ruffing" not in (root/name).read_text()
     from bridge.sayc_route_configuration import create_standard_sayc_router
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47
 
 
 @pytest.mark.parametrize("void",(False,True))

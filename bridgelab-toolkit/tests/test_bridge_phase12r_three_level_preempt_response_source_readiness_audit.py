@@ -58,7 +58,7 @@ def test_ranking_and_phase12s_selection_are_deterministic():
 
 
 def test_router_policy_and_production_surface_are_unchanged():
-    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 45
+    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 47
     assert all(row["route_missing"] for row in AUDIT.positions)
     assert all(not row["route_reaches_rule"] for row in AUDIT.positions)
     assert (AUDIT.production_rules_added, AUDIT.routes_added, AUDIT.policies_added) == (0, 0, 0)

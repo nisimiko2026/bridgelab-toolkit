@@ -92,6 +92,6 @@ def test_benchmark_and_historical_guards_are_exact():
 def test_routes_defaults_and_phase14c_direction_are_unchanged():
     result = run_deal_summary_rendering_benchmark()
     assert PolicyRegistry().opening_lead_policy_ids == ()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert result.cumulative["production_recommendations"] == 4
     assert result.phase14c_direction == "D. DEAL-SUMMARY END-TO-END INTEGRATION"

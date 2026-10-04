@@ -313,7 +313,7 @@ def test_compilation_leaves_router_contexts_and_policy_audits_unchanged(base_agr
     plan = compile_profile_plan(resolved, base_agreements=base_agreements)
     after = create_standard_sayc_router()
     ids_after = tuple(route.route_id for route in after.routes)
-    assert len(ids_before) == len(ids_after) == 45
+    assert len(ids_before) == len(ids_after) == 47
     assert ids_after == ids_before
     assert not any("nisim" in name.casefold() or "30a" in name.casefold() for name in ids_after)
     assert after.evaluate(context) == decision_before

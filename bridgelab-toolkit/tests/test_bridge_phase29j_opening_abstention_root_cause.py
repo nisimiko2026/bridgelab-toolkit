@@ -57,7 +57,7 @@ def test_12_hcp_discovery_and_other_case_separation():
                for case in twelve)
     assert report.strong_depth0_count == len(report.strong_cases)
     assert all(case.hcp >= 12 for case in report.strong_cases)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
 
 
 def test_related_reports_and_simulators_remain_available():

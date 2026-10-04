@@ -1,4 +1,4 @@
-"""Conservative, static provenance coverage inventory for production BridgeLab.
+﻿"""Conservative, static provenance coverage inventory for production BridgeLab.
 
 This audit reports repository evidence.  It does not infer bridge correctness,
 source authority, or production readiness from paths, Git identity, or tests.
@@ -493,10 +493,10 @@ def run_audit() -> ProvenanceCoverageAudit:
         "Deferred capabilities are not production registrations.",
     )
     expected = {
-        "production": 47,
-        "routes": 45,
-        "edges": 134,
-        "rules": 92,
+        "production": 49,
+        "routes": 47,
+        "edges": 136,
+        "rules": 93,
         "manifests": 11,
         "authorized": 11,
     }
@@ -558,3 +558,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

@@ -157,7 +157,7 @@ def test_phase14d_routes_defaults_and_backward_compatibility_are_unchanged():
     assert closure.phase14_complete and closure.closure_fixtures == 16
     assert (closure.structured_summary_successes, closure.rendering_successes, closure.pipeline_successes) == (16, 16, 16)
     assert (closure.provenance_preserved_fixtures, closure.provenance_loss_fixtures) == (16, 0)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert PolicyRegistry().opening_lead_policy_ids == ()
 
 

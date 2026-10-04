@@ -245,7 +245,7 @@ def test_static_import_and_production_guards(completed):
                                          "evaluate", "recommend", "choose_opening", "opening_call"})
     route_ids_before = tuple(x.route_id for x in create_standard_sayc_router().routes)
     route_ids_after = tuple(x.route_id for x in create_standard_sayc_router().routes)
-    assert len(route_ids_before) == len(route_ids_after) == 45
+    assert len(route_ids_before) == len(route_ids_after) == 47
     assert route_ids_before == route_ids_after
     assert tuple(x.name for x in fields(SystemContext)) == ("system", "options")
     assert tuple(x.name for x in fields(BiddingContext)) == (

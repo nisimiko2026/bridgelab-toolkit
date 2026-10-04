@@ -301,8 +301,13 @@ def build_current_profile_opening_readiness_audit() -> CurrentProfileOpeningRead
     third_match = before_router.match(third_context)
     third_route_id = None if third_match is None else third_match.route_id
     third_production_call = _production_call(before_router, third_context)
-    if first_production_call != "2D" or third_route_id is not None or third_production_call is not None:
-        raise RuntimeError("Phase 30F production witness drifted from the historical baseline")
+    expected_third_route_id = "sayc.opening.later-seat.third"
+    if (
+        first_production_call != "2D"
+        or third_route_id != expected_third_route_id
+        or third_production_call is not None
+    ):
+        raise RuntimeError("Phase 30F production witness drifted from the A9.7 baseline")
 
     directive = ns_plan.directive(_FAMILY)
     binding = None if directive is None else bind_compiled_directive(directive)
@@ -361,7 +366,7 @@ def build_current_profile_opening_readiness_audit() -> CurrentProfileOpeningRead
         == ("hand", "evaluation", "auction", "seat", "vulnerability", "system")
     )
     regression_guard = (
-        len(before_ids) == len(after_ids) == 45
+        len(before_ids) == len(after_ids) == 47
         and before_ids == after_ids and not production_changed and context_shape
         and not any(marker in route_id.casefold() for route_id in after_ids
                     for marker in _ROUTE_MARKERS)
@@ -416,7 +421,7 @@ def build_current_profile_opening_readiness_audit() -> CurrentProfileOpeningRead
         ),
         "later_seat_opening_dispatch": (
             shadow if third_shadow_ready else blocked,
-            "Selected shadow profile supports 3D after P P; production has no route or call.",
+            "Selected shadow profile supports 3D after P P; A9.7 provides the standard SAYC route, while this six-minor witness still produces no standard SAYC call.",
             (f"shadow={third.assessment.supported_call}",
              f"production route={third_route_id}", f"production call={third_production_call}"),
         ),

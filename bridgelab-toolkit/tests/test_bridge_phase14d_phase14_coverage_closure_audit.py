@@ -109,7 +109,7 @@ def test_backward_compatibility_routes_policies_and_phase15_direction():
     result = analyze_deal_decision(DealAnalysisContext(stage=AnalysisStage.DEAL_SUMMARY))
     audit = run_phase14_coverage_closure_audit()
     assert isinstance(result, DealAnalysisResult)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert PolicyRegistry().opening_lead_policy_ids == ()
     assert audit.guards["production_defaults_changed"] is False
     assert audit.phase15_direction == "E. FULL-DEAL ANALYSIS / ORCHESTRATION"

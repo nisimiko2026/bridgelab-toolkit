@@ -35,16 +35,16 @@ def test_repeated_inventory_is_deterministic(audit):
     assert run_audit() == audit
 
 
-def test_primary_inventory_has_reviewed_47_elements(audit):
-    assert len(audit.production_entries) == 47
+def test_primary_inventory_has_reviewed_49_elements(audit):
+    assert len(audit.production_entries) == 49
     identities = {(item.element_type, item.element_id) for item in audit.production_entries}
-    assert len(identities) == 47
+    assert len(identities) == 49
 
 
 def test_every_live_route_is_represented_exactly_once(audit):
     live = {route.route_id for route in create_standard_sayc_router().routes}
     represented = [item.element_id for item in audit.production_entries if item.element_type is ProductionElementType.BIDDING_ROUTE]
-    assert len(represented) == 45
+    assert len(represented) == 47
     assert set(represented) == live
 
 
@@ -69,8 +69,8 @@ def test_route_rule_edges_match_live_router(audit):
     live = [(route.route_id, rule.rule_id) for route in create_standard_sayc_router().routes for rule in route.engine.rules]
     observed = [(edge.route_id, edge.rule_id) for edge in audit.route_rule_edges]
     assert observed == live
-    assert len(observed) == 134
-    assert len({rule_id for _, rule_id in observed}) == 92
+    assert len(observed) == 136
+    assert len({rule_id for _, rule_id in observed}) == 93
 
 
 def test_many_to_many_route_rule_relationships_are_preserved(audit):
@@ -147,12 +147,12 @@ def test_reviewed_baselines_and_audit_status_pass(audit):
     primary = dict(audit.primary_summary)
     sources = dict(audit.source_summary)
     diagnostics = dict(audit.diagnostics)
-    assert primary["primary_production_elements"] == 47
-    assert primary["bidding_routes"] == 45
+    assert primary["primary_production_elements"] == 49
+    assert primary["bidding_routes"] == 47
     assert sources["manifest_entries"] == 11
     assert sources["manifest_artifacts_authorized"] == 11
     assert sources["manifest_source_category"] == 0
-    assert diagnostics["route_rule_edges"] == 134
-    assert diagnostics["unique_rule_ids"] == 92
-    assert diagnostics["unique_rule_objects"] == 98
+    assert diagnostics["route_rule_edges"] == 136
+    assert diagnostics["unique_rule_ids"] == 93
+    assert diagnostics["unique_rule_objects"] == 99
     assert audit.audit_status == "PASS"

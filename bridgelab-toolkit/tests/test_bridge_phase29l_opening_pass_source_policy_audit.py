@@ -59,7 +59,7 @@ def test_matrix_matches_real_registry_and_has_separate_pass():
     assert rows[-1].family == "Opening Pass" and rows[-1].rule_id is None
     assert all(not r.complement_explicitly_pass for r in rows)
     assert all("UNKNOWN" in r.complement_status for r in rows)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
 
 
 def test_evidence_references_resolve_and_missing_policy_is_explicit():

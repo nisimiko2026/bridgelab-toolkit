@@ -261,8 +261,16 @@ def build_profile_opening_production_gate_audit() -> ProfileOpeningProductionGat
     third_match = before_router.match(third_context)
     third_route_id = None if third_match is None else third_match.route_id
     third_production_call = _production_call(before_router, third_context)
-    if first_production_call != "2D" or third_route_id is not None or third_production_call is not None:
-        raise RuntimeError("Phase 30D production witness drifted from the Phase 29V baseline")
+    # A9.7 added an exact P-P third-seat SAYC route.  For this historical
+    # six-minor witness the route now matches structurally, but the scoped
+    # later-seat policy correctly abstains, so production still makes no call.
+    expected_third_route_id = "sayc.opening.later-seat.third"
+    if (
+        first_production_call != "2D"
+        or third_route_id != expected_third_route_id
+        or third_production_call is not None
+    ):
+        raise RuntimeError("Phase 30D production witness drifted from the A9.7 baseline")
 
     direct = assess_six_minor_three_level_preempt(
         hand, seat=Seat.NORTH, vulnerability=Vulnerability.EW, opening_position=1
@@ -325,7 +333,7 @@ def build_profile_opening_production_gate_audit() -> ProfileOpeningProductionGat
     after_ids = tuple(route.route_id for route in after_router.routes)
     production_changed = before_ids != after_ids
     route_guard = (
-        not production_changed and len(before_ids) == len(after_ids) == 45
+        not production_changed and len(before_ids) == len(after_ids) == 47
         and not any(marker in route_id.casefold() for route_id in after_ids
                     for marker in _FORBIDDEN_ROUTE_MARKERS)
     )
@@ -387,7 +395,7 @@ def build_profile_opening_production_gate_audit() -> ProfileOpeningProductionGat
               "Shadow supports 3D; current standard production still recommends 2D.",
               f"shadow={first_shadow.supported_call}", f"production={first_production_call}"),
         _gate("later_seat_opening_dispatch", shadow if third_shadow_ready else blocked,
-              "Shadow handles P P; current standard production has no matching route.",
+              "Shadow handles P P; A9.7 provides the standard SAYC P-P route, while this six-minor witness still produces no standard SAYC call.",
               f"shadow={third_shadow.supported_call}", f"production route={third_route_id}",
               f"production call={third_production_call}"),
         _gate("production_result_adapter", ready if production_adapter_verified else blocked,
@@ -404,7 +412,7 @@ def build_profile_opening_production_gate_audit() -> ProfileOpeningProductionGat
               "A second partnership with the same base system has no pilot binding.",
               "29Z/30C:same-system peer=NO_BINDING"),
         _gate("production_regression_guard", ready if route_guard and current_context_shape else blocked,
-              "The audit preserves the 45 ordered routes and production context shapes.",
+              "The audit preserves the 47 ordered routes and production context shapes.",
               f"routes before={len(before_ids)} after={len(after_ids)}",
               f"ordered inventory equal={not production_changed}",
               f"context fields unchanged={current_context_shape}"),

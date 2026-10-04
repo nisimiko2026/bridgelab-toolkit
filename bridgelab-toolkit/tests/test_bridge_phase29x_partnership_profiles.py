@@ -302,7 +302,7 @@ def test_resolution_leaves_production_routes_contexts_and_behavior_unchanged(nis
     audit = build_six_minor_production_adoption_audit()
     assert audit.production_changed is False
     assert audit.ready_for_production is False
-    assert audit.route_count == 45
+    assert audit.route_count == 47
 
 
 @pytest.mark.parametrize("resolution", (Resolution.INHERIT, Resolution.DISABLE))

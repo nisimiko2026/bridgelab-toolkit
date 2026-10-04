@@ -143,5 +143,5 @@ def test_production_intelligence_and_ordinary_guards_are_unchanged():
         "new_probability_formulas": 0,
         "ordinary": "7871/761/9239",
     }
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert len(DEFAULT_PROBABILITY_ENGINE_REGISTRY.registrations) == 1

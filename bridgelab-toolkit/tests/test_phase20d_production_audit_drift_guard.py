@@ -32,10 +32,10 @@ def test_current_reviewed_baseline_passes(guard) -> None:
 def test_structural_baseline_matches_phase20b(guard) -> None:
     actual = guard.observations.structural.values
     assert actual == DEFAULT_BASELINE.structural
-    assert actual.route_count == actual.unique_route_ids == 45
-    assert actual.unique_exact_prefixes == actual.structurally_matched_routes == 45
+    assert actual.route_count == actual.unique_route_ids == 47
+    assert actual.unique_exact_prefixes == actual.structurally_matched_routes == 47
     assert actual.unique_owner_count == 7
-    assert actual.shared_owner_expected_count == 38
+    assert actual.shared_owner_expected_count == 40
     assert actual.policy_gated_routes == 19
 
 
@@ -81,13 +81,13 @@ def test_taxonomy_and_policy_split_match(guard) -> None:
 
 
 def test_artificial_route_count_drift_is_detected(guard) -> None:
-    structural = replace(DEFAULT_BASELINE.structural, route_count=44)
+    structural = replace(DEFAULT_BASELINE.structural, route_count=46)
     findings = _compare(guard, structural=structural)
     assert len(findings) == 1
     finding = findings[0]
     assert finding.drift_class is DriftClass.STRUCTURAL_ROUTE_DRIFT
     assert (finding.field, finding.expected, finding.observed) == (
-        "route_count", 44, 45
+        "route_count", 46, 47
     )
     assert finding.authority == "Phase20B"
 
@@ -131,7 +131,7 @@ def test_historical_recommendation_record_drift_is_labeled(guard) -> None:
 def test_findings_are_actionable_and_deterministic(guard) -> None:
     expected = replace(
         DEFAULT_BASELINE,
-        structural=replace(DEFAULT_BASELINE.structural, route_count=44),
+        structural=replace(DEFAULT_BASELINE.structural, route_count=46),
         behavioral=replace(DEFAULT_BASELINE.behavioral, abstentions=9_238),
     )
     first = compare_baseline(expected, guard.observations)

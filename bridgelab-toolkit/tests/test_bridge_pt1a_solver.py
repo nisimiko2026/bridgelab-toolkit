@@ -184,4 +184,4 @@ def test_general_solver_modules_have_no_bidding_or_profile_imports():
 
 def test_production_router_remains_45():
     from bridge import create_standard_sayc_router
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

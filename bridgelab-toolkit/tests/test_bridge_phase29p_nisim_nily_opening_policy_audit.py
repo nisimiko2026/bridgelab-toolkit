@@ -111,7 +111,7 @@ def test_selection_coverage_and_determinism(sample):
     assert sum(n for _, n in r.selected_counts) == len(selected)
     assert r.to_json() == build_nisim_nily_policy_audit(batch).to_json()
     assert json.loads(r.to_json()) == r.to_dict()
-    assert r.route_count == 45 and not r.production_changed
+    assert r.route_count == 47 and not r.production_changed
     with pytest.raises(FrozenInstanceError):
         r.positive_pass = 616
 

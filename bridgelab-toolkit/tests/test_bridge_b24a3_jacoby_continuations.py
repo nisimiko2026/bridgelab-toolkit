@@ -264,6 +264,6 @@ def test_router_remains_45_and_does_not_adopt_new_continuations():
     assert call(result)=='4NT' and not result.production_adopted
     assert create_standard_sayc_router().match(result.context) is None
     after=create_standard_sayc_router().routes
-    assert len(before)==len(after)==45
+    assert len(before)==len(after)==47
     assert [(r.route_id,r.priority,r.policy_dependencies) for r in before]==[
         (r.route_id,r.priority,r.policy_dependencies) for r in after]

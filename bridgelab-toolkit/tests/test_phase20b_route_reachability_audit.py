@@ -23,8 +23,8 @@ AUDIT = run_route_reachability_audit()
 
 def test_inventory_has_exact_production_registration_order() -> None:
     router = create_standard_sayc_router()
-    assert AUDIT.route_count == len(router.routes) == 45
-    assert tuple(entry.registration_order for entry in AUDIT.inventory) == tuple(range(45))
+    assert AUDIT.route_count == len(router.routes) == 47
+    assert tuple(entry.registration_order for entry in AUDIT.inventory) == tuple(range(47))
     assert tuple(entry.route_id for entry in AUDIT.inventory) == tuple(
         route.route_id for route in router.routes
     )
@@ -36,8 +36,8 @@ def test_inventory_has_exact_production_registration_order() -> None:
 def test_route_ids_and_exact_prefixes_are_unique() -> None:
     route_ids = tuple(entry.route_id.casefold() for entry in AUDIT.inventory)
     prefixes = tuple(entry.auction_prefix for entry in AUDIT.inventory)
-    assert len(set(route_ids)) == AUDIT.unique_route_ids == 45
-    assert len(set(prefixes)) == AUDIT.unique_exact_prefixes == 45
+    assert len(set(route_ids)) == AUDIT.unique_route_ids == 47
+    assert len(set(prefixes)) == AUDIT.unique_exact_prefixes == 47
     assert AUDIT.duplicate_route_ids == AUDIT.duplicate_exact_prefixes == 0
 
 
@@ -58,7 +58,7 @@ def test_every_structural_prefix_parses_and_dispatches_to_intended_route() -> No
         assert match.route_id == entry.route_id
         assert match.registration_order == entry.registration_order
         assert match.priority == entry.priority
-    assert AUDIT.structurally_matched_routes == 45
+    assert AUDIT.structurally_matched_routes == 47
 
 
 def test_structural_matching_is_not_recommendation_evidence() -> None:

@@ -81,7 +81,7 @@ def test_standard_router_policy_metadata_matches_phase20b_audited_dependencies()
         for entry in structural.inventory
     }
 
-    assert len(router_dependencies) == 45
+    assert len(router_dependencies) == 47
     assert router_dependencies.keys() == audited_dependencies.keys()
 
     for route_id in router_dependencies:

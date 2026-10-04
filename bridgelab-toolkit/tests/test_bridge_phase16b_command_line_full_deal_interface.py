@@ -229,7 +229,7 @@ def test_phase16a_phase15_phase14_routes_and_defaults_guards():
         6,
         1,
     )
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
 
 
 def test_cli_contains_no_unsafe_parser_or_bridge_intelligence():

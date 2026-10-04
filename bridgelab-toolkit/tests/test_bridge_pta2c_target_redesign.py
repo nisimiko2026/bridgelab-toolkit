@@ -205,7 +205,7 @@ def test_no_production_imports():
     import ast
     from pathlib import Path
     from bridge.sayc_route_configuration import create_standard_sayc_router
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47
     tree=ast.parse(Path("bridge/shortness_target_redesign.py").read_text(encoding="utf-8"))
     assert not any(isinstance(n,ast.ImportFrom) and n.module and "endplay" in n.module for n in ast.walk(tree))
     for name in ("sayc.py","engine_router.py","sayc_route_configuration.py"):

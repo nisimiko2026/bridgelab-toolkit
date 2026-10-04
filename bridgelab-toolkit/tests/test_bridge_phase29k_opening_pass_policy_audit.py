@@ -55,4 +55,4 @@ def test_1000_deal_source_readiness_is_deterministic_and_bounded():
     assert not any(hasattr(case, "deal") for case in report.representatives)
     assert json.loads(report.to_json()) == report.to_dict()
     assert report.to_json() == build_opening_pass_policy_report(batch).to_json()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

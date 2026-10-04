@@ -41,12 +41,12 @@ def audit(coverage_report):
 
 def test_static_matrix_contains_each_live_route_once(audit) -> None:
     router = create_standard_sayc_router()
-    assert len(audit.routes) == len(router.routes) == 45
+    assert len(audit.routes) == len(router.routes) == 47
     assert tuple(route.route_id for route in audit.routes) == tuple(
         route.route_id for route in router.routes
     )
-    assert len({route.route_id.casefold() for route in audit.routes}) == 45
-    assert len({route.auction_prefix for route in audit.routes}) == 45
+    assert len({route.route_id.casefold() for route in audit.routes}) == 47
+    assert len({route.auction_prefix for route in audit.routes}) == 47
 
 
 def test_policy_gating_and_dependencies_reuse_phase20b(audit) -> None:
@@ -171,7 +171,7 @@ def test_recommendation_route_and_rule_consistency(audit) -> None:
 
 
 def test_route_summaries_cover_all_routes_and_reconcile(audit) -> None:
-    assert len(audit.route_summaries) == 45
+    assert len(audit.route_summaries) == 47
     assert tuple(item.route_id for item in audit.route_summaries) == tuple(
         route.route_id for route in audit.routes
     )

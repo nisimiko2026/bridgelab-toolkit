@@ -158,7 +158,7 @@ def test_repeated_classification_of_same_report_is_deterministic(report, audit) 
 
 
 def test_production_registries_and_route_count_are_unchanged(audit) -> None:
-    assert audit.route_count == len(create_standard_sayc_router().routes) == 45
+    assert audit.route_count == len(create_standard_sayc_router().routes) == 47
     assert DEFAULT_PROBABILITY_ENGINE_REGISTRY.registered_question_types == (
         KnownCardCountQuestion.__name__,
     )

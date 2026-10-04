@@ -281,8 +281,13 @@ def build_post_composition_opening_readiness_audit() -> PostCompositionOpeningRe
     third_match = before_router.match(third_context)
     third_route_id = None if third_match is None else third_match.route_id
     third_production_call = _production_call(before_router, third_context)
-    if first_production_call != "2D" or third_route_id is not None or third_production_call is not None:
-        raise RuntimeError("Phase 30H standard production opening witness drifted")
+    expected_third_route_id = "sayc.opening.later-seat.third"
+    if (
+        first_production_call != "2D"
+        or third_route_id != expected_third_route_id
+        or third_production_call is not None
+    ):
+        raise RuntimeError("Phase 30H standard production opening witness drifted from the A9.7 baseline")
 
     partnership_call = (
         first.selection.side is PartnershipSide.NS
@@ -337,7 +342,7 @@ def build_post_composition_opening_readiness_audit() -> PostCompositionOpeningRe
     )
     production_changed = before_ids != after_ids or capability.production_bidding_changed
     regression_guard = (
-        len(before_ids) == len(after_ids) == 45 and before_ids == after_ids
+        len(before_ids) == len(after_ids) == 47 and before_ids == after_ids
         and not production_changed and context_shape
         and not any(marker in route_id.casefold() for route_id in after_ids
                     for marker in ("nisim", "30g", "30h"))

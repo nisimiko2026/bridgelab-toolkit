@@ -129,7 +129,7 @@ def test_phase14_closure_routes_and_defaults_are_unchanged():
     assert phase14.phase14_complete and phase14.closure_fixtures == 16
     assert (phase14.structured_summary_successes, phase14.rendering_successes, phase14.pipeline_successes) == (16, 16, 16)
     assert (phase14.production_recommendations, phase14.provenance_preserved_fixtures, phase14.provenance_loss_fixtures) == (4, 16, 0)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert PolicyRegistry().opening_lead_policy_ids == ()
 
 

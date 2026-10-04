@@ -258,6 +258,6 @@ def test_opt_in_revision_preserves_old_profile_and_45_production_routes():
     assert NISIM_NILY_PROFILE.to_json() == old
     assert create_standard_sayc_router().evaluate(result.context).recommended_call is None
     after = create_standard_sayc_router().routes
-    assert len(before) == len(after) == 45
+    assert len(before) == len(after) == 47
     assert [(r.route_id, r.priority, r.policy_dependencies) for r in before] == [
         (r.route_id, r.priority, r.policy_dependencies) for r in after]

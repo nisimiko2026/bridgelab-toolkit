@@ -226,6 +226,6 @@ def test_real_dds_existing_collapse_reference_and_control_distribution(void):
 def test_no_production_integration():
     from pathlib import Path
     from bridge.sayc_route_configuration import create_standard_sayc_router
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47
     for name in ("sayc.py","engine_router.py","sayc_route_configuration.py"):
         assert "counterfactual_calibration" not in (Path("bridge")/name).read_text()

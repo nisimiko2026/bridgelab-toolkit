@@ -296,7 +296,7 @@ def test_no_execution_imports_or_prior_contract_changes(evidence):
         "BiddingEngine", "EngineRoute", "evaluate", "recommend", "choose_opening",
         "opening_call", "BiddingRouter"})
     routes_after = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(routes_before) == len(routes_after) == 45 and routes_before == routes_after
+    assert len(routes_before) == len(routes_after) == 47 and routes_before == routes_after
     assert binding.to_json() == before_30l
     assert build_two_over_one_opening_contract().to_json() == before_30k
     assert tuple(x.name for x in fields(SystemContext)) == ("system", "options")

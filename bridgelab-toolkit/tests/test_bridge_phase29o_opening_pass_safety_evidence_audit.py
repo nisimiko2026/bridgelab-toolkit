@@ -153,4 +153,4 @@ def test_serialization_examples_and_routes(sample):
     assert r.simulation_errors == r.reproduction_errors == 0
     assert not r.production_ready
     assert not r.playing_trick_evaluator_found and not r.quick_trick_evaluator_found
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

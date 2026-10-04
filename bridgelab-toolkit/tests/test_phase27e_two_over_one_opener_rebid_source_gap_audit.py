@@ -6,7 +6,7 @@ from benchmarks.phase27e_two_over_one_opener_rebid_source_gap_audit import (
 def test_phase27e_maps_all_four_canonical_two_over_one_routes():
     audit = run_two_over_one_opener_rebid_source_gap_audit()
     assert audit.canonical_family_count == 4
-    assert audit.route_count == 45
+    assert audit.route_count == 47
     assert audit.all_routes_reachable
 
     by_auction = {row["auction"]: row for row in audit.cases}

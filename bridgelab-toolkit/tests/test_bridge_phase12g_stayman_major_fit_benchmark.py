@@ -37,7 +37,7 @@ def test_exact_phase12g_fixture_benchmark():
     assert (result.coverage_numerator, result.coverage_denominator) == (38, 235)
     assert result.coverage_pct == 16.17
     assert result.dual_major_abstentions == 36
-    assert result.production_route_count == 45
+    assert result.production_route_count == 47
 
 
 def test_phase12g_benchmark_is_structurally_deterministic():

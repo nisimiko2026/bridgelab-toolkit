@@ -249,5 +249,5 @@ def test_probability_production_guards_remain_unchanged() -> None:
         "KnownCardCountQuestion",
     )
     assert audit.cumulative["production_recommendations"] == 4
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert tuple(FormulaIdentifier) == (FormulaIdentifier.KNOWN_CARD_COUNT_V1,)

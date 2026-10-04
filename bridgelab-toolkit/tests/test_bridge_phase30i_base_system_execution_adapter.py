@@ -252,7 +252,7 @@ def test_route_context_shapes_and_adapter_import_boundaries():
     source = Path(__file__).resolve().parents[1] / "bridge" / "base_system_execution_adapter.py"
     tree = ast.parse(source.read_text(encoding="utf-8"))
     after = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(before) == len(after) == 45
+    assert len(before) == len(after) == 47
     assert before == after
     assert not any(marker in route_id.casefold() for route_id in after
                    for marker in ("nisim", "30i"))

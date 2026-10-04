@@ -46,10 +46,10 @@ class BaselineStatus(str, Enum):
 
 @dataclass(frozen=True, slots=True)
 class StructuralExpectedBaseline:
-    route_count: int = 45
-    unique_route_ids: int = 45
-    unique_exact_prefixes: int = 45
-    structurally_matched_routes: int = 45
+    route_count: int = 47
+    unique_route_ids: int = 47
+    unique_exact_prefixes: int = 47
+    structurally_matched_routes: int = 47
     policy_gated_routes: int = 19
     invalid_prefixes: int = 0
     shadowed_routes: int = 0
@@ -59,7 +59,7 @@ class StructuralExpectedBaseline:
     ambiguous_owners: int = 0
     duplicate_exact_prefixes: int = 0
     unique_owner_count: int = 7
-    shared_owner_expected_count: int = 38
+    shared_owner_expected_count: int = 40
     route_ids: tuple[str, ...] = (
         "sayc.2over1.opener.1h.2c", "sayc.2over1.opener.1h.2d",
         "sayc.2over1.opener.1s.2c", "sayc.2over1.opener.1s.2d",
@@ -73,6 +73,7 @@ class StructuralExpectedBaseline:
         "sayc.opener.2nt.jacoby.3d", "sayc.opener.2nt.jacoby.3h",
         "sayc.opener.2nt.stayman", "sayc.opener.2nt.texas.4d",
         "sayc.opener.2nt.texas.4h", "sayc.opening",
+        "sayc.opening.later-seat.fourth", "sayc.opening.later-seat.third",
         "sayc.overcall.direct.after.1c", "sayc.overcall.direct.after.1d",
         "sayc.overcall.direct.after.1h", "sayc.overcall.direct.after.1s",
         "sayc.responder.1nt.jacoby.hearts.continuation",
@@ -106,6 +107,7 @@ class StructuralExpectedBaseline:
         ("2NT", "P"), ("2NT", "P", "3C", "P"),
         ("2NT", "P", "3D", "P"), ("2NT", "P", "3H", "P"),
         ("2NT", "P", "4D", "P"), ("2NT", "P", "4H", "P"),
+        ("P", "P"), ("P", "P", "P"),
     )
     policy_dependencies: tuple[str, ...] = (
         "jacoby_continuation_strength", "offensive_hand",

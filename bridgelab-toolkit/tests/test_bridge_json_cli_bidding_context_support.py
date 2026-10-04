@@ -299,4 +299,4 @@ def test_cli_file_and_stdin_share_bidding_parser(tmp_path):
 
 
 def test_standard_router_remains_45_routes():
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

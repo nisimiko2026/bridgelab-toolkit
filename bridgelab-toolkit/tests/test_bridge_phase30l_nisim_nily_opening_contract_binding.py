@@ -277,7 +277,7 @@ def test_prior_contracts_routes_and_static_import_guard(bound):
     source = Path(__file__).resolve().parents[1] / "bridge" / "nisim_nily_opening_contract_binding.py"
     tree = ast.parse(source.read_text(encoding="utf-8"))
     after = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(before) == len(after) == 45 and before == after
+    assert len(before) == len(after) == 47 and before == after
     assert not any(marker in route_id.casefold() for route_id in after
                    for marker in ("nisim", "30l"))
     assert base_before == build_two_over_one_opening_contract().to_json()

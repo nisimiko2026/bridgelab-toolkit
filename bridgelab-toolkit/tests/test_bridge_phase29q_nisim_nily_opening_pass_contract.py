@@ -164,7 +164,7 @@ def test_transitions_serialization_and_routes(sample):
     assert sum(n for _, n, _ in r.affirmative_overlaps) == 77
     assert r.to_json() == build_opening_pass_contract_audit(batch).to_json()
     assert json.loads(r.to_json()) == r.to_dict()
-    assert r.production_route_count == 45 and not r.production_changed and not r.production_ready
+    assert r.production_route_count == 47 and not r.production_changed and not r.production_ready
     with pytest.raises(FrozenInstanceError):
         r.pass_count = 616
 

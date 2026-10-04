@@ -108,4 +108,4 @@ def test_real_simulation_integration_and_phase29f_guards():
         for item in batch.auctions for step in item.steps
     )
     assert run_simulation(SimulationConfig(seed=30, deal_count=2)).completed_deals == 2
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

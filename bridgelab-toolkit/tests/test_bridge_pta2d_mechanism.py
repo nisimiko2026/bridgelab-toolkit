@@ -165,7 +165,7 @@ def test_leakage_boundary_no_auction_time_entry_point():
 
 def test_no_production_integration():
     from bridge.sayc_route_configuration import create_standard_sayc_router
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47
     for name in ('sayc.py','engine_router.py','sayc_route_configuration.py'):
         assert 'shortness_mechanism' not in (Path('bridge')/name).read_text(encoding='utf-8')
 

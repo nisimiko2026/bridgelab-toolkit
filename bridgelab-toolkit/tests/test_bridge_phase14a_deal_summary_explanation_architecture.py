@@ -86,6 +86,6 @@ def test_focused_benchmark_and_phase13_guards_are_exact():
 def test_defaults_routes_and_direction_are_unchanged():
     result = run_deal_summary_explanation_benchmark()
     assert PolicyRegistry().opening_lead_policy_ids == ()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert result.cumulative["production_recommendations"] == 4
     assert result.phase14b_direction == "A. DEAL-SUMMARY RENDERING / EXPLANATION ENGINE"

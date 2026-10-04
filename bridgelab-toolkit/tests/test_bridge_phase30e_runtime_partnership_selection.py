@@ -297,7 +297,7 @@ def test_historical_30d_and_production_remain_unchanged(table):
     select_runtime_profile_for_auction(table, Auction(Seat.NORTH, ("1C", "P")))
     after_ids = tuple(route.route_id for route in create_standard_sayc_router().routes)
     historical = build_profile_opening_production_gate_audit()
-    assert len(before_ids) == len(after_ids) == 45 and before_ids == after_ids
+    assert len(before_ids) == len(after_ids) == 47 and before_ids == after_ids
     assert not any("30e" in route_id.casefold() or "nisim" in route_id.casefold()
                    for route_id in after_ids)
     assert NISIM_NILY_PROFILE.to_json() == profile_before

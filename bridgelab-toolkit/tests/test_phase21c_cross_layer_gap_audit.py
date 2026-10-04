@@ -42,19 +42,19 @@ def test_repeated_matrix_is_deterministic(audit):
     assert run_audit() == audit
 
 
-def test_primary_matrix_reuses_all_47_phase21b_identities(audit):
+def test_primary_matrix_reuses_all_49_phase21b_identities(audit):
     provenance = run_provenance_audit()
     expected = {(item.element_type, item.element_id) for item in provenance.production_entries}
     observed = {(item.element_type, item.element_id) for item in audit.entries}
     assert observed == expected
-    assert len(observed) == 47
+    assert len(observed) == 49
 
 
-def test_all_45_phase21a_and_live_routes_align(audit):
+def test_all_47_phase21a_and_live_routes_align(audit):
     live = {item.route_id for item in run_route_reachability_audit().inventory}
     phase21a = {item.route_id for item in audit.phase21a_routes}
     matrix = {item.route_id for item in audit.entries if item.element_type is ProductionElementType.BIDDING_ROUTE}
-    assert len(live) == 45
+    assert len(live) == 47
     assert live == phase21a == matrix
 
 
@@ -80,7 +80,7 @@ def test_deferred_capabilities_are_excluded_and_expected(audit):
 def test_typed_input_fields_are_inspected_from_live_dataclass(audit):
     assert _typed_request_fields() == {item.name for item in fields(FullDealApplicationRequest)}
     assert {"bidding", "declarer_play", "probability_requests"} <= _typed_consumer_fields()
-    assert dict(audit.summary)["typed_input_representable"] == 47
+    assert dict(audit.summary)["typed_input_representable"] == 49
 
 
 def test_json_cli_fields_are_inspected_from_live_parser(audit):
@@ -92,7 +92,7 @@ def test_json_cli_fields_are_inspected_from_live_parser(audit):
         "probability_requests",
     }
     summary = dict(audit.summary)
-    assert summary["json_cli_input_representable"] == len(audit.entries) == 47
+    assert summary["json_cli_input_representable"] == len(audit.entries) == 49
     assert summary["json_cli_publicly_reachable"] == len(audit.entries)
     assert summary["json_cli_not_reachable"] == 0
     assert GapType.PUBLIC_JSON_INPUT_GAP.value not in dict(audit.gap_counts)
@@ -177,7 +177,7 @@ def test_provenance_visibility_reuses_phase21b_states_without_false_public_gap(a
         )
         for state in set(expected.values())
     }
-    assert link_counts["RUNTIME_CONDITIONAL"] == 45
+    assert link_counts["RUNTIME_CONDITIONAL"] == 47
     assert link_counts["DIRECT"] == 1
     assert link_counts["NO_LINK"] == 1
     assert GapType.PROVENANCE_OBSERVABILITY_GAP.value not in dict(audit.gap_counts)

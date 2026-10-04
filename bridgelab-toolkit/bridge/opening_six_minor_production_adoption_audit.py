@@ -100,8 +100,8 @@ def build_six_minor_production_adoption_audit():
             "No dedicated typed partnership-profile dimension exists; opaque options must not silently activate a convention card."),
         AdoptionGate("first_seat_precedence",AdoptionGateState.BLOCKED,
             f"Approved partnership witness resolves to {first.integrated_call}; current SAYC production resolves to {first.production_call}."),
-        AdoptionGate("later_seat_opening_routing",AdoptionGateState.BLOCKED,
-            "Seat-sensitive policy needs later-seat opening routes; the standard opening route owns only the empty auction."),
+        AdoptionGate("later_seat_opening_routing",AdoptionGateState.READY,
+            "A9.7 adds explicit SAYC later-seat opening routes for P P and P P P; this resolves routing mechanics only and does not activate the Nisim-Nily six-minor treatment."),
         AdoptionGate("production_adapter",AdoptionGateState.BLOCKED,
             "29U is an audit assessment, not a registered BiddingRule/RecommendationEngine route."),
     )

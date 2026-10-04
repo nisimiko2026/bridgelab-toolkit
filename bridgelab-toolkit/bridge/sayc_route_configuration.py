@@ -26,6 +26,7 @@ from .bidding_engine import BiddingEngine
 from .engine_router import BiddingEngineRouter, EngineRoute, auction_calls
 from .policy_registry import PolicyRegistry
 from .sayc import create_sayc_opening_engine
+from .sayc_later_seat_opening import create_sayc_later_seat_opening_engine
 from .sayc_strong_two_club import (
     create_sayc_strong_two_club_balanced_rebid_engine,
     create_sayc_strong_two_club_response_engine,
@@ -105,6 +106,7 @@ def create_standard_sayc_router(
         raise TypeError("registry must be PolicyRegistry")
 
     opening=create_sayc_opening_engine()
+    later_seat_opening=create_sayc_later_seat_opening_engine()
     natural_one_level_overcall=create_sayc_natural_one_level_overcall_engine(registry)
     weak_jump_overcall=create_sayc_weak_jump_overcall_engine(registry)
     takeout_double=create_sayc_takeout_double_engine(registry)
@@ -151,6 +153,8 @@ def create_standard_sayc_router(
 
     return BiddingEngineRouter((
         EngineRoute("sayc.opening",auction_calls(),opening,100),
+        EngineRoute("sayc.opening.later-seat.third",auction_calls("P","P"),later_seat_opening,100),
+        EngineRoute("sayc.opening.later-seat.fourth",auction_calls("P","P","P"),later_seat_opening,100),
         EngineRoute("sayc.overcall.direct.after.1c",auction_calls("1C"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
         EngineRoute("sayc.overcall.direct.after.1d",auction_calls("1D"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),
         EngineRoute("sayc.overcall.direct.after.1h",auction_calls("1H"),combine_existing_engines(natural_one_level_overcall,weak_jump_overcall,takeout_double,direct_one_notrump),98,_DIRECT_OVERCALL_POLICY_DEPENDENCIES),

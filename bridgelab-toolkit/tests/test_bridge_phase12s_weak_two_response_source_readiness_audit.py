@@ -54,7 +54,7 @@ def test_selection():
 
 
 def test_no_production_changes():
-    assert A.route_count == len(create_standard_sayc_router().routes) == 45
+    assert A.route_count == len(create_standard_sayc_router().routes) == 47
     assert all(x["route_missing"] for x in A.positions)
     assert (A.production_rules_added, A.routes_added, A.policies_added) == (0, 0, 0)
     assert PolicyRegistry().stayman_dual_major_response_policy_ids == ()

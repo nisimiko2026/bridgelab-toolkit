@@ -182,5 +182,5 @@ def test_production_rules_routes_and_previous_policy_unchanged():
     assess("J987.962.94.J943")
     assert tuple(rule.rule_id for rule in sayc_opening_rules()) == before
     assert len(before) == 14
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert build_opening_pass_source_report().implementation_readiness == "INCOMPLETE"

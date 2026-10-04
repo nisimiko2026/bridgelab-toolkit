@@ -101,4 +101,4 @@ def test_tiny_production_guards():
     coverage = build_full_auction_coverage_report(batch)
     assert coverage.abstain == batch.abstain
     assert run_simulation(config).completed_deals == 3
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

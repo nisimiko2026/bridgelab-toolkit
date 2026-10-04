@@ -267,7 +267,7 @@ def test_single_response_or_explicit_equal_priority_conflict(monkeypatch,priorit
 def test_existing_router_outcome_and_priorities_are_preserved():
     router=create_standard_sayc_router()
     before=tuple((r.route_id,r.priority,r.policy_dependencies) for r in router.routes)
-    assert len(before)==45
+    assert len(before)==47
     for opening in ('1C','1D','1H','1S','1NT','2C','2D','2NT','3D'):
         for hcp in (0,5,6,9,10,12,13,15):
             result=assess(opening,hand((3,3,4,3),hcp))

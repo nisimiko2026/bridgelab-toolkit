@@ -128,4 +128,4 @@ def test_single_and_batch_results_are_deterministic_and_reconcile():
 
 def test_phase29f_and_production_router_remain_available():
     assert run_simulation(SimulationConfig(seed=1, deal_count=2)).completed_deals == 2
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

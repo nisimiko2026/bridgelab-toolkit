@@ -177,7 +177,7 @@ def test_production_router_unchanged():
     before=create_standard_sayc_router().routes
     assess(hand((3,3,6,1),('AQ','A','AKQ','Q')))
     after=create_standard_sayc_router().routes
-    assert len(before)==len(after)==45
+    assert len(before)==len(after)==47
     assert [(r.route_id,r.priority,r.policy_dependencies) for r in before] == [(r.route_id,r.priority,r.policy_dependencies) for r in after]
 
 @pytest.mark.parametrize('position', (1,2,3,4))

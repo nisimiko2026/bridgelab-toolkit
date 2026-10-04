@@ -259,17 +259,23 @@ def test_production_diagnostics_and_route_inventory_are_unchanged():
         system=SystemContext("SAYC"),
     )
     assert before.evaluate(first_context).recommended_call.serialize() == "2D"
-    assert before.match(third_context) is None
+    third_match = before.match(third_context)
+    assert third_match is not None
+    assert third_match.route_id == "sayc.opening.later-seat.third"
+    assert before.evaluate(third_context).recommended_call is None
     assert _assess().supported_call == "3D"
     assert _assess(calls=("P", "P")).supported_call == "3D"
     after = create_standard_sayc_router()
     after_ids = tuple(route.route_id for route in after.routes)
-    assert len(before_ids) == len(after_ids) == 45
+    assert len(before_ids) == len(after_ids) == 47
     assert before_ids == after_ids
     assert not any("nisim" in value.casefold() or "30c" in value.casefold()
                    for value in after_ids)
     assert after.evaluate(first_context).recommended_call.serialize() == "2D"
-    assert after.match(third_context) is None
+    after_third_match = after.match(third_context)
+    assert after_third_match is not None
+    assert after_third_match.route_id == "sayc.opening.later-seat.third"
+    assert after.evaluate(third_context).recommended_call is None
     assert tuple(field.name for field in fields(SystemContext)) == ("system", "options")
     assert tuple(field.name for field in fields(BiddingContext)) == (
         "hand", "evaluation", "auction", "seat", "vulnerability", "system"

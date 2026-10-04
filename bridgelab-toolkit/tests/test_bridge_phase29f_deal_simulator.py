@@ -126,4 +126,4 @@ def test_summary_reconciles_and_only_counts_actual_calls():
 
 
 def test_production_router_still_has_45_routes():
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

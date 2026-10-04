@@ -292,6 +292,6 @@ def test_all_responder_routes_match_original_evidence_and_keep_45_routes():
             covered.add(result.route_id)
     assert covered == {r.route_id for r in before if r.route_id.startswith('sayc.responder.')}
     after = create_standard_sayc_router().routes
-    assert len(before) == len(after) == 45
+    assert len(before) == len(after) == 47
     assert [(r.route_id, r.priority, r.policy_dependencies) for r in before] == [
         (r.route_id, r.priority, r.policy_dependencies) for r in after]

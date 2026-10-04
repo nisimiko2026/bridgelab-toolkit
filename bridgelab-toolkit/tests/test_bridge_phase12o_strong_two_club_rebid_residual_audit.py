@@ -59,7 +59,7 @@ def test_source_matrix_covers_every_position_and_defers_all():
 
 
 def test_router_rule_and_no_production_expansion_guards():
-    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 45
+    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 47
     assert AUDIT.route_reached == AUDIT.rule_abstained == 23
     assert AUDIT.other_route_attempts == 0
     assert AUDIT.production_rules_added == AUDIT.routes_added == AUDIT.policies_added == 0

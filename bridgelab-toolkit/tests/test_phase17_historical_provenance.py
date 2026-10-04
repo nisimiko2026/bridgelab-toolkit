@@ -138,7 +138,7 @@ def test_historical_validation_changes_no_production_invariants() -> None:
     audit = run_phase17_source_readiness_audit()
     registry = DEFAULT_PROBABILITY_ENGINE_REGISTRY
     assert audit.production_guards["production_recommendations"] == 4
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert len(registry.registrations) == 1
     assert registry.calculator_for(
         RestrictedChoiceQuestion(

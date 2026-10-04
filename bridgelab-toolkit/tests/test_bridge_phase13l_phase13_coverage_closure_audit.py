@@ -54,7 +54,7 @@ def test_source_policy_and_probability_coverage_are_exact():
 
 def test_phase12_and_phase13_guards_and_routes_are_preserved():
     assert AUDIT.guards["ordinary"] == {"production_calls": 7871, "completed": 761, "abstained": 9239}
-    assert AUDIT.guards["routes"] == len(create_standard_sayc_router().routes) == 45
+    assert AUDIT.guards["routes"] == len(create_standard_sayc_router().routes) == 47
     assert AUDIT.guards["phase13"]["simple_unblock_king"] == 2
     assert AUDIT.guards["phase13"]["lead_executable_13k_after"] == 0
 

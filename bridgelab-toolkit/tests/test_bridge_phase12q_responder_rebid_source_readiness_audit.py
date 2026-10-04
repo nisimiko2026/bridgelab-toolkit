@@ -43,7 +43,7 @@ def test_classifications_top_five_and_selection_are_deterministic():
 
 
 def test_route_status_is_exact_and_audit_only():
-    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 45
+    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 47
     routed = [row for row in AUDIT.families if row["route_exists"]]
     assert {row["route_name"] for row in routed} == {
         "sayc.responder.1nt.jacoby.hearts.continuation",

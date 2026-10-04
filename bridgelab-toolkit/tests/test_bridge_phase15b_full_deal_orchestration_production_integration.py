@@ -180,7 +180,7 @@ def test_focused_benchmark_exports_serialization_and_safety_are_exact():
 
 def test_routes_defaults_and_phase15c_direction_are_unchanged():
     result = run_full_deal_orchestration_production_benchmark()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert PolicyRegistry().opening_lead_policy_ids == ()
     assert result.production_recommendations == 4
     assert result.phase15c_direction == "A. PHASE 15 COVERAGE / CLOSURE AUDIT"

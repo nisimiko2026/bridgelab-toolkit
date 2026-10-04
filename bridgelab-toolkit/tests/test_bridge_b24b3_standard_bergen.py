@@ -159,4 +159,4 @@ def test_competitive_card_request_is_rejected_not_silently_ignored():
 def test_incomplete_historical_card_and_production_inventory_preserved():
     assert NISIM_NILY_BERGEN_PROFILE_B24B2.version=='B2.4B2'
     assert assess(assess_bergen_response,profile=NISIM_NILY_BERGEN_PROFILE_B24B2).status is BergenStatus.CONFIGURATION_INCOMPLETE
-    assert len(create_standard_sayc_router().routes)==45
+    assert len(create_standard_sayc_router().routes)==47

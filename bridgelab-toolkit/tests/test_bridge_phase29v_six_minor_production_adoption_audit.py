@@ -31,7 +31,7 @@ def test_system_identity_and_partnership_identity_are_not_conflated():
 def test_current_route_count_and_router_are_unchanged():
     audit=build_six_minor_production_adoption_audit()
     router=create_standard_sayc_router()
-    assert audit.route_count==len(router.routes)==45
+    assert audit.route_count==len(router.routes)==47
     assert tuple(r.route_id for r in router.routes).count("sayc.opening")==1
     assert not any("nisim" in r.route_id.casefold() for r in router.routes)
 
@@ -42,11 +42,11 @@ def test_first_seat_witness_exposes_precedence_conflict():
     assert w.production_route_id=="sayc.opening"
     assert w.production_call=="2D"
 
-def test_third_seat_witness_exposes_missing_later_seat_route():
+def test_third_seat_witness_routes_but_six_minor_treatment_remains_unadapted():
     w=build_six_minor_production_adoption_audit().third_seat_witness
     assert w.opening_position==3
     assert w.integrated_call=="3D"
-    assert w.production_route_id is None
+    assert w.production_route_id=="sayc.opening.later-seat.third"
     assert w.production_call is None
 
 def test_opaque_partnership_option_does_not_silently_activate():
@@ -65,7 +65,7 @@ def test_required_blockers_are_explicit():
     assert states["system_partnership_separation"] is AdoptionGateState.READY
     assert states["typed_partnership_selector"] is AdoptionGateState.BLOCKED
     assert states["first_seat_precedence"] is AdoptionGateState.BLOCKED
-    assert states["later_seat_opening_routing"] is AdoptionGateState.BLOCKED
+    assert states["later_seat_opening_routing"] is AdoptionGateState.READY
     assert states["production_adapter"] is AdoptionGateState.BLOCKED
 
 def test_audit_is_immutable_and_serialization_is_deterministic():

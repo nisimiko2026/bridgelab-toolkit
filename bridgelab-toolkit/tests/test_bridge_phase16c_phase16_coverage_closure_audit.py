@@ -222,7 +222,7 @@ def test_phase15_phase14_engine_routes_and_defaults_guards():
         and phase15.provenance_lost == phase15.serialization_failures == 0
     )
     assert phase14.phase14_complete
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert len(DEFAULT_PROBABILITY_ENGINE_REGISTRY.registrations) == 1
     assert PolicyRegistry().opening_lead_policy_ids == ()
 

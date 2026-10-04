@@ -201,11 +201,15 @@ def test_first_and_third_seat_current_shadow_and_production_are_remeasured():
         ProfileOpeningDisposition.SUPPORTED_CALL, "3D"
     )
     assert router.evaluate(first_context).recommended_call.serialize() == "2D"
-    assert router.match(third_context) is None
+    third_match = router.match(third_context)
+    assert third_match is not None
+    assert third_match.route_id == "sayc.opening.later-seat.third"
     assert router.evaluate(third_context).recommended_call is None
     audit = _audit()
     assert (audit.first_seat_shadow_call, audit.first_seat_production_call) == ("3D", "2D")
-    assert (audit.third_seat_shadow_call, audit.third_seat_production_route_id) == ("3D", None)
+    assert (audit.third_seat_shadow_call, audit.third_seat_production_route_id) == (
+        "3D", "sayc.opening.later-seat.third"
+    )
     assert audit.gate("first_seat_precedence").state is ProductionReadinessState.SHADOW_READY
     assert audit.gate("later_seat_opening_dispatch").state is ProductionReadinessState.SHADOW_READY
 
@@ -273,7 +277,7 @@ def test_production_inventory_contexts_and_historical_sources_are_unchanged():
     before_ids = tuple(route.route_id for route in create_standard_sayc_router().routes)
     audit = _audit()
     after_ids = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(before_ids) == len(after_ids) == audit.route_count == 45
+    assert len(before_ids) == len(after_ids) == audit.route_count == 47
     assert before_ids == after_ids
     assert audit.production_changed is False
     assert audit.gate("production_regression_guard").state is ProductionReadinessState.READY

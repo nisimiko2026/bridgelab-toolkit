@@ -9,7 +9,7 @@ def test_phase28b_closes_bidding_coverage():
     assert audit.phase == "28B"
     assert audit.phase28a_loaded
     assert audit.phase28a_closure_ready
-    assert audit.production_route_count == 45
+    assert audit.production_route_count == 47
     assert audit.remaining_high_value_source_ready == 0
     assert audit.closure_gate
     assert audit.decision == "PHASE 28 BIDDING COVERAGE COMPLETE"

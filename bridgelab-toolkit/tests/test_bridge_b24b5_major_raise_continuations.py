@@ -424,7 +424,7 @@ def test_production_opener_rebid_remains_unwired():
 def test_standard_router_inventory_remains_45():
     routes = create_standard_sayc_router().routes
 
-    assert len(routes) == 45
+    assert len(routes) == 47
 
     assert not any(
         "bergen" in route.route_id.casefold()

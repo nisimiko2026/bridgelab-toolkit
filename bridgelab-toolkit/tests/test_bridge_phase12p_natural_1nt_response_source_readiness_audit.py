@@ -56,7 +56,7 @@ def test_source_matrix_ranking_and_decision_are_complete():
 
 
 def test_router_and_audit_only_guards():
-    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 45
+    assert AUDIT.route_count == len(create_standard_sayc_router().routes) == 47
     assert all(row["route_id"] == "sayc.response.1nt.jacoby" for row in AUDIT.positions)
     assert all(row["route_reaches_rule"] is True for row in AUDIT.positions)
     assert all(row["current_action"] == "ABSTAIN" for row in AUDIT.positions)

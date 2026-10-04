@@ -152,7 +152,7 @@ def test_phase15_closure_and_engine_guards_are_unchanged():
     assert (phase15.closure_fixtures, phase15.complete, phase15.partial, phase15.no_decision, phase15.error) == (20, 11, 2, 6, 1)
     assert (phase15.requested_references, phase15.applicable_references, phase15.attempted_references, phase15.skipped_references) == (28, 26, 26, 3)
     assert (phase15.provenance_preserved, phase15.provenance_lost, phase15.serialization_successes, phase15.serialization_failures) == (20, 0, 20, 0)
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert PolicyRegistry().opening_lead_policy_ids == ()
 
 

@@ -604,12 +604,12 @@ def run_audit() -> CrossLayerGapAudit:
         ("router-policy-metadata", EvidenceKind.STATIC),
     )
     expected = {
-        "entries": 47,
-        "routes": 45,
+        "entries": 49,
+        "routes": 47,
         "probability": 1,
         "declarer": 1,
-        "phase21a_routes": 45,
-        "typed": 47,
+        "phase21a_routes": 47,
+        "typed": 49,
     }
     observed = {
         "entries": len(entries),

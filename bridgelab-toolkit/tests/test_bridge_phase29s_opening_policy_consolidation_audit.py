@@ -179,7 +179,7 @@ def sample():
 
 def test_real_population_and_no_unknown_pass(sample):
     batch,r=sample
-    assert r.population==616 and r.simulation_errors==0 and r.route_count==45
+    assert r.population==616 and r.simulation_errors==0 and r.route_count==47
     assert dict(r.counts)=={'OPENING_SUPPORTED':48,'PARTNERSHIP_TREATMENT_SUPPORTED':0,'PASS_SUPPORTED':440,'UNRESOLVED':128}
     for row in r.cases:
         a=row.assessment

@@ -283,7 +283,7 @@ def test_shadow_binding_does_not_change_production_route_inventory_or_audits(cha
                              vulnerability=Vulnerability.EW, opening_position=3)
     after = create_standard_sayc_router()
     after_ids = tuple(route.route_id for route in after.routes)
-    assert len(before_ids) == len(after_ids) == 45
+    assert len(before_ids) == len(after_ids) == 47
     assert before_ids == after_ids
     assert not any("nisim" in route_id.casefold() or "30b" in route_id.casefold()
                    for route_id in after_ids)

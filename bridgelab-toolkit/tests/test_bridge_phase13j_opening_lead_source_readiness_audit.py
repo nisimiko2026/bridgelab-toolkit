@@ -57,7 +57,7 @@ def test_phase13i_and_cumulative_guards_are_unchanged():
         "declarer_recommendations": 2, "opening_lead_recommendations": 0,
         "defensive_recommendations": 0, "no_decisions": 51, "abstentions": 3, "errors": 0,
     }
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
 
 
 def test_decision_is_source_enrichment_and_audit_is_deterministic():

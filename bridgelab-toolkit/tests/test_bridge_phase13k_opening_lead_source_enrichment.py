@@ -50,7 +50,7 @@ def test_reaudit_remains_honest_and_generates_no_recommendation():
 
 def test_policy_state_routes_and_cumulative_counts_are_unchanged():
     assert PolicyRegistry().opening_lead_policy_ids == ()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert RESULT.architecture["cumulative_positions_or_requests"] == 110
     assert RESULT.architecture["opening_lead_recommendations"] == 0
     assert RESULT.architecture["defensive_recommendations"] == 0

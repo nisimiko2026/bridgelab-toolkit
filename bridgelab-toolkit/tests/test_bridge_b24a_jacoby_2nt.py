@@ -141,7 +141,7 @@ def test_deterministic_abstention_keeps_original_rule_trace(opening):
 
 def test_existing_jacoby_routes_are_transfers_not_major_raises():
     routes = create_standard_sayc_router().routes
-    assert len(routes) == 45
+    assert len(routes) == 47
     jacoby = {r.route_id for r in routes if 'jacoby' in r.route_id}
     assert jacoby == {
         'sayc.response.1nt.jacoby', 'sayc.opener.1nt.jacoby.2d', 'sayc.opener.1nt.jacoby.2h',
@@ -158,4 +158,4 @@ def test_existing_jacoby_routes_are_transfers_not_major_raises():
         for route in routes:
             if route.route_id in jacoby:
                 assert route.engine.evaluate(context).recommended_call is None
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47

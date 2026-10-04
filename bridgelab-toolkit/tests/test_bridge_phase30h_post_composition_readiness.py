@@ -116,10 +116,10 @@ def test_semantic_handoffs_are_requests_only(audits):
 def test_production_witnesses_and_route_inventory(audits):
     current = audits[1]
     assert current.first_seat_production_call == "2D"
-    assert current.third_seat_production_route_id is None
+    assert current.third_seat_production_route_id == "sayc.opening.later-seat.third"
     assert current.first_seat_shadow_call == current.third_seat_shadow_call == "3D"
     routes = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(routes) == current.route_count == 45
+    assert len(routes) == current.route_count == 47
     assert current.ordered_route_ids_equal
     assert not any(marker in route_id.casefold() for route_id in routes
                    for marker in ("nisim", "30g", "30h"))

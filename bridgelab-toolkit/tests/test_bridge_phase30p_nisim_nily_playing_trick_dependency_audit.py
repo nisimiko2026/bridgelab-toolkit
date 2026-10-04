@@ -230,6 +230,6 @@ def test_partnership_scope_historical_preservation_and_router_guard(audit):
                                          "opening_call", "recommend"})
     routes_before = tuple(x.route_id for x in create_standard_sayc_router().routes)
     routes_after = tuple(x.route_id for x in create_standard_sayc_router().routes)
-    assert len(routes_before) == len(routes_after) == 45
+    assert len(routes_before) == len(routes_after) == 47
     assert routes_before == routes_after
     assert not audit.production_changed

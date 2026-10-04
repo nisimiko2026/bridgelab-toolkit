@@ -101,6 +101,6 @@ def test_benchmark_and_historical_guards_are_exact():
 def test_routes_defaults_and_phase14d_direction_are_unchanged():
     result = run_deal_summary_end_to_end_integration_benchmark()
     assert PolicyRegistry().opening_lead_policy_ids == ()
-    assert len(create_standard_sayc_router().routes) == 45
+    assert len(create_standard_sayc_router().routes) == 47
     assert result.cumulative["production_recommendations"] == 4
     assert result.phase14d_direction == "D. PHASE 14 COVERAGE / CLOSURE AUDIT"

@@ -108,6 +108,6 @@ def test_determinism_and_no_formula_or_production_change(sample):
     batch, r = sample
     assert r.to_json() == build_strong_two_club_audit(batch).to_json()
     assert json.loads(r.to_json()) == r.to_dict()
-    assert r.production_route_count == 45
+    assert r.production_route_count == 47
     assert not r.production_changed and not r.new_strength_predicate
     assert not r.existing_executable_pt_formula and not r.existing_executable_independent_gf_test

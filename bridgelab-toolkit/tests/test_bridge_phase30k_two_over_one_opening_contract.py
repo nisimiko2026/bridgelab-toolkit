@@ -171,7 +171,7 @@ def test_routes_contexts_and_generic_import_boundary():
     source = Path(__file__).resolve().parents[1] / "bridge" / "two_over_one_opening_contract.py"
     tree = ast.parse(source.read_text(encoding="utf-8"))
     after = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(before) == len(after) == 45 and before == after
+    assert len(before) == len(after) == 47 and before == after
     assert tuple(item.name for item in fields(SystemContext)) == ("system", "options")
     assert tuple(item.name for item in fields(BiddingContext)) == (
         "hand", "evaluation", "auction", "seat", "vulnerability", "system")

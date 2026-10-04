@@ -118,7 +118,7 @@ def test_first_and_third_seat_witnesses_measure_shadow_vs_production():
     audit = _audit()
     assert (audit.first_seat_shadow_call, audit.first_seat_production_call) == ("3D", "2D")
     assert (audit.third_seat_shadow_call, audit.third_seat_production_route_id) == (
-        "3D", None
+        "3D", "sayc.opening.later-seat.third"
     )
     assert audit.gate("first_seat_precedence").state is not ProductionReadinessState.READY
     assert audit.gate("later_seat_opening_dispatch").state is not ProductionReadinessState.READY
@@ -133,7 +133,9 @@ def test_first_and_third_seat_witnesses_measure_shadow_vs_production():
         vulnerability=Vulnerability.EW, system=SystemContext("SAYC"),
     )
     assert router.evaluate(first).recommended_call.serialize() == "2D"
-    assert router.match(third) is None
+    third_match = router.match(third)
+    assert third_match is not None
+    assert third_match.route_id == "sayc.opening.later-seat.third"
     assert router.evaluate(third).recommended_call is None
 
 
@@ -187,7 +189,7 @@ def test_six_phase29v_transitions_are_read_from_historical_audit():
         "system_partnership_separation": ("READY", ProductionReadinessState.READY),
         "typed_partnership_selector": ("BLOCKED", ProductionReadinessState.READY),
         "first_seat_precedence": ("BLOCKED", ProductionReadinessState.SHADOW_READY),
-        "later_seat_opening_routing": ("BLOCKED", ProductionReadinessState.SHADOW_READY),
+        "later_seat_opening_routing": ("READY", ProductionReadinessState.SHADOW_READY),
         "production_adapter": ("BLOCKED", ProductionReadinessState.BLOCKED),
     }
     assert old.ready_for_production is False and old.production_changed is False
@@ -237,7 +239,7 @@ def test_audit_preserves_sources_contexts_routes_and_production_flags():
     before_ids = tuple(route.route_id for route in create_standard_sayc_router().routes)
     audit = _audit()
     after_ids = tuple(route.route_id for route in create_standard_sayc_router().routes)
-    assert len(before_ids) == len(after_ids) == audit.route_count == 45
+    assert len(before_ids) == len(after_ids) == audit.route_count == 47
     assert before_ids == after_ids and audit.production_changed is False
     assert not any(marker in route_id.casefold() for route_id in after_ids
                    for marker in ("nisim", "30a", "30b", "30c", "30d"))

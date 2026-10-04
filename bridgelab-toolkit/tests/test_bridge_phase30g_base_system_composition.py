@@ -371,7 +371,7 @@ def test_historical_audit_router_context_and_simulator_remain_unchanged(plans):
     compose_profile_opening_with_base(peer, _synthetic_assessment(peer, FAMILY))
     after_router = create_standard_sayc_router()
     after_ids = tuple(route.route_id for route in after_router.routes)
-    assert len(before_ids) == len(after_ids) == 45 and before_ids == after_ids
+    assert len(before_ids) == len(after_ids) == 47 and before_ids == after_ids
     assert not any("nisim" in route_id.casefold() or "30g" in route_id.casefold()
                    for route_id in after_ids)
     hand = Hand.parse(HAND)
@@ -380,10 +380,14 @@ def test_historical_audit_router_context_and_simulator_remain_unchanged(plans):
         system=SystemContext("SAYC"),
     )
     assert after_router.evaluate(context).recommended_call.serialize() == "2D"
-    assert after_router.match(BiddingContext.create(
+    third_context = BiddingContext.create(
         hand=hand, auction=Auction(Seat.NORTH, ("P", "P")),
         vulnerability=Vulnerability.EW, system=SystemContext("SAYC"),
-    )) is None
+    )
+    third_match = after_router.match(third_context)
+    assert third_match is not None
+    assert third_match.route_id == "sayc.opening.later-seat.third"
+    assert after_router.evaluate(third_context).recommended_call is None
     assert NISIM_NILY_PROFILE.to_json() == profile_before
     assert nisim.to_json() == plan_before
     assert NISIM_NILY_SIX_MINOR_BINDING.production_adopted is False
